@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Introduction</title>
+    <section>
+        <title>Motivation</title>
+        <para>Motivation- describing interop issues, no good separation of concerns into the
+            different layers. If we handle terminology properly, take a step back to our overall
+            architecture </para>
+    </section>
+    <section>
+        <title>Overview of Book</title>
+        <para>mention presentation/learning series as supplementary material</para>
+    </section>
+    <section>
+        <title> Preface from Keith Campbell</title>
+        <para>Tom is a genius</para>
+    </section>
+    <section>
+        <title> IKM Book Intro (deliverable)</title>
+    </section>
+</chapter>
+

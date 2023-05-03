@@ -14,6 +14,44 @@
             </inlinemediaobject>
         </subtitle>
     </info>
+    <part>
+        <title>Introduction</title>
+    </part>
+    <xi:include href="Introduction.xml"/>
+    <part>
+        <title>Background</title>
+    </part>
+    <xi:include href="Background.xml"/>
+    <part>
+        <title>Integrated Knowledge Management (IKM) Introduction</title>
+    </part>
+    <part>
+        <title>Foundational Architecture</title>
+    </part>
+    <part>
+        <title>Terminology Knowledge</title>
+    </part>
+    <part>
+        <title>Statemenet Model</title>
+    </part>
+    <part>
+        <title>Assertional Knowledge</title>
+    </part>
+    <part>
+        <title>Procedural Knowledge</title>
+    </part>
+    <part>
+        <title>Enabling High Reliability Organizations (HROs) and Safety Systems</title>
+    </part>
+    <part>
+        <title>Use Cases</title>
+    </part>
+    <part>
+        <title>Ecosystem</title>
+    </part>
+    <part>
+        <title>Next Steps</title>
+    </part>
     
 
 
