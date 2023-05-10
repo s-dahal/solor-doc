@@ -24,34 +24,44 @@
     <xi:include href="Background.xml"/>
     <part>
         <title>Integrated Knowledge Management (IKM) Introduction</title>
+        <xi:include href="IKM%20Intro.xml"/>
     </part>
     <part>
         <title>Foundational Architecture</title>
+        <xi:include href="Foundational-Architecture.xml"/>
     </part>
     <part>
         <title>Terminology Knowledge</title>
+        <xi:include href="Terminology-Knowledge.xml"/>
     </part>
     <part>
         <title>Statemenet Model</title>
+        <xi:include href="Statement-Model.xml"/>
     </part>
     <part>
         <title>Assertional Knowledge</title>
+        <xi:include href="Assertional-Knowledge.xml"/>
     </part>
     <part>
         <title>Procedural Knowledge</title>
     </part>
+    <xi:include href="Procedural-Knowledge.xml"/>
     <part>
         <title>Enabling High Reliability Organizations (HROs) and Safety Systems</title>
     </part>
+    <xi:include href="Enabling-HRO.xml"/>
     <part>
         <title>Use Cases</title>
+        <xi:include href="Use-Case-Chapter.xml"/>
     </part>
     <part>
         <title>Ecosystem</title>
     </part>
+    <xi:include href="Ecosystem.xml"/>
     <part>
         <title>Next Steps</title>
     </part>
+    <xi:include href="Next-Steps.xml"/>
     
 
 

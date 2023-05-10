@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Foundational Architecture</title>
+    <section>
+        <title>Introduction</title>
+    </section>
+    <section>
+        <title>Tinkar Overview</title>
+    </section>
+    <section>
+        <title>Business Requirements</title>
+    </section>
+    <section>
+        <title>Tinkar Reference Model</title>
+    </section>
+    <section>
+        <title>Example Implementation of Tinkar (Komet)</title>
+        <section>
+            <title>DevOps Documentation</title>
+        </section>
+        <section>
+            <title>User Guide</title>
+        </section>
+        <section>
+            <title>Komet Documentation</title>
+        </section>
+        <section>
+            <title>UI Considerations</title>
+        </section>
+    </section>
+    <section>
+        <title>Next Steps</title>
+    </section>
+    <section>
+        <title>Key Takeaways</title>
+    </section>
+    <section>
+        <title>Tinkar Model Concepts</title>
+        <section>
+            <title>Tinkar, Tinkar Transformation Artifacts, SS Assessment</title>
+        </section>
+    </section>
+</chapter>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Procedural Knowledge</title>
+    <section>
+        <title>Introduction to Clinical Decision Support</title>
+    </section>
+    <section>
+        <title>Lack of Standardized Encoded Clinical Data</title>
+    </section>
+    <section>
+        <title>Monitoring CDS</title>
+    </section>
+    <section>
+        <title>Best Practices for CDS KM</title>
+    </section>
+    <section>
+        <title>Historical Context for Representing the Expression logic of CDS</title>
+    </section>
+</chapter>
+
