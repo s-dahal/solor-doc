@@ -315,6 +315,90 @@
             to reach an idealized future state.</para>
     </section>
     <section>
+        <title>Challenges</title>
+        <para>While IKM promises a revolutionary way to improve the quality and interoperability of
+            healthcare data in the name of improved patient safety and patient outcomes, achieving a
+            truly integrated ecosystem will pose a variety of challenges. Creating an IKM
+            architecture is itself a major undertaking, but will require a deep, fundamental
+            understanding and a detailed approach to address the following challenges. These
+            challenges are not exhaustive and will evolve as our team continues our work and
+            research.</para>
+        <section>
+            <title>Federal Regulation</title>
+            <para>As with any new or emerging technology, a variety of Federal agencies will need to
+                play a major part in the implementation of an IKM system. Not only is their review
+                and approval of the proposed system a necessity before we can share this tool with
+                patient facing healthcare systems, like labs and hospitals, but the federal
+                government will also need to develop mandates and incentives to encourage the
+                private sector to participate and meet the minimum requirements needed to support
+                IKM. Due to the inherent complexity and wholistic approach to data, IKM will require
+                multiple federal agencies to support and drive participation, like:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>The Centers for Medicare and Medicaid Services (CMS) and Office of the
+                        National Coordinator for Health IT (ONC) will need to outline minimum data
+                        requirements for orders to ensure the participating entities are capturing
+                        standardized data elements for standardized questions that come from a
+                        well-known and widely available source of truth </para>
+                </listitem>
+                <listitem>
+                    <para>The Food and Drug Administration (FDA) will need to develop an
+                        authorization process that requires new and existing terminology standard
+                        organizations, healthcare systems, product developers, and more to comply
+                        with pertinent standards prior to incorporation into the IKM platform</para>
+                </listitem>
+                <listitem>
+                    <para>Center for Disease Control and Prevention (CDC) must provide basic
+                        standards and easily accessible guidance to enforce standardized data
+                        collection, aggregation, and transmission for the various healthcare systems
+                        within the IKM platform</para>
+                </listitem>
+            </itemizedlist>
+            <para>It is critical for our team to coordinate with federal agencies as early as
+                possible to gather and incorporate their feedback, provide extensive information
+                detailing our work, the intended goals, and benefits, and collaborate on
+                requirements to support improved data quality and patient safety. A detailed
+                stakeholder engagement plan that details timelines, stakeholder dependencies, and
+                required actions is required to efficiently develop these mandates and
+                requirements.</para>
+        </section>
+        <section>
+            <title>Stakeholder Incentives</title>
+            <para>While SHIELD and the FDA do not want to mandate the use of the IKM environment,
+                federal agencies will need to develop minimum requirements and incentives to
+                encourage higher education, private sector, and other stakeholders to participate.
+                Meeting the minimum requirements for data collection and data transmission will
+                require changes to the user interface (UI) and user experience (UX) that standardize
+                data entry requirements, representation of data elements, and transmission of data
+                on the front and back end of healthcare and laboratory systems. These could be
+                extensive changes depending on the age and current data collection of the system.
+                Before hospitals and laboratories commit both financial and personnel resources to
+                perform gap assessments, identify areas of improvement, implement changes, train
+                staff and users, and sustain updates, we will need to use statistical analysis and
+                evidence-based discussions to highlight the current problems with data and how these
+                problems directly impact or relate to each stakeholder on an individualized level.
+                We need to demonstrate how improvements to patient safety, optimization of data
+                collection, transmission, and querying, and the IKM environment with statistics
+                analysis will address these current state issues and use financial incentives to
+                encourage stakeholders to achieve the optimized future state we are working
+                towards.</para>
+        </section>
+        <section>
+            <title>Coordination Across Standards</title>
+            <para>A defining feature of IKM is working to harmonize various terminology standards
+                using a common language to standardize data capture while maintain meaning and
+                associated concepts throughout transmission and storage. This requires working with
+                a variety of terminology standards that asynchronously represent, update, manage,
+                and version concepts. The IKM architecture will require a robust and standardized
+                process to track changes across terminology standards and version Tinkar concepts
+                appropriately in a repeatable way. Changes will need to be made in real time and
+                will need to communicate the intricacies of updates, test the validity and
+                functionality of changes, and maintain STAMP principles. Changes to concepts may
+                occur concurrently as terminology standards release updates and will need to be
+                tested and validated using the Tinkar authoring environment.</para>
+        </section>
+    </section>
+    <section>
         <title>References</title>
         <para>
             <orderedlist>
