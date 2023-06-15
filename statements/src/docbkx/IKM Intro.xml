@@ -322,13 +322,13 @@
             architecture is itself a major undertaking, but will require a deep, fundamental
             understanding and a detailed approach to address the following challenges. These
             challenges are not exhaustive and will evolve as our team continues our work and
-            research.</para>
+            findings.</para>
         <section>
             <title>Federal Regulation</title>
             <para>As with any new or emerging technology, a variety of Federal agencies will need to
                 play a major part in the implementation of an IKM system. Not only is their review
-                and approval of the proposed system a necessity before we can share this tool with
-                patient facing healthcare systems, like labs and hospitals, but the federal
+                and approval of the proposed system a necessity before we can implement this tool
+                with patient facing healthcare systems, like labs and hospitals, but the federal
                 government will also need to develop mandates and incentives to encourage the
                 private sector to participate and meet the minimum requirements needed to support
                 IKM. Due to the inherent complexity and wholistic approach to data, IKM will require
@@ -371,17 +371,17 @@
                 require changes to the user interface (UI) and user experience (UX) that standardize
                 data entry requirements, representation of data elements, and transmission of data
                 on the front and back end of healthcare and laboratory systems. These could be
-                extensive changes depending on the age and current data collection of the system.
+                extensive changes depending on the age and current data collection of the systems.
                 Before hospitals and laboratories commit both financial and personnel resources to
                 perform gap assessments, identify areas of improvement, implement changes, train
-                staff and users, and sustain updates, we will need to use statistical analysis and
-                evidence-based discussions to highlight the current problems with data and how these
-                problems directly impact or relate to each stakeholder on an individualized level.
-                We need to demonstrate how improvements to patient safety, optimization of data
-                collection, transmission, and querying, and the IKM environment with statistics
-                analysis will address these current state issues and use financial incentives to
-                encourage stakeholders to achieve the optimized future state we are working
-                towards.</para>
+                staff and users, and sustain updates, regulators and implementers will need to use
+                statistical analysis and evidence-based discussions to highlight the current
+                problems with data and how these problems directly impact or relate to each
+                stakeholder on an individualized level. Demonstrations showing how improvements to
+                patient safety, optimization of data collection, transmission, and querying, and the
+                IKM environment with statistics analysis will address these current state issues and
+                use financial incentives to encourage stakeholders to achieve the optimized future
+                state we are working towards.</para>
         </section>
         <section>
             <title>Coordination Across Standards</title>
