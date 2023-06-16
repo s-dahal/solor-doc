@@ -1,6 +1,22 @@
+@Library("titan-library") _
+
 pipeline {
     agent {
         label 'linux'
+    }
+    triggers {
+        //cron(cron_string)
+        gitlab(triggerOnPush: true, triggerOnMergeRequest: true, branchFilterType: 'All')
+    }
+    options {
+        // Set this to true if you want to clean workspace during the prep stage
+        skipDefaultCheckout(true)
+
+        // Console debug options
+        timestamps()
+        ansiColor('xterm')
+
+        gitLabConnection('gitlab-installer-connection')
     }
     tools {
         jdk 'default'
@@ -30,6 +46,7 @@ pipeline {
         }
         stage('Build PDF') {
             steps {
+                updateGitlabCommitStatus name: 'build', state: 'running'
                 sh """
                     mvn clean install
                 """
@@ -42,6 +59,7 @@ pipeline {
                 }
             }
             steps {
+                updateGitlabCommitStatus name: 'deploy', state: 'running'
                 configFileProvider([configFile(fileId: 'settings.xml', variable: 'MAVEN_SETTINGS')]) {
                     sh """
                         mvn deploy:deploy-file \
@@ -60,6 +78,28 @@ pipeline {
                     """
                 }
             }
+            post {
+                failure {
+                    updateGitlabCommitStatus name: 'deploy', state: 'failed'
+                }
+                success {
+                    updateGitlabCommitStatus name: 'deploy', state: 'success'
+                }
+                aborted {
+                    updateGitlabCommitStatus name: 'deploy', state: 'canceled'
+                }
+            }
+        }
+    }
+    post {
+        failure {
+            updateGitlabCommitStatus name: 'build', state: 'failed'
+        }
+        success {
+            updateGitlabCommitStatus name: 'build', state: 'success'
+        }
+        aborted {
+            updateGitlabCommitStatus name: 'build', state: 'canceled'
         }
     }
 }
