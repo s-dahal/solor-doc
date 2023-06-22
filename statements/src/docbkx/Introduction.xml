@@ -5,13 +5,30 @@
     <title>Introduction</title>
     <section>
         <title>Motivation</title>
-        <para>Motivation- describing interop issues, no good separation of concerns into the
-            different layers. If we handle terminology properly, take a step back to our overall
-            architecture </para>
+        <para>In today’s healthcare ecosystem, providers continually rely on data from an increasing
+            number of sources to make informed clinical decisions. While this data is a critical
+            component of providing patients with the best care possible, there are major challenges
+            with the accuracy, interoperability, and quality of data that is transmitted within and
+            between healthcare systems. Clinical terminology standards are one strategy to
+            standardize data collection and improve the quality of patient care with standardized
+            and repeatable guidelines for encoding health data, however these standards often lose
+            critical aspects of the original data capture when they are shared with other providers
+            and healthcare systems. To enhance the quality, interoperability and usability of
+            patient data, the health care industry requires a solution that harmonizes the different
+            clinical terminology standards and generates a common model that supports patient care,
+            data querying and analysis, public health, and policy making. In an ideal world with
+            interoperable data, data misrepresentations and errors that result in patient harm and
+            other inefficiencies in the health care ecosystem would be eliminated entirely. The
+            motivation for this work is to explore the pathway to unifying a patient’s care
+            experience through reliable and interoperable data that supports accurate and timely
+            clinical decision support that is solely prompted and driven by real-world data and
+            provides real-time assistance to clinicians.</para>
     </section>
     <section>
         <title>Overview of Book</title>
-        <para>mention presentation/learning series as supplementary material</para>
+        <para>This Inteagrated Knowledge Management (IKM) Book servers as an educational resource to
+            allow stakeholders to perform a deep dive into the IKM Architecture this team has worked
+            to develop. </para>
         <section>
             <title>Purpose of This Document</title>
             <para>This book will act as 1) a reference for understanding the complex, multi-layered,
@@ -65,8 +82,8 @@
                 resulting artifacts.</para>
             <para>The architecture presented in this book is inspired by core evolutionary design
                 principles called “Understandable, Reproducible, and Useful,” upon which SNOMED CT
-                development is still based. [24, 25] These criteria describe an approach for
-                improving data quality and increasing data integrity and agility: </para>
+                development is still based. [1, 2] These criteria describe an approach for improving
+                data quality and increasing data integrity and agility: </para>
             <itemizedlist>
                 <listitem>
                     <para><emphasis role="bold">Understandable: </emphasis>The content can be
@@ -114,7 +131,7 @@
                             semi-automated, and automated inspection of source-to-destination data
                             reviews, thereby helping ensure a sound data strategy intended to reduce
                             patient safety risk and improve data quality for analysis and tracking.
-                            [26]</para>
+                            [3]</para>
                     </listitem>
                 </itemizedlist></para>
         </section>
@@ -171,8 +188,11 @@
                 updates. If employed, this model can help the healthcare ecosystem to individually
                 resolve issues in their data within their layers, rather than the entire system,
                 leading to much more agile improvement</para>
-            <para><emphasis role="bold"><emphasis role="underline">INSERT PICTURE HERE "Figure 4:
-                        Knowledge Architecture"</emphasis></emphasis></para>
+            <para>Figure 1: PASTF Model  <inlinemediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/PASTF%20Model.png"/>
+                    </imageobject>
+                </inlinemediaobject></para>
             <para>Detailed descriptions of each layer will be spelled out in the chapters that
                 follow, but brief descriptions of each can be found below:</para>
             <para><emphasis role="bold">Foundational Architecture</emphasis> – The foundational
@@ -286,7 +306,7 @@
             <para>Health Information Technology (IT), or the use of computer hardware, software, or
                 infrastructure to record, store, protect, and retrieve clinical, administrative, or
                 financial information, has become a critically important form of organizing,
-                managing, analyzing, and exchanging patient health information. [1] Though first
+                managing, analyzing, and exchanging patient health information. [4] Though first
                 employed in the 1960s, Health IT entered the scene and obtained widespread adoption
                 in the early-1990s promising:</para>
             <itemizedlist>
@@ -308,7 +328,7 @@
                 </listitem>
                 <listitem>
                     <para>The ability to improve clinician/provider satisfaction and reduce burden
-                        and burnout. [2]</para>
+                        and burnout. [5]</para>
                 </listitem>
             </itemizedlist>
             <para>The most commonly known forms of Health IT systems, Electronic Health Records
@@ -321,10 +341,10 @@
             <para>Despite advancement in technologies like these, a Johns Hopkins study conducted in
                 2016 suggested that preventable medical errors, including those due to EHR errors,
                 accounted for approximately 250,000 patient deaths every year – making it the
-                third-leading cause of death in the United States. [3] When Crico, a medical
+                third-leading cause of death in the United States. [6] When Crico, a medical
                 professional liability organization, identified 147 cases of patient harm over five
                 years in which an EHR was identified as a contributing factor, a staggering 80
-                percent of these cases involved moderate or severe harm to the patient. [4] In
+                percent of these cases involved moderate or severe harm to the patient. [7] In
                 total, an estimated $61 million in direct payments and legal expenses resulted from
                 these cases, at an average cost of $415,000 per case.</para>
             <para>On the surface, exciting new technology has continued to advance in the healthcare
@@ -338,7 +358,7 @@
                 reduce clinician workload. The advancements in EHRs have had a great impact for
                 patients, but users continue to face complications due to the lack of standardized
                 data exchange. Unstandardized data stacking has made it difficult to interpret a
-                patient’s chart with accurate data reporting. [5] As far as healthcare technology
+                patient’s chart with accurate data reporting. [8] As far as healthcare technology
                 has come, the quality of existing technology platforms is limited through the
                 quality of encoded data – which is where the problem begins.</para>
         </section>
@@ -359,7 +379,7 @@
                 decisions, tracking patient outcomes, anticipating future health problems,
                 identifying deviations from expected trends, informing preventive and public health
                 measures, supporting clinical research, and providing a legal and historical record.
-                [6] </para>
+                [9] </para>
             <para>To provide context with an example, when a primary care provider records a
                 diabetes diagnosis in their local system, it is critical for that system to share
                 the data accurately and seamlessly to the pertinent pharmacy and laboratory systems.
@@ -433,7 +453,7 @@
                     measurements, images, drawings, and more. It is common practice for several
                     different observations of a singular patient to be made concurrently, the
                     observation of the same patient parameter to be made over the course of several
-                    points in time, or both. [6] It is also important to keep a record of the
+                    points in time, or both. [9] It is also important to keep a record of the
                     circumstances under which data are obtained, further adding to the complexity
                     and volume of data. For example, a simple blood pressure reading may factor if a
                     blood pressure reading is taken on the arm or the leg, whether the patient
@@ -448,13 +468,13 @@
                     practical efforts illustrates the challenges of using observational data for
                     safe patient care, comparative effectiveness research, and analyses for biases,
                     workflow differences, and issues with variations in data collection, such as
-                    invalid, inconsistent, and missing data. [7 – 22]</para>
+                    invalid, inconsistent, and missing data. [10 – 25]</para>
             </section>
         </section>
         <section>
             <title>A Brief Overview of Health Data Standards</title>
             <para>Standards are generally required when excessive variation creates inefficiencies
-                or impedes effectiveness. [6] There have been many valuable standards applied
+                or impedes effectiveness. [9] There have been many valuable standards applied
                 throughout history such as railroad tracks, telephones, WiFi, and financial
                 transactions. The broad goal of the application of standards to electronic health
                 data is unambiguous data exchange, or “interoperability” – the ability of two
@@ -508,8 +528,11 @@
                     While both sentences have the same sentence <emphasis role="italic"
                         >structure</emphasis>, their <emphasis role="italic">meanings</emphasis> are
                     completely different and only one makes logical sense.</para>
-                <para><emphasis role="bold"><emphasis role="underline">INSERT PICTURE HERE "Figure
-                            1: “Structural” Interoperability Example"</emphasis></emphasis></para>
+                <para><emphasis role="bold">Figrue 2: Structural Interoperability</emphasis><inlinemediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Structural%20Interoeprability.png"/>
+                        </imageobject>
+                    </inlinemediaobject></para>
                 <para><emphasis role="italic">Meaning</emphasis> is the ability of systems to share
                     the same interpretation of the data. Meaning interoperability ensures the
                     original meaning and intent of data is interpreted identically across all
@@ -523,8 +546,11 @@
                 <para>In the below example, the two sentences share a common <emphasis role="italic"
                         >meaning</emphasis>, however the sentence <emphasis role="italic"
                         >structure</emphasis> varies drastically. </para>
-                <para><emphasis role="bold"><emphasis role="underline">INSERT PICUTRE HERE "Figure
-                            2: “Meaning” Interoperability Example"</emphasis></emphasis></para>
+                <para><emphasis role="bold">Figure 3: Meaning Interoperability</emphasis><inlinemediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Meaning%20Interoperability.png"/>
+                        </imageobject>
+                    </inlinemediaobject></para>
                 <para>While Figure 1 and 2 intend to illustrate <emphasis role="italic"
                         >structure</emphasis> and <emphasis role="italic">meaning</emphasis> simply,
                     a more real-world example like, “the patient was given pain medication” and “the
@@ -552,7 +578,7 @@
                     standard for EHR-to- Reference Lab interfacing is the Health Level Seven (HL7)
                     Version 2.x (V2.x) standard. While other messaging standards exist and can be
                     used, the HL7 V2.x messaging standard, first released in 1987, is used in 95% of
-                    U.S. healthcare organizations and in more than 35 countries. [23] </para>
+                    U.S. healthcare organizations and in more than 35 countries. [26] </para>
                 <para>To illustrate how standards for <emphasis role="italic">structure
                         </emphasis>and<emphasis role="italic"> meaning</emphasis> may be currently
                     implemented, we will explore a scenario of a typical hospital-to-reference lab
@@ -579,14 +605,17 @@
                     represent <emphasis role="italic">meaning</emphasis> for clinical concepts. The
                     HL7 v2 observation data in Figure 3 shows blue text representing a local code,
                     and the observation data denoted in red represents a corresponding LOINC code. </para>
-                <para><emphasis role="bold"><emphasis role="underline">INSERT PICTURE HERE "Figure
-                            3: Erroneous LOINC Mapping"</emphasis></emphasis></para>
+                <para><emphasis role="bold">Figure 3: Erroneous LOINC Mapping</emphasis><inlinemediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Erroneous%20Loinc%20Mapping.png"/>
+                        </imageobject>
+                    </inlinemediaobject></para>
                 <para>The figure shows how the same local code can be erroneously mapped to
                     different LOINC codes and transmitted in a Lab Result message. In this case
                     example we see the same laboratory conducting two distinct tests and encoding
                     each test with a different LOINC code; however, both are mapped to the same
                     local code. This mock scenario highlights one example of the myriad of
-                    interoperability challenges faced in healthcare today. [2, 3] Successful
+                    interoperability challenges faced in healthcare today. [26] Successful
                     interoperability is dependent on either using universal code systems for data
                     capture or through mapping local content to a universal code system. Local code
                     systems serve the same function as universal coding systems such as SNOMED CT
@@ -617,9 +646,169 @@
                     represent clinical data alone in the current data structures. Both types of
                     models can be arbitrarily complex, and, at some point, semantics not represented
                     in one must be represented in the other if one is to achieve interoperability.
-                    [6]</para>
+                    [9]</para>
             </section>
         </section>
+    </section>
+    <section>
+        <title>References</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Spackman K, Guillermo R. Examining SNOMED from the perspective of formal
+                        ontological principles: Some preliminary analysis and observations. KR-MED
+                        2004 Proceedings 2004; 72-80. </para>
+                </listitem>
+                <listitem>
+                    <para>Campbell KE. Distributed development of a logic based controlled medical
+                        Terminology. PhD Dissertation, Stanford University, June 1997. </para>
+                </listitem>
+                <listitem>
+                    <para>Analysis Normal Form Informative Ballot. HL7 CIMI Work Group. Sept 2019.
+                        http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>What is Health IT? [Internet]. HealthIT.gov. [cited 2023Jan13]. Available
+                        from: <link xlink:href="https://www.healthit.gov/faq/what-health-it"
+                            >https://www.healthit.gov/faq/what-health-it. </link></para>
+                </listitem>
+                <listitem>
+                    <para>Net Health. The History of Electronic Health Records (ehrs) - updated
+                        [Internet]. Net Health. 2022 [cited 2023Jan13]. Available from: <link
+                            xlink:href="https://www.nethealth.com/the-history%20of-electronic-health-records-ehrs/"
+                            >https://www.nethealth.com/the-history
+                            of-electronic-health-records-ehrs/.</link></para>
+                </listitem>
+                <listitem>
+                    <para>McMains V. Johns Hopkins study suggests medical errors are third-leading
+                        cause of death in U.S. [Internet]. The Hub. 2016 [cited 2023Jan13].
+                        Available from: <link
+                            xlink:href="https://hub.jhu.edu/2016/05/03/medical-errors-third-leading-cause-of-death"
+                            >https://hub.jhu.edu/2016/05/03/medical-errors-third-leading-cause-of-death/.
+                        </link></para>
+                </listitem>
+                <listitem>
+                    <para>McGinley P. Malpractice claims analysis confirms risks in ehrs [Internet].
+                        Patient Safety &amp; Quality Healthcare. 2014 [cited 2023Jan13]. Available
+                        from: <link
+                            xlink:href="https://www.psqh.com/analysis/malpractice-claims-analysis-confirms-risks-in-ehrs/"
+                            >https://www.psqh.com/analysis/malpractice-claims-analysis-confirms-risks-in-ehrs/.</link></para>
+                </listitem>
+                <listitem>
+                    <para>Shortliffe EH, Cimino JJ, editors. Biomedical Informatics: Computer
+                        Applications in Health Care and Biomedicine. 5th ed. Cham, Switzerland:
+                        Springer Nature; 2021.</para>
+                </listitem>
+                <listitem>
+                    <para>How Doctors Feel about Electronic Health Records [presentation]. Stanford
+                        Medicine. National Physician Poll by The Harris Poll. [cited
+                        2023Jan13].</para>
+                </listitem>
+                <listitem>
+                    <para>Kahn MG, Brown JS, Chun AT, Davidson BN, Meeker D, Ryan PB, et al.
+                        Transparent reporting of data quality in Distributed Data Networks. eGEMs
+                        (Generating Evidence &amp; Methods to improve patient outcomes) [Internet].
+                        2015;3(1):7. Available from: <link
+                            xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4434997/"
+                            >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4434997/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Kahn MG, Callahan TJ, Barnard J, Bauck AE, Brown J, Davidson BN, Estiri H,
+                        Goerg C, Holve E, Johnson SG, Liaw ST, Hamilton-Lopez M, Meeker D, Ong TC,
+                        Ryan P, Shang N, Weiskopf NG, Weng C, Zozus MN, Schilling L. A Harmonized
+                        Data Quality Assessment Terminology and Framework for the Secondary Use of
+                        Electronic Health Record Data. EGEMS (Wash DC). 2016 Sep 11;4(1):1244. doi:
+                        10.13063/2327-9214.1244. PMID: 27713905; PMCID: PMC5051581.</para>
+                </listitem>
+                <listitem>
+                    <para>Cholan RA, Weiskopf NG, Rhoton DL, Colin NV, Ross RL, Marzullo MN,
+                        Sachdeva B, Dorr DA. Specifications of Clinical Quality Measures and Value
+                        Set Vocabularies Shift Over Time: A Study of Change through Implementation
+                        Differences. <emphasis role="italic">AMIA Annu Symp Proc. 2018 Apr
+                            16;2017:575-584. PMID: 29854122; PMCID: PMC5977609. </emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>Cholan RA, Weiskopf NG, Rhoton D, Sachdeva B, Colin NV, Martin SJ, Dorr
+                        DA. From Concepts and Codes to Healthcare Quality Measurement: Understanding
+                        Variations in Value Set Vocabularies for a Statin Therapy Clinical Quality
+                        Measure. <emphasis role="italic">EGEMS (Wash DC). 2017 Sep 4;5(1):19. doi:
+                            10.5334/egems.212. PMID: 29881739; PMCID: PMC5983064. </emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>Hemler JR, Hall JD, Cholan RA, Crabtree BF, Damschroder LJ, Solberg LI,
+                        Ono SS, Cohen DJ. Practice Facilitator Strategies for Addressing Electronic
+                        Health Record Data Challenges for Quality Improvement: EvidenceNOW.
+                            <emphasis role="italic">J Am Board Fam Med. 2018 May-Jun;31(3):398-409.
+                            doi: 10.3122/jabfm.2018.03.170274. PMID: 29743223; PMCID: PMC5972525.
+                        </emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>Colin NV, Cholan RA, Sachdeva B, Nealy BE, Parchman ML, Dorr DA.
+                        Understanding the Impact of Variations in Measurement Period Reporting for
+                        Electronic Clinical Quality Measures. EGEMS (Wash DC). 2018 Jul 19;6(1):17.
+                        doi: 10.5334/egems.235. PMID: 30094289; PMCID: PMC6078150. </para>
+                </listitem>
+                <listitem>
+                    <para>Hogan WR, Wagner MM. Accuracy of data in computer-based patient records.
+                            <emphasis role="italic">J Am Med Inform Assoc. 1997 Oct;4(5):342–55.
+                        </emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>Aronsky D, Haug PJ. Assessing the quality of clinical data in a
+                        computer-based record for calculating the pneumonia severity index. J Am Med
+                        Inform Assoc. 2000 Feb;7(1):55–65.</para>
+                </listitem>
+                <listitem>
+                    <para>Arts D, de Keizer N, Scheffer G-J, de Jonge E. Quality of data collected
+                        for severity of illness scores in the Dutch National Intensive Care
+                        Evaluation (NICE) registry. Intensive Care Med. 2002 May;28(5):656–9.</para>
+                </listitem>
+                <listitem>
+                    <para>Thiru K, Hassey A, Sullivan F. Systematic review of scope and quality of
+                        electronic patient record data in primary care. BMJ. 2003 May
+                        15;326(7398):1070. </para>
+                </listitem>
+                <listitem>
+                    <para>Hasan S, Padman R. Analyzing the effect of data quality on the accuracy of
+                        clinical decision support systems: a computer simulation approach. AMIA Annu
+                        Symp Proc. 2006:324–8. </para>
+                </listitem>
+                <listitem>
+                    <para>Cruz-Correia RJ, Rodrigues P, Freitas A, Almeida FC, Chen R, Costa-Pereira
+                        A. Data quality and integration issues in electronic health records. In:
+                        Hristidis V, editor. Information discovery on electronic health records.
+                        Chapman and Hall/CRC; 2009:55–95. </para>
+                </listitem>
+                <listitem>
+                    <para>Botsis T, Hartvigsen G, Chen F, Weng C. Secondary use of EHR: Data quality
+                        issues and informatics opportunities. AMIA Summits on Translational Science
+                        proceedings AMIA Summit on Translational Science. 2010;2010:1–5. </para>
+                </listitem>
+                <listitem>
+                    <para>Hripcsak G, Knirsch C, Zhou L, Wilcox A, Melton G. Bias associated with
+                        mining electronic health records. J Biomed Discov Collab. 2011;6:48–52.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Brown JS, Kahn M, Toh S. Data quality assessment for comparative
+                        effectiveness research in distributed data networks. Medical care.
+                        2013;51:S22–S29. </para>
+                </listitem>
+                <listitem>
+                    <para>Rusanov A, Weiskopf NG, Wang S, Weng C. Hidden in plain sight: bias
+                        towards sick patients when sampling patients with sufficient electronic
+                        health record data for research. BMC Med Inform Decis Mak. 2014;14:51.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Health Level Seven international [Internet]. HL7 Standards Product Brief -
+                        HL7 Version 2 Product Suite | HL7 International. [cited 2023Jan12].
+                        Available from:
+                        https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185</para>
+                </listitem>
+            </orderedlist>
+        </para>
     </section>
 </chapter>
 
