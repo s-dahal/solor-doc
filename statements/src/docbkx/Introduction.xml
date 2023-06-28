@@ -188,11 +188,7 @@
                 updates. If employed, this model can help the healthcare ecosystem to individually
                 resolve issues in their data within their layers, rather than the entire system,
                 leading to much more agile improvement</para>
-            <para>Figure 1: PASTF Model  <inlinemediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/PASTF%20Model.png"/>
-                    </imageobject>
-                </inlinemediaobject></para>
+            <para>Figure 1: PASTF Model </para>
             <para>Detailed descriptions of each layer will be spelled out in the chapters that
                 follow, but brief descriptions of each can be found below:</para>
             <para><emphasis role="bold">Foundational Architecture</emphasis> – The foundational
@@ -528,11 +524,7 @@
                     While both sentences have the same sentence <emphasis role="italic"
                         >structure</emphasis>, their <emphasis role="italic">meanings</emphasis> are
                     completely different and only one makes logical sense.</para>
-                <para><emphasis role="bold">Figrue 2: Structural Interoperability</emphasis><inlinemediaobject>
-                        <imageobject>
-                            <imagedata fileref="images/Structural%20Interoeprability.png"/>
-                        </imageobject>
-                    </inlinemediaobject></para>
+                <para><emphasis role="bold">Figure 2: Structural Interoperability</emphasis></para>
                 <para><emphasis role="italic">Meaning</emphasis> is the ability of systems to share
                     the same interpretation of the data. Meaning interoperability ensures the
                     original meaning and intent of data is interpreted identically across all
@@ -546,11 +538,7 @@
                 <para>In the below example, the two sentences share a common <emphasis role="italic"
                         >meaning</emphasis>, however the sentence <emphasis role="italic"
                         >structure</emphasis> varies drastically. </para>
-                <para><emphasis role="bold">Figure 3: Meaning Interoperability</emphasis><inlinemediaobject>
-                        <imageobject>
-                            <imagedata fileref="images/Meaning%20Interoperability.png"/>
-                        </imageobject>
-                    </inlinemediaobject></para>
+                <para><emphasis role="bold">Figure 3: Meaning Interoperability</emphasis></para>
                 <para>While Figure 1 and 2 intend to illustrate <emphasis role="italic"
                         >structure</emphasis> and <emphasis role="italic">meaning</emphasis> simply,
                     a more real-world example like, “the patient was given pain medication” and “the
@@ -605,11 +593,7 @@
                     represent <emphasis role="italic">meaning</emphasis> for clinical concepts. The
                     HL7 v2 observation data in Figure 3 shows blue text representing a local code,
                     and the observation data denoted in red represents a corresponding LOINC code. </para>
-                <para><emphasis role="bold">Figure 3: Erroneous LOINC Mapping</emphasis><inlinemediaobject>
-                        <imageobject>
-                            <imagedata fileref="images/Erroneous%20Loinc%20Mapping.png"/>
-                        </imageobject>
-                    </inlinemediaobject></para>
+                <para><emphasis role="bold">Figure 3: Erroneous LOINC Mapping</emphasis></para>
                 <para>The figure shows how the same local code can be erroneously mapped to
                     different LOINC codes and transmitted in a Lab Result message. In this case
                     example we see the same laboratory conducting two distinct tests and encoding
