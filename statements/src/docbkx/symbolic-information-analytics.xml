@@ -23,8 +23,8 @@
     </part>
     <xi:include href="Background.xml"/>
     <part>
-        <title>Integrated Knowledge Management (IKM) Introduction</title>
-        <xi:include href="IKM%20Intro.xml"/>
+        <title>Integrated Knowledge Management (IKM) </title>
+        <xi:include href="Integrated%20Knowledge%20Management.xml"/>
     </part>
     <part>
         <title>Foundational Architecture</title>

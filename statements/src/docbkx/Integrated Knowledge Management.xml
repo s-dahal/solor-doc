@@ -3,151 +3,144 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>IKM Overview</title>
+     <title>Integrated Knowledge Management (IKM) Overview</title>
     <section>
-        <title>Introduction</title>
-        <section>
-            <title>Motivation for Integrated Knowledge Management</title>
-            <para>Knowledge management is an important process organizations use to identify,
-                organize, and disseminate information and is providing greater value and insights
-                through data with the emergence of technologies and advanced analytics such as AI
-                and machine learning. Individuals and organizations alike are continuously
-                generating data which may sit in siloed databases, but, with the appropriate tools,
-                can be aggregated across platforms, analyzed, and utilized. However, the flow of
-                data through systems can lead to a myriad of issues including loss of meaning,
-                inability to aggregate data, misinterpretation, and more. Achieving coordinated and
-                standardized ways to integrate data across systems is an important tenant of
-                integrated knowledge management (IKM). </para>
-            <para>These issues are no different for healthcare and laboratory data. The introduction
-                of the clinical information systems, including electronic health record (EHR)
-                systems and laboratory information systems, in the 1960’s revolutionized the way an
-                individual’s health data was stored. Health data went from static data recorded in
-                paper records to dynamic, encoded knowledge stored in informational systems and
-                introduced the ability to aggregate and examine these data points to generate new
-                ideas and solve problems. Removing ourselves from the idealized state of full
-                knowledge integration, the current landscape is composed of a range of EHR
-                platforms, laboratory information systems (LIS), users, standards organizations, and
-                agencies, all of which employ their own methods for collecting, recording, and using
-                healthcare data. The healthcare system’s transformation into a digitalized health
-                information system was quickly adopted but several core high reliability
-                organization (HRO) principles were excluded, including ensuring the system was
-                interoperable, data was of the highest quality, and patient safety was prioritized. </para>
-            <para>Several organizations have emerged to address these issues through industry coding
-                standards and implementation guidance. However, these have fallen short of ensuring
-                high quality data with a common representation or standardization across the
-                healthcare ecosystem. Standards including Systematized Nomenclature of Medicine –
-                Clinical Terms (SNOMED CT), Logical Observations Identifiers Names and Codes
-                (LOINC), RxNorm (National Library of Medicine’s codification of the U.S.
-                pharmacopeia) and others exist to address the variation in healthcare data and
-                resulting inefficiencies by working with terminology, standards, and meaning. Each
-                organization follows a set of rules that govern the standards and add structure,
-                however, even the best-meaning user may interpret the use of standards differently,
-                highlighting the need to move beyond the reliance on standards alone. The
-                integration of the above-mentioned organizations, users, and standards are important
-                to create an interoperable and high-quality healthcare system. </para>
-            <para>Currently, implementers must know how to work with all the existing standards and
-                be familiar with their respective rules and formats. Through this body of work, we
-                are advancing a reference demonstration of an IKM environment that can be used by
-                various stakeholders in the laboratory ecosystem to easily view, manage, and
-                integrate existing knowledge standards (e.g., SNOMED, LOINC) in a singular location,
-                ultimately allowing users to identify relationships between disparate knowledge
-                sets. This work will help set the foundation for a common model that would
-                eventually help promote collaboration across standards-development organizations,
-                vendors, and provider-organizations, improving interoperability of laboratory data
-                across the entire ecosystem. Through IKM, all standards work together under one data
-                model with tooling to work across standards and through redundancies. IKM can
-                benefit healthcare and society by improving patient outcomes, allowing meaningful
-                data analyses, and increasing interoperability. </para>
-        </section>
-        <section>
-            <title>The Problem Integrated Knowledge Management Addresses </title>
-            <para>In healthcare, organizations that help achieve standardized health data are
-                referred to as Standards Development Organizations (SDOs). SDOs exist in every
-                industry, but in health Information Technology (IT) the following are key examples: <informaltable>
-                    <tgroup cols="2">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <tbody>
-                            <row>
-                                <entry>SNOMED CT<superscript>®</superscript>:</entry>
-                                <entry>A national standard, comprehensive and precise multilingual
-                                    health terminology globally [2]</entry>
-                            </row>
-                            <row>
-                                <entry>LOINC</entry>
-                                <entry>Logical Observation Identifiers Names and Codes terminology:
-                                    facilitate the exchange and pooling of clinical or laboratory
-                                    results for clinical care, outcomes management, claims
-                                    attachment, and research by providing a set of universal codes
-                                    and names. LOINC codes allow users to merge clinical results
-                                    from many sources into one database for patient care, clinical
-                                    research, or management [3]</entry>
-                            </row>
-                            <row>
-                                <entry>RxNorm</entry>
-                                <entry>Provides normalized names for clinical drugs and links its
-                                    names to many of the drug vocabularies commonly used in pharmacy
-                                    management and drug interaction software [4] </entry>
-                            </row>
-                            <row>
-                                <entry>Fast Healthcare Interoperability Resources (HL7
-                                    FHIR):</entry>
-                                <entry>API focused standard that enables electronic health data to
-                                    be quickly and efficiently exchanged [5]</entry>
-                            </row>
-                        </tbody>
-                    </tgroup>
-                </informaltable></para>
-            <para>The Office of the National Coordinator for Health Information Technology (ONC)
-                currently oversees and promotes SDOs and supports the adoption and application of
-                health data standards in the U.S. healthcare space. The structure and meaning of
-                data must be maintained to achieve full data integrity and a truly interoperable
-                system. FHIR is an example of a standard that works to maintain the structure of
-                data as it flows through systems, while terminology organizations including SNOMED
-                CT, RxNorm, and LOINC work to maintain the meaning of data. With the many existing
-                SDOs and agencies pushing their adoption, issues such as overlapping standards
-                coding standards, loss of meaning, and partial representation continue to exist. </para>
-            <para>While medical terminology standards exist, the way they record, manage, and
-                represent terminologies differs, leading to redundant and duplicative ways to
-                reference the same concept. This leads to variations in clinical data exchange
-                across the ecosystem as organizations use inconsistent and varied concept
-                representation. Interoperability specifications aim to force these terminologies to
-                adhere to predefined concepts, code systems, and reusable value sets. Although there
-                are standardized codes and formats, there are many ways to use these standards. </para>
-            <para>To address the current issues with disparate standards, a common model and
-                integrated knowledge management capabilities are needed to support the integration
-                and management of clinical terminology and local concepts to support increased data
-                quality and interoperable clinical information. [1] IKM and implementation of a
-                common model can support the integration of disparate standards, provide version
-                control, and support extensions that otherwise do not exist. A common model for
-                knowledge standards addresses the differences in management and structure across
-                disparate terminology standards, and local concepts and code lists/value sets. Built
-                off an architectural design principle, Separation of Concerns (SoC), where a system
-                can be divided into sections, and each section can be addressed irrespective of
-                other sections and allowed to evolve as needed. In this knowledge architecture, the
-                foundational layer provides the common elements of interoperability including object
-                identity, versioning, modularity, and knowledge representation. In this foundational
-                architecture layer, we find the shared module system where version and configuration
-                management provide the foundation for interoperability and the common model. </para>
-            <para>A common model will unify disparate standards and address the following points
-                when designing an interoperable healthcare system:</para>
-            <orderedlist>
-                <listitem>
-                    <para><emphasis role="bold">Version Control</emphasis>: changes to published
-                        terminology artifacts will be documented and historic versions maintained if
-                        the need for rollback arises. </para>
-                </listitem>
-                <listitem>
-                    <para><emphasis role="bold">Extensions</emphasis>: Improved processes around
-                        extensions to terminology that conform to the requirements of the standards
-                        the extension is based on. The ability to implement terminology extensions
-                        and support additional content</para>
-                </listitem>
-            </orderedlist>
-        </section>
+        <title>Motivation for IKM</title>
+        <para>Knowledge management is an important process organizations use to identify, organize,
+            and disseminate information and is providing greater value and insights through data
+            with the emergence of technologies and advanced analytics such as AI and machine
+            learning. Individuals and organizations alike are continuously generating data which may
+            sit in siloed databases, but, with the appropriate tools, can be aggregated across
+            platforms, analyzed, and utilized. However, the flow of data through systems can lead to
+            a myriad of issues including loss of meaning, inability to aggregate data,
+            misinterpretation, and more. Achieving coordinated and standardized ways to integrate
+            data across systems is an important tenant of integrated knowledge management (IKM). </para>
+        <para>These issues are no different for healthcare and laboratory data. The introduction of
+            the clinical information systems, including electronic health record (EHR) systems and
+            laboratory information systems, in the 1960’s revolutionized the way an individual’s
+            health data was stored. Health data went from static data recorded in paper records to
+            dynamic, encoded knowledge stored in informational systems and introduced the ability to
+            aggregate and examine these data points to generate new ideas and solve problems.
+            Removing ourselves from the idealized state of full knowledge integration, the current
+            landscape is composed of a range of EHR platforms, laboratory information systems (LIS),
+            users, standards organizations, and agencies, all of which employ their own methods for
+            collecting, recording, and using healthcare data. The healthcare system’s transformation
+            into a digitalized health information system was quickly adopted but several core high
+            reliability organization (HRO) principles were excluded, including ensuring the system
+            was interoperable, data was of the highest quality, and patient safety was prioritized. </para>
+        <para>Several organizations have emerged to address these issues through industry coding
+            standards and implementation guidance. However, these have fallen short of ensuring high
+            quality data with a common representation or standardization across the healthcare
+            ecosystem. Standards including Systematized Nomenclature of Medicine – Clinical Terms
+            (SNOMED CT), Logical Observations Identifiers Names and Codes (LOINC), RxNorm (National
+            Library of Medicine’s codification of the U.S. pharmacopeia) and others exist to address
+            the variation in healthcare data and resulting inefficiencies by working with
+            terminology, standards, and meaning. Each organization follows a set of rules that
+            govern the standards and add structure, however, even the best-meaning user may
+            interpret the use of standards differently, highlighting the need to move beyond the
+            reliance on standards alone. The integration of the above-mentioned organizations,
+            users, and standards are important to create an interoperable and high-quality
+            healthcare system. </para>
+        <para>Currently, implementers must know how to work with all the existing standards and be
+            familiar with their respective rules and formats. Through this body of work, we are
+            advancing a reference demonstration of an IKM environment that can be used by various
+            stakeholders in the laboratory ecosystem to easily view, manage, and integrate existing
+            knowledge standards (e.g., SNOMED, LOINC) in a singular location, ultimately allowing
+            users to identify relationships between disparate knowledge sets. This work will help
+            set the foundation for a common model that would eventually help promote collaboration
+            across standards-development organizations, vendors, and provider-organizations,
+            improving interoperability of laboratory data across the entire ecosystem. Through IKM,
+            all standards work together under one data model with tooling to work across standards
+            and through redundancies. IKM can benefit healthcare and society by improving patient
+            outcomes, allowing meaningful data analyses, and increasing interoperability. </para>
     </section>
     <section>
-        <title>Goals of Integrated Knowledge Management</title>
+        <title>The Problem IKM Addresses </title>
+        <para>In healthcare, organizations that help achieve standardized health data are referred
+            to as Standards Development Organizations (SDOs). SDOs exist in every industry, but in
+            health Information Technology (IT) the following are key examples: <informaltable>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry>SNOMED CT<superscript>®</superscript>:</entry>
+                            <entry>A national standard, comprehensive and precise multilingual
+                                health terminology globally [2]</entry>
+                        </row>
+                        <row>
+                            <entry>LOINC</entry>
+                            <entry>Logical Observation Identifiers Names and Codes terminology:
+                                facilitate the exchange and pooling of clinical or laboratory
+                                results for clinical care, outcomes management, claims attachment,
+                                and research by providing a set of universal codes and names. LOINC
+                                codes allow users to merge clinical results from many sources into
+                                one database for patient care, clinical research, or management
+                                [3]</entry>
+                        </row>
+                        <row>
+                            <entry>RxNorm</entry>
+                            <entry>Provides normalized names for clinical drugs and links its names
+                                to many of the drug vocabularies commonly used in pharmacy
+                                management and drug interaction software [4] </entry>
+                        </row>
+                        <row>
+                            <entry>Fast Healthcare Interoperability Resources (HL7 FHIR):</entry>
+                            <entry>API focused standard that enables electronic health data to be
+                                quickly and efficiently exchanged [5]</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable></para>
+        <para>The Office of the National Coordinator for Health Information Technology (ONC)
+            currently oversees and promotes SDOs and supports the adoption and application of health
+            data standards in the U.S. healthcare space. The structure and meaning of data must be
+            maintained to achieve full data integrity and a truly interoperable system. FHIR is an
+            example of a standard that works to maintain the structure of data as it flows through
+            systems, while terminology organizations including SNOMED CT, RxNorm, and LOINC work to
+            maintain the meaning of data. With the many existing SDOs and agencies pushing their
+            adoption, issues such as overlapping standards coding standards, loss of meaning, and
+            partial representation continue to exist. </para>
+        <para>While medical terminology standards exist, the way they record, manage, and represent
+            terminologies differs, leading to redundant and duplicative ways to reference the same
+            concept. This leads to variations in clinical data exchange across the ecosystem as
+            organizations use inconsistent and varied concept representation. Interoperability
+            specifications aim to force these terminologies to adhere to predefined concepts, code
+            systems, and reusable value sets. Although there are standardized codes and formats,
+            there are many ways to use these standards. </para>
+        <para>To address the current issues with disparate standards, a common model and integrated
+            knowledge management capabilities are needed to support the integration and management
+            of clinical terminology and local concepts to support increased data quality and
+            interoperable clinical information. [1] IKM and implementation of a common model can
+            support the integration of disparate standards, provide version control, and support
+            extensions that otherwise do not exist. A common model for knowledge standards addresses
+            the differences in management and structure across disparate terminology standards, and
+            local concepts and code lists/value sets. Built off an architectural design principle,
+            Separation of Concerns (SoC), where a system can be divided into sections, and each
+            section can be addressed irrespective of other sections and allowed to evolve as needed.
+            In this knowledge architecture, the foundational layer provides the common elements of
+            interoperability including object identity, versioning, modularity, and knowledge
+            representation. In this foundational architecture layer, we find the shared module
+            system where version and configuration management provide the foundation for
+            interoperability and the common model. </para>
+        <para>A common model will unify disparate standards and address the following points when
+            designing an interoperable healthcare system:</para>
+        <orderedlist>
+            <listitem>
+                <para><emphasis role="bold">Version Control</emphasis>: changes to published
+                    terminology artifacts will be documented and historic versions maintained if the
+                    need for rollback arises. </para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Extensions</emphasis>: Improved processes around
+                    extensions to terminology that conform to the requirements of the standards the
+                    extension is based on. The ability to implement terminology extensions and
+                    support additional content</para>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section>
+        <title>Goals of IKM</title>
         <para>One of the goals of this body of work is to develop both a common model and the
             necessary tooling to support the implementation of the common model and IKM
             capabilities. Our work aims to improve patient care and safety through interoperable,
