@@ -47,10 +47,6 @@
     </part>
     <xi:include href="Procedural-Knowledge.xml"/>
     <part>
-        <title>Enabling High Reliability Organizations (HROs) and Safety Systems</title>
-    </part>
-    <xi:include href="Enabling-HRO.xml"/>
-    <part>
         <title>Use Cases</title>
         <xi:include href="Use-Case-Chapter.xml"/>
     </part>
