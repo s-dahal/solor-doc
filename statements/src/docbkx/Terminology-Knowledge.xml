@@ -953,6 +953,501 @@
                     terms.</para>
             </section>
         </section>
+        <section>
+            <title>RxNorm® Existing Limitations</title>
+            <section>
+                <title>Lack of Description Logics</title>
+                <para>RxNorm lack of Description Logics formalism use, as proposed by SOLOR [1],
+                    limits its ability to use logic reasoners for inferencing. This limits RxNorms
+                    ability to find new patterns, relationships and identification of equivalence.
+                </para>
+            </section>
+            <section>
+                <title>Concerns Over Concept Permanence</title>
+                <para>While RxNorm CUIs are never reused as per best practice, the possibility
+                    exists that RxNorm atoms can change with the potential to change the definition.
+                    Furthermore, RxNorm CUIs that are no longer in RXNCONSO are moved to a
+                    cumulative archive called RXNATOMARCHIVE.</para>
+            </section>
+            <section>
+                <title>Formal Concept Definition</title>
+                <para>While RxNorm has ‘defined ingredients’ [27], historically it has lacked the
+                    ability computational ability to define concepts by relationships, thereby
+                    allowing inferencing. However, recent efforts by Bona et al.[13] have
+                    successfully created an OWL file to implement and define the classes necessary
+                    to model RxNorm and NDC concepts.</para>
+            </section>
+        </section>
+        <section>
+            <title>Future Harmonization of Standards</title>
+            <para>In the U.S., SNOMED and RxNorm are harmonized but LOINC® has not joined the
+                harmonization. There have been some partnerships and independently funded programs
+                to help make LOINC® more compatible and useful within the ecosystem of controlled
+                medical terminologies that converge on a model of meaning that can be shared.
+                Further integration has been proposed but will require additional resources to bring
+                these terminologies closer together. However, the collaboration between SNOMED CT®
+                and LOINC® has been renewed. While the idea is to create a LOINC® extension of
+                SNOMED CT® thereby leveraging the strengths of both, in particular SNOMED CT®
+                polyhierarchal structure and inferencing capabilities, leading to greater
+                compatibility and interoperability, integration of SNOMED CT, LOINC®, and RxNorm is
+                non-trivial as these terminologies use different formalisms and tools for their
+                representation. [28] Various terminologies have different semantics, models, release
+                cycles, and versioning mechanisms [1]. While there is recognition that terminologies
+                are not standardized at the exchange level, there is no consensus about harmonized
+                next steps to solve the challenges.</para>
+            <para>Efforts such as SHIELD (Systemic Harmonization and Interoperability Enhancement
+                for Laboratory Data) sponsored in part by the U.S. FDA sets strategies to transform
+                the current U.S. laboratory ecosystem into an interoperable system, including the
+                goals of harmonizing industry coding standards such as LOINC® to create a reference
+                knowledge base where any user of laboratory data can obtain more information about
+                the performed test in question. </para>
+        </section>
+    </section>
+    <section>
+        <title>Terminology Knowledge Example</title>
+        <para>In this section, we will be discussing a use case using questionnaires and
+            responses.</para>
+        <section>
+            <title>Terminology Knowledge Problem Statement</title>
+            <para>As a real-world use case, we focused on improving the diagnosis of emerging acute
+                chronic infectious diseases, initially focusing on Long COVID as an example. There
+                are numerous areas within clinical workflows for COVID-19 exposure and Long COVID
+                diagnosis that are open to improvements that will ultimately help provide safe and
+                effective patient care. There is a need to determine clear prioritization principles
+                around focus areas for data capture within these COVID-19 workflows. To date, Long
+                COVID has been primarily a diagnosis of exclusion, meaning that it is often only
+                diagnosed after all other conditions are eliminated as a possible cause of symptoms.
+                Clinicians need to make quick decisions based on objective and subjective
+                observations to determine if a patient has signs and symptoms compatible with Long
+                COVID and whether the patient should be admitted to the hospital. Clinicians are
+                encouraged to leverage technology, virtual visits, and other Health Information
+                Technology (IT)-generated clinical data to assist with decision making and
+                information sharing. Unfortunately, electronic clinical data is plagued by data
+                quality challenges, including variation in how data elements are encoded by
+                terminology standards, and stored in clinical information models. These challenges
+                can cause inefficiencies in how clinical data elements are identified, retrieved,
+                analyzed, and operationalized into workflows at the point-of-care. </para>
+            <para>In the current workflows for COVID-19 and Long COVID, clinicians are encouraged to
+                rely on electronic clinical data to determine which patients should be prioritized
+                for being tested, hospitalized, and/or isolated. Failure to include or exclude
+                patients’ screening, testing, and treatment could lead to life-threatening
+                situations for patients and could impact the overall trajectory of the outbreak at a
+                population-level. Overall, the ability to measure and improve healthcare outcomes
+                relies on consistent, high-quality electronic data that is aggregated from a variety
+                of Health IT systems across numerous medical centers and healthcare facilities.
+                Clinicians need to be able to easily access and fully trust the electronic data they
+                are using to make determinations at the point-of-care, key components of High
+                Reliability Organizations and Learning Health Systems. </para>
+            <para>Using ANF as a standardized statement model to streamline analysis could
+                potentially lead to improved and earlier Long COVID diagnoses. This body of work
+                aims to focus on workflow areas of data as it is captured for Long COVID – perhaps
+                iPad data entry, EHR collection of signs and symptoms, emergency warning signs,
+                patient-reported data, etc. – to understand how the collection of data elements in a
+                consistent and high-quality manner, and the subsequent data analysis, fit into the
+                overall goal of achieving coordinated, national and highly-reliable care.</para>
+        </section>
+        <section>
+            <title>Terminology Knowledge Demonstration Objectives</title>
+            <para>The objective of this work is to document data collection methods and statement
+                model standards to demonstrate the importance of an interoperable data system and
+                downstream analytical scenarios through a use case for Long COVID as an example of
+                an emerging acute chronic infectious disease. We aim to highlight how Analysis
+                Normal Form (ANF) can be used to standardize the representation of equivalent
+                concepts associated with data capture, storage and aggregation within the Long COVID
+                workflow. This work utilized four main aims to demonstrate how ANF-thinking could
+                improve use case outcomes and reduce the clinical burden on data consumers during
+                data collection and aggregation:</para>
+            <para><emphasis role="italic">Aim 1: Review Workflow Schematic for Emerging Acute
+                    Chronic Infectious Diseases, specifically focused on Data Capture Elements and
+                    Long COVID Value Sets</emphasis></para>
+            <para><emphasis role="italic">Aim 2: Draft Potential Questionnaires to Standardize Use
+                    Case Data Acquisition </emphasis></para>
+            <para><emphasis role="italic">Aim 3: Outline Variability in Statement
+                    Representations</emphasis></para>
+            <para><emphasis role="italic">Aim 4: Demonstrate ANF Ability to Standardize Terminology
+                    and Capture Critical Data</emphasis></para>
+        </section>
+        <section>
+            <title>Terminology Knowledge Methods</title>
+            <para><emphasis>Aim 1: Review Workflow Schematic for Emerging Acute Chronic Infectious
+                    Diseases, specifically focused on Data Capture Elements and Long COVID Value
+                    Sets</emphasis>. In support of Task 3.2.1, our team documented a generalized
+                workflow and use case schematic for a patient’s journey from COVID-19 exposure to
+                Long COVID diagnosis. We focused on decision points related to data capture of signs
+                and symptoms related to COVID-19 and outlined key terminology and clinical
+                information modeling considerations within the workflow artifacts that were
+                developed. </para>
+            <para>The team then gathered and reviewed value sets from the National Institute of
+                Health’s (NIH) National Library of Medicine (NLM) Value Set Authority Center (VSAC)
+                to identify common concepts and data elements that would need to be captured to
+                support a Long COVID diagnosis. Each team member was assigned a value set and
+                identified common and well documented concepts from their respective set, including
+                signs and symptoms, laboratory tests, laboratory test results, potential and
+                confirmed exposure, and suspected and confirmed infection. The concepts were
+                organized by value set and documented in a table.</para>
+            <para><emphasis>Aim 2: Draft Potential Questionnaires to Standardize Use Case Data
+                    Acquisition</emphasis>. Long COVID is a poorly understood condition where
+                patients experience COVID-19 symptoms long past the expected symptomatic period and
+                whose symptoms, test results, and timelines can vary drastically between patients.
+                The team developed sample questionnaires based on the VSAC value sets to collect
+                additional data that patients or providers could enter into a Clinical Input Form or
+                questionnaire. Traditional, current-state questionnaires were developed for the Long
+                COVID use case to demonstrate how users may struggle to identify the optimal
+                selections to document certain symptoms and may result in inconsistent and/or
+                duplicative clinical data. The team then worked to develop an improved questionnaire
+                that removes redundant and vague concepts and forces more granular and detailed
+                selections to highlight ways to enhance the quality, accuracy, and interoperability
+                of collected data.</para>
+            <para><emphasis>Aim 3: Outline Variability in Statement Representations</emphasis>.
+                Current terminology standards vary in the way they represent and code many data
+                points that can be acquired through patient questionnaires. Critical information
+                regarding severity, site, associated concepts, and data elements can be spread
+                across the respective fields, incorporated directly into the concept code, or a
+                combination of the two. The table aims to highlight the need for a normalized way to
+                represent concepts to prevent loss of critical data and meaning as it is transformed
+                and transmitted within and between systems. Improving the data collection, encoding,
+                and storage of both present and absent concepts is essential in the effort to
+                achieve lossless and interoperable data.</para>
+            <para><emphasis>Aim 4: Demonstrate ANF Ability to Standardize Terminology and Capture
+                    Critical Data</emphasis>. This paper ultimately aims to improve the acquisition,
+                storage, and use of data across a variety of clinical situations, with the Long
+                COVID use case as an example. We propose ANF as the tool to standardize and
+                normalize the way critical data concepts from patient questionnaires are represented
+                before transmitting to other systems for secondary use. The same concepts that were
+                shown to have varying representations across terminology standards were modeled
+                using a tabular ANF representation to demonstrate how ANF captures the same or more
+                detail as other standards and normalizes the formatting of equivalent concepts
+                across terminologies. The ANF table captures key data elements for the concept of
+                loss of sense of smell since onset of COVID-19 symptoms. The concept ID, author, and
+                topic are clearly documented along with timing of onset and recording. Not only is
+                the concept itself represented in a normalized way that captures all pertinent
+                values and details, but other normalized concepts, like linking to the beginning of
+                symptom onset can be linked as associated clinical statements that add additional
+                value and context.</para>
+        </section>
+        <section>
+            <title>Terminology Knowledge Example Results</title>
+            <para><emphasis>Aim 1: Review Workflow Schematic for Emerging Acute Chronic Infectious
+                    Diseases, specifically focused on Data Capture Elements and Long COVID Value
+                    Sets. </emphasis>The team downloaded and reviewed the COVID-19 VSAC value sets
+                outlined in Table 2. The team used these value sets to extract an initial list of
+                generalized clinical concepts associated with a COVID-19 diagnosis that could
+                potentially contribute to a Long COVID diagnosis. [29]</para>
+            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+            <para>INSERT VSAC VALUE SET TABLE</para><?oxy_custom_end?>
+            <para><emphasis>Aim 2: Draft Potential Questionnaires to Standardize Use Case Data
+                    Acquisition</emphasis>. An initial questionnaire was developed for the
+                generalized concepts extracted from the COVID-19 VSAC value sets that poses a simple
+                yes or no question for each of the concepts that could potentially aid in a Long
+                COVID diagnosis. This deliverable focuses on potential questionnaires for ‘Signs and
+                Symptoms’ and ‘Non-Specific Respiratory Diagnoses’, outlined in Table 3 and 4
+                respectively, but includes additional mock questionnaires for Exposure, Infection,
+                Lab Test, and Lab Test Results in the Appendix (Table 8 - 11). Certain
+                questionnaires combine information from multiple, related value sets, such as using
+                C19HCC SARSCoV2 Exposure and COVID19 Potential Exposure to create the Exposure
+                Questionnaires in Table 8. [2]</para>
+            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+            <para>INSERT SIGNS AND SYMPTOMS TABLE<?oxy_custom_end?></para>
+            <para>While the initial version of the questionnaire on the left can collect important
+                information and data, the format was improved to the version on the right to reduce
+                redundancy, improve clarity, and collect more accurate and granular detail. The
+                improved questionnaire forces patients or physicians completing the survey to select
+                more granular symptoms and reduces ambiguity. Rather than allowing for individuals
+                to select ‘cough’ and ‘dry cough’ or ‘productive cough’, the improved questionnaire
+                forces a more accurate selection of either ‘dry cough’ or ‘productive cough’ to
+                reduce redundant data. Additionally, the improved questionnaire utilizes
+                user-friendly definitions like rapid breathing rather than highly technical
+                terminology like ‘tachypnea’ to reduce duplicative symptoms and support accurate
+                data collection from a wider audience. The value sets and questionnaires will need
+                to be updated as symptoms are more comprehensively understood, and as new symptoms
+                are identified. </para>
+            <para>The team developed additional questionnaires for exposure, infection, laboratory
+                test, laboratory test results in the Appendix (Table 8 - 11), and for non-specific
+                respiratory diagnoses below in Table 4. The diagnoses questionnaires continue to
+                improve data quality by reducing duplicative selections and improving granularity by
+                forcing an Upper or Lower ‘Viral Respiratory Tract Infection’ rather than allowing
+                the selection of both Upper or Lower Viral Respiratory Tract Infection and “Viral
+                Respiratory Tract Infection’. These additional questionnaires demonstrate how
+                improvements can be made to data collection across a variety of areas associated
+                with patient care and can be applied to other emerging acute and chronic infectious
+                diseases.</para>
+            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+            <para>INSERT IMPROVED QUESTIONNAIRE TABLE<?oxy_custom_end?></para>
+            <para><emphasis>Aim 3: Outline Variability in Statement Representations</emphasis>.
+                Building upon the concepts found in the VSAC value sets, the team developed tabular
+                representations of certain symptoms to display the variability in the way concepts
+                could be represented and coded. Table 5 depicts the symptom of ‘Fever Greater Than
+                100.4 Fahrenheit with Chills’ across three example terminology standards as well as
+                the null value of a normal body temperature. After reviewing the table, one could
+                conclude that the first three examples are semantically the same. Each describe a
+                condition of fever greater than 100.4 Fahrenheit, but critical information is spread
+                out across the severity, site, and code fields depending on how the respective
+                terminology standard represents the condition. This variability leads to sub-optimal
+                data capture that can hinder data querying, data use, and the ability to identify
+                semantically equivalent concepts.</para>
+            <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT FEVER
+                REPRESENTATION TABLE<?oxy_custom_end?></para>
+            <para><emphasis>Aim 4: Demonstrate ANF Ability to Standardize Terminology and Capture
+                    Critical Data</emphasis>. The team demonstrated the value of ANF by developing a
+                tabular ANF representation for loss of sense of smell since onset of COVID-19
+                symptoms. ANF provides a singular, normalized way to represent concepts from
+                different terminology standards by restricting various data elements to certain
+                fields, like the severity of a particular symptom in the results section.
+                Standardizing how data elements are reported facilitates the identification of
+                equivalent terminology and improves the quality and interoperability of data. In the
+                example below, ANF captures all the pertinent information including the symptom
+                itself, option for the severity or numerical value of an observation, and the method
+                of the observation, as well as additional information like the timeframe when a
+                symptom first occurred. This additional information is an associated term that adds
+                value and context to a measurement. </para>
+            <para>While documenting symptoms that are marked as present on the improved
+                questionnaire in a normalized format is essential, it is also important to represent
+                signs and symptoms that are absent in a patient. Corresponding present and absent
+                concepts for a certain symptom do not always exist across terminology standards, but
+                ANF is able to represent the absence of a symptom using a numerical countable
+                quantity, ensuring relevant and pertinent information is not lost.</para>
+            <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT ANF
+                ANSOMNIA TABLE AND ASSOCIATED TERMS TABLE<?oxy_custom_end?></para>
+        </section>
+        <section>
+            <title>Recommendations to Address Terminology Issues</title>
+            <para>This deliverable aims to highlight some of the current shortcomings with the way
+                data is collected and represented. We propose the following recommendations for data
+                collection via patient questionnaires to reduce duplicative and vague data
+                collection, facilitate secondary data usage, and improve data
+                interoperability:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Restrict data entry and collection with pre-populated patient
+                        questionnaires based on established concepts from the appropriate value sets
+                        to standardize data collection. This will work when questionnaire designers
+                        and data consumers know the data that they are trying to capture. In the
+                        context of a condition where the signs and symptoms are less well defined,
+                        or have not yet been defined, this methodology may inhibit knowledge
+                        discovery and should be supported by integrated knowledge management
+                        constructs that facilitate data agility and regular updates to value sets.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Use detailed concepts to force granular selections that reduce ambiguity
+                        or the need for duplicative data in pre-populated patient
+                        questionnaires.</para>
+                    <para>Questionnaires should not allow the selection of just ‘<emphasis
+                            role="italic">Cough’</emphasis> and should prompt patients or providers
+                        to select if it is a ‘<emphasis role="italic">Productive Cough</emphasis>’
+                        or ‘<emphasis role="italic">Dry Cough</emphasis>’. </para>
+                    <para>Questionnaires should not allow the selection of ‘<emphasis role="italic"
+                            >Viral Respiratory Infection</emphasis>’ and should prompt patients or
+                        providers to select a body site or location like ‘<emphasis role="italic"
+                            >Upper Viral Respiratory Infection</emphasis>’ or ‘<emphasis
+                            role="italic">Lower Viral Respiratory Infection</emphasis>’.</para>
+                </listitem>
+                <listitem>
+                    <para>Group concepts by critical information like ‘<emphasis role="italic"
+                            >Confirmed</emphasis>’ and ‘<emphasis role="italic"
+                        >Potential</emphasis>’ exposure to prevent accidental selection of
+                        inaccurate responses. </para>
+                </listitem>
+                <listitem>
+                    <para>Add patient friendly terminology, like ‘<emphasis role="italic">Rapid
+                            Breathing</emphasis>’, to value sets and questionnaires to facilitate
+                        the collection of critical patient health data from a wider audience rather
+                        than highly technical terms such as ‘<emphasis role="italic"
+                            >Tachypnea</emphasis>’.</para>
+                </listitem>
+            </orderedlist>
+            <para>These recommendations can and should be applied across all data collection
+                questionnaires, not just the ‘Signs and Symptoms’ and ‘Non-Specific Respiratory
+                Diagnosis’ questionnaires represented in this deliverable. </para>
+        </section>
+        <section>
+            <title>Technologies that Support ANF </title>
+            <para>While standardizing data collection methods is a critical step towards data
+                interoperability and ANF data transformations, there are still common sources of
+                errors associated with normalizing clinical data. Errors normalizing terminology
+                content, terminology semantics, and poorly defined interactions between the input
+                and presentation of clinical data are three key problems that still need to be
+                addressed. Several transformation languages and architectures exist for expressing
+                and executing transformation logic to address the issues above and to normalize
+                specific instances of clinical data into ANF. Users can choose a language that is
+                best tailored for the format of the data source, while transformation quality and
+                accuracy is left to the transformation author. Below is a list of four
+                transformation languages and the associated benefits and limitations. While each
+                option has its own limitations and cost, the ability to address or minimize common
+                normalization errors justifies their use. [29]</para>
+            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+            <para>INSERT TABLE 7 FROM TERMINOLOGY CHAPTER<?oxy_custom_end?></para>
+        </section>
+    </section>
+    <section>
+        <title>References</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Bodenreider O, Cornet R, Vreeman DJ. Recent Developments in Clinical
+                        Terminologies - SNOMED CT, LOINC®, and RxNorm. Yearb Med Inform. 2018
+                        Aug;27(1):129-139. doi: 10.1055/s-0038-1667077. Epub 2018 Aug 29. PMID:
+                        30157516; PMCID: PMC6115234.</para>
+                </listitem>
+                <listitem>
+                    <para>McDonald C, Huff SM, Suico J, Mercer K. Logical Observation Identifiers
+                        Names and Codes (LOINC R) users’ guide. <emphasis role="italic"
+                            >Indianapolis: Regenstrief Institute. </emphasis>2004</para>
+                </listitem>
+                <listitem>
+                    <para>SNOMED Owl Toolkit [Internet]. IHTSDO. June 3 2022. Available from: <link
+                            xlink:href="https://github.com/IHTSDO/snomed-owl-toolkit"
+                            >IHTSDO/snomed-owl-toolkit: The official SNOMED CT OWL Toolkit. OWL
+                            conversion, classification and authoring support.
+                        (github.com)</link></para>
+                </listitem>
+                <listitem>
+                    <para>OWL refsets preview [Internet]. IHTSDO. Sept 28 2022. Available from:
+                            <link
+                            xlink:href="https://confluence.ihtsdotools.org/mag/owl-refsets-preview"
+                            >https://confluence.ihtsdotools.org/mag/owl-refsets-preview</link></para>
+                </listitem>
+                <listitem>
+                    <para>MED-RT Documentation [Internet]. NIH., May 2021 Version. Available from:
+                            <link
+                            xlink:href="https://evs.nci.nih.gov/ftp1/MED-RT/MED-RT%20Documentation.pdf#:~:text=RxNorm%2C%20a%20formal%20standardized%20medication%20terminology%20published%20by,structural%20classification%20and%20therapeutics%20indexing%3B%20and%20the%20Systematized"
+                            >MED-RT Documentation (nih.gov)</link></para>
+                </listitem>
+                <listitem>
+                    <para>HL7 Balloting [Internet]. HL7. March 3 2021. Available from: <link
+                            xlink:href="https://confluence.hl7.org/pages/viewpage.action?pageId=19136726"
+                            >https://confluence.hl7.org/pages/viewpage.action?pageId=19136726</link></para>
+                </listitem>
+                <listitem>
+                    <para>Cimino, J J. Desiderata for controlled medical vocabularies in the
+                        twenty-first century. Methods of information in medicine vol. 37,4-5 (1998):
+                        394-403.</para>
+                </listitem>
+                <listitem>
+                    <para>Spackman K, Guillermo R. Examining SNOMED from the perspective of formal
+                        ontological principles: Some preliminary analysis and observations. KR-MED
+                        2004 Proceedings 2004; 72-80. </para>
+                </listitem>
+                <listitem>
+                    <para>Campbell KE. Distributed development of a logic based controlled medical
+                        Terminology. PhD Dissertation, Stanford University, June 1997. </para>
+                </listitem>
+                <listitem>
+                    <para>Cornet R, Chute CG. Health Concept and Knowledge Management: Twenty-five
+                        Years of Evolution. Yearb Med Inform. 2016 Aug 2;Suppl 1(Suppl 1):S32-41.
+                        doi: 10.15265/IYS-2016-s037. PMID: 27488404; PMCID: PMC5171511.</para>
+                </listitem>
+                <listitem>
+                    <para>Rudolph S. Foundations of Description Logics. Krlsruhe Institute of
+                        Technology [Internet]. 2011 May [cited 2022 Jul 7]. Available from:
+                        https://www.aifb.kit.edu/images/1/19/DL-Intro.pdf </para>
+                </listitem>
+                <listitem>
+                    <para>Stram M, Seheult J, Sinard J, et al. ; Members of the Informatics
+                        Committee, College of American Pathologists. A survey of LOINC® code
+                        selection practices among participants of the College of American
+                        Pathologists Coagulation (CGL) and Cardiac Markers (CRT) proficiency testing
+                        programs. Arch Pathol Lab Med 2020; 144 (5): 586–96.</para>
+                </listitem>
+                <listitem>
+                    <para>Enhancing the drug ontology with semantically-rich representation of
+                        National Drug codes and RxNorm unique concept identifiers [Internet]. BMC
+                        Bioinformatics. Available from: <link
+                            xlink:href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8"
+                            >https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8</link></para>
+                </listitem>
+                <listitem>
+                    <para>Bietenbeck A, Boeker M, Schulz S. NPU, loinc, and SNOMED CT: A comparison
+                        of terminologies for laboratory results reveals individual advantages and a
+                        lack of possibilities to encode interpretive comments [Internet]. De
+                        Gruyter. De Gruyter; 2018 [cited 2022Oct19]. Available from: <link
+                            xlink:href="https://www.degruyter.com/document/doi/10.1515/labmed-2018-0103/html?lang=en"
+                        />
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Bietenbeck A, Boeker M, Schulz S. NPU, LOINC, and SNOMED CT: a comparison
+                        of terminologies for laboratory results reveals individual advantages and a
+                        lack of possibilities to encode interpretive comments. Journal of Laboratory
+                        Medicine. 2018;42(6): 267-275. <link
+                            xlink:href="https://doi.org/10.1515/labmed-2018-0103"/></para>
+                </listitem>
+                <listitem>
+                    <para>SHIELD Participants. Discussion on LOINC Challenges. [Personal interview,
+                        6 May] Zoom; 2022 (unpublished).</para>
+                </listitem>
+                <listitem>
+                    <para>Lin M, Vreeman D, McDonald C, et al. Auditing consistency and usefulness
+                        of LOINC® use among three large institutions—using version spaces for
+                        grouping LOINC® codes. J Biomed Inform 2012; 45 (4): 658–66.</para>
+                </listitem>
+                <listitem>
+                    <para>Rudolph S. Foundations of Description Logics. Krlsruhe Institute of
+                        Technology [Internet]. 2011 May [cited 2022 Jul 7]. Available from:
+                        https://www.aifb.kit.edu/images/1/19/DL-Intro.pdf </para>
+                </listitem>
+                <listitem>
+                    <para>Lin M, Vreeman D, McDonald C, et al. A characterization of local LOINC®
+                        mapping for laboratory tests in three large institutions. Methods Inf Med
+                        2011; 50 (2): 105–14.</para>
+                </listitem>
+                <listitem>
+                    <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, Scott
+                        NM, Rubinstein WS, Brenner SA, Merrick R, Hadden WC, Campbell KE, Waters MS.
+                        Encoding laboratory testing data: case studies of the national
+                        implementation of HHS requirements and related standards in five
+                        laboratories. J Am Med Inform Assoc. 2022 May 25:ocac072. doi:
+                        10.1093/jamia/ocac072. Epub ahead of print. PMID: 35639494.</para>
+                </listitem>
+                <listitem>
+                    <para>Adamusiak T, Bodenreider O. Quality assurance in LOINC using Description
+                        Logic. AMIA Annu Symp Proc. 2012;2012:1099-108. Epub 2012 Nov 3. PMID:
+                        23304386; PMCID: PMC3540427.</para>
+                </listitem>
+                <listitem>
+                    <para>LOINC Document Ontology. Regenstrief [Internet]. 2022 [cited 2022 Jul 7].
+                        Available from: https://loinc.org/document-ontology/ </para>
+                </listitem>
+                <listitem>
+                    <para>LOINC Hierarchy Browser [Internet]. Regenstrief. Available from:
+                        https://loinc.org/tree/?about </para>
+                </listitem>
+                <listitem>
+                    <para>LOINC License [Internet]. Copyright Notice and License. Regenstrief. 2020.
+                        Available from: https://loinc.org/kb/license/ </para>
+                </listitem>
+                <listitem>
+                    <para>Campbell J, Campbell WS. Nebraska Lexicon Release Notes: Cancer Protocols
+                        and Observables Ontology [Internet]. 2017 Mar [cited 2022 Jul 7]. Available
+                        from:
+                        https://app1.unmc.edu/pathmicro/umls/docs/Nebraska_Lexicon_Release_Notes_20170331.pdf
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>LOINC Submission Queue Stats [Internet]. Regenstreif. July 6 2022.
+                        Available from: <link xlink:href="https://loinc.org/submissions/stats/"
+                            >https://loinc.org/submissions/stats/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Nelson SJ, Zeng K, Kilbourne J, Powell T, Moore R. Normalized names for
+                        clinical drugs: RxNorm at 6 years. J Am Med Inform Assoc. 2011
+                        Jul-Aug;18(4):441-8. doi: 10.1136/amiajnl-2011-000116. Epub 2011 Apr 21.
+                        PMID: 21515544; PMCID: PMC3128404.</para>
+                </listitem>
+                <listitem>
+                    <para>Termlex. Loinc and SNOMED CT: LOINC SNOMED CT Extension - why, what and
+                        how [Internet]. LinkedIn. 2022 [cited 2022Oct19]. Available from:
+                        https://www.linkedin.com/pulse/loinc-snomed-ct-extension-why-what-how-termlex/?trackingId=XkAk09Q2Xn3Y0kj2HUSnXg%3D%3D
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Covid-19 value sets in VSAC [Internet]. U.S. National Library of Medicine.
+                        National Institutes of Health; [cited 2023Mar10]. Available from: <link
+                            xlink:href="https://www.nlm.nih.gov/vsac/support/usingvsac/covid19valuesets.html"
+                            >https://www.nlm.nih.gov/vsac/support/usingvsac/covid19valuesets.html</link></para>
+                </listitem>
+            </orderedlist>
+        </para>
     </section>
 </chapter>
 

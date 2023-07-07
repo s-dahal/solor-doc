@@ -11,7 +11,520 @@
         <title>Use Case: Komet Applications</title>
     </section>
     <section>
-        <title>Use Case: Acute and Infectious Condition</title>
+        <title>Use Case: Considerations for Real World Data Interoperability and Data Agility in
+            Patient Journey to Diagnosis for Emerging Acute and Chronic Infectious Diseases</title>
+        <section>
+            <title>Introduction to the Emerging Acute and Chronic Infectious Diseases Use
+                Case</title>
+            <para>Increased generation of real-world data (RWD) and real-world evidence (RWE) from
+                personal health devices, electronic heath records (EHR), and other sources has
+                fueled a new wave of advanced analytics and has proven to be critical when
+                evaluating emerging health trends. [1] Digital health devices, over-the-counter
+                (OTC) diagnostic tests, and other technologies are important sources of RWD and can
+                be used as decision support tools. However, interoperability issues including
+                challenges with data transmission, storage, retrieval, and aggregation must be
+                addressed to support safe and effective use of the data. RWE can drive important
+                insights into public health and predict emerging diseases, pandemics such as
+                SARS-CoV-2 (COVID-19), and other population health trends. Timely access to
+                interoperable data is critical when developing guidance and improving patient care
+                and outcomes. </para>
+            <para>Clinical workflows are highly cited as rich sources for analysis of clinical
+                decision-making support and process improvement. Clinical process modeling and
+                workflows can be used to understand a clinician’s reasoning, understanding, and use
+                of patient data. Workflows capture the thought process behind decision making, help
+                visualize the process, and can be considered as a decision tree. [2] Certain
+                workflows can be used to understand the clinical data life cycle. In Vankipuram et
+                al., the authors use a clinical workflow analytics framework using radio-frequency
+                identification (RFID) to identify three phases of data flow: transmission, analysis,
+                and transformation. [3] In these studies, the authors highlight the benefits and
+                potential use of analyzing workflows to improve patient care or enhance clinical
+                decision support tools. Other workflow analyses incorporate predictive modeling to
+                analyze and predict most efficient operating models that drive effective
+                interventions. [4] Advanced analytics including artificial intelligence and other
+                technologies are being explored in workflows. [5] However, advanced analytical
+                outcomes are fully dependent on the data feeding into the system. </para>
+            <para>Business Process Modeling and Notation (BPMN) is a diagram technique used to
+                represent a flowchart of activities and decision processes and is beneficial to
+                healthcare organizations seeking to implement process improvements. BPMN is a tool
+                organizations use to evaluate clinical decision support systems, model clinical
+                treatment protocols, and easily relay complex processes. BPMN is often used to model
+                organizational or task related processes, but its use can be broadened to understand
+                systemic flows of information. [6-8] As Kassim et al. point out in their systematic
+                review, most BPMN focuses on clinical decision support but stops short of modeling
+                patient healthcare trajectories and, with that, health information. [9]</para>
+            <para>Existing approaches of clinical process modeling analyze the data but fail to
+                explore data considerations such as data capture and transmission. The need for
+                interoperable data is evident. In previous health emergencies, important sources of
+                data were identified too late, and the use of those data was further delayed by
+                incompatibilities in interoperability. Preparing federal agencies and public health
+                authorities with RWE tools will facilitate early identification of potential
+                pandemics and diseases and allow timely and well-informed decision making. To reach
+                this level of preparedness, it is critical to understand where potential data are
+                generated, stored, and transmitted in a clinical workflow.</para>
+        </section>
+        <section>
+            <title>Aims for the Emerging Acute and Chronic Infectious Diseases Use Case</title>
+            <para>In this body of work, we aim to demonstrate the importance of an interoperable
+                data system and downstream analytical scenarios through a use case for Long COVID.
+                We propose that the methods and findings are not solely applicable to a use case for
+                Long COVID and are reproducible for any emerging acute and chronic infectious
+                disease use case. This use case presents a Long COVID workflow highlighting a
+                patient’s journey from first onset of COVID-19 symptoms through a Long COVID
+                diagnosis and describes how data are captured, transmitted, and aggregated in a way
+                that can be generalized to other emerging acute and chronic infectious diseases.
+                Through understanding of data generation, transmission, and analysis we can identify
+                important information and trends and establish an ideal future state for the use of
+                RWE. </para>
+            <para><emphasis role="italic">Aim 1: Document a Current State Long COVID Workflow
+                    Depicting Data Loss </emphasis></para>
+            <para><emphasis role="italic">Aim 2: Establish the Future State of Patient Care
+                </emphasis></para>
+            <para><emphasis role="italic">Aim 3: Establish the Future State Data Workflow
+                </emphasis></para>
+        </section>
+        <section>
+            <title>Emerging Acute and Chronic Infectious Diseases Use Case Background</title>
+            <para>The COVID-19 pandemic drastically impacted healthcare, laboratory operations,
+                pharmaceuticals, and patient care delivery. While extensive resources have been
+                allocated to studying COVID-19 in support of vaccine development, public health
+                policies, and treatment, the long-term symptoms and impacts of COVID-19 are not well
+                known. Long COVID is a poorly understood condition associated with lasting health
+                problems that persist past the typical symptomatic period after an initial COVID-19
+                infection. While Long COVID is typically marked by longitudinal fatigue, respiratory
+                issues, and brain fog, there is a growing pool of symptoms and complications. Health
+                conditions, duration, and even test results can vary across Long COVID cases,
+                leading to an inability to quickly diagnose Long COVID. Identifying Long COVID is
+                further complicated by a variety of inaccurate, lost, or suboptimal data collection
+                and reporting. Due to these difficulties, there is no diagnostic test available for
+                Long COVID, and care providers often reach a Long COVID diagnosis by ruling out
+                other diseases or disorders with similar symptoms. [10-14]</para>
+            <para>A lack of comprehensive research, information, and clinical decision support (CDS)
+                impacts providers’ ability to accurately recognize and diagnose Long COVID. The US
+                Food and Drug Administration (FDA) and the Systemic Harmonization and
+                Interoperability Enhancement for Lab Data (SHIELD) collaborative must have access to
+                a substantial amount of data from a variety of sources to support improvements in
+                patient care for Long COVID and other emerging acute and chronic infectious
+                diseases. SHIELD is a public-private collaboration focused on improving
+                interoperability of in vitro diagnostic data between institutions. [15] Test data
+                from COVID-positive and COVID-negative patients with a wide range of symptoms
+                provide critical data that need to be captured and analyzed in support of these
+                efforts. These data must be comprehensive and contain all necessary elements to
+                support efficient querying and use in research and CDS.</para>
+            <para>This Long COVID use case helps advance our understanding of the health data
+                ecosystem and the necessary data capture and agility to ensure safe and effective
+                patient care. This workflow broadly represents and can be applied to other emerging
+                acute and chronic infectious diseases in that it highlights the data gaps and
+                opportunities for use of RWE. We propose a future state workflow and proactive
+                approach where data sets are analyzed and signals are detected before a condition is
+                known, thereby yielding health information systems that are safe, effective, and
+                interoperable. </para>
+        </section>
+        <section>
+            <title>Methods to Develop the Emerging Acute and Chronic Infectious Diseases Use
+                Case</title>
+            <section>
+                <title>Aim 1: Document a Current State Long COVID Workflow Depicting Data Loss </title>
+                <para>The team developed the generalized Long COVID workflow depicted in Figure 1
+                    highlighting the steps a patient takes throughout their diagnostic journey with
+                    accompanying data generated at each step. The team gathered foundational Long
+                    COVID research to establish a comprehensive list of widely accepted and
+                    important data elements and data entry points for the workflow. [10-13] A
+                    template form was created to gather input from the team members on these data
+                    elements including actors, descriptions, triggers, pre and post conditions,
+                    assumptions, and data fields, and eight team members independently documented
+                    considerations in the workflow. Team members had varying professional
+                    backgrounds including MD, NP, RN, Informaticist, Terminologists, HL7 Interface
+                    Engineers, Public Health, and Systems Engineering. The team met to discuss the
+                    exercise and highlight differing approaches in the team’s documentation and
+                    considerations. Common themes were extracted and used in Visio to develop an
+                    initial draft of a generalized Long COVID use case workflow schematic that was
+                    iterated upon based on subject matter expert and key stakeholder input. The
+                    workflow follows an inpatient and outpatient path and identifies common steps in
+                    a patient’s diagnostic journey along with associated data to highlight
+                    opportunities for more accurate and comprehensive data collection. Several
+                    important data elements were identified including patient symptoms, medical
+                    history, laboratory tests and orders, vaccination history, demographics, and
+                    prescriptions, and it was noted whether those data are currently collected or
+                    lost. </para>
+                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+                <para>INSERT GENERALIZED CURRENT STATE LONG COVID WORKFLOW</para><?oxy_custom_end?>
+            </section>
+            <section>
+                <title>Aim 2: Establish the Future State of Patient Care</title>
+                <para>Once a standardized general Long COVID diagnostic workflow schematic was
+                    developed, the team honed in on the outpatient scenario to capture the patient
+                    journey in greater detail. The team chose to focus on an outpatient scenario as
+                    there is a larger propensity for data loss when the patient is not under the
+                    continuous monitoring of inpatient care. This new BPMN schematic closely
+                    examined the parallel paths that a patient in an outpatient setting could follow
+                    before arriving at a Long COVID diagnosis to support improved CDS, patient care,
+                    and data collection and usage. This resulted in an approximate current state
+                    patient workflow as well as an idealized future state patient workflow with a
+                    supplementary data flow schematic. Note that while these scenarios used Long
+                    COVID as an inspiration, the underlying principles can be applied to any similar
+                    emerging acute, chronic and infectious disease.</para>
+                <para><emphasis role="italic">Scenario 1: Current State Outpatient Long COVID
+                        Workflow</emphasis></para>
+                <para>Scenario 1 details an expanded view of the workflow as patients begin their
+                    journey to a Long COVID diagnosis through parallel paths. Step 1 demonstrates
+                    the different reasons that could prompt a patient to take a COVID-19 test such
+                    as notification of exposure from the health department, phone proximity
+                    tracking, routine testing at work, prerequisite testing for travel, or feeling
+                    symptomatic. The parallel actions are listed for each step of the process in in
+                    the workflow schematic below in Figure 2. In this current state, there are
+                    several points at which data are produced but not collected and therefore
+                    lost.</para>
+                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+                <para>INSERT SCENARIO 1 CURRENT STATE OUTPATIENT FLOW</para><?oxy_custom_end?>
+                <para><emphasis role="italic">Scenario 2: Future State Outpatient Long COVID
+                        Workflow</emphasis></para>
+                <para>Scenario 2 explores an idealized future state for the outpatient workflow
+                    depicted in Figure 3 that aims to minimize data loss. It should be noted that
+                    there are only subtle changes to the patient-centric workflow, but there are
+                    several points at which data are collected and stored, which, in turn, will
+                    enable more streamlined care and a more complete picture of health for the
+                    individual patient and the larger population. The collection, storage, and
+                    transmission of data are detailed in Aim 3.</para>
+                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+                <para>INSERT SCENARIO 2 FUTURE STATE OUTPATIENT FLOW</para><?oxy_custom_end?>
+            </section>
+            <section>
+                <title>Aim 3: Establish the Future State Data Workflow</title>
+                <para>Building upon the Future State Outpatient Long COVID Workflow, the team worked
+                    with subject matter experts in public health reporting, laboratory data systems,
+                    and health informatics to identify points in the patient care workflow where
+                    data are captured, where data capture could be improved, and resources or
+                    technologies that could support the improved data capture. The team then
+                    developed a separate schematic (Figure 4) to showcase an idealized flow of those
+                    data; the workflow is framed around an OTC COVID-19 test trigger and showcases
+                    how data should be captured, transmitted, stored, and prepared for downstream
+                    analytical and secondary use. </para>
+                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+                <para>INSERT IDEALIZED FUTURE STATE DATA FLOW</para><?oxy_custom_end?>
+                <para>An important consideration when developing this workflow was the inclusion of
+                    enablers. Enablers serve to drive the best future state collection and use of
+                    the data that are generated in the future state patient care workflow starting
+                    with empowering or incentivizing the patient to report OTC test results and
+                    stretching to accurate reporting of point of care (POC) orders and results. The
+                    team expanded upon what data are collected and where the data are stored,
+                    leading to a detailed schematic of how data are aggregated, transmitted, and
+                    ultimately used. </para>
+                <para>Privacy Preserving Record Linkage (PPRL), a way to maintain patient privacy
+                    while collecting protected patient data and preserving data meaning across data
+                    sets, was included as an important step between data storage and aggregation and
+                    final use by the federal government. [16] Following PPRL, a loop was included in
+                    the data aggregation step “Data with Idealized Structure and Fully Defined
+                    Terminology” to include an opportunity for feedback and continual improvement of
+                    data collection practices and standards. This RWE and analytic-based feedback
+                    also informs questionnaire creators as they deploy updated questionnaires back
+                    to the original data collectors and serves as an opportunity to implement best
+                    practices and suggestions for further exploration. These loops are included to
+                    showcase how data insights can provide real-time feedback and identify
+                    opportunities for continual process improvements. The future state data workflow
+                    concludes with transformed, normalized, and de-identified data in repositories
+                    ready for secondary use across a variety of systems depending on content and
+                    purpose. </para>
+            </section>
+        </section>
+        <section>
+            <title>Results from the Emerging Acute and Chronic Infectious Diseases Use Case</title>
+            <section>
+                <title>Aim 1: Document a Current State Long COVID Workflow Depicting Data Loss </title>
+                <para>The team developed Figure 1, a generalized workflow that outlines a patient’s
+                    journey to a Long COVID diagnosis by aggregating common themes, data elements,
+                    and components from the information that team members individually collected. In
+                    the current state, critical data associated with OTC testing, patient symptoms,
+                    symptom progression, and timelines are either lost or sub-optimally reported.
+                    Accurate and standardized data reporting at all stages of a patient’s diagnosis
+                    is needed to support improved patient care, research, and public health and
+                    policy decision making.</para>
+                <para><emphasis role="italic">Outpatient Path</emphasis></para>
+                <para>A first instance of data loss occurs in the outpatient path when the patient
+                    takes the first at-home OTC test; test results, symptoms at time of testing, and
+                    timeline are uncaptured. However, lab orders and results are captured during
+                    patient testing at the drive-up testing site and results are reported to the
+                    “Community COVID-19 Reporting” database. Following the drive-up testing, there
+                    is a 60-day window of missed opportunity for critical capture of symptoms and
+                    at-home testing results, including timeline and progression data. During this
+                    60-day period the patient experiences evolving symptoms and changes in activity
+                    levels, routines, and diet. Data are only reported again when the patient visits
+                    a primary care provider (PCP) for a follow-up visit, indicating the need for
+                    gathering outpatient data generated by the patient. </para>
+                <para><emphasis role="italic">Inpatient Path</emphasis></para>
+                <para>The inpatient path indicates a better environment for data capture. Similar to
+                    the outpatient workflow, initial OTC test results, symptoms, and timeline are
+                    not captured as the patient does not report these data. However, the patient
+                    enters an inpatient workflow environment where all data generated through the
+                    PCP, Lab, and Emergency Room (ER) are documented in the patient’s EHR during a
+                    period of continuous monitoring. In this inpatient scenario there is only one
+                    point of data loss during a period of 30-days between testing negative and
+                    returning for subsequent testing after experiencing continued symptoms. During
+                    this period, data regarding activity levels, evolution of symptoms, and change
+                    in routine, diet, and vitals are lost. </para>
+                <para>The outpatient path eventually leads into the inpatient workflow as both
+                    patients’ PCP consider a Long COVID diagnosis. This general workflow highlights
+                    data loss in OTC testing or outpatient scenarios, and considerable loss of
+                    uncaptured symptom and test results data. </para>
+            </section>
+            <section>
+                <title>Aim 2: Establish the Future State of Patient Care</title>
+                <para>Once the generalized Long COVID use case was developed, the team explored a
+                    more specific scenario that begins with a prompt for a patient to take an OTC
+                    COVID-19 test. Current and standardized data points were identified in the
+                    representative patient flow and categorized as captured or uncaptured data. The
+                    workflow highlighted the major steps over the course of a patient’s Long COVID
+                    diagnostic journey, including potential variations in results or outcomes at
+                    certain steps.</para>
+                <para>The workflow begins with one of five steps that lead to the patient pursuing
+                    an at-home, OTC COVID-19 test and exploring home treatment/quarantine decisions
+                    without clinical input or EHR data capture. Uncaptured data generated during
+                    these steps in the diagnostic journey include exposure methods and related data,
+                    symptom diary options, patient background, OTC POC test sales and supply data,
+                    results from the OTC POC test, and more. </para>
+                <para>Step eight, when the patient looks to confirm the results of their OTC test,
+                    is when the process reaches the first point of clinical input as the patient
+                    takes one of four potential Lab PCR tests. In the current state, data preceding
+                    step eight would be lost or unutilized. Data generated at this step include
+                    registration, intake information, continuation of symptoms, lab orders, and
+                    results. Standardized data include patient demographics, insurance information,
+                    updated lab order information (device and test kit IDs), and EHR standard data
+                    elements, depending on the location of the test (e.g., pharmacy, urgent care,
+                    PCP, ER). </para>
+                <para>The workflow continues with data collection from both POC and OTC sources,
+                    aiming to collect as much as possible along the way. It should also be noted
+                    that there will be bidirectional data flow within this ideal future state. For
+                    example, a physician will have access to patient data collected throughout their
+                    journey to support their clinical decision making and, ultimately, diagnosis.
+                    Aim 3 explains how data will be transformed and utilized for specific
+                    purposes.</para>
+            </section>
+            <section>
+                <title>Aim 3: Establish the Future State Data Workflow</title>
+                <para>Using the outpatient Long COVID patient care workflow, the specific steps
+                    where data are or should be captured were identified and collated into a table.
+                    Subject matter experts then identified opportunities for improved data capture
+                    through various resources, technologies, and methods. Table 1 is an example of
+                    four data capture points from the larger table that identifies specific steps in
+                    the outpatient Long COVID workflow, if and how data are currently captured at
+                    those steps, new data that need to be collected, and methods for collecting
+                    those data. The specific data collection points are denoted with a data icon in
+                    the outpatient Long COVID patient care workflow and similar data collection
+                    steps are grouped by a box with a dashed line. This process was repeated
+                    throughout the workflow for each data capture point.</para>
+                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+                <para>INSERT FUTURE STATE DATA COLLECTION TABLE</para><?oxy_custom_end?>
+                <para>The data collection groups were then transposed and used as the starting
+                    points for the idealized future state data workflow depicted in Figure 4. This
+                    workflow outlines the idealized flow of data through the five key data
+                    dimensions listed in chronological order:</para>
+                <para><emphasis role="underline">Enablers</emphasis>: Enablers are key processes,
+                    steps, or components that must be achieved to improve the quality and
+                    standardization of data collection steps. The future state data workflow begins
+                    with overarching enablers, such as intermediaries and data platforms to support
+                    data transmissions, and then dives into more specific requirements for each of
+                    the data collection methods like implementing functional barcode/QR code systems
+                    on OTC test boxes.</para>
+                <para><emphasis role="underline">How Data are Collected</emphasis>: The workflow
+                    then highlights the various data collection tools and resources that can be used
+                    to collect critical patient health data.</para>
+                <para><emphasis role="underline">What Data are Collected</emphasis>: The workflow
+                    then explores the type of data that are collected. Depending on the associated
+                    step in the future state outpatient workflow, the various data collection
+                    methods could capture retail data, test data, patient symptoms, ask at order
+                    entry (AOE) questions, and much more.</para>
+                <para><emphasis role="underline">Where Data are Stored</emphasis>: Once the type of
+                    data that are collected is identified, the workflow outlines the storage systems
+                    and databases that originally house the data.</para>
+                <para><emphasis role="underline">How Data are Aggregated and Transmitted</emphasis>:
+                    After data flow out of the initial data store and through a PPRL, the data will
+                    undergo a statement transformation process and terminology representation
+                    process that is informed by knowledge management reference implementation and
+                    produces data with idealized structure and terminology. These data then continue
+                    through Analysis Normal Form (ANF) storage and rules execution and applies
+                    transmission standards such as FHIR. Data are then finally ready to be
+                    transmitted to other healthcare systems such as research repositories or EHRs.
+                    Data with idealized structure and terminology can also follow an alternate path
+                    and take part in feedback loops that inform questionnaire development for data
+                    acquisition from patients and providers or can be used as real-world evidence to
+                    inform improvements to the initial data collection methods.</para>
+                <para>While the data workflow uses a COVID-19 test trigger, the purchase of an OTC
+                    COVID-19 test, the administration and use of an OTC COVID-19 test, and
+                    administration of a confirmatory laboratory PCR test, this process can be
+                    expanded to more data collection steps along a Long COVID diagnosis or even
+                    expanded to other emerging acute and chronic infectious diseases. This data
+                    workflow shows how data will need to move within and between EHRs, laboratory
+                    information systems (LIS), federal databases, website and application data
+                    stores, and other healthcare related systems and how RWE can be used as a
+                    feedback mechanism to support continual process and data collection
+                    improvements.</para>
+            </section>
+        </section>
+        <section>
+            <title>Emerging Acute and Chronic Infectious Diseases Use Case Discussion</title>
+            <para>In today’s healthcare ecosystem and expanding digital and personal health markets,
+                large amounts of patient data are generated but uncaptured. This body of work aims
+                to highlight some of the gaps in data collection and proposes potential
+                opportunities to use existing technologies and resources to improve the quality and
+                interoperability of data that are collected from previously uncaptured sources. A
+                generalized Long COVID and more granular workflows were developed as a use case to
+                highlight specific instances of data loss and opportunities to improve collection of
+                data across a variety of emerging acute and chronic infectious diseases that is
+                critical to patient care, such as at home test results. Long COVID, a relatively new
+                and poorly characterized condition, acts as a use case to demonstrate how capturing
+                this additional data would allow providers, researchers, and many others involved in
+                the healthcare system to make better informed patient care decisions and develop
+                evidence-based indicators for a Long COVID diagnosis. Improving data
+                interoperability will improve an organization’s ability to ingest data in real-time
+                and develop materials such as questionnaires or symptom trackers to deploy to the
+                field. Targeted and dynamic data collection methods will give organizations better
+                insight into the most pertinent questions that need to be answered for a variety of
+                emerging conditions and diseases.</para>
+            <para>Our analysis of the Long COVID workflow uncovered several sources of RWD where
+                extra effort should be made to gather and represent relevant data. RWD, including
+                patient reported symptoms, are an opportunity to gather information that could lead
+                to earlier identification of diseases. When considering the expanding market for OTC
+                testing for many chronic and infectious diseases, it is evident the amount of
+                critical data that are lost from the system and unavailable for further analyses.
+            </para>
+        </section>
+        <section>
+            <title>Future Considerations for the Emerging Acute and Chronic Infectious Diseases Use
+                Case</title>
+            <para>The Long COVID data workflow outlines idealized data stemming from a COVID-19 OTC
+                test trigger, the purchase and use of a COVID-19 OTC test, and the administration of
+                a confirmatory laboratory PCR test. These are all key data collection points in the
+                Future State Long COVID patient workflow but do not comprehensively represent how
+                data could flow in an idealized state. The team will continue to incorporate the
+                remaining data collection steps and data groupings from the patient workflow to
+                elucidate how various data storage systems house, transform, and transmit data as
+                well as the enablers needed to improve and standardize the associated data
+                collection. This continued work will be included in a future iteration of this work.
+                While this work currently centers around a Long COVID diagnosis, the themes and
+                insights will be used to inform data aggregation and secondary use for other
+                emerging acute and chronic infectious diseases that will ultimately provide their
+                own feedback and insights to further improve data collection.</para>
+            <para>Advanced analytical capability of monitoring and responding to data trends in real
+                time goes beyond detecting emerging diseases and can extend to fast tracking device
+                and diagnostic tool approvals. Liquid Biopsy (LBx) is a promising new diagnostic
+                tool for screening and detecting cancers, however, traditional clinical trials
+                require too many resources and cannot evaluate the breadth of emerging LBx assays.
+                Aggregated patient data are needed along with timely data from EHRs, LIS, tumor
+                registries, and other data repositories for appropriate evaluation. Many different
+                RWD elements and classes are required to establish the sensitivity and specificity
+                of a LBx, including data on a range of cancer negative/positive patients, lab
+                results, pre/post cancer testing, past medical and family histories, medication
+                history, environmental exposure, germline sequences, imaging studies, and
+                demographics. Further understanding the sources of data can help inform future data
+                flows similar to the Long COVID flow to create normalized, interoperable, and
+                dynamic data repositories. </para>
+        </section>
+    </section>
+    <section>
+        <title>References (as of 7/7/23)</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>FDA. Real World Evidence [Internet]. U.S. Food and Drug Administration.
+                        2022. Available from: <link
+                            xlink:href="https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence"
+                            >https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence</link></para>
+                </listitem>
+                <listitem>
+                    <para>Cook RJ, Durning SJ. Clinical Process Modeling. Academic Medicine. 2019
+                        Apr;1.</para>
+                </listitem>
+                <listitem>
+                    <para>Vankipuram A, Traub S, Patel VL. A method for the analysis and
+                        visualization of clinical workflow in dynamic environments. Journal of
+                        Biomedical Informatics. 2018 Mar;79:20–31.</para>
+                </listitem>
+                <listitem>
+                    <para>Crowley C, Guitron S, Son J, Pianykh OS. Modeling workflows: Identifying
+                        the most predictive features in healthcare operational processes. Vellido A,
+                        editor. PLOS ONE. 2020 Jun 11;15(6):e0233810.</para>
+                </listitem>
+                <listitem>
+                    <para>Griewing S, Lingenfelder M, Wagner U, Gremke N. Use Case Evaluation and
+                        Digital Workflow of Breast Cancer Care by Artificial Intelligence and
+                        Blockchain Technology Application. Healthcare. 2022 Oct
+                        20;10(10):2100.</para>
+                </listitem>
+                <listitem>
+                    <para>de Bruin JS, Adlassnig K-P, Leitich H, Rappelsberger A. Separating
+                        Business Logic from Medical Knowledge in Digital Clinical Workflows Using
+                        Business Process Model and Notation and Arden Syntax. Studies in Health
+                        Technology and Informatics [Internet]. 2018 [cited 2023 Mar 15];248:17–24.
+                        Available from: <link xlink:href="https://pubmed.ncbi.nlm.nih.gov/29726414/"
+                            >https://pubmed.ncbi.nlm.nih.gov/29726414/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Natsiavas P, Stavropoulos TG, Pliatsios A, Karanikas H, Gavriilidis GI,
+                        Dimitriadis VK, et al. Using Business Process Management Notation to Model
+                        Therapeutic Prescription Protocols: The PrescIT Approach. Studies in Health
+                        Technology and Informatics. 2021 May 27;</para>
+                </listitem>
+                <listitem>
+                    <para>Ruiz F, Garcia F, Calahorra L, Llorente C, Gonçalves L, Daniel C, et al.
+                        Business process modeling in healthcare. Studies in Health Technology and
+                        Informatics [Internet]. 2012 [cited 2023 Mar 15];179:75–87. Available from:
+                            <link xlink:href="https://pubmed.ncbi.nlm.nih.gov/22925789/"
+                            >https://pubmed.ncbi.nlm.nih.gov/22925789/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Kassim SA, Gartner J-B, Labbé L, Landa P, Paquet C, Bergeron F, et al.
+                        Benefits and limitations of business process model notation in modelling
+                        patient healthcare trajectory: a scoping review protocol. BMJ Open. 2022
+                        May;12(5):e060357.</para>
+                </listitem>
+                <listitem>
+                    <para>Hedin K, van der Velden AW, Hansen MP, Moberg AB, Balan A, Bruno P, et al.
+                        Initial symptoms and three months follow-up after acute COVID-19 in
+                        outpatients: An international prospective cohort study. The European Journal
+                        of General Practice [Internet]. 2023 Jan 19 [cited 2023 Mar 9];2154074.
+                        Available from: <link xlink:href="https://pubmed.ncbi.nlm.nih.gov/36655704/"
+                            >https://pubmed.ncbi.nlm.nih.gov/36655704/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Tran V-T, Porcher R, Pane I, Ravaud P. Course of post COVID-19 disease
+                        symptoms over time in the ComPaRe long COVID prospective e-cohort. Nature
+                        Communications. 2022 Apr 5;13(1).</para>
+                </listitem>
+                <listitem>
+                    <para>Davis HE, McCorkell L, Vogel JM, Topol EJ. Long COVID: major findings,
+                        mechanisms and recommendations. Nature Reviews Microbiology [Internet]. 2023
+                        Jan 13;1–14. Available from: <link
+                            xlink:href="https://www.nature.com/articles/s41579-022-00846-2"
+                            >https://www.nature.com/articles/s41579-022-00846-2</link></para>
+                </listitem>
+                <listitem>
+                    <para>Malden DE, Tartof SY, Ackerson BK, Hong V, Skarbinski J, Yau V, et al.
+                        Natural Language Processing for Improved Characterization of COVID-19
+                        Symptoms: Observational Study of 350,000 Patients in a Large Integrated
+                        Health Care System. JMIR Public Health and Surveillance [Internet]. 2022 Dec
+                        30 [cited 2023 Mar 9];8(12):e41529. Available from:<link
+                            xlink:href="https://publichealth.jmir.org/2022/12/e41529"
+                            >https://publichealth.jmir.org/2022/12/e41529</link></para>
+                </listitem>
+                <listitem>
+                    <para>CDC. Long COVID or Post-COVID Conditions [Internet]. Centers for Disease
+                        Control and Prevention. 2021. Available from: <link
+                            xlink:href="https://www.cdc.gov/coronavirus/2019-ncov/long-term-effects/index.html"
+                            >https://www.cdc.gov/coronavirus/2019-ncov/long-term-effects/index.html</link></para>
+                </listitem>
+                <listitem>
+                    <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, et al.
+                        Encoding laboratory testing data: case studies of the national
+                        implementation of HHS requirements and related standards in five
+                        laboratories. Journal of the American Medical Informatics Association
+                        [Internet]. 2022 May 25 [cited 2023 Mar 16];29(8):1372–80. Available from:
+                        https://academic.oup.com/jamia/article/29/8/1372/6592172#365931904</para>
+                </listitem>
+                <listitem>
+                    <para>PPRL | N3C [Internet]. covid.cd2h.org. [cited 2023 Mar 9]. Available from:
+                        https://covid.cd2h.org/PPRL</para>
+                </listitem>
+            </orderedlist>
+        </para>
     </section>
 </chapter>
 
