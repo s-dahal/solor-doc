@@ -5,14 +5,10 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
-        <title>ISAAC's KOMET and Solor</title>
+        <title>Integrated Knowledge Management</title>
         <subtitle>A Treatise on Symbolic Data Systems
-            <inlinemediaobject>
-            <imageobject>
-                <imagedata fileref="images/solor_logo_png_20190208.png" scalefit="1" width="100%" contentdepth="100%"/>
-            </imageobject>
-            </inlinemediaobject>
-        </subtitle>
+            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT COVER IMAGE
+            HERE<?oxy_custom_end?></subtitle>
     </info>
     <part>
         <title>Introduction</title>

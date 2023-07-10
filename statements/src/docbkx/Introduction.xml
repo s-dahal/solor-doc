@@ -4,7 +4,7 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Introduction</title>
     <section>
-        <title>Motivation</title>
+        <title>Integrated Knowledge Management (IKM) Book Motivation</title>
         <para>In today’s healthcare ecosystem, providers continually rely on data from an increasing
             number of sources to make informed clinical decisions. While this data is a critical
             component of providing patients with the best care possible, there are major challenges
@@ -25,7 +25,7 @@
             provides real-time assistance to clinicians.</para>
     </section>
     <section>
-        <title>Overview of Book</title>
+        <title>Overview of IKM Book</title>
         <para>This Inteagrated Knowledge Management (IKM) Book servers as an educational resource to
             allow stakeholders to perform a deep dive into the IKM Architecture this team has worked
             to develop. </para>
@@ -65,7 +65,7 @@
             </itemizedlist>
         </section>
         <section>
-            <title>Guiding Principles</title>
+            <title>IKM Guiding Principles</title>
             <para>The following key principles are critical in our summarization and discussion of
                 Integrated Knowledge Management. </para>
             <para>Functional decomposition—often referred to as a Separation of Concerns
@@ -296,7 +296,7 @@
         <title> Preface from Keith Campbell</title>
     </section>
     <section>
-        <title> IKM Book Intro (deliverable)</title>
+        <title> IKM Book Introduction</title>
         <section>
             <title>The Promise of Health Information Technology</title>
             <para>Health Information Technology (IT), or the use of computer hardware, software, or
@@ -635,7 +635,7 @@
         </section>
     </section>
     <section>
-        <title>References</title>
+        <title>Chapter 1 References</title>
         <para>
             <orderedlist>
                 <listitem>
