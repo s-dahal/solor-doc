@@ -12,12 +12,12 @@
     </info>
     <part>
         <title>Introduction</title>
+        <xi:include href="Introduction.xml"/>
     </part>
-    <xi:include href="Introduction.xml"/>
     <part>
         <title>Background</title>
+        <xi:include href="Background.xml"/>
     </part>
-    <xi:include href="Background.xml"/>
     <part>
         <title>Integrated Knowledge Management (IKM) </title>
         <xi:include href="Integrated%20Knowledge%20Management.xml"/>
@@ -31,7 +31,7 @@
         <xi:include href="Terminology-Knowledge.xml"/>
     </part>
     <part>
-        <title>Statemenet Model</title>
+        <title>Statement Model</title>
         <xi:include href="Statement-Model.xml"/>
     </part>
     <part>
@@ -40,20 +40,20 @@
     </part>
     <part>
         <title>Procedural Knowledge</title>
+        <xi:include href="Procedural-Knowledge.xml"/>
     </part>
-    <xi:include href="Procedural-Knowledge.xml"/>
     <part>
         <title>Use Cases</title>
         <xi:include href="Use-Case-Chapter.xml"/>
     </part>
     <part>
         <title>Ecosystem</title>
+        <xi:include href="Ecosystem.xml"/>
     </part>
-    <xi:include href="Ecosystem.xml"/>
     <part>
         <title>Next Steps</title>
+        <xi:include href="Next-Steps.xml"/>
     </part>
-    <xi:include href="Next-Steps.xml"/>
     
 
 
