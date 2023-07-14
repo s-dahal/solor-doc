@@ -14,16 +14,15 @@
   <para>Healthcare organizations are striving to become <glossterm
       baseform="High Reliability Organization">high reliability organizations (HROs)</glossterm>,
     characterized by high levels of safety under inherently risky, technologically-complex, and
-    demanding conditions. <link linkend="bib1">[1]</link>
+    demanding conditions. [1]
     <?oxy_comment_start author="Ioana" timestamp="20190723T000019-0400" comment="Moved from previous section and removed redundant reference/bibliography, reworded" flag="done"?>Deployment
     of EHR systems is nearly ubiquitous in the US and there is increasing opportunity to leverage
     standards-based clinical statements<!--a substantial number of extant EHR mapped data sets--> to
     improve population health through quality measures, case reporting, and decision support. The
     ability to measure and improve outcomes relies on consistent, high-quality data that was
     aggregated from a variety of systems. Analysis using normal form allows HROs to
-    <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. <link
-      linkend="bib2">[2]</link> A <emphasis>standard</emphasis> normal form can help replicate HROs
-    across our industry.</para>
+    <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. [2] A
+      <emphasis>standard</emphasis> normal form can help replicate HROs across our industry.</para>
   <para>In this document, we present <?oxy_comment_start author="Ioana" timestamp="20190722T235418-0400" comment="We should reserve the keyword &quot;normal&quot; for &quot;ANF&quot; - other clinical statements are either strcutured or standard-based - ANF should be the &quot;normal&quot; representation - the result of normalization of CIFs and other standard-based clinical satetement." flag="done"?>
     <!--normal forms--><?oxy_comment_end?> background on other logical
       <?oxy_comment_start author="rcholan" timestamp="20190730T082039-0400" comment="glossary HL7" flag="done"?><glossterm
@@ -44,7 +43,7 @@
         <emphasis><glossterm baseform="Understandable, Reproducible, Useful">Understandable,
         Reproducible, and Useful</glossterm></emphasis>
     (<?oxy_comment_start author="rcholan" timestamp="20190730T082722-0400" comment="glossary" flag="done"?>URU<?oxy_comment_end?>)
-      <link linkend="bib3">[3]</link><link linkend="bib4">[4]</link></para><?oxy_comment_end?>
+    [3][4]</para><?oxy_comment_end?>
   <itemizedlist>
     <listitem>
       <para><emphasis role="bold"><glossterm baseform="Understandable"
@@ -76,12 +75,12 @@
       the format level (e.g. <glossterm>CDA</glossterm>, FHIR, V2) but also the content model (i.e.
       an instance of an <link xlink:href="https://www.iso.org/standard/62416.html"><glossterm
           baseform="ISO/TS Detailed Clinical Models">ISO/TS 13972</glossterm></link> DCM, CIMI
-      model, etc.). <link linkend="bib5">[5]</link> In most cases the data quality is the greatest
-      obstacle to analysis, but even in the case of structured, semantically-clear information,
-      inconsistency across sources of information raises obstacles to analysis. Analysis of
-      aggregate information managed by health information networks poses the greatest challenge
-      today because a meaningful use of data for patient outcomes or research requires a common
-      format, semantic clarity, and quality data.<?oxy_comment_end?></para>
+      model, etc.). [5] In most cases the data quality is the greatest obstacle to analysis, but
+      even in the case of structured, semantically-clear information, inconsistency across sources
+      of information raises obstacles to analysis. Analysis of aggregate information managed by
+      health information networks poses the greatest challenge today because a meaningful use of
+      data for patient outcomes or research requires a common format, semantic clarity, and quality
+      data.<?oxy_comment_end?></para>
     <para><?oxy_comment_start author="kec" timestamp="20190721T122653-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " flag="done"?>Not
       only is there a potential for a lack of consistency with representing clinical statements with
       current <glossterm baseform="Detailed Clinical Model">detailed clinical modeling</glossterm>
@@ -148,12 +147,12 @@
                   <para>on the left side</para>
                 </listitem>
                 <listitem>
-                  <para>the micturition context is left empty/unknown<footnote><para>Studies have shown that systolic blood pressure measurements could increase 10 to 15mmHg with
-                        a full bladder. Micturition, the process of emptying the bladder, is
-                        therefore a data element that can be recorded with some Clinical Input
-                        Forms. <link linkend="bibA">[6]</link><link linkend="bibB">[7]</link><link
-                          linkend="bibC">[8]</link>
-                      </para></footnote></para>
+                  <para>the micturition context is left empty/unknown<footnote>
+                      <para>Studies have shown that systolic blood pressure measurements could
+                        increase 10 to 15mmHg with a full bladder. Micturition, the process of
+                        emptying the bladder, is therefore a data element that can be recorded with
+                        some Clinical Input Forms. [6][7][8] </para>
+                    </footnote></para>
                 </listitem>
               </itemizedlist>
             </para>
@@ -247,9 +246,8 @@
             ><?oxy_comment_start author="rcholan" timestamp="20190730T085913-0400" comment="glossary" flag="done"?><glossterm
             baseform="Topic expression">topic</glossterm><?oxy_comment_end?></emphasis> of a
         statement using standard terminology expressions. ANF defines responsibility for different
-        representational aspects of input data along well-defined compositional layers (see <link
-          linkend="SoC_Section">Separation of Concerns</link>). In practice, information systems may
-        create
+        representational aspects of input data along well-defined compositional layers (see
+        Separation of Concerns). In practice, information systems may create
         <?oxy_comment_start author="steph" timestamp="20191016T095716-0600" comment="What is normal data?  Should it be normalized data instead?"?>normal
         data<?oxy_comment_end?> natively or transform other representations of clinical statements
         (e.g. C-CDA templates, FHIR profiles) to normal form (i.e., ANF).</para>
@@ -286,14 +284,14 @@
           <glossterm baseform="Terminology Knowledge">terminology knowledge </glossterm> to specify
         the meaning of clinical statements. ANF coded data may use single codes, as well as any
         <?oxy_comment_start author="steph" timestamp="20191016T101448-0600" comment="Recommend using &quot;allowed&quot; vs &quot;legal&quot; since the latter is regarding the law."?>legal
-        <?oxy_comment_end?>terminology expression defined within the terminology layer of the <link
-          linkend="SoC_Section">architecture</link>.</para>
+        <?oxy_comment_end?>terminology expression defined within the terminology layer of the
+        architecture.</para>
       <para>ANF
         supports<?oxy_comment_start author="kec" timestamp="20190721T123126-0700" comment="supports—but does not require—postcoordinated compositional terminologies" flag="done"?>
         pre-coordinated and
-          <?oxy_comment_start author="rcholan" timestamp="20190730T110517-0400" comment="glossary" flag="done" mid="22"?><glossterm
+          <?oxy_comment_start author="rcholan" timestamp="20190730T110517-0400" comment="glossary" flag="done" mid="26"?><glossterm
           baseform="Post-coordinated concept"
-        >post-coordinated</glossterm><?oxy_comment_end?><?oxy_comment_end mid="22"?> terminology
+        >post-coordinated</glossterm><?oxy_comment_end?><?oxy_comment_end mid="26"?> terminology
         expressions to provide greater content coverage than can be achieved by relying only on
           <glossterm baseform="Pre-coordinated concept">pre-coordinated concepts.</glossterm>
         Post-coordinated compositional terminologies are more expressive and can achieve better
