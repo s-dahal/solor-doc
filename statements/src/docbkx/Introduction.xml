@@ -23,6 +23,18 @@
             experience through reliable and interoperable data that supports accurate and timely
             clinical decision support that is solely prompted and driven by real-world data and
             provides real-time assistance to clinicians.</para>
+        <para>The essential challenge of informatics practice within the healthcare enterprise is to
+            quickly deliver a high fidelity reasoned interpretation of principles and facts to the
+            point of care—and then to quickly aggregate these point of care experiences for analytic
+            analysis so that new principles and facts can be formulated and validated as part of a
+            continuous optimization of healthcare knowledge and delivery. To effectively answer this
+            challenge, we must focus on simplification and integration of knowledge assets, and on
+            build, test, deploy, and release processes for delivering these assets to the points of
+            care and analysis. This focus on perhaps mundane topics is not because we think that
+            novelty has no place in our work; rather, that without a focus on aspects of our
+            delivery challenge that are often treated as peripheral to the overall problem, we
+            cannot achieve reliable, rapid, low-risk knowledge-asset development and delivery in an
+            efficient manner.</para>
     </section>
     <section>
         <title>Overview of IKM Book</title>

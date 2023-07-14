@@ -24,6 +24,14 @@
     </part>
     <part>
         <title>Foundational Architecture</title>
+        <xi:include href="statement-why-analysis-normal-form.xml"/>
+        <xi:include href="statement-anf-reference-model-intro.xml"/>
+        <xi:include href="statement-anf-reference-model-uml-report.xml"/>
+        <xi:include href="statement-anf-clinical-statements.xml"/>
+        <xi:include href="statement-analysis-normal-form.xml"/>
+        <xi:include href="statement-editorial-rules.xml"/>
+        <xi:include href="statement-differences-between-anf-and-cif.xml"/>
+        <xi:include href="statement-examples-section.xml"/>
         <xi:include href="Foundational-Architecture.xml"/>
     </part>
     <part>
@@ -36,7 +44,7 @@
     </part>
     <part>
         <title>Assertional Knowledge</title>
-        <xi:include href="Assertional-Knowledge.xml"/>
+        <xi:include href="SOLOR-assertional.xml"/>
     </part>
     <part>
         <title>Procedural Knowledge</title>

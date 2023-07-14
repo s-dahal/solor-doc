@@ -3,7 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>Solor Assertional Knowledge</title>
+     <title>Assertional Knowledge</title>
     <section>
         <title>Introduction</title>
         <para>Previously we discussed definitional knowledge which defines purely structural
@@ -215,14 +215,14 @@
         </section>
     </section>
     <section>
-        <title>Solor Representation of Assertional Knowledge</title>
-        <para>The Solor representation of Assertional Knowledge reaches beyond the patient as the
-            subject of record and observations and evaluation results about the patient. It
-            represents knowledge that can be applied to the patient's care, e.g. the patient's
-            treatment or diagnostics. </para>
-        <para>The Solor capability of associating statements enables the use of Assertional
-            Knowledge to clinical decision support applications, clinical pathways and general
-            information (“info button”) that can be made available to users of EMR systems. </para>
+        <title>Representation of Assertional Knowledge</title>
+        <para>Representation of Assertional Knowledge reaches beyond the patient as the subject of
+            record and observations and evaluation results about the patient. It represents
+            knowledge that can be applied to the patient's care, e.g. the patient's treatment or
+            diagnostics. </para>
+        <para>The capability of associating statements enables the use of Assertional Knowledge to
+            clinical decision support applications, clinical pathways and general information (“info
+            button”) that can be made available to users of EMR systems. </para>
     </section>
     
     
