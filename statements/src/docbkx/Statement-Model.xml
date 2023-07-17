@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<chapter xmlns="http://docbook.org/ns/docbook"
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>Statement Model</title>
+    <title>Statement Model</title>
     <section>
         <title>Analysis Normal Form (ANF) Ballot</title>
+        <!-- <xi:include href="statement-why-analysis-normal-form.xml"/>
+        <xi:include href="statement-anf-reference-model-intro.xml"/>
+        <xi:include href="statement-anf-reference-model-uml-report.xml"/>
+        <xi:include href="statement-anf-clinical-statements.xml"/>
+        <xi:include href="statement-analysis-normal-form.xml"/>
+        <xi:include href="statement-editorial-rules.xml"/>
+        <xi:include href="statement-differences-between-anf-and-cif.xml"/>
+        <xi:include href="statement-examples-section.xml"/>
+        <xi:include href="Foundational-Architecture.xml"/> -->
     </section>
     <section>
         <title>Technology that Supports ANF Data Transformations</title>
@@ -15,4 +25,3 @@
         <title>ANF User Guide</title>
     </section>
 </chapter>
-
