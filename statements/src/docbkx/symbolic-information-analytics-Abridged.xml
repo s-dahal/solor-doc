@@ -13,45 +13,20 @@
     <part>
         <title>Introduction</title>
         <xi:include href="Introduction.xml"/>
-    </part>
-    <part>
-        <title>Background</title>
         <xi:include href="Background.xml"/>
-    </part>
-    <part>
-        <title>Integrated Knowledge Management (IKM) </title>
-        <xi:include href="Integrated%20Knowledge%20Management.xml"/>
-    </part>
-    <part>
-        <title>Foundational Architecture</title>
+        <xi:include href="Terminology-Knowledge.xml"/>
         <xi:include href="Foundational-Architecture.xml"/>
     </part>
     <part>
-        <title>Terminology Knowledge</title>
-        <xi:include href="Terminology-Knowledge.xml"/>
+        <title>Integrated Knowledge Management (IKM) Overview</title>
+        <xi:include href="Integrated%20Knowledge%20Management.xml"/>
     </part>
     <part>
-        <title>Statement Model</title>
-        <xi:include href="Statement-Model.xml"/>
+        <title>Komet User Guide</title>
+        <xi:include href="Komet-User-Guide.xml"/>
     </part>
     <part>
-        <title>Assertional Knowledge</title>
-        <xi:include href="SOLOR-assertional.xml"/>
-    </part>
-    <part>
-        <title>Procedural Knowledge</title>
-        <xi:include href="Procedural-Knowledge.xml"/>
-    </part>
-    <part>
-        <title>Use Cases</title>
-        <xi:include href="Use-Case-Chapter.xml"/>
-    </part>
-    <part>
-        <title>Ecosystem</title>
-        <xi:include href="Ecosystem.xml"/>
-    </part>
-    <part>
-        <title>Next Steps</title>
+        <title>Next Steps and Open Source Collaboration</title>
         <xi:include href="Next-Steps.xml"/>
     </part>
 </book>
