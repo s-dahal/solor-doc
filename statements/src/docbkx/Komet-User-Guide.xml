@@ -6,15 +6,72 @@
      <title>Komet User Guide</title>
     <section>
         <title>Taxonomy Navigation and Display </title>
-        <para></para>
+        <section>
+            <title>Search for a Concept</title>
+        </section>
+        <section>
+            <title>Search for a Concept Branch</title>
+        </section>
+        <section>
+            <title>Search for a Concept Change/Version Histroy</title>
+        </section>
     </section>
     <section>
         <title>Editing and Arena Editing</title>
-        <para></para>
+        <section>
+            <title>Create a Concept</title>
+        </section>
+        <section>
+            <title>Concept Requirements</title>
+        </section>
+        <section>
+            <title>Minimum Viable Product</title>
+        </section>
+        <section>
+            <title>Edit a Concept</title>
+            <section>
+                <title>Modify STAMP Components</title>
+                <section>
+                    <title>Use of Status</title>
+                </section>
+                <section>
+                    <title>Use of Time</title>
+                </section>
+                <section>
+                    <title>Use of Author</title>
+                </section>
+                <section>
+                    <title>Use of Modules</title>
+                </section>
+                <section>
+                    <title>Use of Path</title>
+                </section>
+            </section>
+        </section>
+        <section>
+            <title>Create a Concept Branch</title>
+        </section>
+        <section>
+            <title>Edit a Concept Branch</title>
+            <section>
+                <title>Merge a Concept Branch</title>
+            </section>
+        </section>
+        <section>
+            <title>Publish Content</title>
+        </section>
     </section>
     <section>
         <title>Retiring Terminology Component</title>
-        <para></para>
+        <section>
+            <title>Compare Concept Versions</title>
+        </section>
+        <section>
+            <title>Determine Concept Equivalence</title>
+        </section>
+        <section>
+            <title>Inactivate Concept Version</title>
+        </section>
     </section>
     <section>
         <title>Clinical Information Modeling Initiative (CIMI) Query Language</title>
