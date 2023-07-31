@@ -75,6 +75,11 @@
                             technologies and policies are implemented.</emphasis></para>
                 </listitem>
             </itemizedlist>
+            <para>The intent of the IKM Book is to have a direct connection to real world events and
+                circumstances. For a granular and detailed breakdown of real world examples, please
+                refer to Appendix A.
+                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>(CREATE LINK TO
+                APPENDIX HERE)<?oxy_custom_end?></para>
         </section>
         <section>
             <title>IKM Guiding Principles</title>
@@ -274,7 +279,7 @@
                 </itemizedlist></para>
         </section>
         <section>
-            <title>Benefits of an Integrated Approach</title>
+            <title>IKM Value Proposition</title>
             <para>Implementing Integrated Knowledge Management will reduce the challenges associated
                 with unpredictable, poorly controlled, and reactive health IT data. The Knowledge
                 Architecture described above will provide the foundation for robust configuration
