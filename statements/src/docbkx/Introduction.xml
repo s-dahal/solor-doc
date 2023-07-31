@@ -280,33 +280,58 @@
         </section>
         <section>
             <title>IKM Value Proposition</title>
-            <para>Implementing Integrated Knowledge Management will reduce the challenges associated
-                with unpredictable, poorly controlled, and reactive health IT data. The Knowledge
-                Architecture described above will provide the foundation for robust configuration
-                management and quality assurance of health IT data while allowing for a standardized
-                update and extension process. This approach will support increased clinical and
-                laboratory data quality and enable healthcare systems across the industry to conduct
-                robust and meaningful data analysis and increase overall interoperability, which
-                ultimately enhances the quality of care across all medical facilities.</para>
+            <para>Issues with the interoperability of health data could cost the US healthcare
+                system upwards of $30 billion per year. The introduction of industry-wide
+                interoperability could improve upon these expenditures by reducing adverse events,
+                redundant testing, clinician’s time spent on manual data entry, and reducing length
+                of stay, resulting in $1.9B, $1.5B, $12B, and $18B in savings, respectively.[4-7]
+                Implementing Integrated Knowledge Management will reduce the challenges associated
+                with unpredictable, poorly controlled, and reactive health IT data. This lack of
+                interoperable data hinders advancements and innovation in the healthcare system,
+                including use of AI and Big Data, medical communications, research, and
+                international coordination, as new technologies must rely on suboptimal data and
+                cannot achieve their full potential. [8] The Knowledge Architecture described above
+                will provide the foundation for robust configuration management and quality
+                assurance of health IT data while allowing for a standardized update and extension
+                process. This approach will support increased clinical and laboratory data quality
+                and enable healthcare systems across the industry to conduct robust and meaningful
+                data analysis and increase overall interoperability, which ultimately enhances the
+                quality of care across all medical facilities. </para>
             <para>The purpose of employing the Knowledge Architecture and enabling Integrated
-                Knowledge Management can be succinctly described through its benefits: improved
-                patient outcomes, meaningful data analysis, and increased interoperability. </para>
+                Knowledge Management can be succinctly described through its benefits: increased
+                interoperability, improved patient outcomes, and meaningful data analysis. These
+                benefits cut across important aspects of healthcare including regulatory adherence,
+                patient-centric care, operational excellence, data management, innovation and
+                collaboration, and cost and fraud control. Additionally, incorporating aspects of
+                Highly Reliable Organization (HRO) data governance and data quality, HRO principles
+                can minimize errors, increase efficiency, and promote a culture of continuous
+                learning and improvement, all of which are highly relevant to this work. [9]</para>
+            <section>
+                <title>Increased Interoperability</title>
+                <para>Improved interoperability will reduce the need for doctors to access important
+                    health records using dated methods, such as manual, phone, and fax transmission
+                    of health data and break down information silos. Medical facilities will have
+                    more interoperable capabilities, opening the door for future opportunities to
+                    integrate patient data with other agencies, community partners, and the private
+                    sector. [10]</para>
+            </section>
             <section>
                 <title>Improved Patient Outcomes</title>
                 <para>Patient care will be optimized and efficient, enabling clinicians to provide
-                    high-quality care to all patients across all medical facilities.</para>
+                    high-quality care to patients across medical facilities that improves patient
+                    outcomes and provider productivity and reduces adverse events and redundant
+                    testing. The potential of digital innovation in health care delivery can also
+                    contribute to advancing diagnosis and treatment options, facilitating
+                    introduction of telemedicine, promoting and supporting self-management, and
+                    reducing error. [11]</para>
             </section>
             <section>
                 <title>Meaningful Data Analysis</title>
                 <para>Medical facilities will be able to easily query specific health factors to
                     gain necessary insights, draw conclusions, and make recommendations based on
-                    accurate patient data.</para>
-            </section>
-            <section>
-                <title>Increased Interoperability</title>
-                <para>Medical facilities will have more interoperable capabilities, opening the door
-                    for future opportunities to integrate patient data with other agencies,
-                    community partners, and the private sector.</para>
+                    accurate patient data. Improved data interoperability will also support policy
+                    makers and public health experts make informed decisions that more appropriately
+                    address evolving needs and priorities. [12]</para>
             </section>
         </section>
     </section>
@@ -321,7 +346,7 @@
             <para>Health Information Technology (IT), or the use of computer hardware, software, or
                 infrastructure to record, store, protect, and retrieve clinical, administrative, or
                 financial information, has become a critically important form of organizing,
-                managing, analyzing, and exchanging patient health information. [4] Though first
+                managing, analyzing, and exchanging patient health information. [13] Though first
                 employed in the 1960s, Health IT entered the scene and obtained widespread adoption
                 in the early-1990s promising:</para>
             <itemizedlist>
@@ -343,7 +368,7 @@
                 </listitem>
                 <listitem>
                     <para>The ability to improve clinician/provider satisfaction and reduce burden
-                        and burnout. [5]</para>
+                        and burnout. [14]</para>
                 </listitem>
             </itemizedlist>
             <para>The most commonly known forms of Health IT systems, Electronic Health Records
@@ -356,10 +381,10 @@
             <para>Despite advancement in technologies like these, a Johns Hopkins study conducted in
                 2016 suggested that preventable medical errors, including those due to EHR errors,
                 accounted for approximately 250,000 patient deaths every year – making it the
-                third-leading cause of death in the United States. [6] When Crico, a medical
+                third-leading cause of death in the United States. [15] When Crico, a medical
                 professional liability organization, identified 147 cases of patient harm over five
                 years in which an EHR was identified as a contributing factor, a staggering 80
-                percent of these cases involved moderate or severe harm to the patient. [7] In
+                percent of these cases involved moderate or severe harm to the patient. [16] In
                 total, an estimated $61 million in direct payments and legal expenses resulted from
                 these cases, at an average cost of $415,000 per case.</para>
             <para>On the surface, exciting new technology has continued to advance in the healthcare
@@ -373,7 +398,7 @@
                 reduce clinician workload. The advancements in EHRs have had a great impact for
                 patients, but users continue to face complications due to the lack of standardized
                 data exchange. Unstandardized data stacking has made it difficult to interpret a
-                patient’s chart with accurate data reporting. [8] As far as healthcare technology
+                patient’s chart with accurate data reporting. [17] As far as healthcare technology
                 has come, the quality of existing technology platforms is limited through the
                 quality of encoded data – which is where the problem begins.</para>
         </section>
@@ -394,7 +419,7 @@
                 decisions, tracking patient outcomes, anticipating future health problems,
                 identifying deviations from expected trends, informing preventive and public health
                 measures, supporting clinical research, and providing a legal and historical record.
-                [9] </para>
+                [18] </para>
             <para>To provide context with an example, when a primary care provider records a
                 diabetes diagnosis in their local system, it is critical for that system to share
                 the data accurately and seamlessly to the pertinent pharmacy and laboratory systems.
@@ -468,7 +493,7 @@
                     measurements, images, drawings, and more. It is common practice for several
                     different observations of a singular patient to be made concurrently, the
                     observation of the same patient parameter to be made over the course of several
-                    points in time, or both. [9] It is also important to keep a record of the
+                    points in time, or both. [18] It is also important to keep a record of the
                     circumstances under which data are obtained, further adding to the complexity
                     and volume of data. For example, a simple blood pressure reading may factor if a
                     blood pressure reading is taken on the arm or the leg, whether the patient
@@ -483,13 +508,13 @@
                     practical efforts illustrates the challenges of using observational data for
                     safe patient care, comparative effectiveness research, and analyses for biases,
                     workflow differences, and issues with variations in data collection, such as
-                    invalid, inconsistent, and missing data. [10 – 25]</para>
+                    invalid, inconsistent, and missing data. [19 – 34]</para>
             </section>
         </section>
         <section>
             <title>A Brief Overview of Health Data Standards</title>
             <para>Standards are generally required when excessive variation creates inefficiencies
-                or impedes effectiveness. [9] There have been many valuable standards applied
+                or impedes effectiveness. [18] There have been many valuable standards applied
                 throughout history such as railroad tracks, telephones, WiFi, and financial
                 transactions. The broad goal of the application of standards to electronic health
                 data is unambiguous data exchange, or “interoperability” – the ability of two
@@ -589,7 +614,7 @@
                     standard for EHR-to- Reference Lab interfacing is the Health Level Seven (HL7)
                     Version 2.x (V2.x) standard. While other messaging standards exist and can be
                     used, the HL7 V2.x messaging standard, first released in 1987, is used in 95% of
-                    U.S. healthcare organizations and in more than 35 countries. [26] </para>
+                    U.S. healthcare organizations and in more than 35 countries. [35] </para>
                 <para>To illustrate how standards for <emphasis role="italic">structure
                         </emphasis>and<emphasis role="italic"> meaning</emphasis> may be currently
                     implemented, we will explore a scenario of a typical hospital-to-reference lab
@@ -624,7 +649,7 @@
                     example we see the same laboratory conducting two distinct tests and encoding
                     each test with a different LOIN1C code; however, both are mapped to the same
                     local code. This mock scenario highlights one example of the myriad of
-                    interoperability challenges faced in healthcare today. [26] Successful
+                    interoperability challenges faced in healthcare today. [35] Successful
                     interoperability is dependent on either using universal code systems for data
                     capture or through mapping local content to a universal code system. Local code
                     systems serve the same function as universal coding systems such as SNOMED CT
@@ -655,7 +680,7 @@
                     represent clinical data alone in the current data structures. Both types of
                     models can be arbitrarily complex, and, at some point, semantics not represented
                     in one must be represented in the other if one is to achieve interoperability.
-                    [9]</para>
+                    [18]</para>
             </section>
         </section>
     </section>
@@ -674,7 +699,80 @@
                 </listitem>
                 <listitem>
                     <para>Analysis Normal Form Informative Ballot. HL7 CIMI Work Group. Sept 2019.
-                        http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf.
+                        http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf.</para>
+                </listitem>
+                <listitem>
+                    <para>Middleton B. The Value of Healthcare Information Exchange and
+                        Interoperability [Internet]. 2014 [cited 2023 Jul 31]. Available from: <link
+                            xlink:href="https://www.researchgate.net/profile/Blackford-Middleton/publication/228874733_The_value_of_healthcare_information_exchange_and_interoperability/links/0fcfd51476ee58b1e0000000/The-value-of-healthcare-information-exchange-and-interoperability.pdf"
+                                ><emphasis role="underline"
+                                >https://www.researchgate.net/profile/Blackford-Middleton/publication/228874733_The_value_of_healthcare_information_exchange_and_interoperability/links/0fcfd51476ee58b1e0000000/The-value-of-healthcare-information-exchange-and-interoperability.pdf.</emphasis></link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Houlne D. Technology and the Cost-of-Care Convergence [Internet]. HIMSS;
+                        2021 [cited 2023 Jul 31]. Available from: <link
+                            xlink:href="https://www.himss.org/news/technology-and-cost-care-convergence#:~:text=Better%2C%20cost-effective%20care%20starts%20with%20interoperability.%20One%20study,U.S.%20health%20system%20over%20%2430%20billion%20a%20year"
+                                ><emphasis role="underline"
+                                >https://www.himss.org/news/technology-and-cost-care-convergence#:~:text=Better%2C%20cost-effective%20care%20starts%20with%20interoperability.%20One%20study,U.S.%20health%20system%20over%20%2430%20billion%20a%20year.</emphasis></link></para>
+                </listitem>
+                <listitem>
+                    <para>Analysis by West Health Institute finds medical device interoperability
+                        could save more than $30 billion a year. West Health; 2013 [cited 2023 Jul
+                        31]. Available from: <link
+                            xlink:href="https://www.westhealth.org/press-release/new-analysis-by-west-health-institute-finds-medical-device-interoperability-could-save-more-than-30-billion-a-year/"
+                                ><emphasis role="underline"
+                                >https://www.westhealth.org/press-release/new-analysis-by-west-health-institute-finds-medical-device-interoperability-could-save-more-than-30-billion-a-year/.</emphasis></link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Benson T, Grieve G. Why Interoperability Is Hard. In: Principles of Health
+                        Interoperability: FHIR, HL7 and SNOMED CT. Cham: Springer; 2021. p. 21–40.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Lehne M, Sass J, Essenwanger A, Schepers J, Thun S. Why Digital Medicine
+                        Depends on Interoperability [Internet]. U.S. National Library of Medicine;
+                        2019 [cited 2023 Jul 31]. Available from: <link
+                            xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6702215/?report=classic"
+                                ><emphasis role="underline"
+                                >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6702215/?report=classic.</emphasis></link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Frankel A, Leonard M, Brooks A, Peach A, Proulx J, Cramer D, et al. The
+                        Framework for High Reliability Healthcare [Internet]. [cited 2023 Jul 31].
+                        Available from: <link
+                            xlink:href="https://www.safeandreliablecare.com/the-framework-for-high-reliability-healthcare2"
+                                ><emphasis role="underline"
+                                >https://www.safeandreliablecare.com/the-framework-for-high-reliability-healthcare2.</emphasis></link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Patzer A. Council Post: Why a Lack of Interoperability in Healthcare is a
+                        Detriment to Patients [Internet]. Forbes Magazine; 2020 [cited 2023 Jul 31].
+                        Available from: <link
+                            xlink:href="https://www.forbes.com/sites/forbestechcouncil/2020/03/02/why-a-lack-of-interoperability-in-healthcare-is-a-detriment-to-patients/?sh=1dc13d761120"
+                                ><emphasis role="underline"
+                                >https://www.forbes.com/sites/forbestechcouncil/2020/03/02/why-a-lack-of-interoperability-in-healthcare-is-a-detriment-to-patients/?sh=1dc13d761120.</emphasis></link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Abernethy A, Adams L, Barrett M, Bechtel C, Brennan P, Butte A, et al. The
+                        promise of Digital Health: Then, now, and the future [Internet]. U.S.
+                        National Library of Medicine; 2022 [cited 2023 Jul 31]. Available from:
+                            <link xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499383/"
+                                ><emphasis role="underline"
+                                >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499383/.</emphasis></link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Ricker-Kiefert K, Block L. State Strategies to Advance Health Data
+                        Interoperability [Internet]. NGA; 2021 [cited 2023 Jul 31]. Available from:
+                            <link
+                            xlink:href="https://www.nga.org/wp-content/uploads/2021/03/State-Strategies-to-Advance-Health-Data-Interoperability.pdf"
+                                ><emphasis role="underline"
+                                >https://www.nga.org/wp-content/uploads/2021/03/State-Strategies-to-Advance-Health-Data-Interoperability.pdf.</emphasis></link>
                     </para>
                 </listitem>
                 <listitem>
