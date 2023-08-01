@@ -153,136 +153,6 @@
                 </itemizedlist></para>
         </section>
         <section>
-            <title>The Knowledge Architecture</title>
-            <para>Increased reliance on computerized health records, including EHRs Systems,
-                requires standardized medical terminology to encode health information consistently
-                across systems and enterprises. Clinicians require not only objective quantitative
-                measurements (e.g., 90 beats per minute for a patient’s pulse), but also procedural
-                context (e.g., pulse oximetry, manual) about past observations or requests for
-                future interventions. While two quantitative measurements may be the same, the
-                procedural information could indicate meaningful semantic differences and lead to
-                different clinical interpretation and treatment. As information is exchanged across
-                systems, the solution requires a common understanding of data, a method to support
-                knowledge representation, and clinical decision rules based on common terminology
-                and statements. Each component must address an aspect and together need to address
-                the requirements of clinicians. Current HL7 standard implementations rely on
-                profiles and templates to disambiguate statement and terminology and provide
-                sufficient precision for transactions, documents, and standards-based APIs.
-                Therefore, the architectural approach described here is applicable to standards
-                organizations developing interoperability for enterprise and project-specific
-                implementations in equal measure.</para>
-            <para>The Knowledge Architecture, by definition, is a framework for clinical information
-                that is organized into distinct layers such that each higher layer relies upon
-                artifacts from the lower layer. The purpose of the Knowledge Architecture is to
-                standardize clinical statements and terminologies by providing abstraction &amp;
-                eliminating unnecessary complexity. It helps to do this by:</para>
-            <para><emphasis role="bold">Integrating essential clinical terminologies into a coherent
-                    integrated system: </emphasis><itemizedlist>
-                    <listitem>
-                        <para>Localized terminology specific to one organization or system </para>
-                    </listitem>
-                    <listitem>
-                        <para>EHR Vendor Terminologies (such as Cerner's Code Sets, Event Codes,
-                            Event Set Hierarchy)</para>
-                    </listitem>
-                    <listitem>
-                        <para>Interoperability standards: SNOMED, LOINC, RxNorm, and similar</para>
-                    </listitem>
-                </itemizedlist><emphasis role="bold">Defining a Standardized Form for clinical
-                    statements:</emphasis><itemizedlist>
-                    <listitem>
-                        <para>Reduce unnecessary complexity and improve logical structure</para>
-                    </listitem>
-                    <listitem>
-                        <para>Create a coherent integrated healthcare data system</para>
-                    </listitem>
-                    <listitem>
-                        <para>Create an analysis normal form for clinical statements</para>
-                    </listitem>
-                </itemizedlist>The proposed architecture, shown visually below, serves as an
-                implementation of SoC, and helps to break out and organize inter-dependent types of
-                knowledge in a way that allows for reuse, ongoing development, and independent
-                updates. If employed, this model can help the healthcare ecosystem to individually
-                resolve issues in their data within their layers, rather than the entire system,
-                leading to much more agile improvement</para>
-            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-            <para>Figure 1: PASTF Model <?oxy_custom_end?><inlinemediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/PASTF%20Model%202.png"/>
-                    </imageobject>
-                </inlinemediaobject></para>
-            <para>Detailed descriptions of each layer will be spelled out in the chapters that
-                follow, but brief descriptions of each can be found below:</para>
-            <para><emphasis role="bold">Foundational Architecture</emphasis> – The foundational
-                layer of the Knowledge Architecture provides the common elements of
-                interoperability, such as: object identity, versioning, modularity, and knowledge
-                representation. It includes (a) the foundation and building blocks of the common
-                model; (b) how the repeatable transformation process of disparate standards into the
-                common model promotes interoperability with other environments; and (c) how the
-                modules of the architecture are tightly version controlled over time. </para>
-            <para><emphasis role="bold">Terminology Knowledge</emphasis> – The terminology knowledge
-                layer is responsible for structured sets of medical terms and codes that define
-                concepts of interest, including descriptions, dialects, language, and semantic
-                hierarchy. SNOMED CT®, LOINC®, and RxNorm are part of this layer. It defines what
-                valid codes or expressions may be used by higher level layers.</para>
-            <para><emphasis role="bold">Statement Model</emphasis> – The statement model layer is
-                responsible for defining how data elements are combined to create a statement. This
-                layer reuses the artifacts defined in the terminology knowledge layer.</para>
-            <para><emphasis role="bold">Assertional Knowledge</emphasis> – The assertional knowledge
-                layer makes use of the Terminology Knowledge layer concepts to specify non-defining
-                facts that may be used by procedural knowledge algorithms. An example fact might be
-                that “thiazide diuretics treat hypertension.” Assertional knowledge may also
-                indicate what symptoms may be associated with a disorder.</para>
-            <para><emphasis role="bold">Procedural Knowledge</emphasis> – The procedural knowledge
-                layer, also known as imperative knowledge, is the knowledge exercised in the
-                performance of some task. An example would be determining a hypertension treatment
-                plan by analyzing a combination of a patient’s clinical statements and the available
-                assertional knowledge. The procedural knowledge is responsible for information about
-                standard ways to carry out specific procedures, as well as other procedural
-                guidelines, (e.g., treatment protocols for diseases and order sets focused on
-                certain patient situations). Procedural knowledge, together with assertional
-                knowledge, enables clinical decision support, quality measurement, and patient
-                safety. This layer relies on the architectural foundation and terminology layers,
-                incorporates the statement model for information retrieval, and uses assertional
-                knowledge. Procedural knowledge artifacts may include clinical alert rules,
-                reminders, etc., that trigger actions or recommend interventions.</para>
-            <para>Examining a clinical procedure for controlling hypertension illustrates each of
-                the layers of the informatics architectural separation of concerns.<itemizedlist>
-                    <listitem>
-                        <para>At the terminology knowledge layer, there may be various codes and
-                            terms from disparate source terminologies to define a concept (e.g.,
-                            hypertension). Ideally, these overlapping codes and terms would be
-                            oriented to the same parent concept during the transformation and
-                            integration process at the foundational architecture layer.</para>
-                    </listitem>
-                    <listitem>
-                        <para>The statement model layer enables representation of blood pressure
-                            measurement values (e.g., systolic BP = 140 mmHg), or the categorical
-                            data (e.g., pregnancy induced hypertension vs. renal hypertension)
-                            within a standard data structure to facilitate information exchange or
-                            retrieval, such as within a standards-based clinical statement (i.e.,
-                            FHIR).</para>
-                    </listitem>
-                    <listitem>
-                        <para>The assertional knowledge layer represents non-procedural statements,
-                            or facts, such as “Stage 2 high blood pressure is over 140 systolic or
-                            90 diastolic,” or “beta-blockers and ACE inhibitors may be used to treat
-                            hypertension”, or “beta-blockers are contraindicated in patients with a
-                            diagnosis of reactive airway disease.”</para>
-                    </listitem>
-                    <listitem>
-                        <para>Finally, the procedural knowledge layer provides algorithms to analyze
-                            clinical statements about a patient, in combination with the assertional
-                            knowledge, to recommend a treatment protocol for different kinds of
-                            hypertension, including the considerations of, (e.g., patient age,
-                            co-morbidities etc., which can be generated by an electronic clinical
-                            decision support system [statement + assertional layers]). This layer
-                            adds support for workflow and conditional logic (i.e.,
-                            if-then-else).</para>
-                    </listitem>
-                </itemizedlist></para>
-        </section>
-        <section>
             <title>IKM Value Proposition</title>
             <para>Issues with the interoperability of health data could cost the US healthcare
                 system upwards of $30 billion per year. The introduction of industry-wide
@@ -338,6 +208,133 @@
                     address evolving needs and priorities. [12]</para>
             </section>
         </section>
+    </section>
+    <section>
+        <title>The Knowledge Architecture</title>
+        <para>Increased reliance on computerized health records, including EHRs Systems, requires
+            standardized medical terminology to encode health information consistently across
+            systems and enterprises. Clinicians require not only objective quantitative measurements
+            (e.g., 90 beats per minute for a patient’s pulse), but also procedural context (e.g.,
+            pulse oximetry, manual) about past observations or requests for future interventions.
+            While two quantitative measurements may be the same, the procedural information could
+            indicate meaningful semantic differences and lead to different clinical interpretation
+            and treatment. As information is exchanged across systems, the solution requires a
+            common understanding of data, a method to support knowledge representation, and clinical
+            decision rules based on common terminology and statements. Each component must address
+            an aspect and together need to address the requirements of clinicians. Current HL7
+            standard implementations rely on profiles and templates to disambiguate statement and
+            terminology and provide sufficient precision for transactions, documents, and
+            standards-based APIs. Therefore, the architectural approach described here is applicable
+            to standards organizations developing interoperability for enterprise and
+            project-specific implementations in equal measure.</para>
+        <para>The Knowledge Architecture, by definition, is a framework for clinical information
+            that is organized into distinct layers such that each higher layer relies upon artifacts
+            from the lower layer. The purpose of the Knowledge Architecture is to standardize
+            clinical statements and terminologies by providing abstraction &amp; eliminating
+            unnecessary complexity. It helps to do this by:</para>
+        <para><emphasis role="bold">Integrating essential clinical terminologies into a coherent
+                integrated system: </emphasis><itemizedlist>
+                <listitem>
+                    <para>Localized terminology specific to one organization or system </para>
+                </listitem>
+                <listitem>
+                    <para>EHR Vendor Terminologies (such as Cerner's Code Sets, Event Codes, Event
+                        Set Hierarchy)</para>
+                </listitem>
+                <listitem>
+                    <para>Interoperability standards: SNOMED, LOINC, RxNorm, and similar</para>
+                </listitem>
+            </itemizedlist><emphasis role="bold">Defining a Standardized Form for clinical
+                statements:</emphasis><itemizedlist>
+                <listitem>
+                    <para>Reduce unnecessary complexity and improve logical structure</para>
+                </listitem>
+                <listitem>
+                    <para>Create a coherent integrated healthcare data system</para>
+                </listitem>
+                <listitem>
+                    <para>Create an analysis normal form for clinical statements</para>
+                </listitem>
+            </itemizedlist>The proposed architecture, shown visually below, serves as an
+            implementation of SoC, and helps to break out and organize inter-dependent types of
+            knowledge in a way that allows for reuse, ongoing development, and independent updates.
+            If employed, this model can help the healthcare ecosystem to individually resolve issues
+            in their data within their layers, rather than the entire system, leading to much more
+            agile improvement</para>
+        <para>Figure 1: PASTF Model</para>
+        <para><inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="images/PASTF%20Model%202.png"/>
+                </imageobject>
+            </inlinemediaobject></para>
+        <para>Detailed descriptions of each layer will be spelled out in the chapters that follow,
+            but brief descriptions of each can be found below:</para>
+        <para><emphasis role="bold">Foundational Architecture</emphasis> – The foundational layer of
+            the Knowledge Architecture provides the common elements of interoperability, such as:
+            object identity, versioning, modularity, and knowledge representation. It includes (a)
+            the foundation and building blocks of the common model; (b) how the repeatable
+            transformation process of disparate standards into the common model promotes
+            interoperability with other environments; and (c) how the modules of the architecture
+            are tightly version controlled over time. </para>
+        <para><emphasis role="bold">Terminology Knowledge</emphasis> – The terminology knowledge
+            layer is responsible for structured sets of medical terms and codes that define concepts
+            of interest, including descriptions, dialects, language, and semantic hierarchy. SNOMED
+            CT®, LOINC®, and RxNorm are part of this layer. It defines what valid codes or
+            expressions may be used by higher level layers.</para>
+        <para><emphasis role="bold">Statement Model</emphasis> – The statement model layer is
+            responsible for defining how data elements are combined to create a statement. This
+            layer reuses the artifacts defined in the terminology knowledge layer.</para>
+        <para><emphasis role="bold">Assertional Knowledge</emphasis> – The assertional knowledge
+            layer makes use of the Terminology Knowledge layer concepts to specify non-defining
+            facts that may be used by procedural knowledge algorithms. An example fact might be that
+            “thiazide diuretics treat hypertension.” Assertional knowledge may also indicate what
+            symptoms may be associated with a disorder.</para>
+        <para><emphasis role="bold">Procedural Knowledge</emphasis> – The procedural knowledge
+            layer, also known as imperative knowledge, is the knowledge exercised in the performance
+            of some task. An example would be determining a hypertension treatment plan by analyzing
+            a combination of a patient’s clinical statements and the available assertional
+            knowledge. The procedural knowledge is responsible for information about standard ways
+            to carry out specific procedures, as well as other procedural guidelines, (e.g.,
+            treatment protocols for diseases and order sets focused on certain patient situations).
+            Procedural knowledge, together with assertional knowledge, enables clinical decision
+            support, quality measurement, and patient safety. This layer relies on the architectural
+            foundation and terminology layers, incorporates the statement model for information
+            retrieval, and uses assertional knowledge. Procedural knowledge artifacts may include
+            clinical alert rules, reminders, etc., that trigger actions or recommend
+            interventions.</para>
+        <para>Examining a clinical procedure for controlling hypertension illustrates each of the
+            layers of the informatics architectural separation of concerns.<itemizedlist>
+                <listitem>
+                    <para>At the terminology knowledge layer, there may be various codes and terms
+                        from disparate source terminologies to define a concept (e.g.,
+                        hypertension). Ideally, these overlapping codes and terms would be oriented
+                        to the same parent concept during the transformation and integration process
+                        at the foundational architecture layer.</para>
+                </listitem>
+                <listitem>
+                    <para>The statement model layer enables representation of blood pressure
+                        measurement values (e.g., systolic BP = 140 mmHg), or the categorical data
+                        (e.g., pregnancy induced hypertension vs. renal hypertension) within a
+                        standard data structure to facilitate information exchange or retrieval,
+                        such as within a standards-based clinical statement (i.e., FHIR).</para>
+                </listitem>
+                <listitem>
+                    <para>The assertional knowledge layer represents non-procedural statements, or
+                        facts, such as “Stage 2 high blood pressure is over 140 systolic or 90
+                        diastolic,” or “beta-blockers and ACE inhibitors may be used to treat
+                        hypertension”, or “beta-blockers are contraindicated in patients with a
+                        diagnosis of reactive airway disease.”</para>
+                </listitem>
+                <listitem>
+                    <para>Finally, the procedural knowledge layer provides algorithms to analyze
+                        clinical statements about a patient, in combination with the assertional
+                        knowledge, to recommend a treatment protocol for different kinds of
+                        hypertension, including the considerations of, (e.g., patient age,
+                        co-morbidities etc., which can be generated by an electronic clinical
+                        decision support system [statement + assertional layers]). This layer adds
+                        support for workflow and conditional logic (i.e., if-then-else).</para>
+                </listitem>
+            </itemizedlist></para>
     </section>
     <section>
         <title> Preface from Keith Campbell</title>
