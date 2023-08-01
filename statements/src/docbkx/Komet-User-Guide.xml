@@ -11,36 +11,39 @@
         <title>Installing Komet</title>
     </section>
     <section>
-        <title>Importing/Reading in Data</title>
+        <title>Importing and Reading-In Data</title>
     </section>
     <section>
         <title>How To Find A Concept</title>
         <section>
-            <title>How to view detailes (collapsing concepts, etc.)</title>
+            <title>How to View Details</title>
+            <para>Collapsing concepts, etc.</para>
             <section>
-                <title>How to visualize the hierarchical relationship</title>
+                <title>How to Visualize Hierarchical Relationships</title>
             </section>
         </section>
         <section>
-            <title>Viewing versioning</title>
+            <title>Viewing Versioning</title>
         </section>
     </section>
     <section>
         <title>Editing/Modifying</title>
         <section>
-            <title>Primitive editing (text values or number changes)</title>
+            <title>Primitive Editing </title>
+            <para>text values or number changes</para>
         </section>
         <section>
-            <title>Concept editing (language change from English to French)</title>
+            <title>Concept Editing</title>
+            <para>language change from English to French</para>
         </section>
         <section>
-            <title>STAMP editing</title>
+            <title>STAMP Editing</title>
+        </section>
+        <section>
+            <title>Retiring Concepts</title>
         </section>
     </section>
     <section>
-        <title>Retiring Concepts</title>
-    </section>
-    <section>
-        <title>Exporting/Sharing Data</title>
+        <title>Exporting and Sharing Data</title>
     </section>    
 </chapter>
