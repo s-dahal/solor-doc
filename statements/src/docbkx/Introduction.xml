@@ -569,8 +569,11 @@
                         >structure</emphasis>, their <emphasis role="italic">meanings</emphasis> are
                     completely different and only one makes logical sense.</para>
                 <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><emphasis
-                        role="bold">Figure 2: Structural
-                    Interoperability</emphasis><?oxy_custom_end?></para>
+                        role="bold">Figure 2: Structural Interoperability</emphasis><?oxy_custom_end?><inlinemediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Structural%20Interoperability2.png"/>
+                        </imageobject>
+                    </inlinemediaobject></para>
                 <para><emphasis role="italic">Meaning</emphasis> is the ability of systems to share
                     the same interpretation of the data. Meaning interoperability ensures the
                     original meaning and intent of data is interpreted identically across all
@@ -585,11 +588,8 @@
                         >meaning</emphasis>, however the sentence <emphasis role="italic"
                         >structure</emphasis> varies drastically. </para>
                 <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><emphasis
-                        role="bold">Figure 3: Meaning Interoperability</emphasis><?oxy_custom_end?><inlinemediaobject>
-                        <imageobject>
-                            <imagedata fileref="images/Structural%20Interoeprability.png"/>
-                        </imageobject>
-                    </inlinemediaobject></para>
+                        role="bold">Figure 3: Meaning
+                    Interoperability</emphasis><?oxy_custom_end?></para>
                 <para>While Figure 1 and 2 intend to illustrate <emphasis role="italic"
                         >structure</emphasis> and <emphasis role="italic">meaning</emphasis> simply,
                     a more real-world example like, “the patient was given pain medication” and “the
