@@ -5,123 +5,42 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Komet User Guide</title>
     <section>
-        <title>Taxonomy Navigation and Display </title>
-        <section>
-            <title>Search for a Concept</title>
-        </section>
-        <section>
-            <title>Search for a Concept Branch</title>
-        </section>
-        <section>
-            <title>Search for a Concept Change/Version Histroy</title>
-        </section>
+        <title>Downloading Komet</title>
     </section>
     <section>
-        <title>Editing and Arena Editing</title>
+        <title>Installing Komet</title>
+    </section>
+    <section>
+        <title>Importing/Reading in Data</title>
+    </section>
+    <section>
+        <title>How To Find A Concept</title>
         <section>
-            <title>Create a Concept</title>
-        </section>
-        <section>
-            <title>Concept Requirements</title>
-        </section>
-        <section>
-            <title>Minimum Viable Product</title>
-        </section>
-        <section>
-            <title>Edit a Concept</title>
+            <title>How to view detailes (collapsing concepts, etc.)</title>
             <section>
-                <title>Modify STAMP Components</title>
-                <section>
-                    <title>Use of Status</title>
-                </section>
-                <section>
-                    <title>Use of Time</title>
-                </section>
-                <section>
-                    <title>Use of Author</title>
-                </section>
-                <section>
-                    <title>Use of Modules</title>
-                </section>
-                <section>
-                    <title>Use of Path</title>
-                </section>
+                <title>How to visualize the hierarchical relationship</title>
             </section>
         </section>
         <section>
-            <title>Create a Concept Branch</title>
-        </section>
-        <section>
-            <title>Edit a Concept Branch</title>
-            <section>
-                <title>Merge a Concept Branch</title>
-            </section>
-        </section>
-        <section>
-            <title>Publish Content</title>
+            <title>Viewing versioning</title>
         </section>
     </section>
     <section>
-        <title>Retiring Terminology Component</title>
+        <title>Editing/Modifying</title>
         <section>
-            <title>Compare Concept Versions</title>
+            <title>Primitive editing (text values or number changes)</title>
         </section>
         <section>
-            <title>Determine Concept Equivalence</title>
+            <title>Concept editing (language change from English to French)</title>
         </section>
         <section>
-            <title>Inactivate Concept Version</title>
+            <title>STAMP editing</title>
         </section>
     </section>
     <section>
-        <title>Clinical Information Modeling Initiative (CIMI) Query Language</title>
-        <para></para>
+        <title>Retiring Concepts</title>
     </section>
     <section>
-        <title>CIMI Serialization, Conformance Export, and Integration with Systems</title>
-        <para></para>
-    </section>
-    <section>
-        <title>Existing Komet Chapter from Tinkar Ballot</title>
-        <section>
-            <title>Concept</title>
-            <para></para>
-        </section>
-        <section>
-            <title>Semantic</title>
-            <para></para>
-        </section>
-        <section>
-            <title>Pattern</title>
-            <para></para>
-        </section>
-        <section>
-            <title>Concept Detail</title>
-            <para></para>
-        </section>
-        <section>
-            <title>Navigation View</title>
-            <para></para>
-        </section>
-        <section>
-            <title>Versioning in Komet</title>
-            <para></para>
-        </section>
-        <section>
-            <title>SNOMED CT® Example</title>
-            <para></para>
-        </section>
-        <section>
-            <title>LOINC® Example</title>
-            <para></para>
-        </section>
-        <section>
-            <title>RxNorm Example</title>
-            <para></para>
-        </section>
-        <section>
-            <title>Equivalences Between Modules</title>
-            <para></para>
-        </section>
+        <title>Exporting/Sharing Data</title>
     </section>    
 </chapter>
