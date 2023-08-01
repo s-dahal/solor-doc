@@ -206,7 +206,11 @@
                 resolve issues in their data within their layers, rather than the entire system,
                 leading to much more agile improvement</para>
             <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-            <para>Figure 1: PASTF Model <?oxy_custom_end?></para>
+            <para>Figure 1: PASTF Model <?oxy_custom_end?><inlinemediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/PASTF%20Model%202.png"/>
+                    </imageobject>
+                </inlinemediaobject></para>
             <para>Detailed descriptions of each layer will be spelled out in the chapters that
                 follow, but brief descriptions of each can be found below:</para>
             <para><emphasis role="bold">Foundational Architecture</emphasis> – The foundational
@@ -588,8 +592,11 @@
                         >meaning</emphasis>, however the sentence <emphasis role="italic"
                         >structure</emphasis> varies drastically. </para>
                 <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><emphasis
-                        role="bold">Figure 3: Meaning
-                    Interoperability</emphasis><?oxy_custom_end?></para>
+                        role="bold">Figure 3: Meaning Interoperability</emphasis><?oxy_custom_end?><inlinemediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Meaning%20Interoperability%202.png"/>
+                        </imageobject>
+                    </inlinemediaobject></para>
                 <para>While Figure 1 and 2 intend to illustrate <emphasis role="italic"
                         >structure</emphasis> and <emphasis role="italic">meaning</emphasis> simply,
                     a more real-world example like, “the patient was given pain medication” and “the
