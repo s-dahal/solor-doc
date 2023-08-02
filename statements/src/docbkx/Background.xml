@@ -60,8 +60,12 @@
         <para>FDA SHIELD has partnered with and awarded contracts to a variety of organizations to
             support the development of a solution that can meet SHIELD goals and the current issues
             with data interoperability. </para>
-        <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT PICTURE FROM
-            BACKGROUND CHAPTER<?oxy_custom_end?></para>
+        <para><emphasis role="bold">Figure 1: Teaming Partners</emphasis></para>
+        <para><inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Teaming%20Partners.png"/>
+                </imageobject>
+            </inlinemediaobject></para>
     </section>
     <section>
         <title>Real World Evidence and Standards Overview</title>
@@ -420,8 +424,12 @@
             and more specifically clinical statements, we need <emphasis role="italic"
                 >terminology</emphasis> and <emphasis role="italic">structure</emphasis> to convey a
             patient’s condition or health history from one provider to another. </para>
-        <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-        <para>INSERT TABLE 1 FROM BACKGROUND CHAPTER<?oxy_custom_end?></para>
+        <para><emphasis role="bold">Figure 2: Terminology and Structure Examples</emphasis></para>
+        <para><inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Terminology%20and%20Structure.png"/>
+                </imageobject>
+            </inlinemediaobject></para>
         <para>ANF is a data structure that is designed to improve clinical decision support, data
             robustness, decrease data variation, and ultimately prevent terminology
             misrepresentations while following the principles of separation of concerns. There are
@@ -597,8 +605,70 @@
                     and reliability of LOINC® between organizations. These concerns inspired several
                     scholarly and practical efforts to champion and facilitate laboratory data
                     exchange.</para>
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                <para>INSERT TABLES 2 - 4 FROM BACKGROUND CHAPTER<?oxy_custom_end?></para>
+                <para>Examples of Scholarly and Practical Efforts to Assess SNOMED CT® from SNOMED
+                    CT® Interoperability Projects<itemizedlist>
+                        <listitem>
+                            <para>There are licensing aspects to SNOMED CT that complicates its use
+                                as a common format for LOINC. This issue will be addressed by SHIELD
+                                by building on SNOMED CTs foundation. Nonetheless, SNOMED CTs
+                                commitment to develop and expand their use of description logics
+                                formalism as called out by SOLOR as well as their alignment with the
+                                Desiderata as described by Cimino, et at, is a step in the right
+                                direction. [14]</para>
+                        </listitem>
+                    </itemizedlist></para>
+                <para>Examples of Scholarly and Practical Efforts to Assess LOINC® from LOINC®
+                    Interoperability Projects<itemizedlist>
+                        <listitem>
+                            <para>A study compared the use of LOINC® terms used in five medical
+                                centers and their alignment with vendor recommended LOINC terms as
+                                published in the LOINC® for in vitro Diagnostics (LIVD) file. “We
+                                identified mismatches in how medical centers use LOINC® to encode
+                                laboratory tests compared to how test manufacturers encode the same
+                                laboratory tests. Of 331 tests available in the LIVD files, 136
+                                (41%) were represented by a mismatched LOINC® code by the medical
+                                centers.” [9]</para>
+                        </listitem>
+                        <listitem>
+                            <para>A study auditing consistency of LOINC® encoding between three
+                                institutions stated, "There are variations in the way LOINC® is used
+                                for data exchange that result in some data not being truly
+                                interoperable across different enterprises." [15]</para>
+                        </listitem>
+                        <listitem>
+                            <para>A similar study described: "We also noted inconsistency across
+                                institutions regarding specificity of mappings. It appears that
+                                sometimes mappers link concepts to a more general LOINC® code, and
+                                at other times they link to a method specific LOINC® code. This
+                                causes inconsistency in mappings across institutions.” [12]</para>
+                        </listitem>
+                        <listitem>
+                            <para>A study assessing the accuracy of LOINC® terminology mappings for
+                                10 commonly ordered tests found that “Of the 275 LOINC® codes
+                                reported, 54 (19.6%) were incorrect: 2 codes (5934-2 and 12345-1)
+                                (0.7%) did not exist in the LOINC® database and the highest error
+                                rates were observed in the property (27 of 275, 9.8%), system (27 of
+                                275, 9.8%), and component (22 of 275, 8.0%) LOINC® axes.” [10]
+                            </para>
+                        </listitem>
+                    </itemizedlist></para>
+                <para>Examples of Scholarly and Practical Efforts to Assess RxNorm from RxNorm
+                    Interoperability Projects<itemizedlist>
+                        <listitem>
+                            <para>RxNorm lack of Description Logics formalism use limits its ability
+                                to use logic reasoners for inferencing. This limits RxNorms ability
+                                to find new patterns, relationships and identification of
+                                equivalence and interoperability. [13] </para>
+                        </listitem>
+                        <listitem>
+                            <para>While RxNorm has ‘defined ingredients’ [13], historically it has
+                                lacked the computational definition where concepts are defined by
+                                relationships, therefore determining equivalence and allowing
+                                inferencing. However, recent efforts by Bona et al.[16] have
+                                successfully created an OWL file to implement and define the classes
+                                necessary to model RxNorm and NDC concepts.</para>
+                        </listitem>
+                    </itemizedlist></para>
             </section>
         </section>
     </section>
@@ -637,8 +707,12 @@
             particular program or library is a top-level module of its own hierarchy, but can in
             turn be seen as a lower-level module of a higher-level program, library, or
             system.</para>
-        <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT FIGURE 13.1
-            FROM OLD CONTENT - MODULARITY AND VERSIONING OVERVIEW<?oxy_custom_end?></para>
+        <para><emphasis role="bold">Figure 3: Modules and Extensions</emphasis></para>
+        <para><inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Versioning%20and%20Modules.png"/>
+                </imageobject>
+            </inlinemediaobject></para>
     </section>
     <section>
         <title>Safety Systems Thinking and High Reliability Organization (HRO) Overview</title>
@@ -797,8 +871,15 @@
                 Figure 1 below outlines some common knowledge management construct issues that we
                 will work to address as we design a system with proactive data assurance
                 methods.</para>
-            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-            <para>INSERT FIGURE FROM BACKGROUND CHAPTER<?oxy_custom_end?></para>
+            <para><emphasis role="bold">Figure 4: Common Knowledge Management Construct
+                    Challenges</emphasis></para>
+            <para><inlinemediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Common%20Knowledge%20Management%20Construct%20Challenges.png"
+                        />
+                    </imageobject>
+                </inlinemediaobject></para>
         </section>
         <section>
             <title>Related Safety Systems Thinking and HRO Work</title>

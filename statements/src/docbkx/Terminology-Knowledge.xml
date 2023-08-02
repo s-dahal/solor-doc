@@ -415,8 +415,15 @@
                 meet the needs of its users. SNOMED CT is the only terminology that meets all the
                 requirements as described by Cimino. However, as noted above, SNOMED CT has
                 proprietary elements that limits it’s usefulness for interoperability.</para>
-            <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT TABLE 1
-                FROM TERMINOLOGY KNOWLEDGE CHAPTER<?oxy_custom_end?></para>
+            <para><emphasis role="bold">Figure 1: Met criteria of LOINC®, SNOMED CT and RxNorm to
+                    Cimino’s Desiderata</emphasis></para>
+            <para><inlinemediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Met%20criteria%20of%20LOINC%C2%AE,%20SNOMED%20CT%20and%20RxNorm%20to%20Cimino%E2%80%99s%20Desiderata.png"
+                        />
+                    </imageobject>
+                </inlinemediaobject></para>
         </section>
     </section>
     <section>
@@ -576,8 +583,15 @@
             terminology – there is a deprecation process and has concept permanence where codes
             aren’t reused – but they do not establish the basic parameters of hierarchy and
             polyhierarchy, they are violating the tenants of Cimino’s Desiderata.</para>
-        <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT TABLE 2 FROM
-            TERMINOLOGY CHAPTER<?oxy_custom_end?></para>
+        <para><emphasis role="bold">Figure 2: Correspondence of LOINC® to Cimino’s
+                Desiderata</emphasis></para>
+        <para><inlinemediaobject>
+                <imageobject>
+                    <imagedata
+                        fileref="images/Correspondence%20of%20LOINC%C2%AE%20to%20Cimino%E2%80%99s%20Desiderata.png"
+                    />
+                </imageobject>
+            </inlinemediaobject></para>
         <section>
             <title>Comparison of SNOMED CT® to Cimino’s Desiderata</title>
             <para>SNOMED CT® CT is the terminology, that we are currently aware of, that most
@@ -589,8 +603,15 @@
                 and speed is apparent in crisis situations such as COVID-19 pandemic. Otherwise, it
                 has proven to be robust and has a large global community to assist with its
                 development and vetting.</para>
-            <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT TABLE 3
-                FROM TERMINOLOGY CHAPTER<?oxy_custom_end?></para>
+            <para><emphasis role="bold">Figure 3: Correspondence of SNOMED CT to Cimino’s
+                    Desiderata</emphasis></para>
+            <para><inlinemediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Correspondence%20of%20SNOMED%20CT%20to%20Cimino%E2%80%99s%20Desiderata.png"
+                        />
+                    </imageobject>
+                </inlinemediaobject></para>
         </section>
         <section>
             <title>Comparison of RxNorm® to Cimino’s Desiderata</title>
@@ -622,7 +643,15 @@
                 as well as the ability to utilize Description Logics reasoners with its attendant
                 benefits.</para>
             <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-            <para>INSERT TABLE 4 FROM TERMINOLOGY CHAPTER<?oxy_custom_end?></para>
+            <para><?oxy_custom_end?><emphasis role="bold">Figure 4: Correspondence of RxNorm to
+                    Cimino’s Desiderata</emphasis></para>
+            <para><inlinemediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Correspondence%20of%20RxNorm%20to%20Cimino%E2%80%99s%20Desiderata.png"
+                        />
+                    </imageobject>
+                </inlinemediaobject></para>
         </section>
     </section>
     <section>
@@ -716,9 +745,64 @@
                     encoding that is necessarily expected. [18] The results in the following example
                     offer insight into how different codes may be selected for the same test from
                     different laboratories. </para>
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                <para>INSERT CASE STUDY 1 AND TABLE 5 FROM TERMINOLOGY
-                    CHAPTER<?oxy_custom_end?></para>
+                <para><emphasis role="bold">Case Study 1: Cardiac Marker and Coagulation Laboratory
+                        Proficiency Tests [12]</emphasis></para>
+                <para>Depending on the lab, technicians may choose different LOINC® codes for the
+                    same test. The College of American Pathologists (CAP) surveyed 90 lab
+                    participants on “practice setting, instrument(s) and test method(s), and LOINC®
+                    code selection and usage in the laboratory and electronic health records” for 10
+                    commonly ordered tests. 19.6% of codes reported were incorrect, with the highest
+                    error rates “observed in the property (27 of 275, 9.8%), system (27 of 275,
+                    9.8%), and component (22 of 275, 8.0%) LOINC® axes. Errors in LOINC® code
+                    selection included selection of the incorrect component (eg, activated clotting
+                    time instead of activated partial thromboplastin time); selection of panels that
+                    can never be used to obtain an individual analyte (eg, prothrombin time panel
+                    instead of international normalized ratio); and selection of an incorrect
+                    specimen type.” </para>
+                <para><emphasis role="bold">Figure 5: Breakdown of LOINC® Codes Provided by Each
+                        Laboratory </emphasis></para>
+                <para><inlinemediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/Breakdown%20of%20LOINC%C2%AE%20Codes%20Provided%20by%20Each%20Laboratory.png"
+                            />
+                        </imageobject>
+                    </inlinemediaobject></para>
+                <para>For an Activated Partial Thromboplastin Time (aPTT) test, labs reported five
+                    different LOINC® codes that could be selected. Results differed due to different
+                    selections for the following axes:<itemizedlist>
+                        <listitem>
+                            <para>Component – One lab reported using the code 3184-9 for an aPTT
+                                test, which used a component “activated clotting time” instead of
+                                “coagulation surface induced”</para>
+                        </listitem>
+                        <listitem>
+                            <para>System – Between the different labs, some codes selected had the
+                                system as control blood (Bld^Control), platelet-poor plasma (PPP),
+                                or whole blood (Bld).</para>
+                        </listitem>
+                    </itemizedlist></para>
+                <para>For a Prothrombin Time (PT) test, labs reported three different LOINC® codes
+                    that could be selected. Results differed due to some labs incorrectly selecting
+                    panels or the wrong system. For a D-Dimer test, results differed to differences
+                    in component, property, system, and method.</para>
+                <para>As referenced in Table 3, many of the errors arose from different selections
+                    in system, where the system could be whole blood or platelet form plasma. “For
+                    the analyzers used by the laboratories in this survey, coagulation tests such as
+                    APTT and INR are performed on PPP and are never performed on whole blood, so the
+                    selection of a code that indicates the system as PPP would more accurately
+                    represent the test performed as opposed to a code that lists the system as blood
+                    (Bld). Superficially, an end-user may think that “Bld” is a nonspecific answer
+                    for a collected blood specimen. However, LOINC® has defined the system part term
+                    Bld as whole blood as indicated in section 2.5 of the LOINC® User's Guide
+                    V2.65.”</para>
+                <para>LOINC® is an international standard which means that there are terms that only
+                    apply to foreign assays but are still available for use by laboratories in the
+                    U.S. This results in concepts such as “Whole Blood” that mean something
+                    different than intended. End-users commonly use this concept when they intend to
+                    represent “platelet form plasma”; this results in highly prevalent errors in
+                    CoAg testing because the LOINC® concept for “Whole Blood” is perceived to be a
+                    general term when it is not. [16]</para>
             </section>
             <section>
                 <title>Issues with Granularity and Specificity</title>
@@ -728,15 +812,51 @@
                     codes to a more general LOINC® code, and at other times they link to a method
                     specific LOINC® code. This causes inconsistency in mappings across
                     institutions.” [19]</para>
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                <para>INSERT CASE STUDY 2 FROM TERMINOLOGY CHAPTER<?oxy_custom_end?></para>
+                <para><emphasis role="bold">Case Study 2: Comparison of LOINC® Codes between IVD
+                        Manufacturers and Medical Center Laboratories [20]</emphasis></para>
+                <para>In an assessment of LOINC® interoperability between diagnostic test
+                    manufacturers and five medical center laboratories [20], there were mismatches
+                    related to granularity identified such as discrepancies between choosing:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>A methodless LOINC® code (e.g., 1920-8, Aspartate
+                            aminotransferase(AST),) instead of specific code including the method
+                            (e.g., 30239-8, Aspartate aminotransferase [Enzymatic activity/volume]
+                            in Serum or Plasma by With P-5’-P)</para>
+                    </listitem>
+                    <listitem>
+                        <para>A Quantitative LOINC® code (e.g., 70143-4, Cannobinoid screen) versus
+                            qualitative LOINC® code (e.g., 8172-9, Cannabinoids) by the manufacturer
+                        </para>
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist>
+                    <listitem>
+                        <para>Different units of measure: mass/volume (e.g., 3094-0, Urea nitrogen
+                            [Mass/volume] in Serum or Plasma) versus moles/volume (e.g., 1493-7,
+                            Urea nitrogen [Moles/volume] in Serum or Plasma)</para>
+                    </listitem>
+                </itemizedlist>
             </section>
             <section>
                 <title>Variation in Results for Different Devices</title>
                 <para>In addition to variation between how labs classify certain tests, there can
                     also be variation in test results from manufacturers. </para>
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                <para>INSERT CASE STUDY 3 FROM TERMINOLOGY CHAPTER</para><?oxy_custom_end?>
+                <para><emphasis role="bold">Case Study 3: D-Dimer Test Results from Different
+                        In-Vitro Diagnostic (IVD) Devices [16]</emphasis></para>
+                <para>The following table represents data results for D-Dimer tests that are all
+                    represented by the same LOINC® code. However, upon closer notice, the means
+                    between the different devices are significantly different. This raises concern
+                    amongst comparing data across institutions that use different devices. </para>
+                <para><emphasis role="bold">Figure 6: D-Dimer Test Results from Different
+                        Devices</emphasis></para>
+                <para><inlinemediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/D-Dimer%20Test%20Results%20from%20Different%20Devices.png"
+                            />
+                        </imageobject>
+                    </inlinemediaobject></para>
                 <para>The aforementioned CAP study surveying laboratories found that for a D-Dimer
                     test, results differed to differences in component, property, system, and
                     method. [12] Therefore, there is not only variation in test results from
@@ -753,8 +873,25 @@
                     workflow process that involves personnel who must compare LOINC® codes, assess
                     the validity of codes, and submit reviewal processes for codes that must be
                     corrected.</para>
-                <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT CASE
-                    STUDY 4 FROM TERMINOLOGY CHAPTER<?oxy_custom_end?></para>
+                <para><emphasis role="bold">Case Study 4: Bone-Marrow Transplant Research Study
+                        [16]</emphasis></para>
+                <para>An academic medical center in Texas is conducting a bone-marrow transplant
+                    research center study, in order to build an interface that will allow users to
+                    automatically submit data to the hospital. However, upon review, there are
+                    issues where the LOINC® codes do not match correctly.</para>
+                <para><emphasis role="bold">Figure 7: LOINC® Codes Used at Two Different
+                        Institutions for the Same Tests</emphasis></para>
+                <para><inlinemediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/LOINC%C2%AE%20Codes%20Used%20at%20Two%20Different%20Institutions%20for%20the%20Same%20Tests.png"
+                            />
+                        </imageobject>
+                    </inlinemediaobject></para>
+                <para>The table provides insight into the difficulties doctors and technicians face
+                    in ensuring data mapped between systems are the same. Without high confidence in
+                    data, these issues can lead to impacts on real-world evidence
+                    capabilities.</para>
             </section>
             <section>
                 <title>LOINC® Should Define Relations (Using Description Logic)</title>
@@ -863,9 +1000,16 @@
                     starting point towards formal knowledge representation, the current hierarchies
                     are limited, and still do not provide full definitions for LOINC® parts.
                     Furthermore, the use of the hierarchies and LOINC parts are very restricted
-                    under the LOINC® Copyright Notice and License. [24]</para>
-                <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT
-                    TABLE FROM TERMINOLOGY CHAPTER <?oxy_custom_end?></para>
+                    under the LOINC® Copyright Notice anmetd License. [24]</para>
+                <para><emphasis role="bold">Figure 8: Representation of AST in The LOINC Hierarchy
+                        Browser Tool</emphasis></para>
+                <para><inlinemediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/Representation%20of%20AST%20in%20The%20LOINC%20Hierarchy%20Browser%20Tool.png"
+                            />
+                        </imageobject>
+                    </inlinemediaobject></para>
             </section>
             <section>
                 <title>Nebraska Lexicon</title>

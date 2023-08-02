@@ -264,7 +264,7 @@
         <para>Figure 1: PASTF Model</para>
         <para><inlinemediaobject>
                 <imageobject>
-                    <imagedata fileref="images/PASTF%20Model%202.png"/>
+                    <imagedata fileref="images/PASTF%20Model%203.png"/>
                 </imageobject>
             </inlinemediaobject></para>
         <para>Detailed descriptions of each layer will be spelled out in the chapters that follow,
@@ -569,8 +569,8 @@
                     While both sentences have the same sentence <emphasis role="italic"
                         >structure</emphasis>, their <emphasis role="italic">meanings</emphasis> are
                     completely different and only one makes logical sense.</para>
-                <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><emphasis
-                        role="bold">Figure 2: Structural Interoperability</emphasis><?oxy_custom_end?><inlinemediaobject>
+                <para><emphasis role="bold">Figure 2: Structural Interoperability</emphasis></para>
+                <para><inlinemediaobject>
                         <imageobject>
                             <imagedata fileref="images/Structural%20Interoperability2.png"/>
                         </imageobject>
@@ -588,8 +588,8 @@
                 <para>In the below example, the two sentences share a common <emphasis role="italic"
                         >meaning</emphasis>, however the sentence <emphasis role="italic"
                         >structure</emphasis> varies drastically. </para>
-                <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><emphasis
-                        role="bold">Figure 3: Meaning Interoperability</emphasis><?oxy_custom_end?><inlinemediaobject>
+                <para><emphasis role="bold">Figure 3: Meaning Interoperability</emphasis></para>
+                <para><inlinemediaobject>
                         <imageobject>
                             <imagedata fileref="images/Meaning%20Interoperability%202.png"/>
                         </imageobject>
