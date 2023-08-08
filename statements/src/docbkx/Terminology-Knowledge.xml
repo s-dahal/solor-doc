@@ -786,7 +786,7 @@
                     that could be selected. Results differed due to some labs incorrectly selecting
                     panels or the wrong system. For a D-Dimer test, results differed to differences
                     in component, property, system, and method.</para>
-                <para>As referenced in Table 3, many of the errors arose from different selections
+                <para>As referenced in Figure 3, many of the errors arose from different selections
                     in system, where the system could be whole blood or platelet form plasma. “For
                     the analyzers used by the laboratories in this survey, coagulation tests such as
                     APTT and INR are performed on PPP and are never performed on whole blood, so the
@@ -844,7 +844,7 @@
                     also be variation in test results from manufacturers. </para>
                 <para><emphasis role="bold">Case Study 3: D-Dimer Test Results from Different
                         In-Vitro Diagnostic (IVD) Devices [16]</emphasis></para>
-                <para>The following table represents data results for D-Dimer tests that are all
+                <para>The following figure represents data results for D-Dimer tests that are all
                     represented by the same LOINC® code. However, upon closer notice, the means
                     between the different devices are significantly different. This raises concern
                     amongst comparing data across institutions that use different devices. </para>
@@ -888,7 +888,7 @@
                             />
                         </imageobject>
                     </inlinemediaobject></para>
-                <para>The table provides insight into the difficulties doctors and technicians face
+                <para>Figure 7 provides insight into the difficulties doctors and technicians face
                     in ensuring data mapped between systems are the same. Without high confidence in
                     data, these issues can lead to impacts on real-world evidence
                     capabilities.</para>
@@ -1274,24 +1274,32 @@
             <para><emphasis>Aim 1: Review Workflow Schematic for Emerging Acute Chronic Infectious
                     Diseases, specifically focused on Data Capture Elements and Long COVID Value
                     Sets. </emphasis>The team downloaded and reviewed the COVID-19 VSAC value sets
-                outlined in Table 2. The team used these value sets to extract an initial list of
+                outlined in Figure 9. The team used these value sets to extract an initial list of
                 generalized clinical concepts associated with a COVID-19 diagnosis that could
                 potentially contribute to a Long COVID diagnosis. [29]</para>
-            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-            <para>INSERT VSAC VALUE SET TABLE</para><?oxy_custom_end?>
+            <para><emphasis role="bold">Figure 9: VSAC Value Sets</emphasis></para>
+            <para><inlinemediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/VSAC%20Value%20Set.png"/>
+                    </imageobject>
+                </inlinemediaobject></para>
             <para><emphasis>Aim 2: Draft Potential Questionnaires to Standardize Use Case Data
                     Acquisition</emphasis>. An initial questionnaire was developed for the
                 generalized concepts extracted from the COVID-19 VSAC value sets that poses a simple
                 yes or no question for each of the concepts that could potentially aid in a Long
                 COVID diagnosis. This deliverable focuses on potential questionnaires for ‘Signs and
-                Symptoms’ and ‘Non-Specific Respiratory Diagnoses’, outlined in Table 3 and 4
-                respectively, but includes additional mock questionnaires for Exposure, Infection,
-                Lab Test, and Lab Test Results in the Appendix (Table 8 - 11). Certain
-                questionnaires combine information from multiple, related value sets, such as using
-                C19HCC SARSCoV2 Exposure and COVID19 Potential Exposure to create the Exposure
-                Questionnaires in Table 8. [2]</para>
+                Symptoms’ and ‘Non-Specific Respiratory Diagnoses’, outlined in Figure 10 and 11
+                respectively.[2]</para>
             <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-            <para>INSERT SIGNS AND SYMPTOMS TABLE<?oxy_custom_end?></para>
+            <para><?oxy_custom_end?><emphasis role="bold">Figure 10: Hypothetical Signs and Symptoms
+                    Questionnaires</emphasis></para>
+            <para><inlinemediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Hypothetical%20Signs%20and%20Symptoms%20Questionnaires.png"
+                        />
+                    </imageobject>
+                </inlinemediaobject></para>
             <para>While the initial version of the questionnaire on the left can collect important
                 information and data, the format was improved to the version on the right to reduce
                 redundancy, improve clarity, and collect more accurate and granular detail. The
@@ -1305,22 +1313,28 @@
                 data collection from a wider audience. The value sets and questionnaires will need
                 to be updated as symptoms are more comprehensively understood, and as new symptoms
                 are identified. </para>
-            <para>The team developed additional questionnaires for exposure, infection, laboratory
-                test, laboratory test results in the Appendix (Table 8 - 11), and for non-specific
-                respiratory diagnoses below in Table 4. The diagnoses questionnaires continue to
-                improve data quality by reducing duplicative selections and improving granularity by
-                forcing an Upper or Lower ‘Viral Respiratory Tract Infection’ rather than allowing
-                the selection of both Upper or Lower Viral Respiratory Tract Infection and “Viral
+            <para>The team developed additional questionnaires for non-specific respiratory
+                diagnoses below in Figure 11. The diagnoses questionnaires continue to improve data
+                quality by reducing duplicative selections and improving granularity by forcing an
+                Upper or Lower ‘Viral Respiratory Tract Infection’ rather than allowing the
+                selection of both Upper or Lower Viral Respiratory Tract Infection and “Viral
                 Respiratory Tract Infection’. These additional questionnaires demonstrate how
                 improvements can be made to data collection across a variety of areas associated
                 with patient care and can be applied to other emerging acute and chronic infectious
                 diseases.</para>
-            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-            <para>INSERT IMPROVED QUESTIONNAIRE TABLE<?oxy_custom_end?></para>
+            <para><emphasis role="bold">Figure 11: Hypothetical Non-Specific Respiratory Diagnoses
+                    Questionnaire</emphasis></para>
+            <para><inlinemediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Hypothetical%20Non-Specific%20Respiratory%20Diagnoses%20Questionnaire.png"
+                        />
+                    </imageobject>
+                </inlinemediaobject></para>
             <para><emphasis>Aim 3: Outline Variability in Statement Representations</emphasis>.
                 Building upon the concepts found in the VSAC value sets, the team developed tabular
                 representations of certain symptoms to display the variability in the way concepts
-                could be represented and coded. Table 5 depicts the symptom of ‘Fever Greater Than
+                could be represented and coded. Figure 12 depicts the symptom of ‘Fever Greater Than
                 100.4 Fahrenheit with Chills’ across three example terminology standards as well as
                 the null value of a normal body temperature. After reviewing the table, one could
                 conclude that the first three examples are semantically the same. Each describe a
@@ -1329,8 +1343,14 @@
                 terminology standard represents the condition. This variability leads to sub-optimal
                 data capture that can hinder data querying, data use, and the ability to identify
                 semantically equivalent concepts.</para>
-            <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT FEVER
-                REPRESENTATION TABLE<?oxy_custom_end?></para>
+            <para><emphasis role="bold">Figure 12: Variability in Representation of
+                Fever</emphasis></para>
+            <para><inlinemediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Variability%20in%20Representation%20of%20Fever.png"/>
+                    </imageobject>
+                </inlinemediaobject></para>
             <para><emphasis>Aim 4: Demonstrate ANF Ability to Standardize Terminology and Capture
                     Critical Data</emphasis>. The team demonstrated the value of ANF by developing a
                 tabular ANF representation for loss of sense of smell since onset of COVID-19
@@ -1350,8 +1370,15 @@
                 concepts for a certain symptom do not always exist across terminology standards, but
                 ANF is able to represent the absence of a symptom using a numerical countable
                 quantity, ensuring relevant and pertinent information is not lost.</para>
-            <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT ANF
-                ANSOMNIA TABLE AND ASSOCIATED TERMS TABLE<?oxy_custom_end?></para>
+            <para><emphasis role="bold">Figure 13: ANF Standardized Representation of Anosmia and
+                    Associated Term</emphasis></para>
+            <para><inlinemediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/ANF%20Standardized%20Representation%20of%20Anosmia%20and%20Associated%20Term.png"
+                        />
+                    </imageobject>
+                </inlinemediaobject></para>
         </section>
         <section>
             <title>Recommendations to Address Terminology Issues</title>
@@ -1420,7 +1447,16 @@
                 option has its own limitations and cost, the ability to address or minimize common
                 normalization errors justifies their use. [29]</para>
             <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-            <para>INSERT TABLE 7 FROM TERMINOLOGY CHAPTER<?oxy_custom_end?></para>
+            <para><?oxy_custom_end?><emphasis role="bold">Figure 14: Benefits and limitations of
+                    XLST, FHIR, QVT, and MDMI Transformation Languages and
+                Architecture</emphasis></para>
+            <para><inlinemediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Benefits%20and%20limitations%20of%20XLST,%20FHIR,%20QVT,%20and%20MDMI%20Transformation%20Languages%20and%20Architecture.png"
+                        />
+                    </imageobject>
+                </inlinemediaobject></para>
         </section>
     </section>
     <section>

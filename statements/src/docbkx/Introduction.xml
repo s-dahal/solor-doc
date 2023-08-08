@@ -594,7 +594,7 @@
                             <imagedata fileref="images/Meaning%20Interoperability%202.png"/>
                         </imageobject>
                     </inlinemediaobject></para>
-                <para>While Figure 1 and 2 intend to illustrate <emphasis role="italic"
+                <para>While Figure 2 and 3 intend to illustrate <emphasis role="italic"
                         >structure</emphasis> and <emphasis role="italic">meaning</emphasis> simply,
                     a more real-world example like, “the patient was given pain medication” and “the
                     patient was given medication for pain,” highlights potential issues when
@@ -631,7 +631,7 @@
                     message received. After a laboratory test is performed and a test result is
                     available, the Reference Laboratory in this scenario will return a Laboratory
                     Result message to the hospital EHR system.</para>
-                <para>Figure 3 below shows an example of an HL7 v2 Observation (OBX) segment from
+                <para>Figure 4 below shows an example of an HL7 v2 Observation (OBX) segment from
                     two different mock lab result messages. In this scenario, a laboratory has
                     conducted two distinct blood glucose tests on two distinct specimen sources. For
                     the first test, a specimen from serum or plasma was used. For the second test,
@@ -646,11 +646,14 @@
                     code systems to encode the tests; these are called “local codes.” Although not
                     universal, local codes are another way for health information systems to
                     represent <emphasis role="italic">meaning</emphasis> for clinical concepts. The
-                    HL7 v2 observation data in Figure 3 shows blue text representing a local code,
+                    HL7 v2 observation data in Figure 4 shows blue text representing a local code,
                     and the observation data denoted in red represents a corresponding LOINC code. </para>
-                <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><emphasis
-                        role="bold">Figure 3: Erroneous LOINC
-                    Mapping</emphasis><?oxy_custom_end?></para>
+                <para><emphasis role="bold">Figure 4: Erroneous LOINC Mapping</emphasis></para>
+                <para><inlinemediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Erroneous%20Loinc%20Mapping.png"/>
+                        </imageobject>
+                    </inlinemediaobject></para>
                 <para>The figure shows how the same local code can be erroneously mapped to
                     different LOINC codes and transmitted in a Lab Result message. In this case
                     example we see the same laboratory conducting two distinct tests and encoding
