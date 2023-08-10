@@ -6,20 +6,220 @@
      <title>Komet User Guide</title>
     <section>
         <title>Downloading Komet</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Use the following link to <link
+                            xlink:href="https://github.com/ikmdev/komet/releases/tag/1.7.0">download
+                            Komet 1.7.0</link> for your appropriate operating system (for windows
+                        download, click on “komet-installer-windows-1.7.0.msi”)</para>
+                    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+                    <para><?oxy_custom_end?><inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Komet%20Download.png"/>
+                            </imageobject>
+                        </inlinemediaobject></para>
+                </listitem>
+                <listitem>
+                    <para>Save the download file to the location of your choice</para>
+                </listitem>
+            </orderedlist>
+        </para>
     </section>
     <section>
         <title>Installing Komet</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>From your browser’s downloads, open the Komet Installer file</para>
+                    <para><inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Komet%20Installer%20File.png"/>
+                            </imageobject>
+                        </inlinemediaobject></para>
+                </listitem>
+                <listitem>
+                    <para>A message will pop up asking if you want to run the Komet Installer File,
+                        click run</para>
+                    <para><inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Run%20Komet.png"/>
+                            </imageobject>
+                        </inlinemediaobject></para>
+                </listitem>
+                <listitem>
+                    <para>Once complete, nothing will automatically pop-up, so you will need to
+                        verify the install was successful by searching in your applications folder
+                        or your OS’s search feature for the Komet app</para>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+    <section>
+        <title>First Time Start Up</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Go to your search bar or apps folder and open “Komet”</para>
+                </listitem>
+                <listitem>
+                    <para>Change data source to “Open SpinedArrayStore”</para>
+                    <para><inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Open%20SpinedArrayStore.png"/>
+                            </imageobject>
+                        </inlinemediaobject></para>
+                </listitem>
+                <listitem>
+                    <para>Select the data source you would like to use and click “Ok” in the bottom
+                        right</para>
+                </listitem>
+                <listitem>
+                    <para>If you do not see a data source, copy and paste the zip file containing
+                        the desired data to the OSDisk (C:) -> Users -> [your personal user name] ->
+                        Solor folder</para>
+                </listitem>
+                <listitem>
+                    <para>Right click the desired data zip file and select ‘Unzip Here’ so the data
+                        is stored in the Solor folder</para>
+                </listitem>
+                <listitem>
+                    <para>Exit Komet, re-open the application, and change the data source to “Open
+                        SpinedArrayStore”, your data source should appear</para>
+                </listitem>
+                <listitem>
+                    <para>Select the data source you would like to use and click “Ok” in the bottom
+                        right</para>
+                </listitem>
+            </orderedlist>
+        </para>
     </section>
     <section>
         <title>Importing and Reading-In Data</title>
+        <para><emphasis role="bold">Note</emphasis>: This process is to import data after you have
+            finished the initial Komet download and install process</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>In center panel click drop down button “+”, and click “Import
+                        Artifact"</para>
+                    <para><inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Import%20Artifact.png"/>
+                            </imageobject>
+                        </inlinemediaobject></para>
+                </listitem>
+                <listitem>
+                    <para>A “Select your file for import” window will pop up. Click on “Select A
+                        File” button </para>
+                    <para><inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Select%20File.png"/>
+                            </imageobject>
+                        </inlinemediaobject></para>
+                </listitem>
+                <listitem>
+                    <para>Browse and select the zip file of your choice and click “Open”</para>
+                </listitem>
+                <listitem>
+                    <para>A progress bar will monitor the import of your files</para>
+                </listitem>
+                <listitem>
+                    <para>The files will be displayed in the left panel under “Concept
+                        Navigator”</para>
+                </listitem>
+            </orderedlist>
+        </para>
     </section>
     <section>
         <title>How To Find A Concept</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Type the keyword or concept name into the "enter search query" bar in the
+                        right panel to find a concept</para>
+                    <para><inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Concept%20Search.png"/>
+                            </imageobject>
+                        </inlinemediaobject></para>
+                </listitem>
+                <listitem>
+                    <para>Results containing the keyword will populate in the field below the search
+                        bar, with keywords highlighted in green</para>
+                </listitem>
+                <listitem>
+                    <para>Click on a result to view more details in the center panel </para>
+                </listitem>
+            </orderedlist>
+        </para>
         <section>
             <title>How to View Details</title>
-            <para>Collapsing concepts, etc.</para>
+            <orderedlist>
+                <listitem>
+                    <para>To view a concept, click or drag it to the center panel</para>
+                </listitem>
+                <listitem>
+                    <para>Use the tabs at the top of the center panel to view various details and
+                        information about the selected concept, such as description semantics</para>
+                    <para><inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/View%20Concept%20Details.png"/>
+                            </imageobject>
+                        </inlinemediaobject></para>
+                </listitem>
+                <listitem>
+                    <para>Use the “+” drop down to select additional tabs to display information or
+                        to re-open a closed tab for a certain concept</para>
+                    <para><inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Dropdown%20Options.png"/>
+                            </imageobject>
+                        </inlinemediaobject></para>
+                </listitem>
+                <listitem>
+                    <para> You can select the language and/or dialect for the concept you want to
+                        display</para>
+                </listitem>
+            </orderedlist>
             <section>
                 <title>How to Visualize Hierarchical Relationships</title>
+                <para>
+                    <orderedlist>
+                        <listitem>
+                            <para>To view hierarchical relationships, utilize the “Concept
+                                Navigator” and “Pattern Navigator” tabs in the left panel.</para>
+                            <para><inlinemediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/Hierarchical%20navigation.png"/>
+                                    </imageobject>
+                                </inlinemediaobject></para>
+                        </listitem>
+                        <listitem>
+                            <para>These tabs can also be found when viewing a concept in the center
+                                panel by clicking the “+” drop down menu</para>
+                        </listitem>
+                        <listitem>
+                            <para>Utilize the arrows within the left panel to collapse or expand
+                                hierarchical relationships </para>
+                        </listitem>
+                        <listitem>
+                            <para>The center panel can display additional views, including:</para>
+                            <orderedlist>
+                                <listitem>
+                                    <para>Description Semantic with language and dialect</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Relationship destination and relationship origin</para>
+                                </listitem>
+                                <listitem>
+                                    <para>EL++ Stated terminological axioms showing hierarchical
+                                        relationships</para>
+                                </listitem>
+                            </orderedlist>
+                        </listitem>
+                    </orderedlist>
+                </para>
             </section>
         </section>
         <section>
@@ -45,5 +245,19 @@
     </section>
     <section>
         <title>Exporting and Sharing Data</title>
+        <para><orderedlist>
+                <listitem>
+                    <para>Select the concept or concepts you would like to export on the left panel
+                        (use shift or control click to select multiple)</para>
+                </listitem>
+                <listitem>
+                    <para>Right click and select export OR use the “+” dropdown menu and select
+                        ‘Export Artifact’</para>
+                </listitem>
+            </orderedlist><inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="images/export%20artifact.png"/>
+                </imageobject>
+            </inlinemediaobject></para>
     </section>    
 </chapter>
