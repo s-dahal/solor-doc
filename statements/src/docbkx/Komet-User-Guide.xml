@@ -23,6 +23,10 @@
                 <listitem>
                     <para>Save the download file to the location of your choice</para>
                 </listitem>
+                <listitem>
+                    <para>The Komet installer will automatically create a "Solor" folder in your
+                        OSDisk (C:) -> Users -> [your personal user name] folder</para>
+                </listitem>
             </orderedlist>
         </para>
     </section>

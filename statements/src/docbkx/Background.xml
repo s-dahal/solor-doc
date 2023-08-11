@@ -848,7 +848,7 @@
             </section>
         </section>
         <section>
-            <title>Safety Systems Thinking and HRO Framewokr Considerations</title>
+            <title>Safety Systems Thinking and HRO Framework Considerations</title>
             <para>Following the rapid transition to EHRs, there is a desperate need to overhaul the
                 current knowledge management constructs within the health care system to improve
                 data quality and patient safety. While there will never be a perfectly safe system,
@@ -1007,6 +1007,23 @@
                 understanding the real-world pressures of the health care and laboratory
                 systems</para>
         </section>
+        <section>
+            <title>Safety Systems Use Case</title>
+            <para>The Synensys document, "System Safety within Laboratory Data Exchanges,"
+                [<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT LINK TO
+                IKM.DEV WITH THIS PAPER<?oxy_custom_end?>] analyzes the complex challenges in
+                laboratory data exchanges within healthcare, emphasizing the importance of accurate
+                communication, standardized procedures, and contextual information in diagnostics.
+                Various loss scenarios and potential risks are detailed, highlighting the
+                consequences of miscommunication and inconsistency in laboratory data handling. The
+                document is being cited as an example because it illustrates the application of
+                system safety principles in healthcare. Its focus on engineering safety, quality,
+                and reliability into laboratory data exchanges exemplifies the broader theme of
+                implementing systems thinking and high reliability practices, providing a real-world
+                perspective on these critical concepts.
+                [<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT
+                REFERENCE<?oxy_custom_end?> 21]</para>
+        </section>
     </section>
     <section>
         <title>References</title>
@@ -1127,6 +1144,9 @@
                     <para>Hawry PL, Clouse T, Spisla C, Konieck D. Our National Rush to the EHR - An
                         Analysis of Current Clinical Information Quality and Data Governance
                         Practices 2013.</para>
+                </listitem>
+                <listitem>
+                    <para/>
                 </listitem>
             </orderedlist>
         </para>
