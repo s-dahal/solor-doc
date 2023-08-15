@@ -54,7 +54,7 @@
                 <listitem>
                     <para>Once complete, nothing will automatically pop-up, so you will need to
                         verify the install was successful by searching in your applications folder
-                        or your OS’s search feature for the Komet app</para>
+                        or your Operating System’s search feature for the Komet app</para>
                 </listitem>
             </orderedlist>
         </para>
@@ -95,6 +95,26 @@
                     <para>Select the data source you would like to use and click “Ok” in the bottom
                         right</para>
                 </listitem>
+                <listitem>
+                    <para>Komet will open and load in with the 'default' view that consists
+                        of:</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>The Navigation activity stream in the left-hand panel</para>
+                        </listitem>
+                        <listitem>
+                            <para>The Detail Viewer activity stream in the center panel</para>
+                        </listitem>
+                        <listitem>
+                            <para>The Search activity stream in the right-hand panel</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para>As a user, you can click and drag any of these activity streams into a
+                        different panel to reorganize as needed. This guide will use the default
+                        location of activity streams to outline Komet functionality</para>
+                </listitem>
             </orderedlist>
         </para>
     </section>
@@ -105,8 +125,8 @@
         <para>
             <orderedlist>
                 <listitem>
-                    <para>In center panel click drop down button “+”, and click “Import
-                        Artifact"</para>
+                    <para>In the Detail Viewer activity stream (default loaction: center panel)
+                        click drop down button “+”, and click “Import Artifact"</para>
                     <para><inlinemediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Import%20Artifact.png"/>
@@ -141,7 +161,8 @@
             <orderedlist>
                 <listitem>
                     <para>Type the keyword or concept name into the "enter search query" bar in the
-                        right panel to find a concept</para>
+                        Search activity stream (default location: right panel) to find a
+                        concept</para>
                     <para><inlinemediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Concept%20Search.png"/>
@@ -161,11 +182,13 @@
             <title>How to View Details</title>
             <orderedlist>
                 <listitem>
-                    <para>To view a concept, click or drag it to the center panel</para>
+                    <para>To view a concept, click or drag it to the Detail Viewer activity stream
+                        (default location: center panel)</para>
                 </listitem>
                 <listitem>
-                    <para>Use the tabs at the top of the center panel to view various details and
-                        information about the selected concept, such as description semantics</para>
+                    <para>Use the tabs at the top of the Detail Viewer activity stream (default
+                        location: center panel) to view various details and information about the
+                        selected concept, such as description semantics</para>
                     <para><inlinemediaobject>
                             <imageobject>
                                 <imagedata fileref="images/View%20Concept%20Details.png"/>
@@ -192,7 +215,8 @@
                     <orderedlist>
                         <listitem>
                             <para>To view hierarchical relationships, utilize the “Concept
-                                Navigator” and “Pattern Navigator” tabs in the left panel.</para>
+                                Navigator” and “Pattern Navigator” tabs in the Navigation activity
+                                stream (default location: left panel).</para>
                             <para><inlinemediaobject>
                                     <imageobject>
                                         <imagedata fileref="images/Hierarchical%20navigation.png"/>
@@ -200,15 +224,18 @@
                                 </inlinemediaobject></para>
                         </listitem>
                         <listitem>
-                            <para>These tabs can also be found when viewing a concept in the center
-                                panel by clicking the “+” drop down menu</para>
+                            <para>These tabs can also be found when viewing a concept in the Detail
+                                Viewer activity stream (default location: center panel) by clicking
+                                the “+” drop down menu</para>
                         </listitem>
                         <listitem>
-                            <para>Utilize the arrows within the left panel to collapse or expand
-                                hierarchical relationships </para>
+                            <para>Utilize the arrows within the Navigation activity stream (default
+                                location: left panel) to collapse or expand hierarchical
+                                relationships </para>
                         </listitem>
                         <listitem>
-                            <para>The center panel can display additional views, including:</para>
+                            <para>The Detail Viewer activity stream (default location: center panel)
+                                can display additional views, including:</para>
                             <orderedlist>
                                 <listitem>
                                     <para>Description Semantic with language and dialect</para>
@@ -251,8 +278,13 @@
         <title>Exporting and Sharing Data</title>
         <para><orderedlist>
                 <listitem>
-                    <para>Select the concept or concepts you would like to export on the left panel
-                        (use shift or control click to select multiple)</para>
+                    <para>Select the concept or concepts you would like to export on the Navigation
+                        activity stream (default location: left panel) </para>
+                    <orderedlist>
+                        <listitem>
+                            <para>Use shift or control click to select multiple concepts</para>
+                        </listitem>
+                    </orderedlist>
                 </listitem>
                 <listitem>
                     <para>Right click and select export OR use the “+” dropdown menu and select
