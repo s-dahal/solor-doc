@@ -28,7 +28,7 @@
         <xi:include href="Komet-User-Guide.xml"/>
     </part>
     <part>
-        <title>Next Steps and Open Source Collaboration</title>
-        <xi:include href="Next-Steps.xml"/>
+        <title>Next Steps and Open-Source Collaboration</title>
+        <xi:include href="Open-Source.xml"/>
     </part>
 </book>
