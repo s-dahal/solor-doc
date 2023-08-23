@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Summary of Findings – RWE Search and Query Methods</title>
+    <sect1>
+        <title>Real World Evidence Introduction</title>
+        <para>Search and query methods are used for information retrieval to access unstructured
+            data. Most health information is stored in an electronic health record (EHR), and most
+            laboratory data are stored in a laboratory information system (LIS). It is important to
+            understand how data is stored and retrieved from these sources, and how to aggregate
+            this data from different sources. Information systems record and manage clinical
+            statements using a variety of standard or ad-hoc models. However, reliable querying and
+            information retrieval requires consistency not only at the format level (e.g., CDA,
+            FHIR, V2) but also the content model (i.e., the information model such as HL7 CIMI
+            model, or OMOP), and, finally, the semantic and terminology model. Not only is there a
+            potential for a lack of consistency with representing disparate health data with current
+            data models efforts, but there is also further variation in how the data are entered
+            into information systems by end-users. These differences pose challenges for how the
+            data are modeled and stored, and, therefore, have implications on data retrieval, data
+            analysis, and accuracy of clinical analysis results. For these reasons, it is important
+            to be able to test for equivalence across multiple data points. A well-defined query
+            that yields accurate results in one health system is not guaranteed to be successful in
+            another system because of a difference in the underlying data models. If normalization
+            can occur at the data level, time and resources can be saved through sharing queries
+            across different systems to achieve data fluidity and the ability to build layers of
+            data from different sources.</para>
+        <para>Organizations like the National COVID Cohort Collaborative (N3C), Sentinel,
+            Observational Health Data Sciences and Informatics (OHDSI) and others prove it is
+            possible to develop, support and use real-world data (RWD) at “scale” across US and
+            internationally in research, public health, and clinical quality improvement. However,
+            the limitations highlighted provide the FDA the opportunity to address gaps commonly
+            observed across efforts such as data quality and interoperability and access to timely
+            data, while replicating the successes. </para>
+        <para>A specific, yet generalizable, use case serves to elucidate the current FDA need for
+            real-world evidence (RWE) analytics, identify gaps, and form the basis of requirements
+            necessary to establish a health data ecosystem capable for widespread use in FDA
+            regulatory efforts, public health surveillance, research, and care delivery. The long
+            COVID use case, describes the need to broadly surveil and analyze large data sets to
+            identify and define poorly understood health conditions for which new and/or existing
+            regulated technologies or substances can be evaluated for safety and efficacy. RWD needs
+            to be collected, queried, and evaluated to test and validate the “hypothesis” of the
+            regulatory exercise.</para>
+    </sect1>
+    <sect1>
+        <title>Long COVID Use Case: Loosely Defined and/or Poorly Understood Scenarios</title>
+        <para>Long COVID is a poorly understood sequela to a COVID infection. In general, it is
+            characterized by a wide range of ongoing health symptoms lasting weeks or months
+            following a COVID infection, including fatigue, post-exertional malaise, fever,
+            respiratory symptoms, neurological effects, and more. Even the CDC’s definition notes
+            that the symptom list is not comprehensive and that post-COVID conditions may vary in
+            symptom type, effect, and timespan, demonstrating how incomplete our medical
+            understanding remains. [1] The NIH has stood up the Researching COVID to Enhance
+            Recovery (RECOVER) Initiative, allocating $1.15 billion to better understand the
+            development and symptoms of long COVID. [2] Similarly, the UK has invested over £50
+            million into long COVID research initiatives. [3] Countless other countries and research
+            institutions are doing the same as evidence mounts demonstrating the significant public
+            health risk of this largely undefined condition.</para>
+        <para>Our incomplete understanding of long COVID is akin to the HIV/AIDS epidemic of the
+            1980s and 1990s where the differentiation between HIV and AIDS was not yet known. Only
+            after substantial research was the distinction between HIV infection and AIDS understood
+            and effective treatments and secondary preventative treatments developed. [4] Likewise,
+            Alzheimer’s disease and related dementias (RD) were once considered syndromic; that is,
+            poorly understood and only clinically characterized. After further research, we now
+            recognize Alzheimer’s as a biologically diagnosed condition- a definitive diagnosis that
+            is unfortunately only determined postmortem. [5]</para>
+        <para>The use of RWD resources has shown promise for hard-to-diagnose conditions. For
+            example, Rheumatoid Arthritis related interstitial lung disease (RA-ILD) is a difficult
+            diagnosis often only diagnosed reliably by rheumatologists in conjunction with
+            substantial diagnostic work-up. However, studies at the VA and UNMC PCORnet and VA
+            datasets demonstrate that commonly discrete data elements in the EHR can be used to
+            identify RA-ILD patients based on their data phenotype. With the addition of low-level,
+            basic NLP for radiology report evaluations, high levels of PPV identification of RA-ILD
+            patient by data phenotype is possible.</para>
+        <para>To address the long COVID use case, the FDA must have access to substantial amounts of
+            data for patients positively diagnosed for COVID, for patients who exhibit identified
+            long COVID symptoms (with and without a positive COVID diagnosis), and patients who have
+            had no known COVID infection(s) and do not exhibit long COVID symptoms. These data need
+            to be complete and have all appropriate data elements coded with standard values to
+            enable meaning to be determined across facilities. Complete, standardized patient data
+            across time and facilities will allow researchers to access symptoms, existing
+            morbidities, demographics (including weight and age), treatments taken (for COVID or
+            other conditions), vaccinations received, screening and diagnostic test data, and
+            potentially other information like drug use, alcohol use, and smoking. This will enable
+            the use of statistical methods and advanced analytics to quickly determine the relevant
+            data elements and values necessary to more accurately establish a clinical definition
+            for diagnosing an emerging condition like long COVID, along with identifying risk
+            factors for contracting it, and provide evidence to develop tests and drugs for
+            confirming and treating the condition. </para>
+        <para>In addition to “validated” data such as existing laboratory and other diagnostic test
+            data, provider-level patient reports and physician interpretation data must be
+            collected. Furthermore, patient-reported, non-physician translated data should be
+            considered, collected, and incorporated with the more clinically oriented data. Existing
+            RWD ecosystems could add value to long COVID research. For example, the Sentinel system,
+            which collects large quantities of claims records, could assist in identifying patient
+            cohorts or determining secondary variables that may indicate long COVID symptoms.
+            However, the known limitations of systems like Sentinel must be considered, such as
+            potential incompleteness, poor association to actual patient outcomes, or diagnosis
+            oversimplification within billing applications. </para>
+        <para>There are several conditions that must be considered to effectively address
+            misunderstood conditions like long COVID with RWD. Though it may be incomplete, there
+            needs to be a baseline description of the condition to identify variables and data
+            sources of interest. This definition may be treated as fluid and updated as research
+            progresses, so there must be adequate agility to evaluate, collect, and integrate new
+            data elements inclusive of existing health care as well as novel observations. As with
+            all varied data collections, an emphasis on standardization and normalization is key to
+            achieve interoperability. In the capture process, non-discrete data will need to be
+            harvested and converted to discrete data. Effective analysis will rely on the ability to
+            query the data in multiple ways with multiple parameters, both within and across care
+            sites.</para>
+        <para>As long COVID continues to grow as a public health priority, a proactive RWD research
+            approach could provide valuable insights into the condition that may be difficult to
+            discern through other research methods. To effectively understand and treat long COVID
+            and other poorly understood diseases, researchers must be able to differentiate case and
+            control patients with high reliability to then test the efficacy and safety of new
+            diagnostic and treatment options. RWD may have considerable potential in clearly
+            identifying patient cohorts to advance understanding of the disease and develop
+            effective treatments. </para>
+    </sect1>
+    <sect1>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>CDC. Post-COVID Conditions [Internet]. Centers for Disease Control and
+                    Prevention. 2022. Available from:
+                    https://www.cdc.gov/coronavirus/2019-ncov/long-term-effects/index.html#:~:text=People%20with%20post%2DCOVID%20conditions%20(or%20long%20COVID)%20may</para>
+            </listitem>
+            <listitem>
+                <para>NIH launches new initiative to study “Long COVID” [Internet]. National
+                    Institutes of Health (NIH). 2021. Available from:
+                    https://www.nih.gov/about-nih/who-we-are/nih-director/statements/nih-launches-new-initiative-study-long
+                    COVID</para>
+            </listitem>
+            <listitem>
+                <para>Researching long COVID | NIHR [Internet]. www.nihr.ac.uk. Available from:
+                    https://www.nihr.ac.uk/covid-19/researching-the-long-term-impact.htm</para>
+            </listitem>
+            <listitem>
+                <para>Deeks SG, Overbaugh J, Phillips A, Buchbinder S. HIV infection. Nature Reviews
+                    Disease Primers. 2015 Oct 1;1(1).</para>
+            </listitem>
+            <listitem>
+                <para>Karantzoulis S, Galvin JE. Distinguishing Alzheimer’s disease from other major
+                    forms of dementia. Expert review of neurotherapeutics [Internet].
+                    2011;11(11):1579–91. Available from:
+                    https://www.ncbi.nlm.nih.gov/pubmed/22014137</para>
+            </listitem>
+        </orderedlist>
+    </sect1>
+</chapter>
+

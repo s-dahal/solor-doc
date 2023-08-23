@@ -52,7 +52,7 @@
     </part>
     <part>
         <title>Next Steps</title>
-        <xi:include href="Next-Steps.xml"/>
+        <xi:include href="Open-Source.xml"/>
     </part>
     
 

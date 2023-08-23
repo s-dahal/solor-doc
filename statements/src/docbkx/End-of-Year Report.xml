@@ -1,11 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<book xmlns="http://docbook.org/ns/docbook"
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
         <title>End-of-Year Report</title>
         <subtitle>Deliverable X.X.X</subtitle>
     </info>
-    <part><title>Draft Part Title</title></part>
+    <part>
+        <title>Introduction</title>
+        <xi:include href="Introduction.xml"/>
+    </part>
+    <part>
+        <title>Background</title>
+        <xi:include href="Background.xml"/>
+    </part>
+    <part>
+        <title>Integrated Knowledge Management (IKM) </title>
+        <xi:include href="Integrated%20Knowledge%20Management.xml"/>
+    </part>
+    <part>
+        <title>Foundational Architecture</title>
+        <xi:include href="Foundational-Architecture.xml"/>
+    </part>
+    <part>
+        <title>Terminology Knowledge</title>
+        <xi:include href="Terminology-Knowledge.xml"/>
+    </part>
+    <part>
+        <title>Statement Model</title>
+        <xi:include href="Statement-Model.xml"/>
+    </part>
+    <part>
+        <title>Assertional Knowledge</title>
+        <xi:include href="SOLOR-assertional.xml"/>
+    </part>
+    <part>
+        <title>Procedural Knowledge</title>
+        <xi:include href="Procedural-Knowledge.xml"/>
+    </part>
+    <part>
+        <title>Use Cases</title>
+        <xi:include href="Use-Case-Chapter.xml"/>
+    </part>
+    <part>
+        <title>Ecosystem</title>
+        <xi:include href="Ecosystem.xml"/>
+    </part>
+    <part>
+        <title>Komet User Guide</title>
+        <xi:include href="Komet-User-Guide.xml"/>
+    </part>
+    <part>
+        <title>Next Steps</title>
+        <xi:include href="Open-Source.xml"/>
+    </part>
 </book>
