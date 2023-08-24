@@ -52,6 +52,7 @@
                      <artifactId>doc-logging</artifactId>
                      <groupId>${project.groupId}</groupId>
                      <version>${project.version}</version>
+                     <classifier>doc-logging</classifier>
                   </dependency>
                </dependencies>
             </plugin>

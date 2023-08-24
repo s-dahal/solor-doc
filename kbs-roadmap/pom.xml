@@ -136,6 +136,7 @@
               <groupId>sh.isaac.komet.doc</groupId>
               <artifactId>doc-logging</artifactId>
               <version>0.13-SNAPSHOT</version>
+              <classifier>doc-logging</classifier>
               <scope>compile</scope>
             </dependency>
           </dependencies>
@@ -465,12 +466,12 @@
             <version>1.2.17</version>
             <scope>compile</scope>
           </dependency>
-          <dependency>
+          <!-- <dependency>
             <groupId>sh.isaac.komet.doc</groupId>
             <artifactId>doc-logging</artifactId>
             <version>0.13-SNAPSHOT</version>
             <scope>compile</scope>
-          </dependency>
+          </dependency> -->
         </dependencies>
         <configuration>
           <generatedSourceDirectory>${project.basedir}\target/docbkx/generated</generatedSourceDirectory>

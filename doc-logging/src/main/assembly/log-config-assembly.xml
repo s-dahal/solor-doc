@@ -1,4 +1,5 @@
 <assembly>
+    <id>doc-logging</id>
     <formats>
         <format>jar</format>
     </formats>
