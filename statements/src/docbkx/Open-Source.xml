@@ -5,6 +5,12 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Open-Source</title>
     <section>
+        <title>How to Contribute</title>
+        <para>For community members and users who would like to collaborate and contribute,
+            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>please visit the
+            ‘Community’ tab on IKM.dev<?oxy_custom_end?>. </para>
+    </section>
+    <section>
         <title>What is Open-Source?</title>
         <para>Open-source software is software that makes its source code, blueprints,
             documentation, and other products publicly available for users to modify, contribute to,
@@ -46,8 +52,5 @@
         <title>Our commitment to Open-Source</title>
         <para>SHIELD is committed to open-source software managed through open-source licensing. A Permissive license will provide source code to users, carries minimal restriction over adaption, modification, and distribution of intellectual property of organizations, and allows the issuing body to impose some restrictions, such as the monetization, but does not exert special rights to derivative works. Permissive licensing throughout the foundational architecture, terminology knowledge, and statement model layers removes barriers imposed on modifications and extensions and improves the compatibility of different terminologies to support a common understanding of knowledge. 
             </para>
-        <para>For community members and users who would like to collaborate and contribute,
-            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>please visit the
-            ‘Community’ tab on IKM.dev<?oxy_custom_end?>. </para>
     </section>
 </chapter>
