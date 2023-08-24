@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+  <preface>
+    <title>Intended Audience</title>
+    <para><glossterm baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm> is
+      intended for projects that aggregate clinical statements from a variety of sources,
+      independent of formalism or approach used by the source system. </para>
+    <para> The users of ANF are developing implementation guides, solutions, and applications that
+      require normalized clinical statements to establish that a clinical fact or situation was
+      observed to exist or happened, or that a particular procedure was requested. They wish to
+      ensure that this determination is reliable and performed in accordance with the principles of
+      patient safety and high-reliability organizations. ANF may be used for clinical decision
+      support, reimbursement, public health reporting, outcomes research, and other types of data
+      analysis. </para>
+    <para>The Learning Health Systems, 21st Century Cures, Patient-Centered Outcomes Research, and
+      other US national, or international initiatives are all examples of efforts that can benefit
+      from ANF as they all depend on interoperable, reusable, and analysis-ready information that
+      can improve outcomes, produce new therapies, and put into practice "precision
+      medicine."</para>
+  </preface>
+  <preface>
+    <title>Acknowledgements</title>
+    <para> The project team would like to acknowledge the leadership and guidance from: </para>
+    <para>
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Keith E. Campbell, MD, PhD</emphasis> - Director of
+            Informatics Architecture, Knowledge Based Systems, Veterans Health Administration</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Richard Esmond</emphasis> - HL7 CIMI Work Group
+            Co-Chair</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Diane Montella, MD</emphasis> - Director of Clinical Decision
+            Support, Knowledge Based Systems, Veterans Health Administration</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Jonathan Nebeker, MD, MS</emphasis> - Deputy Chief Medical
+            Informatics Officer, Veterans Health Administration</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Steven Brown, MD, MS</emphasis> - Director of Knowledge Based
+            Systems, Veterans Health Administration</para>
+          <para/>
+          <para/>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para>This Analysis Normal Form ballot received contributions and assistance from the following
+      individuals: </para>
+    <para>
+      <informaltable frame="none" rowsep="0" colsep="0">
+        <tgroup cols="2" align="left">
+          <colspec colname="c1" colnum="1" colwidth="1*"/>
+          <colspec colname="c2" colnum="2" colwidth="1*"/>
+          <tbody>
+            <row>
+              <entry><para>&#x2003;&#x2003;&#x2003;Keith Campbell<superscript>1</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Benson Chang<superscript>2</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Joey Coyle<superscript>3</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Stephanie Klepacki<superscript>1</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Ken Lord<superscript>3</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Claude Nanjo<superscript>4</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Ioana Singureanu<superscript>3</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Andy Chen Wang<superscript>2</superscript></para>
+              </entry>
+              <entry><para>Ryan C. Bradley<superscript>2</superscript></para>
+                <para>Raja A. Cholan<superscript>2</superscript></para>
+                <para>Kirsten Haake<superscript>2</superscript></para>
+                <para>Deb Konicek<superscript>2</superscript></para>
+                <para>Kyle Maulden<superscript>2</superscript></para>
+                <para>Andrew K. Sills<superscript>2</superscript></para>
+                <para>Walter Sujansky<superscript>5</superscript></para>
+                <para>Tim Williams<superscript>2</superscript></para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </para>
+    <para> </para>
+    <para/>
+    <para/>
+    <para/>
+    <para><superscript>1</superscript>Veterans Health Administration;
+      <superscript>2</superscript>Deloitte Consulting LLP; <superscript>3</superscript>Book Zurman,
+      Inc; <superscript>4</superscript>HL7 CIMI Work Group; <superscript>5</superscript>Sujansky
+      &amp; Associates, LLC </para>
+    <para/>
+    <para/>
+    <para>This work was primarily funded by the Veterans Health Administration Clinical Informatics
+      and Data Management Office. This work would not have been possible without the support of
+      Jonathan Nebeker and Steven Brown.</para>
+
+
+  </preface>
+  <toc/>
+
+  <!-- Abbreviated Glossary -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/abbreviated-glossary.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Introduction -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- ANF Reference Model -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-reference-model/anf-reference-model.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- ANF Clinical Statements -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Analysis Normal Form -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Transformation -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Precision -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Conclusion -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Acknowledgements -->
+  <!-- <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/acknowledgements/acknowledgements.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+
+  <!-- Complete Glossary -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/complete-glossary.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Bibliography -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <part>
+    <title>Appendices</title>
+    <xi:include
+      href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/clinical-input-form/clinical-input-form.xml"
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include
+      href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-cif-differences/differences-between-anf-and-cif.xml"
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include
+      href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/appendix.xml"
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include
+      href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/examples.xml"
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  </part>
+
+
+</book>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Examples of Complex ANF Statements</title>
+    <section xml:id="complexExample">
+        <title>Wound Assessment Panel</title>
+        <para>The Wound Assessment Panel demonstrates how ANF statements can be organized into
+            complex structures consisting of interrelated observations and findings. </para>
+        <para>Note that all the ANF statements associated with the assessment are of type
+                "<emphasis>performance</emphasis>" and were "<emphasis>completed</emphasis>".</para>
+
+        <table pgwide="0">
+            <title>Wound Assessment Panel Example</title>
+
+            <tgroup cols="7">
+                <colspec colnum="1" colname="col1" colwidth="1.33*"/>
+                <colspec colnum="2" colname="col2" colwidth="2.12*"/>
+                <colspec colnum="3" colname="col3" colwidth="1.54*"/>
+                <colspec colnum="4" colname="col4" colwidth="1*"/>
+                <colspec colnum="5" colname="col5" colwidth="4.1*"/>
+                <colspec colnum="6" colname="col6" colwidth="2.24*"/>
+                <colspec colnum="7" colname="col7" colwidth="1.42*"/>
+                <thead>
+                    <row>
+                        <entry namest="col1" nameend="col2" align="center"><para><emphasis
+                                    role="bold">LOINC</emphasis></para></entry>
+                        <entry morerows="1"><para><emphasis role="bold"
+                            >Value</emphasis></para></entry>
+                        <entry namest="col4" nameend="col7" align="center"><para><emphasis
+                                    role="bold">ANFStatement</emphasis></para>
+                            <para><emphasis>type = performance; status =
+                            completed</emphasis></para></entry>
+                    </row>
+                    <row>
+                        <entry><para>Number</para></entry>
+                        <entry><para> Name</para></entry>
+                        <entry><para>id</para></entry>
+                        <entry><para>topic</para></entry>
+                        <entry><para>circumstance. result</para></entry>
+                        <entry><para>associated-Statement</para></entry>
+                    </row>
+                </thead>
+                <tbody>
+
+                    <row>
+                        <entry><para><emphasis>39135-9</emphasis></para></entry>
+                        <entry namest="col2" nameend="col7"><para><emphasis>Wound Assessment
+                                    Panel</emphasis>
+                            </para></entry>
+                    </row>
+                    <row>
+                        <entry><para>81666-0</para></entry>
+                        <entry><para>Wound number [Identifier]</para></entry>
+                        <entry><para>1</para></entry>
+                        <entry><para><emphasis role="bold"> 1</emphasis></para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Wound
+                            number]</para></entry>
+                        <entry><para>[1,1] Wound instance</para></entry>
+                        <entry><para> </para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72300-7</para></entry>
+                        <entry><para>Wound type</para></entry>
+                        <entry><para>Pressure ulcer</para></entry>
+                        <entry><para> 2</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Pressure ulcer]-
+                                (Causative agent) [Device]- (Finding site) [Posterior Hip]-
+                                (Laterality) [Right]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>89250-5</para></entry>
+                        <entry><para>Device or anatomic structure visible in wound</para></entry>
+                        <entry><para>Sub-cutaneous tissue</para></entry>
+                        <entry><para> 3</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Anatomic structure
+                                visible in Wound] (Finding site) [Subcutaneous
+                            tissue]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>89251-3</para></entry>
+                        <entry><para>Condition present on admission</para></entry>
+                        <entry><para>Not present on admission</para></entry>
+                        <entry><para> 4</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Condition presence on
+                                admission]</para></entry>
+                        <entry><para>[0,0] Countable Quantity</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>11373-8</emphasis></para></entry>
+                        <entry><para><emphasis>Injury cause</emphasis></para></entry>
+                        <entry><para><emphasis>Device related</emphasis></para></entry>
+                        <entry namest="col4" nameend="col7">[the value is added to the topic of
+                            statement #2]</entry>
+                    </row>
+                    <row>
+                        <entry><para>89252-1</para></entry>
+                        <entry><para>Episode of Wound</para></entry>
+                        <entry><para>Initial</para></entry>
+                        <entry><para> 5</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Initial episode of
+                                care]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>85585-8</para></entry>
+                        <entry><para>Date of Onset of Impairment</para></entry>
+                        <entry><para>9/16/2019</para></entry>
+                        <entry><para> 6</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Date of
+                                Observation]</para></entry>
+                        <entry><para>9/16/2019</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>72369-2</emphasis></para></entry>
+                        <entry namest="col2" nameend="col7">
+                            <para><emphasis>Body site identification panel </emphasis></para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>39111-0</emphasis></para></entry>
+                        <entry><para><emphasis>Body site</emphasis></para></entry>
+                        <entry><para><emphasis>Hip</emphasis></para></entry>
+                        <entry namest="col4" nameend="col7">[the value is added to the topic of
+                            statement #2]</entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>39112-8</emphasis></para></entry>
+                        <entry><para><emphasis>Body location qualifier</emphasis></para></entry>
+                        <entry><para><emphasis>Posterior</emphasis></para></entry>
+                        <entry namest="col4" nameend="col7">[the value is added to the topic of
+                            statement #2]</entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>20228-3</emphasis></para></entry>
+                        <entry><para><emphasis>Anatomic part Laterality</emphasis></para></entry>
+                        <entry><para><emphasis>Right</emphasis></para></entry>
+                        <entry namest="col4" nameend="col7">[the value is added to the topic of
+                            statement #2]</entry>
+                    </row>
+                    <row>
+                        <entry><para>72301-5</para></entry>
+                        <entry><para>Description of Periwound</para></entry>
+                        <entry><para>Moist</para></entry>
+                        <entry><para>7</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Moist periwound
+                                skin]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72527-5</para></entry>
+                        <entry><para>Pressure ulcer stage NPUAP</para></entry>
+                        <entry><para>Stage III</para></entry>
+                        <entry><para> 8</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Pressure ulcer stage
+                                3]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>72372-6</emphasis></para></entry>
+                        <entry namest="col2" nameend="col7"><para><emphasis>Wound bed and edge panel
+                                </emphasis></para></entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>89254-7</emphasis></para></entry>
+                        <entry namest="col2" nameend="col7"><para><emphasis>Wound bed
+                                    panel</emphasis></para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72371-8</para></entry>
+                        <entry><para>Appearance of Wound base</para></entry>
+                        <entry><para>Necrotic</para></entry>
+                        <entry><para> 9</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Wound base finding]-
+                                (Associated Morphology) [Necrosis]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72370-0</para></entry>
+                        <entry><para>Area of identified wound bed appearance/Area of
+                            wound</para></entry>
+                        <entry><para>40%</para></entry>
+                        <entry><para> 10</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Area of wound bed
+                                appearance]</para></entry>
+                        <entry><para>[40,40] Percentage</para></entry>
+                        <entry><para> 9</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>39132-6</para></entry>
+                        <entry><para>Color of Wound base</para></entry>
+                        <entry><para>Brown</para></entry>
+                        <entry><para> 11</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of wound base
+                                color]- (Has interpretation) [Brown]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 9</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>89255-4</para></entry>
+                        <entry><para>Wound bed area identified by color/Area of wound
+                            bed</para></entry>
+                        <entry><para>20%</para></entry>
+                        <entry><para> 12</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Area of wound
+                                color]</para></entry>
+                        <entry><para>[20,20] Percentage</para></entry>
+                        <entry><para> 11</para></entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>89256-2</emphasis></para></entry>
+                        <entry namest="col2" nameend="col7"><para><emphasis>Wound edge
+                                    panel</emphasis>
+                            </para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72304-9</para></entry>
+                        <entry><para>Edge of wound description</para></entry>
+                        <entry><para>Poorly defined</para></entry>
+                        <entry><para> 13</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Wound edge finding]-
+                                (Interprets) [Wound edge]- (Has interpretation)
+                                [Poorly-defined]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>39133-4</para></entry>
+                        <entry><para>Color of Wound edge</para></entry>
+                        <entry><para>Red</para></entry>
+                        <entry><para> 14</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of wound edge
+                                color]- (Has interpretation) [Red]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 13</para></entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>72299-1</emphasis></para></entry>
+                        <entry namest="col2" nameend="col7"><para><emphasis>Wound tunneling and
+                                    undermining panel</emphasis>
+                            </para></entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>89257-0</emphasis></para></entry>
+                        <entry namest="col2" nameend="col7"><para><emphasis>Wound tunneling
+                                    panel</emphasis>
+                            </para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72298-3</para></entry>
+                        <entry><para>Tunneling of Wound</para></entry>
+                        <entry><para>Tunneling Present</para></entry>
+                        <entry><para> 15</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of wound
+                                tunneling]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72296-7</para></entry>
+                        <entry><para>Tunneling [Length] of Wound</para></entry>
+                        <entry><para>1 cm</para></entry>
+                        <entry><para> 16</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Length of wound
+                                tunneling]</para></entry>
+                        <entry><para>[1,1]Centimeters</para></entry>
+                        <entry><para> 15</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72297-5</para></entry>
+                        <entry><para>Tunneling clock position of Wound</para></entry>
+                        <entry><para>12 o'clock</para></entry>
+                        <entry><para> 17</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of clock position
+                                of wound tunneling]</para></entry>
+                        <entry><para>[12,12] O’clock</para></entry>
+                        <entry><para> 15</para></entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>89258-8</emphasis></para></entry>
+                        <entry namest="col2" nameend="col7"><para><emphasis>Wound under-mining
+                                    panel</emphasis>
+                            </para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72295-9</para></entry>
+                        <entry><para>Undermining of Wound</para></entry>
+                        <entry><para>Under-mining Present</para></entry>
+                        <entry><para> 18</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of wound
+                                undermining]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72293-4</para></entry>
+                        <entry><para>Undermining [Length] of Wound</para></entry>
+                        <entry><para>2 cm</para></entry>
+                        <entry><para> 19</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Length of wound
+                                undermining]</para></entry>
+                        <entry><para>[2,2] Centimeters</para></entry>
+                        <entry><para> 18</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72294-2</para></entry>
+                        <entry><para>Undermining clock position of Wound</para></entry>
+                        <entry><para>6 o'clock</para></entry>
+                        <entry><para> 20</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of clock position
+                                of wound undermining]</para></entry>
+                        <entry><para>[6,6] O’clock</para></entry>
+                        <entry><para> 18</para></entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>72292-6</emphasis></para></entry>
+                        <entry namest="col2" nameend="col7"><para><emphasis>Wound exudate
+                                    panel</emphasis></para></entry>
+                    </row>
+                    <row>
+                        <entry><para>89259-6</para></entry>
+                        <entry><para>Presence of wound exudate</para></entry>
+                        <entry><para>wound exudate present</para></entry>
+                        <entry><para> 21</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Wound exudate
+                                finding]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>89260-4</para></entry>
+                        <entry><para>Area of wound</para></entry>
+                        <entry><para>20 cm</para></entry>
+                        <entry><para> 22</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of wound
+                                area]</para></entry>
+                        <entry><para>[20,20] Centimeters</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>39116-9</para></entry>
+                        <entry><para>Drainage amount of Wound</para></entry>
+                        <entry><para>scant</para></entry>
+                        <entry><para> 23</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of drainage
+                                amount of exudate]- (Has interpretation) [Scant]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 21</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72288-4</para></entry>
+                        <entry><para>Odor of Exudate from wound</para></entry>
+                        <entry><para>No odor</para></entry>
+                        <entry><para> 24</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Wound exudate
+                                odor]</para></entry>
+                        <entry><para>[0,0] Countable Quantity</para></entry>
+                        <entry><para> 21</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72289-2</para></entry>
+                        <entry><para>Color of Exudate from wound</para></entry>
+                        <entry><para>yellow</para></entry>
+                        <entry><para> 25</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of exudate
+                                color]- (Has interpretation) [Yellow]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 21</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>72290-0</para></entry>
+                        <entry><para>Appearance of Exudate from wound</para></entry>
+                        <entry><para>Purulent Exudate</para></entry>
+                        <entry><para> 26</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of appearance of
+                                exudate]- (Has interpretation) [Purulent]</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
+                        <entry><para> 21</para></entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>72287-6</emphasis></para></entry>
+                        <entry namest="col2" nameend="col7"><para><emphasis>Wound size
+                                    panel</emphasis>
+                            </para></entry>
+                    </row>
+                    <row>
+                        <entry><para>39125-0</para></entry>
+                        <entry><para>Width of Wound</para></entry>
+                        <entry><para>5 cm</para></entry>
+                        <entry><para> 27</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of wound
+                                width]</para></entry>
+                        <entry><para>[5,5] Centimeters</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>39127-6</para></entry>
+                        <entry><para>Depth of Wound</para></entry>
+                        <entry><para>1 cm</para></entry>
+                        <entry><para> 28</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of wound
+                                depth]</para></entry>
+                        <entry><para>[1,1] Centimeters</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para>39126-8</para></entry>
+                        <entry><para>Length of Wound</para></entry>
+                        <entry><para>4 cm</para></entry>
+                        <entry><para> 29</para></entry>
+                        <entry><para>[Observation procedure]- (Has focus) [Finding of wound
+                                length]</para></entry>
+                        <entry><para>[4,4] Centimeters</para></entry>
+                        <entry><para> 1</para></entry>
+                    </row>
+                    <row>
+                        <entry><para><emphasis>80338-7</emphasis></para></entry>
+                        <entry namest="col2" nameend="col7"><para><emphasis>Wound assessment
+                                    [Interpretation]</emphasis>
+                            </para></entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <para> </para>
+    </section>
+</section>

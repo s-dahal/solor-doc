@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Outline *DELETE BEFORE SUBMISSION*</title>
+    <para><emphasis role="bold"><emphasis role="underline">I.
+        INTRODUCTION</emphasis></emphasis></para>
+    <para>
+        <orderedlist>
+            <listitem>
+                <para><emphasis role="bold"><emphasis role="underline"
+                        >Motivation</emphasis></emphasis><itemizedlist>
+                        <listitem>
+                            <para>HRO Definition, Context</para>
+                        </listitem>
+                        <listitem>
+                            <para>Rely on measures, reports, alerts</para>
+                        </listitem>
+                        <listitem>
+                            <para> Measures rely on standardized implementations</para>
+                        </listitem>
+                        <listitem>
+                            <para> However, variation exists in implementations due to various
+                                networks, communication channels, set of transformations, and
+                                different organizations of clinical data that currently exist.
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <para> Part of the problem is expression-logic, part of the problem is
+                                terminology. </para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>To assist, there are standards, and DCMs, but variation
+                                        exists here in</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para> a) how the data is represented in clinical
+                                                statements (INTRO TO CLINICAL STATEMENTS)</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>b) how the data is entered by end-users in the
+                                                structured capture (CLINCAL INPUT FORM) <inlinemediaobject>
+                                                  <imageobject>
+                                                  <imagedata
+                                                  fileref="../../../introduction/src/docbkx/clip_image002_-1458651199.jpg"
+                                                  />
+                                                  </imageobject>
+                                                </inlinemediaobject> &lt;<link
+                                                  xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/"
+                                                  >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/</link>>
+                                                  <emphasis>William Goossen: "Detailed Clinical
+                                                  Models: Representing Knowledge, Data and Semantics
+                                                  in Healthcare Information Technology"
+                                                </emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    </itemizedlist><itemizedlist>
+                        <listitem>
+                            <para> What we need is a formal, integrated terminology model,
+                                post-coordination to minimize complexity in the backend and
+                                facilitate better design on front end. </para>
+                        </listitem>
+                    </itemizedlist></para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold"><emphasis role="underline"
+                        >Objectives/Purpose</emphasis></emphasis></para>
+                <para> - Therefore, we are proposing ANF. </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Concrete Objectives</para>
+                    </listitem>
+                    <listitem>
+                        <para>Usage of ANF</para>
+                    </listitem>
+                    <listitem>
+                        <para>Use cases</para>
+                    </listitem>
+                </itemizedlist>
+                <para> DCM 2010 Ballot as an example:<link
+                        xlink:href="http://wiki.hl7.org/index.php?title=Detailed_Clinical_Models"
+                    /></para>
+            </listitem>
+            <listitem>
+                <para>
+                    <emphasis role="bold"><emphasis role="underline"
+                        >Background</emphasis></emphasis>
+                </para>
+                <para>(Raja did preliminary Lit Review. <emphasis role="bold"><emphasis
+                            role="underline">See
+                            introduction/src/docbkx/background_refs.xml</emphasis></emphasis>)</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>DCMs </para>
+                    </listitem>
+                    <listitem>
+                        <para>CIMI</para>
+                    </listitem>
+                    <listitem>
+                        <para>Isosemantic Models</para>
+                    </listitem>
+                    <listitem>
+                        <para>HL7v3, CDA, FHIR</para>
+                    </listitem>
+                    <listitem>
+                        <para>Gaps in existing models and lack of interoperability </para>
+                        <para><inlinemediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/refcon_comparison%20-%20Copy.jpg"
+                                        scale="50"/>
+                                </imageobject>
+                            </inlinemediaobject></para>
+                        <para>Note from Keith: For the ANF document, we should somewhere describe
+                            assumptions about what an ANF implementation requires. For example, ANF
+                            requires an ability to classify topic expressions (and expressions that
+                            may go in other locations). Maybe a section that describes the
+                            requirements of a "mapping" based system with a plethora of statement
+                            models, and then what ANF requires above and beyond a mapping system,
+                            and what the benefits are. </para>
+                        <para>Re-using some of the work in the interoperability paper is probably
+                            wise. I think a distillation of key concepts should be part of the HL7
+                            ballot document. We need to motivate why an ANF approch is necessary as
+                            opposed to the status quo.</para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </orderedlist>
+    </para>
+    <para> </para>
+    <para><emphasis role="bold"><emphasis role="underline">II. CIMI Clinical
+            Statements</emphasis></emphasis></para>
+    <para>
+        <itemizedlist>
+            <listitem>
+                <para>Intro to  Clinical Statements, CIF</para>
+            </listitem>
+            <listitem>
+                <para>Examples of multiple ways of representing BP and HR</para>
+            </listitem>
+            <listitem>
+                <para>Definitons of Assertions, Evaluation Results</para>
+            </listitem>
+        </itemizedlist>
+    </para>
+    <para><emphasis role="bold"><emphasis role="underline">III. OVERVIEW ANF
+        </emphasis></emphasis></para>
+    <itemizedlist>
+        <listitem>
+            <para>Definitions</para>
+        </listitem>
+        <listitem>
+            <para>Performance +Examples</para>
+        </listitem>
+        <listitem>
+            <para>Request + Examples </para>
+        </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold"><emphasis role="underline">IV. ANF vs
+        CIF</emphasis></emphasis></para>
+    <itemizedlist>
+        <listitem>
+            <para>In CIF, Evaluation Result, Assertion: Refresher Definitions</para>
+        </listitem>
+        <listitem>
+            <para>Representation of Topic - side by side examples</para>
+        </listitem>
+        <listitem>
+            <para>Representation of Result - side by side examples</para>
+        </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold"><emphasis role="underline">V. ANF Reference Model /
+                Format</emphasis></emphasis>
+    </para>
+    <itemizedlist>
+        <listitem>
+            <para>Intro</para>
+        </listitem>
+        <listitem>
+            <para>Clinical Statement</para>
+            <para>statementTime, statementId, subjectOfRecordId, statementAuthor,
+                subjectofInformation, statementType, Topic, Circumstance</para>
+        </listitem>
+        <listitem>
+            <para>Measure and Result</para>
+            <para>lowerBound, upperBound, includeLowerBound, includeUpperBound, Resolution,
+                measureSemantic, InterventionResult</para>
+        </listitem>
+    </itemizedlist>
+    <itemizedlist>
+        <listitem>
+            <para>Examples</para>
+        </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold"><emphasis role="underline">VI. TRANSFORMATION with
+            ANF</emphasis></emphasis></para>
+    <para><emphasis role="bold"><emphasis role="underline">VII. IMPLICATIONS</emphasis>(BENEFITS AND
+            CONCERNS)</emphasis></para>
+    <para><emphasis role="bold"><emphasis role="underline">VIII.
+        CONCLUSION</emphasis></emphasis></para>
+</chapter>
