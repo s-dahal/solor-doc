@@ -6,22 +6,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Statement Model</title>
     <section>
-        <title>Analysis Normal Form (ANF) Ballot</title>
-        <!-- <xi:include href="statement-why-analysis-normal-form.xml"/>
-        <xi:include href="statement-anf-reference-model-intro.xml"/>
-        <xi:include href="statement-anf-reference-model-uml-report.xml"/>
-        <xi:include href="statement-anf-clinical-statements.xml"/>
-        <xi:include href="statement-analysis-normal-form.xml"/>
-        <xi:include href="statement-editorial-rules.xml"/>
-        <xi:include href="statement-differences-between-anf-and-cif.xml"/>
-        <xi:include href="statement-examples-section.xml"/>
-        <xi:include href="Foundational-Architecture.xml"/> -->
-    </section>
-    <section>
         <title>Technology that Supports ANF Data Transformations</title>
         <para>Deliverable</para>
-    </section>
-    <section>
-        <title>ANF User Guide</title>
     </section>
 </chapter>
