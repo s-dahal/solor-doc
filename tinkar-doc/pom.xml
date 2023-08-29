@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>io.solor</groupId>
+   <artifactId>tinkar-doc</artifactId>
+   <packaging>pom</packaging>
+   <version>1.0-SNAPSHOT</version>
+
+   <name>TINKAR Ballot Submission</name>
+
+   <inceptionYear>2020</inceptionYear>
+
+   <licenses>
+      <license>
+         <name>Apache License, Version 2.0</name>
+         <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+         <distribution>repo</distribution>
+         <comments>A business-friendly OSS license</comments>
+      </license>    
+   </licenses>
+
+
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <docbkx-maven-plugin.version>2.0.17</docbkx-maven-plugin.version>
+      <draft.mode>no</draft.mode> <!-- needs to be yes/no, not true/false -->
+      <project.version>1.0-SNAPSHOT</project.version>
+   </properties>
+   <build>
+      <pluginManagement>
+         <plugins>
+            <plugin>
+               <groupId>external.atlassian.jgitflow</groupId>
+               <artifactId>jgitflow-maven-plugin</artifactId>
+               <version>1.0-m5.1</version>
+            </plugin>
+            <plugin>
+               <groupId>com.agilejava.docbkx</groupId>
+               <artifactId>docbkx-maven-plugin</artifactId>
+               <version>${docbkx-maven-plugin.version}</version>
+               <dependencies>
+                  <dependency>
+                     <groupId>net.sf.offo</groupId>
+                     <artifactId>fop-hyph</artifactId>
+                     <version>1.2</version>
+                     <scope>compile</scope>
+                  </dependency>
+<!--                  <dependency>-->
+<!--                     <groupId>log4j</groupId>-->
+<!--                     <artifactId>log4j</artifactId>-->
+<!--                     <version>1.2.17</version>-->
+<!--                     <scope>compile</scope>-->
+<!--                  </dependency>-->
+                  <dependency>
+                     <groupId>io.solor.tinkar-doc-submission</groupId>
+                     <artifactId>doc-logging</artifactId>
+                     <version>${project.version}</version>
+                     <classifier>doc-logging</classifier>
+                  </dependency>
+               </dependencies>
+               <configuration>
+                  <glossentryShowAcronym>primary</glossentryShowAcronym>
+                  <glosstermAutoLink>true</glosstermAutoLink>
+                  <formalTitlePlacement>
+                     figure after
+                     example before
+                     equation before
+                     table after
+                     procedure before
+                     task before
+                  </formalTitlePlacement>
+                  <columnCountBody>1</columnCountBody>
+                  <doubleSided>false</doubleSided>
+                  <processEmptySourceToc>true</processEmptySourceToc>
+                  <!--<generateToc>Analysis Normal Form</generateToc>-->
+               </configuration>
+            </plugin>
+         </plugins>
+      </pluginManagement>
+      <plugins>
+         <plugin>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>3.0.2</version>
+            <executions>
+               <execution>
+                  <id>copy-resources</id>
+                  <phase>compile</phase>
+                  <goals>
+                     <goal>copy-resources</goal>
+                  </goals>
+                  <configuration>
+                     <outputDirectory>${project.build.directory}/site/docbook/images</outputDirectory>
+                     <resources>          
+                        <resource>
+                           <directory>${project.basedir}/src/docbkx/images</directory>
+                           <filtering>false</filtering>
+                        </resource>
+                     </resources>              
+                  </configuration>            
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>properties-maven-plugin</artifactId>
+            <version>1.0.0</version>
+            <executions>
+               <execution>
+                  <goals>
+                     <goal>set-system-properties</goal>
+                  </goals>
+                  <configuration>
+                     <properties>
+                        <property>
+                           <name>project.build.directory</name>
+                           <value>${project.build.directory}</value>
+                        </property>
+                     </properties>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <version>2.8.2</version>
+         </plugin>           
+         <plugin>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>3.0.0</version>
+            <configuration>
+               <silent>true</silent>
+            </configuration>
+         </plugin>           
+         <plugin>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>3.0.1</version>
+            <executions>
+               <execution>
+                  <id>attach-sources</id>
+                  <phase>verify</phase>
+                  <goals>
+                     <goal>jar-no-fork</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <groupId>external.atlassian.jgitflow</groupId>
+            <artifactId>jgitflow-maven-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-site-plugin</artifactId>
+            <version>3.6</version>
+            <configuration>
+               <locales>en</locales>               
+            </configuration>
+            <executions>
+               <execution>
+                  <id>attach-descriptor</id>
+                  <goals>
+                     <goal>attach-descriptor</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>        
+         <plugin>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.8</version>
+            <executions>
+               <execution>
+                  <id>color-banner</id>
+                  <phase>post-site</phase>
+                  <configuration>
+                     <target>
+                        <replace token='div id="banner"'
+                                 value='div id="banner" style="background-color:black;color:white;"'
+                                 dir="${project.build.directory}/site/">
+                           <include name="**/*.html"/>
+                        </replace>
+                     </target>
+                  </configuration>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+      </plugins>
+   </build>
+   <modules>
+<!--DocBook Content Modules-->
+      <module>ballot-root</module>
+      <module>abbreviated-glossary</module>
+      <module>introduction</module>
+      <module>business-requirements</module>
+      <module>tinkar-reference-model</module>
+      <module>gap-analysis</module>
+      <module>reference-implementation</module>
+      <module>implications</module>
+      <module>conclusion</module>
+      <module>complete-glossary</module>
+      <module>appendices</module>
+<!--DocBook Integration Dependencies-->
+      <module>doc-logging</module>
+      <module>docbook-customization</module>
+      <module>document-prepend</module>
+   </modules>
+   <profiles>
+      <profile>
+         <id>xep-profile</id>
+         <activation>
+            <file>
+               <exists>/Applications/XEP/xep</exists>
+            </file>
+         </activation>
+         <build>
+            <plugins>
+               <plugin>
+                  <groupId>org.codehaus.mojo</groupId>
+                  <artifactId>exec-maven-plugin</artifactId>
+                  <version>1.6.0</version>
+                  <executions>
+                     <execution>
+                        <phase>process-classes</phase>
+                        <goals>
+                           <goal>exec</goal>
+                        </goals>
+                     </execution>
+                  </executions>
+                  <configuration>
+                     <executable>/Applications/XEP/xep</executable>
+                     <workingDirectory>${project.basedir}/src/docbkx</workingDirectory>
+                     <successCodes>0,1</successCodes>
+                     <arguments>
+                        <argument>-fo</argument>
+                        <argument>${project.build.directory}/site/docbook/${project.artifactId}.fo</argument>
+                        <argument>-pdf</argument>
+                        <argument>${project.build.directory}/site/docbook/${project.artifactId}.xep.pdf</argument>
+                     </arguments>
+                  </configuration>
+               </plugin>
+
+            </plugins>
+         </build>
+      </profile>
+      
+   </profiles>
+</project>

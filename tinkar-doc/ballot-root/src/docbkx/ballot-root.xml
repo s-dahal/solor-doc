@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+
+  <preface>
+    <title>Purpose</title>
+    <para>This specification describes the requirements needed to manage terminology produced by a
+      variety of organizations across the healthcare enterprise. The healthcare enterprise needs an
+      extensive terminology foundation and the ability to implement extensions to support diverse
+      informatics systems. </para>
+    <para>This specification is intended to support standard terminology modules, value sets, and
+      coding systems as well as local terms and equivalence mappings.</para>
+    <para>A standard-based Terminology Knowledge Architecture (Tinkar) specification is necessary to
+      support the operation of a variety of systems intended to deliver knowledge management for
+      terminology to vendors, providers, and standards-development organizations, like Health Level
+      Seven International (HL7). </para>
+  </preface>
+  <preface>
+    <title>Acknowledgements</title>
+    <para> The project team would like to acknowledge the leadership and guidance from: </para>
+    <para>
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Keith E. Campbell, MD, PhD</emphasis> - Director of
+            Informatics Architecture, Knowledge Based Systems, Veterans Health Administration</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Carol Macumber, MS, FAMIA</emphasis> - Health Level Seven
+            International (HL7) Vocabulary Work Group co-chair and HL7 Terminology Authority vice
+            chair</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Penni Hernandez, RN, ND, APN</emphasis> - Nurse, Associate
+            Director, Clinical Data Representation, Knowledge Based Systems, Veterans Health
+            Administration</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Jonathan Nebeker, MD, MS</emphasis> - Deputy Chief Medical
+            Informatics Officer, Veterans Health Administration</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Steven Brown, MD, MS </emphasis>- Director of Knowledge Based
+            Systems, Veterans Health Administration</para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para/>
+    <para>The Tinkar ballot received contributions and assistance from the following
+      individuals:</para>
+    <para>
+      <informaltable frame="none" rowsep="0" colsep="0">
+        <tgroup cols="2" align="left">
+          <colspec colname="c1" colnum="1" colwidth="1*"/>
+          <colspec colname="c2" colnum="2" colwidth="1*"/>
+          <tbody>
+            <row>
+              <entry>
+                <para>&#x2003;&#x2003;&#x2003;Keith E. Campbell <superscript>1</superscript></para>
+              </entry>
+              <entry>Jessica Bota <superscript>2</superscript></entry>
+            </row>
+            <row>
+              <entry>&#x2003;&#x2003;&#x2003;Raja A. Cholan <superscript>3</superscript></entry>
+              <entry>Richard Esmond <superscript>4</superscript></entry>
+            </row>
+            <row>
+              <entry>&#x2003;&#x2003;&#x2003;H. Alpha Garrett Jr.
+                <superscript>5</superscript></entry>
+              <entry>Jay Lyle <superscript>5</superscript></entry>
+            </row>
+            <row>
+              <entry>&#x2003;&#x2003;&#x2003;Galen Mulrooney <superscript>5</superscript></entry>
+              <entry>Akila Namasivayam <superscript>3</superscript></entry>
+            </row>
+            <row>
+              <entry>&#x2003;&#x2003;&#x2003;Andrew Sills <superscript>3</superscript></entry>
+              <entry>Ioana Singureanu <superscript>1</superscript></entry>
+            </row>
+            <row>
+              <entry>&#x2003;&#x2003;&#x2003;Walter Sujansky<superscript>6</superscript></entry>
+              <entry>Karen Thullner <superscript>4</superscript></entry>
+            </row>
+            <row>
+              <entry>&#x2003;&#x2003;&#x2003;Tim Williams <superscript>3</superscript></entry>
+              <entry>Kurt W. Allen <superscript>4</superscript></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </para>
+    <para/>
+    <para/>
+    <para><superscript>1</superscript>Veterans Health Administration;
+      <superscript>2</superscript>HL7 Vocabulary Work Group; <superscript>3</superscript>Deloitte
+      Consulting LLP; <superscript>4</superscript>PenRad Technologies Inc;
+        <superscript>5</superscript>J P Systems, Inc; <superscript>6</superscript>Sujansky &amp;
+      Associates, LLC</para>
+    <para/>
+    <para/>
+    <para>This work was primarily funded by the Veterans Health Administration Clinical Informatics
+      and Data Management Office. This work would not have been possible without the support of
+      Jonathan Nebeker and Steven Brown.</para>
+
+  </preface>
+  <toc/>
+
+<!--  Glossary-->
+    <xi:include
+          href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/complete-glossary/complete-glossary.xml"
+          xmlns:xi="http://www.w3.org/2001/XInclude"/> 
+
+<!--  1.	Introduction-->
+  <xi:include
+          href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"
+          xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+<!--  2.	Business Requirements-->
+  <xi:include
+          href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/business-requirements/business-requirements.xml"
+          xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+<!--  3.	Tinkar Reference Model-->
+  <xi:include
+          href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/tinkar-reference-model/tinkar-reference-model.xml"
+          xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+  <!--  4.	Tinkar Reference Implementation -->
+  <xi:include
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/reference-implementation/reference-implementation.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+  
+  <!--  5.	Next Steps-->
+  <xi:include
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+ 
+  <!--Key Takeaways-->
+  <xi:include
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"/>
+  
+
+    <!--6.	References-->
+  <xi:include
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/abbreviated-glossary/abbreviated-glossary.xml"/>
+ 
+  <!--Related Works-->
+  <xi:include
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/gap-analysis/gap-analysis.xml"/>
+  
+  <!--Tinkar Model Concepts-->
+  <xi:include
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/appendices/appendices.xml"/>
+  
+<!--   <xi:include
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/appendices/appendices.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/> -->
+</book>

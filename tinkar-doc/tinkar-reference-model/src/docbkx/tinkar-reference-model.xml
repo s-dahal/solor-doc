@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Tinkar Reference Model</title>
+    <para>The Tinkar Reference Model is a logical model described herein using the <emphasis>Object
+            Management Group (OMG) Unified Modeling Language (UML) 2.0</emphasis> notation to
+        describe the structure of integrated data representation and change management for
+        biomedical terminologies. Tinkar provides an architecture that delivers integrated
+        terminology to the enterprise and its information systems. In doing so, it addresses the
+        differences in management and structure across reference terminology, local concepts, and
+        code lists/value sets. This section describes classes of objects that support a common
+        foundational framework for terminology and knowledge base systems (e.g., SNOMED
+            CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, RxNorm, HL7). An
+        implementation of Tinkar can provide a single representation for all terminologies required
+        in the U.S. and other countries, while also providing a better foundation for managing
+        change. Tinkar could support the operation of a variety of systems intended to deliver
+        knowledge management for terminology to vendors providers, and standards-development
+        organizations like HL7.</para>
+    
+    <section>
+        <title>Standard Class Model</title>
+        <para>
+            <figure>
+            <title>Versioned Component</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="VersionedComponent_vF.png" scalefit="1" width="100%" contentdepth="100%" align="center"/>
+                </imageobject>
+            </mediaobject>
+            <caption>
+                    <para><emphasis role="italics">Versioned Component</emphasis>
+                    </para>
+                </caption>
+            </figure>
+        </para>
+        <para>The Tinkar Reference Model fulfills the requirement of capturing a complete record of
+            all changes, including relevant context information. This is captured via the STAMP
+            class using the following fields: </para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Status:</emphasis> A status is identified by a
+                        concept, which may be annotated with other identifying information. For
+                        example: active or inactive <emphasis role="underline"  linkend="requirement_19">(Requirement 19)</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Time:</emphasis> Timestamps must employ a common
+                        standard, which must support precision and time zone. <emphasis role="underline"  linkend="requirement_20">(Requirement
+                            20)</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Author:</emphasis> An author is identified by a
+                        concept, which may be annotated with other identifying information as
+                        required. <emphasis role="underline"  linkend="requirement_21">(Requirement 21)</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Module: </emphasis>Assignment to the appropriate
+                        terminology (e.g., LOINC) or terminology component (e.g., SNOMED
+                            CT<superscript>®</superscript>, US Extension). A module is identified by
+                        a concept, which may be annotated with other identifying information.
+                            <emphasis role="underline" linkend="requirement_22">(Requirement
+                            22)</emphasis>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Path:</emphasis> Specification of an object under
+                        version control within a terminology development lifecycle, e.g., for
+                        distributed development, testing, staging, or production. A path is a common
+                        synomyn for “branch” as used in current software version control best
+                        practices/literature. A path is identified by a concept, which may be
+                        annotated with other identifying information. A core set of paths is
+                        necessary to support publication to external organizations. <emphasis
+                            role="underline" linkend="requirement_23">(Requirement
+                        23)</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+                    <para>These elements together are referred to by the acronym “<emphasis
+                role="bold">STAMP</emphasis>,” as described previously. Every new assertion, whether
+            a new component or a change to an existing component, must have a STAMP to determine
+            when it is to be used. The STAMP properties support the ability to apply terminology
+            components for specific purposes. For example, <itemizedlist>
+                <listitem>
+                    <para>“Path” can be used to test provisional content without physically swapping
+                        out systems.</para>
+                </listitem>
+                <listitem>
+                    <para>“Module” can be used to filter out work that has not been authorized by
+                        the enterprise.</para>
+                </listitem>
+                <listitem>
+                    <para>“Time” supports the ability to apply CDS rules as they would have looked
+                        in the past. </para>
+                </listitem>
+            </itemizedlist>The Tinkar Reference Model does not merely support the ability to “STAMP”
+            components; it asserts a requirement that all changes have a STAMP. STAMP assertions are
+            unversioned IdentifiedComponents that are referenced by the components they scope. Since
+            STAMP uses versioned concepts (that have a STAMP), having the STAMP as a versioned
+            component would lead to an infinite regress. </para>
+        <para>Not all terminology systems contain all the information recorded in STAMP, but
+            defaults can be used in cases where it is missing.​  For example, SNOMED CT contains the
+            Status, Time, and Module but do not distribute the Path or Author.  Since most
+            terminologies only release a Production path, the Path could be defaulted to Production
+            Path and the Author could be defaulted to  SNOMED CT Author. </para>
+        <para>All IdentifedComponents in the knowledge base will consist of a series of change
+            records, called ComponentVersions, (beginning with the “Create” version), all associated
+            to an underlying ComponentChronology.</para>
+        
+        <para>A Components Chronology only has properties attributed to it by its versions. Looking
+            at the IdentifiedComponent through different sets of changes (published version,
+            geographically defined set of modules, historical timestamp) may reveal substantially
+            different IdentifedComponents. </para>
+    </section>
+    <section>
+        <title>Component Types</title>
+        <para>
+            <figure>
+                <title>Component Types</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Final_Semantic DefinitionSimple.png" scalefit="1"
+                            width="100%" contentdepth="100%" align="center"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Component Types</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+        <para>All Components in Tinkar are uniquely identified using UUIDs. A Component will be
+            represented by an array of UUIDs with at least one UUID, but can be represented by more
+            than one UUID in the case of a concept being derived from multiple sources. For example,
+            the concept Acetaminophen (which exists in SNOMED CT<superscript>®</superscript>, LOINC,
+            and RxNorm) could have a UUID from each terminology and be represented as an array of
+            UUIDs for this single concept within a Tinkar implementation. </para>
+        <para>A Concept is identified using UUIDs and contains no information. To assemble groups of
+            assertions and to provide information about Concepts, Tinkar uses a construct called a
+                <emphasis role="bold">Semantic</emphasis>. A Semantic is a class containing a set of
+            predicates and objects about a subject. A semantic adds meaning to the components it
+            references, through the fields it contains. A Semantic supports the specification of
+            value sets, compositional definitions, and other components requiring internal
+            structure, and it specifies the nature of the compositional relationship
+            explicitly.</para>
+        <para>The Semantic class uses a Concept to define the relationship between the value(s) and
+            the Concept; the value itself may be either a concept or some other kind of data type,
+            such as a string. This creates the ability to assemble assertions into more complex
+            structures. <figure>
+                <title>Compositional Semantics</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Compositional_Semantics.png" format="PNG" scalefit="1"
+                            width="100%" contentdepth="100%" align="center"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Compositional Semantics</emphasis></para>
+                </caption>
+            </figure></para>
+        <para>As discussed earlier, if an author makes a change to an IdentifiedComponent, the prior
+            Version is unchanged, but a new version – with the appropriate STAMP information – is
+            recorded. Users viewing the Concept and associated Semantics in the prior context (i.e.,
+            as of the prior time, if no other STAMP element has changed) will see the old values;
+            users viewing the Concept and associated Semantics in the new context will see the new
+            values.</para>
+        <para>Since it is versioned, a Semantic is manifested as a <emphasis role="bold"
+                >SemanticChronology</emphasis>, containing a set of <emphasis role="bold"
+                >SemanticVersions</emphasis>. SemanticVersion is a single instance of a Semantic
+            with a STAMP, and a SemanticChronology is the set of versions having a STAMP for a
+            Semantic. Concepts, too, are manifest as collections: a <emphasis role="bold"
+                >ConceptChronology</emphasis> consisting of a set of <emphasis role="bold"
+                >ConceptVersions</emphasis>. ConceptVersion is a single instance of an identifier
+            for a concept with a STAMP and the ConceptChronology is the set of versions having a
+            STAMP for a concept. A concept identifier specifies a ConceptChronology; specifying a
+            ConceptVersion requires a rule or parameter for selecting among STAMP values.</para>
+        <para>If other IdentifiedComponents depend on the changed concept, these
+            IdentifiedComponents can be identified by relationships in the Semantics. The Semantics
+            can assert rules for how to manage these changes. A Semantic defining a value set for
+            data entry might automatically accept any deactivations from the source system
+            authority, while a Semantic defining a value set for research might automatically
+            decline to adopt deactivations, or do so based on whether there are extant operational
+            values. Escalating such decisions for human adjudication or review at multiple levels is
+            also always an option. Systems might adopt any number of methods for dealing with
+            identified changes: the important thing is to ensure the changes can be identified
+            consistently.</para>
+    </section>
+    <section>
+        <title>Field Data Types</title>
+        <para> Tinkar supports the following field data types for use with Semantics.<orderedlist>
+                <listitem>
+                    <para>String - a sequence of characters, either as a literal constant or as a
+                        variable. Strings could be used to represent terms from code systems or
+                        URLs, textual definitions, etc.</para>
+                </listitem>
+                <listitem>
+                    <para>Integer - data type that represents some range of mathematical
+                        integers.</para>
+                </listitem>
+                <listitem>
+                    <para>Float - represents values as high-precision fractional values.</para>
+                </listitem>
+                <listitem>
+                    <para>Boolean - represents the values true and false.</para>
+                </listitem>
+                <listitem>
+                    <para>Byte Array - an array of 8-bit signed two’s complement integers.</para>
+                </listitem>
+                <listitem>
+                    <para>Directed Graph or Digraph - a graph whose edges are ordered pairs of
+                        vertices. Each edge can be followed from one vertex to another
+                        vertex.</para>
+                </listitem>
+                <listitem>
+                    <para>Instant - models a single instantaneous point on a timeline.</para>
+                </listitem>
+                <listitem>
+                    <para>Planar Point - position in a two-dimensional space (a plane).</para>
+                </listitem>
+                <listitem>
+                    <para>Spatial Point - position in a three-dimensional space.</para>
+                </listitem>
+                <listitem>
+                    <para>Component ID List - an ordered list of Component IDs.</para>
+                </listitem>
+                <listitem>
+                    <para>Component ID Set - an unordered list of Component IDs.</para>
+                </listitem>
+                <listitem>
+                    <para>UUID (Universally Unique Identifier) - A 128-bit number used to identify
+                        information in computer systems.</para>
+                </listitem>
+                <listitem>
+                    <para>Directed Tree or Ditree - a graph obtained from an undirected tree by
+                        replacing each undirected edge by two directed edges with opposite
+                        directions.</para>
+                </listitem>
+                <listitem>
+                    <para>DiGraph - A graph in which a set of objects are connected where all the
+                        edges are directed from one vertex to another. </para>
+                </listitem>
+                <listitem>
+                    <para>Vertex - The fundamental unit of data that makes up a graph or
+                        tree.</para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>In Tinkar, property graphs are used as a general-purpose data
+                                pattern to represent an abstract syntax tree (AST), such as OWL
+                                EL++. This allows for data types without requiring custom nodes. </para>
+                            <orderedlist numeration='lowerroman'>
+                                <listitem>
+                                    <para>An AST may be used “during semantic analysis, where the
+                                        compiler checks for correct usage of the elements of the
+                                        program and the language. The compiler also generates symbol
+                                        tables based on the AST during semantic analysis. A complete
+                                        traversal of the tree allows verification of the correctness
+                                        of the program. After verifying correctness, the AST serves
+                                        as the base for code generation. The AST is often used to
+                                        generate an intermediate representation, sometimes called an
+                                        intermediate language, for the code generation.” <link
+                                            linkend="bib11">[15]</link>
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>An AST is made up of nodes and branches. In Tinkar, every
+                                        tree will always have roots, but they are specific: “An OWL
+                                        EL root” vs. a “BPMN root”, etc. Each node must have 0 or
+                                        more children. </para>
+                                </listitem>
+                            </orderedlist>
+                        </listitem>
+                        <listitem>
+                            <para>Here is an example of Tinkar output of semantics that reference
+                                multiple concepts. <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="propertygraph.PNG" format="PNG"
+                                            scalefit="1" width="100%" contentdepth="100%"
+                                            align="center"/>
+                                    </imageobject>
+                                </mediaobject>In this output, one can see a sufficient set and
+                                necessary set. Bulleted items are properties in the node. The output
+                                is printed as a “depth first search.” Each depth adds 3 characters
+                                of padding and shows how OWL EL++ definitions, using only
+                                terminology and a standard property graph data structure, are
+                                represented. The 1st one is node index 0 which has a child of node
+                                index 8. Node index 0 is the OWL EL++ definition root. Node 8 points
+                                to Node 7, and the meaning of Node 8 is that it is a necessary set.
+                                Node 7 is ‘And’ and points to Node 5,1,6. Node 5’s meaning is ‘Role
+                                Type’, Value is ‘Role group’, and its other property is ‘Role
+                                Operator.’ Node 5 points to Node 4. Node 4 is ‘And.’ Node 3 is ‘Role
+                                Type.’ Node 2 is Concept Reference. 7 also points to 1 and 6
+                                (Concept References).</para>
+                        </listitem>
+                        <listitem>
+                            <para>The property graph model demonstrates that each vertex has a
+                                meaning. Tinkar can use concepts to represent anything end users
+                                might need at nodes. This allows for data types without requiring
+                                custom nodes. With no changes to the underlying data structures,
+                                Tinkar can represent more than OWL EL++. With updates to
+                                terminology, Tinkar can represent any parsable standard, such as
+                                BPMN and DMN, using this property graph model and a proper set of
+                                terminology concepts and semantics represented using Tinkar.</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+            </orderedlist></para>
+    </section>
+    <section>
+        <title>Pattern (For Semantics)</title>
+        <para>The Tinkar Reference Model defines a first-class feature of the model, the <emphasis
+                role="bold">Pattern </emphasis>(<emphasis role="bold">PatternVersion</emphasis> and
+                <emphasis role="bold">PatternChronology</emphasis>). A Pattern is a class defining a
+            set of predicates and object types that can be asserted about a class of subjects. All
+            Semantics follow Patterns.  A PatternVersion is a single instance of a pattern with a
+            STAMP and a PatternChronology is the set of versions having a STAMP for a pattern. This
+            feature asserts patterns that Semantic components can follow, like an XML or RDF
+            Schema.</para>
+        <para>
+            <figure>
+                <title>Pattern</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Final_SemanticDefinition.png" format="PNG" scalefit="1"
+                            width="100%" contentdepth="100%" align="center"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Pattern</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+        <para>Using the Pattern, Semantics with varying fields and data types can be specified to
+            represent any structure needed to provide meaning to a concept. For example, if a field
+            within a semantic is used to describe an SDO’s website, the Meaning would be “URL,”
+            DataType of “String,” and Purpose of “Website.” The Pattern would then contain an array
+            of these FieldDefinitions.</para>
+    </section>
+    <section>
+        <title>Overall Tinkar Architecture</title>
+        <para>
+            <figure>
+                <title>Overall Tinkar Architecture</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Final_TinkarArchitecture.png" format="PNG" scalefit="1"
+                            width="100%" contentdepth="100%" align="center" />
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Overall Tinkar Architecture</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+        <para>
+            <informaltable>
+                <tgroup cols="1">
+                    <colspec colnum="1" colname="col1"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Class Definitions</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para><emphasis role="bold">Concept</emphasis> - An identifier for a
+                                    concept or instance. The identifier contains no information; all
+                                    information specifying or describing the concept is asserted
+                                    with Semantics.</para>
+                                <para><emphasis role="bold">ConceptVersion </emphasis> - A single
+                                    instance of an identifier for a concept with a STAMP. </para>
+                                <para><emphasis role="bold">ConceptChronology</emphasis> - The set
+                                    of versions having a STAMP for a concept. A concept identifier
+                                    specifies a ConceptChronology; specifying a ConceptVersion
+                                    requires a rule or parameter for selecting among STAMP
+                                    values.</para>
+                                <para><emphasis role="bold">Semantic</emphasis> - A class containing
+                                    a set of predicates and objects about a subject. Semantics
+                                    perform the descriptive work in Tinkar.</para>
+                                <para><emphasis role="bold">SemanticVersion</emphasis> - A single
+                                    instance of a Semantic with a STAMP.</para>
+                                <para><emphasis role="bold">SemanticChronology</emphasis> - The set
+                                    of versions having a STAMP for a Semantic. </para>
+                                <para><emphasis role="bold">Pattern</emphasis> - A class defining a
+                                    set of predicates and object types that can be asserted about a
+                                    class of subjects. All Semantics follow Patterns.</para>
+                                <para><emphasis role="bold">PatternVersion</emphasis> - A single
+                                    instance of a pattern with a STAMP.</para>
+                                <para><emphasis role="bold">PatternChronology</emphasis> - The set
+                                    of versions having a STAMP for a pattern. </para>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </para>
+    </section>
+    <section>
+        <title>Coordinate</title>
+        <para>The Tinkar Reference Model supports and encourages the storage of time series data
+            that utilizes multiple coordinates, for example, STAMP, Language, Dialect, clinical
+            domains, etc. The ability to efficiently search, display, and navigate concepts and
+            semantics requires the ability to calculate combinations of content based on one or more
+            of these different coordinates. </para>
+        <para>In order to facilitate the computability of various, complex coordinates, including
+            time series data, a graph structure is commonly used in software versioned control
+            systems. A particular type of graph structure that is commonly used is a “version
+            graph,” such as a directed acyclic graph. A version graph would enable a Tinkar
+            implementation to recover the state of the graph at a particular point in time. Most
+            graph databases do not support versioning as a first-class concept. It is possible,
+            however, to create a versioning scheme inside the graph model whereby nodes and
+            relationships are timestamped and archived whenever they are modified. The downside of
+            such versioning schemes is that they leak into any queries written against the graph,
+            adding a layer of complexity to even the simplest query.</para>
+        <para>Types of Coordinates:<orderedlist>
+                <listitem>
+                    <para>STAMP coordinates are the most basic type of coordinate on which all
+                        content should be filtered. Examples of STAMP coordinates are:<orderedlist numeration='loweralpha'>
+                            <listitem>
+                                <para>Most recent version</para>
+                            </listitem>
+                            <listitem>
+                                <para>Set of data from several versions</para>
+                            </listitem>
+                            <listitem>
+                                <para>All active components only</para>
+                            </listitem>
+                        </orderedlist></para>
+                </listitem>
+                <listitem>
+                    <para>Language coordinates are used to control the terms that should be
+                        displayed. Examples of Language coordinates are:<orderedlist numeration='loweralpha'>
+                            <listitem>
+                                <para>Displaying terms based on a language and/or dialect</para>
+                            </listitem>
+                            <listitem>
+                                <para>Prioritized list of synonyms based on a particular clinical
+                                    domain</para>
+                            </listitem>
+                        </orderedlist></para>
+                </listitem>
+                <listitem>
+                    <para>Logic coordinates are used to identify the various results from
+                        Description Logic Classifiers as well as the different versions of the
+                        output over time:</para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>Result from various Description Logic Classifiers</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para>Navigation coordinates are used to assist in viewing and searching for a
+                        particular concept. Examples of these would be:<orderedlist numeration='loweralpha'>
+                            <listitem>
+                                <para>Stated vs. inferred relationships from SNOMED
+                                        CT<superscript>®</superscript></para>
+                            </listitem>
+                            <listitem>
+                                <para>Concepts inclusion/exclusion for a particular domain</para>
+                                
+                            </listitem>
+                        </orderedlist></para>
+                </listitem>
+            </orderedlist></para>
+        <para>As the Tinkar specification evolves towards a DSTU and
+            Connectathons, more coordinates and detailing will be provided. </para>
+        <section>
+            <title>Calculating Coordinates</title>
+            <para>The ComponentChronology contains all the versions of a component from the date it
+                was instantiated until the most recent version. Components only get a new version
+                whenever something about the component changes. To calculate the latest version
+                requires the ability to find the most recent version of each component. Utilizing
+                the STAMP Coordinates supports calculating all other coordinates:</para>
+            <para>
+                <orderedlist>
+                    <listitem>
+                        <para>Identify the Module(s) the user would like to
+                            view/search/modify.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Identify the Path the user would like to view/search/modify.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Identify the Status or Statuses the user would like to
+                            view/search/modify.</para>
+                    </listitem>
+                    <listitem>
+                        <para>If relevant, identify the Author(s) the user would like to
+                            view/search/modify.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The last piece of the STAMP coordinate (time) is the most difficult to
+                            calculate. In most cases the user will need to find the most recent
+                            version of the component as of the current time to calculate this point
+                            of the coordinate. However, since Tinkar supports and encourages the
+                            representation of historical, the user may need to calculate the most
+                            recent version as of a different point in time. </para>
+                    </listitem>
+                </orderedlist>
+            </para>
+            <para>After the STAMP Coordinates have been calculated, additional coordinates can then
+                be applied as well. For example, applying a language and dialect coordinate will be
+                important not only for viewing and searching, but also to determine the appropriate
+                preferred name for displaying a hierarchy.</para>
+        </section>
+        <section>
+            <title>Next Steps Around Coordinates</title>
+            <para>As the Tinkar specification evolves towards a DSTU and Connectathons, more
+                coordinates and detailing will be provided.</para>
+        </section>
+    </section>
+    <section>
+        <title>Future Iterations</title>
+        <para>The current Tinkar Reference Model is expressive enough to be able to represent any
+            terminology. Future iterations of the Tinkar specification will require harmonized
+            implementation guides to be created for each terminology. Doing so will ensure that
+            implementers will be able manage terminology produced by a variety of organizations
+            across a healthcare enterprise. Harmonized implementation guides will also support
+            healthcare organizations’ standard terminology modules, value sets, and coding systems
+            as well as local terms and equivalence mappings.</para>
+        <para>Additional metadata from standards like Dublin Core or FHIR that may not currently be
+            supported with the current Tinkar Reference Model could be supported using Concepts and
+            Semantics.  However, further changes to the Tinkar Reference Model may be needed if they
+            cannot be supported using the current model.</para>
+    </section>
+</chapter>

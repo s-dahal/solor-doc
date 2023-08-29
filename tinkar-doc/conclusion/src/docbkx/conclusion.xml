@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+  <title>Key Takeaways</title>
+  <para>
+    <orderedlist>
+      <listitem>
+        <para>Terminology Knowledge Architecture (Tinkar) intends to integrate clinical terminology
+          and local concepts to support increased data quality for interoperable clinical
+          information. Quality clinical data enables healthcare systems across the enterprise to
+          conduct robust and meaningful data analysis and increase overall interoperability, which
+          ultimately enhances quality of care across all medical facilities. </para>
+      </listitem>
+      <listitem>
+        <para>A Tinkar specification provides a standardized model for terminology and change
+          management. </para>
+      </listitem>
+      <listitem>
+        <para>The Tinkar Reference Model could provide a single representation for all terminologies
+          required in the U.S. (e.g., SNOMED CT<superscript>®</superscript>,
+            LOINC<superscript>®</superscript> , RxNorm). </para>
+      </listitem>
+      <listitem>
+        <para>Tinkar provides the foundation of a knowledge architecture that delivers integrated
+          terminology to the enterprise and its information systems. In doing so, it addresses the
+          differences in management and structure across reference terminology, local concepts, and
+          code lists/value sets. </para>
+      </listitem>
+      <listitem>
+        <para>Tinkar aims to be both self-describing and completely machine processed:</para>
+        <orderedlist numeration='loweralpha'>
+          <listitem>
+            <para>Self-describing machine-readable representation of terminology, such that if an
+              application can process the metadata, it should be able to import the content/concepts
+              and make it available to enterprise applications.</para>
+          </listitem>
+          <listitem>
+            <para>The machine-readable terminology could generate human-readable documentation so
+              that business analysts and developers can understand and apply it correctly.</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+      <listitem>
+        <para>If HL7 so desired, Tinkar could be used as the format by which all HL7 terminology is
+          exported. It is believed that current HL7 content can be converted to Tinkar with no loss;
+          further work would need to be done to verify that if HL7 was interested in that
+          path.</para>
+      </listitem>
+      <listitem>
+        <para>In practice, the Tinkar logical model can be used to create practical implementation
+          guidance in the future (e.g., implementation guides, profiles, value sets), and can be
+          applied to design change management solutions.</para>
+      </listitem>
+    </orderedlist>
+  </para>
+
+</chapter>

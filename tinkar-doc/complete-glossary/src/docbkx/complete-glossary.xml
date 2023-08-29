@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<glossary xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="gloss">
+    <title>Glossary</title>
+    <informaltable>
+        <tgroup cols="2">
+            <colspec colnum="1" colname="col1" colwidth="1*"/>
+            <colspec colnum="2" colname="col2" colwidth="1.56*"/>
+            <tbody>
+                <row>
+                    <entry>Terminology</entry>
+                    <entry>A set of concept identifiers, descriptors, and relationships used to
+                        capture domain information in an information system.</entry>
+                </row>
+                <row>
+                    <entry>Standard Terminology</entry>
+                    <entry>A terminology developed and published for use across organizational
+                        boundaries.</entry>
+                </row>
+                <row>
+                    <entry>Enterprise Terminology</entry>
+                    <entry>The set of terminology assets that are specific to and maintained by a
+                        healthcare organization, including, locations and services and their
+                        relationships to standard terminologies.</entry>
+                </row>
+                <row>
+                    <entry>Tinkar</entry>
+                    <entry>Terminology Knowledge Architecture (Tinkar) is intended to provide an
+                        architecture that delivers integrated terminology to the enterprise and its
+                        information systems. Tinkar addresses the differences in management and
+                        structure across reference terminology, and with local concepts and code
+                        lists/value sets.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Logical Model</para>
+                        <para> </para>
+                    </entry>
+                    <entry>A model expressed independently of a particular implementation
+                        technology.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Tinkar Reference Model</para>
+                        <para> </para>
+                    </entry>
+                    <entry>A logical model that describes the standardized model for terminology and
+                        change management.</entry>
+                </row>
+                <row>
+                    <entry>Coordinate</entry>
+                    <entry>A dimension of context in which a user wishes to view terminology
+                        assets.</entry>
+                </row>
+                <row>
+                    <entry>STAMP – (status, time, author, module, path)</entry>
+                    <entry>The precise version coordinates that govern granular change control for
+                        Tinkar assets. </entry>
+                </row>
+                <row>
+                    <entry>Path</entry>
+                    <entry>A set of assets under version control that can be managed distinctly from
+                        other assets. Paths “branch” from other paths when established, and can be
+                        “merged” with other paths as well.</entry>
+                </row>
+                <row>
+                    <entry>Branch</entry>
+                    <entry>“Branch” as commonly used in version control, implies a tree structure,
+                        where a version configuration is allowed to only have one origin. In many
+                        instances, supported version configuration has more than one origin. For
+                        example, a mapping configuration may have an origin of T1 on System A, and
+                        T2 on System B (based on the release schedules of Systems A and B). A Path,
+                        which is more general, allows multiple origins of a version
+                        configuration.</entry>
+                </row>
+                <row>
+                    <entry>Publish</entry>
+                    <entry>To move a set of assets to a “published” branch and support its export to
+                        an interoperable payload technology. Publication implies that the publisher
+                        has exercised some editorial judgment and warrants the validity and
+                        consistency of the publication. </entry>
+                </row>
+                <row>
+                    <entry>Export</entry>
+                    <entry>To serialize a set of content to an interoperable payload technology.
+                        Export does not carry the same quality expectations as publication.</entry>
+                </row>
+                <row>
+                    <entry>Import</entry>
+                    <entry>To replicate an exported set of content into a repository. This activity
+                        implies the implementation of rules and constraints asserted by both native
+                        and imported content. </entry>
+                </row>
+                <row>
+                    <entry>Configuration Requirements</entry>
+                    <entry>
+                        <para>Functionality required to make a Tinkar repository operational.</para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>UML (Unified Modeling Language)</entry>
+                    <entry>
+                        <para>The Object Management Group (OMG) Unified Modeling Language (UML)
+                            specification defines a graphical language for specifying and
+                            documenting the artifacts of systems.</para>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
+    <para>
+        <informaltable>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1" colwidth="1*"/>
+                <colspec colnum="2" colname="col2" colwidth="1.56*"/>
+                <tbody>
+                    <row>
+                        <entry>
+                            <para>Minimally Required Content</para>
+                        </entry>
+                        <entry>The set of minimal content a Tinkar repository must implement to
+                            support operations. A Tinkar implementation must be furnished with the
+                            following content: (a) One root concept; (b) One module dependency
+                            graph; (c) Infrastructure concepts a.k.a Tinkar Model Concepts to
+                            support the core patterns listed above; (d) Import rules to support
+                            import of standard terminologies.</entry>
+                    </row>
+                    <row>
+                        <entry>Tinkar Model Concepts (a.k.a Infrastructure concepts)</entry>
+                        <entry>Minimally required content that are concepts.</entry>
+                    </row>
+                    <row>
+                        <entry>Separation of Concerns</entry>
+                        <entry>A design principle that allows a complete system to be subdivided
+                            into distinct sections or components with well-defined functionality and
+                            dependencies. This approach allows individual sections to be reused, as
+                            well as worked on and updated independently to address new requirements
+                            and use cases.</entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para> Foundation Layer of Knowledge Architecture</para>
+                        </entry>
+                        <entry>The Foundation layer provides the common elements of interoperability
+                            such as object identity, versioning, modularity, and knowledge
+                            representation. It includes the foundation and building blocks of the
+                            common model and how the modules of the architecture are tightly version
+                            controlled over time.</entry>
+                    </row>
+                    <row>
+                        <entry> Terminology Layer of Knowledge Architecture</entry>
+                        <entry>The Terminology Knowledge Layer provides structured sets of medical
+                            terms and codes that define concepts of interest. This includes
+                            descriptions, dialects, language, and semantic hierarchy; SNOMED
+                                CT<superscript>®</superscript>, LOINC<superscript>®</superscript>,
+                            and RxNorm are part of this layer.</entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>Solor</para>
+                            <para> </para>
+                        </entry>
+                        <entry>A project sponsored by the Department of Veterans Affairs (VA) and
+                            Logica Health that represents and brings together terminology standards
+                            in a single model that can encompass any customized content. Solor
+                            allows informaticists and developers to convert user-supplied
+                            terminologies into a single model using open-source software to produce
+                            Solor content.</entry>
+                    </row>
+                    <row>
+                        <entry>Komet (Knowledge Management Environment)</entry>
+                        <entry>
+                            <para>Komet is an example implementation of the Tinkar model, and shows
+                                how terminologies like SNOMED CT<superscript>®</superscript>,
+                                    LOINC<superscript>®</superscript>, RxNorm shall be represented.
+                                Using the Komet browser users can view and search concepts, view
+                                concept details, and navigate hierarchies, among many other
+                                functions.</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>UUID (Universally Unique Identifier)</entry>
+                        <entry>A 128-bit number used to identify information in computer
+                            systems.</entry>
+                    </row>
+                    <row>
+                        <entry>FHIR (Fast Healthcare Interoperability Resource)</entry>
+                        <entry>A standard describing data formats and elements and an application
+                            programming interface for exchanging electronic health records. </entry>
+                    </row>
+                    <row>
+                        <entry>Capability Maturity Model</entry>
+                        <entry>
+                            <para>A development model that can be viewed as a set of structured
+                                levels that describe how well the behaviors, practices, and
+                                processes of an organization can reliably and sustainably produce
+                                required outcomes. There are five levels defined along the continuum
+                                of the capability maturity model and the model provides a
+                                theoretical continuum along which process maturity can be developed
+                                incrementally from one level to the next.</para>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </para>
+    
+</glossary>

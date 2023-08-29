@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+
+    <title>Next Steps</title>
+    <para>Tinkar is a logical model and therefore may be implemented using relevant implementable
+        models and technology. This section will focus on the use of Tinkar alongside preexisting
+        HL7 exchange standards. In practice, the Tinkar logical model can be used to create
+        practical implementation guidance in the future (e.g., implementation guides, profiles,
+        value sets), and can be applied to design change management solutions.</para>
+    <section>
+        <title>Tinkar Serialization Data</title>
+        <para>Tinkar will include a serialization format that will serialize any or all the
+            information stored in a Tinkar implementation. This serialization format will allow
+            third parties to read data created by a Tinkar compliant implementation. A serialized
+            Tinkar file can also be used to transfer information between different Tinkar
+            implementations. This will ensure that no Tinkar data is lost. </para>
+        <para>C# and Java code implementations of the Tinkar Data Model will be made available to
+            integrators, allowing third parties to more easily use Tinkar.</para>
+        <para>Specifically, third party implementers can use Java or C# to:</para>
+        <orderedlist>
+            <listitem>
+                <para>Read Tinkar data into memory.</para>
+            </listitem>
+            <listitem>
+                <para>Manipulate and modify Tinkar data using Tinkar data structures.</para>
+            </listitem>
+            <listitem>
+                <para>Write Tinkar data out to a serialized file.</para>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section>
+        <title>Tinkar interfacing with FHIR</title>
+        <para>Tinkar data can be used to create FHIR compliant data. Tinkar data can be used to
+            generate FHIR data. Only a subset of the Tinkar data model would be converted to FHIR.
+            Roundtripping of data from Tinkar to FHIR and back is likely to result in Tinkar data
+            loss.</para>
+        <para>Tinkar data items lost in FHIR conversion:</para>
+        <orderedlist>
+            <listitem>
+                <para>STAMP data: Loss of the STAMP data means that the ability to look at
+                    terminology at a specific point in time is lost. The FHIR data is a snapshot at
+                    a fixed point in time.</para>
+            </listitem>
+            <listitem>
+                <para>Semantic data: FHIR data does not contain a concept similar to Tinkar’s
+                    semantic relationships. </para>
+            </listitem>
+        </orderedlist>
+        <para>There are two main areas in which Tinkar and FHIR are expected to interface, as
+            described in the subsequent sections: “Dynamic FHIR Terminology Servers” and “Static
+            FHIR CodeSystem and ValueSet Resources.”</para>
+        <section>
+            <title>Dynamic FHIR Terminology Servers</title>
+            <para>FHIR terminology servers are designed to provide knowledge artifacts in real time
+                to support clinical system operations. A system may request $expand on a ValueSet,
+                for instance, to populate a drop-down list in a user interface, or $validate-code to
+                confirm content in an interface conforming to a profile; a request for $subsumes on
+                a CodeSystem or $translate on a ConceptMap can be used to translate codes when
+                transforming native records to a standard format, and so forth.</para>
+            <para>FHIR queries against the FHIR terminology server could use Tinkar originated
+                terminology data as well as other non-Tinkar generated terminology to fulfill the
+                requests.</para>
+            <para>The serialization file described above would be one way to import data from a
+                Tinkar system to a FHIR terminology server. Implementers for each FHIR Terminology
+                Server would have to write code specific to their implementation to import Tinkar
+                data into their own implementation dependent data storage.</para>
+            <para>The Tinkar C# and Java libraries could be used by the FHIR Server Implementors to
+                help support that import process.</para>
+        </section>
+        <section>
+            <title>Static FHIR CodeSystem and ValueSet Resources</title>
+            <para>FHIR CodeSystem and ValueSet records are designed to provide knowledge artifacts
+                to support clinical system operations. Terminology data contained in FHIR CodeSystem
+                and ValueSet resources are fixed at the time that the resource instances are
+                generated.</para>
+            <para>It is expected that some automated means of creating FHIR ValueSet and CodeSystem
+                records from Tinkar will be developed. The automated system could import data from a
+                Tinkar system using the serialization format described above, and output desired
+                CodeSystem and ValueSet instances. Modifications to the Tinkar data would require
+                regeneration of the FHIR artifacts and subsequent transmission to interested users
+                of those resource instances.</para>
+        </section>
+    </section>
+    <section>
+        <title>Tinkar interfacing with HL7 UTG, THO, HTA</title>
+        <para>The three HL7 processes for maintaining and distributing HL7 terminology content are
+            UTG, THO, HTA. Our understanding of these HL7 Areas: </para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Unified Terminology Governance (UTG)</emphasis>: A
+                        process with associated tooling to support the process strictly for
+                        governance of HL7 terminological content. UTG is the maintenance process to
+                        keep it up to date and manage change. </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">HL7 Terminological Content (THO)</emphasis>: HL7
+                        Terminological Content refers to <emphasis role="underline"
+                            >t</emphasis>erminology.<emphasis role="underline"
+                            >h</emphasis>L7.<emphasis role="underline">o</emphasis>rg (THO) which is
+                        the domain address of the entry point for the published content. HL7
+                        terminology or THO refers to an enormous corpus of coded content that varies
+                        in quality and that has been developed in HL7 for about 30 years.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">HL7 Terminology Authority (HTA)</emphasis>: The
+                        HTA’s primary purpose is to deal memorandum of understanding and publication
+                        interfaces with non-HL7 publishers and maintainers of terminological
+                        content. </para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>The aim of these HL7 groups, to provide standardized HL7 terminology in a consistent
+            format, is consistent with the goal of Tinkar.</para>
+        <para>If HL7 so desired, Tinkar could be used as the format by which all HL7 terminology is
+            exported. It is believed that current HL7 content can be converted to Tinkar with no
+            loss. Further work would need to be done to verify that if HL7 was interested in that
+            path.</para>
+        <para>Conversion of HL7 common terminology data to Tinkar would allow:</para>
+        <orderedlist>
+            <listitem>
+                <para>Use of tools like KOMET to import, export, maintain and validate HL7
+                    terminology data.</para>
+            </listitem>
+            <listitem>
+                <para>Use of Tinkar serialization format for serialization and distribution
+                    format.</para>
+            </listitem>
+            <listitem>
+                <para>Use of Tinkar and third-party tooling to convert Tinkar serialized data to
+                    FHIR records and import to FHIR terminology servers.</para>
+            </listitem>
+        </orderedlist>
+    </section>
+
+
+</chapter>
