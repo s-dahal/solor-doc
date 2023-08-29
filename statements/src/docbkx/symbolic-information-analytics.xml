@@ -23,7 +23,9 @@
         <title>Integrated Knowledge Management (IKM) </title>
         <xi:include href="Integrated%20Knowledge%20Management.xml"/>
         <title>Technologies that Support Harmonization of Terminology Standards</title>
-        <xi:include href="1.2.2.xml"></xi:include>
+        <xi:include href="1.2.2.xml"/>
+        <title>Playbook for Knowledge Management</title>
+        <xi:include href="Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"></xi:include>
     </part>
     <part>
         <title>Foundational Architecture</title>
@@ -48,6 +50,7 @@
     <part>
         <title>Use Cases</title>
         <xi:include href="4.1.1.xml"/>
+        <xi:include href="Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
         <xi:include href="Use-Case-Chapter.xml"></xi:include>
     </part>
     <part>
