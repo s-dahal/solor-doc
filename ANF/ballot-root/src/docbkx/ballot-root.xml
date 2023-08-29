@@ -3,7 +3,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <preface>
-    <title>Intended Audience</title>
+    <title>ANF Ballot Intended Audience</title>
     <para><glossterm baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm> is
       intended for projects that aggregate clinical statements from a variety of sources,
       independent of formalism or approach used by the source system. </para>
