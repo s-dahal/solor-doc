@@ -17,10 +17,13 @@
     <part>
         <title>Background</title>
         <xi:include href="Background.xml"/>
+        <xi:include href="sof-current-state.xml"></xi:include>
     </part>
     <part>
         <title>Integrated Knowledge Management (IKM) </title>
         <xi:include href="Integrated%20Knowledge%20Management.xml"/>
+        <title>Technologies that Support Harmonization of Terminology Standards</title>
+        <xi:include href="1.2.2.xml"></xi:include>
     </part>
     <part>
         <title>Foundational Architecture</title>
@@ -44,15 +47,17 @@
     </part>
     <part>
         <title>Use Cases</title>
-        <xi:include href="Use-Case-Chapter.xml"/>
+        <xi:include href="4.1.1.xml"/>
+        <xi:include href="Use-Case-Chapter.xml"></xi:include>
     </part>
     <part>
         <title>Ecosystem</title>
         <xi:include href="Ecosystem.xml"/>
     </part>
     <part>
-        <title>Next Steps</title>
-        <xi:include href="Open-Source.xml"/>
+        <xi:include href="2.2.4.xml"/>
+        <title>Open Source and Next Steps</title>
+        <xi:include href="Open-Source.xml"></xi:include>
     </part>
     
 
