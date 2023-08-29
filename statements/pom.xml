@@ -36,6 +36,14 @@
          <classifier>docbook</classifier>
          <type>zip</type>
       </dependency>
+      <!-- Tinkar-Doc Test -->
+      <dependency>
+         <groupId>io.solor.tinkar-doc-submission</groupId>
+         <artifactId>ballot-root</artifactId>
+         <version>1.0-SNAPSHOT</version>
+         <classifier>docbook</classifier>
+         <type>zip</type>
+      </dependency>
    </dependencies>
    <build>
       <plugins>
@@ -47,7 +55,10 @@
                <configuration>
                   <tasks>
                      <replace token= "../target/extracted-dependencies/org.hl7.anf-ballot-submission/" value="" dir="target/extracted-dependencies/org.hl7.anf-ballot-submission">                                 
-                     <include name="**/*.xml"/>
+                        <include name="**/*.xml"/>
+                     </replace>
+                     <replace token= "../target/extracted-dependencies/io.solor.tinkar-doc-submission" value="" dir="target/extracted-dependencies/io.solor.tinkar-doc-submission">                                 
+                        <include name="**/*.xml"/>
                      </replace>
                   </tasks>
                </configuration>
