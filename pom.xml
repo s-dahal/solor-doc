@@ -223,9 +223,9 @@
       <module>transformation-language</module>
       <module>negation</module>
       <module>citation-editor-plugin</module>
-       <module>hl7-cimi-anf</module>
-       <module>hl7-anf-ballot</module>
-       <module>user-tool-doc</module>
+      <module>hl7-cimi-anf</module>
+      <module>hl7-anf-ballot</module>
+      <module>user-tool-doc</module>
    </modules>
    <profiles>
       <profile>

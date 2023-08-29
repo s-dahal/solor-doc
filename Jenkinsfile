@@ -44,6 +44,15 @@ pipeline {
                 }
             }
         }
+        stage('Build Prerequisite Docs') {
+            steps {
+                updateGitlabCommitStatus name: 'build', state: 'running'
+                sh """
+                    mvn -f ANF clean install
+                    mvn -f tinkar-doc clean install
+                """
+            }
+        }
         stage('Build PDF') {
             steps {
                 updateGitlabCommitStatus name: 'build', state: 'running'
