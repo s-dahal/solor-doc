@@ -29,6 +29,20 @@
     </part>
     <part>
         <title>Foundational Architecture</title>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/complete-glossary/complete-glossary.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/business-requirements/business-requirements.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/tinkar-reference-model/tinkar-reference-model.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/reference-implementation/reference-implementation.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"/>
         <xi:include href="Foundational-Architecture.xml"/>
     </part>
     <part>
