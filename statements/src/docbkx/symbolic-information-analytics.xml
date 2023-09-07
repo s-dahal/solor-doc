@@ -6,10 +6,12 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
         <title>Integrated Knowledge Management</title>
-        <subtitle>A Treatise on Symbolic Data Systems
-            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT COVER IMAGE
-            HERE<?oxy_custom_end?></subtitle>
-    </info>
+        <subtitle>A Treatise on Symbolic Data Systems           <inlinemediaobject>
+            <imageobject>
+                <imagedata fileref="images/cover%20page.png"/>
+            </imageobject>
+        </inlinemediaobject></subtitle>
+                </info>
     <part>
         <title>Introduction</title>
         <xi:include href="Introduction.xml"/>
@@ -22,9 +24,7 @@
     <part>
         <title>Integrated Knowledge Management (IKM) </title>
         <xi:include href="Integrated%20Knowledge%20Management.xml"/>
-        <title>Technologies that Support Harmonization of Terminology Standards</title>
         <xi:include href="1.2.2.xml"/>
-        <title>Playbook for Knowledge Management</title>
         <xi:include href="Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"></xi:include>
     </part>
     <part>
@@ -65,6 +65,11 @@
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/examples.xml"/>
     </part>
     <part>
+        <title>Tinkar-Doc Test</title>
+        <!-- TODO: Include necessary Tinkar-Doc sections here -->
+        <xi:include href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"/>
+    </part>
+    <part>
         <title>Assertional Knowledge</title>
         <xi:include href="SOLOR-assertional.xml"/>
     </part>
@@ -81,9 +86,9 @@
     <part>
         <title>Ecosystem</title>
         <xi:include href="Ecosystem.xml"/>
+        <xi:include href="2.2.4.xml"/>
     </part>
     <part>
-        <xi:include href="2.2.4.xml"/>
         <title>Open Source and Next Steps</title>
         <xi:include href="Open-Source.xml"></xi:include>
     </part>
@@ -122,7 +127,7 @@
         <xi:include href="definitional.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="terminology_application.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </part>
-    
+
     <part>
         <title>Statement Model</title>
         <!-- Statement Principles -->
