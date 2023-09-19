@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Framework Considerations for Knowledge Management (KM)</title>
+    <sect1>
+        <title>Framework Condiserations Purpose</title>
+        <para>This document will serve to identify a framework of considerations for comparing
+            Knowledge Management technologies. Incorporated within is analysis of the architecture
+            and codebase for any known scalability, licensing, and privacy needs, as well as how to
+            manage these non-functional requirements continuously as the product develops. In doing
+            this, we will make suggestions for software solutions to cover code maturity,
+            automation, and security.</para>
+    </sect1>
+    <sect1>
+        <title>Introduction to KM Processes</title>
+        <para>As we progress along our journey to improve the open-sourced software base for a
+            Knowledge Management platform, it is important to take note of what is currently being
+            done and what we will focus on as we develop this project further. As part of this, we
+            are defining the processes that need to be executed to achieve the goals of the project,
+            such as becoming a well-supported and contributed open-source product that encourages
+            adoption by the larger community.</para>
+    </sect1>
+    <sect1>
+        <title>Current State Analysis</title>
+        <para>As part of the work on the Knowledge Management tooling, we first need to document the
+            current state of the project so that we can define a future state and develop a plan to
+            address any concerns. To do this, we have completed code reviews and stakeholder
+            interviews to ensure that we understand what work is outstanding.</para>
+    </sect1>
+    <sect1>
+        <title>Methodology</title>
+        <para>The following section describes how we approached reviewing the current assets as it
+            relates to development of the Knowledge Management suite of tooling.</para>
+        <sect2>
+            <title>Stakeholder Interviews</title>
+            <para>Stakeholder interviewers were conducted on identified individuals that had either
+                prior experience with the existing Knowledge Management code base (e.g., Komet,
+                ISAAC, Tinkar-core) or the Informatics Knowledge Architecture (e.g., Solor). A basic
+                semi-structured thematic analysis was performed to identify qualitative themes from
+                the interview.</para>
+        </sect2>
+        <sect2>
+            <title>Requirements, Architecture, and Documentation Review</title>
+            <para>Analysis included reviewing the website documentation, READMEs, any ancillary
+                postscript/PowerPoint/etc. documentation that is available to determine how a
+                customer would approach using the software and how an open-sourced developer would
+                approach to contributing to the codebase.</para>
+            <para>Analysis included reviewing any documentation that discussed what the project must
+                do and must continue to do. This could be contained in provided requirements lists
+                or architecture diagrams. Architecture diagrams include (but are not limited to)
+                logical and physical architecture, component diagrams, sequence diagrams,
+                interaction diagrams, and data flow diagrams. Analysis will also include validating
+                how well the codebase executes functional and non-functional requirements, as so far
+                as they are described in the requirements.</para>
+        </sect2>
+        <sect2>
+            <title>Code Review</title>
+            <para>Analysis of code included doing a full code review, as is described in further
+                sections. This code will determine how well documented, object-oriented (OO) (when
+                applicable), layered, and modular the code is. Analysis will also include validating
+                the frequency in which automated unit and integration testing is being performed on
+                the codebase.</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Findings</title>
+        <para>After interviews with the stakeholders and the review of the codebase, we determined
+            that the following parts of the codebase must be addressed to make it useable by this
+            team and the greater community.</para>
+        <sect2>
+            <title>Requirements Review</title>
+            <para>There is a general lack of both functional and non-functional requirements. A lot
+                of promotional material regarding the design of Solor and its Knowledge Architecture
+                exist, from which some functional requirements could be inferred, but this isn’t
+                sufficient to develop highly reliable knowledge management capabilities. There are
+                some existing Jira and Confluence sites from Logica (formerly HSPC) that describe
+                some groupings of capabilities and functionality (e.g., Personas, SNOMED-CT export,
+                Simple Search) but not enough detail is present to be considered requirements user
+                stories can be based off.</para>
+            <para>Additionally, there is a lack of Key Performance Indicators and Service Level
+                Agreements as they pertain to the larger idea of a Knowledge Management platform
+                that will be host to and a conduit of resolving extremely complex knowledge
+                standards-based issues within the health IT landscape.</para>
+        </sect2>
+        <sect2>
+            <title>Architecture and Documentation Review</title>
+            <para>Identified through various stakeholder interviews were Unified Modeling Language
+                (UML) diagrams that detailed some aspects of Tinkar data structure and overall class
+                hierarchy. These were found within Health Level Seven (HL7) informational ballot for
+                Tinkar and some HL7 Vocabulary working group presentations. There were also some
+                identified attempts at using JetBrains IntelliJ IDEA IDE to auto-generate UML class
+                diagrams of core Tinkar concepts.</para>
+            <para>As mentioned previously, some pre-existing Jira and Confluence websites (Logica)
+                were identified and found to contain some outdated information regarding the
+                Knowledge Architecture (PASTF diagram).</para>
+        </sect2>
+        <sect2>
+            <title>Code Review</title>
+            <para>In general, there is no formal external documentation describing code
+                functionality – either at the class or method level. Some Java Classes were
+                identified to have properly formatted JavaDoc annotations, but this wasn’t
+                consistently applied across the entire code base.</para>
+            <para><emphasis role="bold">Figure 1: Unit Test Code Coverage Report for Komet Using
+                    JaCoCo</emphasis></para>
+            <informalfigure>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Komet%20Using%20JaCoCo.png"
+                        />
+                    </imageobject>
+                </mediaobject>
+            </informalfigure>
+            <para><emphasis role="bold">Figure 2: Unit Test Code Coverage Report for Tinkar using
+                    JaCoCo</emphasis></para>
+            <informalfigure>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Tinkar%20using%20JaCoCo.png"
+                        />
+                    </imageobject>
+                </mediaobject>
+            </informalfigure>
+            <para>There is a general lack of unit tests across the entire code base. As shown in
+                Figure 1 and Figure 2 above, JaCoCo, a Java-based code coverage tool, only
+                identified about 25.8% of functional code as adequately covered by unit tests. In
+                contrast, a Maven module within the Tinkar-core codebase called “integration” was
+                identified as containing several large integration tests. These integration tests
+                currently use Junit5 (historically TestNG) to build test suites to validate that the
+                three main Tinkar providers Ephemeral, MVStore, and Spined Array properly load a
+                preset test sample of Tinkar data. The selection of and adequate testing suite is
+                important because the codebase utilizes inversion of controls (or dependency
+                injection) to start appropriate Tinkar-core “services” which requires the testing
+                suite to have proper setup and tear annotations.</para>
+            <para>Overall, the codebase had low code maturity. This is attributed to a lack of
+                continuous integration and continuous delivery infrastructure. It was identified
+                that historically a previous version of the codebase utilized the open-source
+                version of Travis-CI. Currently no Continuous Integration/Continuous Deployment
+                (CI/CD) tooling is being used on the codebase.</para>
+        </sect2>
+        <sect2>
+            <title>Duplication</title>
+            <para>There was little to no duplication identified within the codebase. </para>
+        </sect2>
+        <sect2>
+            <title>Layers and Coupling</title>
+            <para>Overall, the codebase has loose coupling and high cohesion. This is supported by a
+                multi-module Maven architecture – which helps to isolate complexity by grouping
+                similar classes into reasonably sized modules and then enforcing reasonable degree
+                of interdependence between those modules.</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Technology Choice Framework</title>
+        <para>As the teams create solution architectures for the products, we will inevitably need
+            to determine what technologies are needed. When evaluating technology on the project, we
+            will first define the use case in the architecture. Then the team will create an
+            Analysis of Alternatives to review with stakeholders. This analysis of alternatives must
+            include resource and license costs as well as its fit with the system requirements. For
+            example, if it needs to be an extremely fast system and must use a key-value read
+            pattern, then it will be defined empirically, when possible, how fast it is and how well
+            that it fits that pattern.</para>
+    </sect1>
+    <sect1>
+        <title>Code Maturity</title>
+        <para>As the codebase improves, our analysis showcased a general need to improve Code
+            Maturity. Code Maturity covers many areas, but primarily will be measured by how modular
+            and maintainable the codebase is and how likely the code is to continuously meet
+            functional and non-functional requirements upon release.</para>
+        <para>To achieve a maintainable product, we need to make sure the documentation is thorough
+            and understandable, allowing for new developers to analyze the codebase and contribute
+            fixes to defects. Our processes must provide procedures for contributing code to the
+            codebase, encouraging feedback, and providing avenues for support. The procedures must
+            allow for traceability and reproduceable actions, enforcing consistency the output
+            products.</para>
+        <para>To guarantee that the code meets functional and non-functional requirements, one of
+            the most important steps is automated and manual testing. Testing provides the ability
+            to validate that functional and non-functional requirements are being met and regression
+            test when the code changes. There are many types of tests, and the ones that the teams
+            will focus on are:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Unit Tests</para>
+            </listitem>
+            <listitem>
+                <para>Integration Tests</para>
+            </listitem>
+            <listitem>
+                <para>End-to-End Functional tests</para>
+            </listitem>
+            <listitem>
+                <para>API Tests</para>
+            </listitem>
+            <listitem>
+                <para>Performance Tests</para>
+            </listitem>
+        </itemizedlist>
+        <sect2>
+            <title>Documentation and Style Guidelines</title>
+            <para>As we move forward, we will incorporate documentation and style guideline checks
+                to encourage teams to adhere to standard practices for improved collaboration and
+                understandability of code.</para>
+        </sect2>
+        <sect2>
+            <title>Code Reviews</title>
+            <para>Code reviews are a way to ensure that the features being delivered match the
+                request and the architecture, to improve code quality and save time. This is because
+                code reviews:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Make for better estimates</para>
+                </listitem>
+                <listitem>
+                    <para>Enable time off</para>
+                </listitem>
+                <listitem>
+                    <para>Mentor newer engineers</para>
+                </listitem>
+            </itemizedlist>
+            <para>We suggest doing code reviews inline as well as at a regularly scheduled interval.
+                For example, if you are using GitHub/GitLab, you should perform inline reviews on
+                the code pull/merge request, preferably keeping traceability via approvals. This can
+                be done by any team member but ideally those with the next most knowledge around a
+                subject. Then, on a weekly cadence, we suggest doing a review of stories that is or
+                has been closed so that everyone on the team has exposure to the changes.</para>
+            <para>In doing a code review, you should make sure that:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Terms and variables semantically match the domain</para>
+                </listitem>
+                <listitem>
+                    <para>Code is well-designed</para>
+                </listitem>
+                <listitem>
+                    <para>Functionality is good for the users of the code</para>
+                </listitem>
+                <listitem>
+                    <para>Any UI (user interface) changes are sensible and look good</para>
+                </listitem>
+                <listitem>
+                    <para>Any parallel programming is done safely</para>
+                </listitem>
+                <listitem>
+                    <para>Code isn’t more complex than it needs to be</para>
+                </listitem>
+                <listitem>
+                    <para>The developer isn’t implementing things they might need in the future but
+                        don’t know they need now</para>
+                </listitem>
+                <listitem>
+                    <para>Code has appropriate unit tests</para>
+                </listitem>
+                <listitem>
+                    <para>Tests are well-designed</para>
+                </listitem>
+                <listitem>
+                    <para>The developer used clear names for everything</para>
+                </listitem>
+                <listitem>
+                    <para>Comments are clear and useful and mostly explain <emphasis role="italic"
+                            >why</emphasis> instead of <emphasis role="italic"
+                        >what</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>Code is appropriately documented (generally in g3doc)</para>
+                </listitem>
+                <listitem>
+                    <para>Code conforms to our style guides</para>
+                </listitem>
+                <listitem>
+                    <para>Developers haven't (inadvertently or not) subverted code quality
+                        checks</para>
+                </listitem>
+            </itemizedlist>
+            <para>Make sure to review <emphasis role="bold">every line</emphasis> of code you’ve
+                been asked to review, look at the <emphasis role="bold">context</emphasis>, make
+                sure you’re <emphasis role="bold">improving code health</emphasis>, and compliment
+                developers on <emphasis role="bold">good things</emphasis> that they do.</para>
+            <para>Some of these require some nuance, so we'll go into further detail below.</para>
+            <sect3>
+                <title>Functionality​</title>
+                <para>When executing a code review on a story, the team member should review the
+                    story and acceptance criteria and make sure that the functionality described
+                    matches the code that has been delivered.</para>
+            </sect3>
+            <sect3>
+                <title>Code Design​</title>
+                <para>It is important that code has a simple, cohesive and intuitive design. Is the
+                    code more complex than it should be? Are functions/classes too complex? “Too
+                    complex” usually means “can’t be understood quickly by code readers”. It can
+                    also mean “developers are likely to introduce bugs when they try to call or
+                    modify this code”.</para>
+                <para>A particular type of complexity is over-engineering, where developers have
+                    made the code more generic than it needs to be or added functionality that isn’t
+                    presently needed by the system. Reviewers should be especially vigilant about
+                    over-engineering. Encourage developers to solve the problem at hand, not the
+                    problem that the developer speculates might need to be solved in the future. The
+                    future problem should be solved once it arrives, allowing visibility into its
+                    actual shape and requirements in the physical universe.</para>
+            </sect3>
+            <sect3>
+                <title>Duplication​</title>
+                <para>It is important in reviewing complexity to review duplication. Duplication
+                    means that you will have to update code in multiple places and fix defects in
+                    multiple places. "Don't Repeat Yourself" (DRY), is a way to encourage code reuse
+                    and increase code quality by focusing improvements on a single area.</para>
+                <para>While you can improve code sharing, it is important that you do not tightly
+                    couple your delivery. DRY was originally intended for systems, not for code
+                    duplication, though it tends to fit well. In general, it is more acceptable to
+                    have code duplicated rather than tightly coupling deliveries – which ultimately
+                    produces a monolithic application that is only delivered as a single unit.
+                </para>
+            </sect3>
+            <sect3>
+                <title>Keeping Code SOLID​</title>
+                <para>When reviewing OO code, it is important to ensure that it meets the SOLID
+                    principles (as described in the review section). As Robert C Martin described
+                    SOLID Principles as pertaining to OO programming, OO programs should obey the
+                    following principles:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Single Responsibility Principle</para>
+                    </listitem>
+                    <listitem>
+                        <para>Open/Closed Principle</para>
+                    </listitem>
+                    <listitem>
+                        <para>Liskov Substitution Principle (LSP)</para>
+                    </listitem>
+                    <listitem>
+                        <para>Interface Segregation Principle (ISP)</para>
+                    </listitem>
+                    <listitem>
+                        <para>Dependency Inversion (DI)</para>
+                    </listitem>
+                </itemizedlist>
+            </sect3>
+            <sect3>
+                <title>Layers and Coupling</title>
+                <para>To ensure that code remains reusable and allows teams to pivot to respond to
+                    business needs, it is important to create programs that are loosely coupled and
+                    thus modular. Modularity allows the codebase to be used in different ways and
+                    allows teams to pivot the direction of the project more easily.</para>
+                <para>This is often inferred as part of ISP and DI, but it is important that this is
+                    part of the solution architecture review process in code reviews.</para>
+                <para>Some simple rules of thumb:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Data and it’s representation should be in a layer all by itself,
+                            separate from the business logic</para>
+                    </listitem>
+                    <listitem>
+                        <para>If providing a user interface, it is important to abstract the user
+                            interface away from the business logic</para>
+                    </listitem>
+                    <listitem>
+                        <para>Generally, the team suggested using the Composition Pattern over
+                            inheritance unless the substitution principle of LSP is met</para>
+                    </listitem>
+                </itemizedlist>
+            </sect3>
+            <sect3>
+                <title>Adherence to Patterns​</title>
+                <para>Design Patterns allow developers to solve common problems and engineers to
+                    speak a common language. There are sets of patterns for Construction Objects,
+                    Structuring Data, and Behavioral Patterns. As this is beyond the scope of this
+                    document, it is important for developers to seek these out.</para>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Immutability</title>
+            <para>Immutable classes are those that do not change after creation. Immutability,
+                though it often can cause extra object creation, allows for several benefits. The
+                key is knowing when you should be using immutability. The following guide should be
+                used to help determine when immutability should be used.</para>
+            <para>“Classes should be immutable unless there's a very good reason to make them
+                mutable... If a class cannot be made immutable, limit its mutability as much as
+                possible.” – Joshua Bloch, from Effective Java</para>
+            <para><emphasis role="bold">Benefits of Immutability:</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>Thread-safe, preventing synchronization issues</para>
+                </listitem>
+                <listitem>
+                    <para>Good Map keys and Set elements, since these typically do not change once
+                        created</para>
+                </listitem>
+                <listitem>
+                    <para>Easier to write, use, and reason about the code (class invariant is
+                        established once and then unchanged)</para>
+                </listitem>
+                <listitem>
+                    <para>Effortless to parallelize your program as there are no conflicts among
+                        objects</para>
+                </listitem>
+                <listitem>
+                    <para>The internal state of your program will be consistent even if you have
+                        exceptions</para>
+                </listitem>
+                <listitem>
+                    <para>References to immutable objects can be cached given their static
+                        nature</para>
+                </listitem>
+            </itemizedlist>
+            <para><emphasis role="bold">Drawbacks of Immutability:</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>Due to creating more objects, there was a copy cost and often a cleanup
+                        cost via garbage collection, which could impact the performance of a single
+                        Java virtual machine. It is generally suggested that the benefits provided
+                        by additional multithreading often outweigh the performance costs</para>
+                </listitem>
+            </itemizedlist>
+            <para><emphasis role="bold">Items that should be immutable: </emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>Data Transfer Objects (DTOs)</para>
+                </listitem>
+                <listitem>
+                    <para>Domain/Data Object Model (DOM) Objects</para>
+                </listitem>
+                <listitem>
+                    <para>Services (contain behavior and business logic)</para>
+                </listitem>
+            </itemizedlist>
+            <sect3>
+                <title>Multithreading</title>
+                <para>Multithreading is a complex topic and requires the use of complex math to
+                    prove that most multithreading really works with locking. It is suggested that,
+                    if you are reviewing code using major multithreading, you utilize established
+                    libraries with millions of eyes on them as this will be more effective than
+                    home-grown locking mechanisms. In reviews, just make sure that this is the case.
+                    For a book on the topic, please refer to the book <emphasis role="italic">Java
+                        Concurrency in Practice</emphasis>, the bible of Java concurrency. It
+                    explains just how complex this is. The author of this book was integral in
+                    creating the Akka framework, which is heavily used in Java, for example.</para>
+            </sect3>
+            <sect3>
+                <title>Documentation</title>
+                <para>Since the biggest component of complexity is how easily a new developer can
+                    pick a piece of code up, it should be obvious that comments and repository
+                    documentation are integral to review. The documentation should be reviewed as
+                    part of each code submission to make sure that it matches the updates. The
+                    following subsections will cover in detail some of the portions of the
+                    documentation.</para>
+                <para>The Readme file is the file at the top level of a repository, usually written
+                    in markdown or text format. It should be the entry point to all documentation
+                    and contain anything that a developer should know to get started using a
+                    project. If this project is a library, it should contain ample examples of how
+                    to use the product.</para>
+                <para>Documentation should also include everything required for understanding the
+                    architecture of the codebase. By coupling the documentation with the code, it
+                    should be obvious when the documentation is out-of-date and needs updating. This
+                    documentation can then be distributed separately, if needed. This should include
+                    anything that makes it clear to developers and end-users how to develop and
+                    deploy the product.</para>
+                <para>Often, with things like libraries, you will have more documentation than fits
+                    in one folder or you will have referenced images. It is suggested that you
+                    create a "docs" folder at the top of your repository and have additional
+                    markdown and images that can be referred to there.</para>
+            </sect3>
+            <sect3>
+                <title>Comments describing Code​</title>
+                <para>Code surrounding classes and methods should be fully describe the
+                    functionality of the single operation object or method.</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Package/Namespace Comments</emphasis> - Some
+                            programming languages let you document groups of classes. This should be
+                            a high-level description and relatively brief. If you must go into
+                            detail, you may need to break your packages/namespaces up further. An
+                            example is shown in the Figure below.</para>
+                    </listitem>
+                </itemizedlist>
+                <para><emphasis role="bold">Figure 3: Example of Package/Namespace
+                        Comments</emphasis></para>
+                <informalfigure>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/Example%20of%20Package%20or%20Namespace%20Comments.png"
+                            />
+                        </imageobject>
+                        <textobject>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="bold">Class Comments</emphasis> - Used for
+                                        describing the single purpose for a class. There are many
+                                        parameters in Javadocs that should be used in a Java
+                                        example, but most relating to version, since timeline and
+                                        author should be avoided. Those should be left to version
+                                        control. Any function or class parameters are required.
+                                        Deprecation is a good notice, too, as it will indicate when
+                                        a class may soon be retired and replaced with another class.
+                                        An example is shown below.</para>
+                                </listitem>
+                            </itemizedlist>
+                            <para><emphasis role="bold">Figure 4: Example of Class
+                                    Comments</emphasis></para>
+                            <informalfigure>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata
+                                            fileref="images/Example%20of%20Class%20Comments.png"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </informalfigure>
+                        </textobject>
+                    </mediaobject>
+                </informalfigure>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Method/Function Comments</emphasis> - Comments
+                            directly related to calling of a function or method. These often contain
+                            a usage description, the description of the input and output values, and
+                            any information about deprecation or templating. An example of this is
+                            shown below.</para>
+                    </listitem>
+                </itemizedlist>
+                <para><emphasis role="bold">Figure 5: Example of Method/Function
+                    Comments</emphasis></para>
+                <informalfigure>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/Example%20of%20Method%20and%20Function%20Comments.png"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                    <itemizedlist>
+                        <listitem>
+                            <para><emphasis role="bold">Block Comments</emphasis> - Shouldn't really
+                                need to be used. If a section of code is so complex that it needs a
+                                block comment, it probably needs to be its own
+                                method/function/class/etc.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Inline Comments</emphasis> - Step-by-step
+                                details about what you are doing. These can be used judiciously
+                                provided they make sense. An example of an inline comment is show in
+                                Figure 4 below.</para>
+                        </listitem>
+                    </itemizedlist>
+                    <para><emphasis role="bold">Figure 6: Example of Inline
+                        Comment</emphasis></para>
+                    <informalfigure>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Example%20of%20Inline%20Comment.png"/>
+                            </imageobject>
+                        </mediaobject>
+                    </informalfigure>
+                </informalfigure>
+            </sect3>
+            <sect3>
+                <title>Commented Out Code</title>
+                <para>There should be no commented-out code and no functionality that was not in the
+                    requirements. This is the job of Version Control, and you should always be
+                    removing it, not commenting it out.</para>
+                <para>"Always implement things when you actually need them, never when you just
+                    foresee that you need them.” – Ron Jeffries (XP Co-Founder)</para>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>How to Write Code Review Comments</title>
+            <para>Overall:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Be kind</para>
+                </listitem>
+                <listitem>
+                    <para>Explain your reasoning</para>
+                </listitem>
+                <listitem>
+                    <para>Balance giving explicit directions with just pointing out problems and
+                        letting the developer decide</para>
+                </listitem>
+                <listitem>
+                    <para>Encourage developers to simplify code or add code comments instead of just
+                        explaining the complexity to you</para>
+                </listitem>
+            </itemizedlist>
+        </sect2>
+        <sect2>
+            <title>Testing and the Cost of Defects</title>
+            <para>The cost of defects can be measured by the impact of the defects and when we find
+                them. The earlier the defect is found, the cheaper it is to fix. Kent Beck, a leader
+                in the field of software testing said, via his book <emphasis role="italic">Extreme
+                    Programming Explained </emphasis></para>
+            <para>“Most defects end up costing more than it would have cost to prevent them. Defects
+                are expensive when they occur, both the direct costs of fixing the defects and the
+                indirect costs because of damaged relationships, lost business, and lost development
+                time.” – Kent Beck, from Extreme Programming Explained</para>
+            <para>The following graph, courtesy of <emphasis role="bold">the National Institute of
+                    Standards and Technology,</emphasis> helps in visualizing how the effort in
+                detecting and fixing defects increases as the software moves through the five broad
+                phases of software development.</para>
+            <para><emphasis role="bold">Figure 7: Relative Cost to Fix Bugs, Based on Time of
+                    Detection</emphasis></para>
+            <informalfigure>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Relative%20Cost%20to%20Fix%20Bugs,%20Based%20on%20Time%20of%20Detection.png"
+                        />
+                    </imageobject>
+                </mediaobject>
+                <para>For example, in the case of a data storage error:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>If error is found in the requirements gathering, then it is relatively
+                            cheap to fix. The correction can be made to the requirements and then
+                            code can be re-issued. Any active architecture designs can be
+                            adjusted.</para>
+                    </listitem>
+                    <listitem>
+                        <para>If the error is found in development (defect), then the developer must
+                            work with the requirements team to figure out how the requirements need
+                            to be change. The defect can be corrected by refactoring and or
+                            rewriting the problematic code to accommodate new requirement
+                            changes.</para>
+                    </listitem>
+                    <listitem>
+                        <para>If the error is found in production, then the requirements team needs
+                            to be consulted with to adjust requirements and architecture,
+                            development needs to determine refactoring, a cost to schedule must be
+                            determined. Additionally, if this service has done data processing, then
+                            that needs to be designed and developed. Both the application and the
+                            correction to the data processing need to go through testing now.
+                            Backups need to be made of the data so that if there is an issue, the
+                            original data can be recovered, as this now has the business risk of
+                            impacting production users.</para>
+                    </listitem>
+                </itemizedlist>
+                <para>There will always be defects in production, but the key is to reduce them to
+                    the ones that can't be predicted. The mantra of any developer should be to
+                        <emphasis role="italic">detect early and often</emphasis>.</para>
+            </informalfigure>
+            <sect3>
+                <title>Right Size the Testing​</title>
+                <para>Given the above information, it is common to want to completely switch gears
+                    and test until every possible bug is caught with extremely large end-to-end
+                    suites. Unfortunately, this is also a huge cost.</para>
+                <para>As Kent Dodd and Martin Fowler suggest, and as shown in Figure 8, testing
+                    costs are significantly higher and slower to develop and execute at more
+                    thorough levels. Therefore, we should spend more time at unit and integration
+                    tests to iterate quickly and resolve most issues, using end-to-end tests
+                    sparingly, as they are costly.</para>
+                <para><emphasis role="bold">Figure 8: Monetary and Time Costs of Testing
+                        Types</emphasis></para>
+                <informalfigure>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/Monetary%20and%20Time%20Costs%20of%20Testing%20Types.png"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                    <para>When doing a story tasking as part of Iteration Planning, teams should
+                        create tasking for integration and end-to-end tests that consider the amount
+                        of time that you need to thoroughly test the acceptance criteria. This
+                        should be the minimal amount required to achieve proving the criteria have
+                        been met.</para>
+                </informalfigure>
+            </sect3>
+            <sect3>
+                <title>Test Driven Development Standards​</title>
+                <para>Pipelines not only encourage Test Driven Development (TDD) but will require it
+                    by default out of the box. Pipelines will have a requirement of 85% code
+                    coverage which comprises a combination of line coverage, package coverage, and
+                    branching logic.</para>
+                <para>All builds will index reports generated back to SonarQube which will
+                    ultimately enforce the coverage requirements, so long as the SonarQube stage is
+                    in the build. </para>
+            </sect3>
+            <sect3>
+                <title>Test Driven Development</title>
+                <para>TDD is an idea that was introduced by Kent Beck. This is a principle of
+                    defining requirements before writing code. How this translates to modern
+                    development is that it is expected that this is the first thing that you do when
+                    you pick up a story. This is a set of tests that should match the acceptance
+                    criteria and showcase to the product owner that the story is complete.</para>
+                <para>TDD is a simple 3-phase cycle of writing something that is failing, making a
+                    test pass, then refactoring, and repeating. This process is depicted in Figure
+                    9.</para>
+                <para><emphasis role="bold">Figure 9: TDD Cycle Diagram</emphasis></para>
+                <informalfigure>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/TDD%20Cycle%20Diagram.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </informalfigure>
+                <sect4>
+                    <title>Writing Failed Tests (Red)​</title>
+                    <para>This should consist of the following tests, every time:</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Functional Tests - At least one functional test, but likely more
+                                than one</para>
+                        </listitem>
+                        <listitem>
+                            <para>Positive (also known as "Happy Path") Testing - Proves that the
+                                code fulfills its intended duties</para>
+                        </listitem>
+                        <listitem>
+                            <para>Negative Testing - One or more scenarios that prove something that
+                                your code should not accept or handle gracefully. This often
+                                includes input validation problems or SQL Injection problems. It
+                                also includes things that should not be allowed from a business
+                                perspective. In a shopping cart application, this would be as if the
+                                user abandoned a transaction, if the user tries to purchase the same
+                                thing on two laptops when only one is allowed, or if there is a
+                                failed payment. All of these should be recoverable.</para>
+                        </listitem>
+                    </itemizedlist>
+                    <para>Once these tests are created, the development team can start working on
+                        the stories using the Red-Green-Refactor Loop. This means that all these
+                        tests fail initially - the software doesn't currently support these actions.
+                    </para>
+                </sect4>
+                <sect4>
+                    <title>Writing the Solutions (Green)</title>
+                    <para>Developers start by picking a test and working on it. You should be doing
+                        the minimum amount to make the test pass. This is confusing to some people,
+                        as they want to create all functionality upfront. The problem with this is
+                        that you may not be able to finish your story within the sprint timeframe,
+                        and as developers, we want to ensure that test requirements are met before
+                        pivoting.</para>
+                    <para>Example:</para>
+                    <para>The requirement is that you create a myArrayList application. Figure 8
+                        below contains some pseudocode for that test.</para>
+                    <para><emphasis role="bold">Figure 10: Pseudocode for Creating
+                            MyArrayList</emphasis></para>
+                    <informalfigure>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="images/Pseudocode%20for%20Creating%20MyArrayList.png"/>
+                            </imageobject>
+                        </mediaobject>
+                        <para>Then your code should be the easiest way to achieve this, which is
+                            shown in Figure 11 below.</para>
+                        <para><emphasis role="bold">Figure 11: Simplest Code for Creating the
+                                MyArrayList Application</emphasis></para>
+                        <informalfigure>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata
+                                        fileref="images/Simplest%20Code%20for%20Creating%20the%20MyArrayList%20Application.png"
+                                    />
+                                </imageobject>
+                            </mediaobject>
+                            <para>By doing it this way, it is very clear where logic should be
+                                adjusted and separated out, as different methods will become
+                                immediately apparent where they need modularity.</para>
+                        </informalfigure>
+                    </informalfigure>
+                </sect4>
+                <sect4>
+                    <title>Making the Code Reusable (Blue)</title>
+                    <para>Realistically, we know that's not the long-term solution to this problem.
+                        This is where you spend some time refactoring in preparation for the next
+                        test(s). You can move your code around, reorganizing your tests in methods
+                        and classes that make more logical sense now that you have gotten a passing
+                        test.</para>
+                    <para>Questions you should ask during a refactor are:</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Can I make my test suite more expressive?</para>
+                        </listitem>
+                        <listitem>
+                            <para>Does my test suite provide reliable feedback?</para>
+                        </listitem>
+                        <listitem>
+                            <para>Are my tests isolated?</para>
+                        </listitem>
+                        <listitem>
+                            <para>Can I reduce duplication in my test suite or implementation
+                                code?</para>
+                        </listitem>
+                        <listitem>
+                            <para>Can I make my implementation code more descriptive?</para>
+                        </listitem>
+                        <listitem>
+                            <para>Can I implement something more efficiently?</para>
+                        </listitem>
+                    </itemizedlist>
+                </sect4>
+                <sect4>
+                    <title>Code Coverage Philosophy​</title>
+                    <para>Testing for the purpose of code coverage is malpractice → Developers would
+                        have circumvented the intentions of TDD if the goal of testing is to show
+                        green lines and high percentages in code coverage reports. If development
+                        teams are retroactively writing test cases, code quality is harder to
+                        enforce as testing can easily be hacked to show high coverage metrics.
+                            <emphasis role="bold">Quality and high code coverage is a byproduct of
+                            proper testing practices like TDD.</emphasis></para>
+                    <para>A typical guideline for code coverage:</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Function/Method coverage → 100%</para>
+                        </listitem>
+                        <listitem>
+                            <para>Package/Class coverage → 80% to 100%</para>
+                        </listitem>
+                        <listitem>
+                            <para>Line Coverage → 80% to 100%</para>
+                        </listitem>
+                        <listitem>
+                            <para>Branch coverage → 80% to 100%</para>
+                        </listitem>
+                        <listitem>
+                            <para>Overall → 85% or better</para>
+                        </listitem>
+                    </itemizedlist>
+                    <para>Arguably code coverage is not the best metric, as it can often represent
+                        pieces of the code that can never be executed. However, it is still the best
+                        tool to validate that the code has been tested thoroughly enough. It will be
+                        used as a gate for guidance, and we can tweak and ignore code blocks if
+                        needed.</para>
+                </sect4>
+                <sect4>
+                    <title>Behavior Driven Development</title>
+                    <para>Behavior Driven Development (BDD) is a spin on TDD. Where TDD focuses on
+                        testing a specific piece of functionality, BDD is focused less on a piece of
+                        functionality, and more on a user action. BDD should generally be used in
+                        conjunction with TDD, as their goals are slightly different. UI, for
+                        example, should primarily utilize BDD over TDD to test requirements.</para>
+                    <para>A collaboration between functional and development teams to create feature
+                        development solution expectations driven by test case definitions prior to
+                        development. The goal of BDD is to ensure that functional and business teams
+                        have input and visibility into the software development process, and in turn
+                        development teams will have clearer understanding on what the expected
+                        solutions should accomplish. BDD is great for teams where there is a need
+                        for functional teams to be involved with designing and testing features. BDD
+                        requires test cases to be written in Gherkin syntax which is then translated
+                        to code. Gherkin (format → Given, When, Then) is readable to functional
+                        teams, hence providing visibility. An example of BDD is shown below in
+                        Figure 12.</para>
+                    <para><emphasis role="bold">Figure 12: Example of Behavior Driven
+                            Development</emphasis></para>
+                    <informalfigure>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="images/Example%20of%20Behavior%20Driven%20Development.png"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                        <para>BDD can be practiced using most testing frameworks. <emphasis
+                                role="bold">Cucumber,</emphasis> however, is a common tool used in
+                            industry as it provides, amongst many features, .dsl files which are
+                            maintained by the functional team. Note: Use the framework/methodology
+                            that works for your team. Given the descriptions in this article, teams
+                            should be able to discern what will work for their projects.</para>
+                    </informalfigure>
+                </sect4>
+                <sect4>
+                    <title>UI Testing</title>
+                    <para>UI testing is to ensure that users have a consistent visual user
+                        experience across a variety of platforms and that the user interaction is
+                        consistent with the function requirements. This can apply to simple tasks,
+                        such as validating that the logo is in the correct place on the computer and
+                        the iPhone.</para>
+                    <para>Considerations:</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Ensure the UI appearance and interaction satisfy the functional
+                                and non-functional requirements</para>
+                        </listitem>
+                        <listitem>
+                            <para>Detect changes in the UI both across devices and delivery
+                                platforms and between code changes</para>
+                        </listitem>
+                        <listitem>
+                            <para>Provide confidence to designers and developers the user experience
+                                is consistent</para>
+                        </listitem>
+                        <listitem>
+                            <para>Support fast code evolution and refactoring while reducing the
+                                risk of regressions</para>
+                        </listitem>
+                    </itemizedlist>
+                    <para>The scope of UI testing should be strategic. UI tests can take a
+                        significant amount of time to both implement and run, and it's challenging
+                        to test every type of user interaction in a production application due to
+                        the large number of possible interactions.</para>
+                    <para>Designing the UI tests around the functional tests makes sense. For
+                        example, given an input form, a UI test would ensure that the visual
+                        representation is consistent across devices, is accessible and interactable,
+                        and is consistent across code changes.</para>
+                    <para>UI Tests will catch 'runtime' bugs that unit and functional tests won't.
+                        For example, if the submit button for an input form is rendered but not
+                        clickable due to a positioning bug in the UI, then this could be considered
+                        a runtime bug that would not have been caught by unit or functional
+                        tests.</para>
+                </sect4>
+                <sect4>
+                    <title>Accessibility Testing​</title>
+                    <para>Designers should focus on promoting user interfaces and designs that are
+                        accessible for all users. Accessibility considerations should be reviewed
+                        for all wireframes before considered for development. More than general
+                        accessibility, there is often strict accessibility standards that are part
+                        of requirements. For example, many government sites encourage accessibility
+                        by requiring 508, Americans with Disabilities Act (ADA) or Web Content
+                        Accessibility Guidelines (WCAG) compliance. This should be tested for in an
+                        automated way.</para>
+                    <para>Once a user interface is ready for development, the developer should be
+                        conscientious of accessibility when constructing the user interface. As part
+                        of the automated functional tests, after each spec, an accessibility test
+                        should be run automatically to check for any possible violations. Once the
+                        automated test is completed, a report should be created and attached to
+                        every build in the pipeline. This report should detail each test case as
+                        well as any possible accessibility violations, the location of the
+                        violation, and steps to remediate the issue.</para>
+                </sect4>
+                <sect4>
+                    <title>Test Suites</title>
+                    <para>These testing suites will be used in the pipeline access code coverage in
+                        the pipeline. In the seeds provided, these can also work to execute these
+                        tests locally. Deloitte has performed an Analysis of Alternatives based on
+                        the language and framework being used. The following showcases the
+                        results.</para>
+                    <para>These include (but are not limited to):</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>JUnit 5 and JaCoco (Java)</para>
+                        </listitem>
+                        <listitem>
+                            <para>Jest (JavaScript and React)</para>
+                        </listitem>
+                        <listitem>
+                            <para>Karma and Jasmine (Angular)</para>
+                        </listitem>
+                    </itemizedlist>
+                    <para>Our team suggests leveraging Cypress for runtime Web UI testing and
+                        Electron Applications to test cross-browser compatibility.</para>
+                </sect4>
+            </sect3>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Automation</title>
+        <para><emphasis role="bold">Continuous Integration (CI)</emphasis> and <emphasis role="bold"
+                >Continuous Deployment (CD)</emphasis> Processes, Figure 11 and Figure 12,
+            respectively, allow teams to be productive from day 1, even releasing as early as their
+            first day. Using Deloitte’s hosted JIRA and a Software Factory accelerator, we are
+            installing an environment in AWS to build code using tooling. We initially will create a
+            tooling that will allow deployments of software and restrict access to the tooling we
+            need for licensing purposes. As we create the necessary materials for a fully supported
+            Open-Sourced project, we will re-evaluate parts of this tooling to allow for teams to
+            pivot some or all the DevOps processing to SaaS (Software as a Service), based on
+            overarching pricing and supportability, making sure that this allows us to create a
+            culture of promoting code submissions and foster access to this codebase to improve it
+            over time.</para>
+        <sect2>
+            <title>Continuous Integration</title>
+            <informalfigure>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/Framework%20for%20Continuous%20Integration.png"/>
+                    </imageobject>
+                </mediaobject>
+                <para>The current Software Factory installation allow teams to do the
+                    following:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Plan</emphasis> - Processes have been developed
+                            to help teams work together and produce code quickly. Integrations have
+                            been created in API driven systems to guarantee team’s traceability from
+                            story creation to code deployment and everything in between.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Integration with JIRA Issue Tracking</para>
+                            </listitem>
+                            <listitem>
+                                <para>Automatic tie of JIRA stories to feature Branches</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Develop</emphasis> - Using Seed projects, teams
+                            can start coding in most popular languages from day 1 with batteries
+                            included for best practices and security, targeted for deployment with
+                            containers. By utilizing the development standards created here, it
+                            becomes easy to create code and release your first version in
+                            minutes.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Consistent Project Setup - Titan CLI will create and enforce
+                                    defined projects</para>
+                            </listitem>
+                            <listitem>
+                                <para>GitOps - All processes use code to define state, giving full
+                                    traceability from Requirements through to delivery.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Git Triggers for enforcing Traceability</para>
+                            </listitem>
+                            <listitem>
+                                <para>Enable Secure Development from an internal Repository</para>
+                            </listitem>
+                            <listitem>
+                                <para>Version Control Branching standards, define Team Code Reviews,
+                                    and enforce Squash Merge settings</para>
+                            </listitem>
+                            <listitem>
+                                <para>Build Tool and IDE integration - Comes with instructions on
+                                    how to adjust Build tooling to use internal repositories for
+                                    higher security</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Build</emphasis> - By creating installations of
+                            powerful DevSecOps tooling that is preconfigured for use, our team
+                            creates a process that is defined for compiling and packaging that
+                            allows you to build agnostic to your deployment environment, making it
+                            very easy to shift to another cloud or Kubernetes deployment.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Jenkins preconfigured to build utilizing Kubernetes
+                                    Agents</para>
+                            </listitem>
+                            <listitem>
+                                <para>Pre-created build containers for use with Kubernetes Build
+                                    Agents</para>
+                            </listitem>
+                            <listitem>
+                                <para>Team-based Project scanning to scan a Team's projects and
+                                    automatically create and execute multi-branch jobs</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Test</emphasis> - The tooling has appropriate
+                            plugins and integration installed, paired with seeds, which make it
+                            simple to locate and execute unit and integration testing and provide
+                            results in a consolidated format. Thresholds are defined and maintained
+                            for each project to create gates for promotion and prevent unwanted code
+                            to deploy to environments.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Jenkins Dashboards preconfigured with Test Coverage
+                                    Plugins</para>
+                            </listitem>
+                            <listitem>
+                                <para>Enforcement of Code quality and testing thresholds to
+                                    deployment and promotion gates</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Scane - Our team has created the Seed Pak which contains a starting
+                            point for your application development. This includes the ability to add
+                            gates and thresholds to your application. The pipelines will support for
+                            Software Composition Analysis (SCA) and Static Analysis Security Testing
+                            (SAST) as part of the build definitions. Data is published and stored
+                            over time to allow for analysis of development trends.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>SAST scanning over time with SonarQube</para>
+                            </listitem>
+                            <listitem>
+                                <para>Java SAST scanning within maven builds to include Spotbugs and
+                                    PMD</para>
+                            </listitem>
+                            <listitem>
+                                <para>Java Code Formatting checks using Checkstyles</para>
+                            </listitem>
+                            <listitem>
+                                <para>JavaScript Linting</para>
+                            </listitem>
+                            <listitem>
+                                <para>Container Security Scanning</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Deliver</emphasis> - Our team has created a
+                            standardized repository packaging format with tooling and integration
+                            points that enable deployments of applications, container images, and
+                            artifacts. We have also tied this into tooling and integration for
+                            security scanning of any published container images. This allows us to
+                            scan prior to delivery, publish and promote current artifact and image
+                            repository to public repositories, including but not limited to Maven
+                            Central and Dockerhub.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Artifact Repository Installation and configuration</para>
+                            </listitem>
+                            <listitem>
+                                <para>Docker Image Repository Installation and configuration</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </informalfigure>
+        </sect2>
+        <sect2>
+            <title>Continuous Deployment</title>
+            <informalfigure>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/Framework%20for%20Continuous%20Deployment.png"/>
+                    </imageobject>
+                </mediaobject>
+                <para>
+                    <itemizedlist>
+                        <listitem>
+                            <para><emphasis role="bold">Deploy</emphasis> - Titan provides simple
+                                pathways to execute deployments using standard branching, meaning
+                                that the code will always represent what is deployed.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Titan Deploy allows teams to execute deployments without
+                                        knowing anything about target Kubernetes environment but the
+                                        name</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Promote</emphasis> - Titan provides simple
+                                pathways to execute promotions using standard branching, meaning
+                                that the code will always represent what is deployed.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Titan utilizes Argo Rollouts to give power to teams to
+                                        allow them to define how they would like to promote, be that
+                                        via simple replacement, Canary Deployments or Blue Green
+                                        Deployments.</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Titan Deploy allows teams to promote without knowing
+                                        anything about the target environment but the name</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Operate</emphasis> - Fix problems in
+                                production by giving teams just the right permissions to deploy and
+                                maintain applications in each environment.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Kubernetes Role Based Access Controls (RBAC) - Restricts
+                                        all users from directly publishing artifacts to the cluster,
+                                        enforcing that nothing is deployed without committing code
+                                        for traceability</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Creates Team-based spaces, allowing teams to perform
+                                        necessary functions within their own teams without impacting
+                                        other team’s deployments</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Monitor</emphasis> - Give operational
+                                analytics and logs to the users via Dashboards.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Respond</emphasis> - With our deployment
+                                workflows, we can easily manage promotions to your cluster. If there
+                                are defined health thresholds, we can roll back the promotion to the
+                                last known good state.</para>
+                        </listitem>
+                    </itemizedlist>
+                </para>
+            </informalfigure>
+        </sect2>
+        <sect2>
+            <title>Packaging and Distribution</title>
+            <para>Teams will be targeting JAR distributions to maven central. These will be created
+                via build server from an internal version control repository (VCS). This code will
+                be published to a public VCS (HL7 GitHub). The java packages (jars, wars, etc) will
+                be published to the local artifact repository, then promoted to Sonatype via a
+                managed sonatype account. This will then promote to maven central as part of the
+                release process.</para>
+            <para>With installed client software, installation packages will be created to download
+                and package the installation for execution. We will approach first installations
+                directly on Windows using an MSI installer and MacOS using a DMG installation. After
+                this, we will discuss possibilities of other platforms and package formats, such as
+                deploying on Linux servers, virtual machine images, and</para>
+            <para>container images. Based on the work, we will prioritize this based on customer
+                feedback. Initial software installation packages have already been created and are
+                being tested.</para>
+            <para>Web Applications on the platform will be targeting Linux installations using
+                containerized deployments. For initial releases, we will test this in Kubernetes and
+                distribute for use on a DockerHub account.</para>
+            <para>With any of these distribution packages, our long-term goal is to set up
+                maintainable processes that allow us to test them on a variety of different setups
+                before committing to distribution. These processes will be captured in the code as
+                documentation to the projects, making it easy for new public members and teams to
+                contribute to the process and codebase, as well as manage feedback.</para>
+        </sect2>
+        <sect2>
+            <title>Expected Changes to CI/CD</title>
+            <para>As we build out the CI/CD processes, we will regularly re-evaluate our tooling, as
+                we want to move to a solution that best can be executed and delivered with
+                contributors that will not be able to access private environments and use private
+                licenses.</para>
+            <para>The first of these is the move from the private hosted Atlassian JIRA solution to
+                a more sustainable Atlassian JIRA SaaS, which can be accessed by the community and
+                contributors can provide regular feedback.</para>
+            <para>Other pieces will be more difficult, as security and license scanning require
+                licensing and will need to have gatekeeping in place to not over-extend the project,
+                financially.</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Scalability</title>
+        <para>With the analysis of the current state, the knowledge management platform is set up to
+            allow for some concurrency in use. This, however, needs to be tested to validate that no
+            corruption of data occurs, and that expected load can be maintained. Performance testing
+            will need to start with web access first, followed by direct access from users.
+            Performance SLAs will need to be further flushed out and defined, and automated
+            performance tests will need to be created to execute at each sprint end, prior to a
+            release. As currently no part of this exists, this will be something we focus on in the
+            architecture and design discussions.</para>
+    </sect1>
+    <sect1>
+        <title>License</title>
+        <para>As we prepare to make the products available with installers, teams will need to do a
+            thorough analysis of licenses and attribution requirements. As the project plans on only
+            using open-source licenses to reduce cost and increase adoption, we must maintain that
+            we are compliant with this requirement and the different open-sourced licenses. This may
+            require interfacing with legal teams and use of license scanning to ensure no conflicts
+            of purpose.</para>
+    </sect1>
+    <sect1>
+        <title>Security</title>
+        <para>As part of the Continuous Integration processes, we will integrate Security scanning.
+            Security scans will be applied so that users can be sure that code that is installed
+            will not have adverse effects on the installed computer. Also, it needs to ensure that
+            bad actors don’t get access to data that they should not be privileged to. To accomplish
+            this, our team will need to include several forms of SAST and Dynamic Application
+            Security Testing (DAST).</para>
+        <para>SAST helps to analyze a software program without executing the program, providing
+            security scanning and defect scanning. Comparing with dynamic analysis, static analysis
+            analyses the exact source code line while dynamic analysis analyses the program while it
+            is being executed; by performing analysis of all kinds of tests on the object codes and
+            executable. In summary, static analysis tools help</para>
+        <itemizedlist>
+            <listitem>
+                <para>To detect possible bugs which the debugger is unable to detect</para>
+            </listitem>
+            <listitem>
+                <para>To provide vulnerability and remediation information</para>
+            </listitem>
+        </itemizedlist>
+        <para>DAST helps to analyze a software program while the program is executing, determining
+            if there are runtime issues. To do this, our team will need to develop methods for
+            testing against multiple Operating Systems as well as execute regular penetration and
+            vulnerability tests.</para>
+    </sect1>
+    <sect1>
+        <title>Privacy Needs</title>
+        <para>As we further develop this tool, that may contain information that is sensitive, with
+            things like HIPPA protected information and Personally Identifiable Information (PII),
+            it becomes very important that this data protected. Communications will need to be
+            designed to require encryption in transit. Services will need to be designed to require
+            encryption at rest. To share any data, there will need to be designed sharing patterns
+            that either strip information of identifying information and aggregate it with other
+            information, or it will need to facilitate data sharing agreements as part of the
+            sharing process.</para>
+        <para>This is a complex topic, and we will need to bring in security experts as part of this
+            process to make sure that this is maintained. Also, we will need to have notification
+            systems in place to cover 0-day issues and allow us to regularly update the codebase to
+            address security concerns as the product matures.</para>
+    </sect1>
+</chapter>
+
