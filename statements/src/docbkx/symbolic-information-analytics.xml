@@ -44,7 +44,12 @@
         <xi:include
             href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"/>
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"
+        />
+    </part>
+    <xi:include
+        href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/abbreviated-glossary/abbreviated-glossary.xml"/>
+    <part>
         <xi:include href="Foundational-Architecture.xml"/>
     </part>
     <part>
