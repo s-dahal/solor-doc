@@ -3,7 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>SOF Current State</title>
+    <title>Summary of Findings - Current State Safety Systems</title>
     <section>
         <title>Motivation</title>
     <para>Clinical laboratories are a key element in the overall healthcare ecosystem and play a role in most healthcare decisions today. Clinical laboratories are responsible for generating highly reliable laboratory data (orders, results, and interpretations) to drive effective care delivery. Clinical data must transverse many connected systems while maintaining context and precise semantic meaning. While each sending and receiving system of clinical data is configured individually to understand data inputs, the loss of meaning between systems is difficult to avoid, impacts patient safety, and hinders data science opportunities like machine learning and artificial intelligence. Plausible efforts to control for the nuances of laboratory data exchange have existed for decades, and the advancement of technology increasingly emphasizes the need for standardization across the ecosystem as data science methods and capabilities mature. Safety and quality controls exist in every layer of the laboratory ecosystem, starting at the top of the ecosystem with Federal policymakers down to the individual patients receiving care. While the use of idiosyncratic (i.e., local institution–specific) identifiers for laboratory tests is recommended by SDOs such as Systematized Nomenclature of Medicine (SNOMED), entities in the laboratory data ecosystem must implement precise data mappings to a universal terminology. Idiosyncratic local identifiers alone hinder seamless sharing of laboratory observations between disparate health systems. </para>
@@ -60,31 +60,33 @@
             LOINC and SNOMED. For completeness we included diagrams primarily authored by another
             contractor team (Synensys, LLC) working on contract # 75F40122C00112. Our documentation
             adds context and business requirements to supplement these diagrams. </para>
-        <para>Figure 1 below illustrates the current draft model of the laboratory ecosystem control
-            structure and Figure 2 includes a specific draft depiction of the data flow for
+        <para><xref linkend="DraftModeloftheDetailedLaboratoryEcosystemControlStructure"/> below illustrates the current draft model of the laboratory ecosystem control
+            structure and <xref linkend="DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure"/> includes a specific draft depiction of the data flow for
             encoding. </para>
-        <para><inlinemediaobject>
+        <figure xml:id="DraftModeloftheDetailedLaboratoryEcosystemControlStructure">
+            <title>Draft Model of the Detailed Laboratory Ecosystem Control Structure (From Synensys, LLC contract #
+                75F40122C00112)</title>
+            <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/4.1.1%20image%201.png"/>
                 </imageobject>
-            </inlinemediaobject></para>
-        <para><emphasis role="italic">Figure </emphasis><emphasis role="italic"
-                >1</emphasis><emphasis role="italic"> Draft Model of the Detailed Laboratory
-                Ecosystem Control Structure (From Synensys, LLC contract #
-                75F40122C00112)</emphasis></para>
-        <para>In Figure 2, “middleware” is currently in the model as an interface between devices
+            </mediaobject>
+        </figure>
+        <para>In <xref linkend="DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure"/>, “middleware” is currently in the model as an interface between devices
             and LIS/LIMS; however middleware can and does exist in between several other systems in
             this ecosystem. Additionally, “LIMS” are typically the source for reporting to public
             health agencies. </para>
-        <para><inlinemediaobject>
+        <figure xml:id="DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure">
+            <title>Draft Inset Model of the Encoding for Data Flow in
+                the Laboratory Ecosystem Control Structure (From Synensys, LLC contract #
+                75F40122C00112)</title>
+            <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/4.1.1%20imgae%202.png"/>
                 </imageobject>
-            </inlinemediaobject></para>
-        <para><emphasis role="italic">Figure 2 Draft Inset Model of the Encoding for Data Flow in
-                the Laboratory Ecosystem Control Structure (From Synensys, LLC contract #
-                75F40122C00112)</emphasis></para>
-    </section>
+            </mediaobject>
+        </figure>
+        </section>
     <section>
         <title>Requirements</title>
         <para>This section details business requirements related to the data flow for encoding data
@@ -93,7 +95,6 @@
             the safety assessment analysis in identifying unsafe control actions and loss scenarios
             related to the standards development, implementation, and maintenance processes in
             laboratories, devices, and standards. </para>
-        <para><emphasis role="bold">Laboratories</emphasis></para>
         <para><emphasis role="bold">Laboratories must document a comprehensive list of tests that
                 they perform.</emphasis> Laboratories maintain a comprehensive test menu (also
             referred to ask a test catalog or laboratory test compendiums). These test menus contain
@@ -253,6 +254,5 @@
             doi: https://doi.org/10.5858/arpa.2018-0477-RA </para>
         <para>3. Leveson, N. G. (2016). Engineering a safer world: Systems thinking applied to
             safety. The MIT Press. </para>
-        <para>4. test test test</para>
     </section>
 </chapter>

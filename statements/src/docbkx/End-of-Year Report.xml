@@ -4,8 +4,12 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
-        <title>End-of-Year Report</title>
-        <subtitle>Deliverable X.X.X</subtitle>
+        <title>DeloitteBAA_Task0.0.12_ Final Report</title>
+        <subtitle>DeloitteBAA_Task0.0.12 <inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="images/cover%20page.png"/>
+                </imageobject>
+            </inlinemediaobject></subtitle>
     </info>
     <part>
         <title>Introduction</title>
@@ -14,13 +18,32 @@
     <part>
         <title>Background</title>
         <xi:include href="Background.xml"/>
+        <xi:include href="sof-current-state.xml"/>
     </part>
     <part>
         <title>Integrated Knowledge Management (IKM) </title>
         <xi:include href="Integrated%20Knowledge%20Management.xml"/>
+        <xi:include href="1.2.2.xml"/>
+        <xi:include href="Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"></xi:include>
+        <xi:include href="Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3"/>
+        
     </part>
     <part>
         <title>Foundational Architecture</title>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/complete-glossary/complete-glossary.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/business-requirements/business-requirements.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/tinkar-reference-model/tinkar-reference-model.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/reference-implementation/reference-implementation.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"/>
         <xi:include href="Foundational-Architecture.xml"/>
     </part>
     <part>
@@ -29,8 +52,14 @@
     </part>
     <part>
         <title>Statement Model</title>
-        <xi:include href="Statement-Model.xml"/>
-    </part>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-reference-model/anf-reference-model.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"/>
+        </part>
     <part>
         <title>Assertional Knowledge</title>
         <xi:include href="SOLOR-assertional.xml"/>
@@ -41,18 +70,29 @@
     </part>
     <part>
         <title>Use Cases</title>
-        <xi:include href="Use-Case-Chapter.xml"/>
+        <xi:include href="4.1.1.xml"/>
+        <xi:include
+            href="Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+        <xi:include href="Use-Case-Chapter.xml"></xi:include>
     </part>
     <part>
         <title>Ecosystem</title>
         <xi:include href="Ecosystem.xml"/>
+        <xi:include href="2.2.4.xml"/>
     </part>
     <part>
         <title>Komet User Guide</title>
         <xi:include href="Komet-User-Guide.xml"/>
     </part>
     <part>
-        <title>Next Steps</title>
+        <title>Open-Source and Next Steps</title>
         <xi:include href="Open-Source.xml"/>
+    </part>
+    <part>
+        <title>Appendix</title>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/clinical-input-form/clinical-input-form.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-cif-differences/differences-between-anf-and-cif.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/appendix.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/examples.xml"/>
     </part>
 </book>

@@ -3,8 +3,8 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>Playbook of Current Knowledge Management Technologies, Industry Coding Standards, and
-        Knowledge Management Hosting Options</title>
+     <title>Current Knowledge Management (KM) Technologies, Industry Coding Standards, and KM
+        Hosting Options</title>
     <sect1>
         <title>Introduction to Integrated Knowledge Management </title>
         <para>The healthcare system in America has undergone numerous changes throughout the past
@@ -38,7 +38,7 @@
             implementation of the Komet tool and other technical components (e.g., Tinkar-core, Web
             Application), while also suggesting specific technologies and products that could be
             used in the development process.</para>
-        <para>The overarching objectives of this playbook are to </para>
+        <para>The overarching objectives of this playbook are to:</para>
         <orderedlist>
             <listitem>
                 <para>Provide a high-level overview of key functional areas of a KMP</para>
@@ -270,7 +270,7 @@
         <sect2>
             <title>Architecture</title>
             <para>As a software architect, I want to create and outline necessary Tinkar-based
-                application programable interfaces, design specifications documents, and other
+                application programmable interfaces, design specifications documents, and other
                 software artifacts, so that current and future development of Komet, Tinkar-core,
                 and the Web Application align with both the technical and functional vision of the
                 KMP:</para>
@@ -423,7 +423,7 @@
                 <listitem>
                     <para>Given the amount of information that is outputted from the ELK classifier,
                         when a knowledge engineer runs the classifier on Tinkar data, then all
-                        outputs from the classifier need to be based on cohesive and succent user
+                        outputs from the classifier need to be based on cohesive and succinct user
                         interface and user experience design</para>
                 </listitem>
                 <listitem>

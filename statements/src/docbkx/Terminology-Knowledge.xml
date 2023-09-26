@@ -6,9 +6,8 @@
      <title>Terminology Knowledge</title>
     <section>
         <title>Introduction</title>
-        <para>For an introduction to Terminology Standards, please refer to Chapter 2: Background,
-            Section 1.7 Terminology Overview <xref xlink:href="Background.xml#Terminology_Overview"
-            /></para>
+        <para>For an introduction to Terminology Standards, please refer to Section 2.7 Terminology
+            Overview .</para>
     </section>
     <section>
         <title>What is LOINC®?</title>
@@ -71,23 +70,23 @@
                 LOINC® name are:</para>
             <orderedlist>
                 <listitem>
-                    <para>component (e.g., what is measured, evaluated, or observed)</para>
+                    <para>Component (e.g., what is measured, evaluated, or observed)</para>
                 </listitem>
                 <listitem>
-                    <para>kind of property (e.g., mass, substance, catalytic activity)</para>
+                    <para>Kind of property (e.g., mass, substance, catalytic activity)</para>
                 </listitem>
                 <listitem>
-                    <para>time aspect (e.g., 24-hour collection)</para>
+                    <para>Time aspect (e.g., 24-hour collection)</para>
                 </listitem>
                 <listitem>
-                    <para>system type (e.g., context or specimen type within which the observation
+                    <para>System type (e.g., context or specimen type within which the observation
                         was made)</para>
                 </listitem>
                 <listitem>
-                    <para>type of scale (e.g., ordinal, nominal, narrative)</para>
+                    <para>Type of scale (e.g., ordinal, nominal, narrative)</para>
                 </listitem>
                 <listitem>
-                    <para>type of method (e.g., procedure used to make the measurement or
+                    <para>Type of method (e.g., procedure used to make the measurement or
                         observation).</para>
                 </listitem>
             </orderedlist>
@@ -415,16 +414,15 @@
                 meet the needs of its users. SNOMED CT is the only terminology that meets all the
                 requirements as described by Cimino. However, as noted above, SNOMED CT has
                 proprietary elements that limits it’s usefulness for interoperability.</para>
-            <para><emphasis role="bold">Figure 1: Met criteria of LOINC®, SNOMED CT and RxNorm to
-                    Cimino’s Desiderata</emphasis></para>
-            <para><inlinemediaobject>
-                    <imageobject>
-                        <imagedata
-                            fileref="images/Met%20criteria%20of%20LOINC%C2%AE,%20SNOMED%20CT%20and%20RxNorm%20to%20Cimino%E2%80%99s%20Desiderata.png"
-                        />
-                    </imageobject>
-                </inlinemediaobject></para>
-        </section>
+            <figure xml:id="MetCriteriaofLOINCSNOMEDCTandRxNormtoCiminosDesiderata">
+                <title>Met Criteria of LOINC®, SNOMED CT and RxNorm to Cimino’s Desiderata</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Met%20criteria%20of%20LOINC%C2%AE,%20SNOMED%20CT%20and%20RxNorm%20to%20Cimino%E2%80%99s%20Desiderata.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </section>
     </section>
     <section>
         <title>Terminology Principles and Best Practices</title>
@@ -524,7 +522,7 @@
                 use cases, a lack of formal defining structure may reveal that it is difficult to
                 understand the precise meaning of the terminological representations and that use of
                 a system such as LOINC® may differ widely amongst humans. Further exacerbating
-                potential variability is the heterogenous behavior of tools implemented to reason
+                potential variability is the heterogeneous behavior of tools implemented to reason
                 with terminological structures. [11] </para>
             <para>The field of Knowledge Representation and “Description Logics” was developed out
                 of the attempt to formally define “intuitive representations” with a formal
@@ -583,15 +581,14 @@
             terminology – there is a deprecation process and has concept permanence where codes
             aren’t reused – but they do not establish the basic parameters of hierarchy and
             polyhierarchy, they are violating the tenants of Cimino’s Desiderata.</para>
-        <para><emphasis role="bold">Figure 2: Correspondence of LOINC® to Cimino’s
-                Desiderata</emphasis></para>
-        <para><inlinemediaobject>
+        <figure xml:id="CorrespondenceofLOINCtoCiminosDesiderata">
+            <title>Correspondence of LOINC® to Cimino’s Desiderata</title>
+            <mediaobject>
                 <imageobject>
-                    <imagedata
-                        fileref="images/Correspondence%20of%20LOINC%C2%AE%20to%20Cimino%E2%80%99s%20Desiderata.png"
-                    />
+                    <imagedata fileref="images/Correspondence%20of%20LOINC%C2%AE%20to%20Cimino%E2%80%99s%20Desiderata.png"/>
                 </imageobject>
-            </inlinemediaobject></para>
+            </mediaobject>
+        </figure>
         <section>
             <title>Comparison of SNOMED CT® to Cimino’s Desiderata</title>
             <para>SNOMED CT® CT is the terminology, that we are currently aware of, that most
@@ -603,16 +600,15 @@
                 and speed is apparent in crisis situations such as COVID-19 pandemic. Otherwise, it
                 has proven to be robust and has a large global community to assist with its
                 development and vetting.</para>
-            <para><emphasis role="bold">Figure 3: Correspondence of SNOMED CT to Cimino’s
-                    Desiderata</emphasis></para>
-            <para><inlinemediaobject>
+            <figure xml:id="CorrespondenceofSNOMEDCTtoCiminosDesiderata">
+                <title>Correspondence of SNOMED CT to Cimino’s Desiderata</title>
+                <mediaobject>
                     <imageobject>
-                        <imagedata
-                            fileref="images/Correspondence%20of%20SNOMED%20CT%20to%20Cimino%E2%80%99s%20Desiderata.png"
-                        />
+                        <imagedata fileref="images/Correspondence%20of%20SNOMED%20CT%20to%20Cimino%E2%80%99s%20Desiderata.png"/>
                     </imageobject>
-                </inlinemediaobject></para>
-        </section>
+                </mediaobject>
+            </figure>
+            </section>
         <section>
             <title>Comparison of RxNorm® to Cimino’s Desiderata</title>
             <para>While RxNorm meets most of the Desiderata’s requirements, there are a few that are
@@ -622,7 +618,7 @@
                 syntactically different expressions, and (2) the automated classification of
                 concepts in a hierarchy. Another issue is that RxNorm is not a global standard as
                 it’s development and main use is in the U.S. where it is a nationally recognized
-                standard, ie Meaningful Use. </para>
+                standard, i.e. Meaningful Use. </para>
             <para>However, recent work by Bona et al. [13] have been developing a Drug Ontology
                 product (DrOn), based on RxNorm and Chemical Entities of Biological Interest
                 Ontology, which is a modular and extensible ontology of drug products, their
@@ -642,20 +638,18 @@
             <para>This development may have a significant impact on improving knowledge management
                 as well as the ability to utilize Description Logics reasoners with its attendant
                 benefits.</para>
-            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-            <para><?oxy_custom_end?><emphasis role="bold">Figure 4: Correspondence of RxNorm to
-                    Cimino’s Desiderata</emphasis></para>
-            <para><inlinemediaobject>
+            <figure xml:id="CorrespondenceofRxNormtoCiminosDesiderata">
+                <title>Correspondence of RxNorm to Cimino’s Desiderata</title>
+                <mediaobject>
                     <imageobject>
-                        <imagedata
-                            fileref="images/Correspondence%20of%20RxNorm%20to%20Cimino%E2%80%99s%20Desiderata.png"
-                        />
+                        <imagedata fileref="images/Correspondence%20of%20RxNorm%20to%20Cimino%E2%80%99s%20Desiderata.png"/>
                     </imageobject>
-                </inlinemediaobject></para>
-        </section>
+                </mediaobject>
+            </figure>
+            </section>
     </section>
     <section>
-        <title>Current Opportunities for SNOMED CT®, LOINC® and RxNorm® to Integrate, Enhance and
+        <title>Current Opportunities for SNOMED CT®, LOINC® and RxNorm to Integrate, Enhance and
             Extend</title>
         <section>
             <title>SNOMED CT® Existing Limitations</title>
@@ -665,7 +659,7 @@
                     prevented its use as a common format for LOINC. This issue will be addressed by
                     SHIELD by building on SNOMED CTs foundation. Nonetheless, SNOMED CTs commitment
                     to develop and expand their use of description logics formalism as called out by
-                    inkar efforts as well as their alignment with the Desiderata as described by
+                    Tinkar efforts as well as their alignment with the Desiderata as described by
                     Cimino, et at, is a step in the right direction.</para>
             </section>
             <section>
@@ -689,7 +683,7 @@
                     consistent and correct manner.</para>
             </section>
             <section>
-                <title>Inconsistent Representatio</title>
+                <title>Inconsistent Representation</title>
                 <para>There are multiple ways to represent SNOMED CT concepts, leading to
                     inconsistent representation (I.e., lack of equivalence), ambiguity, and patient
                     harm from low data quality. While part of the reason for this is SNOMEDs
@@ -754,20 +748,19 @@
                     commonly ordered tests. 19.6% of codes reported were incorrect, with the highest
                     error rates “observed in the property (27 of 275, 9.8%), system (27 of 275,
                     9.8%), and component (22 of 275, 8.0%) LOINC® axes. Errors in LOINC® code
-                    selection included selection of the incorrect component (eg, activated clotting
-                    time instead of activated partial thromboplastin time); selection of panels that
-                    can never be used to obtain an individual analyte (eg, prothrombin time panel
-                    instead of international normalized ratio); and selection of an incorrect
-                    specimen type.” </para>
-                <para><emphasis role="bold">Figure 5: Breakdown of LOINC® Codes Provided by Each
-                        Laboratory </emphasis></para>
-                <para><inlinemediaobject>
+                    selection included selection of the incorrect component (e.g., activated
+                    clotting time instead of activated partial thromboplastin time); selection of
+                    panels that can never be used to obtain an individual analyte (e.g., prothrombin
+                    time panel instead of international normalized ratio); and selection of an
+                    incorrect specimen type.” </para>
+                <figure xml:id="BreakdownofLOINCCodesProvidedbyEachLaboratory">
+                    <title>Breakdown of LOINC® Codes Provided by Each Laboratory</title>
+                    <mediaobject>
                         <imageobject>
-                            <imagedata
-                                fileref="images/Breakdown%20of%20LOINC%C2%AE%20Codes%20Provided%20by%20Each%20Laboratory.png"
-                            />
+                            <imagedata fileref="images/Breakdown%20of%20LOINC%C2%AE%20Codes%20Provided%20by%20Each%20Laboratory.png"/>
                         </imageobject>
-                    </inlinemediaobject></para>
+                    </mediaobject>
+                </figure>
                 <para>For an Activated Partial Thromboplastin Time (aPTT) test, labs reported five
                     different LOINC® codes that could be selected. Results differed due to different
                     selections for the following axes:<itemizedlist>
@@ -786,7 +779,7 @@
                     that could be selected. Results differed due to some labs incorrectly selecting
                     panels or the wrong system. For a D-Dimer test, results differed to differences
                     in component, property, system, and method.</para>
-                <para>As referenced in Figure 3, many of the errors arose from different selections
+                <para>As referenced in <xref linkend="CorrespondenceofSNOMEDCTtoCiminosDesiderata"/>, many of the errors arose from different selections
                     in system, where the system could be whole blood or platelet form plasma. “For
                     the analyzers used by the laboratories in this survey, coagulation tests such as
                     APTT and INR are performed on PPP and are never performed on whole blood, so the
@@ -844,19 +837,18 @@
                     also be variation in test results from manufacturers. </para>
                 <para><emphasis role="bold">Case Study 3: D-Dimer Test Results from Different
                         In-Vitro Diagnostic (IVD) Devices [16]</emphasis></para>
-                <para>The following figure represents data results for D-Dimer tests that are all
+                <para><xref linkend="DDimerTestResultsfromDifferentDevices"/> represents data results for D-Dimer tests that are all
                     represented by the same LOINC® code. However, upon closer notice, the means
                     between the different devices are significantly different. This raises concern
                     amongst comparing data across institutions that use different devices. </para>
-                <para><emphasis role="bold">Figure 6: D-Dimer Test Results from Different
-                        Devices</emphasis></para>
-                <para><inlinemediaobject>
+                <figure xml:id="DDimerTestResultsfromDifferentDevices">
+                    <title>D-Dimer Test Results from Different Devices</title>
+                    <mediaobject>
                         <imageobject>
-                            <imagedata
-                                fileref="images/D-Dimer%20Test%20Results%20from%20Different%20Devices.png"
-                            />
+                            <imagedata fileref="images/D-Dimer%20Test%20Results%20from%20Different%20Devices.png"/>
                         </imageobject>
-                    </inlinemediaobject></para>
+                    </mediaobject>
+                </figure>
                 <para>The aforementioned CAP study surveying laboratories found that for a D-Dimer
                     test, results differed to differences in component, property, system, and
                     method. [12] Therefore, there is not only variation in test results from
@@ -879,16 +871,16 @@
                     research center study, in order to build an interface that will allow users to
                     automatically submit data to the hospital. However, upon review, there are
                     issues where the LOINC® codes do not match correctly.</para>
-                <para><emphasis role="bold">Figure 7: LOINC® Codes Used at Two Different
-                        Institutions for the Same Tests</emphasis></para>
-                <para><inlinemediaobject>
+                <figure xml:id="LOINCCodesUsedatTwoDifferentInstitutionsfortheSameTests">
+                    <title>LOINC® Codes Used at Two Different
+                        Institutions for the Same Tests</title>
+                    <mediaobject>
                         <imageobject>
-                            <imagedata
-                                fileref="images/LOINC%C2%AE%20Codes%20Used%20at%20Two%20Different%20Institutions%20for%20the%20Same%20Tests.png"
-                            />
+                            <imagedata fileref="images/LOINC%C2%AE%20Codes%20Used%20at%20Two%20Different%20Institutions%20for%20the%20Same%20Tests.png"/>
                         </imageobject>
-                    </inlinemediaobject></para>
-                <para>Figure 7 provides insight into the difficulties doctors and technicians face
+                    </mediaobject>
+                </figure>
+                <para><xref linkend="LOINCCodesUsedatTwoDifferentInstitutionsfortheSameTests"/> provides insight into the difficulties doctors and technicians face
                     in ensuring data mapped between systems are the same. Without high confidence in
                     data, these issues can lead to impacts on real-world evidence
                     capabilities.</para>
@@ -1001,16 +993,16 @@
                     are limited, and still do not provide full definitions for LOINC® parts.
                     Furthermore, the use of the hierarchies and LOINC parts are very restricted
                     under the LOINC® Copyright Notice anmetd License. [24]</para>
-                <para><emphasis role="bold">Figure 8: Representation of AST in The LOINC Hierarchy
-                        Browser Tool</emphasis></para>
-                <para><inlinemediaobject>
+                <figure xml:id="RepresentationofASTinTheLOINCHierarchyBrowserTool">
+                    <title>Representation of AST in The LOINC Hierarchy
+                        Browser Tool</title>
+                    <mediaobject>
                         <imageobject>
-                            <imagedata
-                                fileref="images/Representation%20of%20AST%20in%20The%20LOINC%20Hierarchy%20Browser%20Tool.png"
-                            />
+                            <imagedata fileref="images/Representation%20of%20AST%20in%20The%20LOINC%20Hierarchy%20Browser%20Tool.png"/>
                         </imageobject>
-                    </inlinemediaobject></para>
-            </section>
+                    </mediaobject>
+                </figure>
+                </section>
             <section>
                 <title>Nebraska Lexicon</title>
                 <para>The following excerpt provides background on the Nebraska Lexicon, a project
@@ -1098,7 +1090,7 @@
             </section>
         </section>
         <section>
-            <title>RxNorm® Existing Limitations</title>
+            <title>RxNorm Existing Limitations</title>
             <section>
                 <title>Lack of Description Logics</title>
                 <para>RxNorm lack of Description Logics formalism use, as proposed by SOLOR [1],
@@ -1274,32 +1266,32 @@
             <para><emphasis>Aim 1: Review Workflow Schematic for Emerging Acute Chronic Infectious
                     Diseases, specifically focused on Data Capture Elements and Long COVID Value
                     Sets. </emphasis>The team downloaded and reviewed the COVID-19 VSAC value sets
-                outlined in Figure 9. The team used these value sets to extract an initial list of
+                outlined in <xref linkend="VSACValueSets"/>. The team used these value sets to extract an initial list of
                 generalized clinical concepts associated with a COVID-19 diagnosis that could
                 potentially contribute to a Long COVID diagnosis. [29]</para>
-            <para><emphasis role="bold">Figure 9: VSAC Value Sets</emphasis></para>
-            <para><inlinemediaobject>
+            <figure xml:id="VSACValueSets">
+                <title>VSAC Value Sets</title>
+                <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/VSAC%20Value%20Set.png"/>
                     </imageobject>
-                </inlinemediaobject></para>
+                </mediaobject>
+            </figure>
             <para><emphasis>Aim 2: Draft Potential Questionnaires to Standardize Use Case Data
                     Acquisition</emphasis>. An initial questionnaire was developed for the
                 generalized concepts extracted from the COVID-19 VSAC value sets that poses a simple
                 yes or no question for each of the concepts that could potentially aid in a Long
                 COVID diagnosis. This deliverable focuses on potential questionnaires for ‘Signs and
-                Symptoms’ and ‘Non-Specific Respiratory Diagnoses’, outlined in Figure 10 and 11
+                Symptoms’ and ‘Non-Specific Respiratory Diagnoses’, outlined in <xref linkend="HypotheticalSignsandSymptomsQuestionnaires"/> and <xref linkend="HypotheticalNonSpecificRespiratoryDiagnosesQuestionnaire"/>
                 respectively.[2]</para>
-            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-            <para><?oxy_custom_end?><emphasis role="bold">Figure 10: Hypothetical Signs and Symptoms
-                    Questionnaires</emphasis></para>
-            <para><inlinemediaobject>
+            <figure xml:id="HypotheticalSignsandSymptomsQuestionnaires">
+                <title>Hypothetical Signs and Symptoms Questionnaires</title>
+                <mediaobject>
                     <imageobject>
-                        <imagedata
-                            fileref="images/Hypothetical%20Signs%20and%20Symptoms%20Questionnaires.png"
-                        />
+                        <imagedata fileref="images/Hypothetical%20Signs%20and%20Symptoms%20Questionnaires.png"/>
                     </imageobject>
-                </inlinemediaobject></para>
+                </mediaobject>
+            </figure>
             <para>While the initial version of the questionnaire on the left can collect important
                 information and data, the format was improved to the version on the right to reduce
                 redundancy, improve clarity, and collect more accurate and granular detail. The
@@ -1314,7 +1306,7 @@
                 to be updated as symptoms are more comprehensively understood, and as new symptoms
                 are identified. </para>
             <para>The team developed additional questionnaires for non-specific respiratory
-                diagnoses below in Figure 11. The diagnoses questionnaires continue to improve data
+                diagnoses below in <xref linkend="HypotheticalNonSpecificRespiratoryDiagnosesQuestionnaire"/>. The diagnoses questionnaires continue to improve data
                 quality by reducing duplicative selections and improving granularity by forcing an
                 Upper or Lower ‘Viral Respiratory Tract Infection’ rather than allowing the
                 selection of both Upper or Lower Viral Respiratory Tract Infection and “Viral
@@ -1322,19 +1314,19 @@
                 improvements can be made to data collection across a variety of areas associated
                 with patient care and can be applied to other emerging acute and chronic infectious
                 diseases.</para>
-            <para><emphasis role="bold">Figure 11: Hypothetical Non-Specific Respiratory Diagnoses
-                    Questionnaire</emphasis></para>
-            <para><inlinemediaobject>
+            <figure xml:id="HypotheticalNonSpecificRespiratoryDiagnosesQuestionnaire">
+                <title>Hypothetical Non-Specific Respiratory Diagnoses
+                    Questionnaire</title>
+                <mediaobject>
                     <imageobject>
-                        <imagedata
-                            fileref="images/Hypothetical%20Non-Specific%20Respiratory%20Diagnoses%20Questionnaire.png"
-                        />
+                        <imagedata fileref="images/Hypothetical%20Non-Specific%20Respiratory%20Diagnoses%20Questionnaire.png"/>
                     </imageobject>
-                </inlinemediaobject></para>
+                </mediaobject>
+            </figure>
             <para><emphasis>Aim 3: Outline Variability in Statement Representations</emphasis>.
                 Building upon the concepts found in the VSAC value sets, the team developed tabular
                 representations of certain symptoms to display the variability in the way concepts
-                could be represented and coded. Figure 12 depicts the symptom of ‘Fever Greater Than
+                could be represented and coded. <xref linkend="HypotheticalNonSpecificRespiratoryDiagnosesQuestionnaire"/> depicts the symptom of ‘Fever Greater Than
                 100.4 Fahrenheit with Chills’ across three example terminology standards as well as
                 the null value of a normal body temperature. After reviewing the table, one could
                 conclude that the first three examples are semantically the same. Each describe a
@@ -1343,14 +1335,14 @@
                 terminology standard represents the condition. This variability leads to sub-optimal
                 data capture that can hinder data querying, data use, and the ability to identify
                 semantically equivalent concepts.</para>
-            <para><emphasis role="bold">Figure 12: Variability in Representation of
-                Fever</emphasis></para>
-            <para><inlinemediaobject>
+            <figure xml:id="VariabilityinRepresentationofFever">
+                <title>Variability in Representation of Fever</title>
+                <mediaobject>
                     <imageobject>
-                        <imagedata
-                            fileref="images/Variability%20in%20Representation%20of%20Fever.png"/>
+                        <imagedata fileref="images/Variability%20in%20Representation%20of%20Fever.png"/>
                     </imageobject>
-                </inlinemediaobject></para>
+                </mediaobject>
+            </figure>
             <para><emphasis>Aim 4: Demonstrate ANF Ability to Standardize Terminology and Capture
                     Critical Data</emphasis>. The team demonstrated the value of ANF by developing a
                 tabular ANF representation for loss of sense of smell since onset of COVID-19
@@ -1370,15 +1362,15 @@
                 concepts for a certain symptom do not always exist across terminology standards, but
                 ANF is able to represent the absence of a symptom using a numerical countable
                 quantity, ensuring relevant and pertinent information is not lost.</para>
-            <para><emphasis role="bold">Figure 13: ANF Standardized Representation of Anosmia and
-                    Associated Term</emphasis></para>
-            <para><inlinemediaobject>
+            <figure xml:id="ANFStandardizedRepresentationofAnosmiaandAssociatedTerm">
+                <title>ANF Standardized Representation of Anosmia and
+                    Associated Term</title>
+                <mediaobject>
                     <imageobject>
-                        <imagedata
-                            fileref="images/ANF%20Standardized%20Representation%20of%20Anosmia%20and%20Associated%20Term.png"
-                        />
+                        <imagedata fileref="images/ANF%20Standardized%20Representation%20of%20Anosmia%20and%20Associated%20Term.png"/>
                     </imageobject>
-                </inlinemediaobject></para>
+                </mediaobject>
+            </figure>
         </section>
         <section>
             <title>Recommendations to Address Terminology Issues</title>
@@ -1446,17 +1438,16 @@
                 transformation languages and the associated benefits and limitations. While each
                 option has its own limitations and cost, the ability to address or minimize common
                 normalization errors justifies their use. [29]</para>
-            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-            <para><?oxy_custom_end?><emphasis role="bold">Figure 14: Benefits and limitations of
+            <figure xml:id="BenefitsanddLimitations">
+                <title>Benefits and limitations of
                     XLST, FHIR, QVT, and MDMI Transformation Languages and
-                Architecture</emphasis></para>
-            <para><inlinemediaobject>
+                    Architecture</title>
+                <mediaobject>
                     <imageobject>
-                        <imagedata
-                            fileref="images/Benefits%20and%20limitations%20of%20XLST,%20FHIR,%20QVT,%20and%20MDMI%20Transformation%20Languages%20and%20Architecture.png"
-                        />
+                        <imagedata fileref="images/Benefits%20and%20limitations%20of%20XLST,%20FHIR,%20QVT,%20and%20MDMI%20Transformation%20Languages%20and%20Architecture.png"/>
                     </imageobject>
-                </inlinemediaobject></para>
+                </mediaobject>
+            </figure>
         </section>
     </section>
     <section>

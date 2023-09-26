@@ -2,9 +2,9 @@
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Introduction</title>
+    <title>Introduction to the Integrated Knowledge Management (IKM) Book</title>
     <section>
-        <title>Integrated Knowledge Management (IKM) Book Motivation</title>
+        <title>IKM Book Motivation</title>
         <para>In today’s healthcare ecosystem, providers continually rely on data from an increasing
             number of sources to make informed clinical decisions. While this data is a critical
             component of providing patients with the best care possible, there are major challenges
@@ -38,7 +38,7 @@
     </section>
     <section>
         <title>Overview of IKM Book</title>
-        <para>This Inteagrated Knowledge Management (IKM) Book servers as an educational resource to
+        <para>This Integrated Knowledge Management (IKM) Book serves as an educational resource to
             allow stakeholders to perform a deep dive into the IKM Architecture this team has worked
             to develop. </para>
         <section>
@@ -77,9 +77,9 @@
             </itemizedlist>
             <para>The intent of the IKM Book is to have a direct connection to real world events and
                 circumstances. For a granular and detailed breakdown of real world examples, please
-                refer to Appendix A.
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>(CREATE LINK TO
-                APPENDIX HERE)<?oxy_custom_end?></para>
+                refer to Appendix (WILL
+                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>CREATE LINK TO
+                APPROPRIATE APPENDIX HERE IN OPTION PERIOD)<?oxy_custom_end?></para>
         </section>
         <section>
             <title>IKM Guiding Principles</title>
@@ -260,13 +260,14 @@
             knowledge in a way that allows for reuse, ongoing development, and independent updates.
             If employed, this model can help the healthcare ecosystem to individually resolve issues
             in their data within their layers, rather than the entire system, leading to much more
-            agile improvement</para>
-        <para><emphasis role="bold">Figure 1: PASTF Model</emphasis></para>
-        <para><inlinemediaobject>
-                <imageobject>
-                    <imagedata fileref="images/PASTF%20Model%203.png"/>
-                </imageobject>
-            </inlinemediaobject></para>
+            agile improvement</para><figure xml:id="PASTFModel">
+                <title>PASTF Model</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/PASTF%20Model%203.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
         <para>Detailed descriptions of each layer will be spelled out in the chapters that follow,
             but brief descriptions of each can be found below:</para>
         <para><emphasis role="bold">Foundational Architecture</emphasis> – The foundational layer of
@@ -338,7 +339,8 @@
     </section>
     <section>
         <title> Preface from Keith Campbell</title>
-        <para/>
+        <para>This section is currently a placeholder that will be populated during the option
+            year.</para>
     </section>
     <section>
         <title> IKM Book Introduction</title>
@@ -568,13 +570,14 @@
                 <para>To understand structural interoperability, consider the two sentences below.
                     While both sentences have the same sentence <emphasis role="italic"
                         >structure</emphasis>, their <emphasis role="italic">meanings</emphasis> are
-                    completely different and only one makes logical sense.</para>
-                <para><emphasis role="bold">Figure 2: Structural Interoperability</emphasis></para>
-                <para><inlinemediaobject>
-                        <imageobject>
-                            <imagedata fileref="images/Structural%20Interoperability2.png"/>
-                        </imageobject>
-                    </inlinemediaobject></para>
+                    completely different and only one makes logical sense.</para><figure xml:id="StructuralInteropoerability">
+                        <title>Structural Interoperability</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Structural%20Interoperability2.png"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 <para><emphasis role="italic">Meaning</emphasis> is the ability of systems to share
                     the same interpretation of the data. Meaning interoperability ensures the
                     original meaning and intent of data is interpreted identically across all
@@ -587,14 +590,15 @@
                     National Library of Medicine).</para>
                 <para>In the below example, the two sentences share a common <emphasis role="italic"
                         >meaning</emphasis>, however the sentence <emphasis role="italic"
-                        >structure</emphasis> varies drastically. </para>
-                <para><emphasis role="bold">Figure 3: Meaning Interoperability</emphasis></para>
-                <para><inlinemediaobject>
+                            >structure</emphasis> varies drastically. </para><figure xml:id="MeaningInteropoerability">
+                                <title>Meaning Interoperability</title>
+                <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/Meaning%20Interoperability%202.png"/>
                         </imageobject>
-                    </inlinemediaobject></para>
-                <para>While Figure 2 and 3 intend to illustrate <emphasis role="italic"
+                    </mediaobject>
+                </figure>
+                <para>While <xref linkend="StructuralInteropoerability"/> and <xref linkend="MeaningInteropoerability"/>intend to illustrate <emphasis role="italic"
                         >structure</emphasis> and <emphasis role="italic">meaning</emphasis> simply,
                     a more real-world example like, “the patient was given pain medication” and “the
                     patient was given medication for pain,” highlights potential issues when
@@ -631,7 +635,7 @@
                     message received. After a laboratory test is performed and a test result is
                     available, the Reference Laboratory in this scenario will return a Laboratory
                     Result message to the hospital EHR system.</para>
-                <para>Figure 4 below shows an example of an HL7 v2 Observation (OBX) segment from
+                <para><xref linkend="ErroneousLoincMapping"/> below shows an example of an HL7 v2 Observation (OBX) segment from
                     two different mock lab result messages. In this scenario, a laboratory has
                     conducted two distinct blood glucose tests on two distinct specimen sources. For
                     the first test, a specimen from serum or plasma was used. For the second test,
@@ -646,14 +650,15 @@
                     code systems to encode the tests; these are called “local codes.” Although not
                     universal, local codes are another way for health information systems to
                     represent <emphasis role="italic">meaning</emphasis> for clinical concepts. The
-                    HL7 v2 observation data in Figure 4 shows blue text representing a local code,
-                    and the observation data denoted in red represents a corresponding LOINC code. </para>
-                <para><emphasis role="bold">Figure 4: Erroneous LOINC Mapping</emphasis></para>
-                <para><inlinemediaobject>
+                    HL7 v2 observation data in <xref linkend="ErroneousLoincMapping"/> shows blue text representing a local code,
+                    and the observation data denoted in red represents a corresponding LOINC code. </para><figure xml:id="ErroneousLoincMapping">
+                    <title>Erroneous LOINC Mapping</title>
+                    <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/Erroneous%20Loinc%20Mapping.png"/>
                         </imageobject>
-                    </inlinemediaobject></para>
+                    </mediaobject>
+                </figure>
                 <para>The figure shows how the same local code can be erroneously mapped to
                     different LOINC codes and transmitted in a Lab Result message. In this case
                     example we see the same laboratory conducting two distinct tests and encoding
@@ -928,4 +933,3 @@
         </para>
     </section>
 </chapter>
-

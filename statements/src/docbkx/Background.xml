@@ -3,9 +3,9 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>Background</title>
+     <title>IKM Book Background</title>
     <section>
-        <title>Federal Drug Adminsitration (FDA) Overview</title>
+        <title>Federal Drug Administration (FDA) Overview</title>
         <para>The US Food and Drug Administration (FDA) is responsible for protecting public health
             by ensuring the safety of consumer products and is responsible for advancing innovative
             medical products and technology that further promote public health. Medical devices
@@ -43,7 +43,7 @@
                     a central location.</para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Systems Thinking</emphasis> - Reengineering the
+                <para><emphasis role="bold">Systems Thinking</emphasis> - Re-engineering the
                     laboratory data transfer process in a manner that prioritizes safety, integrity,
                     and graceful evolution over time above all else</para>
             </listitem>
@@ -59,14 +59,15 @@
         <title>FDA SHIELD Partners Overview</title>
         <para>FDA SHIELD has partnered with and awarded contracts to a variety of organizations to
             support the development of a solution that can meet SHIELD goals and the current issues
-            with data interoperability. </para>
-        <para><emphasis role="bold">Figure 1: Teaming Partners</emphasis></para>
-        <para><inlinemediaobject>
-                <imageobject>
-                    <imagedata fileref="images/Teaming%20Partners.png"/>
-                </imageobject>
-            </inlinemediaobject></para>
-    </section>
+            with data interoperability. </para><figure xml:id="TeamingPartners">
+                <title>Teaming Partners</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/Teaming%20Partners.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            </section>
     <section>
         <title>Real World Evidence and Standards Overview</title>
         <para>Real world evidence (RWE) using data collected as part of routine clinical care, has
@@ -78,7 +79,7 @@
             Data interoperability of health data may help medicine realize the future in the same
             way in which other industries have advanced – such as banking, the “internet of things”
             and online shopping. The vision of a national interoperable health information system
-            has been elusive; however, because of clinical care data in data siloes, incompatible
+            has been elusive; however, because of clinical care data in data silos, incompatible
             health information technology (IT) systems, and proprietary software that make health
             information difﬁcult to exchange, analyze, and interpret. </para>
         <para>Given the number of distinct information systems and care delivery organizations in
@@ -189,7 +190,7 @@
                 healthcare interfaces. The suitability of a chosen transformation language highly
                 depends on the format of the source data, and the quality and accuracy of the
                 transformation is left to the transformation author. Examples of transformation
-                languages include eXtensible Stylesheet Language Transformations (XSLT), FHIR
+                languages include extensible Stylesheet Language Transformations (XSLT), FHIR
                 Mapping Language, and Query/View/Transformation (QVT). Often referred to as “data
                 wrangling” these transformation processes often require mapping data from one “raw”
                 data form into another format with the intent of making it more valuable for
@@ -251,7 +252,7 @@
                 different semantics, models, release cycles, and versioning mechanisms. [6] </para>
             <para>Ideally, to support RWE analytics and aggregation, enterprise terminology requires
                 an integrated terminology using a common representation (metadata) and management. A
-                common terminology model, such as HL7 Standardized Terminology Knowledgebase (also
+                common terminology model, such as HL7 Standardized Terminology Knowledge Base (also
                 known as Terminology Knowledge Architecture or Tinkar) would allow analytics on top
                 of aggregated RWE data sets the following [7]: </para>
             <para>
@@ -296,17 +297,18 @@
         <section>
             <title>Analytic Environments Overview</title>
             <para>Integrated analytics environments assist in creating and automating data pipelines
-                and workflows to deliver actional information to a wide variety of end users. These
-                environments extract data from various data sources, ideally into an integrated
-                knowledge base, housed in a central ecosystem – thereby reducing data silos,
-                enhancing security and governance, and eliminating system redundancies. For data
-                analytics conducted using RWE, analytics environments used by FDA and others will be
-                dependent on a variety of knowledge bases and datasets that may have some common
-                fields but also differing fields. A vast variety of biomedical and administrative
-                knowledge present the basis for RWE analytics and knowledge management of these
-                disparate datasets is a major element of consideration to facilitate RWE analytics.
-                Knowledge management includes the creation, discovery, and application of knowledge
-                assets to facilitate sharing and re-use across the ecosystem. </para>
+                and workflows to deliver actionable information to a wide variety of end users.
+                These environments extract data from various data sources, ideally into an
+                integrated knowledge base, housed in a central ecosystem – thereby reducing data
+                silos, enhancing security and governance, and eliminating system redundancies. For
+                data analytics conducted using RWE, analytics environments used by FDA and others
+                will be dependent on a variety of knowledge bases and datasets that may have some
+                common fields but also differing fields. A vast variety of biomedical and
+                administrative knowledge present the basis for RWE analytics and knowledge
+                management of these disparate datasets is a major element of consideration to
+                facilitate RWE analytics. Knowledge management includes the creation, discovery, and
+                application of knowledge assets to facilitate sharing and re-use across the
+                ecosystem. </para>
             <para>The ability to use interoperable syntax and semantics between data sources is a
                 critical requirement to support effective knowledge management and reliable
                 analytics of disparate RWE datasets. Use of industry standards for syntax and
@@ -375,7 +377,7 @@
                     meaning.</para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Meaning Interoeprability</emphasis> – Meaning
+                <para><emphasis role="bold">Meaning Interoperability</emphasis> – Meaning
                     interoperability works to ensure that the receiving system interprets data in an
                     identical way as the original system.</para>
             </listitem>
@@ -423,14 +425,15 @@
             interpretation. When this framework is applied to the healthcare system, clinical data,
             and more specifically clinical statements, we need <emphasis role="italic"
                 >terminology</emphasis> and <emphasis role="italic">structure</emphasis> to convey a
-            patient’s condition or health history from one provider to another. </para>
-        <para><emphasis role="bold">Figure 2: Terminology and Structure Examples</emphasis></para>
-        <para><inlinemediaobject>
-                <imageobject>
-                    <imagedata fileref="images/Terminology%20and%20Structure.png"/>
-                </imageobject>
-            </inlinemediaobject></para>
-        <para>ANF is a data structure that is designed to improve clinical decision support, data
+            patient’s condition or health history from one provider to another. </para><figure xml:id="TerminologyandStructureExamples">
+                <title>Terminology and Structure Examples</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/Terminology%20and%20Structure.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para>ANF is a data structure that is designed to improve clinical decision support, data
             robustness, decrease data variation, and ultimately prevent terminology
             misrepresentations while following the principles of separation of concerns. There are
             several use cases that ANF can be applied to, such as questionnaire and questionnaire
@@ -706,14 +709,15 @@
             depending on no other modules, and higher-level modules depend on lower-level ones. A
             particular program or library is a top-level module of its own hierarchy, but can in
             turn be seen as a lower-level module of a higher-level program, library, or
-            system.</para>
-        <para><emphasis role="bold">Figure 3: Modules and Extensions</emphasis></para>
-        <para><inlinemediaobject>
-                <imageobject>
-                    <imagedata fileref="images/Versioning%20and%20Modules.png"/>
-                </imageobject>
-            </inlinemediaobject></para>
-    </section>
+            system.</para><figure xml:id="VersioningandModules">
+                <title>Modules and Extensions</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/Versioning%20and%20Modules.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            </section>
     <section>
         <title>Safety Systems Thinking and High Reliability Organization (HRO) Overview</title>
         <para>Today’s current state for knowledge management constructs lack a standardized approach
@@ -767,7 +771,7 @@
                 and repeatable knowledge management and data validation process with continual
                 improvement.</para>
             <section>
-                <title>Saftey Systems Thinking Overview</title>
+                <title>Safety Systems Thinking Overview</title>
                 <para>A systems thinking approach to safety is a thorough and disciplined approach
                     to identifying, analyzing, eliminating, and controlling hazards by analysis,
                     design, and management procedures that operate throughout a system’s life cycle.
@@ -868,19 +872,18 @@
                 addresses the existing flaws in the current knowledge management constructs, it is
                 critical that we perform a comprehensive and proactive assessment of the pertinent
                 laboratory and health care systems, their controls, best practices, and weaknesses.
-                Figure 4 below outlines some common knowledge management construct issues that we
+                <xref linkend="CommonKnowledgeManagementConstructChallenges"/> below outlines some common knowledge management construct issues that we
                 will work to address as we design a system with proactive data assurance
-                methods.</para>
-            <para><emphasis role="bold">Figure 4: Common Knowledge Management Construct
-                    Challenges</emphasis></para>
-            <para><inlinemediaobject>
-                    <imageobject>
-                        <imagedata
-                            fileref="images/Common%20Knowledge%20Management%20Construct%20Challenges.png"
-                        />
-                    </imageobject>
-                </inlinemediaobject></para>
-        </section>
+                methods.</para><figure xml:id="CommonKnowledgeManagementConstructChallenges">
+                    <title>Common Knowledge Management Construct
+                        Challenges</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Common%20Knowledge%20Management%20Construct%20Challenges.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                    </section>
         <section>
             <title>Related Safety Systems Thinking and HRO Work</title>
             <para>Subject matter experts and other industry leaders have demonstrated use cases for
@@ -1009,18 +1012,18 @@
         </section>
         <section>
             <title>Safety Systems Use Case</title>
-            <para>The Synensys document, "System Safety within Laboratory Data Exchanges,"
-                [<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT LINK TO
-                IKM.DEV WITH THIS PAPER<?oxy_custom_end?>] analyzes the complex challenges in
-                laboratory data exchanges within healthcare, emphasizing the importance of accurate
-                communication, standardized procedures, and contextual information in diagnostics.
-                Various loss scenarios and potential risks are detailed, highlighting the
-                consequences of miscommunication and inconsistency in laboratory data handling. The
-                document is being cited as an example because it illustrates the application of
-                system safety principles in healthcare. Its focus on engineering safety, quality,
-                and reliability into laboratory data exchanges exemplifies the broader theme of
-                implementing systems thinking and high reliability practices, providing a real-world
-                perspective on these critical concepts.
+            <para>The Synensys document, "System Safety within Laboratory Data Exchanges", [WILL
+                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT LINK TO
+                IKM.DEV WITH THIS PAPER<?oxy_custom_end?> IN OPTION PERIOD] analyzes the complex
+                challenges in laboratory data exchanges within healthcare, emphasizing the
+                importance of accurate communication, standardized procedures, and contextual
+                information in diagnostics. Various loss scenarios and potential risks are detailed,
+                highlighting the consequences of miscommunication and inconsistency in laboratory
+                data handling. The document is being cited as an example because it illustrates the
+                application of system safety principles in healthcare. Its focus on engineering
+                safety, quality, and reliability into laboratory data exchanges exemplifies the
+                broader theme of implementing systems thinking and high reliability practices,
+                providing a real-world perspective on these critical concepts.
                 [<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT
                 REFERENCE<?oxy_custom_end?> 21]</para>
         </section>
@@ -1146,7 +1149,7 @@
                         Practices 2013.</para>
                 </listitem>
                 <listitem>
-                    <para/>
+                    <para>["System Safety within Laboratory Data Exchanges"]</para>
                 </listitem>
             </orderedlist>
         </para>

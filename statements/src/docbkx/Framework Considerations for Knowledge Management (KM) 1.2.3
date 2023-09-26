@@ -5,7 +5,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Framework Considerations for Knowledge Management (KM)</title>
     <sect1>
-        <title>Framework Condiserations Purpose</title>
+        <title>Framework Considerations Purpose</title>
         <para>This document will serve to identify a framework of considerations for comparing
             Knowledge Management technologies. Incorporated within is analysis of the architecture
             and codebase for any known scalability, licensing, and privacy needs, as well as how to
@@ -101,40 +101,34 @@
             <para>In general, there is no formal external documentation describing code
                 functionality – either at the class or method level. Some Java Classes were
                 identified to have properly formatted JavaDoc annotations, but this wasn’t
-                consistently applied across the entire code base.</para>
-            <para><emphasis role="bold">Figure 1: Unit Test Code Coverage Report for Komet Using
-                    JaCoCo</emphasis></para>
-            <informalfigure>
+                consistently applied across the entire code base.</para><figure xml:id="UnitTestCodeCoverageReportforKometUsingJaCoCo">
+                    <title>Unit Test Code Coverage Report for Komet Using JaCoCo</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Komet%20Using%20JaCoCo.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            <figure xml:id="UnitTestCodeCoverageReportforTinkarusingJaCoCo">
+                <title>Unit Test Code Coverage Report for Tinkar using JaCoCo</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata
-                            fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Komet%20Using%20JaCoCo.png"
-                        />
+                        <imagedata fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Tinkar%20using%20JaCoCo.png"/>
                     </imageobject>
                 </mediaobject>
-            </informalfigure>
-            <para><emphasis role="bold">Figure 2: Unit Test Code Coverage Report for Tinkar using
-                    JaCoCo</emphasis></para>
-            <informalfigure>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata
-                            fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Tinkar%20using%20JaCoCo.png"
-                        />
-                    </imageobject>
-                </mediaobject>
-            </informalfigure>
+            </figure>
             <para>There is a general lack of unit tests across the entire code base. As shown in
-                Figure 1 and Figure 2 above, JaCoCo, a Java-based code coverage tool, only
-                identified about 25.8% of functional code as adequately covered by unit tests. In
-                contrast, a Maven module within the Tinkar-core codebase called “integration” was
-                identified as containing several large integration tests. These integration tests
-                currently use Junit5 (historically TestNG) to build test suites to validate that the
-                three main Tinkar providers Ephemeral, MVStore, and Spined Array properly load a
-                preset test sample of Tinkar data. The selection of and adequate testing suite is
-                important because the codebase utilizes inversion of controls (or dependency
-                injection) to start appropriate Tinkar-core “services” which requires the testing
-                suite to have proper setup and tear annotations.</para>
+                    <xref linkend="UnitTestCodeCoverageReportforKometUsingJaCoCo"/> and <xref
+                    linkend="UnitTestCodeCoverageReportforTinkarusingJaCoCo"/> above, JaCoCo, a
+                Java-based code coverage tool, only identified about 25.8% of functional code as
+                adequately covered by unit tests. In contrast, a Maven module within the Tinkar-core
+                codebase called “integration” was identified as containing several large integration
+                tests. These integration tests currently use Junit5 (historically TestNG) to build
+                test suites to validate that the three main Tinkar providers Ephemeral, MVStore, and
+                Spined Array properly load a preset test sample of Tinkar data. The selection of and
+                adequate testing suite is important because the codebase utilizes inversion of
+                controls (or dependency injection) to start appropriate Tinkar-core “services” which
+                requires the testing suite to have proper setup and tear annotations.</para>
             <para>Overall, the codebase had low code maturity. This is attributed to a lack of
                 continuous integration and continuous delivery infrastructure. It was identified
                 that historically a previous version of the codebase utilized the open-source
@@ -472,19 +466,18 @@
                             programming languages let you document groups of classes. This should be
                             a high-level description and relatively brief. If you must go into
                             detail, you may need to break your packages/namespaces up further. An
-                            example is shown in the Figure below.</para>
+                            example is shown in <xref linkend="ExampleofPackageNamespaceComments"/>.</para>
                     </listitem>
-                </itemizedlist>
-                <para><emphasis role="bold">Figure 3: Example of Package/Namespace
-                        Comments</emphasis></para>
-                <informalfigure>
+                </itemizedlist><figure xml:id="ExampleofPackageNamespaceComments">
+                    <title>Example of Package/Namespace
+                        Comments</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata
-                                fileref="images/Example%20of%20Package%20or%20Namespace%20Comments.png"
-                            />
+                            <imagedata fileref="images/Example%20of%20Package%20or%20Namespace%20Comments.png"/>
                         </imageobject>
-                        <textobject>
+                    </mediaobject>
+                </figure>
+                <para>
                             <itemizedlist>
                                 <listitem>
                                     <para><emphasis role="bold">Class Comments</emphasis> - Used for
@@ -497,21 +490,15 @@
                                         a class may soon be retired and replaced with another class.
                                         An example is shown below.</para>
                                 </listitem>
-                            </itemizedlist>
-                            <para><emphasis role="bold">Figure 4: Example of Class
-                                    Comments</emphasis></para>
-                            <informalfigure>
+                            </itemizedlist><figure xml:id="ExampleofClassComments">
+                                <title>Example of Class Comments</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata
-                                            fileref="images/Example%20of%20Class%20Comments.png"/>
+                                        <imagedata fileref="images/Example%20of%20Class%20Comments.png"/>
                                     </imageobject>
                                 </mediaobject>
-                            </informalfigure>
-                        </textobject>
-                    </mediaobject>
-                </informalfigure>
-                <itemizedlist>
+                            </figure>
+                            <itemizedlist>
                     <listitem>
                         <para><emphasis role="bold">Method/Function Comments</emphasis> - Comments
                             directly related to calling of a function or method. These often contain
@@ -520,17 +507,15 @@
                             shown below.</para>
                     </listitem>
                 </itemizedlist>
-                <para><emphasis role="bold">Figure 5: Example of Method/Function
-                    Comments</emphasis></para>
-                <informalfigure>
+                </para><figure xml:id="ExampleofMethodFunctionComments">
+                    <title>Example of Method/Function Comments</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata
-                                fileref="images/Example%20of%20Method%20and%20Function%20Comments.png"
-                            />
+                            <imagedata fileref="images/Example%20of%20Method%20and%20Function%20Comments.png"/>
                         </imageobject>
                     </mediaobject>
-                    <itemizedlist>
+                </figure>
+                <itemizedlist>
                         <listitem>
                             <para><emphasis role="bold">Block Comments</emphasis> - Shouldn't really
                                 need to be used. If a section of code is so complex that it needs a
@@ -541,19 +526,16 @@
                             <para><emphasis role="bold">Inline Comments</emphasis> - Step-by-step
                                 details about what you are doing. These can be used judiciously
                                 provided they make sense. An example of an inline comment is show in
-                                Figure 4 below.</para>
+                                <xref linkend="ExampleofInlineComment"/> below.</para>
                         </listitem>
-                    </itemizedlist>
-                    <para><emphasis role="bold">Figure 6: Example of Inline
-                        Comment</emphasis></para>
-                    <informalfigure>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="images/Example%20of%20Inline%20Comment.png"/>
-                            </imageobject>
-                        </mediaobject>
-                    </informalfigure>
-                </informalfigure>
+                </itemizedlist><figure xml:id="ExampleofInlineComment">
+                    <title>Example of Inline Comment</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Example%20of%20Inline%20Comment.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
             </sect3>
             <sect3>
                 <title>Commented Out Code</title>
@@ -597,18 +579,15 @@
             <para>The following graph, courtesy of <emphasis role="bold">the National Institute of
                     Standards and Technology,</emphasis> helps in visualizing how the effort in
                 detecting and fixing defects increases as the software moves through the five broad
-                phases of software development.</para>
-            <para><emphasis role="bold">Figure 7: Relative Cost to Fix Bugs, Based on Time of
-                    Detection</emphasis></para>
-            <informalfigure>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata
-                            fileref="images/Relative%20Cost%20to%20Fix%20Bugs,%20Based%20on%20Time%20of%20Detection.png"
-                        />
-                    </imageobject>
-                </mediaobject>
-                <para>For example, in the case of a data storage error:</para>
+                phases of software development.</para><figure xml:id="RelativeCosttoFixBugsBasedonTimeofDetection">
+                    <title>Relative Cost to Fix Bugs, Based on Time of Detection</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Relative%20Cost%20to%20Fix%20Bugs,%20Based%20on%20Time%20of%20Detection.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            <para>For example, in the case of a data storage error:</para>
                 <itemizedlist>
                     <listitem>
                         <para>If error is found in the requirements gathering, then it is relatively
@@ -638,33 +617,28 @@
                 <para>There will always be defects in production, but the key is to reduce them to
                     the ones that can't be predicted. The mantra of any developer should be to
                         <emphasis role="italic">detect early and often</emphasis>.</para>
-            </informalfigure>
             <sect3>
                 <title>Right Size the Testing​</title>
                 <para>Given the above information, it is common to want to completely switch gears
                     and test until every possible bug is caught with extremely large end-to-end
                     suites. Unfortunately, this is also a huge cost.</para>
-                <para>As Kent Dodd and Martin Fowler suggest, and as shown in Figure 8, testing
+                <para>As Kent Dodd and Martin Fowler suggest, and as shown in <xref linkend="MonetaryandTimeCostsofTestingTypes"/>, testing
                     costs are significantly higher and slower to develop and execute at more
                     thorough levels. Therefore, we should spend more time at unit and integration
                     tests to iterate quickly and resolve most issues, using end-to-end tests
-                    sparingly, as they are costly.</para>
-                <para><emphasis role="bold">Figure 8: Monetary and Time Costs of Testing
-                        Types</emphasis></para>
-                <informalfigure>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata
-                                fileref="images/Monetary%20and%20Time%20Costs%20of%20Testing%20Types.png"
-                            />
-                        </imageobject>
-                    </mediaobject>
-                    <para>When doing a story tasking as part of Iteration Planning, teams should
+                    sparingly, as they are costly.</para><figure xml:id="MonetaryandTimeCostsofTestingTypes">
+                        <title>Monetary and Time Costs of Testing Types</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Monetary%20and%20Time%20Costs%20of%20Testing%20Types.png"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                <para>When doing a story tasking as part of Iteration Planning, teams should
                         create tasking for integration and end-to-end tests that consider the amount
                         of time that you need to thoroughly test the acceptance criteria. This
                         should be the minimal amount required to achieve proving the criteria have
                         been met.</para>
-                </informalfigure>
             </sect3>
             <sect3>
                 <title>Test Driven Development Standards​</title>
@@ -684,16 +658,14 @@
                     you pick up a story. This is a set of tests that should match the acceptance
                     criteria and showcase to the product owner that the story is complete.</para>
                 <para>TDD is a simple 3-phase cycle of writing something that is failing, making a
-                    test pass, then refactoring, and repeating. This process is depicted in Figure
-                    9.</para>
-                <para><emphasis role="bold">Figure 9: TDD Cycle Diagram</emphasis></para>
-                <informalfigure>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="images/TDD%20Cycle%20Diagram.png"/>
-                        </imageobject>
-                    </mediaobject>
-                </informalfigure>
+                    test pass, then refactoring, and repeating. This process is depicted in <xref linkend="TDDCycleDiagram"/>.</para><figure xml:id="TDDCycleDiagram">
+                        <title>TDD Cycle Diagram</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/TDD%20Cycle%20Diagram.png"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 <sect4>
                     <title>Writing Failed Tests (Red)​</title>
                     <para>This should consist of the following tests, every time:</para>
@@ -731,34 +703,27 @@
                         and as developers, we want to ensure that test requirements are met before
                         pivoting.</para>
                     <para>Example:</para>
-                    <para>The requirement is that you create a myArrayList application. Figure 8
-                        below contains some pseudocode for that test.</para>
-                    <para><emphasis role="bold">Figure 10: Pseudocode for Creating
-                            MyArrayList</emphasis></para>
-                    <informalfigure>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata
-                                    fileref="images/Pseudocode%20for%20Creating%20MyArrayList.png"/>
-                            </imageobject>
-                        </mediaobject>
-                        <para>Then your code should be the easiest way to achieve this, which is
-                            shown in Figure 11 below.</para>
-                        <para><emphasis role="bold">Figure 11: Simplest Code for Creating the
-                                MyArrayList Application</emphasis></para>
-                        <informalfigure>
+                    <para>The requirement is that you create a myArrayList application. <xref linkend="PseudocodeforCreatingMyArrayList"/>
+                        below contains some pseudocode for that test.</para><figure xml:id="PseudocodeforCreatingMyArrayList">
+                            <title>PseudocodeforCreatingMyArrayList</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata
-                                        fileref="images/Simplest%20Code%20for%20Creating%20the%20MyArrayList%20Application.png"
-                                    />
+                                    <imagedata fileref="images/Pseudocode%20for%20Creating%20MyArrayList.png"/>
                                 </imageobject>
                             </mediaobject>
-                            <para>By doing it this way, it is very clear where logic should be
+                        </figure>
+                    <para>Then your code should be the easiest way to achieve this, which is
+                        shown in <xref linkend="SimplestCodeforCreatingtheMyArrayListApplication"/> below.</para><figure xml:id="SimplestCodeforCreatingtheMyArrayListApplication">
+                            <title>Simplest Code for Creating the MyArrayList Application</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/Simplest%20Code%20for%20Creating%20the%20MyArrayList%20Application.png"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                        <para>By doing it this way, it is very clear where logic should be
                                 adjusted and separated out, as different methods will become
                                 immediately apparent where they need modularity.</para>
-                        </informalfigure>
-                    </informalfigure>
                 </sect4>
                 <sect4>
                     <title>Making the Code Reusable (Blue)</title>
@@ -840,24 +805,20 @@
                         requires test cases to be written in Gherkin syntax which is then translated
                         to code. Gherkin (format → Given, When, Then) is readable to functional
                         teams, hence providing visibility. An example of BDD is shown below in
-                        Figure 12.</para>
-                    <para><emphasis role="bold">Figure 12: Example of Behavior Driven
-                            Development</emphasis></para>
-                    <informalfigure>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata
-                                    fileref="images/Example%20of%20Behavior%20Driven%20Development.png"
-                                />
-                            </imageobject>
-                        </mediaobject>
-                        <para>BDD can be practiced using most testing frameworks. <emphasis
+                        <xref linkend="ExampleofBehaviorDrivenDevelopment"/>.</para><figure xml:id="ExampleofBehaviorDrivenDevelopment">
+                            <title>Example of Behavior Driven Development</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/Example%20of%20Behavior%20Driven%20Development.png"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    <para>BDD can be practiced using most testing frameworks. <emphasis
                                 role="bold">Cucumber,</emphasis> however, is a common tool used in
                             industry as it provides, amongst many features, .dsl files which are
                             maintained by the functional team. Note: Use the framework/methodology
                             that works for your team. Given the descriptions in this article, teams
                             should be able to discern what will work for their projects.</para>
-                    </informalfigure>
                 </sect4>
                 <sect4>
                     <title>UI Testing</title>
@@ -946,7 +907,7 @@
     <sect1>
         <title>Automation</title>
         <para><emphasis role="bold">Continuous Integration (CI)</emphasis> and <emphasis role="bold"
-                >Continuous Deployment (CD)</emphasis> Processes, Figure 11 and Figure 12,
+            >Continuous Deployment (CD)</emphasis> Processes, <xref linkend="FrameworkforContinousIntegration"/> and <xref linkend="FrameworkforContinousDeployment"/>,
             respectively, allow teams to be productive from day 1, even releasing as early as their
             first day. Using Deloitte’s hosted JIRA and a Software Factory accelerator, we are
             installing an environment in AWS to build code using tooling. We initially will create a
@@ -958,14 +919,15 @@
             culture of promoting code submissions and foster access to this codebase to improve it
             over time.</para>
         <sect2>
-            <title>Continuous Integration</title>
-            <informalfigure>
+            <title>Continuous Integration</title><figure xml:id="FrameworkforContinousIntegration">
+                <title>Framework for Continuous Integration</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/Framework%20for%20Continuous%20Integration.png"/>
                     </imageobject>
                 </mediaobject>
-                <para>The current Software Factory installation allow teams to do the
+            </figure>
+            <para>The current Software Factory installation allow teams to do the
                     following:</para>
                 <itemizedlist>
                     <listitem>
@@ -1055,12 +1017,13 @@
                         </itemizedlist>
                     </listitem>
                     <listitem>
-                        <para>Scane - Our team has created the Seed Pak which contains a starting
-                            point for your application development. This includes the ability to add
-                            gates and thresholds to your application. The pipelines will support for
-                            Software Composition Analysis (SCA) and Static Analysis Security Testing
-                            (SAST) as part of the build definitions. Data is published and stored
-                            over time to allow for analysis of development trends.</para>
+                        <para><emphasis role="bold">Scan</emphasis> - Our team has created the Seed
+                        Pak which contains a starting point for your application development. This
+                        includes the ability to add gates and thresholds to your application. The
+                        pipelines will support for Software Composition Analysis (SCA) and Static
+                        Analysis Security Testing (SAST) as part of the build definitions. Data is
+                        published and stored over time to allow for analysis of development
+                        trends.</para>
                         <itemizedlist>
                             <listitem>
                                 <para>SAST scanning over time with SonarQube</para>
@@ -1099,17 +1062,17 @@
                         </itemizedlist>
                     </listitem>
                 </itemizedlist>
-            </informalfigure>
         </sect2>
         <sect2>
-            <title>Continuous Deployment</title>
-            <informalfigure>
+            <title>Continuous Deployment</title><figure xml:id="FrameworkforContinousDeployment">
+                <title>Framework for Continuous Deployment</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/Framework%20for%20Continuous%20Deployment.png"/>
                     </imageobject>
                 </mediaobject>
-                <para>
+            </figure>
+            <para>
                     <itemizedlist>
                         <listitem>
                             <para><emphasis role="bold">Deploy</emphasis> - Titan provides simple
@@ -1170,7 +1133,6 @@
                         </listitem>
                     </itemizedlist>
                 </para>
-            </informalfigure>
         </sect2>
         <sect2>
             <title>Packaging and Distribution</title>
@@ -1273,4 +1235,3 @@
             address security concerns as the product matures.</para>
     </sect1>
 </chapter>
-

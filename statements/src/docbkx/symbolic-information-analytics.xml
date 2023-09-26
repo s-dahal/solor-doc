@@ -67,11 +67,6 @@
         <xi:include href="Statement-Model.xml"/>
     </part>
     <part>
-        <title>Tinkar-Doc Test</title>
-        <!-- TODO: Include necessary Tinkar-Doc sections here -->
-        <xi:include href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"/>
-    </part>
-    <part>
         <title>Assertional Knowledge</title>
         <xi:include href="SOLOR-assertional.xml"/>
     </part>

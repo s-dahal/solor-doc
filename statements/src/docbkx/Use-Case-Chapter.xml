@@ -5,6 +5,11 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Use Cases</title>
     <section>
+        <title>Notice</title>
+        <para>The Use Case chapter currently consists of a draft outline. In the coming year, our
+            team will develop and refine content that can be incorporated.</para>
+    </section>
+    <section>
         <title>Use Case: Komet Demo</title>
     </section>
     <section>
@@ -145,10 +150,16 @@
                     important data elements were identified including patient symptoms, medical
                     history, laboratory tests and orders, vaccination history, demographics, and
                     prescriptions, and it was noted whether those data are currently collected or
-                    lost. </para>
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                <para>INSERT GENERALIZED CURRENT STATE LONG COVID WORKFLOW</para><?oxy_custom_end?>
-            </section>
+                    lost.</para> 
+                <figure xml:id="GeneralizedCurrentStateLongCovidWorkflow">
+                    <title>Generalized Current State Long Covid Workflow</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Generalized%20current%20state%20long%20covid%20workflow.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                </section>
             <section>
                 <title>Aim 2: Establish the Future State of Patient Care</title>
                 <para>Once a standardized general Long COVID diagnostic workflow schematic was
@@ -163,6 +174,7 @@
                     supplementary data flow schematic. Note that while these scenarios used Long
                     COVID as an inspiration, the underlying principles can be applied to any similar
                     emerging acute, chronic and infectious disease.</para>
+                
                 <para><emphasis role="italic">Scenario 1: Current State Outpatient Long COVID
                         Workflow</emphasis></para>
                 <para>Scenario 1 details an expanded view of the workflow as patients begin their
@@ -171,22 +183,34 @@
                     as notification of exposure from the health department, phone proximity
                     tracking, routine testing at work, prerequisite testing for travel, or feeling
                     symptomatic. The parallel actions are listed for each step of the process in in
-                    the workflow schematic below in Figure 2. In this current state, there are
+                    the workflow schematic below in <xref linkend="CurrentStateOutpatientlongcovidworkflow"/>. In this current state, there are
                     several points at which data are produced but not collected and therefore
                     lost.</para>
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                <para>INSERT SCENARIO 1 CURRENT STATE OUTPATIENT FLOW</para><?oxy_custom_end?>
+                <figure xml:id="CurrentStateOutpatientlongcovidworkflow">
+                    <title>Current State Outpatient Long Covid Workflow</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Current%20state%20long%20covid%20workflow.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
                 <para><emphasis role="italic">Scenario 2: Future State Outpatient Long COVID
                         Workflow</emphasis></para>
                 <para>Scenario 2 explores an idealized future state for the outpatient workflow
-                    depicted in Figure 3 that aims to minimize data loss. It should be noted that
+                    depicted in <xref linkend="FutureStateOutpatientlongcovidworkflow"/> that aims to minimize data loss. It should be noted that
                     there are only subtle changes to the patient-centric workflow, but there are
                     several points at which data are collected and stored, which, in turn, will
                     enable more streamlined care and a more complete picture of health for the
                     individual patient and the larger population. The collection, storage, and
                     transmission of data are detailed in Aim 3.</para>
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                <para>INSERT SCENARIO 2 FUTURE STATE OUTPATIENT FLOW</para><?oxy_custom_end?>
+                <figure xml:id="FutureStateOutpatientlongcovidworkflow">
+                    <title>Future State Outpatient Long Covid Workflow</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Future%20state%20long%20covid%20workflow.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
             </section>
             <section>
                 <title>Aim 3: Establish the Future State Data Workflow</title>
@@ -195,12 +219,20 @@
                     and health informatics to identify points in the patient care workflow where
                     data are captured, where data capture could be improved, and resources or
                     technologies that could support the improved data capture. The team then
-                    developed a separate schematic (Figure 4) to showcase an idealized flow of those
+                    developed a separate schematic (<xref linkend="IdealizedFuturestatedataLongCovidWorkflow"/>) to showcase an idealized flow of those
                     data; the workflow is framed around an OTC COVID-19 test trigger and showcases
                     how data should be captured, transmitted, stored, and prepared for downstream
                     analytical and secondary use. </para>
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                <para>INSERT IDEALIZED FUTURE STATE DATA FLOW</para><?oxy_custom_end?>
+                <figure xml:id="IdealizedFuturestatedataLongCovidWorkflow">
+                    <title>Idealized Future State Data Long Covid Workflow</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/Idealized%20Future%20state%20data%20Long%20Covid%20Workflow.png"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
                 <para>An important consideration when developing this workflow was the inclusion of
                     enablers. Enablers serve to drive the best future state collection and use of
                     the data that are generated in the future state patient care workflow starting
@@ -230,7 +262,7 @@
             <title>Results from the Emerging Acute and Chronic Infectious Diseases Use Case</title>
             <section>
                 <title>Aim 1: Document a Current State Long COVID Workflow Depicting Data Loss </title>
-                <para>The team developed Figure 1, a generalized workflow that outlines a patient’s
+                <para>The team developed <xref linkend="GeneralizedCurrentStateLongCovidWorkflow"/>, a generalized workflow that outlines a patient’s
                     journey to a Long COVID diagnosis by aggregating common themes, data elements,
                     and components from the information that team members individually collected. In
                     the current state, critical data associated with OTC testing, patient symptoms,
@@ -311,10 +343,17 @@
                     the outpatient Long COVID patient care workflow and similar data collection
                     steps are grouped by a box with a dashed line. This process was repeated
                     throughout the workflow for each data capture point.</para>
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                <para>INSERT FUTURE STATE DATA COLLECTION TABLE</para><?oxy_custom_end?>
+                <figure xml:id="FutureStateDataCollectionPoints">
+                    <title>Future State Data Collection Points</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="images/Future%20state%20data%20collection%20Points.png"/>
+                    </imageobject>
+                </mediaobject>
+                </figure>
                 <para>The data collection groups were then transposed and used as the starting
-                    points for the idealized future state data workflow depicted in Figure 4. This
+                    points for the idealized future state data workflow depicted in <xref linkend="FutureStateDataCollectionPoints"/>. This
                     workflow outlines the idealized flow of data through the five key data
                     dimensions listed in chronological order:</para>
                 <para><emphasis role="underline">Enablers</emphasis>: Enablers are key processes,
@@ -420,7 +459,7 @@
         </section>
     </section>
     <section>
-        <title>References (as of 7/7/23)</title>
+        <title>References</title>
         <para>
             <orderedlist>
                 <listitem>
@@ -527,4 +566,3 @@
         </para>
     </section>
 </chapter>
-

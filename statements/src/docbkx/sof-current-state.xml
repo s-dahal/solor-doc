@@ -3,29 +3,29 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>SOF Current State</title>
+    <title>Summary of Findings – Current State of RWE Analytics</title>
     <section>
         <title>Purpose</title>
+        <para>In an effort to resolve the challenges posed by data interoperability and unlock the
+            full potential of real-world data (RWD) and real-world evidence (RWE) across the health
+            care system, the Systemic Harmonization and Interoperability Enhancement for Laboratory
+            Data (SHIELD) collaborative was formed. The SHIELD collaborative is a
+            multi-agency/stakeholder public-private initiative to develop and implement
+            collaborative policies and business models to overcome lab interoperability barriers.
+            Due to the complexity and vastness of this issue, SHIELD has embraced an ecosystem
+            perspective that recognizes no single entity has the authority or influence to
+            meaningfully impact the state of lab interoperability. SHIELD stakeholders include in
+            vitro diagnostic (IVD) manufacturers, commercial and clinical center laboratories,
+            professional organizations, electronic health record (EHR) vendors, Pew Charitable
+            Trusts, numerous federal agencies, standards development organizations, and patient
+            advocates. SHIELD’s overall objective is to ensure lab interoperability such that the
+            same type of device is described the same way throughout EHRs. </para>
+        <para>The purpose of this Summary of Findings – Current State of RWE Analytics including but
+            not limited to information retrieval and Knowledge Management and discovery is to
+            explore the current state of real-world data and real-world evidence as it pertains to
+            lab data interoperability, FDA market approval and post-market surveillance, public
+            health, clinical care, and related areas. </para>
     </section>
-    <para>In an effort to resolve the challenges posed by data interoperability and unlock the full
-        potential of real-world data (RWD) and real-world evidence (RWE) across the health care
-        system, the Systemic Harmonization and Interoperability Enhancement for Laboratory Data
-        (SHIELD) collaborative was formed. The SHIELD collaborative is a multi-agency/stakeholder
-        public-private initiative to develop and implement collaborative policies and business
-        models to overcome lab interoperability barriers. Due to the complexity and vastness of this
-        issue, SHIELD has embraced an ecosystem perspective that recognizes no single entity has the
-        authority or influence to meaningfully impact the state of lab interoperability. SHIELD
-        stakeholders include in vitro diagnostic (IVD) manufacturers, commercial and clinical center
-        laboratories, professional organizations, electronic health record (EHR) vendors, Pew
-        Charitable Trusts, numerous federal agencies, standards development organizations, and
-        patient advocates. SHIELD’s overall objective is to ensure lab interoperability such that
-        the same type of device is described the same way throughout EHRs. </para>
-        <para>The purpose of this
-        Summary of Findings – Current State of RWE Analytics including but not limited to
-        information retrieval and Knowledge Management and discovery is to explore the current state
-        of real-world data and real-world evidence as it pertains to lab data interoperability, FDA
-        market approval and post-market surveillance, public health, clinical care, and related
-        areas. </para>
     <section>
         <title>Introduction</title>
         <section>
@@ -68,10 +68,8 @@
         </section>
     </section>
     <section>
-        <title>Current State of RWD and RWE</title>
-        <section>
-            <title>RWD/RWE Background</title>
-            <para>RWD is defined by the FDA as data relating to patient health status and/or the
+        <title>RWD and RWE Background</title>
+        <para>RWD is defined by the FDA as data relating to patient health status and/or the
                 delivery of health care routine collected from a variety of sources as part of
                 receiving care or daily living. It encompasses most sources of health data derived
                 from common sources such as traditional clinical trial settings, including EHRs,
@@ -99,8 +97,7 @@
                 Independent of the research question(s) of interest, aggregating RWD across multiple
                 sites is necessary to establish sufficient representation of the study and control
                 cohorts is difficult based due to data interoperability barriers. </para>
-        </section>
-    </section>
+       </section>
     <section>
         <title>RWD Applications and Limitations</title>
         <para>Despite significant challenges, RWD and RWE present immense untapped potential within
@@ -172,7 +169,7 @@
                 Partnership (OMOP) analytics data set. Data and code provenance are tracked through
                 the platform. Privacy Preserving Record Linkage (PPRL) is used to securely connect
                 records while maintaining the anonymity of an individual across multiple records and
-                may enhance COVID-19 RWD research in N3C through deduplication of patient records,
+                may enhance COVID-19 RWD research in N3C through de-duplication of patient records,
                 linking patient records from different sources, and cohort discovery. Organizations
                 submitting data must have an approved Data Transfer Agreement (DTA), and an optional
                 Linkage Honest Broker Agreement (LHBA), through which organizations maintain control
@@ -242,11 +239,11 @@
                     controlled through a secure Distributed Research Network Portal. Although the data is safe, a 
                     limitation of this approach is that queries are returned with answers, not data. Therefore, a 
                     researcher does not have access to the data. </para>
-                <para>The scope of PCORnet-accessible data, plus its embedded expertise and patient insights, makes 
-                    the Network a powerful tool for researchers. Studies supported by PCORnet infrastructure 
-                    answer clinical questions that impact patients’ lives, including 2 recent studies that leverage 
-                    PCORnet to study which populations are impacted by Long COVID. (Highlights of PCORI-funded 
-                    research results). [11}</para> 
+                <para>The scope of PCORnet-accessible data, plus its embedded expertise and patient
+                insights, makes the Network a powerful tool for researchers. Studies supported by
+                PCORnet infrastructure answer clinical questions that impact patients’ lives,
+                including 2 recent studies that leverage PCORnet to study which populations are
+                impacted by Long COVID. (Highlights of PCORI-funded research results). [11]</para> 
                 </section>
         <section>
             <title>OHDSI</title>
@@ -259,7 +256,7 @@
                 that represent 810 million unique individuals. OHDSI works to the benefit of patients, providers, 
                 and researchers as well as larger organizations such as hospital systems and government 
                 agencies. The solutions and products that OHDSI develops are all open source. [12]</para>
-            <para>Successes</para>
+            <para><emphasis role="bold">Successes</emphasis></para>
             <para>OHDSI has made significant progress in the 8+ years since its founding, emerging from the 
                 legacy Observational Medical Outcomes Partnership (OMOP) program. Among its largest 
                 accomplishments, the collaborative has pieced together a federated database with patient 
@@ -278,19 +275,24 @@
                 interaction with their product. OHDSI also has an existing agreement with HL7 to integrate FHIR 
                 with the OMOP common data model in hopes of improving abilities to track and share data in 
                 the healthcare and research industries.</para>
-            <para>OHDSI has ventured into product development, including the Health Analytics Data-to-Evidence 
-                Suite (HADES), which is a set of open-source R packages specifically focusing on population level estimations, patient-level prediction, cohort construction, and evidence quality. They have 
-                also created ATLAS, a web-based application that supports design and execution of 
-                observational analyses to generate RWE from patient level data. [13}</para>
-            <para>Shortcomings</para>
-        <para>While OHDSI has demonstrated significant value, there are obstacles limiting its applications. 
-            OHDSI’s broad reach and many collaborative partnerships add value to the completeness and 
-            generalizability of information, the fact that the data is largely international complicates its use 
-            in federal regulatory applications, such as within FDA decision-making. Similarly, the structure 
-            of multiple disparate contributors restrictions data flexibility and transparency. The data is fully 
-            and irreversibly deidentified, which can limit analyses that require more individual or time stamped data, as well as complicating retrospective quality control. The lack of transparency is 
-            exacerbated by the fluidity of medical terminology, as the rigidity of black-box data wrangling
-            limit the agility required to respond to standard terminology changes.</para> 
+            <para>OHDSI has ventured into product development, including the Health Analytics
+                Data-to-Evidence Suite (HADES), which is a set of open-source R packages
+                specifically focusing on population level estimations, patient-level prediction,
+                cohort construction, and evidence quality. They have also created ATLAS, a web-based
+                application that supports design and execution of observational analyses to generate
+                RWE from patient level data. [13]</para>
+            <para><emphasis role="bold">Shortcomings</emphasis></para>
+        <para>While OHDSI has demonstrated significant value, there are obstacles limiting its
+                applications. OHDSI’s broad reach and many collaborative partnerships add value to
+                the completeness and generalizability of information, the fact that the data is
+                largely international complicates its use in federal regulatory applications, such
+                as within FDA decision-making. Similarly, the structure of multiple disparate
+                contributors restrictions data flexibility and transparency. The data is fully and
+                irreversibly de-identified, which can limit analyses that require more individual or
+                time stamped data, as well as complicating retrospective quality control. The lack
+                of transparency is exacerbated by the fluidity of medical terminology, as the
+                rigidity of black-box data wrangling limit the agility required to respond to
+                standard terminology changes.</para> 
             <para>One large consideration with OHDSI data is that of correlation versus causation. The nature of 
                 OHDSI’s data collection lends itself well towards evaluating trends, identifying associations, and 
                 investigating intersections of drugs, treatments, and diseases. While there exist myriad 
@@ -346,29 +348,32 @@
             12
             has demonstrated that interoperability risk can be mitigated to allow for robust and powerful 
             analytics.</para>
-        <para>Despite its many successes, the eMERGE Network experienced several challenges. The personal 
-            nature of genetic data emphasizes the requirements for patient privacy and deidentification. 
-            When aggregating data across various timepoints and institutions, there may be additional 
-            timepoints where privacy can be compromised. As such, proper deidentification must be 
-            prioritized at each phase of data collection. Also inherent to genetic data is the issue of patient 
-            consent. Within eMERGE’s ever-evolving network, ethical questions exist regarding whether an 
-            individual’s original consent allows for the sharing of data with database of Genotypes and 
-            Phenotypes (dpGaP) or expanding research to include additional phenotypes. [14] As data in 
-            consolidated systems grows, applications for its use evolve, and metadata analyses become 
-            possible, focus must remain on how to ethically honor patient consent as scope changes.</para>
-        <para>One of the primary obstacles eMERGE experienced was that of data interoperability. While data 
-            was checked for quality and common data codes were established, limitations within the 
-            transferability of information persist. There is no guarantee of data completeness within EHRs, 
-            especially when care is received outside the primary provider’s system. Additionally, while 
-            nomenclatures and ontologies such as SNOMED-CT and LOINC exist to uniformly represent 
-            medical concepts, there are no established processes to facilitate the secure, generalizable, and 
-            interoperable data exchange required to provide continued care between different health care 
-            systems. [16] This issue is exacerbated by the ever-changing knowledge and medical 
-            interpretations surrounding genomic data as any interoperability solutions must remain flexible 
-            to keep up as the field evolves. eMERGE developed various practices to address these 
-            challenges and communicated findings to the larger genomic research community. However, a 
-            consensus on data standards and data harmonization, while laborious, is required to perform 
-            multi-site analytics effectively. [14}</para>
+        <para>Despite its many successes, the eMERGE Network experienced several challenges. The
+                personal nature of genetic data emphasizes the requirements for patient privacy and
+                de-identification. When aggregating data across various timepoints and institutions,
+                there may be additional timepoints where privacy can be compromised. As such, proper
+                de-identification must be prioritized at each phase of data collection. Also
+                inherent to genetic data is the issue of patient consent. Within eMERGE’s
+                ever-evolving network, ethical questions exist regarding whether an individual’s
+                original consent allows for the sharing of data with database of Genotypes and
+                Phenotypes (dpGaP) or expanding research to include additional phenotypes. [14] As
+                data in consolidated systems grows, applications for its use evolve, and metadata
+                analyses become possible, focus must remain on how to ethically honor patient
+                consent as scope changes.</para>
+        <para>One of the primary obstacles eMERGE experienced was that of data interoperability.
+                While data was checked for quality and common data codes were established,
+                limitations within the transferability of information persist. There is no guarantee
+                of data completeness within EHRs, especially when care is received outside the
+                primary provider’s system. Additionally, while nomenclatures and ontologies such as
+                SNOMED-CT and LOINC exist to uniformly represent medical concepts, there are no
+                established processes to facilitate the secure, generalizable, and interoperable
+                data exchange required to provide continued care between different health care
+                systems. [16] This issue is exacerbated by the ever-changing knowledge and medical
+                interpretations surrounding genomic data as any interoperability solutions must
+                remain flexible to keep up as the field evolves. eMERGE developed various practices
+                to address these challenges and communicated findings to the larger genomic research
+                community. However, a consensus on data standards and data harmonization, while
+                laborious, is required to perform multi-site analytics effectively. [14]</para>
     </section>
         <section>
     <title>Sentinel</title>
@@ -441,18 +446,19 @@
             electronic recording of SDOH and BDOH data were slightly higher among primary care 
             physicians, with 89% of primary care physicians electronically recording SDOH data and 98% 
             electronically recording BDOH data in 2021.</para>
-       <para>In the past, research relied upon billing data from the UB-04 billing form as the source of 
-        structured data for research purposes. The UB-04 medical billing form is the standard claim 
-        form that healthcare organization use for the billing of inpatient or outpatient medical and 
-        mental health claims. [25-26] Although developed by the Centers for Medicare and Medicaid 
-        Services (CMS), the form has become the standard form used by all insurance carriers. This 
-        form captures all data in a structured format and captures diagnoses, treatments and 
-        procedures, type of admission, medications, and demographic information. While the UB-04 
-        and similar administrative data have been considered rich sources of data for research and can 
-        be readily deidentified, shared, and stored, much valuable information is lost. Coding systems 
-        used for billing purposes dilute data by use of non-specific coding systems which bundle similar 
-        conditions or procedures under the same code. Diagnosis data is captured using ICD10CM 
-        codes which will bundle similar diagnoses under the same code.</para>
+       <para>In the past, research relied upon billing data from the UB-04 billing form as the
+            source of structured data for research purposes. The UB-04 medical billing form is the
+            standard claim form that healthcare organization use for the billing of inpatient or
+            outpatient medical and mental health claims. [25-26] Although developed by the Centers
+            for Medicare and Medicaid Services (CMS), the form has become the standard form used by
+            all insurance carriers. This form captures all data in a structured format and captures
+            diagnoses, treatments and procedures, type of admission, medications, and demographic
+            information. While the UB-04 and similar administrative data have been considered rich
+            sources of data for research and can be readily de-identified, shared, and stored, much
+            valuable information is lost. Coding systems used for billing purposes dilute data by
+            use of non-specific coding systems which bundle similar conditions or procedures under
+            the same code. Diagnosis data is captured using ICD10CM codes which will bundle similar
+            diagnoses under the same code.</para>
         <para>Limitations to using RWD cannot be overlooked, ignored, or dismissed. Aggregation of data 
             from multiple sources may impact the availability of data in real-time. Time and effort to clean 
             or harmonize data from multiple or disparate sources increases time between availability of 
@@ -464,23 +470,24 @@
             challenging to collect and share due to a lack of data standards. Data standardization is 
             challenged by the various sources of patient reported data from paper or digital surveys, EHR 
             portals, medical devices, or other sources.</para>
-        <para>deally RWD for RWE is extracted directly from clinical documentation. EHR vendor-agnostic 
-            data and interoperability standards such as Health Information Exchanges (HIEs), Meaningful 
-            Use (MU), HL7, and FHIR were created to encourage or mandate data interoperability across 
-            healthcare organizations. Yet healthcare organizations continue to consider their healthcare 
-            data as a proprietary asset. Adding complexity to RWD is inconsistent and/or proprietary 
-            implementation health information technologies to meet the needs and requests of the 
-            healthcare organization. Data analysts or data wranglers are charged with making data 
-            understandable. Adding complexity to this challenge is inconsistent and/or proprietary 
-            implementation of each EHR implementation to meet the needs and requests of the healthcare 
-            organization. This inconsistent and/or proprietary database design and EHR implementation 
-            impacts query methodology for secondary use of clinical data across healthcare systems. Each 
-            EHR vendor database structure is different and proprietary. EHR vendors did not provide 
-            standardized terminology implementation support, resulting in overreliance on third party 
-            terminology vendors to provide the linkages between “provider-friendly” terminology and 
-            standardized clinical terminologies. These ‘provider friendly terms’ are often mapped to a 
-            broader than or inaccurate standardized language concept. Insight to the quality of these 
-            mappings is opaque and error prone.</para>
+        <para>Ideally RWD for RWE is extracted directly from clinical documentation. EHR
+            vendor-agnostic data and interoperability standards such as Health Information Exchanges
+            (HIEs), Meaningful Use (MU), HL7, and FHIR were created to encourage or mandate data
+            interoperability across healthcare organizations. Yet healthcare organizations continue
+            to consider their healthcare data as a proprietary asset. Adding complexity to RWD is
+            inconsistent and/or proprietary implementation health information technologies to meet
+            the needs and requests of the healthcare organization. Data analysts or data wranglers
+            are charged with making data understandable. Adding complexity to this challenge is
+            inconsistent and/or proprietary implementation of each EHR implementation to meet the
+            needs and requests of the healthcare organization. This inconsistent and/or proprietary
+            database design and EHR implementation impacts query methodology for secondary use of
+            clinical data across healthcare systems. Each EHR vendor database structure is different
+            and proprietary. EHR vendors did not provide standardized terminology implementation
+            support, resulting in overreliance on third party terminology vendors to provide the
+            linkages between “provider-friendly” terminology and standardized clinical
+            terminologies. These ‘provider friendly terms’ are often mapped to a broader than or
+            inaccurate standardized language concept. Insight to the quality of these mappings is
+            opaque and error prone.</para>
         <para>Clinical documentation by nursing or allied health professionals is rarely considered as a source 
             of data for research. Yet, their documentation may yield a rich source for data. Additionally, 
             their documentation is more likely to be captured in a structured manner in the form of 
@@ -511,6 +518,143 @@
             by the provider in their report. Data curators or NLP may be challenged to interpret the actual 
             clinical finding being described. Similarly, the presence or absence of a clinical finding may be 
             hidden in the clinical prose as well.</para>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>Stram M, Gigliotti T, Hartman D, Pitkus A, Huff SM, Riben M, et al. Logical
+                    Observation Identifiers Names and Codes for Laboratorians. Archives of Pathology
+                    &amp; Laboratory Medicine. 2020 Feb;144(2):229–39.</para>
+            </listitem>
+            <listitem>
+                <para>Office of the Commissioner. Real-World Evidence [Internet]. U.S. Food and Drug
+                    Administration. 2019. Available from:
+                    https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence</para>
+            </listitem>
+            <listitem>
+                <para>U.S. Food and Drug Administration. 21st Century Cures Act [Internet]. U.S.
+                    Food and Drug Administration. 2016. Available from:
+                    https://www.fda.gov/regulatory-information/selected-amendments-fdc-act/21st-century-cures-act</para>
+            </listitem>
+            <listitem>
+                <para>Beaulieu‐Jones BK, Finlayson SG, Yuan W, Altman RB, Kohane IS, Prasad V, et
+                    al. Examining the Use of Real‐World Evidence in the Regulatory Process. Clinical
+                    Pharmacology &amp; Therapeutics. 2019 Nov 14;107(4):843–52.</para>
+            </listitem>
+            <listitem>
+                <para>Abdalhamid B, Bilder CR, McCutchen EL, Hinrichs SH, Koepsell SA, Iwen PC.
+                    Assessment of Specimen Pooling to Conserve SARS CoV-2 Testing Resources.
+                    American Journal of Clinical Pathology. 2020 Apr 18;153(6):715–8.</para>
+            </listitem>
+            <listitem>
+                <para>National Center for Advancing Translational Science. National COVID Cohort
+                    Collaborative [Internet]. U.S. Department of Health and Human Services. NCATS
+                    2022. Available from: National COVID Cohort Collaborative (N3C) | National
+                    Center for Advancing Translational Sciences (nih.gov)</para>
+            </listitem>
+            <listitem>
+                <para>Patient-Centered Outcomes Research Institute. Highlights of PCORI-Funded
+                    Research Results [Internet]. PCORI 2022. Available from: Highlights of
+                    PCORI-Funded Research Results | PCORI</para>
+            </listitem>
+            <listitem>
+                <para>Forrest CB, McTigue KM, Hernandez AF, Cohen LW, Cruz H, Haynes K, et al.
+                    PCORnet® 2020: current state, accomplishments, and future directions. Journal of
+                    Clinical Epidemiology [Internet]. 2021 Jan [cited 2022 Dec 20];129:60–7.
+                    Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7521354/</para>
+            </listitem>
+            <listitem>
+                <para>Timbie JW, Rudin RS, Towe VL, Chen EK, Hunter LE, Case SR, et al. National
+                    Patient-Centered Clinical Research Network (PCORnet) Phase I: Final Evaluation
+                    Report [Internet]. RAND Corporation About this book; 2015 [cited 2022 Dec 20].
+                    Available from: https://www.jstor.org/stable/10.7249/j.ctt19rmdhd.10</para>
+            </listitem>
+            <listitem>
+                <para>Data [Internet]. The National Patient-Centered Clinical Research Network.
+                    [cited 2022 Dec 20]. Available from: https://pcornet.org/data/</para>
+            </listitem>
+            <listitem>
+                <para>Home [Internet]. The National Patient-Centered Clinical Research Network.
+                    Available from: https://pcornet.org/</para>
+            </listitem>
+            <listitem>
+                <para>Who We Are – OHDSI [Internet]. [cited 2022 Dec 20]. Available from:
+                    https://ohdsi.org/who-we-are/</para>
+            </listitem>
+            <listitem>
+                <para>OHDSI – Observational Health Data Sciences and Informatics [Internet]. [cited
+                    2022 Dec 20]. Available from: https://www.ohdsi.org/</para>
+            </listitem>
+            <listitem>
+                <para>Welcome to eMerge [Internet]. [cited 2022 Dec 20]. Available from:
+                    https://emerge-network.org/about-emerge/</para>
+            </listitem>
+            <listitem>
+                <para>Electronic Medical Records and Genomics (eMERGE) Network [Internet].
+                    Genome.gov. [cited 2022 Dec 20]. Available from:
+                    https://www.genome.gov/Funded-Programs-Projects/Electronic-Medical-Records-and-Genomics-Network-eMERGE#history</para>
+            </listitem>
+            <listitem>
+                <para>Gottesman O, Kuivaniemi H, Tromp G, Faucett WA, Li R, Manolio TA, et al. The
+                    Electronic Medical Records and Genomics (eMERGE) Network: past, present, and
+                    future. Genetics in Medicine. 2013 Jun 6;15(10):761–71.</para>
+            </listitem>
+            <listitem>
+                <para>McCarty CA, Chisholm RL, Chute CG, Kullo IJ, Jarvik GP, Larson EB, et al. The
+                    eMERGE Network: A consortium of biorepositories linked to electronic medical
+                    records data for conducting genomic studies. BMC Medical Genomics. 2011 Jan
+                    26;4(1).</para>
+            </listitem>
+            <listitem>
+                <para>About the Food and Drug Administration (FDA) Sentinel Initiative | Sentinel
+                    Initiative [Internet]. www.sentinelinitiative.org. Available from:
+                    https://www.sentinelinitiative.org/about</para>
+            </listitem>
+            <listitem>
+                <para>Brown JS, Maro JC, Nguyen M, Ball R. Using and improving distributed data
+                    networks to generate actionable evidence: the case of real-world outcomes in the
+                    Food and Drug Administration’s Sentinel system. Journal of the American Medical
+                    Informatics Association. 2020 Apr 11;27(5):793–7.</para>
+            </listitem>
+            <listitem>
+                <para>Adimadhyam S, Barreto EF, Cocoros NM, Toh S, Brown JS, Maro JC, et al.
+                    Leveraging the Capabilities of the FDA’s Sentinel System To Improve Kidney Care.
+                    Journal of the American Society of Nephrology. 2020 Oct
+                    19;31(11):2506–16.</para>
+            </listitem>
+            <listitem>
+                <para>Findlay S. The FDA’s Sentinel Initiative [Internet]. Health Affairs. 2015
+                    [cited 2022 Dec 20]. Available from:
+                    https://www.healthaffairs.org/do/10.1377/hpb20150604.936915/</para>
+            </listitem>
+            <listitem>
+                <para>Drug Studies | Sentinel Initiative [Internet]. www.sentinelinitiative.org.
+                    [cited 2022 Dec 20]. Available from:
+                    https://www.sentinelinitiative.org/studies/drugs</para>
+            </listitem>
+            <listitem>
+                <para>World of Drug Safety Module [Internet]. World of Drug Safety Unit List:
+                    Overview Of Drug Safety. [cited 2022Dec16]. Available from:
+                    https://www.accessdata.fda.gov/scripts/cderworld/index.cfm?action=drugsafety%3Amain&amp;unit=1&amp;lesson=1&amp;topic=8&amp;page=</para>
+            </listitem>
+            <listitem>
+                <para>The American Recovery and Reinvestment Act, enacted in February 2009, includes
+                    many measures to modernize our nation’s infrastructure, one of which is the
+                    Health Information Technology for Economic and Clinical Health (HITECH) Act. The
+                    HITECH Act supports the concept of meaningful use (MU)</para>
+            </listitem>
+            <listitem>
+                <para>National Uniform Billing Committee Official Data Specifications Manual.
+                    National Uniform Billing Committee (UBC) [Internet]. www.nubc.org. [cited 2022
+                    Dec 20]. Available from: https://www.nubc.org/subscription-information.</para>
+            </listitem>
+            <listitem>
+                <para>Professional paper claim form (CMS-1500) | CMS [Internet]. www.cms.gov.
+                    Available from:
+                    https://www.cms.gov/Medicare/Billing/ElectronicBillingEDITrans/1500</para>
+            </listitem>
+        </orderedlist>
     </section>
 </chapter>
         

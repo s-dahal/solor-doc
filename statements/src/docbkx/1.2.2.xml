@@ -6,8 +6,6 @@
     <title>Summary of Findings: Technologies that Support Harmonization of Terminology Standards</title>
     <section>
         <title>Introduction</title>
-        <para><emphasis role="bold">Motivation</emphasis>
-        </para>
         <para>Health IT standards are critical for representing and sharing health data in a large
             health ecosystem. Multiple users with roles in various fields can produce and access
             health data, compelling the need for a common way to format the data standards. This is
@@ -36,263 +34,310 @@
             interoperability. The need for a knowledge management platform and integrated laboratory
             data system is the same; coordinating knowledge management practices across
             organizations and systems to achieve a safe and effective healthcare system. </para>
-    </section>
-    <section>
-        <title>Findings</title>
-        <para>While High Reliability Organization (HRO) principles and IKM serve as a
-            well-structured architecture to support the harmonization and standardization of
-            disparate clinical terminology standards, there are key advancements that must be made
-            and technologies that must be utilized to optimize this work. </para>
-        <para><emphasis role="bold">Data Management </emphasis></para>
-        <para>Data management is the safe and efficient storage, management, and use of collected
-            data to support informed decision making and improve outcomes for individuals and
-            organizations. This is a critical area of the healthcare enterprise that must undergo
-            advancements to support optimized knowledge standard harmonization, improved patient
-            safety and outcomes, and enhanced data quality. [1] While data management covers a wide
-            range of processes and functions, our work focuses on three key areas: </para>
-        <para>• <emphasis role="bold">Ease of Access</emphasis> – While an increasing number of
-            healthcare organizations rely on Information Technology (IT) systems to store, manage,
-            and access data collected from a variety of sources, the ability to identify, access,
-            and then utilize that data in an impactful and meaningful way is an ongoing challenge.
-            Our work aims to improve both author’s and user’s ability to efficiently capture data
-            from across the healthcare ecosystem and to effectively analyze that data for actionable
-            decision making. </para>
-        <para>• <emphasis role="bold">Integrating Disparate Data Sources</emphasis> – As healthcare
-            organizations capture data from different sources, it is critical that disparate
-            terminology standards and data representation can be integrated into a common model.
-            While various terminology standards exist, the formatting and representation of clinical
-            data across standards can vary significantly, leading to issues with data
-            interoperability and suboptimal concept representation between standards and systems.
-            Using a standardized and repeatable process, our team will work to ensure the common
-            model can integrate and represent data from a variety of sources, including well
-            established standards and newly emerging systems. </para>
-        <para>• <emphasis role="bold">Data Integrity</emphasis> – Patient care and patient safety
-            are innately tied to the quality and integrity of their healthcare data. Currently, as
-            data is transferred within and between healthcare systems, including EHRs, LISs, and
-            pharmaceutical systems, it can often lose meaning and pertinent information regarding
-            relationships and associated concepts. Our work will develop a common model that will
-            use a standardized process to ensure data integrated from disparate data sources
-            maintains meaning and all pertinent information throughout data transmission, storage,
-            and use. Tools such as universally unique identifiers (UUID) will support Tinkar with
-            the identification of semantically equivalent concepts and support optimal data
-            representation across terminology standards. </para>
-        <para><emphasis>Tinkar</emphasis>
-        </para>
-        <para>Terminology Knowledge Architecture (Tinkar) is a self-describing knowledge
-            architecture intended to represent other terminology standards in a human readable and
-            machine processable format. Tinkar supports improvements to data management by
-            integrating terminology standards into a common model that efficiently captures granular
-            details and data sources of each standard for rapid and scalable data querying and
-            analysis while maintaining meaning. Versioning is another important component of
-            maintaining data integrity. Tinkar will maintain a detailed version history to clearly
-            convey how concepts have changed over time and will allow authors to preview or test
-            edits to concepts before pushing to a live environment to maintain appropriate concept
-            representations and relationships. [2] As new healthcare systems or terminology
-            standards emerge, the data they represent will be “Tinkarized” and integrated into
-            Tinkar and the IKM architecture. </para>
-        <para><emphasis>Protocol Buffers</emphasis>
-        </para>
-        <para>Protocol buffers are an agnostic and unopinionated way to represent structured and
-            packeted data that can easily be pushed or pulled to different IT systems. This system
-            and standard-neutral representation of data allows a wider range of systems and coding
-            languages to read the same data than traditional methods and supports rapid data
-            transmission, long-term storage, forward and backward compatibility, and improved data
-            querying. Protocol buffers will allow Tinkar to import an encoded concept from one
-            system’s terminology standard, store and manage that data, and then transmit that data
-            with maintained data integrity to another system to display the concept in the
-            disparate, local terminology standard. [3] </para>
-        <para><emphasis>Universally Unique Identifiers (UUID) v5</emphasis>
-        </para>
-        <para>UUID version 5 uses a 128-bit label to idempotently represent data in a completely
-            unique and unambiguous way. Idempotent data representation means that identical seed
-            values or concepts will be labeled with the same UUID, supporting identification of
-            semantically equivalent concepts within and between terminology standards and optimized
-            access to data. Additionally, by labeling each concept, semantic, and pattern within
-            Tinkar with a UUID, our team is able to integrate a variety of terminology standards
-            while avoiding duplicative or redundant concepts, preventing accidental and
-            inappropriate labeling of a concept or component, and harmonizing internal
-            representation of knowledge standards. [4] </para>
-        <para><emphasis role="bold">Change Management</emphasis>
-        </para>
-        <para>Change management is simply an approach to identify, implement, and support necessary
-            organizational changes. Despite each terminology standard and healthcare system
-            employing some form of change management, they are implemented asynchronously and lack
-            detailed tracking and communication of changes. Even within a terminology standard the
-            change management for models, definitions, and structure can vary in time and frequency.
-            Supporting harmonization of knowledge standards through IKM requires a comprehensive
-            change management strategy to track, identify, and reflect independent changes across
-            systems to appropriately represent updated concepts in Tinkar based on source code
-            changes. </para>
-        <para><emphasis>Change Sets</emphasis>
-        </para>
-        <para>Change sets are a group of changes that are accompanied by meta-information that
-            clearly and concisely describe the packaged changes as they are committed to a live
-            environment. Change sets support optimized change management by providing granular
-            details of each change and enables revisions to be made if concept changes need
-            corrections. [5] </para>
-        <para><emphasis>STAMP</emphasis>
-        </para>
-        <para>STAMP is a syntax used to represent current and previous terminology assets (Concepts,
-            patterns, and semantics) in Tinkar using the following five requirements: </para>
-        <para>1. <emphasis role="bold">Status</emphasis> – An indication of whether an asset is
-            active or inactive </para>
-        <para>2. <emphasis role="bold">Time</emphasis> – The time and time zone at which a change
-            was recorded </para>
-        <para>3. <emphasis role="bold">Author</emphasis> – The author of a change, identified using
-            the appropriate granularity </para>
-        <para>4. <emphasis role="bold">Module</emphasis> – An organizational label for the larger
-            asset to which a component belongs, such as code, system, or edition.</para>
-        <para> 5. <emphasis role="bold">Path</emphasis> – The production component of the previously
-            defined organization, such as development, testing, staging, or deployment [2] </para>
-        <para>STAMP is not only used to version Tinkar data, but it is also a requirement for all
-            Tinkar assets, existing and new. Ensuring all data follows this syntax supports optimal
-            change management and versioning practices, like maintaining detailed versioning history
-            by marking concepts as active or inactive rather than deleting prior versions,
-            identifying authors of each version to know who and when concepts were changed, and
-            testing and previewing changes before they are pushed to a live environment. [2] </para>
-        <para><emphasis>Key Value Store </emphasis></para>
-        <para>A key value store, or key value database, stores data as a value and assigns a key to
-            that data, which is then used to track, retrieve, and update or change the data
-            associated with a given key. When used in parallel with STAMP, a key value store would
-            maintain the key for a certain value/data whose status changed from active to inactive
-            or underwent other changes to update author and time, further supporting Tinkar’s
-            detailed versioning and change management best practices. This type of database would
-            also support rapid and efficient querying of healthcare data to support improved patient
-            outcomes, public health trends, and policy making. [6] </para>
-        <para><emphasis role="bold">Dependency Management </emphasis></para>
-        <para>Harmonization of multiple terminology standards and healthcare systems using IKM will
-            require an extensive approach to dependency management, the process and approach to
-            managing dependencies between people, process, and systems. With Tinkar, outputs to one
-            system can often originate from a wide range of terminology standards or systems, which
-            leads to multiple dependencies. It is not only important for our team to identify
-            dependencies, but we must also categorize them to understand the direction, frequency,
-            and type of dependency and to optimally prioritize and mitigate potential issues caused
-            by these relationships. For example, LIDR has a dependency on both SNOMED CT and LOINC
-            and when SNOMED CT or LOINC are updated, validation must be performed in a comprehensive
-            manner to determine if LIDR is correctly using the current interpretation of said
-            dependent standards (SNOMED CT and LOINC). As we continue to work towards IKM, it is
-            critical that we select and implement technologies that will support the management of
-            these dependencies to reduce patient safety issues and unnecessary complications. [7] </para>
-        <para><emphasis>Maven</emphasis>
-        </para>
-        <para>Maven is a project management tool with dependency management features for complex,
-            multi-module projects. Maven compliments STAMP and key value stores because it allows
-            project owners to name artifacts and specify the version and build stage (development,
-            testing, deployment, etc.) involved in a dependency. Maven can also import dependencies
-            from other projects, supporting continual process improvement and integration of new
-            systems and terminology standards. [8] </para>
-        <para><emphasis>Nexus</emphasis>
-        </para>
-        <para>Nexus is a repository used to manage components, binaries, and build artifacts across
-            software. In Komet this allows the developer to organize and control the versions of
-            data that are released, stored, and made available to users (of Tinkar data). Nexus
-            provides enterprise control through centralization, storage, development support, and
-            scale. [9] </para>
-        <para><emphasis>Origin data</emphasis>
-        </para>
-        <para>An optimized representation of a source knowledge standard is generated to simplify
-            the process of putting the standard’s data into a common model. This data will leverage
-            Maven and Nexus to manage dependency complexity of systems using Tinkar data, since
-            individual knowledge standards have both physical and logical model for how they are
-            constructed, packaged, and distributed. An important aspect in managing dependency of
-            harmonized standards is organizing the source data (raw) into structures. Origin data
-            will repackage the source terminology data into a consistent and readable format, which
-            alleviates the need to write individual ways to parse and read through the different
-            variations of file structures. Origin data also allows the addition of data that is not
-            found in the source terminology data (e.g., provenance, dependencies (LIDR depends on
-            LOINC and SNOMED). </para>
-        <para><emphasis>Starter data</emphasis>
-        </para>
-        <para>Tinkar Starter Data acts as the foundational dataset for SHIELD's Komet application.
-            It conforms to the Tinkar Data Model and is the minimum viable dataset required for
-            Komet usability. The Tinkar Starter Data consists of a Tinkar Concept Model Hierarchy
-            which defines origin and destination (a.k.a. parent/child) concept relationships, as
-            well as Tinkar Patterns which define the structure and usage for how Tinkar Concepts may
-            be represented. The Tinkar data model is extendable and allows for the importation and
-            harmonization of other terminology standards such as SNOMED CT and LOINC and enables a
-            lossless transform of knowledge standards to the Tinkar format. Starter data will
-            leverage Maven and Nexus to manage dependency complexity of systems using Tinkar data. </para>
-        <para><emphasis role="bold">User Interface and Experience </emphasis></para>
-        <para>Harmonizing self-sustaining and contained knowledge standards requires a robust and
-            tailored User Interface and User Experience (UI/UX) design. A strong UI/UX interface
-            meets the needs of the user, is intuitive to use, and provides an environment for
-            tackling complex terminological overlaps between various standards which is needed for
-            properly harmonized knowledge. Without a good user interface, work to harmonize
-            standards cannot be done. One aspect of good UI/UX design is that is provides users a
-            visible interface to work with different coding standards. All users cannot be expected
-            to be proficient coders who can readily access and use the backend software/coding
-            language. UI/UX is all about the user, and users come from a variety of backgrounds
-            including laboratory technicians, clinicians, researchers, regulatory personnel, and
-            others. Good UI/UX is built off human centric design principles and provides components
-            that give the user the ability to create, edit, and retire knowledge. Tinkar core is the
-            harmonization which lives in the backend, but UI/UX provides an interface that allows
-            users to interact with the logic and harmonize between different coding standards. The
-            UI/UX is tailored to the different users and their roles and their needs. UI/UX can also
-            incorporate features such as multiple languages and dialects, which allow for a user to
-            have a tailored experience and can be focused on a particular regional preference for
-            descriptions and other text information to emphasize different features which may prompt
-            the desired response or use from the user. </para>
-        <para><emphasis>Komet</emphasis>
-        </para>
-        <para>Komet serves as the knowledge management integrated development environment (IDE) for
-            SHIELD. An IDE is a software used to build applications that combines developer tools
-            into one graphical user interface (GUI). IDE are equipped with a well-integrated UI
-            which allows the developer to write, edit, debug, and compile code and automate tasks
-            for software development. [10] This IDE is open source, meaning the code being developed
-            is open to the public and available for all to edit and distribute. This decentralized
-            production model is a movement in the software community and has led to major
-            advancements in code and is often cheaper, flexible, and has more permanency that
-            private or proprietary software. [11] Komet has automated features such as a text
-            editor, build automation, and debugger, and can support additional features like
-            refactoring, code search, and continuous integration and continuous deployment (CI/CD)
-            tools. Komet supports plug ins and extensions for developers to customize workflows and
-            needs. [12] All standard harmonization will be facilitated within Komet. </para>
-        <para><emphasis>Coordinates</emphasis>
-        </para>
-        <para>Tinkar is the data model for knowledge harmonization and integrated knowledge
-            management. The ability to query these Tinkar representations, such as comparing active
-            and inactive components (representations) across time, is achieved through coordinates.
-            [2] Coordinates include concepts such as STAMP, Language, Dialect, clinical domains, and
-            more. STAMP is the most basic of the coordinates, and through which all content is
-            filtered. Examples of STAMP coordinates include the most recent version, a set of data
-            from several versions, and all active components only. </para>
-        <para>• Language Coordinates – Control the terms to be displayed based on a language/dialect
-            and list of synonyms. </para>
-        <para>• Logic Coordinates – Identify results from Description Logic Classifiers and
-            different output versions over time. </para>
-        <para>• Navigation Coordinates – Allow users to view and search certain concepts, with
-            examples including stated v. inferred relationships for SNOMED CT, and concepts
-            included/excluded for certain domains. </para>
-        <para>The ability to search, display, and navigate concepts and semantics requires the
-            ability to calculate combinations of content based on different coordinates. The current
-            Tinkar reference model is expressive enough to represent any terminology and future
-            iterations will require harmonized implementation guides for each terminology. [2] </para>
-        <para><emphasis role="bold">Quality Assurance</emphasis>
-        </para>
-        <para>Quality assurance (QA) is important when harmonizing knowledge standards and is
-            critical when assessing if a software meets the users’ requirements. Constraints can be
-            used to perform general QA on content that is represented in a Tinkar implementation and
-            is part of business requirements. Constraints in Tinkar are used to represent standard
-            terminology artifacts and are used to ensure terminologies represented in an
-            implementation are consistent when queried and displayed, and ultimately ensure the
-            integration is high quality and reliable for patient care. Furthermore, to ensure the
-            quality of items that are transformed and integrated together a type of classifier can
-            be created to check for issues or errors in Tinkar data. </para>
-        <para><emphasis>ELK Classifier </emphasis></para>
-        <para>Komet’s ability to use a description logic classifier to detect equivalences and
-            errors between concepts is important when harmonizing knowledge standards. In
-            particular, the ELK Classifier, a description-logic classifier, is an ontology reasoner
-            that supports OWL 2EL profile and provides a quick reasoning engine for OWL EL because
-            current features and reasoning tasks are limited (although this is fine for SNOMED CT).
-            This classifier reasons over Tinkar data and distinguishes if the asserted facts on
-            concepts (via semantics) are true. [13] </para>
+        <section>
+            <title>Findings</title>
+            <para>While High Reliability Organization (HRO) principles and IKM serve as a
+                well-structured architecture to support the harmonization and standardization of
+                disparate clinical terminology standards, there are key advancements that must be
+                made and technologies that must be utilized to optimize this work. </para>
+            <section>
+                <title>Data Management</title>
+                <para>Data management is the safe and efficient storage, management, and use of
+                    collected data to support informed decision making and improve outcomes for
+                    individuals and organizations. This is a critical area of the healthcare
+                    enterprise that must undergo advancements to support optimized knowledge
+                    standard harmonization, improved patient safety and outcomes, and enhanced data
+                    quality. [1] While data management covers a wide range of processes and
+                    functions, our work focuses on three key areas: </para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Ease of Access</emphasis> – While an increasing
+                            number of healthcare organizations rely on Information Technology (IT)
+                            systems to store, manage, and access data collected from a variety of
+                            sources, the ability to identify, access, and then utilize that data in
+                            an impactful and meaningful way is an ongoing challenge. Our work aims
+                            to improve both author’s and user’s ability to efficiently capture data
+                            from across the healthcare ecosystem and to effectively analyze that
+                            data for actionable decision making. </para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Integrating Disparate Data Sources</emphasis> –
+                            As healthcare organizations capture data from different sources, it is
+                            critical that disparate terminology standards and data representation
+                            can be integrated into a common model. While various terminology
+                            standards exist, the formatting and representation of clinical data
+                            across standards can vary significantly, leading to issues with data
+                            interoperability and suboptimal concept representation between standards
+                            and systems. Using a standardized and repeatable process, our team will
+                            work to ensure the common model can integrate and represent data from a
+                            variety of sources, including well established standards and newly
+                            emerging systems. </para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Data Integrity</emphasis> – Patient care and
+                            patient safety are innately tied to the quality and integrity of their
+                            healthcare data. Currently, as data is transferred within and between
+                            healthcare systems, including EHRs, LISs, and pharmaceutical systems, it
+                            can often lose meaning and pertinent information regarding relationships
+                            and associated concepts. Our work will develop a common model that will
+                            use a standardized process to ensure data integrated from disparate data
+                            sources maintains meaning and all pertinent information throughout data
+                            transmission, storage, and use. Tools such as universally unique
+                            identifiers (UUID) will support Tinkar with the identification of
+                            semantically equivalent concepts and support optimal data representation
+                            across terminology standards. </para>
+                    </listitem>
+                </orderedlist>
+                <para><emphasis>Tinkar</emphasis>
+                </para>
+                <para>Terminology Knowledge Architecture (Tinkar) is a self-describing knowledge
+                    architecture intended to represent other terminology standards in a human
+                    readable and machine processable format. Tinkar supports improvements to data
+                    management by integrating terminology standards into a common model that
+                    efficiently captures granular details and data sources of each standard for
+                    rapid and scalable data querying and analysis while maintaining meaning.
+                    Versioning is another important component of maintaining data integrity. Tinkar
+                    will maintain a detailed version history to clearly convey how concepts have
+                    changed over time and will allow authors to preview or test edits to concepts
+                    before pushing to a live environment to maintain appropriate concept
+                    representations and relationships. [2] As new healthcare systems or terminology
+                    standards emerge, the data they represent will be “Tinkarized” and integrated
+                    into Tinkar and the IKM architecture. </para>
+                <para><emphasis>Protocol Buffers</emphasis>
+                </para>
+                <para>Protocol buffers are an agnostic and unopinionated way to represent structured
+                    and packeted data that can easily be pushed or pulled to different IT systems.
+                    This system and standard-neutral representation of data allows a wider range of
+                    systems and coding languages to read the same data than traditional methods and
+                    supports rapid data transmission, long-term storage, forward and backward
+                    compatibility, and improved data querying. Protocol buffers will allow Tinkar to
+                    import an encoded concept from one system’s terminology standard, store and
+                    manage that data, and then transmit that data with maintained data integrity to
+                    another system to display the concept in the disparate, local terminology
+                    standard. [3] </para>
+                <para><emphasis>Universally Unique Identifiers (UUID) v5</emphasis>
+                </para>
+                <para>UUID version 5 uses a 128-bit label to idempotently represent data in a
+                    completely unique and unambiguous way. Idempotent data representation means that
+                    identical seed values or concepts will be labeled with the same UUID, supporting
+                    identification of semantically equivalent concepts within and between
+                    terminology standards and optimized access to data. Additionally, by labeling
+                    each concept, semantic, and pattern within Tinkar with a UUID, our team is able
+                    to integrate a variety of terminology standards while avoiding duplicative or
+                    redundant concepts, preventing accidental and inappropriate labeling of a
+                    concept or component, and harmonizing internal representation of knowledge
+                    standards. [4] </para>
+            </section>
+        </section>
+        <section>
+            <title>Change Management</title>
+            <para>Change management is simply an approach to identify, implement, and support
+                necessary organizational changes. Despite each terminology standard and healthcare
+                system employing some form of change management, they are implemented asynchronously
+                and lack detailed tracking and communication of changes. Even within a terminology
+                standard the change management for models, definitions, and structure can vary in
+                time and frequency. Supporting harmonization of knowledge standards through IKM
+                requires a comprehensive change management strategy to track, identify, and reflect
+                independent changes across systems to appropriately represent updated concepts in
+                Tinkar based on source code changes. </para>
+            <para><emphasis>Change Sets</emphasis>
+            </para>
+            <para>Change sets are a group of changes that are accompanied by meta-information that
+                clearly and concisely describe the packaged changes as they are committed to a live
+                environment. Change sets support optimized change management by providing granular
+                details of each change and enables revisions to be made if concept changes need
+                corrections. [5] </para>
+            <para><emphasis>STAMP</emphasis>
+            </para>
+            <para>STAMP is a syntax used to represent current and previous terminology assets
+                (Concepts, patterns, and semantics) in Tinkar using the following five requirements: </para>
+            <para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Status</emphasis> – An indication of whether an
+                            asset is active or inactive </para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Time</emphasis> – The time and time zone at
+                            which a change was recorded </para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Author</emphasis> – The author of a change,
+                            identified using the appropriate granularity </para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Module</emphasis> – An organizational label for
+                            the larger asset to which a component belongs, such as code, system, or
+                            edition.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Path</emphasis> – The production component of
+                            the previously defined organization, such as development, testing,
+                            staging, or deployment [2] </para>
+                    </listitem>
+                </orderedlist>
+            </para>
+            <para>STAMP is not only used to version Tinkar data, but it is also a requirement for
+                all Tinkar assets, existing and new. Ensuring all data follows this syntax supports
+                optimal change management and versioning practices, like maintaining detailed
+                versioning history by marking concepts as active or inactive rather than deleting
+                prior versions, identifying authors of each version to know who and when concepts
+                were changed, and testing and previewing changes before they are pushed to a live
+                environment. [2] </para>
+            <para><emphasis>Key Value Store </emphasis></para>
+            <para>A key value store, or key value database, stores data as a value and assigns a key
+                to that data, which is then used to track, retrieve, and update or change the data
+                associated with a given key. When used in parallel with STAMP, a key value store
+                would maintain the key for a certain value/data whose status changed from active to
+                inactive or underwent other changes to update author and time, further supporting
+                Tinkar’s detailed versioning and change management best practices. This type of
+                database would also support rapid and efficient querying of healthcare data to
+                support improved patient outcomes, public health trends, and policy making. [6] </para>
+        </section>
+        <section>
+            <title>Dependency Management</title>
+            <para>Harmonization of multiple terminology standards and healthcare systems using IKM
+                will require an extensive approach to dependency management, the process and
+                approach to managing dependencies between people, process, and systems. With Tinkar,
+                outputs to one system can often originate from a wide range of terminology standards
+                or systems, which leads to multiple dependencies. It is not only important for our
+                team to identify dependencies, but we must also categorize them to understand the
+                direction, frequency, and type of dependency and to optimally prioritize and
+                mitigate potential issues caused by these relationships. For example, LIDR has a
+                dependency on both SNOMED CT and LOINC and when SNOMED CT or LOINC are updated,
+                validation must be performed in a comprehensive manner to determine if LIDR is
+                correctly using the current interpretation of said dependent standards (SNOMED CT
+                and LOINC). As we continue to work towards IKM, it is critical that we select and
+                implement technologies that will support the management of these dependencies to
+                reduce patient safety issues and unnecessary complications. [7] </para>
+            <para><emphasis>Maven</emphasis>
+            </para>
+            <para>Maven is a project management tool with dependency management features for
+                complex, multi-module projects. Maven compliments STAMP and key value stores because
+                it allows project owners to name artifacts and specify the version and build stage
+                (development, testing, deployment, etc.) involved in a dependency. Maven can also
+                import dependencies from other projects, supporting continual process improvement
+                and integration of new systems and terminology standards. [8] </para>
+            <para><emphasis>Nexus</emphasis>
+            </para>
+            <para>Nexus is a repository used to manage components, binaries, and build artifacts
+                across software. In Komet this allows the developer to organize and control the
+                versions of data that are released, stored, and made available to users (of Tinkar
+                data). Nexus provides enterprise control through centralization, storage,
+                development support, and scale. [9] </para>
+            <para><emphasis>Origin data</emphasis>
+            </para>
+            <para>An optimized representation of a source knowledge standard is generated to
+                simplify the process of putting the standard’s data into a common model. This data
+                will leverage Maven and Nexus to manage dependency complexity of systems using
+                Tinkar data, since individual knowledge standards have both physical and logical
+                model for how they are constructed, packaged, and distributed. An important aspect
+                in managing dependency of harmonized standards is organizing the source data (raw)
+                into structures. Origin data will repackage the source terminology data into a
+                consistent and readable format, which alleviates the need to write individual ways
+                to parse and read through the different variations of file structures. Origin data
+                also allows the addition of data that is not found in the source terminology data
+                (e.g., provenance, dependencies (LIDR depends on LOINC and SNOMED). </para>
+            <para><emphasis>Starter data</emphasis>
+            </para>
+            <para>Tinkar Starter Data acts as the foundational dataset for SHIELD's Komet
+                application. It conforms to the Tinkar Data Model and is the minimum viable dataset
+                required for Komet usability. The Tinkar Starter Data consists of a Tinkar Concept
+                Model Hierarchy which defines origin and destination (a.k.a. parent/child) concept
+                relationships, as well as Tinkar Patterns which define the structure and usage for
+                how Tinkar Concepts may be represented. The Tinkar data model is extendable and
+                allows for the importation and harmonization of other terminology standards such as
+                SNOMED CT and LOINC and enables a lossless transform of knowledge standards to the
+                Tinkar format. Starter data will leverage Maven and Nexus to manage dependency
+                complexity of systems using Tinkar data. </para>
+        </section>
+        <section><title>User Interface and Experience </title>
+                        <para>Harmonizing self-sustaining and contained knowledge standards requires a robust
+                and tailored User Interface and User Experience (UI/UX) design. A strong UI/UX
+                interface meets the needs of the user, is intuitive to use, and provides an
+                environment for tackling complex terminological overlaps between various standards
+                which is needed for properly harmonized knowledge. Without a good user interface,
+                work to harmonize standards cannot be done. One aspect of good UI/UX design is that
+                is provides users a visible interface to work with different coding standards. All
+                users cannot be expected to be proficient coders who can readily access and use the
+                backend software/coding language. UI/UX is all about the user, and users come from a
+                variety of backgrounds including laboratory technicians, clinicians, researchers,
+                regulatory personnel, and others. Good UI/UX is built off human centric design
+                principles and provides components that give the user the ability to create, edit,
+                and retire knowledge. Tinkar core is the harmonization which lives in the backend,
+                but UI/UX provides an interface that allows users to interact with the logic and
+                harmonize between different coding standards. The UI/UX is tailored to the different
+                users and their roles and their needs. UI/UX can also incorporate features such as
+                multiple languages and dialects, which allow for a user to have a tailored
+                experience and can be focused on a particular regional preference for descriptions
+                and other text information to emphasize different features which may prompt the
+                desired response or use from the user. </para>
+            <para><emphasis>Komet</emphasis>
+            </para>
+            <para>Komet serves as the knowledge management integrated development environment (IDE)
+                for SHIELD. An IDE is a software used to build applications that combines developer
+                tools into one graphical user interface (GUI). IDE are equipped with a
+                well-integrated UI which allows the developer to write, edit, debug, and compile
+                code and automate tasks for software development. [10] This IDE is open source,
+                meaning the code being developed is open to the public and available for all to edit
+                and distribute. This decentralized production model is a movement in the software
+                community and has led to major advancements in code and is often cheaper, flexible,
+                and has more permanency that private or proprietary software. [11] Komet has
+                automated features such as a text editor, build automation, and debugger, and can
+                support additional features like refactoring, code search, and continuous
+                integration and continuous deployment (CI/CD) tools. Komet supports plug ins and
+                extensions for developers to customize workflows and needs. [12] All standard
+                harmonization will be facilitated within Komet. </para>
+            <para><emphasis>Coordinates</emphasis>
+            </para>
+            <para>Tinkar is the data model for knowledge harmonization and integrated knowledge
+                management. The ability to query these Tinkar representations, such as comparing
+                active and inactive components (representations) across time, is achieved through
+                coordinates. [2] Coordinates include concepts such as STAMP, Language, Dialect,
+                clinical domains, and more. STAMP is the most basic of the coordinates, and through
+                which all content is filtered. Examples of STAMP coordinates include the most recent
+                version, a set of data from several versions, and all active components only. </para>
+            <para>• Language Coordinates – Control the terms to be displayed based on a
+                language/dialect and list of synonyms. </para>
+            <para>• Logic Coordinates – Identify results from Description Logic Classifiers and
+                different output versions over time. </para>
+            <para>• Navigation Coordinates – Allow users to view and search certain concepts, with
+                examples including stated v. inferred relationships for SNOMED CT, and concepts
+                included/excluded for certain domains. </para>
+            <para>The ability to search, display, and navigate concepts and semantics requires the
+                ability to calculate combinations of content based on different coordinates. The
+                current Tinkar reference model is expressive enough to represent any terminology and
+                future iterations will require harmonized implementation guides for each
+                terminology. [2] </para>
+        </section>
+        <section>
+            <title>Quality Assurance</title>
+            <para>Quality assurance (QA) is important when harmonizing knowledge standards and is
+                critical when assessing if a software meets the users’ requirements. Constraints can
+                be used to perform general QA on content that is represented in a Tinkar
+                implementation and is part of business requirements. Constraints in Tinkar are used
+                to represent standard terminology artifacts and are used to ensure terminologies
+                represented in an implementation are consistent when queried and displayed, and
+                ultimately ensure the integration is high quality and reliable for patient care.
+                Furthermore, to ensure the quality of items that are transformed and integrated
+                together a type of classifier can be created to check for issues or errors in Tinkar
+                data. </para>
+            <para><emphasis>ELK Classifier </emphasis></para>
+            <para>Komet’s ability to use a description logic classifier to detect equivalences and
+                errors between concepts is important when harmonizing knowledge standards. In
+                particular, the ELK Classifier, a description-logic classifier, is an ontology
+                reasoner that supports OWL 2EL profile and provides a quick reasoning engine for OWL
+                EL because current features and reasoning tasks are limited (although this is fine
+                for SNOMED CT). This classifier reasons over Tinkar data and distinguishes if the
+                asserted facts on concepts (via semantics) are true. [13] </para>
+        </section>
     </section>
     <section>
         <title>Conclusion</title>
         <para>Disparate terminology standards and healthcare systems continue to plague today’s
             healthcare ecosystem with patient safety challenges associated with data quality and
             interoperability. To improve patient outcomes and support informed policy and public
-            health decision making, comprehensive and wholistic IKM is needed. Harmonizing
+            health decision making, comprehensive and holistic IKM is needed. Harmonizing
             terminology standards will ensure data can be transmitted within and between healthcare
             systems while maintaining meaning, associated concepts, and other pertinent information.
             This paper outlines various technologies and tools that are needed to support critical

@@ -146,15 +146,15 @@
             duplication, and modification of their work. </para>
         <para>There are many different types of licenses, as seen in Figure 1 below, and are often
             created to be intentionally vague to apply to a multitude of situations and preserve the
-            rights of the licensor: </para>
-        <para><inlinemediaobject>
-                <imageobject>
-                    <imagedata fileref="images/2.2.4%20Restrctions%20posed.png"/>
-                </imageobject>
-            </inlinemediaobject></para>
-        <para/>
-        <para><emphasis>Figure 1: Restrictions Imposed by License Type</emphasis>
-        </para>
+            rights of the licensor: </para><figure xml:id="RestrictionsImposed">
+                <title>Restrictions Imposed by License Type</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/2.2.4%20Restrctions%20posed.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+        
         <para><emphasis role="bold">Public-Domain</emphasis>: Public domain refers to any
             information, software, or intellectual property that carries no restrictions in regard
             to copyright law. It is free to use by any individual and no one group can exercise
@@ -329,13 +329,14 @@
             existing terminologies together into a single system. </para>
         <para>A knowledge architecture intended for use in the current health IT ecosystem is listed
             below: </para>
-        <para><inlinemediaobject>
+        <figure xml:id="LayersWithinKnowledgeArchitecture">
+            <title>Layers Within Knowledge Architecture</title>
+            <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/PASTF%20Model%203.png"/>
                 </imageobject>
-            </inlinemediaobject></para>
-        <para><emphasis>Figure 2: Layers Within Knowledge Architecture</emphasis>
-        </para>
+            </mediaobject>
+        </figure>
         <para>Rather than a broad transformation of existing licenses in a purely open-source model,
             not all components of software and standard licensing require a pivot away from
             proprietary oversight to lead to successful implementation of an IKM ecosystem. The
@@ -514,5 +515,4 @@
             legal practitioners on open source licensing. Retrieved from Australian Lawyers
             Alliance: http://classic.austlii.edu.au/au/journals/PrecedentAULA/2017/23.html#fnB3 </para>
     </section>
-    <section/>
     </chapter>

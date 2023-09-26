@@ -64,7 +64,7 @@
                     <colspec colnum="2" colname="col2"/>
                     <tbody>
                         <row>
-                            <entry>SNOMED CT<superscript>®</superscript>:</entry>
+                            <entry>SNOMED CT<superscript>®</superscript></entry>
                             <entry>A national standard, comprehensive and precise multilingual
                                 health terminology globally [2]</entry>
                         </row>
@@ -85,7 +85,7 @@
                                 management and drug interaction software [4] </entry>
                         </row>
                         <row>
-                            <entry>Fast Healthcare Interoperability Resources (HL7 FHIR):</entry>
+                            <entry>Fast Healthcare Interoperability Resources (HL7 FHIR)</entry>
                             <entry>API focused standard that enables electronic health data to be
                                 quickly and efficiently exchanged [5]</entry>
                         </row>
@@ -239,9 +239,8 @@
                 <itemizedlist>
                     <listitem>
                         <para>Concepts like “Feels Feverish” and “Feels Hot/Feverish” are both
-                            concepts in SNOMED CT</para>
-                        <para> but are not recognized as equivalent within SNOMED CT </para>
-                        <para>. Tinkar’s standardized process would support the identification of
+                            concepts in SNOMED CT but are not recognized as equivalent within SNOMED
+                            CT. Tinkar’s standardized process would support the identification of
                             these findings as equivalent and create a relationship between the
                             concepts.</para>
                     </listitem>
@@ -324,7 +323,7 @@
                 with patient facing healthcare systems, like labs and hospitals, but the federal
                 government will also need to develop mandates and incentives to encourage the
                 private sector to participate and meet the minimum requirements needed to support
-                IKM. Due to the inherent complexity and wholistic approach to data, IKM will require
+                IKM. Due to the inherent complexity and holistic approach to data, IKM will require
                 multiple federal agencies to support and drive participation, like:</para>
             <itemizedlist>
                 <listitem>
@@ -392,7 +391,7 @@
         </section>
     </section>
     <section>
-        <title>Chapter 3 References</title>
+        <title>References</title>
         <para>
             <orderedlist>
                 <listitem>

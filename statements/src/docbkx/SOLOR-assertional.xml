@@ -142,13 +142,15 @@
                 instance, in the following
                 <?oxy_comment_start author="rcholan" timestamp="20190528T234635-0400" comment="Need to update the following image." mid="4"?><?oxy_comment_start author="steph" timestamp="20190806T090107-0600" comment="Yes, the font without the blue background is very light and should be in a darker color instead of light grey." id="rnr_hzd_r3b" mid="5"?><?oxy_comment_start author="rcholan" timestamp="20190808T095157-0400" comment="We will fix in a future iteration" parentID="rnr_hzd_r3b"?>screenshot<?oxy_comment_end?><?oxy_comment_end mid="5"?><?oxy_comment_end mid="4"?>,
                 when "Diabetes mellitus type 1" is selected, the options for "type 2" are hidden and
-                de-emphasized to the user.</para><?oxy_comment_end?>
-            <para><inlinemediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/InterfaceTerm_DL.png" scalefit="1" width="100%"
-                            contentdepth="100%"/>
-                    </imageobject>
-                </inlinemediaobject></para>
+                de-emphasized to the user.</para><?oxy_comment_end?><figure xml:id="InterfaceTerm">
+                    <title>Interface Term</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/InterfaceTerm_DL.png" scalefit="1" width="100%"
+                                contentdepth="100%"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
         </section>
         <section>
             <title>Relationships Between Clinical Concepts and Patient Populations</title>
@@ -180,10 +182,10 @@
         </section>
         <section>
             <title>Completeness of Synonym Coverage</title>
-            <para>An adequate representation of synoynms in a terminology can increase the
+            <para>An adequate representation of synonyms in a terminology can increase the
                 terminology's usability. Terminologies should represent the richness present in
                 colloquial phrases of medical discourse and represent the variety of different types
-                of synoynms that exist: </para>
+                of synonyms that exist: </para>
             <para><emphasis role="underline"><emphasis role="bold">Alternate
                     Terms</emphasis></emphasis>: "Myocardial Infarction" for "Heart Attack"</para>
             <para><emphasis role="underline"><emphasis role="bold">Acronyms</emphasis>:</emphasis>

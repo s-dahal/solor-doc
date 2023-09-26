@@ -5,7 +5,12 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Procedural Knowledge</title>
     <section>
-        <title>Introduction to Clinical Decision Support</title>
+        <title>Notice</title>
+        <para>The Procedural Knowledge chapter currently consists of a draft outline. In the coming
+            year, our team will develop and refine content that can be incorporated.</para>
+    </section>
+    <section>
+        <title>Introduction to Clinical Decision Support (CDS)</title>
     </section>
     <section>
         <title>Lack of Standardized Encoded Clinical Data</title>
@@ -17,7 +22,7 @@
         <title>Best Practices for CDS KM</title>
     </section>
     <section>
-        <title>Historical Context for Representing the Expression logic of CDS</title>
+        <title>Historical Context for Representing the Expression Logic of CDS</title>
     </section>
 </chapter>
 

@@ -13,13 +13,15 @@
                             xlink:href="https://github.com/ikmdev/komet/releases/tag/1.7.0">download
                             Komet 1.7.0</link> for your appropriate operating system (for windows
                         download, click on “komet-installer-windows-1.7.0.msi”)</para>
-                    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                    <para><?oxy_custom_end?><inlinemediaobject>
+                    <figure xml:id="KometDownload">
+                        <title>Komet Download</title>
+                        <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Komet%20Download.png"/>
                             </imageobject>
-                        </inlinemediaobject></para>
-                </listitem>
+                        </mediaobject>
+                    </figure>
+                    </listitem>
                 <listitem>
                     <para>Save the download file to the location of your choice</para>
                 </listitem>
@@ -36,20 +38,26 @@
             <orderedlist>
                 <listitem>
                     <para>From your browser’s downloads, open the Komet Installer file</para>
-                    <para><inlinemediaobject>
+                    <figure xml:id="KometInstallerFile">
+                        <title>Komet Installer File</title>
+                        <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Komet%20Installer%20File.png"/>
                             </imageobject>
-                        </inlinemediaobject></para>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
                     <para>A message will pop up asking if you want to run the Komet Installer File,
                         click "Run"</para>
-                    <para><inlinemediaobject>
+                    <figure xml:id="RunKomet">
+                        <title>Run Komet</title>
+                        <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Run%20Komet.png"/>
                             </imageobject>
-                        </inlinemediaobject></para>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
                     <para>Once complete, nothing will automatically pop-up, so you will need to
@@ -68,12 +76,15 @@
                 </listitem>
                 <listitem>
                     <para>Change data source to “Open SpinedArrayStore”</para>
-                    <para><inlinemediaobject>
+                    <figure xml:id="OpenSpinedArrayStore">
+                        <title>Open SpinedArrayStore</title>
+                        <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Open%20SpinedArrayStore.png"/>
                             </imageobject>
-                        </inlinemediaobject></para>
-                </listitem>
+                        </mediaobject>
+                    </figure>
+                    </listitem>
                 <listitem>
                     <para>Select the data source you would like to use and click “Ok” in the bottom
                         right</para>
@@ -127,21 +138,27 @@
                 <listitem>
                     <para>In the Detail Viewer activity stream (default loaction: center panel)
                         click drop down button “+”, and click “Import Artifact"</para>
-                    <para><inlinemediaobject>
+                    <figure xml:id="ImportArtifact">
+                        <title>Import Artifact</title>
+                        <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Import%20Artifact.png"/>
                             </imageobject>
-                        </inlinemediaobject></para>
-                </listitem>
+                        </mediaobject>
+                    </figure>
+                    </listitem>
                 <listitem>
                     <para>A “Select your file for import” window will pop up. Click on “Select A
                         File” button </para>
-                    <para><inlinemediaobject>
+                    <figure xml:id="SelectFile">
+                        <title>Select File</title>
+                        <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Select%20File.png"/>
                             </imageobject>
-                        </inlinemediaobject></para>
-                </listitem>
+                        </mediaobject>
+                    </figure>
+                    </listitem>
                 <listitem>
                     <para>Browse and select the zip file of your choice and click “Open”</para>
                 </listitem>
@@ -163,12 +180,15 @@
                     <para>Type the keyword or concept name into the "enter search query" bar in the
                         Search activity stream (default location: right panel) to find a
                         concept</para>
-                    <para><inlinemediaobject>
+                    <figure xml:id="ConceptSearch">
+                        <title>Concept Search</title>
+                        <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Concept%20Search.png"/>
                             </imageobject>
-                        </inlinemediaobject></para>
-                </listitem>
+                        </mediaobject>
+                    </figure>
+                    </listitem>
                 <listitem>
                     <para>Results containing the keyword will populate in the field below the search
                         bar, with keywords highlighted in green</para>
@@ -189,21 +209,27 @@
                     <para>Use the tabs at the top of the Detail Viewer activity stream (default
                         location: center panel) to view various details and information about the
                         selected concept, such as description semantics</para>
-                    <para><inlinemediaobject>
+                    <figure xml:id="ViewConceptDetails">
+                        <title>View Concept Details</title>
+                        <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/View%20Concept%20Details.png"/>
                             </imageobject>
-                        </inlinemediaobject></para>
-                </listitem>
+                        </mediaobject>
+                    </figure>
+                   </listitem>
                 <listitem>
                     <para>Use the “+” drop down to select additional tabs to display information or
                         to re-open a closed tab for a certain concept</para>
-                    <para><inlinemediaobject>
+                    <figure xml:id="DropdownOptions">
+                        <title>Dropdown Options</title>
+                        <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Dropdown%20Options.png"/>
                             </imageobject>
-                        </inlinemediaobject></para>
-                </listitem>
+                        </mediaobject>
+                    </figure>
+                    </listitem>
                 <listitem>
                     <para> You can select the language and/or dialect for the concept you want to
                         display</para>
@@ -217,12 +243,15 @@
                             <para>To view hierarchical relationships, utilize the “Concept
                                 Navigator” and “Pattern Navigator” tabs in the Navigation activity
                                 stream (default location: left panel).</para>
-                            <para><inlinemediaobject>
+                            <figure xml:id="HierarchicalNavigation">
+                                <title>Hierarchical Navigation</title>
+                                <mediaobject>
                                     <imageobject>
                                         <imagedata fileref="images/Hierarchical%20navigation.png"/>
                                     </imageobject>
-                                </inlinemediaobject></para>
-                        </listitem>
+                                </mediaobject>
+                            </figure>
+                           </listitem>
                         <listitem>
                             <para>These tabs can also be found when viewing a concept in the Detail
                                 Viewer activity stream (default location: center panel) by clicking
@@ -289,11 +318,15 @@
                 <listitem>
                     <para>Right click and select export OR use the “+” dropdown menu and select
                         "Export Artifact"</para>
+                    <figure xml:id="ExportArtifactt">
+                        <title>Export Arttifact</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/export%20artifact.png"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
-            </orderedlist><inlinemediaobject>
-                <imageobject>
-                    <imagedata fileref="images/export%20artifact.png"/>
-                </imageobject>
-            </inlinemediaobject></para>
-    </section>    
+        </orderedlist></para>
+            </section>    
 </chapter>
