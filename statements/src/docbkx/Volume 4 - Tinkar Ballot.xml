@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <info>
+        <title>Integrated Knowledge Management (IKM) Volume 3</title>
+        </info>
+    <part>
+        <title>Foundational Architecture</title>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/complete-glossary/complete-glossary.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/business-requirements/business-requirements.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/tinkar-reference-model/tinkar-reference-model.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/reference-implementation/reference-implementation.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"/>
+        <xi:include href="Foundational-Architecture.xml"/>
+    </part>
+</book>
