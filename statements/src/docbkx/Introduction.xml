@@ -7,22 +7,22 @@
         <title>IKM Book Motivation</title>
         <para>In today’s healthcare ecosystem, providers continually rely on data from an increasing
             number of sources to make informed clinical decisions. While this data is a critical
-            component of providing patients with the best care possible, there are major challenges
-            with the accuracy, interoperability, and quality of data that is transmitted within and
-            between healthcare systems. Clinical terminology standards are one strategy to
-            standardize data collection and improve the quality of patient care with standardized
-            and repeatable guidelines for encoding health data, however these standards often lose
+            component of providing patients with the best care possible, major challenges exist with
+            the accuracy, interoperability, and quality of data that is transmitted within and
+            between healthcare systems. Clinical terminology standards are calling for one strategy
+            to standardize data collection and improve the quality of patient care with standardized
+            and repeatable guidelines for encoding health data. However, these standards often lose
             critical aspects of the original data capture when they are shared with other providers
             and healthcare systems. To enhance the quality, interoperability and usability of
             patient data, the health care industry requires a solution that harmonizes the different
             clinical terminology standards and generates a common model that supports patient care,
-            data querying and analysis, public health, and policy making. In an ideal world with
-            interoperable data, data misrepresentations and errors that result in patient harm and
-            other inefficiencies in the health care ecosystem would be eliminated entirely. The
-            motivation for this work is to explore the pathway to unifying a patient’s care
-            experience through reliable and interoperable data that supports accurate and timely
-            clinical decision support that is solely prompted and driven by real-world data and
-            provides real-time assistance to clinicians.</para>
+            data querying and analysis, public health, and policy making. Interoperable data in an
+            ideal world would eliminiate patient harm and other inefficiencies stemmed from data
+            misrepresentations and errors in the health care ecosystem. The motivation for this work
+            is to explore the pathway to unifying a patient’s care experience through reliable and
+            interoperable data that supports accurate and timely clinical decision support that is
+            solely prompted and driven by real-world data and provides real-time assistance to
+            clinicians.</para>
         <para>The essential challenge of informatics practice within the healthcare enterprise is to
             quickly deliver a high fidelity reasoned interpretation of principles and facts to the
             point of care—and then to quickly aggregate these point of care experiences for analytic
@@ -424,15 +424,15 @@
                 measures, supporting clinical research, and providing a legal and historical record.
                 [18] </para>
             <para>To provide context with an example, when a primary care provider records a
-                diabetes diagnosis in their local system, it is critical for that system to share
-                the data accurately and seamlessly to the pertinent pharmacy and laboratory systems.
-                These systems must then in turn communicate with one another and with the primary
-                care system to alert the provider that the patient has previously been prescribed
-                gentamicin and has recently been given an order for a radiologic examination that
-                requires intravenous iodine dye – both of which are known to affect kidney function.
-                If this information is not accurately communicated across healthcare settings in a
-                way that can be readily accessed, the patient may face unnecessary harm or risks
-                that could have been avoided.</para>
+                diabetes diagnosis in the provider's local system, it is critical for that system to
+                share the data accurately and seamlessly to the pertinent pharmacy and laboratory
+                systems. These systems must then in turn communicate with one another and with the
+                primary care system to alert the provider that the patient has previously been
+                prescribed gentamicin and has recently been given an order for a radiologic
+                examination that requires intravenous iodine dye – both of which are known to affect
+                kidney function. If this information is not accurately communicated across
+                healthcare settings in a way that can be readily accessed, the patient may face
+                unnecessary harm or risks that could have been avoided.</para>
             <para>The following sections aim to spell out some of the current problems with
                 electronic health data more clearly:</para>
             <section>
@@ -529,19 +529,19 @@
                 connected systems for common interpretation. In 1965, the Systematized Nomenclature
                 of Pathology (SNOP) was developed to provide a common way to describe morphology and
                 anatomy. A decade later, SNOP expanded into its known name today, Systematized
-                Nomenclature of Medicine (SNOMED). As the adoption of EHRs increased during the
-                1980s, Health Level Seven International (HL7) was formed in 1987 as a non-profit,
-                American National Standards Institute (ANSI)-accredited standards development
-                organization to develop standards that provide global health data interoperability.
-                Since then, several SDOs in the healthcare space have appeared and, along with HL7
-                and SNOMED, continued to commit resources to the development and adoption of
-                standardized health data processes. In 2004, under the United States Department of
-                Health and Human Services (HHS), the Office of the National Coordinator for Health
-                Information Technology (ONC) was born to promote a national health information
-                technology infrastructure and oversee its development. While ONC is not an SDO, it
-                works in close coordination with SDOs to support the adoption and application of
-                health data standards in the U.S. </para>
-            <para> While interoperable health data is a complex and nuanced topic, a primary
+                Nomenclature of Medicine Clinical Terminology (SNOMED CT). As the adoption of EHRs
+                increased during the 1980s, Health Level Seven International (HL7) was formed in
+                1987 as a non-profit, American National Standards Institute (ANSI)-accredited
+                standards development organization to develop standards that provide global health
+                data interoperability. Since then, several SDOs in the healthcare space have
+                appeared and, along with HL7 and SNOMED, continued to commit resources to the
+                development and adoption of standardized health data processes. In 2004, under the
+                United States Department of Health and Human Services (HHS), the Office of the
+                National Coordinator for Health Information Technology (ONC) was born to promote a
+                national health information technology infrastructure and oversee its development.
+                While ONC is not an SDO, it works in close coordination with SDOs to support the
+                adoption and application of health data standards in the U.S. </para>
+            <para>While interoperable health data is a complex and nuanced topic, a primary
                 component is maintaining the meaning and intent of clinical data from the point of
                 consumption throughout the transmission and use of that data across various systems.
                 As data is exchanged within and between multiple healthcare systems, the original
@@ -682,7 +682,7 @@
                     the “same glucose test”; however, any terminologist or laboratory professional
                     would interpret this as “different glucose tests.”</para>
                 <para>To improve the quality and safety of patient care, there is a need to refine
-                    data exchange within the healthcare ecosystem. We often hear comments like, “Why
+                    data exchange within the healthcare ecosystem. We often hear comments as, “Why
                     is the problem of data exchange in healthcare so difficult? After all, other
                     industries—banking, for example— have solved the problem. Healthcare
                     transactions can’t be that much more complicated than those managed by a
