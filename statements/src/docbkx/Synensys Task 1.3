@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>System Safety Within Laboratory Data Exchanges Overview</title>
+    <sect1>
+        <title>System Safety FDA BAA Task 1.3 Background</title>
+        <para>Task 1.3 includes an initial review of the laboratory data ecosystem based on our FDA
+            BAA team member health system laboratories to baseline the current state of the
+            laboratory data sources (Task 1.3.1), including data inputs, processes, and outputs.
+            Other laboratory differences will also be documented based on support from CAP who has
+            access to numerous labs for verification and validation of ecosystem information. The
+            laboratory data workflow (Task 1.3.2) will be documented, validated, and verified. A
+            table of existing lab data standards and requirements across the ecosystem (Task 1.3.3)
+            will be mapped and documented across labs, patient portals, EHRs, LISs, HIEs, and Public
+            Reporting platforms to baseline system operation. Lab data coding methods (including
+            industry coding standards, such as LOINC and SNOMED CT) and local codes will be examined
+            (Task 1.3.4). The similarities and differences between EHR/LIS/HIE and other laboratory
+            data systems (Task 1.3.5) across the operations will be documented and described between
+            laboratories, including performance barriers and enablers due to differences and
+            similarities. Our team will generate simulated patient lab requests within two test
+            laboratories. These simulated lab data exchanges between the labs and across the
+            ecosystem current state will provide baseline system performance evaluation of data
+            fidelity, integrity, quality, and semantic loss. Two or more reviewers will review the
+            transactions to independently validate and verify the results. Statistical process
+            control methods will be applied to measure system performance, such as using bivariate
+            comparison of reviewer agreement and Cohen’s Kappa, or similar methods will be used to
+            measure inter-rater reliability. </para>
+    </sect1>
+    <sect1>
+        <title>Task 1.3.1, 1.3.2, 1.3.3, and 1.3.4 Overview</title>
+        <para>These tasks included interviews with internal project SMEs Raja Cholan, Dr. Scott
+            Campbell, Dr. Hung Luu, and Dr. Samantha Spencer. Additionally, our team discussed
+            Public Health Reporting with Dr. Vicky Derbyshire. From these interviews, we developed
+            an initial mapping (Figure 1) of a hospital or health system laboratory operations
+            (yellow) with laboratory professionals, technology, processes, and data/operational
+            standards organizations (blue) and other/external health systems, agencies, and
+            information system components (green). The solid lines represent regular flow,
+            connections, and feedback between system components. Dashed lines represent irregular
+            flows, communication, or connections. Dotted lines represent informal flows,
+            communication, or connections. Laboratory data can take multiple different pathways
+            based on local configurations within the internal system or when shared with external
+            laboratories, other health systems, health registries, and public health agencies. The
+            use of HL7 electronic standard messaging is ubiquitous across a unique hospital/health
+            system laboratory data workflow yet likely applied differently across different
+            hospital/health systems. Data movement protocol (v2 and FHIR) and content protocols
+            vary, and data quality is usually <emphasis role="bold">not</emphasis> a consideration.
+            The variability in workflow, application of standards (e.g., coding, terminology,
+            messaging, reporting, etc.), and system configuration that exists across different
+            laboratory systems creates the need for robust controls to ensure patient safety and
+            data quality. </para>
+        <para>In this workflow, a <emphasis role="bold">provider/prescriber</emphasis> orders a
+            patient laboratory test through the hospital/health system electronic health record
+            (EHR). The <emphasis role="bold">EHR</emphasis> records the request in the patient
+            record and sends a laboratory request message to the Laboratory Information System
+            (LIS/LIMS). </para><figure xml:id="HospitalandHealthSystemLaboratoryWorkflow">
+                <title>Hospital/Health System Laboratory Workflow, Standards Integration, and Reporting</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/Hospital%20and%20Health%20System%20Laboratory%20Workflow,%20Standards%20Integration,%20and%20Reporting.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+        <para><emphasis role="bold">LOINC and SNOMED codes</emphasis> (and other codes such as
+            genomic coding used in precision medicine) are assigned to each laboratory test. LOINC
+            and SNOMED codes are manually assigned by either laboratory personnel or LIS analysts
+            with or without input from the laboratory medical directors. This coding is either done
+            when a new test record is created or as was the case for Meaningful Use compliance, as
+            part of an institutional initiative. When no code exists, local codes are created by the
+            local laboratory analyst/professional. Agreement between LOINC and SNOMED code selection
+            varies by as much as 50% among laboratory professionals across different clinical
+            laboratories (Bernstam et al., 2022, Cholan et al., 2022). This manual process is
+            foundational to data interoperability. Once in the LIS system, LOINC and SNOMED codes
+            are not regularly updated in most instances. </para>
+        <para>There is currently no centralized knowledge base for laboratories to verify LOINC and
+            SNOMED codes that are assigned to tests and results in LISs. In situations where a
+            precise concept/code is missing from LOINC or SNOMED, labs will make (arbitrary) choices
+            to either code to a more general concept that does exist in LOINC/SNOMED or will choose
+            to create a local code to represent the concept of interest. LOINC In Vitro Diagnostic
+            (LIVD) Test Code Mapping specification exists and could help remove the coding guesswork
+            by inexperienced laboratorians and the imprecision within LOINC and SNOMED for certain
+            concepts. The LIVD file for SARS-CoV-2 reporting is publicly available on a CDC-hosted
+                <link xlink:href="https://www.cdc.gov/csels/dls/livd-codes.html"><emphasis
+                    role="underline">website</emphasis></link> and has been required for use by HHS
+            since summer 2020. The <emphasis role="bold">LIS</emphasis> signals the clinical
+            laboratory of the patient test request. </para>
+        <para>U.S. laboratory operations are certified by the Center for Medicare and Medicaid
+            Services (CMS) using the <emphasis role="bold">Clinical Laboratory Improvement
+                Amendments (CLIA) standards</emphasis>. CLIA does not govern laboratory data
+            quality. CMS publishes the CLIA rules and regulations (including test results reporting)
+            under 42 CFR § 493.1291. The test report must indicate the following: </para>
+        <orderedlist>
+            <listitem>
+                <para>For positive patient identification, either the patient's name and
+                    identification number, or a unique patient identifier and identification number.
+                </para>
+            </listitem>
+            <listitem>
+                <para>The name and address of the laboratory location where the test was
+                    performed.</para>
+            </listitem>
+            <listitem>
+                <para>The test report date. </para>
+            </listitem>
+            <listitem>
+                <para>The test performed. </para>
+            </listitem>
+            <listitem>
+                <para>Specimen source, when appropriate. </para>
+            </listitem>
+            <listitem>
+                <para>The test result and, if applicable, the units of measurement or
+                    interpretation, or both. </para>
+            </listitem>
+            <listitem>
+                <para>Any information regarding the condition and disposition of specimens that do
+                    not meet the laboratory's criteria for acceptability. </para>
+            </listitem>
+        </orderedlist>
+        <para>Pertinent “reference intervals” or “normal” values, as determined by the laboratory
+            performing the tests, must be available to the authorized person who ordered the tests
+            and, if applicable, the individual responsible for using the test results. </para>
+        <para>CDC and FDA also provide CLIA regulation and oversight functions. The clinical
+            laboratory conducts the test using an <emphasis role="bold">In-Vitro Device</emphasis>
+            (IVD). LOINC and SNOMED codes are currently manually entered by either laboratory
+            personnel or the LIS analyst team. These codes do not currently flow from any IVD
+            instrument automatically. The IVD sends the test results to the LIS/LIMS using a
+                <emphasis role="bold">middleware</emphasis> designed to communicate with the
+            specific device and the LIS/LIMS. Middleware varies from vendor to vendor. Middleware is
+            also known as interface engines. Middleware converts message syntax between systems (HL7
+            v2) and devices (IEEE – a lower level engineering standard). The test results are then
+            transmitted to the patient record within the EHR, back to the provider/prescriber, and
+            ultimately, to the patient by the provider and/or through a patient portal. </para>
+        <para>Laboratory results requiring <emphasis role="bold">external reporting</emphasis>(i.e.,
+            to outside agencies (i.e., public health), health data registries (i.e., cancer,
+            vaccine, etc.), and other hospitals/health systems (i.e., EHR 1 to EHR 2) use <emphasis
+                role="bold">Health Information Exchanges</emphasis> (HIEs) or direct point-to-point
+            communications via middleware. Each external lab or other hospital/health system has
+            some form of their own LIS/lab operation. Manual data transformations are usually
+            required when sending EHR data outside one system via an HIE, although middleware may
+            automate information/data transfer. Between systems, interface engines/middleware
+            converts/adjusts HL7 syntax requirements as required by senders/receivers. Some LIS/LIMS
+            and EHRs have automated reporting functionality to outside agencies that bypasses the
+            HIE or uses another third-party broker for transmission. In some cases, the <emphasis
+                role="bold">public health agency </emphasis>may directly populate the <emphasis
+                role="bold">registry database</emphasis> instead of the hospital/health system.
+            Mandatory reportable conditions (e.g., infectious diseases, vaccine administration,
+            cancer, chronic diseases, etc.) to public health agencies vary by State and Federal
+            agency.Not all public health agencies are configured to receive some essential
+            laboratory test data elements from the hospital/health system test results. </para>
+    </sect1>
+    <sect1>
+        <title>Current Insights Gained from Tasks 1.3.1, 1.3.2, 1.3.3, and 1.3.4 </title>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>The ubiquitous nature of HL7 messaging across the laboratory electronic
+                        information workflow. HL7 laboratory interfaces are often not reusable when
+                        each external reporting request triggers a new HL7 message adding additional
+                        laboratory IT resources. The amount of manual encoding required within each
+                        laboratory adds additional laboratory IT/analyst burden and can introduce
+                        errors. </para>
+                </listitem>
+                <listitem>
+                    <para>Internal laboratory professionals have low trust in laboratory reports
+                        from external laboratories—requiring significant manual data curation to
+                        derive equivalence and ensure data quality before allowing test results into
+                        internal systems (e.g., mapping external system test names, codes, and
+                        results to the same “line” within the receiving LIS). This “healthy
+                        skepticism” likely prevents clinical errors and adverse events but slows
+                        data sharing scalability. </para>
+                </listitem>
+                <listitem>
+                    <para>Laboratory test requests and results usually begin and end at the EHR or
+                        LIS/LIMS. An order exception is Point of Care (POC) testing where a test can
+                        be performed without a Computerized Provider Order Entry (CPOE) order. The
+                        results are used for clinical care and then documented as part of the
+                        patient progress note or manually entered into the EHR system, resulting in
+                        laboratory data blind spots. This variability can result in patients not
+                        being notified of critical lab values in a timely manner. While most POC
+                        testing can be considered low risk (pregnancy test, urinalysis), some are
+                        used to monitor and make treatment decisions for acutely ill patients (e.g.,
+                        blood gas); therefore, further system analysis should be considered for POC
+                        testing. </para>
+                </listitem>
+            </itemizedlist>
+            <itemizedlist>
+                <listitem>
+                    <para>Middleware varies from vendor to vendor (there are many more middleware
+                        vendor systems than EHR/LIS vendors performing numerous laboratory system
+                        functions), which increases system complexity. </para>
+                </listitem>
+                <listitem>
+                    <para>Many laboratory ecosystem interactions have irregular or absent feedback
+                        loops, especially between terminology and standards organizations. </para>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </sect1>
+    <sect1>
+        <title>Task 1.3.5 and Next Steps</title>
+        <para><emphasis role="bold"><emphasis role="underline">Task 1.3.5</emphasis></emphasis>aims
+            to develop a case example for identifying hazards, unsafe control actions, inadequate
+            system constraints, data quality deficiencies, and insufficient feedback loops between
+            two different health systems laboratories conducting the same laboratory tests. More
+            specific details of the case example sampling, methods, and analysis will be developed
+            during Phase II as the ecosystem safety control structure evolves. The following is an
+            overview of the case example approach. This approach will be further refined based on
+            client feedback. </para>
+        <para>Initially, simulated patient laboratory test data will be collected between the
+            University of Nebraska Medical Center (UNMC) laboratory and the University of Texas
+            Southwestern (UTSW) Children’s Health. No Protected Health Information (PHI) data will
+            be collected or used. UNMC and UTSW will create simulated patient records within their
+            respective EHRs for initiating the test requests across EHR systems. </para>
+        <para>Laboratory tests will not actually be performed on specimens. Instead, our team will
+            create test patients with identical demographic information in the UNMC and UTSW
+            systems. Simulated test results for a variety of qualitative and quantitative tests will
+            be entered into the test patient record at both institutions. Patient encounters will be
+            entered for the patient, triggering the transfer of test results between the two
+            institutions via the Epic Systems Care Everywhere, an HIE platform available to Epic
+            Systems customers. Specific analysis plan for the orderable and performable will be
+            defined, including a statistically adequate patient sample, number of tests, and minimum
+            reported data elements in accordance with CLIA standards plus additional information
+            related IVD, EHR, LIS, and middleware configurations. </para>
+        <para>The original test result at the originating institution will be compared using an
+            Independent Verification and Validation (IV&amp;V) methodology with what has been
+            transmitted to the receiving institution with an analysis of 1) how the transmitted data
+            compares to CLIA requirements, 2) whether or not enough information about the test has
+            been transmitted to determine equivalence, and 3) the safety and quality implications if
+            the results were assumed to be equivalent and trended on the same line. </para>
+        <para><emphasis role="bold">Next Steps: </emphasis>As our AIM 1 Phase II begins, Task 1.3
+            will serve as an initial “zoom-in” source of laboratory ecosystem operations for the
+            System-Theoretic Process Analysis (STPA), Phase III case examples, and Phase IV
+            deliverables. </para>
+        <para>Additional zoom-in analysis based on Task 1.3 will include the following in Phase II: </para>
+        <itemizedlist>
+            <listitem>
+                <para>Inclusion of global extensions and local extensions </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Laboratory Developed Tests (LDTs) consideration as local extensions.
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>Consider the various genomic systems as global extensions. </para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>Laboratory Data flow – Rename to Data Flow for Encoding </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Could be how data is encoded and sent to LOINC (e.g., LIS to LOINC).
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>Could be how LOINC distributes the new test names and sent from LOINC
+                            (e.g., secondary). </para>
+                    </listitem>
+                    <listitem>
+                        <para>Could be between the laboratory and LOINC. </para>
+                    </listitem>
+                    <listitem>
+                        <para>Could be between the IVD manufacturers and LOINC. </para>
+                    </listitem>
+                    <listitem>
+                        <para>Where do LOINC, SNOMED, and other codes (e.g., genomics) fit? </para>
+                    </listitem>
+                    <listitem>
+                        <para>Need to include National Library of Medicine (NLM) in system. </para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>Explore Case Example Scenario expansion: </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Scenario A – Flow of Patient’s data (follow the number everywhere) –
+                            PHI. </para>
+                    </listitem>
+                    <listitem>
+                        <para>Scenario B – Flow of how the PHI went through a transformation (LIS –
+                            HIS for example). </para>
+                    </listitem>
+                    <listitem>
+                        <para>Scenario C – Process for things that don’t exist yet (Emergency Use
+                            Authorization [EUA] for a COVID test), or where there are errors (e.g.,
+                            flow back from SNOMED). </para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>These scenarios could inform a set of new control points (e.g., what is the
+                    quality of the LOINC release, etc. and D-dimer in LOINC error-prone without a
+                    third party audit, like IV&amp;V, also genomics coding). </para>
+            </listitem>
+            <listitem>
+                <para>Focus on instances in certain categories in a more generic sense (e.g., AST,
+                    B1 supplemented, etc.). </para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>Include interviews of LOINC and SNOMED. </para>
+            </listitem>
+        </itemizedlist>
+    </sect1>
+</chapter>
+
