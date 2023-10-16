@@ -32,8 +32,7 @@
             Healthcare ecosystem”, SHIELD is working to develop a solution that focuses on:</para>
         <itemizedlist>
             <listitem>
-                <para>
-                    <emphasis role="bold">Ecosystem Engagement</emphasis> - Collaborating and
+                <para><emphasis role="bold">Ecosystem Engagement</emphasis> - Collaborating and
                     sharing perspective across industry, agency, and discipline, as well as
                     educating stakeholders about laboratory data interoperability</para>
             </listitem>
@@ -105,7 +104,7 @@
             observational data for safe patient care, comparative effectiveness research, and
             analysis including recording biases, workflow differences, and issues with variations in
             data collection, such as invalid, inconsistent, and missing data. [2] </para>
-        <para> The Food and Drug Administration (FDA) has a need for aggregated RWE and reliable
+        <para>The Food and Drug Administration (FDA) has a need for aggregated RWE and reliable
             analytics and would benefit from implementable methodologies that address
             interoperability and data aggregation gaps to help establish a health data ecosystem
             capable for widespread use in FDA regulatory efforts, public health surveillance,
@@ -119,7 +118,7 @@
                 analytics asserts that data recorded and encoded at the time of creation should
                 accurately reflect the meaning intended by the health care professional who created
                 the data. In the current ecosystem, it can be a very manual, error-prone, and
-                sometimes impossible process to determine if data received from entity A is
+                sometimes challenging process to determine if data received from entity A is
                 equivalent to data from entity B and if it is interpreted across each setting as the
                 data was originally intended at the point of origin. Data interoperability tooling,
                 such as a Knowledge Management Platform, that can ingest disparate health data and
@@ -130,7 +129,7 @@
                 and understood upon receipt equally by the receiving entity. This type of knowledge
                 platform could serve as data interoperability tooling to be able to determine
                 equivalence between concepts and data sets from various organizations. </para>
-            <para>To facilitate such tooling, data much be represented by a normal form that can
+            <para>To facilitate such tooling, data must be represented by a normal form that can
                 safely and reliably support data analysis that can be used to aggregate data
                 creating using standard or non-standard input form or exchange mechanism. Examples
                 of such data models include Health Level 7 (HL7) Clinical Information Modeling
@@ -441,7 +440,7 @@
             language processing of consult notes, and many others. </para>
     </section>
     <section>
-        <title>Terminology Overview<anchor xml:id="Terminology_Overview"/></title>
+        <title>Terminology Overview</title>
         <section>
             <title>Industry Coding Standards</title>
             <para>Healthcare data exchange requires that healthcare institutions and laboratories
@@ -681,10 +680,10 @@
             informatics architectural separation of concerns, one of the most important things to
             note is that any one of the architectural layers will be undergoing modifications at any
             given point in time, as various Standards Development Organizations go through each of
-            their various drafting, balloting, and approval lifecycles. Therefore it is important to
-            establish as a foundation for Solor a versioning and modularity architecture that allows
-            changes and subchanges to be referenced uniquely so that all parties can be on the same
-            page as to a particular version.</para>
+            their various drafting, balloting, and approval lifecycles. Therefore, it is important
+            to establish as a foundation for Solor a versioning and modularity architecture that
+            allows changes and subchanges to be referenced uniquely so that all parties can be on
+            the same page as to a particular version.</para>
         <para>For example, the following diagram shows how each module could be given a unique
             version number and contain all layers of the architectural stack. In the instance that a
             particular versioned module needs to be extended, an extension module could be added to
@@ -753,15 +752,15 @@
                 non-standardized implementation leads to localized variants of terminologies and
                 knowledge representations that limit interoperability and impacts opportunities to
                 comprehensively understand data within a system.</para>
-            <para>Not only is current knowledge management unstandardized, but there is also
-                relative uncertainty regarding the quality and accuracy of the data representing
+            <para>Not only the current knowledge management is unstandardized, but relative
+                uncertainty also exists regarding the quality and accuracy of the data representing
                 knowledge. A standardized process to validate the vast amount health care data does
-                not exist, nor is there a standardized understanding of what data should be
-                validated, which further impacts the quality and accuracy of data, the ability to
-                support research and clinical decisions, and patient safety. Existing data
+                not exist. No standardized understanding of what data should be validated is absent.
+                The current situation further impacts the quality and accuracy of data, the ability
+                to support research and clinical decisions, and patient safety. Existing data
                 validation techniques need to be standardized and refined to support comprehensive
-                and reproducible validation of data within systems and data that is transferred
-                between systems.</para>
+                and reproducible validation of data within systems and transferable data between
+                systems.</para>
         </section>
         <section>
             <title>Safety Systems Thinking and HRO Background</title>
@@ -894,7 +893,7 @@
                 management constructs.</para>
             <section>
                 <title>Increasing the Value of Health Data by Engineering Safety, Quality, and High
-                    Reliability into the Data Lifecycle Overview</title>
+                    Reliability into the Data Life Cycle Overview</title>
                 <para>In this 2022 paper by Dr. Keith E. Campbell et al., the team outlines an
                     Independent Validation and Verification (IV&amp;V) approach that was designed
                     with system safety, HRO principles, and statistical process control techniques.
@@ -902,7 +901,7 @@
                     interoperability of data through a three-phased approach, error discovery and
                     assessment, statistical process control, and continuous process
                     improvement.</para>
-                <para>By identifying and establishing feedforward pathways and baseline metrics for
+                <para>By identifying and establishing feed forward pathways and baseline metrics for
                     data and knowledge quality, the team provided a use-case for an IV&amp;V
                     approach’s ability to statistically improve the quality and interoperability of
                     prescription data. Dr. Campbell and team highlighted a variety of lessons

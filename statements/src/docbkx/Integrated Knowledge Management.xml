@@ -224,14 +224,13 @@
             complex and individual elements of each standard then allows continual process
             improvement, including rapid extension development. Edits to concepts or newly authored
             concepts in Tinkar can be tested and previewed before deployment to a live environment
-            and historic versioning of metadata is perpetually maintained to support iterative
+            and historic versioning of meta data is perpetually maintained to support iterative
             authoring, development, and versioning. [1]</para>
         <para>Tinkar aims to improve the quality of patient care across the healthcare enterprise by
             creating a cross-cutting and common model that can integrate other terminology standards
             and use a repeatable and standardized process to convert disparate clinical statements
             and terminologies into high-quality, interoperable, and exportable clinical data. The
             four main problems that Tinkar and a common model can address are:</para>
-        <para> </para>
         <orderedlist>
             <listitem>
                 <para>Suboptimal ability to identify equivalent concepts within and between
@@ -301,7 +300,7 @@
             proof-of-concept model that will be further matured and built upon in subsequent
             contract years. The team has and will continue to use an Agile methodology to
             systematically iterate on Tinkar, and overall model development using sprint frameworks
-            across a variety of workstreams. At the end of the contract’s base year, the team will
+            across a variety of work streams. At the end of the contract’s base year, the team will
             have developed a comprehensive use case that will be used as a reference implementation
             to investigate capabilities to improve clinical analytics and address current state gaps
             to reach an idealized future state.</para>
@@ -392,6 +391,8 @@
     </section>
     <section>
         <title>References</title>
+    </section>
+    <section>
         <para>
             <orderedlist>
                 <listitem>

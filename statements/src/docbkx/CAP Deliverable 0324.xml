@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Self and External Assessment Evaluation Approach for Laboratory Data Coding
+        Quality</title>
+    <section><title>Self-Assessment Evaluation Approach for Laboratory Data Coding Quality</title>
+        <para>Replacing vendor-developed custom codes with existing standard ontology codes and
+        incorporatingthese codes into the LIS and EHR system will require a change in workflow as
+        well as maintenance of coding to ensure their continued accuracy. It is to be expected that
+        standard coding systems will require periodic updates to provide for the orderly release of
+        new codes, revision of existing codes to correct errors and the deprecation of out-of-date
+        codes. The current workflow for most labs is to perform mapping of local tests to
+        standardized codes infrequently with very rare updating of codes. These mapping activities
+        usually coincide with the addition of a new test to the laboratory menu, implementation of a
+        new LIS or EHR system or to satisfy the requirements of a clinical trial, public health
+        reporting requirement or clinician needs.</para>
+        <para>Theproposed strategy of advancing laboratory interoperability hinges on utilizing a set of
+        standardized codes to digitally represent laboratory test results. For each IVD platform,
+        the following codes will be enumerated for each test the IVD has FDA approval for
+        use:</para>
+    <itemizedlist>
+        <listitem>
+            <para>TestOrder/Reporting Name – LOINC order code (with SNOMED CT definition)</para>
+        </listitem>
+        <listitem>
+            <para>Analyte/Observable– LOINC performable code (with SNOMED CT definition)</para>
+        </listitem>
+        <listitem>
+            <para>QuantitativeResults - Unified Code for Units of Measure (UCUM)</para>
+        </listitem>
+        <listitem>
+            <para>QualitativeResults – SNOMED CT</para>
+        </listitem>
+        <listitem>
+            <para>Specimen– SNOMED CT</para>
+        </listitem>
+        <listitem>
+            <para>IVDInstrument and Test Kit Identification – Instrument UDI and Kit UDI</para>
+        </listitem>
+    </itemizedlist>
+    <para>This strategy is predicated on the assumption that the healthcare ecosystem infrastructure
+        will be able to capture and transmit these standardized data elements and that the coding
+        will be accurate and up-to- date. While the first assumption will be explored elsewhere in
+        this document, this section touches on the requiredtools that will need to be developed to
+        aid laboratory personnel in the upkeep of coding to ensure their continued accuracy and
+        quality. These tools will need to minimize the administrative burden on laboratory personnel
+        and include:</para>
+    <orderedlist>
+        <listitem>
+            <para>LaboratoryInteroperability Data Repository (LIDR)</para>
+        </listitem>
+        <listitem>
+            <para>LIS/EHRReport Templates to identify existing coding</para>
+        </listitem>
+        <listitem>
+            <para>CodingChange Request Templates</para>
+        </listitem>
+    </orderedlist>
+        <section>
+            <title>Laboratory Interoperability Data Repository (LIDR)</title>
+            <para>The Laboratory Interoperability Data Repository is intended to serve as a
+                centralized repository of standardized codes that have been curated by IVD vendors
+                for their menu of test offerings. LIDR would serve as the authoritative source of
+                truth for the digital representation of any IVD test. To serve this
+                intendedfunction, LIDR must be easily accessible to laboratory personnel to query
+                for the prescriptive list of standardized codes for test order and analytes,
+                specimen source and types, result values (nominal and ordinal), and instrument and
+                reagent kit information. The codes should be searchable by the combination of test
+                and instrument vendor through a human searchable interface. It is envisioned that
+                laboratory personnelcould access LIDR to query and download the curated codes for
+                initial implementation of an assay and also to verify the accuracy of the coding for
+                existing tests in their LIS/EHR system.</para>
+        </section>
+        <section>
+            <title>LIS/EHR Report Templates</title>
+            <para>Although standardized codes intended to allow for interoperability of laboratory
+                data has been in existence for decades, there remains significant variation in how
+                these codes are incorporated into LIS/EHRsystems. Although the transmission of these
+                codes in HL7 messages are relatively well-defined, the fields into which they are
+                entered in LIS/EHR systems can vary significantly depending on which LIS or EHR
+                system is utilized. In addition, a given assay offered by a laboratory requires the
+                creation of numerous records in the LIS and EHR systems for the test to be
+                orderable, billable, and performable. The LOINC code for the test order is likely to
+                be contained in the record required for the test to be orderable through
+                computerized order entry in the EHR, while the LOINC code for the performable test
+                or analyte is usually contained in the test record created in the LIS that allows
+                the laboratory to perform and report the results of the test. A test may be composed
+                of a number of components, and each of these components may have a separate result
+                with its own associated unit of measure or SNOMED-encoded qualitative results.
+                Specimen information with SNOMED codes associated with the specimen type may be
+                contained in its own record separate from the test record.</para>
+            <para>For laboratory personnel to maintain the accuracy of coding in the LIS/EHR systems
+                with minimal administrative burden, the standardized codes must be transparent and
+                easily accessible to laboratory personnel. Transparency of coding is currently a
+                challenge as these codes can be dispersed across a variety of LIS and EHR records as
+                illustrated above. In addition, the standardized codes are not usually visible
+                outside of these records, which are not accessible to most laboratory personnel. The
+                coding and maintenance of these records are managed by information system analysts.
+                To obtain these codes, laboratory personnel must request reports generated by the IS
+                analysts. This may result in multiple reports that must be collated to present all
+                the relevant codes in an understandable manner. LIS/EHR report templates specific to
+                the LIS and/or EHR systems utilized by the laboratories would enable laboratoriesto
+                perform self-assessments of their coding to identify errors and deprecated codes
+                that need to be replaced. These report templates would be available as part of a
+                self-assessment toolkit and would obviate the need for laboratories to formulate
+                their own reports to see the coding in their system.</para>
+        </section>
+        <section>
+            <title>Coding Change Request Templates</title>
+            <para>Whenan error or code replacement is identified, it is essential that the code
+                change occurs in an efficient manner to maintain data coding quality. As alluded to
+                above, the LIS and EHR records that contain the standardized codes associated with a
+                given assay are maintained by IS analysts. These analysts may be embedded within the
+                laboratory, or more commonly, are part of the larger IS group that support the
+                information technology needs for the entire enterprise or institution. These IS
+                analysts may or may not have a laboratory background. Correction or replacement of
+                codes requires clear communication between laboratory personnel who likely have no
+                expertise with the LIS software and IS analysts who may be unfamiliar with
+                laboratory processes.</para>
+            <para>To minimize miscommunication that may arise with code change requests, code change
+                request templates specific to the LIS or EHR system used by the laboratory could
+                constitute part of the self- assessmenttoolkit provided to laboratories. The change
+                request templates would ideally be a smart form that could display information on
+                the standardized code that is being requested to be inserted into the LIS and EHR
+                system as well as the record and field within the record that the code should be
+                inserted.</para>
+        </section>
+    </section>
+</chapter>
+

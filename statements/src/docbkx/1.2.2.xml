@@ -252,26 +252,26 @@
                 complexity of systems using Tinkar data. </para>
         </section>
         <section><title>User Interface and Experience </title>
-                        <para>Harmonizing self-sustaining and contained knowledge standards requires a robust
-                and tailored User Interface and User Experience (UI/UX) design. A strong UI/UX
-                interface meets the needs of the user, is intuitive to use, and provides an
+                        <para>Harmonizing self-sustaining and contained knowledge standards requires
+                a robust and tailored User Interface and User Experience (UI/UX) design. A strong
+                UI/UX interface meets the needs of the user, is intuitive to use, and provides an
                 environment for tackling complex terminological overlaps between various standards
                 which is needed for properly harmonized knowledge. Without a good user interface,
-                work to harmonize standards cannot be done. One aspect of good UI/UX design is that
-                is provides users a visible interface to work with different coding standards. All
-                users cannot be expected to be proficient coders who can readily access and use the
-                backend software/coding language. UI/UX is all about the user, and users come from a
-                variety of backgrounds including laboratory technicians, clinicians, researchers,
-                regulatory personnel, and others. Good UI/UX is built off human centric design
-                principles and provides components that give the user the ability to create, edit,
-                and retire knowledge. Tinkar core is the harmonization which lives in the backend,
-                but UI/UX provides an interface that allows users to interact with the logic and
-                harmonize between different coding standards. The UI/UX is tailored to the different
-                users and their roles and their needs. UI/UX can also incorporate features such as
-                multiple languages and dialects, which allow for a user to have a tailored
-                experience and can be focused on a particular regional preference for descriptions
-                and other text information to emphasize different features which may prompt the
-                desired response or use from the user. </para>
+                work to harmonize standards cannot be done. Good UI/UX design provides users a
+                visible interface to work with different coding standards. All users cannot be
+                expected to be proficient coders who can readily access and use the backend
+                software/coding language. UI/UX is all about the user, and users come from a variety
+                of backgrounds including laboratory technicians, clinicians, researchers, regulatory
+                personnels, and others. Good UI/UX is built off human centric design principles and
+                provides components that give the user the ability to create, edit, and retire
+                knowledge. Tinkar core is the harmonization which lives in the backend, but UI/UX
+                provides an interface that allows users to interact with the logic and harmonize
+                between different coding standards. The UI/UX is tailored to the different users and
+                their roles and their needs. UI/UX can also incorporate features such as multiple
+                languages and dialects, which allow for a user to have a tailored experience and can
+                be focused on a particular regional preference for descriptions and other text
+                information to emphasize different features which may prompt the desired response or
+                use from the user. </para>
             <para><emphasis>Komet</emphasis>
             </para>
             <para>Komet serves as the knowledge management integrated development environment (IDE)

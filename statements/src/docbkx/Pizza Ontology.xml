@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Web Ontology Language (OWL)</title>
+    
+            <para>Supplementary reading:<link
+            xlink:href="http://www.cs.man.ac.uk/~rector/papers/common_errors_ekaw_2004.pdf">OWL
+                Pizzas:Practical Experience of Teaching OWL-DL:Common Errors &amp; Common Patterns</link></para>
+  
+    <para>Now we will take our family ontology one step further by adding more semantics using OWL.
+        First, for a soft start and to get into Protégé, ontology editing and Web Ontology Language
+        (OWL), we will start by looking at an existing tutorial ontology, the pizza ontology. Parts
+        of this exercise will be a revisit of first week’s exercise.</para>
+    <sect1>
+        <title>The Pizza Ontology</title>
+        <para>The pizza ontology is a well-known ontology in the semantic web community. It is
+            developed for educational purposes by the University of Manchester, which is a leading
+            university in the development of semantic technologies. The pizza ontology and a
+            tutorial that uses it is found at<link
+                xlink:href="http://protegewiki.stanford.edu/wiki/Protege4Pizzas10Minutes"
+                >http://protegewiki.stanford.edu/wiki/Protege4Pizzas10Minutes</link>and<link
+                xlink:href="http://owl.cs.manchester.ac.uk/publications/talks-and-tutorials/protg-owl-tutorial/"
+                >http://owl.cs.manchester.ac.uk/publications/talks-and-tutorials/protg-owl-tutorial/</link>.
+            The tutorial is primarily for learning how to use Protégé 4. Use it to get help on how
+            to use Protégé in the coming exercises.</para>
+        <sect2>
+            <title>Exercise</title>
+            <para>Open the <link xlink:href="http://protege.stanford.edu/ontologies/pizza/pizza.owl"
+                    >pizza ontology</link>in Protégé. Take some time to browse the class hierarchy,
+                the property hierarchies and the individuals and note how the ontology describes the
+                domain of pizzas.</para>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Find Margherita and see how it is defined as a pizza with only cheese and tomato
+                topping. Look at the definition of Vegetarian Pizza. Is a Margherita pizza a
+                vegetarian pizza? Why/why not?</para>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Find<code>has Ingredient</code>.What is the domain and range of this property?
+                What are the subproperties of <code>has Ingredient</code>?What is the inverse
+                property of <code>has Ingredient</code>?What property characteristics does <code>has
+                    Ingredient</code>have?</para>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Classify the ontology by choosing a reasoner and then "classify" in the reasoner
+                menu. In the "Inferred class hierarchy" two classes show up as subclasses of
+                    <code>owl:Nothing</code>. Answer the following questions:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>In general, what is the difference between the asserted class hierarchy
+                        and the inferredclass hierarchy?</para>
+                </listitem>
+                <listitem>
+                    <para>What does it mean for a class to be a subclass of owl:Nothing?</para>
+                </listitem>
+                <listitem>
+                    <para>Explain why these two classes appear as subclasses of owl:Nothing.</para>
+                </listitem>
+                <listitem>
+                    <para>Find Margherita in the inferred class hierarchy and see which classes are
+                        inferred as superclasses of Margherita.</para>
+                </listitem>
+            </itemizedlist>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Add a new class Grandiosa as a subclass of Named Pizza. Define "Grandiosa" as
+                something which</para>
+            <itemizedlist>
+                <listitem>
+                    <para>hasTopping some HamTopping,</para>
+                </listitem>
+                <listitem>
+                    <para>hasTopping some TomatoTopping and</para>
+                </listitem>
+                <listitem>
+                    <para>hasTopping some CheeseTopping.</para>
+                </listitem>
+            </itemizedlist>
+            <para>Classify the ontology. What super classes are inferred as superclass of Grandiosa?
+                Explain why.</para>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>State in the ontology that a Grandiosa pizza comes from Norway, and that Norway is
+                different from the other countries already present in the pizza ontology. Apply
+                reasoning and explain the results.</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Family Relations in OWL</title>
+        <para>Sofar we have only been allowed to use RDFS vocabulary to describe family relations.
+            Now we will extend our description using OWL constructs. OWL is more expressive than
+            RDFS and allowsus to express many more restrictions on properties and class membership
+            than RDFS does.</para>
+        <para>In this exercise we will only use OWL (1) DL vocabulary (and not OWL 2,which will be
+            next week’s exercises). This language is explained in <link
+                xlink:href="http://www.w3.org/TR/owl-ref/">W3C’s OWL Web Ontology Language</link> ,
+            which may be a valuable resource for these exercises.<link
+                xlink:href="http://www.w3.org/TR/2004/REC-owl-features-20040210/#s2">OWL Web
+                Ontology Language Overview</link> contains a list of the constructs available in
+            RDFS and the different dialects of OWL 1: OWL lite, OWL DL and OWL Full. See also <link
+                xlink:href="http://www.w3.org/2004/OWL/">W3C’s "portal" on OWL</link>.</para>
+        <para>You may use Protégé as your editor, but you are also welcome to use a plain text
+            editor to the exercises. Note that there are different OWL languages and that different
+            editors have differenttastes. If you are using Protégé as editor, consult the Protégé
+            pizza tutorial. If your using a plain text editor, use the <link
+                xlink:href="http://www.mygrid.org.uk/OWL/Validator">OWL validator</link> and try
+            also regularly to open your file in Protégé. If you have problems using Protégé, consult
+            the <link
+                xlink:href="http://owl.cs.manchester.ac.uk/publications/talks-and-tutorials/protg-owl-tutorial/"
+                >Protégé OWL Tutorial</link>.</para>
+        <para>The OWL vocabulary we will use is listed below. The list is a slightly compacted
+            version of the one found on <link
+                xlink:href="http://www.w3.org/TR/2004/REC-owl-features-20040210/">OWL Web Ontology
+                Language Overview</link> .Almost all items in the list will be put to use in these
+            exercises.</para>
+        <itemizedlist>
+            <listitem>
+                <para>RDFS Features: Class, rdfs:subClassOf, rdf:Property, rdfs:subPropertyOf,
+                    rdfs:domain,rdfs:range, Individual</para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>HeaderInformation: Ontology, imports</para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>Annotation Properties: rdfs:label, rdfs:comment, rdfs:seeAlso,
+                    rdfs:isDefinedBy, AnnotationProperty, OntologyProperty</para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>ClassAxioms: oneOf, dataRange, disjointWith, unionOf, complementOf,
+                    intersectionOf</para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>(In)Equality: equivalentClass, equivalentProperty, sameAs, differentFrom,
+                    AllDifferent, distinctMembers</para>
+            </listitem>
+            <listitem>
+                <para>Property Characteristics: ObjectProperty, DatatypeProperty, inverseOf,
+                    TransitiveProperty, SymmetricProperty, FunctionalProperty,
+                    InverseFunctionalProperty</para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>Property Restrictions: Restriction,onProperty, allValuesFrom, someValuesFrom,
+                    minCardinality, maxCardinality, cardinality, hasValue</para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>Datatypes:XSD datatypes</para>
+            </listitem>
+        </itemizedlist>
+        <para>For each of the modelling exercises below express the exercise text as a set of
+            description logic (DL) axioms.</para>
+        <sect2>
+            <title><emphasis role="bold">Exercise</emphasis></title>
+            <para>Make a new ontology file. Give it the namespace</para>
+            <para><code>http://www.ifi.uio.no/INF3580/v16/family.owl#</code></para>
+            <para>Import the family RDFS file you wrote in last week’s exercise.</para>
+            <para><emphasis role="bold">Tip</emphasis>: Note, as mentioned in an exercise in last
+                week’s exercises, not all ontology editors and reasoners interprets manages to
+                handle RDFS as OWL, so you might want to convert your family RDFS file to OWL.
+                Changing all instances of <code>rdfs:Class</code>to<code>owl:Class</code>and
+                instances of <code>rdf:Propery</code>to either
+                    <code>owl:ObjectProperty</code>or<code>owl:DatatypeProperty</code>should take
+                care of most conversion problems.</para>
+            <sect3>
+                <title>Solution</title>
+                <para>I will be using a plain text editor to write the OWL file, so it is easily
+                    included it in this document.</para>
+                <orderedlist>
+                    <listitem>
+                        <para>@prefixrdf: <link
+                                xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns"
+                                >&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#></link>.</para>
+                    </listitem>
+                    <listitem>
+                        <para>@prefixrdfs: <link xlink:href="http://www.w3.org/2000/01/rdf-schema"
+                                >&lt;http://www.w3.org/2000/01/rdf-schema#></link>.</para>
+                    </listitem>
+                    <listitem>
+                        <para>@prefixowl: <link xlink:href="http://www.w3.org/2002/07/owl"
+                                >&lt;http://www.w3.org/2002/07/owl#></link>.</para>
+                    </listitem>
+                    <listitem>
+                        <para>@prefixowl2xml: <link xlink:href="http://www.w3.org/2006/12/owl2-xml"
+                                >&lt;http://www.w3.org/2006/12/owl2-xml#></link>.</para>
+                    </listitem>
+                    <listitem>
+                        <para>@prefixxsd: <link xlink:href="http://www.w3.org/2001/XMLSchema"
+                                >&lt;http://www.w3.org/2001/XMLSchema#></link>.</para>
+                    </listitem>
+                    <listitem>
+                        <para>@prefixfam: <link
+                                xlink:href="http://www.ifi.uio.no/INF3580/v13/family"
+                                >&lt;http://www.ifi.uio.no/INF3580/v13/family#></link>.</para>
+                    </listitem>
+                    <listitem>
+                        <para>@prefix: <link
+                                xlink:href="http://www.ifi.uio.no/INF3580/v13/family.owl"
+                                >&lt;http://www.ifi.uio.no/INF3580/v13/family.owl#></link>.</para>
+                    </listitem>
+                    <listitem>
+                        <para>@base<link xlink:href="http://www.ifi.uio.no/INF3580/v13/family.owl"
+                                >&lt;http://www.ifi.uio.no/INF3580/v13/family.owl></link>.</para>
+                    </listitem>
+                    <listitem>
+                        <para/>
+                    </listitem>
+                    <listitem>
+                        <para><link> xlink:href="http://www.ifi.uio.no/INF3580/v13/family.owl"
+                                >&lt;http://www.ifi.uio.no/INF3580/v13/family.owl></link> rdf:type
+                            owl:Ontology ; </para>
+                    </listitem>
+                    <listitem>
+                        <para>owl:imports <link
+                                xlink:href="http://www.ifi.uio.no/INF3580/v13/family"
+                                >&lt;http://www.ifi.uio.no/INF3580/v13/family></link>.</para>
+                    </listitem>
+                </orderedlist>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title><emphasis role="bold">Exercise</emphasis></title>
+            <para>State that a person has at least one father and one mother.</para>
+            <para><emphasis role="bold">Tip1</emphasis>: The exercises are formulated in normal
+                language on purpose.It is up to you to decide how this is best expressed in
+                OWL.</para>
+            <para><emphasis role="bold">Tip2</emphasis>: My solution (yours may be different) as a
+                DL axiom:</para>
+            <figure xml:id="ExerciseX.2Solution">
+                <title>Exercise X.2 Solution </title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Images/Exercise%20X.2%20Solution.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+        </sect2>
+        <sect2>
+            <title>Solution</title>
+            <para>To state this in Protégé add an anonymous superclass to <code>Person</code>with
+                the expression</para>
+            <para><code>hasFathersome Person</code></para>
+            <para><code>andhasMother some Person</code></para>
+            <para>With this we have stated that for every instance of the class Person there must be
+                a hasFather property instance to an instance of Person and a hasMother property
+                instance to an instance of Person. In N3 the same statements look like:</para>
+            <para>
+                <figure xml:id="N3PersonStatements">
+                    <title>N3 Person Statements </title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/N3%20Person%20Statements.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+            <para>Note that there may be many ways to express the same statement. The statement can
+                also been expressed by using minimum cardinality of 1 for Person on both of
+                hasFather and hasMother, in a similar fashion as the solution above. In
+                Protégé</para>
+            <para><code>hasFathermin 1 Thing hasMother min 1 Thing</code></para>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>State that a person can only have one mother and only one father. </para>
+            <sect3>
+                <title>Solution</title>
+                <para>To state this I have used <code>owl:FunctionalProperty</code>and stated that
+                    both <code>:hasFather</code>and<code>:hasMother</code><code/>are functional
+                    properties. Quoting <link
+                        xlink:href="http://www.w3.org/TR/owl-ref/#FunctionalProperty-def"
+                        >FunctionalProperty-def</link>:</para>
+                <para>A functional property is a property that can have only one (unique) value y
+                    for each instance x, i.e. there cannot be two distinct values y1 and y2 such
+                    that the pairs (x,y1) and (x,y2) are both instances of this property.</para>
+                <para>This works since the domain of both properties is Person and the range for
+                        <code>:hasFather</code>and<code>:hasMother</code>are<code>:Father</code>and<code>:Mother</code>respectively.
+                    In DL it looks like this:</para>
+                <figure xml:id="UniqueDLProperty">
+                    <title>Unique DL</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Unique%20DL%20Property.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>which can be translated to "nothing has to hasFather/hasMother
+                    relations".</para>
+                <para>In Protégé it is expressed by ticking the "Functional" box for each of the
+                    properties. In N3 it looks like this:</para>
+                <para>
+                    <figure xml:id="UniqueN3Property">
+                        <title>Unique N3</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Unique%20N3%20Property.png"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </para>
+                <para>Wecould also have stated this by using maximum cardinality:</para>
+                <para><code>hasFathermax 1 Thing </code></para>
+                <para><code>hasMother max 1 Thing</code></para>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>State that a woman can only have female as gender, and a man can only have male as
+                gender.</para>
+            <sect3>
+                <title>Solution</title>
+                <para>One way to express this in OWL is to say that all instances of
+                        <code>Woman</code>canonly have the value <code>Female</code>for the property
+                        <code>hasGender</code>. To do this we must make an anonymous class that only
+                    contains the individual <code>Female</code>. In Protégé this is done by using
+                    the curly brackets. The whole expression is for <code>Woman</code></para>
+                <para><code>hasGenderonly {Female}</code></para>
+                <para>andfor <code>:Man</code></para>
+                <para><code>hasGenderonly {Male}</code></para>
+                <para>In DL:<figure xml:id="OnlyDLProperty">
+                        <title>Only DL</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Only%20DL%20Property.png"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure></para>
+                <para>In N3:</para>
+                <para>
+                    <figure xml:id="OnlyN3Property">
+                        <title>Only N3</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Only%20N3%20Property.png"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </para>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>State that nothing can be both male and female.</para>
+            <sect3>
+                <title>Solution</title>
+                <para>This is done by adding <code>:Male</code>to the (empty) list of different
+                    individuals for <code>:Female</code>. In RDF syntax the keyword is
+                        <code>owl:differentFrom</code>. In DL one normally operate with a unique
+                    name assumption, so if different constants represent different objects, but if
+                    not it would simply be:</para>
+                <para><emphasis role="italic">Male</emphasis>=/= Female</para>
+                <para>In N3:</para>
+                <figure xml:id="NothingN3Property">
+                    <title>Nothing N3</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Nothing%20N3%20Property.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Define the gender so that there can only be the genders man and woman.</para>
+            <sect3>
+                <title>Solution</title>
+                <para>State this by making the class <code>Gender</code>equivalent to the class
+                        <code>{Female,Male}</code>. In RDF syntax <code>owl:oneOf</code>isused to
+                    define a class by listing all the members of the class:</para>
+                <para>In DL:</para>
+                <para>Gender≡{Male,Female}</para>
+                <para>In N3:</para>
+                <figure xml:id="GendersN3Property">
+                    <title>Genders N3</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Genders%20N3%20Property.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Explain what disjointness is. For all pair of classes in the family ontology, add
+                the correct disjoint axioms.</para>
+            <sect3>
+                <title>Solution</title>
+                <para>Quoting <link xlink:href="http://www.w3.org/TR/owl-ref/#disjointWith-def"
+                        >disjointWith-def</link>:</para>
+                <para><code>owl:disjointWith</code>is a built-in OWL property with a class
+                    description as domain and range. Each <code>owl:disjointWith</code>statement
+                    asserts that the class extensions of the two class descriptions involved have no
+                    individuals in common. Like axioms with <code>rdfs:subClassOf</code>, declaring
+                    two classes to be disjoint is a partial definition: it imposes a necessary but
+                    not sufficient condition on the class.</para>
+                <para>In our case it is safe to say that all the classes Family, Gender and Person
+                    are pairwise disjoint, and that the classes Man and Woman are disjoint.</para>
+                <para>In DL:</para>
+                <figure xml:id="DisjointDLProperty">
+                    <title>Disjoint DL</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Disjoint%20DL%20Property.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>Which translates to "nothing is both man and woman". </para>
+                <para>In N3:</para>
+                <figure xml:id="DisjointN3Property">
+                    <title>Disjoint N3</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Disjoint%20N3%20Property.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>State that a person is either a man or a woman, but not both.</para>
+            <sect3>
+                <title>Solution</title>
+                <para>This translates to "the <code>Person</code>is equivalent to the union of
+                        <code>Man</code>and<code>Woman</code>,and
+                        <code>Man</code>and<code>Woman</code></para>
+                <para>are disjoint".</para>
+                <para>The classes <code>Man</code>and<code>Woman</code>are already stated as
+                    disjoint, so we need only define that <code>Person</code>is equivalent to the
+                    union of <code>Man</code>and <code>Woman</code>.</para>
+                <para>In DL:</para>
+                <figure xml:id="OrDLProperty">
+                    <title>Or DL</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Or%20DL%20Property.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>In N3:</para>
+                <figure xml:id="OrN3Property">
+                    <title>Or N3</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Or%20N3%20Property.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Explain what inverse properties are. For all the properties that exist in our
+                ontology, add the correct inverse property axioms. You are not supposed to add new
+                properties, only state that a property is the inverse of another property if they
+                already exist in the ontology.</para>
+            <sect3>
+                <title/>
+                <para>Quoting<link xlink:href="http://www.w3.org/TR/owl-ref/#inverseOf-def"
+                        >inverseOf-def</link>:</para>
+                <para>An axiom of the form P1 owl:inverseOf P2 asserts that for every pair (x,y) in
+                    the property extension of P1, there is a pair (y,x) in the property extension of
+                    P2, and vice versa.</para>
+                <para>To illustrate this let us use an example: If Homer is the husband of Marge,
+                    than Marge must be the wife of Homer. If this is true in every possible case,
+                    then <code>hasHusband</code>is the inverse of <code>hasWife</code> ,from which
+                    it follows that <code>hasWife</code>is the inverse of
+                    <code>hasHusband</code>.</para>
+                <para>In DL it is common to use ·<emphasis role="italic"
+                            ><superscript>−</superscript></emphasis>to indicate the inverse of a
+                    relation:</para>
+                <figure xml:id="InverseDLProperty">
+                    <title>Inverse DL</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Inverse%20DL%20Property.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>In N3:</para>
+                <figure xml:id="InverseN3Property">
+                    <title>Inverse N3</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Inverse%20N3%20Property.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Explain what it means for a property to be transitive or symmetric.</para>
+            <para>For all the properties in our ontology, if it is natural, state that they are
+                transitive and/or symmetric.</para>
+            <para>There is no standard way of asserting characteristics for properties in DL, so you
+                may skip this part. The more or less <emphasis role="italic">common</emphasis>way of
+                assering that a property <emphasis role="italic">P </emphasis>is asymmetric,
+                symmetric, reflexive, reflexive or transitive in DL literature is Asym(<emphasis
+                    role="italic">P</emphasis>), Sym(<emphasis role="italic">P</emphasis>),
+                    Ref(<emphasis role="italic">P</emphasis>), Irr(<emphasis role="italic"
+                    >P</emphasis>) or Tra(<emphasis role="italic">P</emphasis>),
+                respectively.</para>
+            <para>To say that two properties <emphasis role="italic"
+                    >P</emphasis><subscript>1</subscript> and<emphasis role="italic"
+                    >P</emphasis><subscript>2</subscript> are disjoint is commonly done in DL
+                literature with</para>
+            <para>Dis(<emphasis role="italic">P</emphasis><subscript>1</subscript><emphasis
+                    role="italic">,P</emphasis><subscript>2</subscript>).</para>
+            <sect3>
+                <title>Solution</title>
+                <para>A property <emphasis role="italic">R</emphasis>is symmetric if, for all
+                        <emphasis role="italic">a</emphasis>and <emphasis role="italic"
+                    >b</emphasis>, <emphasis role="italic">a</emphasis>is related to <emphasis
+                        role="italic">b</emphasis>by <emphasis role="italic">R</emphasis>means that
+                    also <emphasis role="italic">b</emphasis>is related to <emphasis role="italic">a
+                    </emphasis>by <emphasis role="italic">R</emphasis>. The symmetric properties are
+                    in our case <code>fam:isRelativeOf</code>, <code>fam:hasSibling</code>and
+                        <code>fam:hasSpouse</code>. If <code>fam:hasSibling</code>is symmetric, then
+                    if Bart is the sibling of Lisa, then Lisa must be a sibling of Bart—which is
+                    reasonable.</para>
+                <para>A property <emphasis role="italic">R</emphasis>is transitive if, for all
+                        <emphasis role="italic">a</emphasis>, <emphasis role="italic"
+                    >b</emphasis>and <emphasis role="italic">c</emphasis>, <emphasis role="italic"
+                        >a</emphasis>is related to <emphasis role="italic">b</emphasis>by <emphasis
+                        role="italic">R</emphasis>and <emphasis role="italic">b</emphasis>is related
+                    to <emphasis role="italic">c </emphasis>by <emphasis role="italic">R
+                    </emphasis>means that <emphasis role="italic">a </emphasis>is related to
+                        <emphasis role="italic">c </emphasis>by <emphasis role="italic"
+                    >R</emphasis>. The transitive properties are in the family ontology
+                        <code>fam:hasBrother</code>, <code>fam:hasSister</code>and
+                        <code>fam:hasSibling</code>. If <code>fam:hasSister</code>is transitive then
+                    if Bart has a sister Lisa and Lisa has a sister Maggie, than Maggie is also the
+                    sister of Bart—which is also reasonable.</para>
+                <figure xml:id="SymmetricN3Property">
+                    <title>Symmetric N3</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Symmetric%20N3%20Property.png"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Is a subproperty of a transitive property necessarily also transitive? Explain why
+                / why not?</para>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Is a subproperty of a symmetric property necessarily also symmetric? Explain why /
+                why not?</para>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Explain what it means for a property to be inverse functional.</para>
+            <para>For all properties in our ontology, state that they are inverse functional if you
+                believe that is correct.</para>
+            <sect3>
+                <title>Solution</title>
+                <para>Quoting <link
+                        xlink:href="http://www.w3.org/TR/owl-ref/#InverseFunctionalProperty-def"
+                        >InverseFunctionalProperty-def</link>:</para>
+                <para>If a property is declared to be inverse-functional, then the object of a
+                    property statement uniquely determines the subject (some individual). More
+                    formally, if we state that P is an owl:InverseFunctionalProperty, then this
+                    asserts that a value y can only be the value of P for a single instance x, i.e.
+                    there cannot be two distinct instances x1 and x2 such that both pairs (x1,y) and
+                    (x2,y) are instances of P.</para>
+                <para>Assume <code>foaf:name</code>is inverse functional. Then all persons must have
+                    a distinct name, which clearly is not correct. This <emphasis role="italic"
+                        >is</emphasis>correct for the Simpson instances of the family ontology, but
+                    it does not hold in general.</para>
+                <para>There is no property that is a good candidate for a inverse functional
+                    property.</para>
+                <para>Note also that <code>foaf:name</code>is an
+                    <code>owl:DatatypeProperty</code>and such properties are not allowed as inverse
+                    functional in OWL DL.</para>
+            </sect3>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>OWL Metrics</title>
+        <sect2>
+            <title>Exercise</title>
+            <para>Makea java program which loads an OWL ontology and lists<itemizedlist>
+                    <listitem>
+                        <para>the number of classes,</para>
+                    </listitem>
+                    <listitem>
+                        <para>the number of object properties,</para>
+                    </listitem>
+                    <listitem>
+                        <para>the number of datatype properties,</para>
+                    </listitem>
+                    <listitem>
+                        <para>the number of individuals and</para>
+                    </listitem>
+                    <listitem>
+                        <para>the DL expressivity of the ontology.</para>
+                    </listitem>
+                </itemizedlist></para>
+            <para>Use a Pellet reasoner to do your reasoning.</para>
+            <para><emphasis role="bold">Tip</emphasis>: You should get the same results from your
+                program as you get when loading an ontology in Protégé. I used the Pellet API to get
+                hold of the expressivity of the ontology, using the classes
+                    <code>JenaLoader</code>and<code>KnowledgeBase</code>.</para>
+            <sect3>
+                <title>Solution</title>
+                <para>My solution is a program called <code>OWLMetrics</code>and extends the program
+                    <code>RDFSMetrics</code>.</para><figure xml:id="ProtegeScreenshot">
+                        <title>Protégé Screenshot with its Relevant Metrics Section Marked</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Prot%C3%A9g%C3%A9%20Screenshot%20with%20its%20Relevant%20Metrics%20Section%20Marked.png"/>
+                                
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Exercise</title>
+            <para>Test the metrics of your family ontology.</para>
+            <para><emphasis role="bold">Tip</emphasis>: Note that if your file uses RDFS class or
+                properties, you can have trouble getting the results you expect from Jena, so it is
+                smart to convert the relevant RDFS constructs to OWL. This is easily done manually,
+                as explained in an eariler exercise for this week, or you can open the file in
+                Protégé and save it, which should convert it to OWL.</para>
+        </sect2>
+    </sect1>
+</chapter>
