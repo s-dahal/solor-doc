@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Laboratory Data Touch Points, Methods, and Associated Risks </title>
+    <section><title>Laboratory Data Accuracy and Transparency in the Laboratory</title>
+        
+            <para>Until the widespread adoption of the electronic health record (EHR),
+                    laboratory test results were communicated by phone,fax, or paper. While clinical
+                    laboratories adopted information and automation technologies to deliver test
+                    results more efficiently to clinicians beginning in the 1970‘s, the model of
+                    patient care remained a single institution-centric model. Most patients could be
+                    expected to receive care from a single institution through long periods of their
+                    life.</para>
+                <para>Physical copies of laboratory results and notes moved with a patient between
+            facilities if they required care from more than one institution. In the past decade, the
+            electronic transfer of the patient’s history, diagnosis and laboratory results has never
+            been technologically easier, but this process has been far from seamless and fraught
+            with risk. Individual laboratories develop and select local test codes, tests names,
+            normal range values, and formats of test results and associatedunits. While the lack of
+            data standardization may work well in a single institution healthcare model and does not
+            impact the daily operations of individual laboratories, it does pose a significant
+            barrier when data are compared or aggregated across institutions and creates
+            inefficiencies and ambiguity for secondary data users.</para>
+        <para>Accurate mapping of local laboratory codes to standardized terminologies would enable
+            semantic interoperability in data sharing and aggregation across systems for a variety
+            of purposes. In the case of laboratory data, accuracy does not simply mean successfully
+            transmitting the test and result value without error, it also means successfully
+            transmittingthe data elements that allow for meaningful interpretation and use of the
+            laboratory result. Laboratory test results require additional data elements besides the
+            result (e.g., units of measure, reference range values, specimen type, methodology) to
+            be correctly interpreted and to meet interoperability standards and requirements. In
+            vitro diagnostic (IVD) vendor products’ analytical techniques, reagents, and equipment
+            calibration vary between IVD platforms and testing kits. These methodological
+            differences can produce significant variation in results for similar laboratory tests
+            across different IVD vendor platforms. Data necessary (e.g., instrument and test kit
+            information) to determine equivalence and interpret results originating from differing
+            locations or performed on differing IVD platforms are currently not communicated to
+            and/or are suppressed in the EHRs which can impact patient care and safety.</para>
+                <para>The figure below illustrates the touch points outside of the laboratory that
+            produce risk for data quality degradation. Accurate interpretation and equivalence
+            determination of tests and a shared understanding of the laboratory data as it moves
+            across the healthcare ecosystem requires a standardized digital representation of
+            laboratory tests. Enhanced laboratory data accuracy holds the potential to improve
+            patient care transfers, reduce redundant laboratory testing, implement automated
+            clinical decision support, aid in the monitoring of infectious disease outbreaks, and
+            accelerate translational research based on real-world evidence. To realize the full
+            potential of interoperable laboratory data, we must abandon the single institution model
+            of healthcare and evaluate laboratory data in its role in the healthcare ecosystem
+            through the lens of systems safety. </para>
+        <figure xml:id="LaboratoryDataTouchpointandWorkflow">
+            <title>Laboratory Data Touchpoint and Workflow</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Laboratory%20Data%20Touchpoints%20and%20Workflow.png"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Current Laboratory Data Transmission Methods</title>
+        <section>
+            <title>Fax and PDF</title>
+            <para>Faxes and PDF represent modes of transmission of data that do not support
+                interoperability because the data they convey are unstructured and uncoded. These
+                are usually fax and PDFs of laboratory test reports and would be expected to include
+                data elements required under the Clinical Laboratory Improvement Amendments (CLIA)
+                standards such as patient identification, laboratory where the test was performed,
+                test report date, test performed, specimen source as appropriate, test result and
+                applicable units of measure and interpretation, information regarding the condition
+                and disposition of specimens not meeting the laboratories criteria for acceptability
+                and reference intervals.</para></section>
+            <section>
+                <title>Manual Data Entry</title>
+                <para>Manual data entry may occur in an attempt to convert non-interoperable data
+                such as faxes and PDFs into an interoperable format in a receiver system. It may
+                also be used to fulfill data reporting requirements through the use of specialized
+                portals developed by public health agencies. The data degradation risks of manual
+                entry include not only operator error in entering the data, but also that the
+                metadata and coding associated with the original result in the sending system is
+                lost. Standardized coding may occur as part of the record build for the manual entry
+                test record in thereceiver system, however, the coding assigned by the receiver
+                system may not match the intended meaning of the original code assigned by the
+                performing laboratory.</para>
+                </section>
+            <section>
+                <title>Flat File or Database Extract</title>
+              
+                <para>Flat file or database extractions may be used as a tool to fulfill the
+                    requirement of transmitting data and associated metadata to public health
+                    agencies, research organizations and quality organizations. The database
+                    extracts usually require further manipulation by the sender in order to fulfill
+                    requirements by the receiving organization. Standardized codesmay have to be
+                    added to the data if they are not already coded in the LIS or EHR systems.
+                    Additional contextual information such specimen or collection information may
+                    also be required. Database extractions are useful for transmitting large amounts
+                    of data, however, the curation of the data after the point of generation
+                    introduces risk of data degradation as inaccurate information may be introduced
+                    as part of the curation process.</para>
+            </section>
+            <section>
+                <title>Interface</title>
+                <para>Currently, most interfaces used in healthcare function using HL7 messaging.
+                They are utilized for a variety of purposes including the transmission of laboratory
+                orders and results within and between systems. They can also be used for reporting
+                results to public health agencies. The Laboratory Order Interface (LOI) and
+                Laboratory Results Interface (LRI) HL7 Implementation Guides are applicable for
+                laboratory test orders and results, respectively. The Electronic Laboratory
+                Reporting (ELR) and Electronic Case Reporting (eCR) Implementation Guides apply to
+                interfaces used for public health reporting.</para>
+                <para>Unfortunately, very few laboratories have the resources necessary to implement
+                more than a handful of interfaces with outside institutions, laboratories, and
+                public health agencies due to the significant costs associated with current
+                non-standardized interface requirements. These implementation costs cannot be
+                recouped at scale and have driven the increasing popularity and dependency on
+                HIEs.</para>
+            </section>
+        </section>
+    <section>
+        <title>Laboratory Data Recipients</title>
+       
+            <section>
+                <title>Internal Electronic Health Record Systems</title>
+                <para>Internal EHR systems represent the digitized version of the patient’s chart
+                within the same healthcare system as the performing laboratory. The Health
+                Information Technology for Economic and Clinical Health (HITECH) Act adopted in 2009
+                was designed to encourage healthcare providers to move away from paper charts and
+                utilize electronic data recording and sharing technology such as EHR systems to
+                improve clinical quality and care transparency. According to The Office of the
+                National Coordinator for Health Information Technology (ONC), EHR adoption in U.S.
+                hospitals has climbed from 72% to 96% over the past ten years. While some healthcare
+                systems utilize an integrated laboratory information system (LIS) and EHR solution
+                from a single vendor, many institutions have adopted a best-of-breed strategy with
+                separate vendors for their LIS and EHR systems.</para>
+                <para>Integrating LIS and EHR systems requires overcoming obstacles that pose a
+                threat to laboratory data quality and accuracy. LIS and EHR systems may have
+                disparate data formats and different technological stack and integration
+                requirements. Third-party EHR and LIS systems can be integrated using a variety of
+                methods including native HL7, FHIR APIs, EHR integration modules, or middleware.
+                Just because LIS and EHR have been integrated does not guarantee that the capture
+                and transmission of standardized data elements are necessarily seamless. Fields for
+                certain standardized codes may exist in one system and not the other. For example,
+                currently none of the major EHR products can capture and transmit instrument and
+                test kit unique device identifiers, despite transmission of test methodology being
+                essential for equivalence determination.</para>
+                <para>The ONC’s Cures Act Final Rule (Cures Rule) adopted the United States Core
+                Data for Interoperability (USCDI) as a new standard that is a required part of new
+                health IT certification criteria for standardized application programming interface
+                (API) for patient and population services. The USCDI comprises a core set of
+                structured and unstructured data needed to support patient care and is intended to
+                establish a consistent baseline of harmonized data elements that can be broadly
+                reused across use cases. It is currently relatively rudimentary as it pertains to
+                laboratory data and USCDI version 1, as the currently adopted version only includes
+                tests and their values/results as required supported elements in the laboratory
+                domain. Interfaces utilize HL7 messaging and the Laboratory Order Interface (LOI)
+                and Laboratory Results Interface (LRI) are HL7 Implementation Guides for creating a
+                HL7 Version 2.5.1 OML^O21 message for laboratory test orders and results,
+                respectively. Data elements required under the Clinical Laboratory Improvement
+                Amendments (CLIA) standards such as patient identification, laboratory where the
+                test was performed, test report date, test performed, specimen source as
+                appropriate, test result and applicable units of measure and interpretation,
+                information regarding the condition and disposition of specimens not meeting the
+                laboratories criteria for acceptability and reference intervals are required for
+                internal EHR systems.</para>
+            </section>
+            <section>
+                <title>Provider Portal</title>
+                <para>Some community providers ordering tests from a particular laboratory may have
+                    not full access to the EHR of the healthcare system in which the laboratory
+                    operates. The data in the provider portal may be coded with standardized data.
+                    The provider may receive their results through a provider portal that allows for
+                    ordering of tests and viewing and printing of results, but does not allow for
+                    automated incorporation of the results into notes or decision support
+                    algorithms. The format of the test report seen by the provider is dictated by
+                    the required CLIA data elements in a test reportas discussed above. If the
+                    provider sends testing to multiple referral laboratories, determining the
+                    equivalence of similar tests may not be possible as units of measure may differ
+                    across laboratories and methodology is not a required CLIA reporting
+                    element.</para>
+            </section>
+            <section>
+                <title>Patient Portal</title>
+                <para>Patients and their legal guardians are able to view their health information
+                through patient portals established by healthcare institutions as extensions of the
+                EHR. The information displayed in the patient portal is not necessarily inclusive of
+                everything in their EHR. Congress prohibited “information blocking” under the 21st
+                Century Cures Act in 2016. This theoretically allows patients access to everything
+                in their patient record with very few exceptions, however, determining how to
+                implement patient access to their health information and defining what constitutes
+                information blocking was left to the discretion of the ONC. The ONC’s Cures Act
+                Final Rule (Cures Rule) currently utilizes the data set defined in USCDI version 1
+                as the set of components that must be shared with the patient if it is available.
+                This currently includes only tests and values/results. Some of the data may be coded
+                with standardized codes, but the USCDI standard rather than CLIA sets the required
+                data elements under the Cures Rule.</para>
+            </section>
+            <section>
+                <title>External Electronics Health Record Systems and Laboratory Information
+                Systems</title>
+                <para>Laboratorydata may need to be transmitted to an external LIS or EHR system.
+                    This transmission may occur through a variety of modalities. Some laboratories
+                    may perform testing for healthcare entities outside of their system. If the
+                    volume of referral testing is enough to justify the cost, the laboratory and
+                    external institution may choose to invest in a HL7 interface. Orders and results
+                    can then be transmitted electronically between the performing laboratory and the
+                    receiving institution. If the volume is insufficient to warrant investing in an
+                    interface, the test reports are often delivered via fax or PDF. The required
+                    data elements in the test report would fall under the purview of CLIA.</para>
+                <para>In order for the data in the fax or PDF to be interoperable, the receiving
+                    institution may have to manually enter the results as discrete data elements. In
+                    this case, the original coding and metadata associated with the results in the
+                    originating LIS system is lost and replaced by whatever coding is used as part
+                    of the test record creation in the externalLIS or EHR. For interfaced data
+                    transmission, the data integrity depends on the configuration of the interface
+                    and on the functionality available in the LIS or EHR systems involved to
+                    capture, transmit, and receive the standardized data elements.</para>
+                <para>The Laboratory Order Interface (LOI) and Laboratory Results Interface (LRI)
+                HL7 Implementation would apply for laboratory test orders and results, respectively.
+                Some interfaces may be configured with translation tables that automaticallyswap out
+                incoming LOINC® codes or SNOMED CT® codes that do not match what is in the receiving
+                LIS or EHR system for given tests. This poses a risk in data quality as the code
+                replacement may not match the intended meaning of the original code assigned by the
+                performing laboratory.</para>
+                <para>As discussed above, none of the major EHR vendors currently have fields to
+                    support capturing or receiving the instrumentand test kit UDI. Determining test
+                    equivalence and interpretation usually relies on units of measure and reference
+                    range as specific platform and methodology information is usually not available
+                    in either the report or associated metadata.</para>
+            </section>
+            <section>
+                <title>Health Information Exchanges</title>
+                <para>Health Information Exchanges (HIEs) allow for the ability to move clinical
+                information including laboratory data across different healthcare information
+                systems within a region, community, or customer base. Instead of having to establish
+                individual interfaces with numerous other organizations, participants in the Health
+                Information Network (HIN) are able to exchange healthcare data with all other
+                participants. Individual HIEs do not necessarily support the same data elements and
+                information may be lost as data is exchanged between the two. Even with participants
+                of the same HIN, there may be enormous variation in what information is included
+                when laboratory test data is exchanged. This is because there are no established
+                guidelines on what data must be included with laboratory test results as HIEs fall
+                outside of the purview of the CLIA required data elements and federal and state
+                regulations regarding HIEs are still being defined.</para>
+                <para>The Trusted Exchange Framework and Common Agreement (TEFCA) is an attempt by
+                    the ONC to establish a universalfloor for interoperability. The goal of TEFCA is
+                    to establish the infrastructure model and governing approach for users in
+                    different HINs to securely share basic clinical information with each other,
+                    with commonly agreed-to expectations and rules, regardless of which network they
+                    participate in. Although TEFCA is a step toward more standardization of data
+                    exchange for HIEs, no framework for the standardization of laboratory data as
+                    part of TEFCA has yet been formulated.</para>
+            </section>
+            <section>
+                <title>Public Health Agencies</title>
+                <para>Laboratories are required to report tests results pertaining to a variety of
+                diseases considered to be of great public health importance to public health
+                agencies and registries. The requirements for reporting, including the method of
+                reporting and what information must be included, varies from jurisdiction to
+                jurisdiction and is sometimes set by statute. Reporting takes many forms, ranging
+                from PDF and faxes of individual patient reports to interfaced reporting and flat
+                file extracts.</para>
+                <para>As discussed above, PDF and fax copies of result reports must contain CLIA
+                    required data elements and require additional manipulation by the receiver to be
+                    interoperable. Some jurisdictions receive result reporting through manual entry
+                    of results through a portal. This may introduce risk of data degradation through
+                    manual entry error, but has the benefit of making the data interoperable for the
+                    public health agency once it has been entered by either the laboratory
+                    orhospital personnel. Flat file/database extractions may occur from either the
+                    LIS or EHR database systems. The data components reported as part of the extract
+                    depends on the configuration of the report to meet requirements. For
+                    laboratories serving a large catchment area, different report parameters may
+                    need to be developed to satisfy the requirements of different jurisdictions.
+                    Interfaced reporting occurs through HL7 messaging and are subject to the
+                    Electronic Laboratory Reporting (ELR) and Electronic Case Reporting (eCR)
+                    Implementation Guides along with more specific requirements of the individual
+                    requirements.</para>
+                <para>The COVID-19 Pandemic Response, Laboratory Data Reporting Memo issued by the
+                    Department of Health &amp; Human Services released on June 4, 2020, was the
+                    first time laboratories had been asked to provide LOINC® and SNOMED CT codes
+                    associated with their testing along with instrument and kit information. This
+                    highlighted the importance of this information for interpretation of results and
+                    identifying disease trends and tracking disease outbreaks, but also highlighted
+                    the lack of current functionality to capture, track, and transmit these data
+                    elements.</para>
+            </section>
+            <section>
+                <title>Research Organizations</title>
+                <para>Laboratories may submit laboratory data to research organizations either as a
+                voluntary member of a research consortium such as PCORnet® or as a requirement of
+                being a study site in a clinical trial. The data must first be extracted as a flat
+                file/data base extraction. The flat file/database extraction is seldom sent without
+                some manipulation by the sender. The FDA requires data from regulated research to
+                include standardized coding with laboratory data such as LOINC® codes. Although some
+                organizations may have already coded their test menu with the appropriate codes,
+                many sites have to add the LOINC® codes after the extraction. This introduces risk
+                of error as it occurs after the point of generation of the data.</para>
+                <para>In addition, additional metadata such as the clinical setting from which the
+                    testing was derived may also be added to theoriginal extracted data to fulfill
+                    the particular requirements of a given study. Manual curation of laboratory data
+                    has been cited as one of the reasons laboratory data is so difficult and
+                    expensive to use as real-world evidence due to insufficient coding necessary to
+                    determine equivalence and appropriate interpretation.</para>
+            </section>
+            <section>
+                <title>Quality Organizations</title>
+                <para>Laboratories enrolled in proficiency testing (PT) programs as a requirement of
+                CLIA may choose direct transmission of their proficiency testing results to PT
+                vendors to decrease the burden of manual data entry on their personnel. The data
+                requirements of a PT vendor are similar to what would be required to determine test
+                equivalence and correct interpretation. The vendor must be able to determine what
+                test was performed, what unit of measure was used and what platform and kit the test
+                was performed on in order to grade the participant against their appropriate peer
+                group. The barriers PT vendors face in trying to automate PT data transmission are
+                therefore similar to those facing a laboratory director in trying to determine
+                whether or not external laboratory derived values should be allowed to trend on the
+                same line as local laboratory values. Local test names and local codes are
+                impractical to use as they vary from laboratory to laboratory. LOINC® codes alone
+                are not sufficient to determine equivalence due to the many tests to one LOINC®
+                mapping that occurs because of the unique features of the ontology.</para>
+                <para>As discussed previously, methodology information, including instrument and
+                    test kit information, is not currently captured and available for transmission
+                    for any of the major LIS and EHR vendors. The method and platform information
+                    must be obtained separately from the direct transmission process and paired with
+                    the proficiency testing result to allow for appropriate grading of the result.
+                    This is a cumbersome workaround and prone to error. In addition, themethodology
+                    information is not available to be transmitted to patient results to allow for
+                    accurate interpretation and equivalence determination.</para>
+                <para>Integrating the Healthcare Enterprise (IHE) is working with stakeholders to
+                develop a profile for laboratory proficiency testing that would provide a
+                standards-based framework for sharing methodology information for PT purposes. The
+                proficiency testing IHE profile is being proposed as the data requirements for PT
+                are not currently covered by any existing stand</para>
+            </section>
+    </section>
+</chapter>
