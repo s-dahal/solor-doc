@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Knowledge Management Classifier and Compiler Use Cases</title>
+    <section>
+        <title>Purpose for IKM Classfier and Compiler Use Cases</title>
+        <para>Tools used for decision logic and classification of terminology play an important role
+            within the health IT (HIT) ecosystem. The goal of this document is to outline this role
+            as it relates to integrated knowledge management and the Systemic Harmonization and
+            Interoperability Enhancement for Laboratory Data (SHIELD) program. This document will
+            outline the important findings that this project team has uncovered in the goal to
+            understand the evolving role of classification of terminology in the health care
+            landscape. As a summary of findings, this is intended to serve as a tool, both now and
+            in the future, for recording progress, documenting recommendations, and carving a path
+            toward an open-source reasoner solution.</para>
+        <para>Because our understanding, and the wider study and practice of classification,
+            continues to improve and change over time with the introduction of new techniques and
+            technologies, it is important that documentation on the topic not be considered static,
+            but living and updated to reflect these changes. In the spirit of fostering this
+            learning attitude towards classification, this document will be considered iterative,
+            with new additions and updates made as our understanding and experience develops. With
+            this practice, we can create a repository of living knowledge that adapts to the
+            environment without the need for extensive rework, which, in turn, will allow for a more
+            agile approach to the topic.</para>
+        <para>Decision logic and reasoning are vital to data structure and integrity in any subject
+            but of particular importance to HIT as errors in medical terminology can cause errors in
+            patient data and even result in patient harm. It is important that medical terminology
+            be supported by underlying tools and logic that seamlessly provide enhancements to data
+            and ultimately improve clinical decision support for medical professionals and outcomes
+            for patients. The current state of medical terminology faces a problem of both structure
+            and meaning across terminology standards (e.g., SNOMED CT concepts overlap with LOINC
+            concepts). Two standards may represent the same meaning in two completely different
+            structures, and there is no automated way to determine their equivalence without manual
+            review from experts through a consensus-driven review. These manual processes can be
+            timely, error prone, and can have human biases. The idea is that computers can
+            supplement some part of the process, gaining positive improvements to a purely manual
+            process. If data is shared across standards in a certain structure understood by the
+            first standard, the meaning may be lost in the second standard if it cannot compute
+            equivalence.</para>
+        <para>For the reasons outlined above, decision logic and reasoning must continue to improve,
+            or these issues will continue to plague the health care ecosystem. With rapid
+            enhancements to data science and machine learning in recent years and the fact that
+            these enhancements are only seeming to accelerate, it is a responsibility of the HIT
+            community to keep striving toward better patient outcomes through improving the
+            knowledge management of medical terminology.</para>
+    </section>
+    <section>
+        <title>Introduction to IKM Classifier and Compiler Use Cases </title>
+        <para>Achieving health terminology interoperability requires achieving integrated knowledge
+            management (IKM) in the health care ecosystem. For purposes of this project, IKM is
+            defined as the discipline of bringing all knowledge resources into a unified paradigm
+            where the resources all share a common underlying representation that integrates version
+            control, configuration management, modularity, concept-oriented representation, and
+            standardized viewing, collaborative editing, and extension development capabilities
+            within a single knowledge-management platform. IKM cannot be achieved through a single
+            stream approach as it but requires multiple layers of organized collaboration. For
+            purposes of this document, the focus will be on the contributions that improved
+            classification makes toward achieving IKM.</para>
+        <para>Reasoning, in the context of medical terminology data, does not stray far from its
+            meaning in any other context. Simply, reasoning is the process by which terminology is
+            grouped and sorted based on underlying characteristics. Reasoning brings defined and
+            communicable structure where order would not otherwise exist. While reasoning has been
+            useful to the science community for hundreds of years, it has become of particular
+            interest to computer scientists within the last 40-50 years. This is because computers
+            can serve to ease the human burden of reasoning and classification. In other words, we
+            can feed a set of decision points and rules, or an algorithm, to a computer, which can
+            ingest the algorithm and start making reasoning decisions for us. We have now created a
+            reasoner that can support our decision logic, saving time, reducing errors, and
+            continuing the journey toward IKM.</para>
+    </section>
+    <section>
+        <title>Reasoner Overview</title>
+        <para>The aim of creating a reasoner is to guide the computerized system to build the most
+            proper logic in the way that we, humans, intend to initiate a process of automatic
+            quality assurance with a large volume of information, increase efficiency, and build
+            error-free platforms that minimize the burden of manual work. A large volume of
+            information frequently deals with data that is changing at differing velocity and
+            veracity. Often, the data is not only changing but also is not always available all at
+            once, adding repeated entries and diluting human communication and knowledge management
+            in our daily routines. </para>
+        <para>For example, the integration of hospital systems across the US considers how each of
+            these hospital systems may have its own localized way of describing a clinical
+            terminology or knowledge base. If we could consistently pull their data and apply a
+            consistent process by using uniform logic that is built by the same standard of
+            attributes and descriptions, we could introduce a way to automate the process of quality
+            assurance and capture equivalencies.</para>
+        <para>When we have a large volume of information, we, as humans, are prone to initiate a
+            process of quality assurance, desiring to organize by prioritizing – numerous clinical
+            terms in the healthcare domain as an example – faster, better and more. Some are
+            manageable. Yet, given the numerous service lines and sub-specialties that continue
+            growing among various types of clinical providers and other non-clinical professionals
+            within these service lines, the never-ending process of organizing new sets of clinical
+            terminology, in addition to processing the existing ones, adds another order of
+            magnitude of information and burden of reliance on the time-consuming error-prone manual
+            work. Thus, the idea of computing is born to systemize commonly repeated tasks and leads
+            us to the concept of classifying and reasoning items to computerize with tangible
+            definitions based on attributes and descriptions, called the integrated knowledge
+            management (IKM), as also previously defined in the Introduction.</para>
+        <para>Introducing reasoners also aims to help SNOMED CT® build a more robust clear hierarchy
+            to assist users with the consumption of the data. SNOMED CT® is a comprehensive and
+            robust terminology that allows us to provide a high level of detail and specificity in
+            our documentation. The SNOMED CT® Browser is a powerful tool that makes it easy to
+            search and explore the terminology, and the graphical relationship view is particularly
+            useful for understanding the relationships between different concepts. SNOMED CT® can
+            benefit from an IKM reasoner to streamline various advanced actions, deliver more
+            results that meet the expectations, and remove the requirement of tutorial support by
+            strengthening its decision logic. By adopting the reasoner in IKM, we, humans, are
+            supporting the giant complicated system that is being computerized and helping the
+            computerized system stay equipped with a special capability to classify, or reason,
+            better to connect similar or same concepts that are being described in different manners
+            by different stakeholders across the map. </para>
+        <para>The discussion of adding reasoners has been a longstanding idea that has not gained
+            any one-size-fits-all solution among the IKM community. The deployment of our
+            Terminology Knowledge Architecture (Tinkar), as part of our IKM architecture, can help
+            strengthen reasoning with the introduction of reasoners and take one step closer to see
+            a better hierarchical structure that generates better results and outcomes for end users
+            in the near future. </para>
+    </section>
+    <section>
+        <title>Reasoner Within Context of IKM</title>
+        <para>The discussion of adding reasoners has been a longstanding idea that has not gained
+            any one-size-fits-all solution among the IKM community. The deployment of our
+            Terminology Knowledge Architecture (Tinkar), as part of our IKM architecture, can help
+            strengthen reasoning with the introduction of reasoners and take one step closer to see
+            a better hierarchical structure that generates better results and outcomes for end users
+            in the near future. </para>
+        <para>As we considered reasoners for an IKM reference implementation, we identified existing
+            reasoner technology used in the community. This included SnoRocket, ELK, and open-source
+            software solutions like Protégé. We focused on the following prioritized criteria of
+            importance for IKM: (1) Java-based with the ability to integrate with the latest version
+            of Java 21, (2) scalable performance, and (3) the ability to reason on specific
+            user-selected definitions.</para>
+        <para>We selected the ELK reasoner for use in the IKM reference implementation, available at
+            the following source: <itemizedlist>
+                <listitem>
+                    <para><link> http://liveontologies.github.io/elk-reasoner/ [8]</link></para>
+                </listitem>
+            </itemizedlist></para>
+        <section>
+            <title>Java-based Findings</title>
+            <para>We identified the following libraries that are required for an initial
+                implementation of the ELK reasoner on our IKM Tinkar data structures: </para>
+            <itemizedlist>
+                <listitem>
+                    <para><link xlink:href="https://github.com/liveontologies/puli"
+                            >https://github.com/liveontologies/puli [9]</link></para>
+                </listitem>
+                <listitem>
+                    <para><link xlink:href="https://github.com/owlcs/owlapi"
+                            >https://github.com/owlcs/owlapi [10]</link></para>
+                </listitem>
+            </itemizedlist>
+            <para> </para>
+            <para>ELK uses Puli to help manipulate proofs that are based on inference rules. </para>
+            <para> </para>
+            <para>ELK uses OWL API for creating, manipulating and serializing OWL-syntax-based
+                Ontologies.</para>
+            <para> </para>
+            <para>Overall, there was considerable effort required to modernize ELK and these
+                dependent libraries to update them to the latest version of Java 21 and to integrate
+                into the Java Platform Module System (JPMS), available at: </para>
+            <para> </para>
+            <itemizedlist>
+                <listitem>
+                    <link xlink:href="https://jcp.org/en/jsr/detail?id=376"
+                        >https://jcp.org/en/jsr/detail?id=376</link>
+                    <para> [11]</para>
+                </listitem>
+            </itemizedlist>
+            <para> </para>
+            <para>Additionally, there was the need to update the testing framework for all three
+                Java libraries to utilize the latest version of Junit 5, while being JPMS-compliant. </para>
+            <para> </para>
+            <itemizedlist>
+                <listitem>
+                    <link xlink:href="https://junit.org/junit5/">https://junit.org/junit5/</link>
+                    <para> [12]</para>
+                </listitem>
+            </itemizedlist>
+            <para> </para>
+            <para>Within the grand scope of Java programming, reasoners are complex and are not
+                well-documented broadly across industry. There are limited experts and documentation
+                can be limited. Altogether, this contributes to challenges with implementing
+                reasoners in a scalable and robust way. </para>
+            <para> </para>
+        </section>
+        <section>
+            <title>Scalable Performance &amp; Reasoning on User-Selected Definitions
+                Findings</title>
+            <para>We aim to introduce the advantage of an incremental reasoner to a wider network of
+                users. An incremental reasoner helps users to reason only an increment that is being
+                newly introduced, which is an improvement from having to wait for longer than users
+                prefer. An incremental reasoner is a type of reasoner that takes on new information
+                without having to be fully retrained or reviewing everything from the beginning of
+                all the existing and added data. Widely used reasoners within SNOMED CT® (e.g., ELK,
+                SnoRocket) have previously scanned the existing data all from the beginning every
+                time a new set of data is added to the existing system, which resulted in long
+                waiting time for end users. </para>
+            <para>Tinkar aims to provide a foundation for a knowledge architecture that will
+                integrate terminology language like SNOMED to local systems, thus creating an
+                interoperable healthcare language network that can communicate effectively across
+                multiple systems. An incremental reasoner aims to run on the existing data structure
+                and empower Tinkar’s ability to classify and shorten the waiting time for end users
+                with a growing volume of information to the existing IKM. Having an incremental
+                reasoner also aims to shorten the time it takes to correct any existing modeling
+                errors that generate incomplete or incorrect results. By creating an editing
+                environment in the presence of incremental reasoner, IKM can guide appropriate
+                stakeholders precisely where to look and evaluate to maximize the use of new and
+                existing data in the IKM system.</para>
+            <para>Our implementation of the ELK reasoner within the IKM reference implementation
+                yielded satisfactory results when reasoning on a prioritized use case containing a
+                full representation of SNOMED CT and all its historical change sets. The reasoner
+                was able to reason within a few minutes the entire SNOMED CT data set in
+                Tinkar-format and was able to selectively reason on user-selected definitions and
+                changes. </para>
+        </section>
+    </section>
+    <section>
+        <title>Next Steps in the Option Period</title>
+        <para>In the Option Period for this body of work, we will further refine the implementation
+            and integration of the ELK reasoner into the IKM reference implementation. This will
+            entail removing the dependencies of the current reasoner on the Puli and OWL API
+            libraries and be able to reason on the IKM native data structure, Tinkar. </para>
+    </section>
+</chapter>
