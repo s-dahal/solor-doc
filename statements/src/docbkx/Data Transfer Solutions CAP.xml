@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Data Transfer Solutions</title>
+    <sect1>
+        <title>Proficiency Testing and Interoperability Overview</title>
+        <para>Laboratory proficiency testing (PT) participation is a requirement for performance of
+            clinical testing under the Clinical Laboratory Improvement Amendments of 1988 (CLIA 88)
+            to provide an important comparison and objective assessment of lab staff competencies,
+            specimen handling, equipment functionality, and results reporting. PT is an external
+            quality and accuracy assessment process that tests unknown specimens from a PT provider
+            to ensure accurate laboratory results. After submitting test results, the laboratories
+            receive data that compares their performance with that of other laboratories in their
+            peer group (e.g., other laboratories that performed the same test on the same instrument
+            and reagent platforms).</para>
+        <para>The interoperability issues that make direct transmission results from the performing
+            laboratory to quality organizations such as PT vendors challenging are very similar to
+            the issues that laboratories face when they receive results from external laboratories
+            through Health Information Exchanges (HIE) and HL7 interfaces. Individual laboratories
+            have always utilized their own local test codes, tests names, normal range values, and
+            formats of test results and associated units. To compensate for this lack of
+            standardization, PT vendors have had to implement a system of custom codes to
+            standardize the representation of required data elements across result submissions from
+            laboratories to allow them to perform their function of assessing the accuracy of
+            results and comparing the performance of the subscriber laboratory to their peer groups
+            of other laboratories utilizing the same instrumentation and reagents.</para>
+        <para>Like HIE laboratory result transmission, being able to correctly interpret PT tests
+            and determine equivalence of test results often requires more information than is
+            currently available with most test result transmissions. Method information such as
+            instrument and reagent information are not currently able to be captured or transmitted
+            through LIS and EHR systems. The methodology information is not transmitted with the
+            result and must be “married up” within the PT vendor information system when the PT
+            result is received. Methodology information is stored in the PT vendor system and is
+            often derived from historical reporting and must be manually changed by the subscriber
+            laboratory whenever there is a change.</para>
+    </sect1>
+    <sect1>
+        <title>Current State Architecture</title>
+        <para>When looking at possible future state architectures for the transfer of data between
+            quality organizations it is important to examine the current state architecture of the
+            solutions in place today. After further exploration, it becomes evident that it is quite
+            different from that of a traditional interface utilized in a laboratory. Specifically,
+            it is different in the way that the data is transferred, and how the data needs to be
+            encoded before it gets to its ultimate destination. Please see below for a graphic of
+            what the current architecture looks like for submitting results to a quality
+            organization</para>
+        <para>While this narrative is meant to demonstrate a possible future state architecture for
+            the transfer of data within quality organizations, part of the intention of this
+            analysis is to take a close look at how data is currently transmitted. This document
+            will also show how proficiency testing is currently disconnected from the laboratory
+            interface ecosystem. It will look at some options that could be used to move the needle
+            towards implementing standards, systems processes, and technical frameworks across the
+            clinical and quality ecosystems that can better harmonize the approach to data
+            transmission.</para>
+        <para>The CAP currently employs two methods for direct transmission of PT results from a
+            subscriber laboratory. One methodutilizes a specially designed PT driver, embedded in a
+            widely utilized Instrument Manager Middleware, and the other employs a Cloud-based Hub
+            solution. When a PT sample is received by the subscriber laboratory from the PT vendor,
+            laboratory personnel must place an order into the LIS system to register the PT
+            specimen. This involves utilizing fields in the LIS system such as “Patient Name” to
+            provide necessary information for the PT workflow, often using the name or code of the
+            PT survey being conducted, as the specimen "Patient Name" entry. The PT specimen must
+            then be analyzed in the same manner as any patient sample, for the indicated
+            test.</para>
+        <para>In the case of the instrument middleware transmission method, PT results generated by
+            the instrument are automatically sent to the Instrument Manager, where the PT results
+            are recognized using the PT survey code, translated, and reformatted by the specially
+            designed PT driver. This process of translation and reformatting includes applying the
+            custom codes developed by the PT vendor to identify the PT test in a standardized format
+            regardless of local code and local test name conventions.</para>
+        <para>For users of the Cloud-based Hub direct transmission method, laboratory personnel run
+            a report in the LIS to extract and send PT results, using the PT survey code, to a
+            folder on the laboratory’s network. The PT results are transferred to a Cloud-based Hub
+            by agent software monitoring the folder. The PT results are translated and reformatted
+            like the InstrumentManager Middleware method, with PT vendor developed custom codes
+            applied, to identify data elements in a standardized format.</para>
+        <para>Thefinal step is the same for both the Instrument Manager Middleware and Cloud-based
+            Hub and the formatted result file is transmitted to the PT vendor system where the PT
+            results are automatically populated into the appropriate fields of the result form.
+            Laboratory personnel can review results and to make changes such as correcting
+            methodology prior to final submission.</para>
+        <figure xml:id="CurrentHubDIIE">
+            <title>Current Hub DI IE</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Current%20Hub%20DI%20IE.png"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </sect1>
+    <sect1>
+        <title>ProficiencyTesting Coding</title>
+        <para>Although the use of custom codes by PT vendors solves some of the interoperability
+            issues by allowing for aggregation of PT results from multiple laboratories regardless
+            of local name and local code conventions, the PT transmission process is disconnected
+            from the healthcare ecosystem because the custom codes utilized by PT vendors are never
+            incorporated into LIS and EHR systems and are never transmitted outside of the PT direct
+            transmission workflow. In addition, each PT vendor has developed their own set of custom
+            codes which allows for interoperability of results only within their system.</para>
+        <para>Replacing PT developed vendor custom codes with existing standard ontology codes and
+            incorporating these codes into the LIS and EHR system would theoretically allow for
+            interoperability beyond PT results, including for more efficient downstream use of real
+            patient data for public health and analytics once implemented in the clinical domain.
+            While this may sound like an easy proposition, many barriers stand in the way of
+            widespread implementation. First, there must be an authoritative source for standardized
+            codes that is easily accessible to laboratories. The objective of the Laboratory
+            Interoperability Data Repository (LIDR) is to digitally represent laboratory tests using
+            standard ontologies to fully define the test characteristics to allow for accurate
+            interpretation and equivalence determination and a shared understanding of the data as
+            it moves across the healthcare ecosystem. Incorporation of the standard codes into LIS
+            and EHR systems should be as automated as possible with the codes easily accessible and
+            transparent to laboratory personnel for ease of maintenance. Further development and
+            investment of resources needs to occur with some of the coding systems to allow for new
+            codes to be published at the speed of business to accommodate the need of all data
+            consumers. Lastly, the healthcare ecosystem infrastructure must be updated to support
+            this paradigm shift to ensure that all necessary codes needed to digitally represent
+            laboratory tests are able to be captured and seamlessly transmitted throughout the
+            healthcare ecosystem without loss of information and meaning.</para>
+    </sect1>
+    <sect1>
+        <title>Future State Architecture</title>
+        <para>Outlined below are some design ideas for how to transition from the current state
+            architecture into a solution that is more closely aligned with how patient data is
+            transmitted, which can then be modeled and utilized across various clinical, quality,
+            and public health use-cases. The diagram below is meant to be a high-level architecture
+            diagram of how technology and interfaces can be utilized, to help quality organizations
+            consume data that has been encoded with LIDR. Its purpose is to consume individual
+            tests/results coming from laboratories, as well as bulk tests/results to be able to
+            provide feedback to the individual submitting laboratory and to the LIDR
+            Repository.</para>
+        <para>Currently, incorrect mapping of a subscriber laboratory test to custom code used by
+            the PT vendor could result in the test being graded against the wrong criteria and the
+            laboratory failing the challenge for that test. To avoid that situation, there is
+            functionality and systems in place that allow for subscriber laboratories to evaluate
+            whether the custom code mapping in the Instrument Manager Middleware and Cloud-based Hub
+            solutions are accurate, prior to submitting survey results. Similar tools that could
+            evaluate the standard coding provided by LIDR in the LIS and EHR would serve an
+            important quality assurance function that would not only ensure that subscriber
+            laboratories do not fail PT surveys due to mapping errors but would also improve the
+            interoperability of transmitted patient data and the quality of real- work data.</para>
+        <para>In addition, quality organizations could provide important feedback to the
+            administrators of LIDR on any significant gaps in available coding for specific areas of
+            laboratory testing (e.g., microbiology or molecular pathology). Harmonization of coding
+            between vendors would be essential as PT vendors need to be able to aggregate similar
+            tests across vendor platforms, as well as grading against specific vendor peer groups.
+            PT vendors utilizing LIDR codes in place of custom codes could therefore provide
+            important feedback on any conflicting coding between vendors for similar tests.</para>
+        <para>The intent is that technology and workflows like the one proposed in this diagram will
+            eliminate the need for custom mapping. Currently quality organizations and their
+            customers often must do some type of mapping to accept incoming tests/results from a
+            laboratory into the quality organization. With this process the goal is to have semantic
+            interoperability between the laboratory and the quality organization, and hopefully
+            expand interoperability to include patient results throughout the healthcare
+            ecosystem.</para>
+        <figure xml:id="HighLevelLIDREncodedDataFlow">
+            <title>High Level LIDR Encoded Data Flow</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/High%20Level%20LIDR%20Encoded%20Data%20Flow.png"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>In breaking this process down, some key points, assumptions, and areas that need
+            further evaluation will be provided. In anticipation of socializing and analyzing this
+            diagram, conversation will be initiated that will lead to thoughtful improvements as
+            well as a more detailed picture of the specific workflow and technology that would be
+            needed to stand up a proof of concept.</para>
+        <para>Below are some highlights, narrative, assumptions, and areas that need further
+            consideration for this process:</para>
+        <sect2>
+            <title>Laboratory Information System (LIS)</title>
+            <para>The first critical part of this workflow is when the LIDR is applied to the LIS.
+                At this point we have assumed (but will need to clarify through the project) that
+                the LIDR would be applied in one of three ways:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Areal-time interface. As the LIDR is updated it flows into the LIS</para>
+                </listitem>
+                <listitem>
+                    <para>Third-party load. Either through a connection to a third-party database or
+                        an import into the LIS. Similar concept to the way pharmacy loads
+                        medications into the EMR</para>
+                </listitem>
+                <listitem>
+                    <para>Updatethe LIS manually. This would involve LIS staff manually updating the
+                        compendium</para>
+                </listitem>
+            </orderedlist>
+            <para>Here are some things requiring evaluation as part of this process:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Doall the data elements that are part of LIDR exist in the LIS?</para>
+                </listitem>
+                <listitem>
+                    <para>Ifnot, is there a need to partner with LIS vendors to add fields?</para>
+                </listitem>
+                <listitem>
+                    <para>Whatare the pros and cons of these options? For example, is a benefit to
+                        one of the automated solutions above that there are less errors in the
+                        downstream part of this process?</para>
+                </listitem>
+            </orderedlist>
+        </sect2>
+        <sect2>
+            <title>Interface</title>
+            <para>If this data is transported over an interface, the standard used will need to be
+                evaluated. It is known that most laboratories are using HL7v2 for the traditional
+                interfaces to reference labs and public health agencies. In addition, the FHIR
+                standard has gained traction and looks to be increasingly required to implement for
+                specified use-cases under the 21st Century Cures Act. There will be a need to
+                evaluate how these different standards may be able to help the transport of quality
+                data.</para>
+            <para>The interface solution that is ultimately utilized will need to have the
+                flexibility to send standard data, send data elements that may not exist in the
+                standard currently, and potentially string data together depending on what the need
+                is from the “Validate and Normalize” process below.</para>
+        </sect2>
+        <sect2>
+            <title>Validate and Normalize</title>
+            <para>The quality organization will evaluate the incoming data and consume that
+                structured data. Determination will need to be made if that is one piece of data or
+                a concatenated string of data. In the current state it is a 1:1 mapping based on
+                test code. It will need to be evaluated if a single piece of data, such as the LOINC
+                code would suffice, or if a concatenation of multiple data elements together could
+                be utilized and could be sent as a string of unique data.</para>
+            <para>Evaluation of the concatenated data string would need to occur, to determine where
+                concatenation would happen during the transfer of data from the LIS to the “Validate
+                and Normalize” part of the workflow.</para>
+        </sect2>
+        <sect2>
+            <title>Valid</title>
+            <para>Once the above work is completed, the data can then pass through the error
+                management part of the workflow. If the data is “Valid” it would be passed through
+                for final consumption into the quality organizations ecosystem and be used to
+                complete the business process (e.g., PT, reporting, analytics).</para>
+        </sect2>
+        <sect2>
+            <title>Error Management</title>
+            <para>If it does not pass the “Valid” check then it would need to go through the error
+                management process and feedback would need to be provided. Feedback would be
+                provided in the following ways:</para>
+            <orderedlist>
+                <listitem>
+                    <para>A single lab has a missing or incorrect piece of information, but the
+                        receiving party feels that the LIDR file is correct. In this case feedback
+                        would be given to the individual lab.</para>
+                </listitem>
+                <listitem>
+                    <para>The receiving party receive codes and realize that the same instrument
+                        from multiple laboratories is feeding data that is not correct. Feedback
+                        would be provided to the LIDR repository.</para>
+                </listitem>
+                <listitem>
+                    <para>This process is meant to take bulk tests/results and process them. In this
+                        case if any issues are found that feedback would be provided to the LIDR
+                        repository.</para>
+                </listitem>
+            </orderedlist>
+        </sect2>
+    </sect1>
+</chapter>

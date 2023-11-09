@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en-US">
+        <title>FDA System Safety within Laboratory Data Exchanges Aim 1 Phase II Overview</title>
+    <para><emphasis role="bold">Background</emphasis>:</para>
+    <para>Although Phase II officially began on December 9, 2022, our team actually began work on
+        Phase II as </para>
+    <para>early as October 2022 due to the importance of modeling the control structure (Task 2.2).
+        The model of </para>
+    <para>the control structure for the laboratory data ecosystem becomes the focus of our analysis
+        which will begin </para>
+    <para>during Phase III. During Phase II, we remained in an ecosystem learning mode—still
+        expanding our </para>
+    <para>system knowledge and understanding.</para>
+    <para><abbrev>Stakeholder Engagement with Key Informants:</abbrev></para>
+    <para>To date, our team has conducted 25 key informant interviews to inform the current control
+        structure with </para>
+    <para>31 subject matter experts and 2 patient advocates (Appendix A). </para>
+    <para>Interview text currently includes over 350 pages of transcription. The following visual
+        depiction of key </para>
+    <para>word frequency from these transcripts highlights the interview topics (Figure 1).
+        Additionally, key </para>
+    <para>informants have shared losses, hazards, control issues, process elements, and examples of
+        system safety </para>
+    <para>issues and opportunities for system improvements.</para>
+    <para><emphasis role="bold">Task 2.1 – Identify STPA Purpose</emphasis></para>
+    <para><emphasis role="bold">Tasks 2.1.1, 2.1.2, 2.1.3, and 2.1.4: </emphasis></para>
+    <para>Defining the purpose of the System Theoretic Process Analysis (STPA) is the first step
+        with any analysis </para>
+    <para>method. What kinds of losses will the analysis aim to prevent? Will STPA be applied only
+        to traditional </para>
+    <para>safety goals, like preventing loss of human life, or will it be applied more broadly to
+        security, privacy, </para>
+    <para>performance, reputation, and other system properties? What is the system to be analyzed,
+        and what is the </para>
+    <para>system boundary? These and other fundamental questions are addressed during this step. </para>
+    <para>Current insights gained from Tasks 2.1.1, 2.1.2, 2.1.3, and 2.1.4 include: </para>
+    <para>Some system safety definitions will help to create a common context for the STPA purpose.
+        This </para>
+    <para>information has provided valuable context for key informant interviews as pre-read
+        material during Phase </para>
+    <para>II and will continue to evolve during Phase III interviews and analysis. Losses and
+        hazards will be refined </para>
+    <para>based on Task 2.1 and the further evolution of Task 2.2. </para>
+    <para>• Losses involve anything of value to stakeholders and may include a loss of human life or
+        human injury </para>
+    <para>(preventable harm), loss of mission, loss of reputation, loss or leak of sensitive
+        information, or any </para>
+    <para>other loss that is unacceptable to the stakeholders. </para>
+    <para>• A hazard is a system state or sequence of actions, together with a particular set of
+        worst-case </para>
+    <para>conditions, that will lead to a loss.</para>
+    <para>Some initial losses and hazards have been identified below (Table 1). Below the table, we
+        have listed </para>
+    <para>some sub-hazards that we have identified so far. These sub-hazards represent categories of
+        potentially </para>
+    <para>unsafe events, of which we are trying to uncover more. </para>
+    <para>PLACE HOLDER FOR TABLE</para>
+    <para>Sub-Hazards:</para>
+    <para>1. <emphasis role="bold">Hazard-1</emphasis>: Patients receive less than acceptable
+        standard of care (Associated with Loss-1) </para>
+    <para> Example situations where this hazard could develop: </para>
+    <para>a. Healthcare provider orders wrong test. </para>
+    <para>i. Confusing test menus </para>
+    <para>ii. Provider lacks familiarity. </para>
+    <para>iii. Look-alike, sound-alike tests</para>
+    <para>iv. Test is new.</para>
+    <para>b. Healthcare provider receives incorrect test result.</para>
+    <para>i. False positives/false negatives</para>
+    <para>c. Healthcare provider does not receive or receives delayed test result.</para>
+    <para>i. Supply chain issues, transportation failures</para>
+    <para>d. Healthcare provider receives test results for a different patient.</para>
+    <para>i. Patient names corrupted during exchange of locally coded data between healthcare </para>
+    <para>facilities.</para>
+    <para>ii. Patient misidentified (same names, typos, etc.)</para>
+    <para>e. Healthcare provider misinterprets test results.</para>
+    <para>i. Misleading information (human-computer interface, decision tree)</para>
+    <para>ii. Errors in clinical decision-making</para>
+    <para>f. Incomplete diagnostic information available</para>
+    <para>i. Semantic loss during entry into EHR or exchange of healthcare information</para>
+    <para>ii. Mapping error</para>
+    <para>iii. Missing fields</para>
+    <para>iv. Missing context</para>
+    <para>g. Unavailability of diagnostic tests/equipment</para>
+    <para>i. Geographic isolation (urban/rural divide)</para>
+    <para>ii. Difficult access to care (limited health insurance)</para>
+    <para>iii. Limited patient mobility</para>
+    <para>iv. Supply chain issues, transportation failures</para>
+    <para>h. Misunderstandings due to language barriers or health literacy</para>
+    <para>i. Patient does not understand test procedures/requirements.</para>
+    <para>i. Distrust in healthcare system</para>
+    <para>i. Patient refuses to receive care or undergo test.</para>
+    <para>ii. Multiple re-tests are required</para>
+    <para>2. Hazard-2: Person is exposed to harm during testing process (Associated with Loss-1,
+        outside </para>
+    <para>scope of project)</para>
+    <para>a. Person is exposed to infected biological samples/viruses.</para>
+    <para>i. Insufficient personal protective equipment</para>
+    <para>ii. Insufficient precautionary procedures</para>
+    <para>b. Person is given another patient’s treatment.</para>
+    <para>i. Person takes another patient’s medication.</para>
+    <para>c. Person is given another patient’s test.</para>
+    <para>d. Person is exposed to infected patient with negative test result.</para>
+    <para>3. Hazard-3: Laboratory ecosystem stakeholders (including patients and public) lose trust
+        in the </para>
+    <para>laboratory data being collected, shared, analyzed, and reported (Associated with
+        Loss-2).</para>
+    <para>3. Hazard-3: Laboratory ecosystem stakeholders (including patients and public) lose trust
+        in the </para>
+    <para>laboratory data being collected, shared, analyzed, and reported (Associated with
+        Loss-2).</para>
+    <para>Example situations where this hazard could develop:</para>
+    <para>a. Lab is sanctioned.</para>
+    <para>b. IVD manufacturer faces warning, recall, or injunction.</para>
+    <para>c. Negative perception of healthcare/healthcare providers in community</para>
+    <para>d. Healthcare agency(s) puts out conflicting or incorrect notices.</para>
+    <para>e. Healthcare agency has excessive delay in information release.</para>
+    <para>f. Fraud or malfeasance</para>
+    <para>g. High error rate for self-testing</para>
+    <para>h. Patient receives incorrect laboratory information/diagnosis. </para>
+    <para>i. Patient receives high-risk treatment due to incorrect diagnosis from wrong test </para>
+    <para>results. </para>
+    <para>Task 2.2 – Model the Control Structure</para>
+    <para>Tasks 2.2.1, 2.2.2, 2.2.3, 2.2.4, and 2.2.5: </para>
+    <para>A hierarchical control structure is a system model that is composed of feedback control
+        loops (Appendix </para>
+    <para>B). An effective control structure will enforce constraints on the behavior of the overall
+        system. Control </para>
+    <para>structure modeling begins with an abstract control structure and iteratively adds detail.
+        In many cases, </para>
+    <para>the control structure and the control loops within the system may be obvious or can be
+        reused from </para>
+    <para>previous applications. Once the controllers have been identified, system responsibilities
+        can be assigned. </para>
+    <para>These responsibilities (represented as downward arrows) are a refinement of the safety
+        constraints—what </para>
+    <para>does each entity need to do so that together the safety constraints will be enforced? The
+        control actions </para>
+    <para>for each controller can be defined based on these responsibilities. Feedback (upward
+        arrows) can be </para>
+    <para>derived from the control actions and responsibilities by first identifying the process
+        models that controllers </para>
+    <para>will need to make decisions. Then, feedback and other information needed to form accurate
+        process </para>
+    <para>models can be identified. The control structure is refined further by using the
+        responsibilities to “zoom </para>
+    <para>in” again and add additional details. There may not be a 1-to-1 mapping between
+        controllers, other </para>
+    <para>inputs/outputs, and controlled processes. A controller may control one or more processes,
+        and a process </para>
+    <para>may be controlled by zero (absence of arrows) or more controllers. Typically, each control
+        action path </para>
+    <para>will be paired with a parallel feedback path, but not always. Control is closely related
+        to authority within </para>
+    <para>the control structure. Dashed arrows represent informal feedback and question marks are
+        areas requiring</para>
+    <para>additional modeling.</para>
+    <para>Current insights gained from Tasks 2.2.1, 2.2.2, 2.2.3, 2.2.4, and 2.2.5 include: </para>
+    <para>• Key informants generally focus on the areas of the control structure in which they
+        operate. </para>
+    <para>• Key informants are likely unaware of the system complexity prior to viewing the control
+        structure.</para>
+    <para>• A unique modification to the control structure was developed to highlight the data layer
+        from the </para>
+    <para>control layer of the model (red lines will be added in future edits to the data lines in
+        the data layer </para>
+    <para>to distinguish between the control process arrows) </para>
+    <para>• Most control agent nomenclature is intuitive, while some organizations may require
+        additional </para>
+    <para>description. </para>
+    <para>o EHR standards organizations – HL7, FIHR, etc.</para>
+    <para>o EHR certification organizations – ANSI, NIST, etc.</para>
+    <para>o Lab – Ubiquitous name for clinical laboratory (inpatient, outpatient, reference lab,
+        etc.) </para>
+    <para>o Care Facility – facility that provides related clinical care services for patients
+        (hospitals, </para>
+    <para>clinics, etc.)</para>
+    <para>o Naming/Coding Standards organizations – LOINC, SNOMED, etc.</para>
+    <para>o Payer – for-profit, not for profit, government, commercial</para>
+    <para>• Note: Analysis of the model of the control structure begins in Phase III</para>
+    <para>Task 2.3 – Identify UCAs</para>
+    <para>Tasks 2.3.1, 2.3.2, and 2.3.3: </para>
+    <para>An unsafe control action (UCA) is a control action that, in a particular context and
+        worst-case </para>
+    <para>environment, will lead to a hazard. There are three ways a control action can be unsafe: </para>
+    <para>• Not providing the control action leads to a hazard. </para>
+    <para>• Providing the control action leads to a hazard. </para>
+    <para>• Providing a potentially safe control action, but too early, too late, or in the wrong
+        order, or the </para>
+    <para>control action lasts too long or is stopped too soon (for continuous control actions, not
+        discrete </para>
+    <para>ones). </para>
+    <para>Every UCA can be traced to one or more hazards (or sub-hazards) which will be documented
+        during this </para>
+    <para>task. Each UCA will specify the context in which the control action is unsafe. Context is
+        critical when </para>
+    <para>identifying UCAs. If a control action were always unsafe, then the engineers/designers
+        would never </para>
+    <para>include it in the system design. Every UCA must specify under what conditions (in what
+        context) the </para>
+    <para>control action is unsafe. Once specified, we can eliminate those instances from the system
+        design or find </para>
+    <para>ways to mitigate them. Any relevant context can be referenced in a UCA, including
+        environmental </para>
+    <para>conditions, controlled process states, controller states, previous actions, and other
+        parameters. STPA is </para>
+    <para>ideally applied early before safeguards are known and incorporated into the design—in this
+        case the future </para>
+    <para>laboratory data ecosystem. </para>
+    <para>STPA identifies UCAs that must be prevented, and the UCAs are then used to derive
+        functional </para>
+    <para>requirements and make design decisions to prevent or mitigate the UCAs. After potential
+        unsafe behavior </para>
+    <para>is identified, then the specific design features can be created and safeguards added (if
+        the design does not </para>
+    <para>already exist), or the adequacy of existing design decisions and safeguards can be
+        determined (if the design </para>
+    <para>already exists). The same approach will be applied to human controllers to identify UCAs.
+        Once UCAs </para>
+    <para>have been identified, they can be translated into constraints on the behavior of each
+        controller. A controller </para>
+    <para>constraint specifies the controller behaviors that need to be satisfied to prevent UCAs.
+        The identification </para>
+    <para>of unsafe control actions (UCAs) has been initiated by the team using data collected
+        during the key </para>
+    <para>informant interviews and will continue during Phase III. While not actual UCAs, the
+        following are some </para>
+    <para>scenarios that could lead to the development of UCAs. A UCA scenario typically includes an
+        unsafe </para>
+    <para>action, as well as an explanation for why someone might reasonably take that action,
+        despite it ultimately </para>
+    <para>being unsafe. </para>
+    <para>Some Example UCA Scenarios:</para>
+    <para>Unsafe Action: Medical practitioner clears patient for surgery when patient has infectious
+        condition. </para>
+    <para>• Scenario 1: Medical practitioner may have cleared the patient for the surgery because
+        they </para>
+    <para>received a negative test result from a different facility and believed it to be consistent
+        with the </para>
+    <para>standards of their facility, even if it was not. They may have believed that because they
+        have used </para>
+    <para>test data from that facility in the past without issue.</para>
+    <para>• Scenario 2: Medical practitioner may have cleared the patient for the surgery because
+        they </para>
+    <para>received a negative test result from a different facility and accepted it because they had
+        a shortage </para>
+    <para>of tests at their facility and did not have the option to re-test the patient in a timely
+        manner.</para>
+    <para>Unsafe Action: Hospital does not update EHR when EHR update is available/necessary.</para>
+    <para>• Scenario 1: The hospital may not have updated the EHR because they did not know a new
+        update </para>
+    <para>was available. There may not have been a reliable communication channel between the
+        hospital </para>
+    <para>and the EHR vendor, so the hospital was not informed in a timely manner that a new update
+        was </para>
+    <para>released.</para>
+    <para>• Scenario 2: The hospital may not have updated the EHR because they believed the update
+        would </para>
+    <para>interfere with other software that the hospital uses. The update may not have taken into </para>
+    <para>consideration every possible software or hardware it interacts with, and therefore
+        updating it may </para>
+    <para>have caused other systems to malfunction.</para>
+    <para>• Scenario 3: The hospital may not have updated the EHR because they did not have the
+        financial </para>
+    <para>means or manpower to install the update in a timely manner. </para>
+    <para>Current insights gained from Tasks 2.3.1, 2.3.2, and 2.3.3 include:</para>
+    <para>• Based on data collected thus far, it is likely that far greater than 100 UCAs will be
+        identified.</para>
+    <para>Next Steps:</para>
+    <para>During AIM1 Phase III, our team will:</para>
+    <para>• Continue to expand our STPA research, including the analysis of the control structure
+        model from </para>
+    <para>Task 2.2 and the expansion from UCA scenarios to refined UCAs (Task 2.3)</para>
+    <para>• We will complete our key informant interviews, including follow-up interviews, with
+        targeted key </para>
+    <para>informants as required.</para>
+    <para>• We will incorporate OTC/POC domains into Tasks 2.1, 2.2, and 2.3.</para>
+    <para>• We will continue to receive feedback and iterate on the control structure model.</para>
+    <para>• We will initiate Phase III tasks in accordance with the work breakdown structure (WBS). </para>
+    <para>Other Important Considerations:</para>
+    <para>• Continue to refine Task 2.1 – Identify STPA purpose as it relates to other FDA SHIELD </para>
+    <para>action-based research.</para>
+    <para>• Continue to explore synergy with other FDA SHIELD research outputs to leverage key
+        artifacts </para>
+    <para>and shared learning.</para>
+    <para/>
+       
+        
+</chapter>

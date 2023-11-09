@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Document Describing the Data Transmission and Infrastructure</title>
+    <para>The goal of this project is to explore and design ongoing quality control systems that
+        would evaluate laboratories’ In Vitro Diagnostic (IVD) test coding.This document is intended
+        to provide a detailed overview of the data transport of the required Laboratory
+        Interoperability Data Repository (LIDR) Data Elements of clinical test results within these
+        quality control systems.</para>
+    <section>
+        <title>Design Schematic</title>
+        <para>The Detailed Design Schematic is a flow diagram, encompassing each area to which the
+            data is transported as well as the steps taken within those receiving entities.</para>
+        <figure xml:id="DetailedLIDRDataFlowSchematic">
+            <title>Detailed LIDR Data Flow Schematic</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Detailed%20LIDR%20Data%20Flow%20Schematic.png"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Detailed Narrative</title>
+        <para>A detailed narrative has been developed to accompany the above scheme, breaking down the individual components of the flow into five distinctive receiving/sending systems: LIDR, IVD (In Vitro Diagnostic) Vendor, LIS (Laboratory Information System), Quality Organization and External Healthcare Entities (Interoperable patient results).</para>
+        <section>
+            <title>LIDR</title>
+            <figure xml:id="LIDRDataFlowSchematic">
+                <title>LIDR Data Flow Schematic</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/LIDR%20Data%20Flow%20Schematic.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para>The required data elements for the LIDR are the following:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Test Ordered analyte/observable (LOINC ®™)</para>
+                </listitem>
+                <listitem>
+                    <para>Test Performed analyte/observable (LOINC ®™)</para>
+                </listitem>
+                <listitem>
+                    <para>Specimen type (SNOMED CT ®™) at minimum</para>
+                </listitem>
+                <listitem>
+                    <para>Specimen source site (SNOMED CT ®™)</para>
+                </listitem>
+                <listitem>
+                    <para>Specimen source site topography (SNOMED CT ®™)</para>
+                </listitem>
+                <listitem>
+                    <para>Specimen collection method (SNOMED CT ®™)</para>
+                </listitem>
+                <listitem>
+                    <para>Specimen additives (SNOMED CT ®™)</para>
+                </listitem>
+                <listitem>
+                    <para>Additional data elements and standards necessary to enable full laboratory
+                        data interoperability</para>
+                </listitem>
+                <listitem>
+                    <para>Kit UDI</para>
+                </listitem>
+                <listitem>
+                    <para>Instrument UDI</para>
+                </listitem>
+                <listitem>
+                    <para>Harmonization Indicator</para>
+                </listitem>
+                <listitem>
+                    <para>Units of Measure (UCUM)</para>
+                </listitem>
+                <listitem>
+                    <para>Qualitative data result values should be disseminated in SNOMED
+                        CT®™</para>
+                </listitem>
+            </itemizedlist>
+            <section>
+                <title>LIDR Data Flow</title>
+                <orderedlist>
+                    <listitem>
+                        <para>The IVD Vendor (manufacturer of the FDA approved test kit or
+                            instrument) provides the codes to the LIDR, ensuring each of the
+                            required elements are present.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The method of loading the IVD vendor provided codes to LIDR is an
+                            upload, via an API (Application Programming Interface) created by the
+                            LIDR Developer. There may need to be a separate interface for the IVD
+                            vendor to receive feedback on errors and/or check for version
+                            updates.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The LIDR developer must address the following potential gap:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Versioning of the LIDR File is required as it will be a
+                                    compilation of ALL IVD Vendor’s test system and method data
+                                    elements and will require updating when new testing methods are
+                                    produced. As an immense entity with many contributors, it is
+                                    critical that a method of managing the versions available to end
+                                    users are maintained and updated at regular intervals or when
+                                    emergent testing needs arise (e.g. pandemic test
+                                    development).</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                    <listitem>
+                        <para>A proposed procedure for how versioning could occur is:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Vendor creates an initial version for all its systems, methods
+                                    and tests and sends to LIDR via an interface.</para>
+                            </listitem>
+                            <listitem>
+                                <para>LIDR stores and adds to the aggregated list of vendor
+                                    information and generates a version.</para>
+                            </listitem>
+                            <listitem>
+                                <para>LIDR sends the new updated version back to the IVD vendors
+                                    using a set schedule of release dates at a set frequency (1x per
+                                    month, 1 x per 6 months).</para>
+                            </listitem>
+                            <listitem>
+                                <para>If the vendor makes an update to its own tests, it updates its
+                                    version and sends to LIDR to update the aggregate file.</para>
+                            </listitem>
+                            <listitem>
+                                <para>An Emergency Release could be produced if there was a critical
+                                    need but would require specific criteria to issue it.</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                    <listitem>
+                        <para>LIDR Loads Data Elements to the Laboratory’s LIS.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The route of data movement to the LIS can be either via a download
+                            query from an LIS system or user, utilizing an API which is exposed, and
+                            allows for real-time query, or through a file export which could then be
+                            entered into the LIS manually or via an import.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The following gap must be addressed:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Both means of transport of the LIDR Elements would need to be
+                                    developed by the LIDR developer.</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                    <listitem>
+                        <para>The LIS users must be able to select the LIDR records that match their
+                            test compendium and specific methods.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The LIDR also loads to the Quality Organization Intake Interface as
+                            well as External Systems receiving patient lab test results, again, via
+                            a real-time API or file export. (See Quality Organization Data Flow and
+                            External Healthcare Entities Data Flow for gaps related to this).</para>
+                    </listitem>
+                    <listitem>
+                        <para>LIDR receives feedback on vendor quality (Vendor Harmonization)
+                            through a quality process.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+        </section>
+        <section>
+            <title>IVD Vendor</title>
+            <figure xml:id="IVDVendorDataFlow">
+                <title>IVD Vendor Data Flow</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/IVD%20Vendor%20Data%20Flow%20Schematic.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <section>
+                <title>IVD Vendor Data Flow</title>
+                <orderedlist>
+                    <listitem>
+                        <para>The IVD Vendor creates the records for the LIDR based on their
+                            analyzer and reagent system testmenus. This forms the backbone of the
+                            LIDR. (Please see the Required Elements list found in the LIDR Data flow
+                            description).</para>
+                    </listitem>
+                    <listitem>
+                        <para>Thefollowing gap must be address:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para>The required elements of Kit UDI, Instrument UDI and
+                                    Harmonization Indicator may requireinput/development from the
+                                    LIDR, government entities, and standards setting
+                                    organizations.</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                    <listitem>
+                        <para>TheIVD Vendor submits the specifics of the LIDR FILE for each
+                            analyzer/test method and test result, including all required elements.
+                            The file is uploaded via an API to the LIDR</para>
+                    </listitem>
+                    <listitem>
+                        <para>Feedback to the IVD vendor could be sent through an interface from the
+                            LIDR, to receive version updates and, systemic errors identified through
+                            the Quality Management process.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The IVD Vendor provides the LIDR elements to the Lab for the required
+                            elements for the specific analyzer or test system. In order to ensure
+                            these are maintained and updated accurately with the most recent
+                            versions, the proposal is that they be embedded in the Instrument
+                            Software.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The following gaps must be addressed:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para>The LIDR file must be uploaded to the Instrument. This way,
+                                    the data could be stored on the Analyzer and is “pre-coded” for
+                                    each analyte and included in the LIS (Lab Information System)
+                                    interface specifications used for receiving orders and sending
+                                    results for that analyzer.</para>
+                            </listitem>
+                            <listitem>
+                                <para>If the analyzer could store the LIDR, there might not be a
+                                    need for labs to load and store it in their LIS, except for
+                                    methods that are NOT analyzer specific. The order code mapping
+                                    would, however, need to be mapped to the specific order codes in
+                                    the LIS.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Software updates to the instrument or test method would need
+                                    to be kept current, includingthe LIDR required elements and its
+                                    versioning. Most analyzers have software that can be updated
+                                    routinely from the vendor, often via a direct internet
+                                    connection.</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                </orderedlist>
+            </section>
+        </section>
+        <section>
+            <title>Quality Organization</title>
+            <figure xml:id="QualityOrganizationDataFlow">
+                <title>Quality Organization</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/Quality%20Organization%20Data%20Flow.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para><emphasis role="bold">The following assumptions are being made for data
+                    transmission to the Quality Organization:</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>Validate based on one piece of data from the LIDR – If a transmission of
+                        results from an LIS system is sent, within a format of single required data
+                        elements, these data elements can be validated by LIDR.</para>
+                </listitem>
+                <listitem>
+                    <para>Expectation that the data structure from LIDR will be valid – LIDR, which
+                        will be developedby a third party, must contain the required data elements
+                        for every possible vendor/test method and test result.</para>
+                </listitem>
+            </itemizedlist>
+            <para>The data fields that must be available can be found in the LIDR Recommended
+                Elements section.</para>
+            <section>
+                <title>Quality Organization Data Flow</title>
+                <orderedlist>
+                    <listitem>
+                        <para>The route of data movement in this section, begins with the transport
+                            of test results from an LIS of a participating laboratory to the quality
+                            organization intake interface.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The following gap needs to be addressed:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para>In the ideal state the quality organization would intake data
+                                    via an HL7 API Interface.</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Prior to being sent onto the External Quality Organization’s
+                            Ecosystem, the data is validated and normalized, ensuring it will file
+                            successfully into the ecosystem.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Structural Validation of the data elements occurs within the quality
+                            organization intake interface.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The following gaps need to be addressed:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para>If it is validated within the quality organization intake
+                                    interface, it requires the quality organizationintake interface
+                                    to be able to receive the data elements from the LIDR. The
+                                    intake interface must be designed to allow for LIDR Data
+                                    Elements in a predefined format.</para>
+                            </listitem>
+                            <listitem>
+                                <para>The LIDR Data elements load to the quality organization must
+                                    be via a real-time interface.</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                    <listitem>
+                        <para>If the data is validated successfully, it is passed to the quality
+                            organization ecosystem for analysis, metrics, and validation of the
+                            business process.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The following gaps need to be addressed:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para>The quality system may need to be updated to allow for the new
+                                    codes and formats.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Because there are more data elements than in the current
+                                    state, the quality organization likely will need a new schema
+                                    and would need to adapt a system to aggregate the data in order
+                                    to identify the potential vendor related errors.</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                    <listitem>
+                        <para>If the data is not validated successfully, it routes through a Quality
+                            Management process described in a later deliverable.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+        </section>
+        <section>
+            <title>Lab Information System (LIS)</title>
+            <figure xml:id="LISDataFlow">
+                <title>LIS Data Flow</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/LIS%20Data%20Flow.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para><emphasis role="bold">The following assumptions are being made for LIDR load to
+                    the LIS:</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>LIDR is loaded from a Third Party – LIDR Development and creation is being
+                        completed by a third party. Its repository needs to be able to receive
+                        requests and return a response message, ideally via an interface to a
+                        Laboratory’s LIS (Lab Information System).</para>
+                </listitem>
+                <listitem>
+                    <para>LIDR Real-Time Interface – The interface would be real-time, meaning it is
+                        accessible by any lab, IVD Vendor or LIS and can transmit data between the
+                        recipient and the file.</para>
+                </listitem>
+                <listitem>
+                    <para>LIDR as a reference to manually update – If a receiving system doesn’t
+                        have the capability to interface, the LIDR file can be accessed to view the
+                        required elements and queried for procedure specific definitions which can
+                        be exported for the requestor to utilize as needed.</para>
+                </listitem>
+            </itemizedlist>
+            <para>The data elements to load can be found in the LIDR Recommended Elements document.
+                However, these are the additional required fields (which will be unique for each
+                lab) that must be present in the individual LIS and must be provided as part of each
+                patient result transmission.</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Ability to populate a Clinical Laboratory Improvement Amendments (CLIA)
+                        certificate number and its laboratory name for each test kit/specimen which
+                        identifies the actual performing CLIA certified laboratory.</para>
+                </listitem>
+                <listitem>
+                    <para>Ability to record the disposition and/or quality of the test performed
+                        that do not meet the laboratory’s criteria for acceptability.</para>
+                </listitem>
+            </itemizedlist>
+            <section>
+                <title>LIS Data Flow</title>
+                <orderedlist>
+                    <listitem>
+                        <para>The route of data movement in this section, begins with the LIDR,
+                            which contains the recommended elements.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Via a query from an LIS System or user, the records can be loaded to
+                            the LIS, much like existing LIS systems can load and store LOINC codes,
+                            CAP Synoptic Reports, and/or manually accessed for specified
+                            procedures.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The download query can be via an API (which would need to be developed
+                            by the LIDR developer) or through a file export which can then import to
+                            the LIS.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The LAB must be able to select the records that match their test
+                            compendium and specific methods.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The following gaps must be addressed:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para>LIDR must be the source of truth of the most current version
+                                    of Data Elements.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Because these files may be extremely large, it is critical
+                                    that LIDR is developed with an interface to download the data to
+                                    an LIS/EMR.</para>
+                            </listitem>
+                            <listitem>
+                                <para>The lab must be able to load LIDR records specific to their
+                                    test compendium and methods/instruments. Preferred method would
+                                    be flowing from vendor to analyzer, followed by interface from
+                                    LIDR to LIS and then the last method is a query to LIDR.</para>
+                            </listitem>
+                            <listitem>
+                                <para>The LIS must be able to accept the elements even if the LIS or
+                                    EMR already has the SNOMED or LOINC mapping present. (In current
+                                    state, LOINC updates to an LIS/EMR may or may not be kept up to
+                                    date).</para>
+                            </listitem>
+                            <listitem>
+                                <para>The LIS may not have the capability to use formatted codes
+                                    directly from the LIDR files loaded to the LIS and an LIS
+                                    Analyst may need to manually build the codes into the LIS,
+                                    mapping them to the correct test codes and methods. Ability to
+                                    query would be necessary.</para>
+                            </listitem>
+                            <listitem>
+                                <para>The LIS Vendor may need to create new fields to accommodate
+                                    new LIDR elements.</para>
+                            </listitem>
+                            <listitem>
+                                <para>It is recommended that the IVD Analyzers receive the LIDR
+                                    records specific to its test menu, pre-installation or via an
+                                    update from an interface directly to the LIDR to the analyzers
+                                    Programming Software. This might relieve some work on the part
+                                    of the LIS analysts to map or encode the required elements,
+                                    however there is a potential that this process would create a
+                                    conflict between the version on the instrument and what is
+                                    loaded in the LIS.</para>
+                            </listitem>
+                            <listitem>
+                                <para>It would be beneficial to engage a contact from the pilot
+                                    lab’s Instrument and LIS Vendor to help investigate these
+                                    ideas.</para>
+                            </listitem>
+                            <listitem>
+                                <para>If the LIS Vendor could work with the IVD Vendors to preload
+                                    the required elements from LIDR (in both the analyzer and the
+                                    LIS), it could shift the onus from the individual lab
+                                    organization to these vendors, and would assist in ensuring more
+                                    accurate and less discrepant versions of the required elements
+                                    and thus improving interoperability.</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                    <listitem>
+                        <para>It is recommended that labs load only what applies to their
+                            compendium. Once loaded to the LIS, an order is placed in the LIS for a
+                            test procedure. The test order is sent to the analyzer or test method
+                            for test performance.</para>
+                    </listitem>
+                    <listitem>
+                        <para>When the result of the test is completed, the result is transmitted
+                            from the analyzer back to the LIS whereit is reviewed by
+                            auto-verification rules or manually verified (completed) by a lab
+                            tech.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Within the LIS, the LIDR elements are applied to the results prior to
+                            being sent from the LIS to the Transmit Interface via an HL7 API.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The following gaps need to be addressed:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Depending on the LIS, there might be a need for a mapping
+                                    table in the LIS or Interface Engine for sending lab test
+                                    results, mapping the required elements to particular fields
+                                    within the HL7 Message.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Discreet HL7 fields will need to be developed for the
+                                    following data elements: UDI, harmonization indicator, specimen
+                                    disposition by HL7.</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                    <listitem>
+                        <para>The results are transmitted from the transmit Interface to external
+                            systems’ intake interface or interface engine via an API. The required
+                            elements of the results are validated for semantics against a LIDR file
+                            available to the receiving system.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The following gap needs to be addressed:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Formatting of the interface from the LIS/EHR to the quality
+                                    organization, must allow results from non-patient
+                                    samples.</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                    <listitem>
+                        <para>If the data is deemed structurally valid, it is sent forward to the
+                            organization’s ecosystem. If it is not, it would be rejected by the
+                            intake interface of the receiving system.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title>Proposed Technical Elements for the Ideal State</title>
+        <figure xml:id="LIDRTechnicalSchematic">
+            <title>LIDR Technical Schematic</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/LIDR%20Technical%20Schematic.png"/>
+                </imageobject>
+            </mediaobject>
+            <para><emphasis role="bold">Technical Connectivity between LIDR and IVD
+                    Vendor:</emphasis></para>
+            <informaltable>
+                <tgroup cols="4">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="3" colname="col3"/>
+                    <colspec colnum="4" colname="col4"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Data Flow Segment</emphasis></entry>
+                            <entry><emphasis role="bold">Transmitted Data</emphasis></entry>
+                            <entry>
+                                <para><emphasis role="bold">Infrastructure</emphasis><emphasis
+                                        role="bold">to</emphasis></para>
+                                <para><emphasis role="bold">TransmitData</emphasis></para>
+                            </entry>
+                            <entry><emphasis role="bold">GAPS</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry>IVD Vendor to LIDR</entry>
+                            <entry>LIDR Elements definedby Vendor</entry>
+                            <entry>Application Programming Interface that is real-time (Exposed
+                                database).</entry>
+                            <entry>Interface is determined by LIDR Developer.</entry>
+                        </row>
+                        <row>
+                            <entry>LIDR to IVD Vendor</entry>
+                            <entry>
+                                <para>LIDR Version updates</para>
+                                <para>Qualityfeedback</para>
+                            </entry>
+                            <entry>Application Programming Interface</entry>
+                            <entry>Interface is determined by LIDR Developer.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </figure>
+        <para><emphasis role="bold">Technical Connectivity between LIDR and LIS:</emphasis></para>
+        <informaltable>
+            <tgroup cols="4">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <colspec colnum="4" colname="col4"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Data Flow Segment</emphasis></entry>
+                        <entry><emphasis role="bold">Transmitted Data</emphasis></entry>
+                        <entry>
+                            <para><emphasis role="bold">Infrastructure to Transmit
+                                Data</emphasis></para>
+                        </entry>
+                        <entry><emphasis role="bold">GAPS</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>LIDR to LIS</entry>
+                        <entry>LIDR Elements/ LIDR Version updates</entry>
+                        <entry>Application Programming Interface that is real-time (exposed
+                            database).</entry>
+                        <entry>Interfaceis determined by LIDR Developer.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para><emphasis role="bold">Technical Connectivity between LIDR and Quality
+                Organization:</emphasis></para>
+        <informaltable>
+            <tgroup cols="4">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <colspec colnum="4" colname="col4"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Data Flow Segment</emphasis></entry>
+                        <entry><emphasis role="bold">Transmitted Data</emphasis></entry>
+                        <entry>
+                            <para><emphasis role="bold">Infrastructure to Transmit
+                                Data</emphasis></para>
+                        </entry>
+                        <entry><emphasis role="bold">GAPS</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>LIDR to Quality Org</entry>
+                        <entry>LIDR Elements/ LIDR Version Updates</entry>
+                        <entry>Application Programming Interface that is real-time (exposed
+                            database).</entry>
+                        <entry>Interface is determined by LIDR Developer.</entry>
+                    </row>
+                    <row>
+                        <entry>Quality Org Analytics Reports to LIDR</entry>
+                        <entry>IVD Vendor Quality Feedback</entry>
+                        <entry>Application Programming Interface</entry>
+                        <entry>
+                            <para>Interface is determined by LIDR Developer.</para>
+                            <para>May need to be an email process.</para>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para><emphasis role="bold">Technical Connectivity between IVD Vendor Instrument and
+                LIS:</emphasis></para>
+        <informaltable>
+            <tgroup cols="4">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <colspec colnum="4" colname="col4"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Data Flow Segment</emphasis></entry>
+                        <entry>
+                            <para><emphasis role="bold">Transmitted</emphasis>
+                                <emphasis role="bold">Data</emphasis></para>
+                        </entry>
+                        <entry>
+                            <para><emphasis role="bold">Infrastructure to Transmit</emphasis>
+                                <emphasis role="bold">Data</emphasis></para>
+                        </entry>
+                        <entry><emphasis role="bold">GAPS</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>IVD Vendor Instrument to LIS</entry>
+                        <entry>ORDERs and LIDR encoded test results</entry>
+                        <entry>Utilize interface engine (Data Innovations) or direct interfaces
+                            within the LIS</entry>
+                        <entry>Interface is Dependent on the LIS in use at the Individual
+                            Lab</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para><emphasis role="bold">Technical Connectivity between LIS and Quality
+                Organization:</emphasis></para>
+        <informaltable>
+            <tgroup cols="4">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <colspec colnum="4" colname="col4"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Data Flow Segment</emphasis></entry>
+                        <entry><emphasis role="bold">Transmitted Data</emphasis></entry>
+                        <entry>
+                            <para><emphasis role="bold">Infrastructure to Transmit
+                                Data</emphasis></para>
+                        </entry>
+                        <entry><emphasis role="bold">GAPS</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>LISto Quality Org Intake</entry>
+                        <entry>LIDR Encoded PT results</entry>
+                        <entry>HL7 Format Interface or XML File</entry>
+                        <entry>Dependent on the Quality Organization’s capabilities to receive via
+                            interface.</entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>Quality Org Intake to</para>
+                            <para>Quality Org (Validation System)</para>
+                        </entry>
+                        <entry>LIDR Encoded PT Results</entry>
+                        <entry>Application Programming Interface</entry>
+                        <entry>Dependent on the Quality Organization’s capabilities.</entry>
+                    </row>
+                    <row>
+                        <entry>Quality Org (Validation System) to Quality Org Ecosystem</entry>
+                        <entry>LIDR Encoded PT Results</entry>
+                        <entry>Application Programming Interface</entry>
+                        <entry>Dependent on the Quality Organization’s capabilities.</entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>Quality Org (Validation</para>
+                            <para>System) to LIS Transmit Interface</para>
+                        </entry>
+                        <entry>Error Messages</entry>
+                        <entry>HL7 Format Interface</entry>
+                        <entry>Dependent on the Quality Organization’s capabilities.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        </section>
+    <section>
+        <title>External Healthcare Entitis (Patient Test Results)</title>
+        <figure xml:id="PatientResultsDataFlowSchematic">
+            <title>Patient Results Data Flow Schematic</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Patient%20Results%20Data%20Flow%20Schematic.png"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>The data fields to load can be found in the LIDR Recommended Elements section.
+            However, these are the additional required fields (which will be unique for each lab)
+            that must be present in the individual LIS and must be provided as part of each result transmission.<itemizedlist>
+                <listitem>
+                    <para>Ability to populate a Clinical Laboratory Improvement Amendments (CLIA)
+                        certificate number and its laboratory name for each test kit/specimen which
+                        identifies the actual performing CLIA certified laboratory.</para>
+                </listitem>
+            </itemizedlist><itemizedlist>
+                <listitem>
+                    <para>Ability to record the disposition and/or quality of the test performed
+                        that do not meet the laboratory’s criteria for acceptability.</para>
+                </listitem>
+                <listitem>
+                    <para>Ability to transmit the sample demographics including a specimen
+                        identifier, collection date and time and other elements external systems may
+                        require. </para>
+                </listitem>
+            </itemizedlist></para>
+        <section>
+            <title>Patient Test Result Data Flow</title>
+            <orderedlist>
+                <listitem>
+                    <para>The route of data movement in this section, begins with the transport of
+                        test results from an LIS to the transmit interface of a laboratory to
+                        another Healthcare Organization, Physician Practice EMR or Department of
+                        Public Health Intake Interface. All transmissions are via HL7 API.</para>
+                </listitem>
+                <listitem>
+                    <para>Prior to being sent onto the External Organization’s Ecosystem, the data
+                        is validated and normalized, ensuring it will file successfully into the
+                        ecosystem.</para>
+                </listitem>
+                <listitem>
+                    <para>Validation of the data elements occur within the Intake Interface
+                        Engine.</para>
+                </listitem>
+                <listitem>
+                    <para>Thef ollowing gap needs to be addressed:</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>If it is validated within the Intake Interface, it requires the
+                                Intake Interface or EMR/LIS to be able to receive the data elements
+                                from the LIDR as a real-time Interface</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para>If the data is validated successfully, it is passed to the external
+                        organization ecosystem for integration to the business process which would
+                        allow for successful interoperability of lab test results.</para>
+                </listitem>
+                <listitem>
+                    <para>The following gaps need to be addressed.</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>The receiving EMR/LIS system may need to be updated to allow for
+                                the new codes and formats.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Because there are more data elements than in the current state,
+                                the LIS/EMR Vendors likely will need to develop a new schema.</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                        <listitem>
+                            <para>If the data is not validated successfully, it is rejected, and
+                                error messages are sent back to the sending labs interface for error
+                                resolution and resubmission of test results.</para>
+                        </listitem>
+                    
+              
+            </orderedlist>
+        </section>
+    </section>
+</chapter>

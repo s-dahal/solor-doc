@@ -98,7 +98,7 @@
                 simultaneously work independently and in coordination with each other and reuse the
                 resulting artifacts.</para>
             <para>The architecture presented in this book is inspired by core evolutionary design
-                principles called “Understandable, Reproducible, and Useful,” upon which SNOMED CT
+                principles called “Understandable, Reproducible, and Useful,” upon which SNOMED CT®
                 development is still based. [1, 2] These criteria describe an approach for improving
                 data quality and increasing data integrity and agility: </para>
             <itemizedlist>
@@ -242,7 +242,7 @@
                         Set Hierarchy)</para>
                 </listitem>
                 <listitem>
-                    <para>Interoperability standards: SNOMED, LOINC, RxNorm, and similar</para>
+                    <para>Interoperability standards: SNOMED CT®, LOINC®, RxNorm, and similar</para>
                 </listitem>
             </itemizedlist><emphasis role="bold">Defining a Standardized Form for clinical
                 statements:</emphasis><itemizedlist>
@@ -529,12 +529,12 @@
                 connected systems for common interpretation. In 1965, the Systematized Nomenclature
                 of Pathology (SNOP) was developed to provide a common way to describe morphology and
                 anatomy. A decade later, SNOP expanded into its known name today, Systematized
-                Nomenclature of Medicine Clinical Terminology (SNOMED CT). As the adoption of EHRs
+                Nomenclature of Medicine Clinical Terminology (SNOMED CT®). As the adoption of EHRs
                 increased during the 1980s, Health Level Seven International (HL7) was formed in
                 1987 as a non-profit, American National Standards Institute (ANSI)-accredited
                 standards development organization to develop standards that provide global health
                 data interoperability. Since then, several SDOs in the healthcare space have
-                appeared and, along with HL7 and SNOMED, continued to commit resources to the
+                appeared and, along with HL7 and SNOMED CT®, continued to commit resources to the
                 development and adoption of standardized health data processes. In 2004, under the
                 United States Department of Health and Human Services (HHS), the Office of the
                 National Coordinator for Health Information Technology (ONC) was born to promote a
@@ -635,24 +635,25 @@
                     message received. After a laboratory test is performed and a test result is
                     available, the Reference Laboratory in this scenario will return a Laboratory
                     Result message to the hospital EHR system.</para>
-                <para><xref linkend="ErroneousLoincMapping"/> below shows an example of an HL7 v2 Observation (OBX) segment from
-                    two different mock lab result messages. In this scenario, a laboratory has
-                    conducted two distinct blood glucose tests on two distinct specimen sources. For
-                    the first test, a specimen from serum or plasma was used. For the second test,
-                    the specimen was from whole blood. The figure below illustrates how the HL7 v2
-                        <emphasis role="italic">structure</emphasis> standard is populated using
-                    existing terminology standards for <emphasis role="italic">meaning,
-                    </emphasis>in this case LOINC. In the first HL7 segment for test 1, the LOINC
-                    code is for a “Glucose [Mass/volume] in Serum or Plasma”, whereas for test 2,
-                    the LOINC code is for a “Glucose [Mass/volume] in Blood”. Different tests were
-                    conducted and therefore different LOINC codes were used in the HL7 v2 messages.
-                    The local laboratory information system and EHR also define and use their own
-                    code systems to encode the tests; these are called “local codes.” Although not
-                    universal, local codes are another way for health information systems to
-                    represent <emphasis role="italic">meaning</emphasis> for clinical concepts. The
-                    HL7 v2 observation data in <xref linkend="ErroneousLoincMapping"/> shows blue text representing a local code,
-                    and the observation data denoted in red represents a corresponding LOINC code. </para><figure xml:id="ErroneousLoincMapping">
-                    <title>Erroneous LOINC Mapping</title>
+                <para><xref linkend="ErroneousLoincMapping"/> below shows an example of an HL7 v2
+                    Observation (OBX) segment from two different mock lab result messages. In this
+                    scenario, a laboratory has conducted two distinct blood glucose tests on two
+                    distinct specimen sources. For the first test, a specimen from serum or plasma
+                    was used. For the second test, the specimen was from whole blood. The figure
+                    below illustrates how the HL7 v2 <emphasis role="italic">structure</emphasis>
+                    standard is populated using existing terminology standards for <emphasis
+                        role="italic">meaning, </emphasis>in this case LOINC®. In the first HL7
+                    segment for test 1, the LOINC® code is for a “Glucose [Mass/volume] in Serum or
+                    Plasma”, whereas for test 2, the LOINC® code is for a “Glucose [Mass/volume] in
+                    Blood”. Different tests were conducted and therefore different LOINC® codes were
+                    used in the HL7 v2 messages. The local laboratory information system and EHR
+                    also define and use their own code systems to encode the tests; these are called
+                    “local codes.” Although not universal, local codes are another way for health
+                    information systems to represent <emphasis role="italic">meaning</emphasis> for
+                    clinical concepts. The HL7 v2 observation data in <xref
+                        linkend="ErroneousLoincMapping"/> shows blue text representing a local code,
+                    and the observation data denoted in red represents a corresponding LOINC® code. </para><figure xml:id="ErroneousLoincMapping">
+                    <title>Erroneous LOINC® Mapping</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/Erroneous%20Loinc%20Mapping.png"/>
@@ -660,15 +661,15 @@
                     </mediaobject>
                 </figure>
                 <para>The figure shows how the same local code can be erroneously mapped to
-                    different LOINC codes and transmitted in a Lab Result message. In this case
+                    different LOINC® codes and transmitted in a Lab Result message. In this case
                     example we see the same laboratory conducting two distinct tests and encoding
                     each test with a different LOIN1C code; however, both are mapped to the same
                     local code. This mock scenario highlights one example of the myriad of
                     interoperability challenges faced in healthcare today. [35] Successful
                     interoperability is dependent on either using universal code systems for data
                     capture or through mapping local content to a universal code system. Local code
-                    systems serve the same function as universal coding systems such as SNOMED CT
-                    and LOINC, however are internal identification schemas that consist of a set of
+                    systems serve the same function as universal coding systems such as SNOMED CT®
+                    and LOINC®, however are internal identification schemas that consist of a set of
                     local codes and their associated definitions. </para>
                 <para>Because the receiving system will parse the identical local codes from the two
                     mock HL7 v2 segments above, it will interpret the lab result as having been
