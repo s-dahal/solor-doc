@@ -61,7 +61,8 @@
                 </listitem>
                 <listitem>
                     <para><emphasis role="italic">The ability to represent clinically significant
-                            concepts that are needed in a system of record, such as an EHR or LIS,
+                            concepts that are needed in a system of record, such as an Electronic
+                            Health Record (EHR) or Laboratory Information System (LIS),
                             unambiguously, </emphasis></para>
                 </listitem>
                 <listitem>
@@ -79,7 +80,7 @@
                 circumstances. For a granular and detailed breakdown of real world examples, please
                 refer to Appendix (WILL
                 <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>CREATE LINK TO
-                APPROPRIATE APPENDIX HERE IN OPTION PERIOD)<?oxy_custom_end?></para>
+                APPROPRIATE APPENDIX HERE)<?oxy_custom_end?></para>
         </section>
         <section>
             <title>IKM Guiding Principles</title>
@@ -211,7 +212,7 @@
     </section>
     <section>
         <title>The Knowledge Architecture</title>
-        <para>Increased reliance on computerized health records, including EHRs Systems, requires
+        <para>Increased reliance on computerized health records, including EHR Systems, requires
             standardized medical terminology to encode health information consistently across
             systems and enterprises. Clinicians require not only objective quantitative measurements
             (e.g., 90 beats per minute for a patient’s pulse), but also procedural context (e.g.,
@@ -317,7 +318,8 @@
                         measurement values (e.g., systolic BP = 140 mmHg), or the categorical data
                         (e.g., pregnancy induced hypertension vs. renal hypertension) within a
                         standard data structure to facilitate information exchange or retrieval,
-                        such as within a standards-based clinical statement (i.e., FHIR).</para>
+                        such as within a standards-based clinical statement (i.e., Fast Healthcare
+                        Interoperability Resources [FHIR]).</para>
                 </listitem>
                 <listitem>
                     <para>The assertional knowledge layer represents non-procedural statements, or
@@ -339,8 +341,7 @@
     </section>
     <section>
         <title> Preface from Keith Campbell</title>
-        <para>This section is currently a placeholder that will be populated during the option
-            year.</para>
+        <para>This section is currently a placeholder.</para>
     </section>
     <section>
         <title> IKM Book Introduction</title>
@@ -374,13 +375,13 @@
                         and burnout. [14]</para>
                 </listitem>
             </itemizedlist>
-            <para>The most commonly known forms of Health IT systems, Electronic Health Records
-                (EHRs), or a systematized collection of electronically stored patient and population
-                health information, have undoubtably enabled dramatic advancements in patient care,
-                allowing for breakthrough technologies with advanced analytical capabilities (e.g.,
-                Machine Learning [ML], Artificial Intelligence [AI]) to more easily identify new
-                diseases and develop treatments and reduce the need for patients to maintain and
-                carry paper records from provider to provider.  </para>
+            <para>The most commonly known forms of Health IT systems, EHRs, or a systematized
+                collection of electronically stored patient and population health information, have
+                undoubtably enabled dramatic advancements in patient care, allowing for breakthrough
+                technologies with advanced analytical capabilities (e.g., Machine Learning [ML],
+                Artificial Intelligence [AI]) to more easily identify new diseases and develop
+                treatments and reduce the need for patients to maintain and carry paper records from
+                provider to provider. </para>
             <para>Despite advancement in technologies like these, a Johns Hopkins study conducted in
                 2016 suggested that preventable medical errors, including those due to EHR errors,
                 accounted for approximately 250,000 patient deaths every year – making it the
@@ -434,7 +435,7 @@
                 healthcare settings in a way that can be readily accessed, the patient may face
                 unnecessary harm or risks that could have been avoided.</para>
             <para>The following sections aim to spell out some of the current problems with
-                electronic health data more clearly:</para>
+                electronic health data more clearly.</para>
             <section>
                 <title>The Need for Unmatched Precision</title>
                 <para>The degree to which data must maintain precision in healthcare is unmatched in
@@ -564,9 +565,8 @@
                     structural interoperability. While this guarantees a web page can be read by any
                     machine with a web browser, it does not ensure the meaning of that page is
                     identical across machines. There are a variety of healthcare structural
-                    standards, including Fast Healthcare Interoperability Resources (FHIR), Health
-                    Level Seven (HL7) Version 2 Messaging (HL7 v2), and Consolidated Clinical
-                    Document Architecture (C-CDA). </para>
+                    standards, including FHIR, HL7 Version 2 Messaging (HL7 v2), and Consolidated
+                    Clinical Document Architecture (C-CDA). </para>
                 <para>To understand structural interoperability, consider the two sentences below.
                     While both sentences have the same sentence <emphasis role="italic"
                         >structure</emphasis>, their <emphasis role="italic">meanings</emphasis> are
@@ -584,10 +584,9 @@
                     parties but allows for structural variance. When people and systems use
                     different words and codes to describe synonymous or related things, healthcare
                     meaning standards translate the data to a common meaning. Healthcare terminology
-                    and meaning standards include Systematized Nomenclature of Medicine Clinical
-                    Terms (SNOMED CT®), the Logical Observation Identifiers, Names, and Codes
-                    (LOINC®) and RxNorm (a terminology defining medications and ingredients from the
-                    National Library of Medicine).</para>
+                    and meaning standards include SNOMED CT®, the Logical Observation Identifiers,
+                    Names, and Codes (LOINC®) and RxNorm (a terminology defining medications and
+                    ingredients from the National Library of Medicine).</para>
                 <para>In the below example, the two sentences share a common <emphasis role="italic"
                         >meaning</emphasis>, however the sentence <emphasis role="italic"
                             >structure</emphasis> varies drastically. </para><figure xml:id="MeaningInteropoerability">
@@ -598,18 +597,20 @@
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para>While <xref linkend="StructuralInteropoerability"/> and <xref linkend="MeaningInteropoerability"/>intend to illustrate <emphasis role="italic"
-                        >structure</emphasis> and <emphasis role="italic">meaning</emphasis> simply,
-                    a more real-world example like, “the patient was given pain medication” and “the
-                    patient was given medication for pain,” highlights potential issues when
-                    determining equivalence. Objectively, the two sentences do not follow the same
-                        <emphasis role="italic">structure;</emphasis> however, they may or may not
-                    have the same <emphasis role="italic">meaning</emphasis> depending on your
-                    perspective or interpretation. The first sentence could be read to mean “the
-                    provider prescribed the patient pain medication to address pain” or that “the
-                    patient acquired pain medication from another source other than the provider.”
-                    The complex relationship between these two concepts can lead to confusion and
-                    will need to be addressed to accurately characterize equivalence.</para>
+                <para>While <xref linkend="StructuralInteropoerability"/> and <xref
+                        linkend="MeaningInteropoerability"/> intend to illustrate <emphasis
+                        role="italic">structure</emphasis> and <emphasis role="italic"
+                        >meaning</emphasis> simply, a more real-world example like, “the patient was
+                    given pain medication” and “the patient was given medication for pain,”
+                    highlights potential issues when determining equivalence. Objectively, the two
+                    sentences do not follow the same <emphasis role="italic">structure;</emphasis>
+                    however, they may or may not have the same <emphasis role="italic"
+                        >meaning</emphasis> depending on your perspective or interpretation. The
+                    first sentence could be read to mean “the provider prescribed the patient pain
+                    medication to address pain” or that “the patient acquired pain medication from
+                    another source other than the provider.” The complex relationship between these
+                    two concepts can lead to confusion and will need to be addressed to accurately
+                    characterize equivalence.</para>
             </section>
             <section>
                 <title>Example of Overlapping and Intersecting Nature of Standards</title>
@@ -663,7 +664,7 @@
                 <para>The figure shows how the same local code can be erroneously mapped to
                     different LOINC® codes and transmitted in a Lab Result message. In this case
                     example we see the same laboratory conducting two distinct tests and encoding
-                    each test with a different LOIN1C code; however, both are mapped to the same
+                    each test with a different LOINC® code; however, both are mapped to the same
                     local code. This mock scenario highlights one example of the myriad of
                     interoperability challenges faced in healthcare today. [35] Successful
                     interoperability is dependent on either using universal code systems for data
