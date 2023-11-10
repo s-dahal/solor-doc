@@ -54,7 +54,13 @@
     <para>some sub-hazards that we have identified so far. These sub-hazards represent categories of
         potentially </para>
     <para>unsafe events, of which we are trying to uncover more. </para>
-    <para>PLACE HOLDER FOR TABLE</para>
+    <para><inlinemediaobject>
+            <imageobject>
+                <imagedata
+                    fileref="../../target/site/docbook/images/synensis%20deliv%201%20table%201.png"
+                />
+            </imageobject>
+        </inlinemediaobject></para>
     <para>Sub-Hazards:</para>
     <para>1. <emphasis role="bold">Hazard-1</emphasis>: Patients receive less than acceptable
         standard of care (Associated with Loss-1) </para>
@@ -282,7 +288,22 @@
     <para>• Continue to explore synergy with other FDA SHIELD research outputs to leverage key
         artifacts </para>
     <para>and shared learning.</para>
-    <para/>
+    <para>Appendix A: </para>
+    <para><inlinemediaobject>
+            <imageobject>
+                <imagedata
+                    fileref="../../target/site/docbook/images/synensis%20deliv%201%20appendix%20a.png"
+                />
+            </imageobject>
+        </inlinemediaobject></para>
+    <para>Appendix B.</para>
+    <para><inlinemediaobject>
+            <imageobject>
+                <imagedata
+                    fileref="../../target/site/docbook/images/synensis%20deliv%201%20appendix%20b.png"
+                />
+            </imageobject>
+        </inlinemediaobject></para>
        
         
 </chapter>
