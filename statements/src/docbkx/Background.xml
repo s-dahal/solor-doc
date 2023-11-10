@@ -69,21 +69,23 @@
             </section>
     <section>
         <title>Real World Evidence and Standards Overview</title>
-        <para>Real world evidence (RWE) using data collected as part of routine clinical care, has
-            been heralded as an answer to many of the woes of our medical system. A vision has been
-            made popular that suggests a wealth of untapped data – electronic health records,
-            medical imaging, mobile apps, and more recently low-cost gene sequencing and wearable
-            devices, unlocked using artificial intelligence and cloud computing – is a path to
-            better diagnostics, personalized treatments, and early disease prevention for millions.
-            Data interoperability of health data may help medicine realize the future in the same
-            way in which other industries have advanced – such as banking, the “internet of things”
-            and online shopping. The vision of a national interoperable health information system
-            has been elusive; however, because of clinical care data in data silos, incompatible
-            health information technology (IT) systems, and proprietary software that make health
-            information difﬁcult to exchange, analyze, and interpret. </para>
+        <para>Real world evidence (RWE) using the Real world data (RWD) collected as part of routine
+            clinical care, has been heralded as an answer to many of the woes of our medical system.
+            A vision has been made popular that suggests a wealth of untapped data – electronic
+            health records, medical imaging, mobile apps, and more recently low-cost gene sequencing
+            and wearable devices, unlocked using artificial intelligence and cloud computing – is a
+            path to better diagnostics, personalized treatments, and early disease prevention for
+            millions. Data interoperability of health data may help medicine realize the future in
+            the same way in which other industries have advanced – such as banking, the “internet of
+            things” and online shopping, thereby stressing the importance of establishing the
+            Laboratory Interoperability Data Repository (LIDR) and related infrastructure. The
+            vision of a national interoperable health information system has been elusive; however,
+            because of clinical care data in data silos, incompatible health information technology
+            (IT) systems, and proprietary software that make health information difﬁcult to
+            exchange, analyze, and interpret. </para>
         <para>Given the number of distinct information systems and care delivery organizations in
-            the ecosystem (e.g., primary care, specialists, laboratories, other care teams), there
-            is a lot of variation in how data is collected, manipulated, transmitted, and
+            the ecosystem (e.g., primary care, specialists, laboratories, other care teams),
+            multiple variations exist in how data is collected, manipulated, transmitted, and
             effectively used. The problem is not the systems per se, but rather the difficulty of
             data exchange between systems or data incompatibility. Medical data range in format from
             narrative, textual data to numerical measurements, recorded signals, photographs,
@@ -104,14 +106,13 @@
             observational data for safe patient care, comparative effectiveness research, and
             analysis including recording biases, workflow differences, and issues with variations in
             data collection, such as invalid, inconsistent, and missing data. [2] </para>
-        <para>The Food and Drug Administration (FDA) has a need for aggregated RWE and reliable
-            analytics and would benefit from implementable methodologies that address
-            interoperability and data aggregation gaps to help establish a health data ecosystem
-            capable for widespread use in FDA regulatory efforts, public health surveillance,
-            research, and care delivery. To achieve safe and effective information retrieval and
-            reproducible search and query practices across various settings, the following
-            constructs are needed to successfully build, maintain, and analyze data/resources across
-            key biomedical concepts of interest. </para>
+        <para>The FDA has a need for aggregated RWE and reliable analytics and would benefit from
+            implementable methodologies that address interoperability and data aggregation gaps to
+            help establish a health data ecosystem capable for widespread use in FDA regulatory
+            efforts, public health surveillance, research, and care delivery. To achieve safe and
+            effective information retrieval and reproducible search and query practices across
+            various settings, the following constructs are needed to successfully build, maintain,
+            and analyze data/resources across key biomedical concepts of interest. </para>
         <section>
             <title>Data Interoperability Tooling Overview</title>
             <para>A generalized definition of interoperable health data that supports reliable RWE
@@ -191,7 +192,7 @@
                 transformation is left to the transformation author. Examples of transformation
                 languages include extensible Stylesheet Language Transformations (XSLT), FHIR
                 Mapping Language, and Query/View/Transformation (QVT). Often referred to as “data
-                wrangling” these transformation processes often require mapping data from one “raw”
+                wrangling”, these transformation processes often require mapping data from one “raw”
                 data form into another format with the intent of making it more valuable for
                 downstream purposes such as analytics. </para>
         </section>
@@ -238,11 +239,11 @@
             <title>Metadata overview</title>
             <para>An important construct for enabling RWE analytics, knowledge management, data
                 integration, and decision support, is adoption and reproducible encoding of health
-                data using biomedical terminologies. Acceleration and development of EHR systems has
-                precipitated the emergence of “standard terminologies” and their widespread adoption
-                in the health data community. These standard terminologies include Systematized
-                Nomenclature of Medicine Clinical Terms (SNOMED CT®), the Logical Observation
-                Identifiers, Names, and Codes (LOINC®) and RxNorm. </para>
+                data using biomedical terminologies. Acceleration and development of EHR systems
+                have precipitated the emergence of “standard terminologies” and their widespread
+                adoption in the health data community. These standard terminologies include
+                Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®), the Logical
+                Observation Identifiers, Names, and Codes (LOINC®) and RxNorm. </para>
             <para>While these standards are widely implemented and adopted, aggregation and
                 analytics can be difficult because there is no standard representation across these
                 terminologies. Traversing the data models of these various terminology standards in
@@ -252,7 +253,7 @@
             <para>Ideally, to support RWE analytics and aggregation, enterprise terminology requires
                 an integrated terminology using a common representation (metadata) and management. A
                 common terminology model, such as HL7 Standardized Terminology Knowledge Base (also
-                known as Terminology Knowledge Architecture or Tinkar) would allow analytics on top
+                known as TermINology Knowledge Architecture or TINKAR) would allow analytics on top
                 of aggregated RWE data sets the following [7]: </para>
             <para>
                 <itemizedlist>
@@ -319,7 +320,7 @@
                 these changes to data analysts and users who interpret data reports to best
                 understand the information. </para>
             <para>The following are best practices for the establishment of the Laboratory
-                Interoperability Data Repository taken from the SHIELD Community Roadmap: </para>
+                Interoperability Data Repository (LIDR) taken from the SHIELD Community Roadmap: </para>
             <orderedlist>
                 <listitem>
                     <para>“Develop a freely accessible knowledge management architecture for
@@ -480,11 +481,12 @@
                     [13]</para>
                 <para>SNOMED International consist of member countries, of which the US is one of
                     its inaugural members.</para>
-                <para>SNOMED CT® holds a yearly Expo as a forum for HER vendors, health terminology
+                <para>SNOMED CT® holds a yearly Expo as a forum for EHR vendors, health terminology
                     specialists and the community of practice to exchange best practices and measure
                     progress towards the implementation of SNOMOED CT® across the world.</para>
-                <para>In the U,S,, EHRs are required to use SNOMED CT® for documenting 1. Problem
-                    lists, 2. Procedures and 3. Some clinical findings, i.e. smoking status.</para>
+                <para>In the US, EHRs are required to use SNOMED CT® for documenting the following:
+                    problem lists, procedures and some clinical findings, i.e. smoking
+                    status.</para>
                 <para>In the UK, many health information systems (HIT) must use SNOMEDT CT® as the
                     clinical terminology standard within all electronic patient level recording and
                     communications.</para>
@@ -575,7 +577,7 @@
                         </listitem>
                         <listitem>
                             <para><emphasis role="bold">Information Exchange</emphasis> - U.S.
-                                Department of Defense(DOD) and Department of Veterans Affairs (VA)
+                                Department of Defense (DOD) and Department of Veterans Affairs (VA)
                                 rely on RxNorm to mediate drug information across their respective
                                 EHRs.</para>
                         </listitem>
@@ -616,7 +618,7 @@
                                 commitment to develop and expand their use of description logics
                                 formalism as called out by SOLOR as well as their alignment with the
                                 Desiderata as described by Cimino, et at, is a step in the right
-                                direction. [14]</para>
+                                direction. [13]</para>
                         </listitem>
                     </itemizedlist></para>
                 <para>Examples of Scholarly and Practical Efforts to Assess LOINC® from LOINC®
@@ -666,7 +668,7 @@
                             <para>While RxNorm has ‘defined ingredients’ [13], historically it has
                                 lacked the computational definition where concepts are defined by
                                 relationships, therefore determining equivalence and allowing
-                                inferencing. However, recent efforts by Bona et al.[16] have
+                                inferencing. However, recent efforts by Bona et al.[15] have
                                 successfully created an OWL file to implement and define the classes
                                 necessary to model RxNorm and NDC concepts.</para>
                         </listitem>
@@ -681,7 +683,7 @@
             note is that any one of the architectural layers will be undergoing modifications at any
             given point in time, as various Standards Development Organizations go through each of
             their various drafting, balloting, and approval lifecycles. Therefore, it is important
-            to establish as a foundation for Solor a versioning and modularity architecture that
+            to establish a foundation for Solor as a versioning and modularity architecture that
             allows changes and subchanges to be referenced uniquely so that all parties can be on
             the same page as to a particular version.</para>
         <para>For example, the following diagram shows how each module could be given a unique
@@ -702,7 +704,7 @@
             (i.e., 'polymorphism by encapsulation' or 'composition over inheritance'). With modular
             programming, concerns are separated such that modules perform logically discrete
             functions, interacting through well-defined interfaces. Often modules form a directed
-            acyclic graph (DAG); in this case a cyclic dependency between modules is seen as
+            acyclic graph (DAG); in this case, a cyclic dependency between modules is seen as
             indicating that these should be a single module. In the case where modules do form a DAG
             they can be arranged as a hierarchy, where the lowest-level modules are independent,
             depending on no other modules, and higher-level modules depend on lower-level ones. A
@@ -908,7 +910,7 @@
                     learned that will need to be addressed to continue improvements to health care
                     data, including the need to embed data and informatics SMEs into EHR
                     modernization (EHRM) efforts and to expand HRO principles to Standards
-                    organizations and health care system data processes. [17]</para>
+                    organizations and health care system data processes. [16]</para>
             </section>
             <section>
                 <title>A Risk-Based Methodology for the Quality Assurance of Healthcare Knowledge
@@ -926,7 +928,7 @@
                     impact quality assurance. It is critical that data validation and assurance
                     methods are implemented optimally to reduce the risk of hazards or patient
                     safety issues while accounting for organizational constraints and pressures.
-                    [18]</para>
+                    [17]</para>
             </section>
             <section>
                 <title>Capability Maturity Model Integration (CMMI) Background</title>
@@ -940,7 +942,7 @@
                 <para>The CMMI-DEV examines 22 process areas and ranks an organization’s maturity
                     for each area and that area’s process capabilities. By examining each area, this
                     model identifies areas where improvements would provide the highest value and
-                    allows organizations to tailor their focus and efforts. [19]</para>
+                    allows organizations to tailor their focus and efforts. [18]</para>
             </section>
             <section>
                 <title>Our National Rush to the EHR - An Analysis of Current Clinical Information
@@ -987,7 +989,7 @@
                     <listitem>
                         <para>Data issues that affect multiple records can occur as automated data
                             flows apply terminology maps based on the received map, rather than the
-                            original source data. [20]</para>
+                            original source data. [19]</para>
                     </listitem>
                 </orderedlist>
             </section>
@@ -1022,7 +1024,7 @@
                 application of system safety principles in healthcare. Its focus on engineering
                 safety, quality, and reliability into laboratory data exchanges exemplifies the
                 broader theme of implementing systems thinking and high reliability practices,
-                providing a real-world perspective on these critical concepts. [21]</para>
+                providing a real-world perspective on these critical concepts. [20]</para>
         </section>
     </section>
     <section>
@@ -1058,8 +1060,9 @@
                 </listitem>
                 <listitem>
                     <para>Bodenreider O, Cornet R, Vreeman DJ. Recent Developments in Clinical
-                        Terminologies - SNOMED CT, LOINC, and RxNorm. Yearb Med Inform. 2018
-                        Aug;27(1):129-139. doi: 10.1055/s-0038-1667077. Epub 2018 Aug 29.</para>
+                        Terminologies - SNOMED CT, LOINC®, and RxNorm. Yearb Med Inform. 2018
+                        Aug;27(1):129-139. doi: 10.1055/s-0038-1667077. Epub 2018 Aug 29. PMID:
+                        30157516; PMCID: PMC6115234.</para>
                 </listitem>
                 <listitem>
                     <para>Logica Health, Health Level Seven International, Vocabulary Working Group.
@@ -1097,12 +1100,6 @@
                     <para>Lin M, Vreeman D, McDonald C, et al. A characterization of local LOINC®
                         mapping for laboratory tests in three large institutions. Methods Inf Med
                         2011; 50 (2): 105–14.</para>
-                </listitem>
-                <listitem>
-                    <para>Bodenreider O, Cornet R, Vreeman DJ. Recent Developments in Clinical
-                        Terminologies - SNOMED CT, LOINC®, and RxNorm. Yearb Med Inform. 2018
-                        Aug;27(1):129-139. doi: 10.1055/s-0038-1667077. Epub 2018 Aug 29. PMID:
-                        30157516; PMCID: PMC6115234.</para>
                 </listitem>
                 <listitem>
                     <para>Bietenbeck A, Boeker M, Schulz S. NPU, loinc, and SNOMED CT: A comparison

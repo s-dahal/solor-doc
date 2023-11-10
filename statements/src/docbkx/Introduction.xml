@@ -61,8 +61,8 @@
                 </listitem>
                 <listitem>
                     <para><emphasis role="italic">The ability to represent clinically significant
-                            concepts that are needed in a system of record, such as an Electronic
-                            Health Record (EHR) or Laboratory Information System (LIS),
+                            concepts that are needed in a system of record, such as an electronic
+                            health record (EHR) or laboratory information system (LIS),
                             unambiguously, </emphasis></para>
                 </listitem>
                 <listitem>
@@ -78,7 +78,7 @@
             </itemizedlist>
             <para>The intent of the IKM Book is to have a direct connection to real world events and
                 circumstances. For a granular and detailed breakdown of real world examples, please
-                refer to Appendix (WILL
+                refer to the forthcoming Appendix (WILL
                 <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>CREATE LINK TO
                 APPROPRIATE APPENDIX HERE)<?oxy_custom_end?></para>
         </section>
@@ -99,9 +99,10 @@
                 simultaneously work independently and in coordination with each other and reuse the
                 resulting artifacts.</para>
             <para>The architecture presented in this book is inspired by core evolutionary design
-                principles called “Understandable, Reproducible, and Useful,” upon which SNOMED CT®
-                development is still based. [1, 2] These criteria describe an approach for improving
-                data quality and increasing data integrity and agility: </para>
+                principles called “Understandable, Reproducible, and Useful,” upon which
+                Systematized Nomenclature of Medicine-Clinical Terms (SNOMED CT®) development is
+                still based. [1, 2] These criteria describe an approach for improving data quality
+                and increasing data integrity and agility: </para>
             <itemizedlist>
                 <listitem>
                     <para><emphasis role="bold">Understandable: </emphasis>The content can be
@@ -319,7 +320,7 @@
                         (e.g., pregnancy induced hypertension vs. renal hypertension) within a
                         standard data structure to facilitate information exchange or retrieval,
                         such as within a standards-based clinical statement (i.e., Fast Healthcare
-                        Interoperability Resources [FHIR]).</para>
+                        Interoperability Resources, or FHIR).</para>
                 </listitem>
                 <listitem>
                     <para>The assertional knowledge layer represents non-procedural statements, or
@@ -377,7 +378,7 @@
             </itemizedlist>
             <para>The most commonly known forms of Health IT systems, EHRs, or a systematized
                 collection of electronically stored patient and population health information, have
-                undoubtably enabled dramatic advancements in patient care, allowing for breakthrough
+                undoubtedly enabled dramatic advancements in patient care, allowing for breakthrough
                 technologies with advanced analytical capabilities (e.g., Machine Learning [ML],
                 Artificial Intelligence [AI]) to more easily identify new diseases and develop
                 treatments and reduce the need for patients to maintain and carry paper records from

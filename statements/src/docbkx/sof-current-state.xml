@@ -194,29 +194,32 @@
     </section>
             <section>
                 <title>PCORI/PCORnet</title>
-                <para>Patient-Centered Outcomes Research Institute (PCORI) is an independent, nonprofit, and 
-                    leading funder of patient-centered comparative clinical effectiveness research in the United 
-                    States. The Primary goal of PCORI is to increases useful information, speed the uptake and use 
-                    of information, and influence funded research to be more patient centered. PCORI funded 
-                    research includes comparative clinical effectiveness research (CER) which helps patients and 
-                    other stakeholders to compare two or more medical treatments, and other research that 
-                    focuses on patient centered outcomes. PCORI funds researchers to share their data sets and 
-                    documentation for reanalysis and reuse. PCORI encourages use of data from the studies and 
-                    provides funds to allow other researchers to verify and build on those findings to generate new 
-                    evidence and make this information available to healthcare decision makers. PCORI funded 
-                    more than 2000 research studies and related projects, including project that support the 
-                    methods and capacity for conducting that research (Highlights of PCORI-funded research 
-                    results). PCORI approved $1 million to fund the development of automated ways to identify 
-                    people more efficiently and accurately identify people with rare diseases via EHRs, enabling 
-                    treatments to start sooner and helping researchers offer individuals opportunities to participate 
-                    in studies. [7]</para>
-                <para>In 2013 PCORI funded development of the Patient-Centered Clinical Research Network 
-                    (PCORnet), a national resource for health data and research expertise, with the goal of 
-                    providing patient centered outcomes research in a timely manner. [8] PCORnet is a well established and fully integrated network with a research ecosystem uniquely networked to 
-                    offer RWE essential to support major public health issues (Highlights of PCORI-funded research 
-                    results). The Primary goal of PCORnet is to expand the role of patients and care providers in the 
-                    research process and leverage EHR and registries to conduct research that is inexpensive, 
-                    faster, and patient-centered in its design. [9] </para>
+                <para>Patient-Centered Outcomes Research Institute (PCORI) is an independent,
+                nonprofit, and leading funder of patient-centered comparative clinical effectiveness
+                research in the United States. The primary goal of PCORI is to increases useful
+                information, speed the uptake and use of information, and influence funded research
+                to be more patient centered. PCORI funded research includes comparative clinical
+                effectiveness research (CER) which helps patients and other stakeholders to compare
+                two or more medical treatments, and other research that focuses on patient centered
+                outcomes. PCORI funds researchers to share their data sets and documentation for
+                reanalysis and reuse. PCORI encourages use of data from the studies and provides
+                funds to allow other researchers to verify and build on those findings to generate
+                new evidence and make this information available to healthcare decision makers.
+                PCORI funded more than 2000 research studies and related projects, including project
+                that support the methods and capacity for conducting that research (Highlights of
+                PCORI-funded research results). PCORI approved $1 million to fund the development of
+                automated ways to identify people more efficiently and accurately identify people
+                with rare diseases via EHRs, enabling treatments to start sooner and helping
+                researchers offer individuals opportunities to participate in studies. [7]</para>
+                <para>In 2013, PCORI funded development of the Patient-Centered Clinical Research
+                Network (PCORnet), a national resource for health data and research expertise, with
+                the goal of providing patient centered outcomes research in a timely manner. [8]
+                PCORnet is a well established and fully integrated network with a research ecosystem
+                uniquely networked to offer RWE essential to support major public health issues
+                (Highlights of PCORI-funded research results). The Primary goal of PCORnet is to
+                expand the role of patients and care providers in the research process and leverage
+                EHR and registries to conduct research that is inexpensive, faster, and
+                patient-centered in its design. [9] </para>
                 <para>Data is accessible via the PCORnet distributed network drawn from millions of EHRs with 
                     growing links to patient-reported and payer data to create a standardized data set that 
                     facilitates large-scale research. These data are accessible via Clinical Research Networks (CRNs) 
@@ -229,16 +232,17 @@
                     emergency departments, and 1,024 community clinics serving medically underserved
                     populations. These healthcare institutions and their clinicians serve as a diverse set of clinical 
                     trial sites for pragmatic research conducted in everyday clinical care settings. [8]</para>
-                <para> In PCORnet 66 million patients’ health records are available for observational studies and 
-                    provide vast scale to power research for conditions affecting even small numbers of people. 
-                    Data quality must pass rigorous standards that meet conformance, completeness, plausibility, 
-                    and persistence criteria. Every network partner operates under the shared Common Data 
-                    Model, which standardizes data points from across the network into a common data format on 
-                    which users can query. Data security in ensured by not aggregating it all into a single data pool
-                    but keeping it protected behind network partner’s firewalls. Queries and responses are 
-                    controlled through a secure Distributed Research Network Portal. Although the data is safe, a 
-                    limitation of this approach is that queries are returned with answers, not data. Therefore, a 
-                    researcher does not have access to the data. </para>
+                <para>In PCORnet, 66 million patients’ health records are available for
+                observational studies and provide vast scale to power research for conditions
+                affecting even small numbers of people. Data quality must pass rigorous standards
+                that meet conformance, completeness, plausibility, and persistence criteria. Every
+                network partner operates under the shared Common Data Model, which standardizes data
+                points from across the network into a common data format on which users can query.
+                Data security in ensured by not aggregating it all into a single data pool but
+                keeping it protected behind network partner’s firewalls. Queries and responses are
+                controlled through a secure Distributed Research Network Portal. Although the data
+                is safe, a limitation of this approach is that queries are returned with answers,
+                not data. Therefore, a researcher does not have access to the data. </para>
                 <para>The scope of PCORnet-accessible data, plus its embedded expertise and patient
                 insights, makes the Network a powerful tool for researchers. Studies supported by
                 PCORnet infrastructure answer clinical questions that impact patients’ lives,
@@ -293,15 +297,16 @@
                 of transparency is exacerbated by the fluidity of medical terminology, as the
                 rigidity of black-box data wrangling limit the agility required to respond to
                 standard terminology changes.</para> 
-            <para>One large consideration with OHDSI data is that of correlation versus causation. The nature of 
-                OHDSI’s data collection lends itself well towards evaluating trends, identifying associations, and 
-                investigating intersections of drugs, treatments, and diseases. While there exist myriad 
-                variables for which associations can be examined, it is a significant challenge to assess potential 
-                causation from observed correlation. Data attributes that enable causation analysis, such as 
-                timestamping and longitudinality, are lacking with OHDSI. These limitations demonstrate 
-                common sacrifices that are often made when prioritizing data standardization and 
-                interoperability, especially when the privacy requirements of medical data require a base level 
-                of manipulation to obscure incoming data.</para>
+            <para>One large consideration with OHDSI data is that of correlation versus causation.
+                The nature of OHDSI’s data collection lends itself well towards evaluating trends,
+                identifying associations, and investigating intersections of drugs, treatments, and
+                diseases. While a number of variables for multiple associations can be examined, it
+                is a significant challenge to assess potential causation from observed correlation.
+                Data attributes that enable causation analysis, such as timestamping and
+                longitudinality, are lacking with OHDSI. These limitations demonstrate common
+                sacrifices that are often made when prioritizing data standardization and
+                interoperability, especially when the privacy requirements of medical data require a
+                base level of manipulation to obscure incoming data.</para>
     </section> 
         <section>
         <title>eMERGE</title>

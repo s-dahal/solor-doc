@@ -31,8 +31,8 @@
         <para>Several organizations have emerged to address these issues through industry coding
             standards and implementation guidance. However, these have fallen short of ensuring high
             quality data with a common representation or standardization across the healthcare
-            ecosystem. Standards including Systematized Nomenclature of Medicine – Clinical Terms
-            (SNOMED CT), Logical Observations Identifiers Names and Codes (LOINC), RxNorm (National
+            ecosystem. Standards including Systematized Nomenclature of Medicine – Clinical Terms®
+            (SNOMED CT®), Logical Observations Identifiers Names and Codes (LOINC), RxNorm (National
             Library of Medicine’s codification of the U.S. pharmacopeia) and others exist to address
             the variation in healthcare data and resulting inefficiencies by working with
             terminology, standards, and meaning. Each organization follows a set of rules that
@@ -45,14 +45,15 @@
             familiar with their respective rules and formats. Through this body of work, we are
             advancing a reference demonstration of an IKM environment that can be used by various
             stakeholders in the laboratory ecosystem to easily view, manage, and integrate existing
-            knowledge standards (e.g., SNOMED, LOINC) in a singular location, ultimately allowing
-            users to identify relationships between disparate knowledge sets. This work will help
-            set the foundation for a common model that would eventually help promote collaboration
-            across standards-development organizations, vendors, and provider-organizations,
-            improving interoperability of laboratory data across the entire ecosystem. Through IKM,
-            all standards work together under one data model with tooling to work across standards
-            and through redundancies. IKM can benefit healthcare and society by improving patient
-            outcomes, allowing meaningful data analyses, and increasing interoperability. </para>
+            knowledge standards (e.g., SNOMED CT® , LOINC) in a singular location, ultimately
+            allowing users to identify relationships between disparate knowledge sets. This work
+            will help set the foundation for a common model that would eventually help promote
+            collaboration across standards-development organizations, vendors, and
+            provider-organizations, improving interoperability of laboratory data across the entire
+            ecosystem. Through IKM, all standards work together under one data model with tooling to
+            work across standards and through redundancies. IKM can benefit healthcare and society
+            by improving patient outcomes, allowing meaningful data analyses, and increasing
+            interoperability. </para>
     </section>
     <section>
         <title>The Problem IKM Addresses </title>
@@ -97,7 +98,7 @@
             data standards in the U.S. healthcare space. The structure and meaning of data must be
             maintained to achieve full data integrity and a truly interoperable system. FHIR is an
             example of a standard that works to maintain the structure of data as it flows through
-            systems, while terminology organizations including SNOMED CT, RxNorm, and LOINC work to
+            systems, while terminology organizations including SNOMED CT®, RxNorm, and LOINC work to
             maintain the meaning of data. With the many existing SDOs and agencies pushing their
             adoption, issues such as overlapping standards coding standards, loss of meaning, and
             partial representation continue to exist. </para>
@@ -158,7 +159,7 @@
         <itemizedlist>
             <listitem>
                 <para><emphasis role="bold">Import</emphasis> – The data model must be able to pull
-                    and visualize data from LOINC, SNOMED CT, and other terminology standards into
+                    and visualize data from LOINC, SNOMED CT®, and other terminology standards into
                     the model’s data elements. Displaying the disparate terminology standards in a
                     single place will allow users and authors to compare commonalities and
                     differences between standards, identify equivalent concepts, and identify how
@@ -201,7 +202,7 @@
         </itemizedlist>
     </section>
     <section>
-        <title>Tinkar Overview</title>
+        <title>TINKAR Overview</title>
         <para>Today’s healthcare system uses certain information systems to capture and manage
             clinical statements and terminologies. While multiple information systems and
             terminology standards exist, these standards represent and format equivalent concepts,
@@ -211,12 +212,12 @@
             meaning, and ensuring the quality of data is a challenge. Through this body of work, we
             are aiming to improve IKM capabilities and advancing an existing HL7 project within the
             Vocabulary Working Group known as the ‘Guidelines for a Standardized Terminology
-            Knowledge base”, also known as Terminology Knowledge Architecture (Tinkar). Tinkar is
+            Knowledge base”, also known as TermINology Knowledge Architecture (TINKAR). TINKAR is
             intended to provide an architecture that delivers integrated terminology to the
-            healthcare enterprise and its information systems. Tinkar addresses the differences in
+            healthcare enterprise and its information systems. TINKAR addresses the differences in
             management and structure across reference terminology, and with local concepts and code
             lists/value sets. [1]</para>
-        <para>Tinkar is a self-describing and machine processed knowledge architecture that allows
+        <para>TINKAR is a self-describing and machine processed knowledge architecture that allows
             for effective and scalable querying of data, concepts, and information. Using locally
             defined concepts, Tinkar can integrate various terminology standards into the common
             model by accommodating, managing, and defining granular components and their respective
@@ -226,7 +227,7 @@
             concepts in Tinkar can be tested and previewed before deployment to a live environment
             and historic versioning of meta data is perpetually maintained to support iterative
             authoring, development, and versioning. [1]</para>
-        <para>Tinkar aims to improve the quality of patient care across the healthcare enterprise by
+        <para>TINKAR aims to improve the quality of patient care across the healthcare enterprise by
             creating a cross-cutting and common model that can integrate other terminology standards
             and use a repeatable and standardized process to convert disparate clinical statements
             and terminologies into high-quality, interoperable, and exportable clinical data. The
@@ -238,10 +239,10 @@
                 <itemizedlist>
                     <listitem>
                         <para>Concepts like “Feels Feverish” and “Feels Hot/Feverish” are both
-                            concepts in SNOMED CT but are not recognized as equivalent within SNOMED
-                            CT. Tinkar’s standardized process would support the identification of
-                            these findings as equivalent and create a relationship between the
-                            concepts.</para>
+                            concepts in SNOMED CT® but are not recognized as equivalent within
+                            SNOMED CT®. Tinkar’s standardized process would support the
+                            identification of these findings as equivalent and create a relationship
+                            between the concepts.</para>
                     </listitem>
                 </itemizedlist>
             </listitem>
@@ -265,7 +266,7 @@
                         <para>The lack of standardized representation of concepts between standards
                             leads to unnecessary confusion, redundant and overlapping concepts, and
                             challenges identifying the most accurate concept when transmitting data
-                            between systems and terminology standards. Tinkar works to reduce this
+                            between systems and terminology standards. TINKAR works to reduce this
                             unnecessary complication with clear versioning hierarchies that allow
                             for precise identification and representations of appropriate
                             terminologies between standards.</para>
@@ -279,14 +280,14 @@
         </orderedlist>
         <para>Versioning within terminology standards is not currently well documented or clearly
             conveyed to users and versioning between terminology standards is done asynchronously.
-            Tinkar will support transparent, detailed, standardized and rapid versioning that
+            TINKAR will support transparent, detailed, standardized and rapid versioning that
             focuses on improvements for users.</para>
     </section>
     <section>
         <title>FDA, SHIELD, and IKM Capabilities</title>
         <para>Our team, in collaboration with the Food and Drug Administration (FDA) and the
             Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
-            program, are working to demonstrate how Tinkar architecture can optimize and implement
+            program, are working to demonstrate how TINKAR architecture can optimize and implement
             IKM capabilities and IKM principles through the development of a reference
             implementation. One of FDA’s primary missions is “protecting the public health by
             ensuring the safety, efficacy, and security of human and veterinary drugs, biological
@@ -299,7 +300,7 @@
             for medical terminology representation and authoring. The September demo will showcase a
             proof-of-concept model that will be further matured and built upon in subsequent
             contract years. The team has and will continue to use an Agile methodology to
-            systematically iterate on Tinkar, and overall model development using sprint frameworks
+            systematically iterate on TINKAR, and overall model development using sprint frameworks
             across a variety of work streams. At the end of the contract’s base year, the team will
             have developed a comprehensive use case that will be used as a reference implementation
             to investigate capabilities to improve clinical analytics and address current state gaps
@@ -381,12 +382,12 @@
                 associated concepts throughout transmission and storage. This requires working with
                 a variety of terminology standards that asynchronously represent, update, manage,
                 and version concepts. The IKM architecture will require a robust and standardized
-                process to track changes across terminology standards and version Tinkar concepts
+                process to track changes across terminology standards and version TINKAR concepts
                 appropriately in a repeatable way. Changes will need to be made in real time and
                 will need to communicate the intricacies of updates, test the validity and
                 functionality of changes, and maintain STAMP principles. Changes to concepts may
                 occur concurrently as terminology standards release updates and will need to be
-                tested and validated using the Tinkar authoring environment.</para>
+                tested and validated using the TINKAR authoring environment.</para>
         </section>
     </section>
     <section>
