@@ -27,7 +27,7 @@
         <para>As part of the work on the Knowledge Management tooling, we first need to document the
             current state of the project so that we can define a future state and develop a plan to
             address any concerns. To do this, we have completed code reviews and stakeholder
-            interviews to ensure that we understand what work is outstanding.</para>
+            interviews to ensure that we understand what work is outstanding.    </para>
     </sect1>
     <sect1>
         <title>Methodology</title>
@@ -76,7 +76,7 @@
                 exist, from which some functional requirements could be inferred, but this isn’t
                 sufficient to develop highly reliable knowledge management capabilities. There are
                 some existing Jira and Confluence sites from Logica (formerly HSPC) that describe
-                some groupings of capabilities and functionality (e.g., Personas, SNOMED-CT export,
+                some groupings of capabilities and functionality (e.g., Personas, SNOMED-CT® export,
                 Simple Search) but not enough detail is present to be considered requirements user
                 stories can be based off.</para>
             <para>Additionally, there is a lack of Key Performance Indicators and Service Level
@@ -87,11 +87,11 @@
         <sect2>
             <title>Architecture and Documentation Review</title>
             <para>Identified through various stakeholder interviews were Unified Modeling Language
-                (UML) diagrams that detailed some aspects of Tinkar data structure and overall class
+                (UML) diagrams that detailed some aspects of TINKAR data structure and overall class
                 hierarchy. These were found within Health Level Seven (HL7) informational ballot for
-                Tinkar and some HL7 Vocabulary working group presentations. There were also some
+                TINKAR and some HL7 Vocabulary working group presentations. There were also some
                 identified attempts at using JetBrains IntelliJ IDEA IDE to auto-generate UML class
-                diagrams of core Tinkar concepts.</para>
+                diagrams of core TINKAR concepts.</para>
             <para>As mentioned previously, some pre-existing Jira and Confluence websites (Logica)
                 were identified and found to contain some outdated information regarding the
                 Knowledge Architecture (PASTF diagram).</para>
@@ -110,7 +110,7 @@
                     </mediaobject>
                 </figure>
             <figure xml:id="UnitTestCodeCoverageReportforTinkarusingJaCoCo">
-                <title>Unit Test Code Coverage Report for Tinkar using JaCoCo</title>
+                <title>Unit Test Code Coverage Report for TINKAR using JaCoCo</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Tinkar%20using%20JaCoCo.png"/>
@@ -124,10 +124,10 @@
                 adequately covered by unit tests. In contrast, a Maven module within the Tinkar-core
                 codebase called “integration” was identified as containing several large integration
                 tests. These integration tests currently use Junit5 (historically TestNG) to build
-                test suites to validate that the three main Tinkar providers Ephemeral, MVStore, and
-                Spined Array properly load a preset test sample of Tinkar data. The selection of and
+                test suites to validate that the three main TINKAR providers Ephemeral, MVStore, and
+                Spined Array properly load a preset test sample of TINKAR data. The selection of and
                 adequate testing suite is important because the codebase utilizes inversion of
-                controls (or dependency injection) to start appropriate Tinkar-core “services” which
+                controls (or dependency injection) to start appropriate TINKAR-core “services” which
                 requires the testing suite to have proper setup and tear annotations.</para>
             <para>Overall, the codebase had low code maturity. This is attributed to a lack of
                 continuous integration and continuous delivery infrastructure. It was identified
@@ -155,8 +155,8 @@
             Analysis of Alternatives to review with stakeholders. This analysis of alternatives must
             include resource and license costs as well as its fit with the system requirements. For
             example, if it needs to be an extremely fast system and must use a key-value read
-            pattern, then it will be defined empirically, when possible, how fast it is and how well
-            that it fits that pattern.</para>
+            pattern, it will be defined empirically, when possible, how fast it is and how well it
+            fits that pattern.</para>
     </sect1>
     <sect1>
         <title>Code Maturity</title>
