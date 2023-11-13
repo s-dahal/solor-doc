@@ -8,28 +8,28 @@
         <title>Federal Drug Administration (FDA) Overview</title>
         <para>The US Food and Drug Administration (FDA) is responsible for protecting public health
             by ensuring the safety of consumer products and is responsible for advancing innovative
-            medical products and technology that further promote public health. Medical devices
+            medical products and technology that further promote public health. Medical devices,
             including instruments and products used for treating or diagnosing diseases such as
-            diabetes must be approved for use by the public. This process was brought to the public
+            diabetes, must be approved for use by the public. This process was brought to the public
             eye during COVID-19 with the use of Emergency Use Authorizations (EUA) for COVID-19 test
             kits. FDA’s Center for Devices and Radiological Health (CDRH) maintains a database of
             Premarket Notification [510(k)] approved products. 510(k) is a premarket submission that
-            manufacturers make to the FDA to prove their device is safe, and equivalent to an
-            already approved product that is legally marketed. Beyond 510(k) approvals is the
-            Premarket Approval (PMA). This application seeks FDA approval based on rigorous
-            scientific evidence that the device is safe and effective. Through these and other
-            processes FDA ensures the public has access to cutting edge and safe tools to manage
-            health. </para>
-        <para>FDA CDRH is the primary funder of SHIELD. </para>
+            manufacturers make to the FDA to prove their device is safe and equivalent to an already
+            approved product that is legally marketed. Beyond 510(k) approvals is the Premarket
+            Approval (PMA). This application seeks FDA approval based on rigorous scientific
+            evidence that the device is safe and effective. Through these and other processes FDA
+            ensures the public has access to cutting edge and safe tools to manage health. </para>
+        <para>FDA CDRH is the primary funder of Systemic Harmonization and Interoperability
+            Enhancement for Laboratory Data (SHIELD). </para>
     </section>
     <section>
         <title>Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
             Overview</title>
-        <para>Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
-            is a public-private collaboration that started in 2015 with a singular focus: improving
-            the interoperability and utility of in-vitro diagnostic (IVD) test data. To accomplish
-            their mission of being able to “Describe the same test the same way anywhere in the
-            Healthcare ecosystem”, SHIELD is working to develop a solution that focuses on:</para>
+        <para>SHIELD is a public-private collaboration that started in 2015 with a singular focus:
+            improving the interoperability and utility of in-vitro diagnostic (IVD) test data. To
+            accomplish their mission of being able to “Describe the same test the same way anywhere
+            in the Healthcare ecosystem”, SHIELD is working to develop a solution that focuses
+            on:</para>
         <itemizedlist>
             <listitem>
                 <para><emphasis role="bold">Ecosystem Engagement</emphasis> - Collaborating and
@@ -39,7 +39,7 @@
             <listitem>
                 <para><emphasis role="bold">Enhanced Analytic Data Storage</emphasis> - Providing
                     the community of secondary data users with high quality Real-World Data (RWD) in
-                    a central location.</para>
+                    a central location</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Systems Thinking</emphasis> - Re-engineering the
@@ -69,20 +69,20 @@
             </section>
     <section>
         <title>Real World Evidence and Standards Overview</title>
-        <para>Real world evidence (RWE) using the Real world data (RWD) collected as part of routine
-            clinical care, has been heralded as an answer to many of the woes of our medical system.
-            A vision has been made popular that suggests a wealth of untapped data – electronic
-            health records, medical imaging, mobile apps, and more recently low-cost gene sequencing
-            and wearable devices, unlocked using artificial intelligence and cloud computing – is a
-            path to better diagnostics, personalized treatments, and early disease prevention for
-            millions. Data interoperability of health data may help medicine realize the future in
-            the same way in which other industries have advanced – such as banking, the “internet of
-            things” and online shopping, thereby stressing the importance of establishing the
-            Laboratory Interoperability Data Repository (LIDR) and related infrastructure. The
-            vision of a national interoperable health information system has been elusive; however,
-            because of clinical care data in data silos, incompatible health information technology
-            (IT) systems, and proprietary software that make health information difﬁcult to
-            exchange, analyze, and interpret. </para>
+        <para>Real world evidence (RWE) using RWD collected as part of routine clinical care, has
+            been heralded as an answer to many of the woes of our medical system. A vision has been
+            made popular that suggests a wealth of untapped data – electronic health records (EHR),
+            medical imaging, mobile apps, and more recently low-cost gene sequencing and wearable
+            devices, unlocked using artificial intelligence and cloud computing – is a path to
+            better diagnostics, personalized treatments, and early disease prevention for millions.
+            Data interoperability of health data may help medicine realize the future in the same
+            way in which other industries have advanced – such as banking, the “internet of things”
+            and online shopping, thereby stressing the importance of establishing the Laboratory
+            Interoperability Data Repository (LIDR) and related infrastructure. The vision of a
+            national interoperable health information system has been elusive; however, because of
+            clinical care data in data silos, incompatible health information technology (IT)
+            systems, and proprietary software that make health information difﬁcult to exchange,
+            analyze, and interpret. </para>
         <para>Given the number of distinct information systems and care delivery organizations in
             the ecosystem (e.g., primary care, specialists, laboratories, other care teams),
             multiple variations exist in how data is collected, manipulated, transmitted, and
@@ -141,17 +141,16 @@
                 <listitem>
                     <para>Understandable: The data model for normalizing disparate health data can
                         be processed by health IT systems and understood by most healthcare
-                        providers without reference to private or inaccessible information. </para>
+                        providers without reference to private or inaccessible information</para>
                 </listitem>
                 <listitem>
                     <para>Reproducible: Multiple users or systems apply the model and normal form to
-                        the same situations and source data with an equivalent result. </para>
+                        the same situations and source data with an equivalent result</para>
                 </listitem>
                 <listitem>
                     <para>Useful: The model is fit-for-purpose—it has practical value for data
                         analysis, in support of clinical decision support, research, and population
-                        health that requires information aggregated across health IT systems.
-                    </para>
+                        health that requires information aggregated across health IT systems</para>
                 </listitem>
             </itemizedlist>
             <para>Normalization of disparate health data and knowledge is defined as "the ability to
@@ -202,9 +201,9 @@
                 amount of data wrangling” and one-off transformations across the ecosystem and
                 instead enable “data liquidity”, or the ability of data to flow throughout the
                 health data ecosystem easily and securely so that it is quickly available to
-                clinicians, decision makers, laboratories, patients, and others when where they
-                need. A robust information architecture and scalable solution to enable this ideal
-                state requires a common understanding of data and a method to support
+                clinicians, decision makers, laboratories, patients, and others when they need. A
+                robust information architecture and scalable solution to enable this ideal state
+                requires a common understanding of data and a method to support
                 knowledge-representation and assertional and procedural rules based on common
                 terminology and statement models. If a shareable architecture were able to be
                 implemented across the ecosystem, health data and knowledge could potentially be
@@ -213,18 +212,18 @@
             <para>Another pragmatic methodology would be to engage vendors and incentivize them to
                 implement an open, common data model and produce shareable output in interoperable,
                 reproducible, and understandable formats that could then be ingested by other
-                systems. Major US electronic health records (EHR) vendors including Epic and Cerner
-                which represent > 80% of the US healthcare EHR implementations represent a possible
-                avenue to normalizing and aggregating EHR-based data in the US on a broad scale.
-                Individually, each vendor has independently attempted to create such clinical data
-                resources and product offerings for their user communities. These efforts entail
-                attempts to align, normalize and aggregate the EHR data held by each individual
-                client into a large, de-identified data enclave for purposes of data analytics,
-                quality improvement and research. Unfortunately, these independent efforts are
-                proprietary and do not extend beyond the vendor user community. Further, the data
-                normalization and representation process remains a "black box" and cannot be
-                independently verified for semantic correctness, data and information loss or gains,
-                or appropriate application of metadata standards. In fact, these vendor-centric face
+                systems. Major U.S. EHR vendors including Epic and Cerner which represent > 80% of
+                the U.S. healthcare EHR implementations represent a possible avenue to normalizing
+                and aggregating EHR-based data in the U.S. on a broad scale. Individually, each
+                vendor has independently attempted to create such clinical data resources and
+                product offerings for their user communities. These efforts entail attempts to
+                align, normalize and aggregate the EHR data held by each individual client into a
+                large, de-identified data enclave for purposes of data analytics, quality
+                improvement and research. Unfortunately, these independent efforts are proprietary
+                and do not extend beyond the vendor user community. Further, the data normalization
+                and representation process remains a "black box" and cannot be independently
+                verified for semantic correctness, data and information loss or gains, or
+                appropriate application of metadata standards. In fact, these vendor-centric face
                 the same issues on a smaller scale as the FDA SHIELD effort. Issues with
                 vendor-centric data alignment and reuse are known. [4-5] Despite these weaknesses,
                 an opportunity exists to collaborate with EHR vendors to normalize and apply
@@ -247,7 +246,7 @@
             <para>While these standards are widely implemented and adopted, aggregation and
                 analytics can be difficult because there is no standard representation across these
                 terminologies. Traversing the data models of these various terminology standards in
-                an integrated way is non-trivial because SNOMED CT, LOINC, and RxNorm each use
+                an integrated way is non-trivial because SNOMED CT®, LOINC®, and RxNorm each use
                 different formalisms and tools for their representation. Various terminologies have
                 different semantics, models, release cycles, and versioning mechanisms. [6] </para>
             <para>Ideally, to support RWE analytics and aggregation, enterprise terminology requires
@@ -260,17 +259,17 @@
                     <listitem>
                         <para>Ability to recognize equivalence between data from disparate health IT
                             systems that use codes/terms from various standard terminologies (e.g.,
-                            “Feels Feverish” in the Temperature Symptoms SNOMED CT hierarchy versus
-                            “Feels Hot/Feverish” in the Observation and Sensation SNOMED CT
-                            hierarchy. Both concepts are Findings in SNOMED CT but there is no
-                            unifying way to identify equivalence). </para>
+                            “Feels Feverish” in the Temperature Symptoms SNOMED CT® hierarchy versus
+                            “Feels Hot/Feverish” in the Observation and Sensation SNOMED CT®
+                            hierarchy. Both concepts are Findings in SNOMED CT® but there is no
+                            unifying way to identify equivalence) </para>
                     </listitem>
                     <listitem>
                         <para>Ability to represent local concepts using codes and terms that are
                             modeled extensions to standard terminologies (e.g., “COVID-19 negative
                             test result” was needed in practical use before official SDO releases,
                             or gaps like “mild anemia”, which was proposed, but not accepted, by
-                            both the international and U.S. SNOMED CT release).</para>
+                            both the international and U.S. SNOMED CT® release)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -280,7 +279,7 @@
                         <para>Ability to identify flawed information or incorrect usage or
                             representation of concepts from standard terminologies due to a lack of
                             harmonization and multiple representations that exist across disparate
-                            standards (e.g., LOINC and SNOMED CT have overlapping concepts).</para>
+                            standards (e.g., LOINC® and SNOMED CT® have overlapping concepts)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -288,8 +287,7 @@
                 <itemizedlist>
                     <listitem>
                         <para>Ability to safely change over time in a clear way so that changes are
-                            easily understood by implementers. (e.g., redundancy, major
-                            name).</para>
+                            easily understood by implementers. (e.g., redundancy, major name)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -323,33 +321,33 @@
                 Interoperability Data Repository (LIDR) taken from the SHIELD Community Roadmap: </para>
             <orderedlist>
                 <listitem>
-                    <para>“Develop a freely accessible knowledge management architecture for
+                    <para>Develop a freely accessible knowledge management architecture for
                         laboratorians, clinicians, researchers, and regulators, which is needed to
                         promote clinical interoperability, enabling the determination of equivalency
                         between different test results to decide whether they can be safely used for
-                        trending, data aggregation, post-market efficacy studies, and research.
-                    </para>
+                        trending, data aggregation, post-market efficacy studies, and
+                        research</para>
                 </listitem>
                 <listitem>
                     <para>Determine the usefulness of clinical interventions to improve patient
                         care, based on relevant laboratory knowledge and reporting data, such as
-                        public health reporting and clinical surveillance. </para>
+                        public health reporting and clinical surveillance</para>
                 </listitem>
                 <listitem>
                     <para>Harmonize meaningful laboratory terminology standards, such as SNOMED CT®
-                        and LOINC®. </para>
+                        and LOINC®</para>
                 </listitem>
                 <listitem>
                     <para>Enhance the reproducibility of data exchange structures used to express
                         laboratory procedures and outcomes, such as Clinical Data Interchange
                         Standards Consortium (CDISC), FHIR, and Integrating the Healthcare
-                        Enterprise (IHE) Laboratory Analytical Workflow (LAW). </para>
+                        Enterprise (IHE) Laboratory Analytical Workflow (LAW) </para>
                 </listitem>
                 <listitem>
                     <para>Promote the understandability of the laboratory test knowledge as
                         interpreted and processed by supporting health IT systems such as Laboratory
                         Information Systems (LIS), Laboratory Information Management Systems (LIMS),
-                        and Electronic Health Records (EHRs).” </para>
+                        EHR</para>
                 </listitem>
                 <listitem>
                     <para>Establishment of this infrastructure will help facilitating reliable data
@@ -358,7 +356,7 @@
                         disparate health information systems will help reduce variation for large
                         national analytic enclaves, such as the National COVID Cohort Collaborative
                         (N3C) Data Enclave which aggregates and analyzes data from numerous,
-                        disparate electronic health record systems. </para>
+                        disparate electronic health record systems</para>
                 </listitem>
             </orderedlist>
         </section>
@@ -374,12 +372,12 @@
                 <para><emphasis role="bold">Structural Interoperability</emphasis> – While structure
                     focuses on maintaining how systems format data, it cannot ensure that the
                     receiving system will understand the structured data with the original
-                    meaning.</para>
+                    meaning</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Meaning Interoperability</emphasis> – Meaning
                     interoperability works to ensure that the receiving system interprets data in an
-                    identical way as the original system.</para>
+                    identical way as the original system</para>
             </listitem>
         </itemizedlist>
         <para>Working to ensure that transmitted data maintains both structure and meaning is a
@@ -387,12 +385,12 @@
             that can ensure lossless transmission of data. Currently, interoperability of data
             between and within both organizations and standards poses as a major patient safety
             issue in the healthcare system. A test with a given LIVD LOINC code can be performed
-            within a lab and as it is transmitted to the Laboratory Information System (LIS), the
-            test can be assigned a different LIS LOINC code that does not capture all of the
-            pertinent information. Even within the organization the interoperability of data is
-            threatened, so when data is then transferred from the Lab’s LIS to a hospitals EHR that
-            lack of data interoperability can compound as the LIS LOINC code is assigned another,
-            potentially different EHR LOINC code.</para>
+            within a lab and as it is transmitted to the LIS, the test can be assigned a different
+            LIS LOINC code that does not capture all of the pertinent information. Even within the
+            organization the interoperability of data is threatened, so when data is then
+            transferred from the Lab’s LIS to a hospitals EHR that lack of data interoperability can
+            compound as the LIS LOINC code is assigned another, potentially different EHR LOINC
+            code.</para>
         <para>Working to maintain both structure and meaning as data moves within and between
             systems will improve patient safety, product development, and health analytics and
             reduce regulatory and clinical burden on policy makers and healthcare providers.</para>
@@ -407,12 +405,11 @@
             statement's data as a standardized and encoded fundamental form. [8]</para>
         <para>Clinical Input Form is also a general informatics term. It describes the manner by
             which clinicians author clinical statements and enter them into their organizations’
-            electronic health record (EHR). Clinical Input Forms (CIFs) have an impact as to how
-            information is presented to the clinicians and how they enter the data. CIFs might be
-            generated by natural language processing or may use models that constrain structured
-            input to allow only certain values to be entered, such as a drop-down list or radio
-            button, or breaking up large chunks of related information into smaller parts.
-            [8]</para>
+            EHR. Clinical Input Forms (CIFs) have an impact as to how information is presented to
+            the clinicians and how they enter the data. CIFs might be generated by natural language
+            processing or may use models that constrain structured input to allow only certain
+            values to be entered, such as a drop-down list or radio button, or breaking up large
+            chunks of related information into smaller parts. [8]</para>
         <para>Today, clinical statements are often represented in unpredictable and denormalized
             forms, which makes reliable and safe decision support challenging and reduces the
             quality of other types of data processing. Analysis Normal Form (ANF) is an approach to
@@ -446,15 +443,14 @@
             <title>Industry Coding Standards</title>
             <para>Healthcare data exchange requires that healthcare institutions and laboratories
                 reproducibly encode their test data using industry coding standards. For laboratory
-                data, appropriate use of LOINC® and Systematized Nomenclature of Medicine Clinical
-                Terms (SNOMED CT®), is essential to ensure tests and results are accurately and
-                reliably described within Electronic Health Records (EHR), Laboratory Information
-                Systems (LIS), and public health reports. [9]</para>
+                data, appropriate use of LOINC® and SNOMED CT® is essential to ensure tests and
+                results are accurately and reliably described within EHR, LIS, and public health
+                reports. [9]</para>
         </section>
         <section>
             <title>The Adoption of Three Key Terminology Standards: SNOMED CT®, LOINC® and
                 RxNorm</title>
-            <para>Over the last several decades, SNOMED CT®, LOINC® and RxNorm have been
+            <para>Over the last several decades, SNOMED CT®, LOINC®, and RxNorm have been
                 increasingly recognized as key resources for: 1. Knowledge Management, 2. Data
                 Integration, 3. Decision Support, 4. High impact on clinical practice and 5. High
                 impact on biomedical research. The following excerpt, written by Olivier
@@ -477,7 +473,7 @@
                     collaborative. [13]</emphasis></para>
             <section>
                 <title>SNOMED CT® Overview</title>
-                <para>Regulations have had a significant impact on the adoption of SNOMED CT:
+                <para>Regulations have had a significant impact on the adoption of SNOMED CT®:
                     [13]</para>
                 <para>SNOMED International consist of member countries, of which the US is one of
                     its inaugural members.</para>
@@ -485,9 +481,9 @@
                     specialists and the community of practice to exchange best practices and measure
                     progress towards the implementation of SNOMOED CT® across the world.</para>
                 <para>In the US, EHRs are required to use SNOMED CT® for documenting the following:
-                    problem lists, procedures and some clinical findings, i.e. smoking
-                    status.</para>
-                <para>In the UK, many health information systems (HIT) must use SNOMEDT CT® as the
+                    problem lists, procedures and some clinical findings, (i.e. smoking
+                    status).</para>
+                <para>In the U.K., many health information systems (HIT) must use SNOMEDT CT® as the
                     clinical terminology standard within all electronic patient level recording and
                     communications.</para>
             </section>
@@ -501,17 +497,17 @@
                             <para>The U.S. Meaningful Use Incentive Program now called Promoting
                                 Interoperability requires LOINC® in messages reporting laboratory
                                 test results, exchanging medical summaries, and sending data to
-                                cancer registries and public health agencies. </para>
+                                cancer registries and public health agencies</para>
                         </listitem>
                     </itemizedlist>
                 </para>
                 <para>
                     <itemizedlist>
                         <listitem>
-                            <para>The U.S. Food and Drug Administration (FDA) requires LOINC® for
-                                lab test data in regulated studies and have articulated a broad
-                                vision of using real-world evidence in post market surveillance that
-                                depends on standardized data. </para>
+                            <para>The U.S. FDA requires LOINC® for lab test data in regulated
+                                studies and have articulated a broad vision of using real-world
+                                evidence in post market surveillance that depends on standardized
+                                data</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -519,11 +515,11 @@
                     <itemizedlist>
                         <listitem>
                             <para>The LIVD (LOINC® to IVD) Mapping Specification is required by the
-                                United States Department of Health and Human Services for SARS-CoV-2
-                                reporting and harmonizes how IVD test information is represented
-                                using LOINC®. The LIVD file format is currently led by IVD Industry
-                                Connectivity Consortium (IICC), and the JavaScript Object Notation
-                                (JSON) representation is a project at HL7. </para>
+                                United States Department of Health and Human Services (HHS) for
+                                SARS-CoV-2 reporting and harmonizes how IVD test information is
+                                represented using LOINC®. The LIVD file format is currently led by
+                                IVD Industry Connectivity Consortium (IICC), and the JavaScript
+                                Object Notation (JSON) representation is a project at HL7</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -533,7 +529,7 @@
                             <para>Federal, State, and Local Public Health Reporting Requirements use
                                 messaging standards such as Health Level Seven (HL7). Inside these
                                 messages, laboratories and clinical systems use LOINC® codes to
-                                identify which test is being reported.</para>
+                                identify which test is being reported</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -548,7 +544,7 @@
                                     >The Centers for Medicaid and Medicare
                                     Services</emphasis><emphasis role="italic"> (CMS)</emphasis>
                                 adopted LOINC® for the patient assessment instruments required in
-                                post-acute care settings. </para>
+                                post-acute care settings </para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -560,7 +556,7 @@
                                 Observational Health Data Sciences and Informatics (OHDSI), the
                                 Observational Health Data Sciences and Informatics research group,
                                 and the FDA's Mini-Sentinel, all use LOINC® in their common data
-                                models.</para>
+                                models</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -573,13 +569,13 @@
                                 National Council for prescription Drug Programs (NCPDP), a standards
                                 development organization, requires RxNorm as its standardized
                                 medical nomenclature for its SCRIPT standard for
-                                e-prescribing.</para>
+                                e-prescribing</para>
                         </listitem>
                         <listitem>
                             <para><emphasis role="bold">Information Exchange</emphasis> - U.S.
                                 Department of Defense (DOD) and Department of Veterans Affairs (VA)
                                 rely on RxNorm to mediate drug information across their respective
-                                EHRs.</para>
+                                EHRs</para>
                         </listitem>
                         <listitem>
                             <para><emphasis role="bold">Formulary development</emphasis> - CMS uses
@@ -597,11 +593,10 @@
                                 warehouses. As an example, Observational health Data Sciences and
                                 Informatics (OHDSI) research group uses RxNorm for representing
                                 drugs as part of its Observational Medical Outcomes Partnership
-                                (OMOP) common data model (CDM).</para>
+                                (OMOP) common data model (CDM)</para>
                         </listitem>
                     </itemizedlist></para>
-                <para>The National Patient-Centered Clinical Research Network (PCORnet) also uses
-                    RxNorm in its common data model.</para>
+                <para>PCORnet also uses RxNorm in its common data model.</para>
             </section>
             <section>
                 <title>Interoperability Concerns</title>
@@ -612,20 +607,20 @@
                 <para>Examples of Scholarly and Practical Efforts to Assess SNOMED CT® from SNOMED
                     CT® Interoperability Projects<itemizedlist>
                         <listitem>
-                            <para>There are licensing aspects to SNOMED CT that complicates its use
-                                as a common format for LOINC. This issue will be addressed by SHIELD
-                                by building on SNOMED CTs foundation. Nonetheless, SNOMED CTs
-                                commitment to develop and expand their use of description logics
-                                formalism as called out by SOLOR as well as their alignment with the
-                                Desiderata as described by Cimino, et at, is a step in the right
-                                direction. [13]</para>
+                            <para>There are licensing aspects to SNOMED CT® that complicates its use
+                                as a common format for LOINC®. This issue will be addressed by
+                                SHIELD by building on the SNOMED CT® foundation. Nonetheless, SNOMED
+                                CT's® commitment to develop and expand their use of description
+                                logics formalism as called out by SOLOR as well as their alignment
+                                with the Desiderata as described by Cimino, et at, is a step in the
+                                right direction. [13]</para>
                         </listitem>
                     </itemizedlist></para>
                 <para>Examples of Scholarly and Practical Efforts to Assess LOINC® from LOINC®
                     Interoperability Projects<itemizedlist>
                         <listitem>
                             <para>A study compared the use of LOINC® terms used in five medical
-                                centers and their alignment with vendor recommended LOINC terms as
+                                centers and their alignment with vendor recommended LOINC® terms as
                                 published in the LOINC® for in vitro Diagnostics (LIVD) file. “We
                                 identified mismatches in how medical centers use LOINC® to encode
                                 laboratory tests compared to how test manufacturers encode the same
@@ -724,45 +719,42 @@
         <para>Today’s current state for knowledge management constructs lack a standardized approach
             to ensure the quality of data as it is entered or transferred into the health care and
             laboratory systems. Without a clear and repeatable way to verify the accuracy of
-            information within an electronic health record (EHR) or laboratory system, there are
-            opportunities for hazards and patient safety issues to emerge. Our team will design a
-            system based on a Safety Systems Thinking approach and High Reliability Organization
-            (HRO) principles that can improve the quality, reliability, and interoperability of data
-            and address the concerns with current knowledge management constructs. We will use prior
-            work and research from industry leaders and subject matter experts (SMEs) as
-            foundational building blocks as we continue to research laboratory and health care
-            systems, medical terminology standards, and best practices and lessons learned to
-            support our development and design process.</para>
+            information within an EHR or laboratory system, there are opportunities for hazards and
+            patient safety issues to emerge. Our team will design a system based on a Safety Systems
+            Thinking approach and High Reliability Organization (HRO) principles that can improve
+            the quality, reliability, and interoperability of data and address the concerns with
+            current knowledge management constructs. We will use prior work and research from
+            industry leaders and subject matter experts (SMEs) as foundational building blocks as we
+            continue to research laboratory and health care systems, medical terminology standards,
+            and best practices and lessons learned to support our development and design
+            process.</para>
         <section>
             <title>Motivation for Safety Systems Thinking and HRO</title>
             <para>The health care system in the United States has undergone a digital transformation
-                over the past few decades as digital health information systems and electronic
-                health records have been widely adopted and implemented. Despite this expansive
-                transformation, elements of interoperability, data quality management, and the
-                associated patient safety risks are underrepresented as key subject matter experts
-                and informatics stakeholders have not been optimally involved in the design and
-                implementation process of health information systems.</para>
+                over the past few decades as digital health information systems and EHRs have been
+                widely adopted and implemented. Despite this expansive transformation, elements of
+                interoperability, data quality management, and the associated patient safety risks
+                are underrepresented as key subject matter experts and informatics stakeholders have
+                not been optimally involved in the design and implementation process of health
+                information systems.</para>
             <para>The current state for health care knowledge management to ensure data quality and
                 interoperability is to encode health data using medical terminology standards such
-                as, Logical Observation Identifiers Names and Codes (LOINC), Systematized
-                Nomenclature of Medicine – Clinical Terms (SNOMED CT), and RxNorm. These
-                terminologies provide a standardized method to create and enter data elements into
-                health care systems and, in an ideal world, support seamless interoperability
-                between health care systems or health record systems. However, the application and
-                use of these standards is typically not consistent during implementations between
-                facilities within a health care system or between different systems. This
-                non-standardized implementation leads to localized variants of terminologies and
-                knowledge representations that limit interoperability and impacts opportunities to
-                comprehensively understand data within a system.</para>
-            <para>Not only the current knowledge management is unstandardized, but relative
+                as, LOINC®, SNOMED CT®, and RxNorm. These terminologies provide a standardized
+                method to create and enter data elements into health care systems and, in an ideal
+                world, support seamless interoperability between health care systems or health
+                record systems. However, the application and use of these standards is typically not
+                consistent during implementations between facilities within a health care system or
+                between different systems. This non-standardized implementation leads to localized
+                variants of terminologies and knowledge representations that limit interoperability
+                and impacts opportunities to comprehensively understand data within a system.</para>
+            <para>Not only is the current knowledge management unstandardized, but relative
                 uncertainty also exists regarding the quality and accuracy of the data representing
                 knowledge. A standardized process to validate the vast amount health care data does
-                not exist. No standardized understanding of what data should be validated is absent.
-                The current situation further impacts the quality and accuracy of data, the ability
-                to support research and clinical decisions, and patient safety. Existing data
-                validation techniques need to be standardized and refined to support comprehensive
-                and reproducible validation of data within systems and transferable data between
-                systems.</para>
+                not exist. The current situation further impacts the quality and accuracy of data,
+                the ability to support research and clinical decisions, and patient safety. Existing
+                data validation techniques need to be standardized and refined to support
+                comprehensive and reproducible validation of data within systems and transferable
+                data between systems.</para>
         </section>
         <section>
             <title>Safety Systems Thinking and HRO Background</title>
@@ -794,9 +786,9 @@
             </section>
             <section>
                 <title>HRO Overview</title>
-                <para>A High Reliability Organization is an organization that avoids accidents and
-                    hazards, even in complex environments where accidents are common. HROs are based
-                    on five key principles:</para>
+                <para>A HRO is an organization that avoids accidents and hazards, even in complex
+                    environments where accidents are common. HROs are based on five key
+                    principles:</para>
                 <orderedlist>
                     <listitem>
                         <para>Preoccupation with Failure</para>
@@ -805,7 +797,7 @@
                                 <para>The organization works to ensure stakeholders are aware of
                                     errors and understands how errors occur, the processes that
                                     allow errors to occur, and how to reduce the causes of
-                                    errors.</para>
+                                    errors</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -815,7 +807,7 @@
                             <listitem>
                                 <para>Stakeholders do not oversimplify the system and aim to fully
                                     understand all the processes and control structures that may
-                                    impact that system.</para>
+                                    impact that system</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -826,7 +818,7 @@
                                 <para>Organizations and stakeholders identify, and continually
                                     measure, key indicators of quality and safety that could alert
                                     to changes, even small ones, or indications of a shift towards
-                                    unsafe conditions or hazardous environments.</para>
+                                    unsafe conditions or hazardous environments</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -835,7 +827,7 @@
                         <itemizedlist>
                             <listitem>
                                 <para>Organizations utilize the experience and knowledge of
-                                    pertinent SMEs at every opportunity.</para>
+                                    pertinent SMEs at every opportunity</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -844,8 +836,7 @@
                         <itemizedlist>
                             <listitem>
                                 <para>Organizations learn from errors through feedback loops and
-                                    continuous monitoring, as they aim to continually
-                                    improve.</para>
+                                    continuous monitoring, as they aim to continually improve</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -917,11 +908,11 @@
                     Artifacts Overview</title>
                 <para>Greg Rehwoldt outlines a real-world use case of developing and applying a
                     risk-based methodology to improve the quality of current state knowledge
-                    artifacts in this 2018 dissertation. This paper highlights a variety of issues
-                    with current state knowledge management, particularly the lack of effective
-                    quality assurance for existing knowledge artifacts. Current approaches to
-                    quality tend to focus on system specific events or stakeholder mistakes, but as
-                    the health care environment has evolved, quality assurance must validate data
+                    artifacts in this 2018 dissertation. [17] This paper highlights a variety of
+                    issues with current state knowledge management, particularly the lack of
+                    effective quality assurance for existing knowledge artifacts. Current approaches
+                    to quality tend to focus on system specific events or stakeholder mistakes, but
+                    as the health care environment has evolved, quality assurance must validate data
                     during creation and as it transitions between systems.</para>
                 <para>While improving patient safety and data quality are key focuses of this paper,
                     financial theory is also applied to demonstrate how cost and time variables will
@@ -960,36 +951,36 @@
                 <orderedlist>
                     <listitem>
                         <para>Electronic Medical Record (EMR) clinical documentation guidelines are
-                            poorly standardized and communicated to end-users.</para>
+                            poorly standardized and communicated to end-users</para>
                     </listitem>
                     <listitem>
                         <para>The lack of internal data audits across the health care industry
                             results in unknown patient record quality, accuracy, and
-                            completeness.</para>
+                            completeness</para>
                     </listitem>
                     <listitem>
                         <para>Key informatics stakeholders and SMEs are not adequately included in
-                            EHRM efforts.</para>
+                            EHRM efforts</para>
                     </listitem>
                     <listitem>
                         <para>Providers do not use current state knowledge management tools, like
-                            standardized terminology or classification systems, optimally.</para>
+                            standardized terminology or classification systems, optimally</para>
                     </listitem>
                     <listitem>
                         <para>Providers must learn to structure and enter clinical information with
                             a standardized process to support data interoperability as natural
-                            language processing (NLP) abilities remain limited.</para>
+                            language processing (NLP) abilities remain limited</para>
                     </listitem>
                     <listitem>
                         <para>Systems lack a standardized approach to terminology and data that
                             leads to many redundant, ambiguous, or improperly mapped terms in EHR
                             data dictionaries. This can often lead to improperly labeled data as
-                            information is shared between systems.</para>
+                            information is shared between systems</para>
                     </listitem>
                     <listitem>
                         <para>Data issues that affect multiple records can occur as automated data
                             flows apply terminology maps based on the received map, rather than the
-                            original source data. [19]</para>
+                            original source data [19]</para>
                     </listitem>
                 </orderedlist>
             </section>
