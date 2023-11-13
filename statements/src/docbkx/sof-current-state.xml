@@ -7,19 +7,17 @@
     <section>
         <title>Purpose</title>
         <para>In an effort to resolve the challenges posed by data interoperability and unlock the
-            full potential of real-world data (RWD) and real-world evidence (RWE) across the health
-            care system, the Systemic Harmonization and Interoperability Enhancement for Laboratory
-            Data (SHIELD) collaborative was formed. The SHIELD collaborative is a
-            multi-agency/stakeholder public-private initiative to develop and implement
-            collaborative policies and business models to overcome lab interoperability barriers.
-            Due to the complexity and vastness of this issue, SHIELD has embraced an ecosystem
-            perspective that recognizes no single entity has the authority or influence to
-            meaningfully impact the state of lab interoperability. SHIELD stakeholders include in
-            vitro diagnostic (IVD) manufacturers, commercial and clinical center laboratories,
-            professional organizations, electronic health record (EHR) vendors, Pew Charitable
-            Trusts, numerous federal agencies, standards development organizations, and patient
-            advocates. SHIELD’s overall objective is to ensure lab interoperability such that the
-            same type of device is described the same way throughout EHRs. </para>
+            full potential of RWD and RWE across the health care system, the SHIELD collaborative
+            was formed. The SHIELD collaborative is a multi-agency/stakeholder public-private
+            initiative to develop and implement collaborative policies and business models to
+            overcome lab interoperability barriers. Due to the complexity and vastness of this
+            issue, SHIELD has embraced an ecosystem perspective that recognizes no single entity has
+            the authority or influence to meaningfully impact the state of lab interoperability.
+            SHIELD stakeholders include IVD manufacturers, commercial and clinical center
+            laboratories, professional organizations, electronic health record EHR vendors, Pew
+            Charitable Trusts, numerous federal agencies, standards development organizations, and
+            patient advocates. SHIELD’s overall objective is to ensure lab interoperability such
+            that the same type of device is described the same way throughout EHRs. </para>
         <para>The purpose of this Summary of Findings – Current State of RWE Analytics including but
             not limited to information retrieval and Knowledge Management and discovery is to
             explore the current state of real-world data and real-world evidence as it pertains to
@@ -53,18 +51,18 @@
                 meaning as the source institution intended and computed. The movement of a Portable
                 Document Format (PDF) medical report from institution A to institution B is done
                 routinely, but none of the data held within the report is computable, thus not
-                interoperable. Discrete electronic health record data can be computable within its
-                source system but cannot be electronically exchanged to a second institution and
-                reliably and safely computable to convey the exact same meaning as initially
-                intended because these data, even data between identical EHR systems, do not carry
-                sufficient context to convey appropriate meaning to be safely and reliably
-                reconstructed between system instances. Finally, even data encoded using
-                standardized medical terminology, such is laboratory data, that is electronically
-                exchanged and computable between systems does not safely guarantee the data will be
-                considered to have the exact same meaning between systems. Numerous examples of this
-                phenomenon have been discussed in literature. [1] To realize the potential of RWD
-                which is suitable as RWE for regulatory, research, public health and clinical care
-                purposes, data interoperability must be achieved. </para>
+                interoperable. Discrete EHR data can be computable within its source system but
+                cannot be electronically exchanged to a second institution and reliably and safely
+                computed to convey the exact same meaning as initially intended because these data,
+                even data between identical EHR systems, do not carry sufficient context to convey
+                appropriate meaning to be safely and reliably reconstructed between system
+                instances. Finally, even data encoded using standardized medical terminology, such
+                is laboratory data, that is electronically exchanged and computable between systems
+                does not safely guarantee the data will be considered to have the exact same meaning
+                between systems. Numerous examples of this phenomenon have been discussed in
+                literature. [1] To realize the potential of RWD which is suitable as RWE for
+                regulatory, research, public health and clinical care purposes, data
+                interoperability must be achieved. </para>
         </section>
     </section>
     <section>
@@ -126,19 +124,25 @@
             bring new innovations to patient populations. [2] The law intends to increase the FDA’s
             focus on evaluating RWD and RWE for regulatory decision making for new approvals,
             support post-approval study requirements, and evaluate additional indications for
-            approved treatments. [2] Unfortunately, the broad readiness of the US healthcare
+            approved treatments. [2] Unfortunately, the broad readiness of the U.S. healthcare
             ecosystem was not, and is not, in place to broadly harness and safely and effectively
-            use the data in the US healthcare domain as captured in the electronic health record
-            systems, public health agencies, administrative systems and potentially patient reported
-            information. Such a gap in surveillance, data capture, data exchange, data harmonization
-            and subsequent analytics place the US at risk to repeat the “data scramble” in the event
-            of another emerging disease, as experienced during COVID. Despite existing issues with
-            widescale use of RWD, there are multiple examples of where and how RWD is being used
-            effectively from which future direction can be informed. </para>
+            use the data in the U.S. healthcare domain as captured in the EHR systems, public health
+            agencies, administrative systems, and potentially patient reported information. Such a
+            gap in surveillance, data capture, data exchange, data harmonization and subsequent
+            analytics place the U.S. at risk to repeat the “data scramble” in the event of another
+            emerging disease, as experienced during COVID. Despite existing issues with widescale
+            use of RWD, there are multiple examples of where and how RWD is being used effectively
+            from which future direction can be informed. </para>
         <section>
             <title>Current RWD Uses</title>
-            <para>There are several national and international efforts to aggregate and expose EHR/RWD for use by researchers and public health scientists. Such efforts include PCORnet (Patient Centered Outcomes Research network); OHDSI (Observational Health Data Sciences and Informatics), N3C (National Covid Cohort Collaborative) and its potential spin offs. Common to each of these efforts is the extraction of EHR data from participating entities, transforming these data to a common data model, annotating/managing the data with standardized medical terminologies and aggregating entities’ datasets in consolidated or federated mechanisms for analyses.
-            </para>
+            <para>There are several national and international efforts to aggregate and expose
+                EHR/RWD for use by researchers and public health scientists. Such efforts include
+                PCORnet, OHDSI (Observational Health Data Sciences and Informatics), N3C (National
+                Covid Cohort Collaborative) and its potential spin offs. Common to each of these
+                efforts is the extraction of EHR data from participating entities, transforming
+                these data to a common data model, annotating/managing the data with standardized
+                medical terminologies and aggregating entities’ datasets in consolidated or
+                federated mechanisms for analyses. </para>
         </section>
         <section>
             <title>N3C</title>
@@ -151,9 +155,11 @@
                 pandemics. </para>
             <para>The National Center for Advancing Translational Sciences (NCATS) N3C Data Enclave
                 contains RWD as collected in contributing sites’ EHR systems on COVID-19 positive
-                patients and patients with symptoms consistent with COVID-19, SARS 1, MERS and H1N1.
-                De-identified data is contributed monthly and is augmented by public health
-                laboratory data and whole genome sequence data of paired patient/specimen isolates. </para>
+                patients and patients with symptoms consistent with COVID-19, Severe acute
+                respiratory syndrome coronavirus 1 (SARS 1), Middle East Respiratory Syndrome (MERS)
+                and H1N1 flu. De-identified data is contributed monthly and is augmented by public
+                health laboratory data and whole genome sequence data of paired patient/specimen
+                isolates. </para>
             <para>NCATS N3C Data Enclave data sets are well described and include data levels
                 ranging from Limited Data Sets, De-identified Data Sets, and Synthetic Data sets all
                 with in depth descriptions of the data and eligibility and access requirements.
@@ -194,44 +200,44 @@
     </section>
             <section>
                 <title>PCORI/PCORnet</title>
-                <para>Patient-Centered Outcomes Research Institute (PCORI) is an independent,
-                nonprofit, and leading funder of patient-centered comparative clinical effectiveness
-                research in the United States. The primary goal of PCORI is to increases useful
-                information, speed the uptake and use of information, and influence funded research
-                to be more patient centered. PCORI funded research includes comparative clinical
-                effectiveness research (CER) which helps patients and other stakeholders to compare
-                two or more medical treatments, and other research that focuses on patient centered
-                outcomes. PCORI funds researchers to share their data sets and documentation for
-                reanalysis and reuse. PCORI encourages use of data from the studies and provides
-                funds to allow other researchers to verify and build on those findings to generate
-                new evidence and make this information available to healthcare decision makers.
-                PCORI funded more than 2000 research studies and related projects, including project
-                that support the methods and capacity for conducting that research (Highlights of
-                PCORI-funded research results). PCORI approved $1 million to fund the development of
-                automated ways to identify people more efficiently and accurately identify people
-                with rare diseases via EHRs, enabling treatments to start sooner and helping
-                researchers offer individuals opportunities to participate in studies. [7]</para>
-                <para>In 2013, PCORI funded development of the Patient-Centered Clinical Research
-                Network (PCORnet), a national resource for health data and research expertise, with
-                the goal of providing patient centered outcomes research in a timely manner. [8]
-                PCORnet is a well established and fully integrated network with a research ecosystem
-                uniquely networked to offer RWE essential to support major public health issues
-                (Highlights of PCORI-funded research results). The Primary goal of PCORnet is to
-                expand the role of patients and care providers in the research process and leverage
-                EHR and registries to conduct research that is inexpensive, faster, and
-                patient-centered in its design. [9] </para>
-                <para>Data is accessible via the PCORnet distributed network drawn from millions of EHRs with 
-                    growing links to patient-reported and payer data to create a standardized data set that 
-                    facilitates large-scale research. These data are accessible via Clinical Research Networks (CRNs) 
-                    and facilitated by a Coordinating center. [10] PCORnet Clinical Research Networks are 
-                    integrated delivery systems with one or more hospitals, outpatient clinics (primary and 
-                    specialty care), and emergency departments. Across the nine Clinical Research Networks, there 
-                    are 251 institutions that are organized into 61 data contributors. A data contributor manages 
-                    the PCORnet data mart for one or more institutions. Overall, PCORnet Clinical Research 
-                    Networks currently include 337 hospitals, 169,695 physicians, 3,564 primary care practices, 338 
-                    emergency departments, and 1,024 community clinics serving medically underserved
-                    populations. These healthcare institutions and their clinicians serve as a diverse set of clinical 
-                    trial sites for pragmatic research conducted in everyday clinical care settings. [8]</para>
+                <para>PCORI is an independent, nonprofit, and leading funder of patient-centered
+                comparative clinical effectiveness research in the United States. The primary goal
+                of PCORI is to increases useful information, speed the uptake and use of
+                information, and influence funded research to be more patient centered. PCORI funded
+                research includes comparative clinical effectiveness research (CER) which helps
+                patients and other stakeholders to compare two or more medical treatments, and other
+                research that focuses on patient centered outcomes. PCORI funds researchers to share
+                their data sets and documentation for reanalysis and reuse. PCORI encourages use of
+                data from the studies and provides funds to allow other researchers to verify and
+                build on those findings to generate new evidence and make this information available
+                to healthcare decision makers. PCORI funded more than 2000 research studies and
+                related projects, including project that support the methods and capacity for
+                conducting that research (Highlights of PCORI-funded research results). PCORI
+                approved $1 million to fund the development of automated ways to identify people
+                more efficiently and accurately identify people with rare diseases via EHRs,
+                enabling treatments to start sooner and helping researchers offer individuals
+                opportunities to participate in studies. [7]</para>
+                <para>In 2013, PCORI funded development of the PCORnet, a national resource for
+                health data and research expertise, with the goal of providing patient centered
+                outcomes research in a timely manner. [8] PCORnet is a well established and fully
+                integrated network with a research ecosystem uniquely networked to offer RWE
+                essential to support major public health issues (Highlights of PCORI-funded research
+                results). The Primary goal of PCORnet is to expand the role of patients and care
+                providers in the research process and leverage EHR and registries to conduct
+                research that is inexpensive, faster, and patient-centered in its design. [9] </para>
+                <para>Data is accessible via the PCORnet distributed network drawn from millions of
+                EHRs with growing links to patient-reported and payer data to create a standardized
+                data set that facilitates large-scale research. These data are accessible via
+                Clinical Research Networks (CRNs) and facilitated by a Coordinating center. [10]
+                PCORnet CRNs are integrated delivery systems with one or more hospitals, outpatient
+                clinics (primary and specialty care), and emergency departments. Across the 9 CRNs,
+                there are 251 institutions that are organized into 61 data contributors. A data
+                contributor manages the PCORnet data mart for one or more institutions. Overall,
+                PCORnet Clinical Research Networks currently include 337 hospitals, 169,695
+                physicians, 3,564 primary care practices, 338 emergency departments, and 1,024
+                community clinics serving medically underserved populations. These healthcare
+                institutions and their clinicians serve as a diverse set of clinical trial sites for
+                pragmatic research conducted in everyday clinical care settings. [8]</para>
                 <para>In PCORnet, 66 million patients’ health records are available for
                 observational studies and provide vast scale to power research for conditions
                 affecting even small numbers of people. Data quality must pass rigorous standards
@@ -261,12 +267,13 @@
                 and researchers as well as larger organizations such as hospital systems and government 
                 agencies. The solutions and products that OHDSI develops are all open source. [12]</para>
             <para><emphasis role="bold">Successes</emphasis></para>
-            <para>OHDSI has made significant progress in the 8+ years since its founding, emerging from the 
-                legacy Observational Medical Outcomes Partnership (OMOP) program. Among its largest 
-                accomplishments, the collaborative has pieced together a federated database with patient 
-                records amounting to about 12 percent of the world’s population. From a publicity standpoint, 
-                OHDSI has been referenced by the European Medicines Agency and other policy makers as well 
-                as journals, including JAMA.</para>
+            <para>OHDSI has made significant progress in the 8+ years since its founding, emerging
+                from the legacy Observational Medical Outcomes Partnership (OMOP) program. Among its
+                largest accomplishments, the collaborative has pieced together a federated database
+                with patient records amounting to about 12 percent of the world’s population. From a
+                publicity standpoint, OHDSI has been referenced by the European Medicines Agency and
+                other policy makers as well as journals, including Journal of the American Medical
+                Association (JAMA).</para>
             <para>OHDSI organizes into working groups and currently operates 27 of them, ranging in topic from 
                 focus regions (APAC, Latin America) to specific care areas (oncology, psychiatry). In addition, they have working groups that focus on FHIR, the OMOP Common Data Model, and Natural 
                 Language Processing.</para>
@@ -329,20 +336,22 @@
             regarding genetic disease and treatment associations, are to develop analytical tools, identify 
             and communicate genomic research best practices, and return genomic results to patients and 
             practitioners to improve clinical care. [14]</para>
-        <para>Since its inception, eMERGE has provided valuable insights into both genomics research and 
-            methodologies to effectively analyze data across various institutions. Early into eMERGE’s work, 
-            investigators found projects had better outcomes when performed across the entire network 
-            versus within individual sites. Phenotype algorithms were typically developed within one site 
-            and then deployed at secondary sites where observed issues could guide iterative revisions to 
-            make the algorithm more robust and generalizable. Moreover, incorporating multiple networks 
-            allowed for larger population sizes and added statistical power. For example, eMERGE’s 
-            expansion to include pediatric sites in addition to the existing adult data was challenging but 
-            enabled researchers to examine heritable diseases that presented in childhood and continued 
-            into adulthood. This type of analysis would have been unfeasible for one site alone. [16] Data 
-            quality is of paramount importance when collaborating across multiple sites. eMERGE has 
-            demonstrated effective quality assurance procedures by ensuring common definitions and 
-            coding exists for phenotype variables being deposited into dpGaP and facilitating Quality 
-            Assurance/Quality Control (QA/QC) of data as it comes in. [17]</para>
+        <para>Since its inception, eMERGE has provided valuable insights into both genomics research
+                and methodologies to effectively analyze data across various institutions. Early
+                into eMERGE’s work, investigators found projects had better outcomes when performed
+                across the entire network versus within individual sites. Phenotype algorithms were
+                typically developed within one site and then deployed at secondary sites where
+                observed issues could guide iterative revisions to make the algorithm more robust
+                and generalizable. Moreover, incorporating multiple networks allowed for larger
+                population sizes and added statistical power. For example, eMERGE’s expansion to
+                include pediatric sites in addition to the existing adult data was challenging but
+                enabled researchers to examine heritable diseases that presented in childhood and
+                continued into adulthood. This type of analysis would have been unfeasible for one
+                site alone. [16] Data quality is of paramount importance when collaborating across
+                multiple sites. eMERGE has demonstrated effective quality assurance procedures by
+                ensuring common definitions and coding exists for phenotype variables being
+                deposited into the database of Genotypes and Phenotypes (dpGaP) and facilitating
+                Quality Assurance/Quality Control (QA/QC) of data as it comes in. [17]</para>
         <para>Similarly, the size, scope, and diversity of eMERGE’s data allows the network to develop and 
             execute additional analyses as data evolves and medical interpretations change. Cultivating a 
             diverse biobank and a rich EHR linkage allows for cost-effective longitudinal genomic studies. 
@@ -370,7 +379,7 @@
                 limitations within the transferability of information persist. There is no guarantee
                 of data completeness within EHRs, especially when care is received outside the
                 primary provider’s system. Additionally, while nomenclatures and ontologies such as
-                SNOMED-CT and LOINC exist to uniformly represent medical concepts, there are no
+                SNOMED-CT® and LOINC® exist to uniformly represent medical concepts, there are no
                 established processes to facilitate the secure, generalizable, and interoperable
                 data exchange required to provide continued care between different health care
                 systems. [16] This issue is exacerbated by the ever-changing knowledge and medical
@@ -443,27 +452,28 @@
     </section>
     <section>
         <title>Learnings</title>
-        <para>Electronic health records have been in use in the US since the 1970’s, however Meaningful Use 
-            (2009) ushered in the rush to implement the EHR nationwide. [24] The EHR has provided a large 
-            pool of patient records and healthcare data from across the globe for secondary research. As of 
-            2021, 85% of physicians in the US electronically recorded social determinants of health (SDOH)
-            data and 97% electronically recorded broad determinants of health (BDOH) data. Rates of 
-            electronic recording of SDOH and BDOH data were slightly higher among primary care 
-            physicians, with 89% of primary care physicians electronically recording SDOH data and 98% 
-            electronically recording BDOH data in 2021.</para>
+        <para>Electronic health records have been in use in the US since the 1970’s, however
+            Meaningful Use (MU)(2009) ushered in the rush to implement the EHR nationwide. [24] The
+            EHR has provided a large pool of patient records and healthcare data from across the
+            globe for secondary research. As of 2021, 85% of physicians in the US electronically
+            recorded social determinants of health (SDOH) data and 97% electronically recorded broad
+            determinants of health (BDOH) data. Rates of electronic recording of SDOH and BDOH data
+            were slightly higher among primary care physicians, with 89% of primary care physicians
+            electronically recording SDOH data and 98% electronically recording BDOH data in
+            2021.</para>
        <para>In the past, research relied upon billing data from the UB-04 billing form as the
             source of structured data for research purposes. The UB-04 medical billing form is the
             standard claim form that healthcare organization use for the billing of inpatient or
-            outpatient medical and mental health claims. [25-26] Although developed by the Centers
-            for Medicare and Medicaid Services (CMS), the form has become the standard form used by
-            all insurance carriers. This form captures all data in a structured format and captures
-            diagnoses, treatments and procedures, type of admission, medications, and demographic
-            information. While the UB-04 and similar administrative data have been considered rich
-            sources of data for research and can be readily de-identified, shared, and stored, much
-            valuable information is lost. Coding systems used for billing purposes dilute data by
-            use of non-specific coding systems which bundle similar conditions or procedures under
-            the same code. Diagnosis data is captured using ICD10CM codes which will bundle similar
-            diagnoses under the same code.</para>
+            outpatient medical and mental health claims. [25-26] Although developed by CMS, the form
+            has become the standard form used by all insurance carriers. This form captures all data
+            in a structured format and captures diagnoses, treatments and procedures, type of
+            admission, medications, and demographic information. While the UB-04 and similar
+            administrative data have been considered rich sources of data for research and can be
+            readily de-identified, shared, and stored, much valuable information is lost. Coding
+            systems used for billing purposes dilute data by use of non-specific coding systems
+            which bundle similar conditions or procedures under the same code. Diagnosis data is
+            captured using ICD10CM codes which will bundle similar diagnoses under the same
+            code.</para>
         <para>Limitations to using RWD cannot be overlooked, ignored, or dismissed. Aggregation of data 
             from multiple sources may impact the availability of data in real-time. Time and effort to clean 
             or harmonize data from multiple or disparate sources increases time between availability of 
@@ -477,17 +487,17 @@
             portals, medical devices, or other sources.</para>
         <para>Ideally RWD for RWE is extracted directly from clinical documentation. EHR
             vendor-agnostic data and interoperability standards such as Health Information Exchanges
-            (HIEs), Meaningful Use (MU), HL7, and FHIR were created to encourage or mandate data
-            interoperability across healthcare organizations. Yet healthcare organizations continue
-            to consider their healthcare data as a proprietary asset. Adding complexity to RWD is
-            inconsistent and/or proprietary implementation health information technologies to meet
-            the needs and requests of the healthcare organization. Data analysts or data wranglers
-            are charged with making data understandable. Adding complexity to this challenge is
-            inconsistent and/or proprietary implementation of each EHR implementation to meet the
-            needs and requests of the healthcare organization. This inconsistent and/or proprietary
-            database design and EHR implementation impacts query methodology for secondary use of
-            clinical data across healthcare systems. Each EHR vendor database structure is different
-            and proprietary. EHR vendors did not provide standardized terminology implementation
+            (HIEs), MU, HL7, and FHIR were created to encourage or mandate data interoperability
+            across healthcare organizations. Yet healthcare organizations continue to consider their
+            healthcare data as a proprietary asset. Adding complexity to RWD is inconsistent and/or
+            proprietary implementation health information technologies to meet the needs and
+            requests of the healthcare organization. Data analysts or data wranglers are charged
+            with making data understandable. Adding complexity to this challenge is inconsistent
+            and/or proprietary implementation of each EHR implementation to meet the needs and
+            requests of the healthcare organization. This inconsistent and/or proprietary database
+            design and EHR implementation impacts query methodology for secondary use of clinical
+            data across healthcare systems. Each EHR vendor database structure is different and
+            proprietary. EHR vendors did not provide standardized terminology implementation
             support, resulting in overreliance on third party terminology vendors to provide the
             linkages between “provider-friendly” terminology and standardized clinical
             terminologies. These ‘provider friendly terms’ are often mapped to a broader than or
@@ -498,31 +508,33 @@
             their documentation is more likely to be captured in a structured manner in the form of 
             structured (and often researched and validated) assessments and flowsheets. Ideally RWD for 
             RWE is extracted directly from clinical documentation.</para>
-        <para>To address this issue, research databases were created to allow researchers access clinical data 
-            without actual access to the EHR. EHR database managers utilize “extract, transform, load” 
-            (ETL) to move data from EHR database(s) or other sources to a unified repository—typically a 
-            data warehouse. However, the ETL process relies on structured and standardized data. Much of 
-            the rich, useful data within a patient’s electronic medical record (EMR) is found beyond the 
-            reach of ETL. Narrative text with progress notes, diagnostic imaging and surgical reports, 
-            scanned pdf documents and free text fields contain a rich source of data to support RWE.</para>
-        <para>Manual data curation and natural language processing (NLP) are possible solutions to extract 
-            data from unstructured text. Manual data curation is a labor-intensive, time-consuming process 
-            involving human review of clinical documentation to read, interpret and extract information 
-            into a structured database. Well-defined heuristics and quality assurance processes are 
-            required to ensure accurate and consistent data extraction. Data available from data curation 
-            may not meet time-sensitive requirements due to the time and effort required for data 
-            extraction and any associated QA processes. NLP is a form of AI that can be used for computers 
-            to understand human generated language and process the data to understand the full meaning 
-            of the original intent. NLP combines algorithms with machine learning and models to correctly 
-            16
-            extract and label data and assign meaning. Today, the most common models used to support 
-            NLP include convolutional neural networks (CNNs) and recurrent neural networks (RNNs). Yet, 
-            even the most well-defined data curation heuristics and processes may find clinician prose a 
-            challenge. Clinical findings with a diagnostic imaging or pathology report may not be expressed 
-            using explicit language. The actual clinical finding must be inferred from the clinical prose used 
-            by the provider in their report. Data curators or NLP may be challenged to interpret the actual 
-            clinical finding being described. Similarly, the presence or absence of a clinical finding may be 
-            hidden in the clinical prose as well.</para>
+        <para>To address this issue, research databases were created to allow researchers access
+            clinical data without actual access to the EHR. EHR database managers utilize “extract,
+            transform, load” (ETL) to move data from EHR database(s) or other sources to a unified
+            repository—typically a data warehouse. However, the ETL process relies on structured and
+            standardized data. Much of the rich, useful data within a patient’s EMR is found beyond
+            the reach of ETL. Narrative text with progress notes, diagnostic imaging and surgical
+            reports, scanned pdf documents and free text fields contain a rich source of data to
+            support RWE.</para>
+        <para>Manual data curation and NLP are possible solutions to extract data from unstructured
+            text. Manual data curation is a labor-intensive, time-consuming process involving human
+            review of clinical documentation to read, interpret and extract information into a
+            structured database. Well-defined heuristics and quality assurance processes are
+            required to ensure accurate and consistent data extraction. Data available from data
+            curation may not meet time-sensitive requirements due to the time and effort required
+            for data extraction and any associated QA processes. NLP is a form of Artificial
+            Intelligence (AI) that can be used for computers to understand human generated language
+            and process the data to understand the full meaning of the original intent. NLP combines
+            algorithms with machine learning and models to correctly 16 extract and label data and
+            assign meaning. Today, the most common models used to support NLP include convolutional
+            neural networks (CNNs) and recurrent neural networks (RNNs). Yet, even the most
+            well-defined data curation heuristics and processes may find clinician prose a
+            challenge. Clinical findings with a diagnostic imaging or pathology report may not be
+            expressed using explicit language. The actual clinical finding must be inferred from the
+            clinical prose used by the provider in their report. Data curators or NLP may be
+            challenged to interpret the actual clinical finding being described. Similarly, the
+            presence or absence of a clinical finding may be hidden in the clinical prose as
+            well.</para>
     </section>
     <section>
         <title>References</title>
