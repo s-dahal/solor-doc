@@ -11,7 +11,7 @@
             health data, compelling the need for a common way to format the data standards. This is
             particularly important for data encoded in electronic health records (EHR) and
             laboratory information systems (LIS). Standards, such as Systematized Nomenclature of
-            Medicine – Clinical Terms (SNOMED CT), Logical Observations Identifiers Names and Codes
+            Medicine – Clinical Terms (SNOMED CT®), Logical Observations Identifiers Names and Codes
             (LOINC), and RxNorm (National Library of Medicine’s codification of the U.S.
             pharmacopeia), provide a common language for certain types of health information to be
             represented and understood. However, multiple industry knowledge standards exist in a
@@ -88,21 +88,21 @@
                             across terminology standards. </para>
                     </listitem>
                 </orderedlist>
-                <para><emphasis>Tinkar</emphasis>
+                <para><emphasis>TINKAR</emphasis>
                 </para>
-                <para>Terminology Knowledge Architecture (Tinkar) is a self-describing knowledge
+                <para>TermINology Knowledge Architecture (TINKAR) is a self-describing knowledge
                     architecture intended to represent other terminology standards in a human
-                    readable and machine processable format. Tinkar supports improvements to data
+                    readable and machine processable format. TINKAR supports improvements to data
                     management by integrating terminology standards into a common model that
                     efficiently captures granular details and data sources of each standard for
                     rapid and scalable data querying and analysis while maintaining meaning.
-                    Versioning is another important component of maintaining data integrity. Tinkar
+                    Versioning is another important component of maintaining data integrity. TINKAR
                     will maintain a detailed version history to clearly convey how concepts have
                     changed over time and will allow authors to preview or test edits to concepts
                     before pushing to a live environment to maintain appropriate concept
                     representations and relationships. [2] As new healthcare systems or terminology
                     standards emerge, the data they represent will be “Tinkarized” and integrated
-                    into Tinkar and the IKM architecture. </para>
+                    into TINKAR and the IKM architecture. </para>
                 <para><emphasis>Protocol Buffers</emphasis>
                 </para>
                 <para>Protocol buffers are an agnostic and unopinionated way to represent structured
@@ -110,7 +110,7 @@
                     This system and standard-neutral representation of data allows a wider range of
                     systems and coding languages to read the same data than traditional methods and
                     supports rapid data transmission, long-term storage, forward and backward
-                    compatibility, and improved data querying. Protocol buffers will allow Tinkar to
+                    compatibility, and improved data querying. Protocol buffers will allow TINKAR to
                     import an encoded concept from one system’s terminology standard, store and
                     manage that data, and then transmit that data with maintained data integrity to
                     another system to display the concept in the disparate, local terminology
@@ -122,7 +122,7 @@
                     identical seed values or concepts will be labeled with the same UUID, supporting
                     identification of semantically equivalent concepts within and between
                     terminology standards and optimized access to data. Additionally, by labeling
-                    each concept, semantic, and pattern within Tinkar with a UUID, our team is able
+                    each concept, semantic, and pattern within TINKAR with a UUID, our team is able
                     to integrate a variety of terminology standards while avoiding duplicative or
                     redundant concepts, preventing accidental and inappropriate labeling of a
                     concept or component, and harmonizing internal representation of knowledge
@@ -178,7 +178,7 @@
                 </orderedlist>
             </para>
             <para>STAMP is not only used to version Tinkar data, but it is also a requirement for
-                all Tinkar assets, existing and new. Ensuring all data follows this syntax supports
+                all TINKAR assets, existing and new. Ensuring all data follows this syntax supports
                 optimal change management and versioning practices, like maintaining detailed
                 versioning history by marking concepts as active or inactive rather than deleting
                 prior versions, identifying authors of each version to know who and when concepts
@@ -198,15 +198,15 @@
             <title>Dependency Management</title>
             <para>Harmonization of multiple terminology standards and healthcare systems using IKM
                 will require an extensive approach to dependency management, the process and
-                approach to managing dependencies between people, process, and systems. With Tinkar,
+                approach to managing dependencies between people, process, and systems. With TINKAR,
                 outputs to one system can often originate from a wide range of terminology standards
                 or systems, which leads to multiple dependencies. It is not only important for our
                 team to identify dependencies, but we must also categorize them to understand the
                 direction, frequency, and type of dependency and to optimally prioritize and
                 mitigate potential issues caused by these relationships. For example, LIDR has a
-                dependency on both SNOMED CT and LOINC and when SNOMED CT or LOINC are updated,
+                dependency on both SNOMED CT® and LOINC and when SNOMED CT® or LOINC are updated,
                 validation must be performed in a comprehensive manner to determine if LIDR is
-                correctly using the current interpretation of said dependent standards (SNOMED CT
+                correctly using the current interpretation of said dependent standards (SNOMED CT®
                 and LOINC). As we continue to work towards IKM, it is critical that we select and
                 implement technologies that will support the management of these dependencies to
                 reduce patient safety issues and unnecessary complications. [7] </para>
@@ -221,8 +221,8 @@
             <para><emphasis>Nexus</emphasis>
             </para>
             <para>Nexus is a repository used to manage components, binaries, and build artifacts
-                across software. In Komet this allows the developer to organize and control the
-                versions of data that are released, stored, and made available to users (of Tinkar
+                across software. In Komet, this allows the developer to organize and control the
+                versions of data that are released, stored, and made available to users (of TINKAR
                 data). Nexus provides enterprise control through centralization, storage,
                 development support, and scale. [9] </para>
             <para><emphasis>Origin data</emphasis>
@@ -230,26 +230,26 @@
             <para>An optimized representation of a source knowledge standard is generated to
                 simplify the process of putting the standard’s data into a common model. This data
                 will leverage Maven and Nexus to manage dependency complexity of systems using
-                Tinkar data, since individual knowledge standards have both physical and logical
+                TINKAR data, since individual knowledge standards have both physical and logical
                 model for how they are constructed, packaged, and distributed. An important aspect
                 in managing dependency of harmonized standards is organizing the source data (raw)
                 into structures. Origin data will repackage the source terminology data into a
                 consistent and readable format, which alleviates the need to write individual ways
                 to parse and read through the different variations of file structures. Origin data
                 also allows the addition of data that is not found in the source terminology data
-                (e.g., provenance, dependencies (LIDR depends on LOINC and SNOMED). </para>
+                (e.g., provenance, dependencies (LIDR depends on LOINC and SNOMED®). </para>
             <para><emphasis>Starter data</emphasis>
             </para>
-            <para>Tinkar Starter Data acts as the foundational dataset for SHIELD's Komet
-                application. It conforms to the Tinkar Data Model and is the minimum viable dataset
-                required for Komet usability. The Tinkar Starter Data consists of a Tinkar Concept
+            <para>TINKAR Starter Data acts as the foundational dataset for SHIELD's Komet
+                application. It conforms to the TINKAR Data Model and is the minimum viable dataset
+                required for Komet usability. The TTINKAR Starter Data consists of a TINKAR Concept
                 Model Hierarchy which defines origin and destination (a.k.a. parent/child) concept
-                relationships, as well as Tinkar Patterns which define the structure and usage for
-                how Tinkar Concepts may be represented. The Tinkar data model is extendable and
+                relationships, as well as TINKAR Patterns which define the structure and usage for
+                how TINKAR Concepts may be represented. The TINKAR data model is extendable and
                 allows for the importation and harmonization of other terminology standards such as
-                SNOMED CT and LOINC and enables a lossless transform of knowledge standards to the
-                Tinkar format. Starter data will leverage Maven and Nexus to manage dependency
-                complexity of systems using Tinkar data. </para>
+                SNOMED CT® and LOINC and enables a lossless transform of knowledge standards to the
+                TINKAR format. Starter data will leverage Maven and Nexus to manage dependency
+                complexity of systems using TINKAR data. </para>
         </section>
         <section><title>User Interface and Experience </title>
                         <para>Harmonizing self-sustaining and contained knowledge standards requires
@@ -264,7 +264,7 @@
                 of backgrounds including laboratory technicians, clinicians, researchers, regulatory
                 personnels, and others. Good UI/UX is built off human centric design principles and
                 provides components that give the user the ability to create, edit, and retire
-                knowledge. Tinkar core is the harmonization which lives in the backend, but UI/UX
+                knowledge. TINKAR core is the harmonization which lives in the backend, but UI/UX
                 provides an interface that allows users to interact with the logic and harmonize
                 between different coding standards. The UI/UX is tailored to the different users and
                 their roles and their needs. UI/UX can also incorporate features such as multiple
@@ -290,8 +290,8 @@
                 harmonization will be facilitated within Komet. </para>
             <para><emphasis>Coordinates</emphasis>
             </para>
-            <para>Tinkar is the data model for knowledge harmonization and integrated knowledge
-                management. The ability to query these Tinkar representations, such as comparing
+            <para>TINKAR is the data model for knowledge harmonization and integrated knowledge
+                management. The ability to query these TINKAR representations, such as comparing
                 active and inactive components (representations) across time, is achieved through
                 coordinates. [2] Coordinates include concepts such as STAMP, Language, Dialect,
                 clinical domains, and more. STAMP is the most basic of the coordinates, and through
@@ -302,11 +302,11 @@
             <para>• Logic Coordinates – Identify results from Description Logic Classifiers and
                 different output versions over time. </para>
             <para>• Navigation Coordinates – Allow users to view and search certain concepts, with
-                examples including stated v. inferred relationships for SNOMED CT, and concepts
+                examples including stated v. inferred relationships for SNOMED CT®, and concepts
                 included/excluded for certain domains. </para>
             <para>The ability to search, display, and navigate concepts and semantics requires the
                 ability to calculate combinations of content based on different coordinates. The
-                current Tinkar reference model is expressive enough to represent any terminology and
+                current TINKAR reference model is expressive enough to represent any terminology and
                 future iterations will require harmonized implementation guides for each
                 terminology. [2] </para>
         </section>
@@ -314,13 +314,13 @@
             <title>Quality Assurance</title>
             <para>Quality assurance (QA) is important when harmonizing knowledge standards and is
                 critical when assessing if a software meets the users’ requirements. Constraints can
-                be used to perform general QA on content that is represented in a Tinkar
+                be used to perform general QA on content that is represented in a TINKAR
                 implementation and is part of business requirements. Constraints in Tinkar are used
                 to represent standard terminology artifacts and are used to ensure terminologies
                 represented in an implementation are consistent when queried and displayed, and
                 ultimately ensure the integration is high quality and reliable for patient care.
                 Furthermore, to ensure the quality of items that are transformed and integrated
-                together a type of classifier can be created to check for issues or errors in Tinkar
+                together a type of classifier can be created to check for issues or errors in TINKAR
                 data. </para>
             <para><emphasis>ELK Classifier </emphasis></para>
             <para>Komet’s ability to use a description logic classifier to detect equivalences and
@@ -328,7 +328,7 @@
                 particular, the ELK Classifier, a description-logic classifier, is an ontology
                 reasoner that supports OWL 2EL profile and provides a quick reasoning engine for OWL
                 EL because current features and reasoning tasks are limited (although this is fine
-                for SNOMED CT). This classifier reasons over Tinkar data and distinguishes if the
+                for SNOMED CT®). This classifier reasons over Tinkar data and distinguishes if the
                 asserted facts on concepts (via semantics) are true. [13] </para>
         </section>
     </section>
@@ -343,7 +343,7 @@
             This paper outlines various technologies and tools that are needed to support critical
             aspects of IKM. </para>
         <para>As our team continues to work towards the harmonization of terminology standards
-            through Tinkar and IKM, it is critical that we continue to refine and incorporate the
+            through TINKAR and IKM, it is critical that we continue to refine and incorporate the
             various components of data, change, and dependency management and quality assurance
             mentioned above. The components outlined in this paper are not exhaustive and will
             evolve as our team continues with our work and as new information emerges. </para>
