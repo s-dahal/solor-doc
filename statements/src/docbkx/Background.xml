@@ -6,19 +6,20 @@
      <title>IKM Book Background</title>
     <section>
         <title>Federal Drug Administration (FDA) Overview</title>
-        <para>The US Food and Drug Administration (FDA) is responsible for protecting public health
-            by ensuring the safety of consumer products and is responsible for advancing innovative
-            medical products and technology that further promote public health. Medical devices,
-            including instruments and products used for treating or diagnosing diseases such as
-            diabetes, must be approved for use by the public. This process was brought to the public
-            eye during COVID-19 with the use of Emergency Use Authorizations (EUA) for COVID-19 test
-            kits. FDA’s Center for Devices and Radiological Health (CDRH) maintains a database of
-            Premarket Notification [510(k)] approved products. 510(k) is a premarket submission that
-            manufacturers make to the FDA to prove their device is safe and equivalent to an already
-            approved product that is legally marketed. Beyond 510(k) approvals is the Premarket
-            Approval (PMA). This application seeks FDA approval based on rigorous scientific
-            evidence that the device is safe and effective. Through these and other processes FDA
-            ensures the public has access to cutting edge and safe tools to manage health. </para>
+        <para>The U.S. Food and Drug Administration (FDA) is responsible for protecting public
+            health by ensuring the safety of consumer products and is responsible for advancing
+            innovative medical products and technology that further promote public health. Medical
+            devices, including instruments and products used for treating or diagnosing diseases
+            such as diabetes, must be approved for use by the public. This process was brought to
+            the public eye during COVID-19 with the use of Emergency Use Authorizations (EUA) for
+            COVID-19 test kits. FDA’s Center for Devices and Radiological Health (CDRH) maintains a
+            database of Premarket Notification [510(k)] approved products. 510(k) is a premarket
+            submission that manufacturers make to the FDA to prove their device is safe and
+            equivalent to an already approved product that is legally marketed. Beyond 510(k)
+            approvals is the Premarket Approval (PMA). This application seeks FDA approval based on
+            rigorous scientific evidence that the device is safe and effective. Through these and
+            other processes FDA ensures the public has access to cutting edge and safe tools to
+            manage health. </para>
         <para>FDA CDRH is the primary funder of Systemic Harmonization and Interoperability
             Enhancement for Laboratory Data (SHIELD). </para>
     </section>
@@ -34,23 +35,23 @@
             <listitem>
                 <para><emphasis role="bold">Ecosystem Engagement</emphasis> - Collaborating and
                     sharing perspective across industry, agency, and discipline, as well as
-                    educating stakeholders about laboratory data interoperability</para>
+                    educating stakeholders about laboratory data interoperability.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Enhanced Analytic Data Storage</emphasis> - Providing
                     the community of secondary data users with high quality Real-World Data (RWD) in
-                    a central location</para>
+                    a central location.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Systems Thinking</emphasis> - Re-engineering the
                     laboratory data transfer process in a manner that prioritizes safety, integrity,
-                    and graceful evolution over time above all else</para>
+                    and graceful evolution over time above all else.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Knowledge Management</emphasis> - Promoting an
                     integrated approach to identifying, capturing, evaluating, retrieving, and
                     sharing laboratory data and ensuring that data is understandable, reproducible,
-                    and useful</para>
+                    and useful.</para>
             </listitem>
         </itemizedlist>
     </section>
@@ -141,16 +142,16 @@
                 <listitem>
                     <para>Understandable: The data model for normalizing disparate health data can
                         be processed by health IT systems and understood by most healthcare
-                        providers without reference to private or inaccessible information</para>
+                        providers without reference to private or inaccessible information.</para>
                 </listitem>
                 <listitem>
                     <para>Reproducible: Multiple users or systems apply the model and normal form to
-                        the same situations and source data with an equivalent result</para>
+                        the same situations and source data with an equivalent result.</para>
                 </listitem>
                 <listitem>
                     <para>Useful: The model is fit-for-purpose—it has practical value for data
                         analysis, in support of clinical decision support, research, and population
-                        health that requires information aggregated across health IT systems</para>
+                        health that requires information aggregated across health IT systems.</para>
                 </listitem>
             </itemizedlist>
             <para>Normalization of disparate health data and knowledge is defined as "the ability to
@@ -262,7 +263,7 @@
                             “Feels Feverish” in the Temperature Symptoms SNOMED CT® hierarchy versus
                             “Feels Hot/Feverish” in the Observation and Sensation SNOMED CT®
                             hierarchy. Both concepts are Findings in SNOMED CT® but there is no
-                            unifying way to identify equivalence) </para>
+                            unifying way to identify equivalence).</para>
                     </listitem>
                     <listitem>
                         <para>Ability to represent local concepts using codes and terms that are
@@ -329,9 +330,9 @@
                         research</para>
                 </listitem>
                 <listitem>
-                    <para>Determine the usefulness of clinical interventions to improve patient
-                        care, based on relevant laboratory knowledge and reporting data, such as
-                        public health reporting and clinical surveillance</para>
+                    <para>Determine the usefulness of clinical interventions to improve patient care
+                        based on relevant laboratory knowledge and reporting data, such as public
+                        health reporting and clinical surveillance</para>
                 </listitem>
                 <listitem>
                     <para>Harmonize meaningful laboratory terminology standards, such as SNOMED CT®
@@ -341,7 +342,7 @@
                     <para>Enhance the reproducibility of data exchange structures used to express
                         laboratory procedures and outcomes, such as Clinical Data Interchange
                         Standards Consortium (CDISC), FHIR, and Integrating the Healthcare
-                        Enterprise (IHE) Laboratory Analytical Workflow (LAW) </para>
+                        Enterprise (IHE) Laboratory Analytical Workflow (LAW)</para>
                 </listitem>
                 <listitem>
                     <para>Promote the understandability of the laboratory test knowledge as
@@ -356,7 +357,7 @@
                         disparate health information systems will help reduce variation for large
                         national analytic enclaves, such as the National COVID Cohort Collaborative
                         (N3C) Data Enclave which aggregates and analyzes data from numerous,
-                        disparate electronic health record systems</para>
+                        disparate electronic health record systems.</para>
                 </listitem>
             </orderedlist>
         </section>
@@ -372,12 +373,12 @@
                 <para><emphasis role="bold">Structural Interoperability</emphasis> – While structure
                     focuses on maintaining how systems format data, it cannot ensure that the
                     receiving system will understand the structured data with the original
-                    meaning</para>
+                    meaning.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Meaning Interoperability</emphasis> – Meaning
                     interoperability works to ensure that the receiving system interprets data in an
-                    identical way as the original system</para>
+                    identical way as the original system.</para>
             </listitem>
         </itemizedlist>
         <para>Working to ensure that transmitted data maintains both structure and meaning is a
@@ -497,7 +498,7 @@
                             <para>The U.S. Meaningful Use Incentive Program now called Promoting
                                 Interoperability requires LOINC® in messages reporting laboratory
                                 test results, exchanging medical summaries, and sending data to
-                                cancer registries and public health agencies</para>
+                                cancer registries and public health agencies.</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -507,7 +508,7 @@
                             <para>The U.S. FDA requires LOINC® for lab test data in regulated
                                 studies and have articulated a broad vision of using real-world
                                 evidence in post market surveillance that depends on standardized
-                                data</para>
+                                data.</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -519,7 +520,7 @@
                                 SARS-CoV-2 reporting and harmonizes how IVD test information is
                                 represented using LOINC®. The LIVD file format is currently led by
                                 IVD Industry Connectivity Consortium (IICC), and the JavaScript
-                                Object Notation (JSON) representation is a project at HL7</para>
+                                Object Notation (JSON) representation is a project at HL7.</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -529,7 +530,7 @@
                             <para>Federal, State, and Local Public Health Reporting Requirements use
                                 messaging standards such as Health Level Seven (HL7). Inside these
                                 messages, laboratories and clinical systems use LOINC® codes to
-                                identify which test is being reported</para>
+                                identify which test is being reported.</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -544,7 +545,7 @@
                                     >The Centers for Medicaid and Medicare
                                     Services</emphasis><emphasis role="italic"> (CMS)</emphasis>
                                 adopted LOINC® for the patient assessment instruments required in
-                                post-acute care settings </para>
+                                post-acute care settings. </para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -556,7 +557,7 @@
                                 Observational Health Data Sciences and Informatics (OHDSI), the
                                 Observational Health Data Sciences and Informatics research group,
                                 and the FDA's Mini-Sentinel, all use LOINC® in their common data
-                                models</para>
+                                models.</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -569,23 +570,23 @@
                                 National Council for prescription Drug Programs (NCPDP), a standards
                                 development organization, requires RxNorm as its standardized
                                 medical nomenclature for its SCRIPT standard for
-                                e-prescribing</para>
+                                e-prescribing.</para>
                         </listitem>
                         <listitem>
                             <para><emphasis role="bold">Information Exchange</emphasis> - U.S.
                                 Department of Defense (DOD) and Department of Veterans Affairs (VA)
                                 rely on RxNorm to mediate drug information across their respective
-                                EHRs</para>
+                                EHRs.</para>
                         </listitem>
                         <listitem>
                             <para><emphasis role="bold">Formulary development</emphasis> - CMS uses
                                 RxNorm in their Formulary Reference File – part of the medical drug
-                                benefits guidelines</para>
+                                benefits guidelines.</para>
                         </listitem>
                         <listitem>
                             <para><emphasis role="bold">Reference Value Sets</emphasis> - Electronic
                                 clinical quality measure drug value sets are defined in reference to
-                                RxNorm for the Meaningful use incentive program</para>
+                                RxNorm for the Meaningful use incentive program.</para>
                         </listitem>
                         <listitem>
                             <para><emphasis role="bold">Analytics</emphasis> - RxNorm is
@@ -593,7 +594,7 @@
                                 warehouses. As an example, Observational health Data Sciences and
                                 Informatics (OHDSI) research group uses RxNorm for representing
                                 drugs as part of its Observational Medical Outcomes Partnership
-                                (OMOP) common data model (CDM)</para>
+                                (OMOP) common data model (CDM).</para>
                         </listitem>
                     </itemizedlist></para>
                 <para>PCORnet also uses RxNorm in its common data model.</para>
@@ -605,7 +606,7 @@
                     scholarly and practical efforts to champion and facilitate laboratory data
                     exchange.</para>
                 <para>Examples of Scholarly and Practical Efforts to Assess SNOMED CT® from SNOMED
-                    CT® Interoperability Projects<itemizedlist>
+                    CT® Interoperability Projects:<itemizedlist>
                         <listitem>
                             <para>There are licensing aspects to SNOMED CT® that complicates its use
                                 as a common format for LOINC®. This issue will be addressed by
@@ -617,7 +618,7 @@
                         </listitem>
                     </itemizedlist></para>
                 <para>Examples of Scholarly and Practical Efforts to Assess LOINC® from LOINC®
-                    Interoperability Projects<itemizedlist>
+                    Interoperability Projects:<itemizedlist>
                         <listitem>
                             <para>A study compared the use of LOINC® terms used in five medical
                                 centers and their alignment with vendor recommended LOINC® terms as
@@ -652,7 +653,7 @@
                         </listitem>
                     </itemizedlist></para>
                 <para>Examples of Scholarly and Practical Efforts to Assess RxNorm from RxNorm
-                    Interoperability Projects<itemizedlist>
+                    Interoperability Projects:<itemizedlist>
                         <listitem>
                             <para>RxNorm lack of Description Logics formalism use limits its ability
                                 to use logic reasoners for inferencing. This limits RxNorms ability
@@ -797,7 +798,7 @@
                                 <para>The organization works to ensure stakeholders are aware of
                                     errors and understands how errors occur, the processes that
                                     allow errors to occur, and how to reduce the causes of
-                                    errors</para>
+                                    errors.</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -807,7 +808,7 @@
                             <listitem>
                                 <para>Stakeholders do not oversimplify the system and aim to fully
                                     understand all the processes and control structures that may
-                                    impact that system</para>
+                                    impact that system.</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -818,7 +819,7 @@
                                 <para>Organizations and stakeholders identify, and continually
                                     measure, key indicators of quality and safety that could alert
                                     to changes, even small ones, or indications of a shift towards
-                                    unsafe conditions or hazardous environments</para>
+                                    unsafe conditions or hazardous environments.</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -827,7 +828,7 @@
                         <itemizedlist>
                             <listitem>
                                 <para>Organizations utilize the experience and knowledge of
-                                    pertinent SMEs at every opportunity</para>
+                                    pertinent SMEs at every opportunity.</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -836,7 +837,8 @@
                         <itemizedlist>
                             <listitem>
                                 <para>Organizations learn from errors through feedback loops and
-                                    continuous monitoring, as they aim to continually improve</para>
+                                    continuous monitoring, as they aim to continually
+                                    improve.</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -951,36 +953,36 @@
                 <orderedlist>
                     <listitem>
                         <para>Electronic Medical Record (EMR) clinical documentation guidelines are
-                            poorly standardized and communicated to end-users</para>
+                            poorly standardized and communicated to end-users.</para>
                     </listitem>
                     <listitem>
                         <para>The lack of internal data audits across the health care industry
                             results in unknown patient record quality, accuracy, and
-                            completeness</para>
+                            completeness.</para>
                     </listitem>
                     <listitem>
                         <para>Key informatics stakeholders and SMEs are not adequately included in
-                            EHRM efforts</para>
+                            EHRM efforts.</para>
                     </listitem>
                     <listitem>
                         <para>Providers do not use current state knowledge management tools, like
-                            standardized terminology or classification systems, optimally</para>
+                            standardized terminology or classification systems, optimally.</para>
                     </listitem>
                     <listitem>
                         <para>Providers must learn to structure and enter clinical information with
                             a standardized process to support data interoperability as natural
-                            language processing (NLP) abilities remain limited</para>
+                            language processing (NLP) abilities remain limited.</para>
                     </listitem>
                     <listitem>
                         <para>Systems lack a standardized approach to terminology and data that
                             leads to many redundant, ambiguous, or improperly mapped terms in EHR
                             data dictionaries. This can often lead to improperly labeled data as
-                            information is shared between systems</para>
+                            information is shared between systems.</para>
                     </listitem>
                     <listitem>
                         <para>Data issues that affect multiple records can occur as automated data
                             flows apply terminology maps based on the received map, rather than the
-                            original source data [19]</para>
+                            original source data. [19]</para>
                     </listitem>
                 </orderedlist>
             </section>
