@@ -8,7 +8,7 @@
     </info>
     <part>
         <title>IKM Background</title>
-        <xi:include href="Background.xml"/>
-        <xi:include href="sof-current-state.xml"/>
+        <xi:include href="Background - For Vol 2.xml"/>
+        <xi:include href="sof-current-state - For Vol 2.xml"/>
     </part>
 </book>
