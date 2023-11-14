@@ -11,15 +11,15 @@
             innovative medical products and technology that further promote public health. Medical
             devices, including instruments and products used for treating or diagnosing diseases
             such as diabetes, must be approved for use by the public. This process was brought to
-            the public eye during COVID-19 with the use of Emergency Use Authorizations (EUA) for
-            COVID-19 test kits. FDA’s Center for Devices and Radiological Health (CDRH) maintains a
-            database of Premarket Notification [510(k)] approved products. 510(k) is a premarket
-            submission that manufacturers make to the FDA to prove their device is safe and
-            equivalent to an already approved product that is legally marketed. Beyond 510(k)
-            approvals is the Premarket Approval (PMA). This application seeks FDA approval based on
-            rigorous scientific evidence that the device is safe and effective. Through these and
-            other processes FDA ensures the public has access to cutting edge and safe tools to
-            manage health. </para>
+            the public eye during the coronavirus disease 2019 (COVID-19) pandemic with the use of
+            Emergency Use Authorizations (EUA) for COVID-19 test kits. FDA’s Center for Devices and
+            Radiological Health (CDRH) maintains a database of Premarket Notification [510(k)]
+            approved products. 510(k) is a premarket submission that manufacturers make to the FDA
+            to prove their device is safe and equivalent to an already approved product that is
+            legally marketed. Beyond 510(k) approvals is the Premarket Approval (PMA). This
+            application seeks FDA approval based on rigorous scientific evidence that the device is
+            safe and effective. Through these and other processes FDA ensures the public has access
+            to cutting edge and safe tools to manage health. </para>
         <para>FDA CDRH is the primary funder of Systemic Harmonization and Interoperability
             Enhancement for Laboratory Data (SHIELD). </para>
     </section>
@@ -318,8 +318,8 @@
                 consider how standards and underlying code sets have changed over time and relaying
                 these changes to data analysts and users who interpret data reports to best
                 understand the information. </para>
-            <para>The following are best practices for the establishment of the Laboratory
-                Interoperability Data Repository (LIDR) taken from the SHIELD Community Roadmap: </para>
+            <para>The following are best practices for the establishment of the LIDR taken from the
+                SHIELD Community Roadmap: </para>
             <orderedlist>
                 <listitem>
                     <para>Develop a freely accessible knowledge management architecture for
@@ -552,12 +552,11 @@
                 <para>
                     <itemizedlist>
                         <listitem>
-                            <para>Common Data models for Large-Scale Research Networks, such as
-                                PCORnet, the National Patient-Centered Clinical Research Network,
-                                Observational Health Data Sciences and Informatics (OHDSI), the
-                                Observational Health Data Sciences and Informatics research group,
-                                and the FDA's Mini-Sentinel, all use LOINC® in their common data
-                                models.</para>
+                            <para>Common Data models for Large-Scale Research Networks the National
+                                Patient-Centered Clinical Research Network (PCORnet), Observational
+                                Health Data Sciences and Informatics (OHDSI), the Observational
+                                Health Data Sciences and Informatics research group, and the FDA's
+                                Mini-Sentinel, all use LOINC® in their common data models.</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -591,10 +590,9 @@
                         <listitem>
                             <para><emphasis role="bold">Analytics</emphasis> - RxNorm is
                                 increasingly being used as a drug stand for clinical data
-                                warehouses. As an example, Observational health Data Sciences and
-                                Informatics (OHDSI) research group uses RxNorm for representing
-                                drugs as part of its Observational Medical Outcomes Partnership
-                                (OMOP) common data model (CDM).</para>
+                                warehouses. As an example, OHDSI research group uses RxNorm for
+                                representing drugs as part of its Observational Medical Outcomes
+                                Partnership (OMOP) common data model (CDM).</para>
                         </listitem>
                     </itemizedlist></para>
                 <para>PCORnet also uses RxNorm in its common data model.</para>
@@ -612,9 +610,10 @@
                                 as a common format for LOINC®. This issue will be addressed by
                                 SHIELD by building on the SNOMED CT® foundation. Nonetheless, SNOMED
                                 CT's® commitment to develop and expand their use of description
-                                logics formalism as called out by SOLOR as well as their alignment
-                                with the Desiderata as described by Cimino, et at, is a step in the
-                                right direction. [13]</para>
+                                logics formalism as called out by the System of Logical
+                                Representation (SOLOR) as well as their alignment with the
+                                Desiderata as described by Cimino, et at, is a step in the right
+                                direction. [13]</para>
                         </listitem>
                     </itemizedlist></para>
                 <para>Examples of Scholarly and Practical Efforts to Assess LOINC® from LOINC®
@@ -622,12 +621,11 @@
                         <listitem>
                             <para>A study compared the use of LOINC® terms used in five medical
                                 centers and their alignment with vendor recommended LOINC® terms as
-                                published in the LOINC® for in vitro Diagnostics (LIVD) file. “We
-                                identified mismatches in how medical centers use LOINC® to encode
-                                laboratory tests compared to how test manufacturers encode the same
-                                laboratory tests. Of 331 tests available in the LIVD files, 136
-                                (41%) were represented by a mismatched LOINC® code by the medical
-                                centers.” [9]</para>
+                                published in the LIVD file. “We identified mismatches in how medical
+                                centers use LOINC® to encode laboratory tests compared to how test
+                                manufacturers encode the same laboratory tests. Of 331 tests
+                                available in the LIVD files, 136 (41%) were represented by a
+                                mismatched LOINC® code by the medical centers.” [9]</para>
                         </listitem>
                         <listitem>
                             <para>A study auditing consistency of LOINC® encoding between three
