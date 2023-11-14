@@ -156,7 +156,7 @@
         </section>
         <section>
             <title>IKM Value Proposition</title>
-            <para>Issues with the interoperability of health data could cost the US healthcare
+            <para>Issues with the interoperability of health data could cost the U.S. healthcare
                 system upwards of $30 billion per year. The introduction of industry-wide
                 interoperability could improve upon these expenditures by reducing adverse events,
                 redundant testing, clinician’s time spent on manual data entry, and reducing length
@@ -226,9 +226,10 @@
             an aspect and together need to address the requirements of clinicians. Current HL7
             standard implementations rely on profiles and templates to disambiguate statement and
             terminology and provide sufficient precision for transactions, documents, and
-            standards-based APIs. Therefore, the architectural approach described here is applicable
-            to standards organizations developing interoperability for enterprise and
-            project-specific implementations in equal measure.</para>
+            standards-based Application Programming Interfaces (APIs). Therefore, the architectural
+            approach described here is applicable to standards organizations developing
+            interoperability for enterprise and project-specific implementations in equal
+            measure.</para>
         <para>The Knowledge Architecture, by definition, is a framework for clinical information
             that is organized into distinct layers such that each higher layer relies upon artifacts
             from the lower layer. The purpose of the Knowledge Architecture is to standardize
