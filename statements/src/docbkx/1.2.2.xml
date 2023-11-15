@@ -11,8 +11,8 @@
             health data, compelling the need for a common way to format the data standards. This is
             particularly important for data encoded in electronic health records (EHR) and
             laboratory information systems (LIS). Standards, such as Systematized Nomenclature of
-            Medicine – Clinical Terms (SNOMED CT®), Logical Observations Identifiers Names and Codes
-            (LOINC), and RxNorm (National Library of Medicine’s codification of the U.S.
+            Medicine Clinical Terms (SNOMED CT®), Logical Observations Identifiers Names and Codes®
+            (LOINC®), and RxNorm (National Library of Medicine’s codification of the U.S.
             pharmacopeia), provide a common language for certain types of health information to be
             represented and understood. However, multiple industry knowledge standards exist in a
             variety of environments and need to be harmonized to ensure data interoperability. An
@@ -83,7 +83,7 @@
                             use a standardized process to ensure data integrated from disparate data
                             sources maintains meaning and all pertinent information throughout data
                             transmission, storage, and use. Tools such as universally unique
-                            identifiers (UUID) will support Tinkar with the identification of
+                            identifiers (UUID) will support TINKAR with the identification of
                             semantically equivalent concepts and support optimal data representation
                             across terminology standards. </para>
                     </listitem>
@@ -177,7 +177,7 @@
                     </listitem>
                 </orderedlist>
             </para>
-            <para>STAMP is not only used to version Tinkar data, but it is also a requirement for
+            <para>STAMP is not only used to version TINKAR data, but it is also a requirement for
                 all TINKAR assets, existing and new. Ensuring all data follows this syntax supports
                 optimal change management and versioning practices, like maintaining detailed
                 versioning history by marking concepts as active or inactive rather than deleting
@@ -190,7 +190,7 @@
                 associated with a given key. When used in parallel with STAMP, a key value store
                 would maintain the key for a certain value/data whose status changed from active to
                 inactive or underwent other changes to update author and time, further supporting
-                Tinkar’s detailed versioning and change management best practices. This type of
+                TINKAR’s detailed versioning and change management best practices. This type of
                 database would also support rapid and efficient querying of healthcare data to
                 support improved patient outcomes, public health trends, and policy making. [6] </para>
         </section>
@@ -204,10 +204,10 @@
                 team to identify dependencies, but we must also categorize them to understand the
                 direction, frequency, and type of dependency and to optimally prioritize and
                 mitigate potential issues caused by these relationships. For example, LIDR has a
-                dependency on both SNOMED CT® and LOINC and when SNOMED CT® or LOINC are updated,
+                dependency on both SNOMED CT® and LOINC® and when SNOMED CT® or LOINC® are updated,
                 validation must be performed in a comprehensive manner to determine if LIDR is
                 correctly using the current interpretation of said dependent standards (SNOMED CT®
-                and LOINC). As we continue to work towards IKM, it is critical that we select and
+                and LOINC®). As we continue to work towards IKM, it is critical that we select and
                 implement technologies that will support the management of these dependencies to
                 reduce patient safety issues and unnecessary complications. [7] </para>
             <para><emphasis>Maven</emphasis>
@@ -237,17 +237,17 @@
                 consistent and readable format, which alleviates the need to write individual ways
                 to parse and read through the different variations of file structures. Origin data
                 also allows the addition of data that is not found in the source terminology data
-                (e.g., provenance, dependencies (LIDR depends on LOINC and SNOMED®). </para>
+                (e.g., provenance, dependencies (LIDR depends on LOINC® and SNOMED®). </para>
             <para><emphasis>Starter data</emphasis>
             </para>
             <para>TINKAR Starter Data acts as the foundational dataset for SHIELD's Komet
                 application. It conforms to the TINKAR Data Model and is the minimum viable dataset
-                required for Komet usability. The TTINKAR Starter Data consists of a TINKAR Concept
+                required for Komet usability. The TINKAR Starter Data consists of a TINKAR Concept
                 Model Hierarchy which defines origin and destination (a.k.a. parent/child) concept
                 relationships, as well as TINKAR Patterns which define the structure and usage for
                 how TINKAR Concepts may be represented. The TINKAR data model is extendable and
                 allows for the importation and harmonization of other terminology standards such as
-                SNOMED CT® and LOINC and enables a lossless transform of knowledge standards to the
+                SNOMED CT® and LOINC® and enables a lossless transform of knowledge standards to the
                 TINKAR format. Starter data will leverage Maven and Nexus to manage dependency
                 complexity of systems using TINKAR data. </para>
         </section>

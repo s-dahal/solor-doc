@@ -7,20 +7,22 @@
     <section>
         <title>Purpose</title>
         <para>In an effort to resolve the challenges posed by data interoperability and unlock the
-            full potential of RWD and RWE across the health care system, the SHIELD collaborative
-            was formed. The SHIELD collaborative is a multi-agency/stakeholder public-private
-            initiative to develop and implement collaborative policies and business models to
-            overcome lab interoperability barriers. Due to the complexity and vastness of this
-            issue, SHIELD has embraced an ecosystem perspective that recognizes no single entity has
-            the authority or influence to meaningfully impact the state of lab interoperability.
-            SHIELD stakeholders include IVD manufacturers, commercial and clinical center
-            laboratories, professional organizations, EHR vendors, Pew Charitable Trusts, numerous
-            federal agencies, standards development organizations, and patient advocates. SHIELD’s
-            overall objective is to ensure lab interoperability such that the same type of device is
+            full potential of Real World Data (RWD) and Real World Evidence (RWE) across the health
+            care system, the Systemic Harmonization and Interoperability Enhancement  for Laboratory
+            Data (SHIELD) collaborative was formed. The SHIELD collaborative is a
+            multi-agency/stakeholder public-private initiative to develop and implement
+            collaborative policies and business models to overcome lab interoperability barriers.
+            Due to the complexity and vastness of this issue, SHIELD has embraced an ecosystem
+            perspective that recognizes no single entity has the authority or influence to
+            meaningfully impact the state of lab interoperability. SHIELD stakeholders include
+            Invitro Diagnostic (IVD) manufacturers, commercial and clinical center laboratories,
+            professional organizations, EHR vendors, Pew Charitable Trusts, numerous federal
+            agencies, standards development organizations, and patient advocates. SHIELD’s overall
+            objective is to ensure lab interoperability such that the same type of device is
             described the same way throughout EHRs. </para>
-        <para>The purpose of this Summary of Findings – Current State of RWE Analytics including but
-            not limited to information retrieval and Knowledge Management and discovery is to
-            explore the current state of real-world data and real-world evidence as it pertains to
+        <para>The purpose of this Summary of Findings – current state of RWE analytics including but
+            not limited to information retrieval and Knowledge Management and discovery – is to
+            explore the current state of real world data and real world evidence as it pertains to
             lab data interoperability, FDA market approval and post-market surveillance, public
             health, clinical care, and related areas. </para>
     </section>
@@ -113,9 +115,9 @@
             numbers of specimen collection centers for COVID testing. Each patient was required to
             report symptom status for loss of smell or taste prior to testing by antigen or
             polymerase chain reaction (PCR). Analysis showed that the presence of one or both
-            symptoms had a positive predictive value (PPV) of 80% for COVID. These RWD provided the
-            RWE to support pool testing of specimens to conserve testing reagents during a period of
-            severe test supply shortages. [5] </para>
+            symptoms had a positive predictive value (PPV) of 80 percent for COVID. These RWD
+            provided the RWE to support pool testing of specimens to conserve testing reagents
+            during a period of severe test supply shortages. [5] </para>
         <para>The use of RWD that is of sufficient quality to be used as RWE for purposes of FDA
             market approval and post-market surveillance of medicines and in IVD presents a
             potential rich environment and supplement to the current gold-standard controlled
@@ -137,11 +139,12 @@
             <title>Current RWD Uses</title>
             <para>There are several national and international efforts to aggregate and expose
                 EHR/RWD for use by researchers and public health scientists. Such efforts include
-                PCORnet, OHDSI, N3C and its potential spin offs. Common to each of these efforts is
-                the extraction of EHR data from participating entities, transforming these data to a
-                common data model, annotating/managing the data with standardized medical
-                terminologies and aggregating entities’ datasets in consolidated or federated
-                mechanisms for analyses. </para>
+                the National Patient-Centered Clinical Research Network (PCORnet), Observational
+                Health Data Sciences and Informatics (OHDSI), National COVID Cohoert Collaborative
+                (N3C) and its potential spin offs. Common to each of these efforts is the extraction
+                of EHR data from participating entities, transforming these data to a common data
+                model, annotating/managing the data with standardized medical terminologies and
+                aggregating entities’ datasets in consolidated or federated mechanisms for analyses. </para>
         </section>
         <section>
             <title>N3C</title>
@@ -156,9 +159,9 @@
                 contains RWD as collected in contributing sites’ EHR systems on COVID-19 positive
                 patients and patients with symptoms consistent with COVID-19, Severe acute
                 respiratory syndrome coronavirus 1 (SARS 1), Middle East Respiratory Syndrome (MERS)
-                and H1N1 flu. De-identified data is contributed monthly and is augmented by public
-                health laboratory data and whole genome sequence data of paired patient/specimen
-                isolates. </para>
+                and H1N1 flu (a.k.a. Swine flu). De-identified data is contributed monthly and is
+                augmented by public health laboratory data and whole genome sequence data of paired
+                patient/specimen isolates. </para>
             <para>NCATS N3C Data Enclave data sets are well described and include data levels
                 ranging from Limited Data Sets, De-identified Data Sets, and Synthetic Data sets all
                 with in depth descriptions of the data and eligibility and access requirements.
@@ -170,25 +173,26 @@
                 within the enclave. </para>
             <para>N3C has paved the way as a successful model for other data enclaves. Data
                 codification is well described, and the data harmonization team ingests limited data
-                sets and transforms them according to a harmonized OMOP analytics data set. Data and
-                code provenance are tracked through the platform. Privacy Preserving Record Linkage
-                (PPRL) is used to securely connect records while maintaining the anonymity of an
-                individual across multiple records and may enhance COVID-19 RWD research in N3C
-                through de-duplication of patient records, linking patient records from different
-                sources, and cohort discovery. Organizations submitting data must have an approved
-                Data Transfer Agreement (DTA), and an optional Linkage Honest Broker Agreement
-                (LHBA), through which organizations maintain control over their data. Data analyses
-                must be performed within the platform and is supported through R, Python, and Slate.
-                R packages include SciPy and scikit-learn and are pre-installed, and others can be
-                added by contacting the data enclave support team. Overall, the enclave provides a
-                secure and focused space for research collaboration and has proven its impact
-                through hundreds of peer reviewed, scientific publications. </para>
+                sets and transforms them according to a harmonized Observational Medical Outcomes
+                Partnership (OMOP) analytics data set. Data and code provenance are tracked through
+                the platform. Privacy Preserving Record Linkage (PPRL) is used to securely connect
+                records while maintaining the anonymity of an individual across multiple records and
+                may enhance COVID-19 RWD research in N3C through de-duplication of patient records,
+                linking patient records from different sources, and cohort discovery. Organizations
+                submitting data must have an approved Data Transfer Agreement (DTA), and an optional
+                Linkage Honest Broker Agreement (LHBA), through which organizations maintain control
+                over their data. Data analyses must be performed within the platform and is
+                supported through R, Python, and Slate. R packages include SciPy and scikit-learn
+                and are pre-installed, and others can be added by contacting the data enclave
+                support team. Overall, the enclave provides a secure and focused space for research
+                collaboration and has proven its impact through hundreds of peer reviewed,
+                scientific publications. </para>
             <para>The successes of the N3C data enclave are not without limitations. Data sets are
                 geographically limited to the U.S., and only patients with known COVID-19 positive
                 tests are included. This may preclude large populations of patients with alternative
-                methods of diagnosis from being included. Those who’s results were not recorded in
-                an EHR but were performed else where such as at a Public Health Lab (PHL), or who had
-                viral sequencing performed are not included. Control cohort methods are not well
+                methods of diagnosis from being included. Those whose results were not recorded in
+                an EHR but were performed else where such as at a Public Health Lab (PHL), or who
+                had viral sequencing performed are not included. Control cohort methods are not well
                 described and thus there is lacking any RWD on non-covid patients. The strength of
                 security does not come without some downsides and can limit the participation and
                 quality of data contributed by participants. There is no method for testing for data
@@ -209,10 +213,10 @@
                 reanalysis and reuse. PCORI encourages use of data from the studies and provides
                 funds to allow other researchers to verify and build on those findings to generate
                 new evidence and make this information available to healthcare decision makers.
-                PCORI funded more than 2000 research studies and related projects, including project
-                that support the methods and capacity for conducting that research. [7] PCORI
-                approved $1 million to fund the development of automated ways to identify people
-                more efficiently and accurately identify people with rare diseases via EHRs,
+                PCORI funded more than 2,000 research studies and related projects, including
+                project that support the methods and capacity for conducting that research. [7]
+                PCORI approved $1 million to fund the development of automated ways to identify
+                people more efficiently and accurately identify people with rare diseases via EHRs,
                 enabling treatments to start sooner and helping researchers offer individuals
                 opportunities to participate in studies. [7]</para>
                 <para>In 2013, PCORI funded development of the PCORnet, a national resource for
@@ -226,7 +230,7 @@
                 <para>Data is accessible via the PCORnet distributed network drawn from millions of
                 EHRs with growing links to patient-reported and payer data to create a standardized
                 data set that facilitates large-scale research. These data are accessible via
-                Clinical Research Networks (CRNs) and facilitated by a Coordinating center. [10]
+                Clinical Research Networks (CRNs) and facilitated by a coordinating center. [10]
                 PCORnet CRNs are integrated delivery systems with one or more hospitals, outpatient
                 clinics (primary and specialty care), and emergency departments. Across the 9 CRNs,
                 there are 251 institutions that are organized into 61 data contributors. A data
@@ -251,7 +255,7 @@
                 insights, makes the Network a powerful tool for researchers. Studies supported by
                 PCORnet infrastructure answer clinical questions that impact patients’ lives,
                 including 2 recent studies that leverage PCORnet to study which populations are
-                impacted by Long COVID. (Highlights of PCORI-funded research results). [11]</para> 
+                impacted by Long COVID and highlights PCORI-funded research results. [11]</para> 
                 </section>
         <section>
             <title>OHDSI</title>
@@ -272,18 +276,21 @@
                 percent of the world’s population. From a publicity standpoint, OHDSI has been
                 referenced by the European Medicines Agency and other policy makers as well as
                 journals, including Journal of the American Medical Association (JAMA).</para>
-            <para>OHDSI organizes into working groups and currently operates 27 of them, ranging in topic from 
-                focus regions (APAC, Latin America) to specific care areas (oncology, psychiatry). In addition, they have working groups that focus on FHIR, the OMOP Common Data Model, and Natural 
-                Language Processing.</para>
-            <para>In April 2022, OHDSI and SNOMED International formalized a five-year collaborative agreement 
-                in which OHDSI and the associated user communities will receive “comprehensive ontologies 
-                on specific healthcare domains and content such as devices, social determinants of health, 
-                disease severity scores and modifiers of cancers, as well as better concept definitions and 
-                resolutions of composite concepts in large-scale observational research.” While this is an
-                enormous benefit to OHDSI, the benefit to SNOMED manifests in the form of user data from 
-                interaction with their product. OHDSI also has an existing agreement with HL7 to integrate FHIR 
-                with the OMOP common data model in hopes of improving abilities to track and share data in 
-                the healthcare and research industries.</para>
+            <para>OHDSI organizes into working groups and currently operates 27 of them, ranging in
+                topic from focus regions (Asia-Pacific and Latin America regions) to specific care
+                areas (oncology, psychiatry). In addition, they have working groups that focus on
+                FHIR, the OMOP Common Data Model (CDM), and Natural Language Processing
+                (NLP).</para>
+            <para>In April 2022, OHDSI and SNOMED International formalized a five-year collaborative
+                agreement in which OHDSI and the associated user communities will receive
+                “comprehensive ontologies on specific healthcare domains and content such as
+                devices, social determinants of health, disease severity scores and modifiers of
+                cancers, as well as better concept definitions and resolutions of composite concepts
+                in large-scale observational research.” While this is an enormous benefit to OHDSI,
+                the benefit to SNOMED International manifests in the form of user data from
+                interaction with their product. OHDSI also has an existing agreement with HL7 to
+                integrate FHIR with the OMOP common data model in hopes of improving abilities to
+                track and share data in the healthcare and research industries.</para>
             <para>OHDSI has ventured into product development, including the Health Analytics
                 Data-to-Evidence Suite (HADES), which is a set of open-source R packages
                 specifically focusing on population level estimations, patient-level prediction,
@@ -315,25 +322,28 @@
     </section> 
         <section>
         <title>eMERGE</title>
-        <para>The Electronic Medical Records and Genomics (eMERGE) Network is a National Human Genome 
-            Research Institute (NHGRI) funded organization that combines genetic data with EHRs to 
-            support genomic medicine research. Genetic data is collected and stored within biorepositories 
-            at nine eMERGE sites, combined with EHRs, and then researched to determine how an 
-            individual’s genetics increase their disease risk or make them better suited for specific 
-            medications. Since its initiation in 2007, eMERGE has grown to develop 777 publications, 
-            discover 68 phenotypes, and encompass over 136,000 network participants. [14]</para>
-        <para>eMERGE conducts genome wide associate studies (GWAS) with EHRs to sequence patients’ 
-            genes, evaluate disease risk, return actionable results to clinicians and patients, and contribute 
-            findings to patient EHRs. [15] One facet of the research is using broad GWAS results to calculate 
-            disease risk in values known as polygenic risk scores (PRS). Additional work is performed to 
-            compare International Classification of Diseases, Ninth Revision (ICD-9) codes across network 
-            sites to assess comparability of large populations taken from different institutions, evaluate 
-            privacy concerns surrounding patient consent and continuing genomic research, and identify 
-            optimal methods for the development and cross-site deployment of algorithms to identify case 
-            and control cohorts. [6] The overall goals of eMERGE, in addition to advancing research 
-            regarding genetic disease and treatment associations, are to develop analytical tools, identify 
-            and communicate genomic research best practices, and return genomic results to patients and 
-            practitioners to improve clinical care. [14]</para>
+        <para>The Electronic Medical Records and Genomics (eMERGE) network is a National Human
+                Genome Research Institute (NHGRI) funded organization that combines genetic data
+                with EHRs to support genomic medicine research. Genetic data is collected and stored
+                within biorepositories at nine eMERGE sites, combined with EHRs, and then researched
+                to determine how an individual’s genetics increase their disease risk or make them
+                better suited for specific medications. Since its initiation in 2007, eMERGE has
+                grown to develop 777 publications, discover 68 phenotypes, and encompass over
+                136,000 network participants. [14]</para>
+        <para>eMERGE conducts genome wide association studies (GWAS) with EHRs to sequence patients’
+                genes, evaluate disease risk, return actionable results to clinicians and patients,
+                and contribute findings to patient EHRs. [15] One facet of the research is using
+                broad GWAS results to calculate disease risk in values known as polygenic risk
+                scores (PRS). Additional work is performed to compare International Classification
+                of Diseases, Ninth Revision (ICD-9) codes across network sites to assess
+                comparability of large populations taken from different institutions, evaluate
+                privacy concerns surrounding patient consent and continuing genomic research, and
+                identify optimal methods for the development and cross-site deployment of algorithms
+                to identify case and control cohorts. [6] The overall goals of eMERGE, in addition
+                to advancing research regarding genetic disease and treatment associations, are to
+                develop analytical tools, identify and communicate genomic research best practices,
+                and return genomic results to patients and practitioners to improve clinical care.
+                [14]</para>
         <para>Since its inception, eMERGE has provided valuable insights into both genomics research
                 and methodologies to effectively analyze data across various institutions. Early
                 into eMERGE’s work, investigators found projects had better outcomes when performed
@@ -360,7 +370,7 @@
             12
             has demonstrated that interoperability risk can be mitigated to allow for robust and powerful 
             analytics.</para>
-        <para>Despite its many successes, the eMERGE Network experienced several challenges. The
+        <para>Despite its many successes, the eMERGE network experienced several challenges. The
                 personal nature of genetic data emphasizes the requirements for patient privacy and
                 de-identification. When aggregating data across various timepoints and institutions,
                 there may be additional timepoints where privacy can be compromised. As such, proper
@@ -409,30 +419,34 @@
         allowing for efficient analysis across data sources. Sentinel has developed a collection of flexible 
         computer programs to run routine queries and perform analyses that inform FDA decision making, ranging from medication utilization patterns among patient cohorts to evaluation of 
         drug and device safety. </para>
-    <para>The Sentinel System presents significant potential with respect to the research, approval, and 
-        maintenance of medical treatments. The combination of expansive standardized data and 
-        flexible analytics allows the FDA to generate RWE and associated analytics rapidly and reliably
-        with relative ease, all while minimizing risk to patient privacy. The capabilities of the Sentinel 
-        System are varied, including the ability to access full-text medical records, support RCTs, and 
-        streamline the collection of patient data from mobile devices. [17] This system has enhanced 
-        the FDA’s central purpose by allowing it to design and execute post-market studies that would 
-        have previously been required of medical product sponsors. [19] Similarly, the FDA maintains 
-        authority to mandate companies perform post-approval studies when potential safety concerns 
-        arise, and Sentinel could be used to drive those decisions. Sentinel’s Active Risk Identification 
-        and Analysis (ARIA) System evaluates the safety of approved medical devices and drugs and has 
-        performed hundreds of such analyses to date. [22] The operations of ARIA are of particular 
-        significance when considering the known limitations of the FDA’s Adverse Event Reporting 
-        System (FAERS), which the FDA itself estimates receives only one to ten percent of adverse 
-        events that occur. [23]</para>
-    <para>Though the Sentinel System has already provided measurable impact since its implementation, 
-        it is not without its faults, the most notable of which are the limitations inherent to the data 
-        sources Sentinel accesses. The majority of Sentinel’s data is derived from administrative claims 
-        data, which often lacks the precision and accuracy required to perform sound analytics on 
-        health outcomes. Claims data may diagnose and code conditions unreliably and often in an 
-        oversimplified manner, a complication that is further confounded by the prioritization of 
-        insurance coverage over medical precision. While a heart attack may be diagnosed and billed 
-        accurately, outcomes like psychiatric side effects, digestive problems, cognitive impairment, 
-        and countless others are often reflected unreliably or not at all. [17]</para>
+    <para>The Sentinel System presents significant potential with respect to the research, approval,
+                and maintenance of medical treatments. The combination of expansive standardized
+                data and flexible analytics allows the FDA to generate RWE and associated analytics
+                rapidly and reliably with relative ease, all while minimizing risk to patient
+                privacy. The capabilities of the Sentinel System are varied, including the ability
+                to access full-text medical records, support RCTs, and streamline the collection of
+                patient data from mobile devices. [17] This system has enhanced the FDA’s central
+                purpose by allowing it to design and execute post-market studies that would have
+                previously been required of medical product sponsors. [19] Similarly, the FDA
+                maintains authority to mandate companies perform post-approval studies when
+                potential safety concerns arise, and Sentinel could be used to drive those
+                decisions. Sentinel’s Active Risk Identification and Analysis (ARIA) System
+                evaluates the safety of approved medical devices and drugs and has performed
+                hundreds of such analyses to date. [22] The operations of ARIA are of particular
+                significance when considering the known limitations of the FDA’s Adverse Event
+                Reporting System (FAERS), which the FDA itself estimates to have received only one
+                to ten percent of adverse events that occur. [23]</para>
+    <para>Although the Sentinel System has already provided measurable impact since its
+                implementation, it has some desirable holes. The most notable one reveals the
+                limitations inherent to the data sources Sentinel accesses. The majority of
+                Sentinel’s data is derived from administrative claims data, which often lacks the
+                precision and accuracy required to perform sound analytics on health outcomes.
+                Claims data may diagnose and code conditions unreliably and often in an
+                oversimplified manner, a complication that is further confounded by the
+                prioritization of insurance coverage over medical precision. While a heart attack
+                may be diagnosed and billed accurately, outcomes like psychiatric side effects,
+                digestive problems, cognitive impairment, and countless others are often reflected
+                unreliably or not at all. [17]</para>
     <para>The data within the Sentinel System exhibits additional flaws. There is a strong potential for 
         selection bias, leading to unknown generalizability to underrepresented populations, 
         particularly those lacking health insurance. Even among included individuals, data can vary. For 
@@ -450,15 +464,15 @@
     </section>
     <section>
         <title>Learnings</title>
-        <para>Electronic health records have been in use in the US since the 1970’s, however
-            Meaningful Use (MU)(2009) ushered in the rush to implement the EHR nationwide. [24] The
-            EHR has provided a large pool of patient records and healthcare data from across the
-            globe for secondary research. As of 2021, 85% of physicians in the US electronically
-            recorded social determinants of health (SDOH) data and 97% electronically recorded broad
-            determinants of health (BDOH) data. Rates of electronic recording of SDOH and BDOH data
-            were slightly higher among primary care physicians, with 89% of primary care physicians
-            electronically recording SDOH data and 98% electronically recording BDOH data in
-            2021.</para>
+        <para>Electronic health records have been in use in the U.S. since the 1970’s. However, the
+            rush to implement the EHR nationwide did not occur until the introduction of the
+            Meaningful Use (MU) in 2009. [24] The EHR has provided a large pool of patient records
+            and healthcare data from across the globe for secondary research. As of 2021, 85% of
+            physicians in the US electronically recorded social determinants of health (SDOH) data
+            and 97% electronically recorded broad determinants of health (BDOH) data. Rates of
+            electronic recording of SDOH and BDOH data were slightly higher among primary care
+            physicians, with 89% of primary care physicians electronically recording SDOH data and
+            98% electronically recording BDOH data in 2021.</para>
        <para>In the past, research relied upon billing data from the UB-04 billing form as the
             source of structured data for research purposes. The UB-04 medical billing form is the
             standard claim form that healthcare organization use for the billing of inpatient or
@@ -501,11 +515,12 @@
             terminologies. These ‘provider friendly terms’ are often mapped to a broader than or
             inaccurate standardized language concept. Insight to the quality of these mappings is
             opaque and error prone.</para>
-        <para>Clinical documentation by nursing or allied health professionals is rarely considered as a source 
-            of data for research. Yet, their documentation may yield a rich source for data. Additionally, 
-            their documentation is more likely to be captured in a structured manner in the form of 
-            structured (and often researched and validated) assessments and flowsheets. Ideally RWD for 
-            RWE is extracted directly from clinical documentation.</para>
+        <para>Clinical documentation by nursing or allied health professionals is rarely considered
+            as a source of data for research. Yet, their documentation may yield a rich source for
+            data. Additionally, their documentation is more likely to be captured in a structured
+            manner in the form of structured (and often researched and validated) assessments and
+            flowsheets. Ideally, RWD for RWE is extracted directly from clinical
+            documentation.</para>
         <para>To address this issue, research databases were created to allow researchers access
             clinical data without actual access to the EHR. EHR database managers utilize “extract,
             transform, load” (ETL) to move data from EHR database(s) or other sources to a unified
@@ -520,19 +535,18 @@
             structured database. Well-defined heuristics and quality assurance processes are
             required to ensure accurate and consistent data extraction. Data available from data
             curation may not meet time-sensitive requirements due to the time and effort required
-            for data extraction and any associated QA processes. NLP is a form of Artificial
-            Intelligence (AI) that can be used for computers to understand human generated language
-            and process the data to understand the full meaning of the original intent. NLP combines
-            algorithms with machine learning and models to correctly 16 extract and label data and
-            assign meaning. Today, the most common models used to support NLP include convolutional
-            neural networks (CNNs) and recurrent neural networks (RNNs). Yet, even the most
-            well-defined data curation heuristics and processes may find clinician prose a
-            challenge. Clinical findings with a diagnostic imaging or pathology report may not be
-            expressed using explicit language. The actual clinical finding must be inferred from the
-            clinical prose used by the provider in their report. Data curators or NLP may be
-            challenged to interpret the actual clinical finding being described. Similarly, the
-            presence or absence of a clinical finding may be hidden in the clinical prose as
-            well.</para>
+            for data extraction and any associated QA processes. NLP is a form of AI that can be
+            used for computers to understand human generated language and process the data to
+            understand the full meaning of the original intent. NLP combines algorithms with machine
+            learning and models to correctly 16 extract and label data and assign meaning. Today,
+            the most common models used to support NLP include convolutional neural networks (CNNs)
+            and recurrent neural networks (RNNs). Yet, even the most well-defined data curation
+            heuristics and processes may find clinician prose a challenge. Clinical findings with a
+            diagnostic imaging or pathology report may not be expressed using explicit language. The
+            actual clinical finding must be inferred from the clinical prose used by the provider in
+            their report. Data curators or NLP may be challenged to interpret the actual clinical
+            finding being described. Similarly, the presence or absence of a clinical finding may be
+            hidden in the clinical prose as well.</para>
     </section>
     <section>
         <title>References</title>
