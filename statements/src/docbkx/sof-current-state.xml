@@ -69,7 +69,7 @@
         </section>
     </section>
     <section>
-        <title>RWD and RWE Background</title>
+        <title>Real World Data (RWD) and Real World Evidence (RWE) Background</title>
         <para>RWD is defined by the FDA as data relating to patient health status and/or the
                 delivery of health care routine collected from a variety of sources as part of
                 receiving care or daily living. It encompasses most sources of health data derived
@@ -148,7 +148,7 @@
                 aggregating entities’ datasets in consolidated or federated mechanisms for analyses. </para>
         </section>
         <section>
-            <title>N3C</title>
+            <title>National Covid Cohort Collaborative (N3C)</title>
             <para>N3C is one of the largest collections of COVID-19 clinical data in the United
                 States. The cloud-based collection of secure and de-identified data is part of the
                 N3C’s vision to use RWD for advancing knowledge to address COVID-19. N3C aims to
@@ -202,7 +202,8 @@
                 and general disease surveillance. [6] </para>
     </section>
             <section>
-                <title>PCORI/PCORnet</title>
+                <title>Patient-Centered Outcomes Research Institute (PCORI) &amp; National
+                Patient-Centered Clinical Research Network (PCORnet)</title>
                 <para>The Patient-Centered Outcomes Research Institute (PCORI) is an independent,
                 nonprofit, and leading funder of patient-centered comparative clinical effectiveness
                 research in the United States. The primary goal of PCORI is to increases useful
@@ -256,10 +257,10 @@
                 insights, makes the Network a powerful tool for researchers. Studies supported by
                 PCORnet infrastructure answer clinical questions that impact patients’ lives,
                 including 2 recent studies that leverage PCORnet to study which populations are
-                impacted by Long COVID. (Highlights of PCORI-funded research results). [11]</para> 
+                impacted by Long COVID. [7, 11]</para> 
                 </section>
         <section>
-            <title>OHDSI</title>
+            <title>Observational Health Data Sciences and Informatics (OHDSI)</title>
             <para>Founded in 2014, the Observational Health Data Sciences and Informatics (OHDSI) is an 
                 interdisciplinary collaborative that aims to maximize value in health data through large-scale 
                 analytics and a common data model. The stated mission of OHDSI is “to improve health by 
@@ -318,7 +319,7 @@
                 base level of manipulation to obscure incoming data.</para>
     </section> 
         <section>
-        <title>eMERGE</title>
+        <title>Electronic Medical Records and Genomics (eMERGE)</title>
         <para>The Electronic Medical Records and Genomics (eMERGE) Network is a National Human Genome 
             Research Institute (NHGRI) funded organization that combines genetic data with EHRs to 
             support genomic medicine research. Genetic data is collected and stored within biorepositories 
