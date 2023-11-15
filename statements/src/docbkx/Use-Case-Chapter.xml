@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<chapter xmlns="http://docbook.org/ns/docbook"
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Use Cases</title>
     <section>
         <title>Notice</title>
@@ -13,7 +12,66 @@
         <title>Use Case: Komet Demo</title>
     </section>
     <section>
-        <title>Use Case: Komet Applications</title>
+        <title>Use Case: Komet Application</title>
+        <para>This section outlines three key components of the Komet application, Tinkar knowledge
+            architecure, and open-source contribtuions.</para>
+        <section>
+            <title>Komet Use Case – Rapid Knowledge Management</title>
+            <para>A primary benefit of Komet and the Tinkar architecture used to manage integrated
+                knowledge is the ability to rapidly update integrated knowledge in accordance with
+                emerging or needed concepts and to address irregularities or errors. </para>
+            <para>One example of Komet’s ability to not only identify errors, but to also resolve
+                them is if you searched for “chronic lung disease” and opened the “Chronic lung
+                disease (disorder)” result in the concept navigator. You may notice that this
+                concept only displays two children concepts, which seems strange as there should be
+                many more children concepts for such a broad disorder. To explore and understand why
+                this potential error is occurring, a user could click on both the ‘Properties’ and
+                ‘Timeline’ buttons to open additional information about the “Chronic lung disease
+                (disorder)” concept. In the ‘Properties’ frame, the user could select ‘Hierarchy’
+                and turn the ‘Range’ option on in the Timeline frame. This will display how the
+                concept has changed over time, additions to concepts, and allows users to compare
+                select versions of a concept.</para>
+            <para>While a user may see version history, there is still no information on why there
+                are only two children concepts. The user can then go back to the concept navigator
+                and edit the EL++ Axiom from ‘Necessary Set’ to ‘Sufficient Set’, select reasoner,
+                and run the ‘ELK Reasoner’. This then shows a recent edit was made that updated the
+                number of children concepts was increased to over 20.
+                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>WHY DOES THIS
+                HAPPEN, WHAT IS THIS TRYING TO SHOW? IS THIS JUST THAT THE USER HAD THE WRONG VIEW
+                UP OR THEY DID NOT PULL UPDATES</para><?oxy_custom_end?>
+            <para>While Komet, Tinkar, and our open-source approach allows user to identify an
+                error, navigate and understand the concept versioning and history, make edits to
+                resolve the issue in real-time, and commit the changes to the community at large,
+                other Terminology Standards lack this rapid approach. If a user identified this
+                error and submitted it to SNOMED CT, they may have to wait a full six months before
+                SNOMED CT pushed their bi-annual updates and may be forced to employ sub-optimal
+                work arounds to address the issue until then. This real-time approach to managing
+                integrated knowledge also allows for the creation of concepts, like COVID-19, to
+                meet emerging conditions and clinical needs.</para>
+        </section>
+        <section>
+            <title>Komet Use Case – Integration of Terminology Standards</title>
+            <para>Another fundamental component of Komet is the integration of various terminology
+                standards. When searching “urine homocysteine measurement”, a user can see the
+                SNOMED CT concept ‘Urine Homocysteine Measurement (procedure)’ in the navigation
+                panel, while simultaneously viewing LOINC children concepts. Komet can seamlessly
+                integrate concepts from different terminology standards and identify which concepts
+                are associated by using a localized common language in the form of Analysis Normal
+                Form (ANF).</para>
+        </section>
+        <section>
+            <title>Komet Use Case – Detecting Equivalent Concepts</title>
+            <para>Komet is also able to easily and clearly identify concepts that are equivalent and
+                display any minor differences between them. If a user were to search for a concept
+                to describe ankylosis in the left and right knees, they would be presented with
+                ‘Observation of ankylosis of both knee joints (procedure)’ and ‘Ankylosis of
+                bilateral knee joints (disorder)’. By running the Komet reasoner, selecting detect
+                equivalencies, right clicking these two concepts, and selecting ‘Compare Concepts’,
+                a user could determine that these concepts are equivalent. A user could then do a
+                deep-dive into the concept axioms using a side-by-side comparison to understand if
+                there were any minute differences between the two.</para>
+        </section>
+        
     </section>
     <section>
         <title>Use Case: Considerations for Real World Data Interoperability and Data Agility in

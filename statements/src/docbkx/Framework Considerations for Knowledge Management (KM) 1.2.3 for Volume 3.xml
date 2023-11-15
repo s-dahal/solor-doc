@@ -6,28 +6,28 @@
      <title>Framework Considerations for Knowledge Management (KM)</title>
     <sect1>
         <title>Framework Considerations Purpose</title>
-        <para>This document will serve to identify a framework of considerations for comparing
-            Knowledge Management technologies. Incorporated within is analysis of the architecture
-            and codebase for any known scalability, licensing, and privacy needs, as well as how to
-            manage these non-functional requirements continuously as the product develops. In doing
-            this, we will make suggestions for software solutions to cover code maturity,
-            automation, and security.</para>
+        <para>This document will serve to identify a framework of considerations for comparing KM
+            technologies. Incorporated within is analysis of the architecture and codebase for any
+            known scalability, licensing, and privacy needs, as well as how to manage these
+            non-functional requirements continuously as the product develops. In doing this, we will
+            make suggestions for software solutions to cover code maturity, automation, and
+            security.</para>
     </sect1>
     <sect1>
         <title>Introduction to KM Processes</title>
-        <para>As we progress along our journey to improve the open-sourced software base for a
-            Knowledge Management platform, it is important to take note of what is currently being
-            done and what we will focus on as we develop this project further. As part of this
-            observation, we are defining the processes that need to be executed to achieve the goals
-            of the project, such as becoming a well-supported and contributed open-source product
-            that encourages adoption by the larger community.</para>
+        <para>As we progress along our journey to improve the open-source software base for a
+            reference implementation for IKM capabilities, it is important to take note of what is
+            currently being done and what we will focus on as we develop this work further. As part
+            of this observation, we are defining the processes that needs to be executed to achieve
+            the goals of this work, such as becoming a well-supported and contributed open-source
+            product that encourages adoption by the larger community.</para>
     </sect1>
     <sect1>
         <title>Current State Analysis</title>
-        <para>As part of the work on the Knowledge Management tooling, we first need to document the
-            current state of the project so that we can define a future state and develop a plan to
-            address any concerns. To do this, we have completed code reviews and stakeholder
-            interviews to ensure that we understand what work is outstanding.    </para>
+        <para>As part of the work on the KM tooling, we first need to document the current state of
+            the project so that we can define a future state and develop a plan to address any
+            concerns. To do this, we have completed code reviews and stakeholder interviews to
+            ensure that we understand what work is outstanding. </para>
     </sect1>
     <sect1>
         <title>Methodology</title>
@@ -36,10 +36,12 @@
         <sect2>
             <title>Stakeholder Interviews</title>
             <para>Stakeholder interviewers were conducted on identified individuals that had either
-                prior experience with the existing Knowledge Management code base (e.g., Komet,
-                ISAAC, TINKAR-core) or the Informatics Knowledge Architecture (e.g., Solor). A basic
-                semi-structured thematic analysis was performed to identify qualitative themes from
-                the interview.</para>
+                prior experience with the existing KM code base (e.g., Komet, ISAAC, TINKAR-core) or
+                the Informatics Knowledge Architecture (e.g., a description-logic based integration
+                of <emphasis role="bold">S</emphasis>N<emphasis role="bold">O</emphasis>MED CT®,
+                    <emphasis role="bold">LO</emphasis>INC®, and <emphasis role="bold"
+                >R</emphasis>xNorm [Solor]). A basic semi-structured thematic analysis was performed
+                to identify qualitative themes from the interview.</para>
         </sect2>
         <sect2>
             <title>Requirements, Architecture, and Documentation Review</title>
@@ -74,24 +76,24 @@
             <para>There is a general lack of both functional and non-functional requirements. A lot
                 of promotional material regarding the design of Solor and its Knowledge Architecture
                 exist, from which some functional requirements could be inferred, but this isn’t
-                sufficient to develop highly reliable knowledge management capabilities. There are
-                some existing Jira and Confluence sites from Logica (formerly HSPC) that describe
-                some groupings of capabilities and functionality (e.g., Personas, SNOMED CT® export,
-                Simple Search) but not enough detail is present to be considered requirements user
-                stories can be based off.</para>
+                sufficient to develop highly reliable KM capabilities. There are some existing Jira
+                and Confluence sites from Logica (formerly HSPC) that describe some groupings of
+                capabilities and functionality (e.g., Personas, SNOMED CT® export, Simple Search)
+                but not enough detail is present to be considered requirements user stories can be
+                based off.</para>
             <para>Additionally, there is a lack of Key Performance Indicators and Service Level
-                Agreements as they pertain to the larger idea of a Knowledge Management platform
-                that will be host to and a conduit of resolving extremely complex knowledge
-                standards-based issues within the health IT landscape.</para>
+                Agreements as they pertain to the larger idea of a reference implementation for IKM
+                capabilities that will be host to and a conduit of resolving extremely complex
+                knowledge standards-based issues within the health IT landscape.</para>
         </sect2>
         <sect2>
             <title>Architecture and Documentation Review</title>
             <para>Identified through various stakeholder interviews were Unified Modeling Language
                 (UML) diagrams that detailed some aspects of TINKAR data structure and overall class
-                hierarchy. These were found within Health Level Seven (HL7) informational ballot for
-                TINKAR and some HL7 Vocabulary working group presentations. There were also some
-                identified attempts at using JetBrains IntelliJ IDEA IDE to auto-generate UML class
-                diagrams of core TINKAR concepts.</para>
+                hierarchy. These were found within HL7 informational ballot for TINKAR and some HL7
+                Vocabulary working group presentations. There were also some identified attempts at
+                using JetBrains IntelliJ IDEA IDE to auto-generate UML class diagrams of core TINKAR
+                concepts.</para>
             <para>As mentioned previously, some pre-existing Jira and Confluence websites (Logica)
                 were identified and found to contain some outdated information regarding the
                 Knowledge Architecture (PASTF diagram).</para>
@@ -101,7 +103,8 @@
             <para>In general, there is no formal external documentation describing code
                 functionality – either at the class or method level. Some Java Classes were
                 identified to have properly formatted JavaDoc annotations, but this wasn’t
-                consistently applied across the entire code base.</para><figure xml:id="UnitTestCodeCoverageReportforKometUsingJaCoCo">
+                consistently applied across the entire code base. Below the unit test code was
+                examined using a Java-based code coverage tool (JaCoCo)</para><figure xml:id="UnitTestCodeCoverageReportforKometUsingJaCoCo">
                     <title>Unit Test Code Coverage Report for Komet Using JaCoCo</title>
                     <mediaobject>
                         <imageobject>
@@ -119,21 +122,21 @@
             </figure>
             <para>There is a general lack of unit tests across the entire code base. As shown in
                     <xref linkend="UnitTestCodeCoverageReportforKometUsingJaCoCo"/> and <xref
-                    linkend="UnitTestCodeCoverageReportforTinkarusingJaCoCo"/> above, JaCoCo, a
-                Java-based code coverage tool, only identified about 25.8% of functional code as
-                adequately covered by unit tests. In contrast, a Maven module within the Tinkar-core
-                codebase called “integration” was identified as containing several large integration
-                tests. These integration tests currently use Junit5 (historically TestNG) to build
-                test suites to validate that the three main TINKAR providers Ephemeral, MVStore, and
-                Spined Array properly load a preset test sample of TINKAR data. The selection of and
+                    linkend="UnitTestCodeCoverageReportforTinkarusingJaCoCo"/> above, JaCoCo only
+                identified about 25.8% of functional code as adequately covered by unit tests. In
+                contrast, a Maven module within the TINKAR-core codebase called “integration” was
+                identified as containing several large integration tests. These integration tests
+                currently use Junit5 (historically TestNG) to build test suites to validate that the
+                three main TINKAR providers Ephemeral,  ulti-version store (MVStore), and Spined
+                Array properly load a preset test sample of TINKAR data. The selection of and
                 adequate testing suite is important because the codebase utilizes inversion of
                 controls (or dependency injection) to start appropriate TINKAR-core “services” which
                 requires the testing suite to have proper setup and tear annotations.</para>
             <para>Overall, the codebase had low code maturity. This is attributed to a lack of
                 continuous integration and continuous delivery infrastructure. It was identified
                 that historically a previous version of the codebase utilized the open-source
-                version of Travis-CI. Currently no Continuous Integration/Continuous Deployment
-                (CI/CD) tooling is being used on the codebase.</para>
+                version of Travis-CI. Currently no CI/CD tooling is being used on the
+                codebase.</para>
         </sect2>
         <sect2>
             <title>Duplication</title>
@@ -205,13 +208,13 @@
                 code reviews:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Make for better estimates</para>
+                    <para>make for better estimates.</para>
                 </listitem>
                 <listitem>
-                    <para>Enable time off</para>
+                    <para>enable time off.</para>
                 </listitem>
                 <listitem>
-                    <para>Mentor newer engineers</para>
+                    <para>mentor newer engineers.</para>
                 </listitem>
             </itemizedlist>
             <para>We suggest doing code reviews inline as well as at a regularly scheduled interval.
@@ -223,50 +226,50 @@
             <para>In doing a code review, you should make sure that:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Terms and variables semantically match the domain</para>
+                    <para>terms and variables semantically match the domain.</para>
                 </listitem>
                 <listitem>
-                    <para>Code is well-designed</para>
+                    <para>code is well-designed.</para>
                 </listitem>
                 <listitem>
-                    <para>Functionality is good for the users of the code</para>
+                    <para>functionality is good for the users of the code.</para>
                 </listitem>
                 <listitem>
-                    <para>Any UI (user interface) changes are sensible and look good</para>
+                    <para>any UI changes are sensible and look good.</para>
                 </listitem>
                 <listitem>
-                    <para>Any parallel programming is done safely</para>
+                    <para>any parallel programming is done safely.</para>
                 </listitem>
                 <listitem>
-                    <para>Code isn’t more complex than it needs to be</para>
+                    <para>code isn’t more complex than it needs to be.</para>
                 </listitem>
                 <listitem>
-                    <para>The developer isn’t implementing things they might need in the future but
-                        don’t know they need now</para>
+                    <para>the developer isn’t implementing things they might need in the future but
+                        don’t know they need now.</para>
                 </listitem>
                 <listitem>
-                    <para>Code has appropriate unit tests</para>
+                    <para>code has appropriate unit tests.</para>
                 </listitem>
                 <listitem>
-                    <para>Tests are well-designed</para>
+                    <para>tests are well-designed.</para>
                 </listitem>
                 <listitem>
-                    <para>The developer used clear names for everything</para>
+                    <para>the developer used clear names for everything.</para>
                 </listitem>
                 <listitem>
-                    <para>Comments are clear and useful and mostly explain <emphasis role="italic"
+                    <para>comments are clear and useful and mostly explain <emphasis role="italic"
                             >why</emphasis> instead of <emphasis role="italic"
-                        >what</emphasis></para>
+                        >what</emphasis>.</para>
                 </listitem>
                 <listitem>
-                    <para>Code is appropriately documented (generally in g3doc)</para>
+                    <para>code is appropriately documented (generally in g3doc).</para>
                 </listitem>
                 <listitem>
-                    <para>Code conforms to our style guides</para>
+                    <para>code conforms to our style guides.</para>
                 </listitem>
                 <listitem>
-                    <para>Developers haven't (inadvertently or not) subverted code quality
-                        checks</para>
+                    <para>developers haven't (inadvertently or not) subverted code quality
+                        checks.</para>
                 </listitem>
             </itemizedlist>
             <para>Make sure to review <emphasis role="bold">every line</emphasis> of code you’ve
@@ -309,28 +312,31 @@
                 </para>
             </sect3>
             <sect3>
-                <title>Keeping Code SOLID​</title>
-                <para>When reviewing OO code, it is important to ensure that it meets the SOLID
-                    principles (as described in the review section). As Robert C Martin described
-                    SOLID Principles as pertaining to OO programming, OO programs should obey the
-                    following principles:</para>
+                <title>Ensuring Code Follows the Appropriate Principles</title>
+                <para>When reviewing OO code, it is important to ensure that it meets the principles
+                    below:</para>
                 <itemizedlist>
                     <listitem>
-                        <para>Single Responsibility Principle</para>
+                        <para><emphasis role="bold">S</emphasis>ingle Responsibility
+                            Principle</para>
                     </listitem>
                     <listitem>
-                        <para>Open/Closed Principle</para>
+                        <para><emphasis role="bold">O</emphasis>pen/Closed Principle</para>
                     </listitem>
                     <listitem>
-                        <para>Liskov Substitution Principle (LSP)</para>
+                        <para><emphasis role="bold">L</emphasis>iskov Substitution Principle
+                            (LSP)</para>
                     </listitem>
                     <listitem>
-                        <para>Interface Segregation Principle (ISP)</para>
+                        <para><emphasis role="bold">I</emphasis>nterface Segregation Principle
+                            (ISP)</para>
                     </listitem>
                     <listitem>
-                        <para>Dependency Inversion (DI)</para>
+                        <para><emphasis role="bold">D</emphasis>ependency Inversion (DI)</para>
                     </listitem>
                 </itemizedlist>
+                <para>These are known as SOLID Principles and, as Robert C Martin described, OO
+                    programs should obey these principles.</para>
             </sect3>
             <sect3>
                 <title>Layers and Coupling</title>
@@ -340,19 +346,19 @@
                     allows teams to pivot the direction of the project more easily.</para>
                 <para>This is often inferred as part of ISP and DI, but it is important that this is
                     part of the solution architecture review process in code reviews.</para>
-                <para>Some simple rules of thumb:</para>
+                <para>Some simple rules of thumb include:</para>
                 <itemizedlist>
                     <listitem>
                         <para>Data and it’s representation should be in a layer all by itself,
-                            separate from the business logic</para>
+                            separate from the business logic.</para>
                     </listitem>
                     <listitem>
-                        <para>If providing a user interface, it is important to abstract the user
-                            interface away from the business logic</para>
+                        <para>If providing a UI, it is important to abstract the UI away from the
+                            business logic.</para>
                     </listitem>
                     <listitem>
                         <para>Generally, the team suggested using the Composition Pattern over
-                            inheritance unless the substitution principle of LSP is met</para>
+                            inheritance unless the substitution principle of LSP is met.</para>
                     </listitem>
                 </itemizedlist>
             </sect3>
@@ -373,7 +379,7 @@
             <para>“Classes should be immutable unless there's a very good reason to make them
                 mutable... If a class cannot be made immutable, limit its mutability as much as
                 possible.” – Joshua Bloch, from Effective Java</para>
-            <para><emphasis role="bold">Benefits of Immutability:</emphasis></para>
+            <para><emphasis role="bold">Benefits of Immutability</emphasis></para>
             <itemizedlist>
                 <listitem>
                     <para>Thread-safe, preventing synchronization issues</para>
@@ -399,13 +405,13 @@
                         nature</para>
                 </listitem>
             </itemizedlist>
-            <para><emphasis role="bold">Drawbacks of Immutability:</emphasis></para>
+            <para><emphasis role="bold">Drawbacks of Immutability</emphasis></para>
             <itemizedlist>
                 <listitem>
                     <para>Due to creating more objects, there was a copy cost and often a cleanup
                         cost via garbage collection, which could impact the performance of a single
                         Java virtual machine. It is generally suggested that the benefits provided
-                        by additional multithreading often outweigh the performance costs</para>
+                        by additional multithreading often outweigh the performance costs.</para>
                 </listitem>
             </itemizedlist>
             <para><emphasis role="bold">Items that should be immutable: </emphasis></para>
@@ -440,7 +446,7 @@
                     part of each code submission to make sure that it matches the updates. The
                     following subsections will cover in detail some of the portions of the
                     documentation.</para>
-                <para>The Readme file is the file at the top level of a repository, usually written
+                <para>The README file is the file at the top level of a repository, usually written
                     in markdown or text format. It should be the entry point to all documentation
                     and contain anything that a developer should know to get started using a
                     project. If this project is a library, it should contain ample examples of how
@@ -517,15 +523,16 @@
                 </figure>
                 <itemizedlist>
                         <listitem>
-                            <para><emphasis role="bold">Block Comments</emphasis> - Shouldn't really
-                                need to be used. If a section of code is so complex that it needs a
-                                block comment, it probably needs to be its own
-                                method/function/class/etc.</para>
+                            <para><emphasis role="bold">Block Comments</emphasis> - Comments that
+                            describe portions of code that can be used to selectively execute
+                            certain blocks. Block comments should be avoided if possible. If a
+                            section of code is so complex that it needs a block comment, it probably
+                            needs to be its own method/function/class/etc.</para>
                         </listitem>
                         <listitem>
                             <para><emphasis role="bold">Inline Comments</emphasis> - Step-by-step
-                                details about what you are doing. These can be used judiciously
-                                provided they make sense. An example of an inline comment is show in
+                            details about what you are doing. These can be used judiciously,
+                            provided they make sense. An example of an inline comment is show in
                                 <xref linkend="ExampleofInlineComment"/> below.</para>
                         </listitem>
                 </itemizedlist><figure xml:id="ExampleofInlineComment">
@@ -548,21 +555,21 @@
         </sect2>
         <sect2>
             <title>How to Write Code Review Comments</title>
-            <para>Overall:</para>
+            <para>When writing code review comments:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Be kind</para>
+                    <para>be kind.</para>
                 </listitem>
                 <listitem>
-                    <para>Explain your reasoning</para>
+                    <para>explain your reasoning.</para>
                 </listitem>
                 <listitem>
-                    <para>Balance giving explicit directions with just pointing out problems and
-                        letting the developer decide</para>
+                    <para>balance giving explicit directions with just pointing out problems and
+                        letting the developer decide.</para>
                 </listitem>
                 <listitem>
-                    <para>Encourage developers to simplify code or add code comments instead of just
-                        explaining the complexity to you</para>
+                    <para>encourage developers to simplify code or add code comments instead of just
+                        explaining the complexity to you.</para>
                 </listitem>
             </itemizedlist>
         </sect2>
@@ -641,7 +648,7 @@
                         been met.</para>
             </sect3>
             <sect3>
-                <title>Test Driven Development Standards​</title>
+                <title>Test Driven Development (TDD) Standards​</title>
                 <para>Pipelines not only encourage Test Driven Development (TDD) but will require it
                     by default out of the box. Pipelines will have a requirement of 85% code
                     coverage which comprises a combination of line coverage, package coverage, and
@@ -657,8 +664,9 @@
                     development is that it is expected that this is the first thing that you do when
                     you pick up a story. This is a set of tests that should match the acceptance
                     criteria and showcase to the product owner that the story is complete.</para>
-                <para>TDD is a simple 3-phase cycle of writing something that is failing, making a
-                    test pass, then refactoring, and repeating. This process is depicted in <xref linkend="TDDCycleDiagram"/>.</para><figure xml:id="TDDCycleDiagram">
+                <para>TDD is a simple three-phase cycle of writing something that is failing, making
+                    a test pass, then refactoring, and repeating. This process is depicted in <xref
+                        linkend="TDDCycleDiagram"/>.</para><figure xml:id="TDDCycleDiagram">
                         <title>TDD Cycle Diagram</title>
                         <mediaobject>
                             <imageobject>
@@ -671,12 +679,12 @@
                     <para>This should consist of the following tests, every time:</para>
                     <itemizedlist>
                         <listitem>
-                            <para>Functional Tests - At least one functional test, but likely more
-                                than one</para>
+                            <para>Functional Tests - At least one functional test should be
+                                perfromed, but likely more than one will be needed.</para>
                         </listitem>
                         <listitem>
-                            <para>Positive (also known as "Happy Path") Testing - Proves that the
-                                code fulfills its intended duties</para>
+                            <para>Positive (also known as "Happy Path") Testing - Positive Testing
+                                proves that the code fulfills its intended duties.</para>
                         </listitem>
                         <listitem>
                             <para>Negative Testing - One or more scenarios that prove something that
@@ -757,7 +765,7 @@
                 </sect4>
                 <sect4>
                     <title>Code Coverage Philosophy​</title>
-                    <para>Testing for the purpose of code coverage is malpractice → Developers would
+                    <para>Testing for the purpose of code coverage is malpractice, developers would
                         have circumvented the intentions of TDD if the goal of testing is to show
                         green lines and high percentages in code coverage reports. If development
                         teams are retroactively writing test cases, code quality is harder to
@@ -789,7 +797,7 @@
                         needed.</para>
                 </sect4>
                 <sect4>
-                    <title>Behavior Driven Development</title>
+                    <title>Behavior Driven Development (BDD)</title>
                     <para>Behavior Driven Development (BDD) is a spin on TDD. Where TDD focuses on
                         testing a specific piece of functionality, BDD is focused less on a piece of
                         functionality, and more on a user action. BDD should generally be used in
@@ -800,12 +808,12 @@
                         development. The goal of BDD is to ensure that functional and business teams
                         have input and visibility into the software development process, and in turn
                         development teams will have clearer understanding on what the expected
-                        solutions should accomplish. BDD is great for teams where there is a need
-                        for functional teams to be involved with designing and testing features. BDD
+                        solutions should accomplish. BDD is great when there is a need for
+                        functional teams to be involved with designing and testing features. BDD
                         requires test cases to be written in Gherkin syntax which is then translated
                         to code. Gherkin (format → Given, When, Then) is readable to functional
-                        teams, hence providing visibility. An example of BDD is shown below in
-                        <xref linkend="ExampleofBehaviorDrivenDevelopment"/>.</para><figure xml:id="ExampleofBehaviorDrivenDevelopment">
+                        teams, hence providing visibility. An example of BDD is shown below in <xref
+                            linkend="ExampleofBehaviorDrivenDevelopment"/>.</para><figure xml:id="ExampleofBehaviorDrivenDevelopment">
                             <title>Example of Behavior Driven Development</title>
                             <mediaobject>
                                 <imageobject>
@@ -827,23 +835,23 @@
                         consistent with the function requirements. This can apply to simple tasks,
                         such as validating that the logo is in the correct place on the computer and
                         the iPhone.</para>
-                    <para>Considerations:</para>
+                    <para>UI testing should:</para>
                     <itemizedlist>
                         <listitem>
-                            <para>Ensure the UI appearance and interaction satisfy the functional
-                                and non-functional requirements</para>
+                            <para>ensure the UI appearance and interaction satisfy the functional
+                                and non-functional requirements.</para>
                         </listitem>
                         <listitem>
-                            <para>Detect changes in the UI both across devices and delivery
-                                platforms and between code changes</para>
+                            <para>detect changes in the UI both across devices and delivery
+                                platforms and between code changes.</para>
                         </listitem>
                         <listitem>
-                            <para>Provide confidence to designers and developers the user experience
-                                is consistent</para>
+                            <para>provide confidence to designers and developers the user experience
+                                is consistent.</para>
                         </listitem>
                         <listitem>
-                            <para>Support fast code evolution and refactoring while reducing the
-                                risk of regressions</para>
+                            <para>support fast code evolution and refactoring while reducing the
+                                risk of regressions.</para>
                         </listitem>
                     </itemizedlist>
                     <para>The scope of UI testing should be strategic. UI tests can take a
@@ -862,9 +870,9 @@
                 </sect4>
                 <sect4>
                     <title>Accessibility Testing​</title>
-                    <para>Designers should focus on promoting user interfaces and designs that are
-                        accessible for all users. Accessibility considerations should be reviewed
-                        for all wireframes before considered for development. More than general
+                    <para>Designers should focus on promoting UIs and designs that are accessible
+                        for all users. Accessibility considerations should be reviewed for all
+                        wireframes before considered for development. More than general
                         accessibility, there is often strict accessibility standards that are part
                         of requirements. For example, many government sites encourage accessibility
                         by requiring 508, Americans with Disabilities Act (ADA) or Web Content
@@ -883,13 +891,12 @@
                     <title>Test Suites</title>
                     <para>These testing suites will be used in the pipeline access code coverage in
                         the pipeline. In the seeds provided, these can also work to execute these
-                        tests locally. Deloitte has performed an Analysis of Alternatives based on
-                        the language and framework being used. The following showcases the
-                        results.</para>
+                        tests locally. The following showcases the results of an Analysis of
+                        Alternatives based on the language and framework being used.</para>
                     <para>These include (but are not limited to):</para>
                     <itemizedlist>
                         <listitem>
-                            <para>JUnit 5 and JaCoco (Java)</para>
+                            <para>JUnit 5 and JaCoCo (Java)</para>
                         </listitem>
                         <listitem>
                             <para>Jest (JavaScript and React)</para>
@@ -906,20 +913,19 @@
     </sect1>
     <sect1>
         <title>Automation</title>
-        <para><emphasis role="bold">Continuous Integration (CI)</emphasis> and <emphasis role="bold"
-            >Continuous Deployment (CD)</emphasis> Processes, <xref linkend="FrameworkforContinousIntegration"/> and <xref linkend="FrameworkforContinousDeployment"/>,
-            respectively, allow teams to be productive from day 1, even releasing as early as their
-            first day. Using Deloitte’s hosted JIRA and a Software Factory accelerator, we are
-            installing an environment in AWS to build code using tooling. We initially will create a
-            tooling that will allow deployments of software and restrict access to the tooling we
-            need for licensing purposes. As we create the necessary materials for a fully supported
-            Open-Sourced project, we will re-evaluate parts of this tooling to allow for teams to
+        <para><emphasis role="bold">CI</emphasis> and <emphasis role="bold">CD</emphasis> Processes,
+                <xref linkend="FrameworkforContinousIntegration"/> and <xref
+                linkend="FrameworkforContinousDeployment"/>, respectively, allow teams to be
+            productive from day one, even releasing as early as their first day. Initial tooling
+            will allow deployments of software and restrict access to the tooling that is needed for
+            licensing purposes. As the necessary materials for a fully supported Open-Sourced
+            project are created, we will re-evaluate parts of this tooling to allow for teams to
             pivot some or all the DevOps processing to SaaS (Software as a Service), based on
             overarching pricing and supportability, making sure that this allows us to create a
             culture of promoting code submissions and foster access to this codebase to improve it
             over time.</para>
         <sect2>
-            <title>Continuous Integration</title><figure xml:id="FrameworkforContinousIntegration">
+            <title>Continuous Integration (CI)</title><figure xml:id="FrameworkforContinousIntegration">
                 <title>Framework for Continuous Integration</title>
                 <mediaobject>
                     <imageobject>
@@ -932,9 +938,9 @@
                 <itemizedlist>
                     <listitem>
                         <para><emphasis role="bold">Plan</emphasis> - Processes have been developed
-                            to help teams work together and produce code quickly. Integrations have
-                            been created in API driven systems to guarantee team’s traceability from
-                            story creation to code deployment and everything in between.</para>
+                        to help teams work together and produce code quickly. Integrations have been
+                        created in API driven systems to guarantee team’s traceability from story
+                        creation to code deployment and everything in between, including:</para>
                         <itemizedlist>
                             <listitem>
                                 <para>Integration with JIRA Issue Tracking</para>
@@ -946,15 +952,14 @@
                     </listitem>
                     <listitem>
                         <para><emphasis role="bold">Develop</emphasis> - Using Seed projects, teams
-                            can start coding in most popular languages from day 1 with batteries
-                            included for best practices and security, targeted for deployment with
-                            containers. By utilizing the development standards created here, it
-                            becomes easy to create code and release your first version in
-                            minutes.</para>
+                        can start coding in most popular languages from day one with batteries
+                        included for best practices and security, targeted for deployment with
+                        containers. By utilizing the development standards created here, it becomes
+                        easy to create code and release your first version in minutes.</para>
                         <itemizedlist>
                             <listitem>
-                                <para>Consistent Project Setup - Titan CLI will create and enforce
-                                    defined projects</para>
+                                <para>Consistent Project Setup - Titan Command Line Interface (CLI)
+                                will create and enforce defined projects</para>
                             </listitem>
                             <listitem>
                                 <para>GitOps - All processes use code to define state, giving full
@@ -971,9 +976,9 @@
                                     and enforce Squash Merge settings</para>
                             </listitem>
                             <listitem>
-                                <para>Build Tool and IDE integration - Comes with instructions on
-                                    how to adjust Build tooling to use internal repositories for
-                                    higher security</para>
+                                <para>Build Tool and integrated development environment (IDE)
+                                integration - Comes with instructions on how to adjust Build tooling
+                                to use internal repositories for higher security</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -1064,7 +1069,7 @@
                 </itemizedlist>
         </sect2>
         <sect2>
-            <title>Continuous Deployment</title><figure xml:id="FrameworkforContinousDeployment">
+            <title>Continuous Deployment (CD)</title><figure xml:id="FrameworkforContinousDeployment">
                 <title>Framework for Continuous Deployment</title>
                 <mediaobject>
                     <imageobject>
@@ -1081,8 +1086,8 @@
                             <itemizedlist>
                                 <listitem>
                                     <para>Titan Deploy allows teams to execute deployments without
-                                        knowing anything about target Kubernetes environment but the
-                                        name</para>
+                                    knowing anything about target Kubernetes environment but the
+                                    name.</para>
                                 </listitem>
                             </itemizedlist>
                         </listitem>
@@ -1099,7 +1104,7 @@
                                 </listitem>
                                 <listitem>
                                     <para>Titan Deploy allows teams to promote without knowing
-                                        anything about the target environment but the name</para>
+                                    anything about the target environment but the name.</para>
                                 </listitem>
                             </itemizedlist>
                         </listitem>
@@ -1109,15 +1114,15 @@
                                 maintain applications in each environment.</para>
                             <itemizedlist>
                                 <listitem>
-                                    <para>Kubernetes Role Based Access Controls (RBAC) - Restricts
-                                        all users from directly publishing artifacts to the cluster,
-                                        enforcing that nothing is deployed without committing code
-                                        for traceability</para>
+                                    <para>Kubernetes Role Based Access Controls (RBAC) restricts all
+                                    users from directly publishing artifacts to the cluster,
+                                    enforcing that nothing is deployed without committing code for
+                                    traceability.</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Creates Team-based spaces, allowing teams to perform
-                                        necessary functions within their own teams without impacting
-                                        other team’s deployments</para>
+                                    <para>Creating Team-based spaces allows teams to perform
+                                    necessary functions within their own teams without impacting
+                                    other team’s deployments.</para>
                                 </listitem>
                             </itemizedlist>
                         </listitem>
@@ -1136,18 +1141,18 @@
         </sect2>
         <sect2>
             <title>Packaging and Distribution</title>
-            <para>Teams will be targeting JAR distributions to maven central. These will be created
-                via build server from an internal version control repository (VCS). This code will
-                be published to a public VCS (HL7 GitHub). The java packages (jars, wars, etc) will
-                be published to the local artifact repository, then promoted to Sonatype via a
-                managed sonatype account. This will then promote to maven central as part of the
-                release process.</para>
+            <para>Teams will be targeting Java archive (JAR) distributions to maven central. These
+                will be created via build server from an internal version control repository (VCS).
+                This code will be published to a public VCS (HL7 GitHub). The java packages (jars,
+                wars, etc) will be published to the local artifact repository, then promoted to
+                Sonatype via a managed sonatype account. This will then promote to maven central as
+                part of the release process.</para>
             <para>With installed client software, installation packages will be created to download
                 and package the installation for execution. We will approach first installations
-                directly on Windows using an MSI installer and MacOS using a DMG installation. After
-                this, we will discuss possibilities of other platforms and package formats, such as
-                deploying on Linux servers, virtual machine images, and</para>
-            <para>container images. Based on the work, we will prioritize this based on customer
+                directly on Windows using a Microsoft Installer (MSI) and MacOS using a Disk Image
+                (DMG) installation. After this, we will discuss possibilities of other platforms and
+                package formats, such as deploying on Linux servers, virtual machine images, and
+                container images. Based on the work, we will prioritize this based on customer
                 feedback. Initial software installation packages have already been created and are
                 being tested.</para>
             <para>Web Applications on the platform will be targeting Linux installations using
@@ -1179,39 +1184,39 @@
             allow for some concurrency in use. This, however, needs to be tested to validate that no
             corruption of data occurs, and that expected load can be maintained. Performance testing
             will need to start with web access first, followed by direct access from users.
-            Performance SLAs will need to be further flushed out and defined, and automated
-            performance tests will need to be created to execute at each sprint end, prior to a
-            release. As currently no part of this exists, this will be something we focus on in the
-            architecture and design discussions.</para>
+            Performance service level agreemnts (SLAs) will need to be further flushed out and
+            defined, and automated performance tests will need to be created to execute at each
+            sprint end, prior to a release. As currently no part of this exists, this will be
+            something we focus on in the architecture and design discussions.</para>
     </sect1>
     <sect1>
         <title>License</title>
         <para>As we prepare to make the products available with installers, teams will need to do a
             thorough analysis of licenses and attribution requirements. As the project plans on only
             using open-source licenses to reduce cost and increase adoption, we must maintain that
-            we are compliant with this requirement and the different open-sourced licenses. This may
+            we are compliant with this requirement and the different open-source licenses. This may
             require interfacing with legal teams and use of license scanning to ensure no conflicts
             of purpose.</para>
     </sect1>
     <sect1>
         <title>Security</title>
-        <para>As part of the Continuous Integration processes, we will integrate Security scanning.
-            Security scans will be applied so that users can be sure that code that is installed
-            will not have adverse effects on the installed computer. Also, it needs to ensure that
-            bad actors don’t get access to data that they should not be privileged to. To accomplish
-            this, our team will need to include several forms of SAST and Dynamic Application
-            Security Testing (DAST).</para>
+        <para>As part of the CI processes, we will integrate Security scanning. Security scans will
+            be applied so that users can be sure that code that is installed will not have adverse
+            effects on the installed computer. Also, it needs to ensure that bad actors don’t get
+            access to data that they should not be privileged to. To accomplish this, our team will
+            need to include several forms of SAST and Dynamic Application Security Testing
+            (DAST).</para>
         <para>SAST helps to analyze a software program without executing the program, providing
             security scanning and defect scanning. Comparing with dynamic analysis, static analysis
             analyses the exact source code line while dynamic analysis analyses the program while it
             is being executed; by performing analysis of all kinds of tests on the object codes and
-            executable. In summary, static analysis tools help</para>
+            executable. In summary, static analysis tools help:</para>
         <itemizedlist>
             <listitem>
-                <para>To detect possible bugs which the debugger is unable to detect</para>
+                <para>detect possible bugs which the debugger is unable to detect.</para>
             </listitem>
             <listitem>
-                <para>To provide vulnerability and remediation information</para>
+                <para>provide vulnerability and remediation information.</para>
             </listitem>
         </itemizedlist>
         <para>DAST helps to analyze a software program while the program is executing, determining
@@ -1221,17 +1226,19 @@
     </sect1>
     <sect1>
         <title>Privacy Needs</title>
-        <para>As we further develop this tool, that may contain information that is sensitive, with
-            things like HIPPA protected information and Personally Identifiable Information (PII),
-            it becomes very important that this data protected. Communications will need to be
-            designed to require encryption in transit. Services will need to be designed to require
-            encryption at rest. To share any data, there will need to be designed sharing patterns
-            that either strip information of identifying information and aggregate it with other
-            information, or it will need to facilitate data sharing agreements as part of the
-            sharing process.</para>
+        <para>As we further develop this reference implementation that may contain sensitive
+            information, with things like Health Insurance Portability and Accountability Act
+            (HIPPA) protected information and Personally Identifiable Information (PII), it becomes
+            very important that this data protected. Communications will need to be designed to
+            require encryption in transit. Services will need to be designed to require encryption
+            at rest. To share any data, there will need to be designed sharing patterns that either
+            strip information of identifying information and aggregate it with other information, or
+            it will need to facilitate data sharing agreements as part of the sharing
+            process.</para>
         <para>This is a complex topic, and we will need to bring in security experts as part of this
             process to make sure that this is maintained. Also, we will need to have notification
-            systems in place to cover 0-day issues and allow us to regularly update the codebase to
-            address security concerns as the product matures.</para>
+            systems in place to cover zero-day issues and allow us to regularly update the codebase
+            to address security concerns as the product matures.</para>
     </sect1>
 </chapter>
+
