@@ -413,11 +413,10 @@
             chunks of related information into smaller parts. [8]</para>
         <para>Today, clinical statements are often represented in unpredictable and denormalized
             forms, which makes reliable and safe decision support challenging and reduces the
-            quality of other types of data processing. Analysis Normal Form (ANF) is an approach to
-            clinical statements that ensures the statement representation is reproducible and
-            scalable, with the adherence to principles of being simple, reproducible, and use case
-            driven, with a clean separation between statement concerns and terminology concerns.
-            [8]</para>
+            quality of other types of data processing. ANF is an approach to clinical statements
+            that ensures the statement representation is reproducible and scalable, with the
+            adherence to principles of being simple, reproducible, and use case driven, with a clean
+            separation between statement concerns and terminology concerns. [8]</para>
         <para>In linguistics, words have their very own definitions, however, if it’s not paired
             with proper sentence structure, the words convey very little meaning and are open to
             interpretation. When this framework is applied to the healthcare system, clinical data,
@@ -528,9 +527,9 @@
                     <itemizedlist>
                         <listitem>
                             <para>Federal, State, and Local Public Health Reporting Requirements use
-                                messaging standards such as Health Level Seven (HL7). Inside these
-                                messages, laboratories and clinical systems use LOINC® codes to
-                                identify which test is being reported.</para>
+                                messaging standards such as HL7. Inside these messages, laboratories
+                                and clinical systems use LOINC® codes to identify which test is
+                                being reported.</para>
                         </listitem>
                     </itemizedlist>
                 </para>

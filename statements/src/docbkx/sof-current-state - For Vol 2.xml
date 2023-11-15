@@ -7,41 +7,38 @@
     <section>
         <title>Purpose</title>
         <para>In an effort to resolve the challenges posed by data interoperability and unlock the
-            full potential of RWD and RWE across the health care system, the Systemic Harmonization
-            and Interoperability Enhancement for Laboratory Data (SHIELD) collaborative was formed.
-            The SHIELD collaborative is a multi-agency/stakeholder public-private initiative to
-            develop and implement collaborative policies and business models to overcome lab
-            interoperability barriers. Due to the complexity and vastness of this issue, SHIELD has
-            embraced an ecosystem perspective that recognizes no single entity has the authority or
-            influence to meaningfully impact the state of lab interoperability. SHIELD stakeholders
-            include in vitro diagnostic (IVD) manufacturers, commercial and clinical center
-            laboratories, professional organizations, electronic health record (EHR)vendors, Pew
-            Charitable Trusts, numerous federal agencies, standards development organizations, and
-            patient advocates. SHIELD’s overall objective is to ensure lab interoperability such
-            that the same type of device is described the same way throughout EHRs. </para>
-        <para>The purpose of this Summary of Findings – Current State of Real World Evidence (RWE)
-            Analytics including but not limited to information retrieval and Knowledge Management
-            (KM) and discovery is to explore the current state of real-world data and real-world
-            evidence as it pertains to lab data interoperability, U.S. Food and Drug Administration
-            (FDA) market approval and post-market surveillance, public health, clinical care, and
-            related areas. </para>
+            full potential of RWD and RWE across the health care system, the SHIELD collaborative
+            was formed. The SHIELD collaborative is a multi-agency/stakeholder public-private
+            initiative to develop and implement collaborative policies and business models to
+            overcome lab interoperability barriers. Due to the complexity and vastness of this
+            issue, SHIELD has embraced an ecosystem perspective that recognizes no single entity has
+            the authority or influence to meaningfully impact the state of lab interoperability.
+            SHIELD stakeholders include IVD manufacturers, commercial and clinical center
+            laboratories, professional organizations, EHR vendors, Pew Charitable Trusts, numerous
+            federal agencies, standards development organizations, and patient advocates. SHIELD’s
+            overall objective is to ensure lab interoperability such that the same type of device is
+            described the same way throughout EHRs. </para>
+        <para>The purpose of this Summary of Findings – Current State of RWE Analytics including but
+            not limited to information retrieval and Knowledge Management and discovery is to
+            explore the current state of real-world data and real-world evidence as it pertains to
+            lab data interoperability, FDA market approval and post-market surveillance, public
+            health, clinical care, and related areas. </para>
     </section>
     <section>
         <title>Introduction</title>
         <section>
             <title>Executive Summary</title>
-            <para>Real World Data (RWD) and RWE have received significant attention in recent years
-                from the health care community and federal health organizations. The potential value
-                of RWD which can include information from electronic health records, laboratory
-                testing, pharmacy records, environmental testing, and patient self-reports offers
-                the possibility to harness the day-to-day aspects of health care delivery and
-                outcomes as a source of information and evidence (i.e., RWE) that is far broader
-                than typical, “closed loop” clinical trial data sets. The applications of RWD and
-                RWE, both in isolation and in conjunction with traditional clinical trial
-                methodologies, represent immense potential in advancing medical research, developing
-                and evaluating new therapies, assessing post-market safety and efficacy, improving
-                patient care, expanding public health surveillance, and enabling effective pandemic
-                response measures. </para>
+            <para>RWD and RWE have received significant attention in recent years from the health
+                care community and federal health organizations. The potential value of RWD which
+                can include information from electronic health records, laboratory testing, pharmacy
+                records, environmental testing, and patient self-reports offers the possibility to
+                harness the day-to-day aspects of health care delivery and outcomes as a source of
+                information and evidence (i.e., RWE) that is far broader than typical, “closed loop”
+                clinical trial data sets. The applications of RWD and RWE, both in isolation and in
+                conjunction with traditional clinical trial methodologies, represent immense
+                potential in advancing medical research, developing and evaluating new therapies,
+                assessing post-market safety and efficacy, improving patient care, expanding public
+                health surveillance, and enabling effective pandemic response measures. </para>
             <para>Unfortunately, RWD and RWE face numerous obstacles that hinder their reliable
                 widespread use. The realization of RWD’s full potential is faced with a variety of
                 challenges, ranging from data quality and bias, lack of standardization, data access
@@ -110,15 +107,15 @@
             study with traditional methods, such as with lesser understood conditions, smaller
             patient populations, and long follow-up periods. [4] However, during the SARS-CoV-2
             pandemic, RWD comprised the primary source of information available to the medical
-            community to understand the coronavirus disease 2019 (COVID-19), evaluate the safety and
-            efficacy of IVD testing, antigen testing, and vaccination safety/efficacy. As an
-            example, the State of Nebraska Department of Epidemiology and the Nebraska Public Health
-            Laboratory operated large numbers of specimen collection centers for COVID testing. Each
-            patient was required to report symptom status for loss of smell or taste prior to
-            testing by antigen or polymerase chain reaction (PCR). Analysis showed that the presence
-            of one or both symptoms had a positive predictive value (PPV) of 80% for COVID. These
-            RWD provided the RWE to support pool testing of specimens to conserve testing reagents
-            during a period of severe test supply shortages. [5] </para>
+            community to understand COVID, evaluate the safety and efficacy of IVD testing, antigen
+            testing, and vaccination safety/efficacy. As an example, the State of Nebraska
+            Department of Epidemiology and the Nebraska Public Health Laboratory operated large
+            numbers of specimen collection centers for COVID testing. Each patient was required to
+            report symptom status for loss of smell or taste prior to testing by antigen or
+            polymerase chain reaction (PCR). Analysis showed that the presence of one or both
+            symptoms had a positive predictive value (PPV) of 80% for COVID. These RWD provided the
+            RWE to support pool testing of specimens to conserve testing reagents during a period of
+            severe test supply shortages. [5] </para>
         <para>The use of RWD that is of sufficient quality to be used as RWE for purposes of FDA
             market approval and post-market surveillance of medicines and in IVD presents a
             potential rich environment and supplement to the current gold-standard controlled
@@ -140,12 +137,11 @@
             <title>Current RWD Uses</title>
             <para>There are several national and international efforts to aggregate and expose
                 EHR/RWD for use by researchers and public health scientists. Such efforts include
-                the National Patient-Centered Clinical Research Network (PCORnet), Observational
-                Health Data Sciences and Informatics (OHDSI), National Covid Cohort Collaborative
-                (N3C) and its potential spin offs. Common to each of these efforts is the extraction
-                of EHR data from participating entities, transforming these data to a common data
-                model, annotating/managing the data with standardized medical terminologies and
-                aggregating entities’ datasets in consolidated or federated mechanisms for analyses. </para>
+                PCORnet, OHDSI, N3C and its potential spin offs. Common to each of these efforts is
+                the extraction of EHR data from participating entities, transforming these data to a
+                common data model, annotating/managing the data with standardized medical
+                terminologies and aggregating entities’ datasets in consolidated or federated
+                mechanisms for analyses. </para>
         </section>
         <section>
             <title>National Covid Cohort Collaborative (N3C)</title>
@@ -174,20 +170,19 @@
                 within the enclave. </para>
             <para>N3C has paved the way as a successful model for other data enclaves. Data
                 codification is well described, and the data harmonization team ingests limited data
-                sets and transforms them according to a harmonized Observational Medical Outcomes
-                Partnership (OMOP) analytics data set. Data and code provenance are tracked through
-                the platform. Privacy Preserving Record Linkage (PPRL) is used to securely connect
-                records while maintaining the anonymity of an individual across multiple records and
-                may enhance COVID-19 RWD research in N3C through de-duplication of patient records,
-                linking patient records from different sources, and cohort discovery. Organizations
-                submitting data must have an approved Data Transfer Agreement (DTA), and an optional
-                Linkage Honest Broker Agreement (LHBA), through which organizations maintain control
-                over their data. Data analyses must be performed within the platform and is
-                supported through R, Python, and Slate. R packages include SciPy and scikit-learn
-                and are pre-installed, and others can be added by contacting the data enclave
-                support team. Overall, the enclave provides a secure and focused space for research
-                collaboration and has proven its impact through hundreds of peer reviewed,
-                scientific publications. </para>
+                sets and transforms them according to a harmonized OMOP analytics data set. Data and
+                code provenance are tracked through the platform. Privacy Preserving Record Linkage
+                (PPRL) is used to securely connect records while maintaining the anonymity of an
+                individual across multiple records and may enhance COVID-19 RWD research in N3C
+                through de-duplication of patient records, linking patient records from different
+                sources, and cohort discovery. Organizations submitting data must have an approved
+                Data Transfer Agreement (DTA), and an optional Linkage Honest Broker Agreement
+                (LHBA), through which organizations maintain control over their data. Data analyses
+                must be performed within the platform and is supported through R, Python, and Slate.
+                R packages include SciPy and scikit-learn and are pre-installed, and others can be
+                added by contacting the data enclave support team. Overall, the enclave provides a
+                secure and focused space for research collaboration and has proven its impact
+                through hundreds of peer reviewed, scientific publications. </para>
             <para>The successes of the N3C data enclave are not without limitations. Data sets are
                 geographically limited to the U.S., and only patients with known COVID-19 positive
                 tests are included. This may preclude large populations of patients with alternative
@@ -201,9 +196,12 @@
                 enclave would benefit from expanding its horizon beyond COVID-19 to other conditions
                 and general disease surveillance. [6] </para>
     </section>
-            <section>
-                <title>Patient-Centered Outcomes Research Institute (PCORI) &amp; National
+        <section>
+            <title>Patient-Centered Outcomes Research Institute (PCORI) &amp; National
                 Patient-Centered Clinical Research Network (PCORnet)</title>
+        </section>
+            <section>
+                <title/>
                 <para>The Patient-Centered Outcomes Research Institute (PCORI) is an independent,
                 nonprofit, and leading funder of patient-centered comparative clinical effectiveness
                 research in the United States. The primary goal of PCORI is to increases useful
@@ -261,15 +259,19 @@
                 </section>
         <section>
             <title>Observational Health Data Sciences and Informatics (OHDSI)</title>
-            <para>Founded in 2014, the Observational Health Data Sciences and Informatics (OHDSI) is an 
-                interdisciplinary collaborative that aims to maximize value in health data through large-scale 
-                analytics and a common data model. The stated mission of OHDSI is “to improve health by 
-                empowering a community to collaboratively generate the evidence that promotes better health 
-                decisions and better care”. In terms of scale, the program consists of over 3,000 contributors 
-                (including universities, private companies, government agencies, and others) with data records 
-                that represent 810 million unique individuals. OHDSI works to the benefit of patients, providers, 
-                and researchers as well as larger organizations such as hospital systems and government 
-                agencies. The solutions and products that OHDSI develops are all open source. [12]</para>
+        </section>
+        <section>
+            <title/>
+            <para>Founded in 2014, the OHDSI is an interdisciplinary collaborative that aims to
+                maximize value in health data through large-scale analytics and a common data model.
+                The stated mission of OHDSI is “to improve health by empowering a community to
+                collaboratively generate the evidence that promotes better health decisions and
+                better care”. In terms of scale, the program consists of over 3,000 contributors
+                (including universities, private companies, government agencies, and others) with
+                data records that represent 810 million unique individuals. OHDSI works to the
+                benefit of patients, providers, and researchers as well as larger organizations such
+                as hospital systems and government agencies. The solutions and products that OHDSI
+                develops are all open source. [12]</para>
             <para><emphasis role="bold">Successes</emphasis></para>
             <para>OHDSI has made significant progress in the 8+ years since its founding, emerging
                 from the legacy OMOP program. Among its largest accomplishments, the collaborative
