@@ -37,22 +37,22 @@
             efficient manner.</para>
     </section>
     <section>
-        <title>Overview of IKM Book</title>
-        <para>This Integrated Knowledge Management (IKM) Book serves as an educational resource to
-            allow stakeholders to perform a deep dive into the IKM Architecture this team has worked
-            to develop. </para>
+        <title>Overview of IKM Volumes</title>
+        <para>These Integrated Knowledge Management (IKM) Volumes serve as an educational resource
+            to allow stakeholders to perform a deep dive into the IKM Architecture this team has
+            worked to develop. </para>
         <section>
             <title>Purpose of This Document</title>
-            <para>This book will act as 1) a reference for understanding the complex, multi-layered,
-                and highly inter-dependent Health IT landscape, and 2) a framework for the
-                implementation of a layered, architecture-based approach to integrating and managing
-                knowledge in the healthcare ecosystem that will seek to solve the previously
-                identified issues.</para>
+            <para>These volumes will act as 1) a reference for understanding the complex,
+                multi-layered, and highly inter-dependent Health IT landscape, and 2) a framework
+                for the implementation of a layered, architecture-based approach to integrating and
+                managing knowledge in the healthcare ecosystem that will seek to solve the
+                previously identified issues.</para>
             <para>This framework, referred to throughout this book as the Knowledge Architecture, is
                 a methodology seeking to enable the concept of Integrated Knowledge Management
                 throughout the healthcare ecosystem.</para>
-            <para>Through examples and illustrations, this book seeks to demonstrate that such an
-                approach for managing knowledge will allow for:</para>
+            <para>Through examples and illustrations, these volumes seeks to demonstrate that such
+                an approach for managing knowledge will allow for:</para>
             <itemizedlist>
                 <listitem>
                     <para><emphasis role="italic">The ability to recognize equivalence between
@@ -76,9 +76,10 @@
                             technologies and policies are implemented.</emphasis></para>
                 </listitem>
             </itemizedlist>
-            <para>The intent of the IKM Book is to have a direct connection to real world events and
-                circumstances. For a granular and detailed breakdown of real world examples, please
-                refer to the forthcoming Appendix.</para>
+            <para>The intent of the IKM Volumes is to have a direct connection to real world events
+                and circumstances. For a granular and detailed breakdown of real world examples,
+                please refer to the forthcoming
+                <?oxy_comment_start author="rgeorgacopoulos" timestamp="20231121T165717-0500" comment="add link to appendix when created "?>Appendix<?oxy_comment_end?>.</para>
         </section>
         <section>
             <title>IKM Guiding Principles</title>
