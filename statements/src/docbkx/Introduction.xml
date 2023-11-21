@@ -48,8 +48,8 @@
                 for the implementation of a layered, architecture-based approach to integrating and
                 managing knowledge in the healthcare ecosystem that will seek to solve the
                 previously identified issues.</para>
-            <para>This framework, referred to throughout this book as the Knowledge Architecture, is
-                a methodology seeking to enable the concept of Integrated Knowledge Management
+            <para>This framework, referred to throughout the volumes as the Knowledge Architecture,
+                is a methodology seeking to enable the concept of Integrated Knowledge Management
                 throughout the healthcare ecosystem.</para>
             <para>Through examples and illustrations, these volumes seeks to demonstrate that such
                 an approach for managing knowledge will allow for:</para>
@@ -97,8 +97,8 @@
                 standards development organizations. In these cases, SoC allows teams to
                 simultaneously work independently and in coordination with each other and reuse the
                 resulting artifacts.</para>
-            <para>The architecture presented in this book is inspired by core evolutionary design
-                principles called “Understandable, Reproducible, and Useful,” upon which
+            <para>The architecture presented in these volumes is inspired by core evolutionary
+                design principles called “Understandable, Reproducible, and Useful,” upon which
                 Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®) development is
                 still based. [1, 2] These criteria describe an approach for improving data quality
                 and increasing data integrity and agility: </para>
@@ -347,7 +347,7 @@
         <para>This section is currently a placeholder.</para>
     </section>
     <section>
-        <title> IKM Book Introduction</title>
+        <title> IKM Volumes Introduction</title>
         <section>
             <title>The Promise of Health Information Technology</title>
             <para>Health Information Technology (IT), or the use of computer hardware, software, or
