@@ -232,7 +232,7 @@
             <para>Ideally, to support RWE analytics and aggregation, enterprise terminology requires
                 an integrated terminology using a common representation (metadata) and management. A
                 common terminology model, such as HL7 Standardized Terminology Knowledge Base (also
-                known as TermINology Knowledge Architecture or TINKAR) would allow analytics on top
+                known as TermINology Knowledge Architecture [Tinkar]) would allow analytics on top
                 of aggregated RWE data sets the following [7]: </para>
             <para>
                 <itemizedlist>
