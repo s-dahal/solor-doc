@@ -36,7 +36,7 @@
         <sect2>
             <title>Stakeholder Interviews</title>
             <para>Stakeholder interviewers were conducted on identified individuals that had either
-                prior experience with the existing KM code base (e.g., Komet, ISAAC, TINKAR-core) or
+                prior experience with the existing KM code base (e.g., Komet, ISAAC, Tinkar-core) or
                 the Informatics Knowledge Architecture (e.g., a description-logic based integration
                 of <emphasis role="bold">S</emphasis>N<emphasis role="bold">O</emphasis>MED CT®,
                     <emphasis role="bold">LO</emphasis>INC®, and <emphasis role="bold"
@@ -89,10 +89,10 @@
         <sect2>
             <title>Architecture and Documentation Review</title>
             <para>Identified through various stakeholder interviews were Unified Modeling Language
-                (UML) diagrams that detailed some aspects of TINKAR data structure and overall class
-                hierarchy. These were found within HL7 informational ballot for TINKAR and some HL7
+                (UML) diagrams that detailed some aspects of Tinkar data structure and overall class
+                hierarchy. These were found within HL7 informational ballot for Tinkar and some HL7
                 Vocabulary working group presentations. There were also some identified attempts at
-                using JetBrains IntelliJ IDEA IDE to auto-generate UML class diagrams of core TINKAR
+                using JetBrains IntelliJ IDEA IDE to auto-generate UML class diagrams of core Tinkar
                 concepts.</para>
             <para>As mentioned previously, some pre-existing Jira and Confluence websites (Logica)
                 were identified and found to contain some outdated information regarding the
@@ -113,7 +113,7 @@
                     </mediaobject>
                 </figure>
             <figure xml:id="UnitTestCodeCoverageReportforTinkarusingJaCoCo">
-                <title>Unit Test Code Coverage Report for TINKAR using JaCoCo</title>
+                <title>Unit Test Code Coverage Report for Tinkar using JaCoCo</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Tinkar%20using%20JaCoCo.png"/>
@@ -124,13 +124,13 @@
                     <xref linkend="UnitTestCodeCoverageReportforKometUsingJaCoCo"/> and <xref
                     linkend="UnitTestCodeCoverageReportforTinkarusingJaCoCo"/> above, JaCoCo only
                 identified about 25.8% of functional code as adequately covered by unit tests. In
-                contrast, a Maven module within the TINKAR-core codebase called “integration” was
+                contrast, a Maven module within the Tinkar-core codebase called “integration” was
                 identified as containing several large integration tests. These integration tests
                 currently use Junit5 (historically TestNG) to build test suites to validate that the
-                three main TINKAR providers Ephemeral,  ulti-version store (MVStore), and Spined
-                Array properly load a preset test sample of TINKAR data. The selection of and
+                three main Tinkar providers Ephemeral, ulti-version store (MVStore), and Spined
+                Array properly load a preset test sample of Tinkar data. The selection of and
                 adequate testing suite is important because the codebase utilizes inversion of
-                controls (or dependency injection) to start appropriate TINKAR-core “services” which
+                controls (or dependency injection) to start appropriate Tinkar-core “services” which
                 requires the testing suite to have proper setup and tear annotations.</para>
             <para>Overall, the codebase had low code maturity. This is attributed to a lack of
                 continuous integration and continuous delivery infrastructure. It was identified
@@ -1155,9 +1155,9 @@
                 container images. Based on the work, we will prioritize this based on customer
                 feedback. Initial software installation packages have already been created and are
                 being tested.</para>
-            <para>Web Applications on the platform will be targeting Linux installations using
-                containerized deployments. For initial releases, we will test this in Kubernetes and
-                distribute for use on a DockerHub account.</para>
+            <para>Web Applications on the reference implementation will be targeting Linux
+                installations using containerized deployments. For initial releases, we will test
+                this in Kubernetes and distribute for use on a DockerHub account.</para>
             <para>With any of these distribution packages, our long-term goal is to set up
                 maintainable processes that allow us to test them on a variety of different setups
                 before committing to distribution. These processes will be captured in the code as

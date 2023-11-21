@@ -29,12 +29,12 @@
         <para>A product playbook is a guide for helping developers, product owners, and managers to
             build products faster, with fewer bugs and better user experience. It is a collection of
             high-level user stories and elaborated acceptance criteria. This playbook specifically
-            showcases the Komet reference implementation for IKM capabilities and identifies
-            necessary functionality and capabilities to establish a collaborative, robust, and
-            highly reliable Knowledge Management Platform (KMP). It will serve as a guide for the
-            development and implementation of the Komet reference implementation and other technical
-            components (e.g., TINKAR-core, Web Application), while also suggesting specific
-            technologies and products that could be used in the development process.</para>
+            showcases the Komet contributed application and identifies necessary functionality and
+            capabilities to establish a collaborative, robust, and highly reliable Knowledge
+            Management Platform (KMP). It will serve as a guide for the development and
+            implementation of the Komet contributed application and other technical components
+            (e.g., Tinkar-core, Web Application), while also suggesting specific technologies and
+            products that could be used in the development process.</para>
         <para>The overarching objectives of this playbook are to:</para>
         <orderedlist>
             <listitem>
@@ -54,74 +54,79 @@
             criteria.</para>
         <sect2>
             <title>Installer</title>
-            <para>As a Komet Application user, I want to install the latest version of the Komet
-                Application easily across various types of computers and devices, so that I can
-                utilize the latest capabilities and features for working with TINKAR-based knowledge
-                data:</para>
+            <para>As a Komet contributed application user, I want to install the latest version of
+                the Komet contributed application easily across various types of computers and
+                devices, so that I can utilize the latest capabilities and features for working with
+                Tinkar-based knowledge data:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given an end-user wanting to install Komet on their Windows desktop, when
-                        they click the installation file (e.g., .msi), then the installer should
-                        straightforwardly install the Komet desktop application.</para>
+                    <para>Given an end-user wanting to install the Komet contributed application on
+                        their Windows desktop, when they click the installation file (e.g., .msi),
+                        then the installer should straightforwardly install the desktop component of
+                        the Komet contributed application.</para>
                 </listitem>
                 <listitem>
-                    <para>Given an end-user wanting to install Komet on their macOS desktop, when
-                        they click the installation file (e.g., .pkg), then the installer should
-                        straightforwardly install the Komet desktop application.</para>
+                    <para>Given an end-user wanting to install the Komet contributed application on
+                        their macOS desktop, when they click the installation file (e.g., .pkg),
+                        then the installer should straightforwardly install the desktop component of
+                        the Komet contributed application.</para>
                 </listitem>
                 <listitem>
-                    <para>Given an end-user wanting to install Komet on their Linux desktop, when
-                        they click the installation file (e.g., .deb), then the installer should
-                        straightforwardly install the Komet desktop application.</para>
+                    <para>Given an end-user wanting to install the Komet contributed application on
+                        their Linux desktop, when they click the installation file (e.g., .deb),
+                        then the installer should straightforwardly install the desktop component of
+                        the Komet contributed application.</para>
                 </listitem>
                 <listitem>
-                    <para>Given an end-user wanting to install the Komet mobile application on their
-                        iOS device, when they navigate to the iOS App Store, search for Komet, and
-                        select “install”, then the App Store should seamlessly install the iOS
-                        version of Komet.</para>
+                    <para>Given an end-user wanting to install the mobile Komet contributed
+                        application on their iPhone Operating System (iOS) device, when they
+                        navigate to the iOS App Store, search for Komet, and select “install”, then
+                        the App Store should seamlessly install the iOS component of the Komet
+                        contributed application.</para>
                 </listitem>
                 <listitem>
-                    <para>Given an end-user wanting to install the Komet mobile application on their
-                        Android device, when they navigate to the Google Play Store, search for
-                        Komet, and select “install”, then the Google Play Store should seamlessly
-                        install the Android version of Komet.</para>
+                    <para>Given an end-user wanting to install the mobile Komet contributed
+                        application on their Android device, when they navigate to the Google Play
+                        Store, search for Komet, and select “install”, then the Google Play Store
+                        should seamlessly install the Android component of the Komet contributed
+                        application.</para>
                 </listitem>
                 <listitem>
                     <para>Given an end-user running the Komet desktop installer, when they select an
-                        option to install a sample TINKAR data set, then the installation wizard
+                        option to install a sample Tinkar data set, then the installation wizard
                         should copy the appropriate data set into &lt;Home>/Solor directory.</para>
                 </listitem>
                 <listitem>
                     <para>Given an end-user running the Komet desktop installer, when they select an
-                        option to install custom TINKAR data sets, then the installation wizard
+                        option to install custom Tinkar data sets, then the installation wizard
                         should copy the appropriate data sets into &lt;Home>/Solor directory.</para>
                 </listitem>
                 <listitem>
                     <para>Given an end-user running the Komet desktop installer, when they select an
-                        option to install custom remote TINKAR data sets, then the installation
+                        option to install custom remote Tinkar data sets, then the installation
                         wizard should download and copy the appropriate data sets into
                         &lt;Home>/Solor directory.</para>
                 </listitem>
                 <listitem>
                     <para>Given an end-user running the Komet desktop installer, when they select an
-                        option to utilize a remote TINKAR datastore, then the installation wizard
+                        option to utilize a remote Tinkar datastore, then the installation wizard
                         should configure Komet to work with the user selected datastore.</para>
                 </listitem>
                 <listitem>
                     <para>Given an end-user running the Komet mobile installer (iOS, Android), when
-                        they select an option to install sample TINKAR data set, then the
+                        they select an option to install sample Tinkar data set, then the
                         installation wizard should copy the appropriate data set into the correct
                         mobile app directory.</para>
                 </listitem>
                 <listitem>
                     <para>Given an end-user running the Komet mobile installer (iOS, Android), when
-                        they select an option to custom remote TINKAR data set, then the
+                        they select an option to custom remote Tinkar data set, then the
                         installation wizard should copy the appropriate data set into the correct
                         mobile app directory.</para>
                 </listitem>
                 <listitem>
                     <para>Given an end-user running the Komet mobile installer (iOS, Android), when
-                        they select an option to utilize a remote TINKAR datastore, then the
+                        they select an option to utilize a remote Tinkar datastore, then the
                         installation wizard should configure Komet to work with the user selected
                         datastore.</para>
                 </listitem>
@@ -129,17 +134,17 @@
         </sect2>
         <sect2>
             <title>Development Operations (DevOps)</title>
-            <para>As a Komet, TINKAR-core, and Web Application developer, I want to follow industry
-                leading Development Operations (DevOps) best practices, so that the projects I
-                contribute to are able to safely manage and reduce risk incurred when I commit
-                source code changes:</para>
+            <para>As a Komet contributed application, Tinkar-core, and Web Application developer, I
+                want to follow industry leading Development Operations (DevOps) best practices, so
+                that the projects I contribute to are able to safely manage and reduce risk incurred
+                when I commit source code changes:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given a software developer committing code changes to the Komet,
-                        TINKAR-core, or the Web Application repository, when GitHub receives the
-                        push notification for the commit, then a subsequent event hook should be
-                        sent to Jenkins to start appropriate continuous integration and continuous
-                        delivery activities.</para>
+                    <para>Given a software developer committing code changes to the Komet
+                        contributed application, Tinkar-core, or the Web Application repository,
+                        when GitHub receives the push notification for the commit, then a subsequent
+                        event hook should be sent to Jenkins to start appropriate continuous
+                        integration and continuous delivery activities.</para>
                 </listitem>
                 <listitem>
                     <para>Given GitHub sending an event hook on a commit to Jenkins, when Jenkins
@@ -178,10 +183,10 @@
                         gateway.</para>
                 </listitem>
             </itemizedlist>
-            <para>As a Komet, TINKAR-core, and Web Application developer, I want to make available
-                the latest artifacts and binaries necessary for the rest of my team to develop their
-                features on, so that all developers are using the latest and most available
-                artifacts and dependencies:</para>
+            <para>As a Komet contributed application, Tinkar-core, and Web Application developer, I
+                want to make available the latest artifacts and binaries necessary for the rest of
+                my team to develop their features on, so that all developers are using the latest
+                and most available artifacts and dependencies:</para>
             <itemizedlist>
                 <listitem>
                     <para>Given a successful execution of a build pipeline, when Jenkins determines
@@ -190,20 +195,20 @@
                         repository.</para>
                 </listitem>
             </itemizedlist>
-            <para>As an open-source contributor to the Komet, TINKAR-core, and Web Application
-                projects, I want to be able to recommend my source code changes to the main
-                developer team, so that I can help improve the code base in an open, transparent,
-                and collaborative way:</para>
+            <para>As an open-source contributor to the Komet contributed application, Tinkar-core,
+                and Web Application projects, I want to be able to recommend my source code changes
+                to the main developer team, so that I can help improve the code base in an open,
+                transparent, and collaborative way:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given a software developer committing code changes to the Komet,
-                        TINKAR-core, or the Web Application repository, when GitHub receives a pull
-                        request notification, then a subsequent event hook should be sent to Jenkins
-                        to start appropriate continuous integration and continuous delivery
-                        activities.</para>
+                    <para>Given a software developer committing code changes to the Komet
+                        contributed application, Tinkar-core, or the Web Application repository,
+                        when GitHub receives a pull request notification, then a subsequent event
+                        hook should be sent to Jenkins to start appropriate continuous integration
+                        and continuous delivery activities.</para>
                 </listitem>
             </itemizedlist>
-            <para>As a developer of health IT systems, I want to easily be able to use TINKAR based
+            <para>As a developer of health IT systems, I want to easily be able to use Tinkar based
                 projects and solutions within my own implementations, so that my health IT systems
                 become more highly reliable and improve patient safety: </para>
             <itemizedlist>
@@ -245,14 +250,13 @@
                 <listitem>
                     <para>Given a successful execution of a build pipeline, when Jenkins determines
                         all quality control gateways have passed, then Jenkins will publish the
-                        newest build of the Integrated Knowledge Management book as a PDF to a
-                        public repository.</para>
+                        newest build of the IKM book as a PDF to a public repository.</para>
                 </listitem>
             </itemizedlist>
-            <para>As an open-source user of the TINKAR-based projects, I want to be able to report
-                any bugs and/or issues identified while using Komet and the Web Application, so that
-                I can improve the maturity and stability of all TINKAR-based project’s source
-                code:</para>
+            <para>As an open-source user of the Tinkar-based projects, I want to be able to report
+                any bugs and/or issues identified while using the Komet contributed application and
+                the Web Application, so that I can improve the maturity and stability of all
+                Tinkar-based project’s source code:</para>
             <itemizedlist>
                 <listitem>
                     <para>Given after a bug and/or issue has been identified by an end-user, when
@@ -264,36 +268,36 @@
         </sect2>
         <sect2>
             <title>Architecture</title>
-            <para>As a software architect, I want to create and outline necessary TINKAR-based
+            <para>As a software architect, I want to create and outline necessary Tinkar-based
                 application programmable interfaces, design specifications documents, and other
-                software artifacts, so that current and future development of Komet, TINKAR-core,
-                and the Web Application align with both the technical and functional vision of the
-                KMP:</para>
+                software artifacts, so that current and future development of the Komet contributed
+                application, Tinkar-core, and the Web Application align with both the technical and
+                functional vision of the KMP:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given there are several TINKAR-based software solutions, when a developer
+                    <para>Given there are several Tinkar-based software solutions, when a developer
                         is designing new features and capabilities to meet current and emerging
                         needs, then there needs to be an enterprise level design document that
-                        conveys how each software component interacts and manages TINKAR
+                        conveys how each software component interacts and manages Tinkar
                         data.</para>
                 </listitem>
                 <listitem>
-                    <para>Given that the TINKAR-based software is trying to establish a
-                        collaborative platform to share and manage various types of knowledge, when
-                        a developer is designing new features and capabilities to meet current and
-                        emerging needs, then there needs to be a Contribution model design document
-                        that conveys how various TINKAR-based software components share TINKAR data
-                        and what supporting technologies are necessary to facilitate reliable
-                        merging and extending of TINKAR data created and maintained by multiple
-                        users.</para>
+                    <para>Given that the Tinkar-based software is trying to establish a
+                        collaborative, contributed application to share and manage various types of
+                        knowledge, when a developer is designing new features and capabilities to
+                        meet current and emerging needs, then there needs to be a Contribution model
+                        design document that conveys how various Tinkar-based software components
+                        share Tinkar data and what supporting technologies are necessary to
+                        facilitate reliable merging and extending of Tinkar data created and
+                        maintained by multiple users.</para>
                 </listitem>
                 <listitem>
                     <para>Given the abundance of popular data processing methodologies and
                         frameworks within the software and data science industry, when a developer
                         is designing new features and capabilities to meet current and emerging data
-                        processing needs, then there needs to be a TINKAR Processing Model design
+                        processing needs, then there needs to be a Tinkar Processing Model design
                         document that conveys what types of data processing paradigms are
-                        appropriate when working with TINKAR data in a KMP.</para>
+                        appropriate when working with Tinkar data in a KMP.</para>
                 </listitem>
                 <listitem>
                     <para>Given the abundance of popular client server architectures and a focus on
@@ -301,23 +305,23 @@
                         is designing new features and capabilities to meet current and emerging data
                         processing needs, then there needs to be a GraphQL Integration Model design
                         document that conveys how GraphQL can reduce implementation complexity when
-                        querying based on TINKAR coordinates.</para>
+                        querying based on Tinkar coordinates.</para>
                 </listitem>
                 <listitem>
                     <para>Given the benefit of using Application Programming Interfaces (APIs) to
                         standardize the implementation of various components within a complex
                         software architecture, when a developer is designing new imports and exports
-                        for an arbitrary knowledge standard to be transformed into a TINKAR-based
-                        data representation, then there needs to be a TINKAR Extract Transform Load
+                        for an arbitrary knowledge standard to be transformed into a Tinkar-based
+                        data representation, then there needs to be a Tinkar Extract Transform Load
                         (ETL) API that safely constrains how a developer can implement an ETL
                         algorithm on a knowledge standard.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the complexity of the TINKAR data model and the impact that a
+                    <para>Given the complexity of the Tinkar data model and the impact that a
                         particular datastore’s design can have when trying to work with bespoke data
-                        models (such as TINKAR), when a developer is designing new features and
+                        models (such as Tinkar), when a developer is designing new features and
                         capabilities to meet current and emerging data persistence needs, then there
-                        needs to be a TINKAR Datastore design document that outlines appropriate
+                        needs to be a Tinkar Datastore design document that outlines appropriate
                         supporting data store technologies and describes in detail how to
                         implementations using such technologies.</para>
                 </listitem>
@@ -342,125 +346,127 @@
                         centralize developer documentation within the code base itself.</para>
                 </listitem>
             </itemizedlist>
-            <para>As an end-user of the KMP, I want to be able to access my TINKAR knowledge data
+            <para>As an end-user of the KMP, I want to be able to access my Tinkar knowledge data
                 through various formats and across multiple devices, so that I am not limited to
-                just a desktop when working with my TINKAR data:</para>
+                just a desktop when working with my Tinkar data:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given the need for a user to access TINKAR data across multiple form
-                        factors, when a user wants to access TINKAR data, then there needs to be an
-                        implementation of a centralized Web application that follows reactive web
-                        technologies to enable simple TINKAR data browsing and curation across
+                    <para>Given the need for a user to access Tinkar data across multiple form
+                        factors, when a user wants to access Tinkar data, then there needs to be an
+                        implementation of a centralized Web Application that follows reactive web
+                        technologies to enable simple Tinkar data browsing and curation across
                         various web enabled devices.</para>
                 </listitem>
                 <listitem>
                     <para>Given the effort to document a design for the most appropriate way to
-                        query for TINKAR data given a client service architecture pattern, when a
-                        user wants to provide TINKAR data to their health IT systems, then there
-                        needs to be an implementation of GraphQL API that retrieves TINKAR data for
+                        query for Tinkar data given a client service architecture pattern, when a
+                        user wants to provide Tinkar data to their health IT systems, then there
+                        needs to be an implementation of GraphQL API that retrieves Tinkar data for
                         an arbitrary amount of clients.</para>
                 </listitem>
             </itemizedlist>
-            <para>As an end-user of the KMP, I want to be able to store my TINKAR data in the most
+            <para>As an end-user of the KMP, I want to be able to store my Tinkar data in the most
                 optimal and appropriate format, so that my KMP environment will provide the best
                 performance for my knowledge management needs:</para>
             <itemizedlist>
                 <listitem>
                     <para>Given the effort to document a design for the most appropriate datastore
-                        technology for TINKAR data, when a user wants to provide TINKAR data to
+                        technology for Tinkar data, when a user wants to provide Tinkar data to
                         their health IT systems, then there needs to be an implementation of a “best
-                        of breed” datastore that is specifically tailored to store TINKAR
+                        of breed” datastore that is specifically tailored to store Tinkar
                         data.</para>
                 </listitem>
                 <listitem>
                     <para>Given the effort to customize a datastore to specifically work with the
-                        TINKAR data structure, when a user wants to implement the best database for
+                        Tinkar data structure, when a user wants to implement the best database for
                         their KMP, then there needs to be an analysis and review of how to optimize
-                        a select number of datastores for TINKAR data.</para>
+                        a select number of datastores for Tinkar data.</para>
                 </listitem>
             </itemizedlist>
         </sect2>
         <sect2>
             <title>Classifier</title>
             <para>As a knowledge engineer, I want to be able to utilize a classifier and/or reasoner
-                on my TINKAR knowledge data, so that all my curation efforts are validated in a
+                on my Tinkar knowledge data, so that all my curation efforts are validated in a
                 safe, efficient, and reliable manner:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given the current implementation of Snorocket in TINKAR-core, when a
-                        knowledge engineer makes small edits to their TINKAR data, then the
+                    <para>Given the current implementation of Snorocket in Tinkar-core, when a
+                        knowledge engineer makes small edits to their Tinkar data, then the
                         classifier should only perform classification in an incremental fashion on
                         the concepts effected by the edits.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to provide incremental classification on TINKAR data, when
-                        a user wants to classify their changes made to TINKAR data, then TINKAR-core
+                    <para>Given the need to provide incremental classification on Tinkar data, when
+                        a user wants to classify their changes made to Tinkar data, then Tinkar-core
                         and/or Komet need to provide an ELK classifier implementation.</para>
                 </listitem>
                 <listitem>
                     <para>Given the complexity of integrating an ELK classifier into the current
-                        TINKAR-core and Komet code bases, when a user wants to classify their
-                        changes made to TINKAR data, then there needs to be a formal validation
+                        Tinkar-core and Komet code bases, when a user wants to classify their
+                        changes made to Tinkar data, then there needs to be a formal validation
                         process to reduce the risk of improper implementation and incorrect
                         classification results.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to provide efficient classification on TINKAR data and the
+                    <para>Given the need to provide efficient classification on Tinkar data and the
                         effort to migrate from Snorocket to ELK, when a user wants to classify their
-                        changes made to TINKAR data, then there needs to be a review of how best to
+                        changes made to Tinkar data, then there needs to be a review of how best to
                         extend the default ELK classifier implementation.</para>
                 </listitem>
                 <listitem>
                     <para>Given the limited resources available in the informatics community that
                         understand the ELK classifier, when the developers improve on the ELK
-                        classifier through their TINKAR integration efforts, then there needs to be
+                        classifier through their Tinkar integration efforts, then there needs to be
                         tangible contributions back to the originating ELK Classifier reference
                         implementation.</para>
                 </listitem>
                 <listitem>
                     <para>Given the amount of information that is outputted from the ELK classifier,
-                        when a knowledge engineer runs the classifier on TINKAR data, then all
+                        when a knowledge engineer runs the classifier on Tinkar data, then all
                         outputs from the classifier need to be based on cohesive and succinct user
                         interface and user experience design.</para>
                 </listitem>
                 <listitem>
                     <para>Given the criticality of the results outputted from the ELK classifier,
-                        when a knowledge engineer runs the classifier on TINKAR data, then Komet
+                        when a knowledge engineer runs the classifier on Tinkar data, then Komet
                         must provide quality assurance capabilities to utilize classifier outputs to
-                        further refine and/or correct TINKAR data edits.</para>
+                        further refine and/or correct Tinkar data edits.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the amount of information that is displayed and contained within
-                        Komet, when a knowledge engineer finishes edits on TINKAR components, then
-                        the process to run the classifier should be minimally intrusive and coherent
-                        to the authoring workflow and experience as designed within Komet.</para>
+                    <para>Given the amount of information that is displayed and contained within the
+                        Komet contributed application, when a knowledge engineer finishes edits on
+                        Tinkar components, then the process to run the classifier should be
+                        minimally intrusive and coherent to the authoring workflow and experience as
+                        designed within Komet.</para>
                 </listitem>
             </itemizedlist>
         </sect2>
         <sect2>
             <title>Query and Retrieval</title>
             <para>As a Knowledge Engineer, I want to be able to construct and execute both simple
-                and advanced type queries on my TINKAR data, so that I can meet current and
+                and advanced type queries on my Tinkar data, so that I can meet current and
                 unforeseen health IT systems knowledge data needs:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given the need for a simple information retrieval of TINKAR data, when a
+                    <para>Given the need for a simple information retrieval of Tinkar data, when a
                         user performs a search, then the search functionality should be implemented
                         using Apache Lucene.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need for advanced information retrieval of TINKAR data, when a
+                    <para>Given the need for advanced information retrieval of Tinkar data, when a
                         user performs a search, then the search functionality must implement a For,
                         Let, Where, Order by, Return (FLWOR)-based query methodology.</para>
                 </listitem>
                 <listitem>
                     <para>Given the need for a user to quickly filter what information is viewed
-                        within Komet or the Web Application, when a user modifies a TINKAR
-                        Coordinate property value, then the TINKAR data being displayed must be
-                        re-retrieved and reflect the recently changed TINKAR Coordinate.</para>
+                        within the Komet contributed application or the Web Application, when a user
+                        modifies a Tinkar Coordinate property value, then the Tinkar data being
+                        displayed must be re-retrieved and reflect the recently changed Tinkar
+                        Coordinate.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to have efficient searching of TINKAR data, when a user
+                    <para>Given the need to have efficient searching of Tinkar data, when a user
                         performs a search, then there needs to be an analysis and review of how to
                         optimize both the simple Lucene and FLWOR-based searches.</para>
                 </listitem>
@@ -481,9 +487,9 @@
                         to explain the FLWOR query capabilities.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the novelty of TINKAR Coordinates, when a user performs a coordinate
+                    <para>Given the novelty of Tinkar Coordinates, when a user performs a coordinate
                         filter, then there should be documentation and resources available to
-                        explain how TINKAR Coordinates are designed and provide computational-based
+                        explain how Tinkar Coordinates are designed and provide computational-based
                         information retrieval.</para>
                 </listitem>
             </itemizedlist>
@@ -496,31 +502,34 @@
             <itemizedlist>
                 <listitem>
                     <para>Given the need to import SNOMED CT® into the KMP, when a user selects a
-                        release of SNOMED CT® within the Komet Application, then Komet should
-                        perform an ETL process that correctly transforms SNOMED CT® into TINKAR
-                        components.</para>
+                        release of SNOMED CT® within the Komet contributed application, then Komet
+                        should perform an ETL process that correctly transforms SNOMED CT® into
+                        Tinkar components.</para>
                 </listitem>
                 <listitem>
                     <para>Given the need to import LOINC® into the KMP, when a user selects a
-                        release of LOINC® within the Komet Application, then Komet should perform an
-                        ETL process that correctly transforms LOINC® into TINKAR components.</para>
+                        release of LOINC® within the Komet contributed application, then Komet
+                        should perform an ETL process that correctly transforms LOINC® into Tinkar
+                        components.</para>
                 </listitem>
                 <listitem>
                     <para>Given the need to import RxNorm into the KMP, when a user selects a
-                        release of RxNorm within the Komet Application, then Komet should perform an
-                        ETL process that correctly transforms RxNorm into TINKAR components.</para>
+                        release of RxNorm within the Komet contributed application, then Komet
+                        should perform an ETL process that correctly transforms RxNorm into Tinkar
+                        components.</para>
                 </listitem>
                 <listitem>
                     <para>Given the need to import the SNOMED CT® LOINC® Collaboration into the KMP,
                         when a user selects a release of SNOMED CT® LOINC® Collaboration within the
-                        Komet Application, then Komet should perform an ETL process that correctly
-                        transforms SNOMED CT® LOINC® Collaboration into TINKAR components.</para>
+                        Komet contributed application, then Komet should perform an ETL process that
+                        correctly transforms SNOMED CT® LOINC® Collaboration into Tinkar
+                        components.</para>
                 </listitem>
                 <listitem>
                     <para>Given the need to import Global Substance Registration System (GSRS) data
                         into the KMP, when a user selects a release of GSRS within the Komet
-                        Application, then Komet should perform an ETL process that correctly
-                        transforms GSRS data into TINKAR components.</para>
+                        contributed application, then Komet should perform an ETL process that
+                        correctly transforms GSRS data into Tinkar components.</para>
                 </listitem>
                 <listitem>
                     <para>Given the need to continuously maintain an up-to-date representation of a
@@ -531,95 +540,96 @@
                 <listitem>
                     <para>Given the need to import knowledge standards that are maintained in a
                         custom format, when a user selects the custom format within the Komet
-                        Application, then Komet should prompt the user with an interface that
-                        articulates how that format will follow the TINKAR ETL process.</para>
+                        contributed application, then Komet should prompt the user with an interface
+                        that articulates how that format will follow the Tinkar ETL process.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to export TINKAR data from the KMP as SNOMED CT® knowledge,
-                        when a user selects the SNOMED CT® export feature within Komet, then Komet
-                        will transform all existing TINKAR data into an appropriate and valid SNOMED
-                        CT® structure and release format.</para>
+                    <para>Given the need to export Tinkar data from the KMP as SNOMED CT® knowledge,
+                        when a user selects the SNOMED CT® export feature within the Komet
+                        contributed application, then Komet will transform all existing Tinkar data
+                        into an appropriate and valid SNOMED CT® structure and release
+                        format.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to export TINKAR data from the KMP as LOINC® knowledge,
-                        when a user selects the LOINC® export feature within Komet, then Komet will
-                        transform all existing TINKAR data into an appropriate and valid LOINC®
-                        structure and release format .</para>
+                    <para>Given the need to export Tinkar data from the KMP as LOINC® knowledge,
+                        when a user selects the LOINC® export feature within the Komet contributed
+                        application, then Komet will transform all existing Tinkar data into an
+                        appropriate and valid LOINC® structure and release format.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to export TINKAR data from the KMP as RxNorm knowledge,
-                        when a user selects the RxNorm export feature within Komet, then Komet will
-                        transform all existing TINKAR data into an appropriate and valid RxNorm
-                        structure and release format.</para>
+                    <para>Given the need to export Tinkar data from the KMP as RxNorm knowledge,
+                        when a user selects the RxNorm export feature within the Komet contributed
+                        application, then Komet will transform all existing Tinkar data into an
+                        appropriate and valid RxNorm structure and release format.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to export TINKAR data from the KMP as GSRS knowledge, when
-                        a user selects the GSRS export feature within Komet, then Komet will
-                        transform all existing TINKAR data into an appropriate and valid GSRS
-                        structure and release format.</para>
+                    <para>Given the need to export Tinkar data from the KMP as GSRS knowledge, when
+                        a user selects the GSRS export feature within the Komet contributed
+                        application, then Komet will transform all existing Tinkar data into an
+                        appropriate and valid GSRS structure and release format.</para>
                 </listitem>
                 <listitem>
                     <para>Given the need to export knowledge standards that are maintained in a
                         custom format, when a user selects the custom format export feature within
-                        the Komet Application, then Komet should prompt the user with an interface
-                        that articulates how current TINKAR data and formatting will be transformed
-                        into the custom export format.</para>
+                        the Komet contributed application, then Komet should prompt the user with an
+                        interface that articulates how current Tinkar data and formatting will be
+                        transformed into the custom export format.</para>
                 </listitem>
             </itemizedlist>
         </sect2>
         <sect2>
             <title>Editing</title>
-            <para>As a Knowledge Engineer, I want to be able to curate my TINKAR knowledge data in a
+            <para>As a Knowledge Engineer, I want to be able to curate my Tinkar knowledge data in a
                 transparent and highly reliable way, so that I can predict the impact my knowledge
                 data has on patient care and health outcomes:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given TINKAR’s data model and the importance of a unifying Concept
-                        component, when a user wants to create a new Concept, then TINKAR-core
+                    <para>Given Tinkar’s data model and the importance of a unifying Concept
+                        component, when a user wants to create a new Concept, then Tinkar-core
                         should utilize STAMP versioning to create a new Concept.</para>
                 </listitem>
                 <listitem>
-                    <para>Given TINKAR’s data model and the importance of a unifying Concept
-                        component, when a user wants to update a Concept, then TINKAR-core should
+                    <para>Given Tinkar’s data model and the importance of a unifying Concept
+                        component, when a user wants to update a Concept, then Tinkar-core should
                         utilize STAMP versioning to modify an existing Concept’s Time value.</para>
                 </listitem>
                 <listitem>
-                    <para>Given TINKAR’s data model and the importance of a unifying Concept
-                        component, when a user wants to delete a Concept, then TINKAR-core should
+                    <para>Given Tinkar’s data model and the importance of a unifying Concept
+                        component, when a user wants to delete a Concept, then Tinkar-core should
                         utilize STAMP versioning to modify an existing Concept’s Status
                         value.</para>
                 </listitem>
                 <listitem>
-                    <para>Given TINKAR’s data model and the importance of a contextualizing Semantic
-                        component, when a user wants to create a new Semantic, then TINKAR-core
+                    <para>Given Tinkar’s data model and the importance of a contextualizing Semantic
+                        component, when a user wants to create a new Semantic, then Tinkar-core
                         should utilize STAMP versioning to create a new Semantic.</para>
                 </listitem>
                 <listitem>
-                    <para>Given TINKAR’s data model and the importance of a contextualizing Semantic
-                        component, when a user wants to update a Semantic, then TINKAR-core should
+                    <para>Given Tinkar’s data model and the importance of a contextualizing Semantic
+                        component, when a user wants to update a Semantic, then Tinkar-core should
                         utilize STAMP versioning to modify an existing Semantic’s fields and Time
                         value.</para>
                 </listitem>
                 <listitem>
-                    <para>Given TINKAR’s data model and the importance of a contextualizing Semantic
-                        component, when a user wants to delete a Semantic, then TINKAR-core should
+                    <para>Given Tinkar’s data model and the importance of a contextualizing Semantic
+                        component, when a user wants to delete a Semantic, then Tinkar-core should
                         utilize STAMP versioning to modify an existing Semantic’s Status
                         value.</para>
                 </listitem>
                 <listitem>
-                    <para>Given TINKAR’s data model and the importance of a definitional Pattern
-                        component, when a user wants to create a new Pattern, then TINKAR-core
+                    <para>Given Tinkar’s data model and the importance of a definitional Pattern
+                        component, when a user wants to create a new Pattern, then Tinkar-core
                         should utilize STAMP versioning to create a new Pattern.</para>
                 </listitem>
                 <listitem>
-                    <para>Given TINKAR’s data model and the importance of a definitional Pattern
-                        component, when a user wants to update a Pattern, then TINKAR-core should
+                    <para>Given Tinkar’s data model and the importance of a definitional Pattern
+                        component, when a user wants to update a Pattern, then Tinkar-core should
                         utilize STAMP versioning to modify an existing Pattern’s field definitions
                         and Time value.</para>
                 </listitem>
                 <listitem>
-                    <para>Given TINKAR’s data model and the importance of a definitional Pattern
-                        component, when a user wants to delete a Pattern, then TINKAR-core should
+                    <para>Given Tinkar’s data model and the importance of a definitional Pattern
+                        component, when a user wants to delete a Pattern, then Tinkar-core should
                         utilize STAMP versioning to create a modify and existing Pattern’s Status
                         value.</para>
                 </listitem>
@@ -642,20 +652,20 @@
                 </listitem>
                 <listitem>
                     <para>Given the natural workflow of having multiple authors collaborate on a
-                        single TINKAR component (Concept, Semantic, Pattern), when a different user
-                        modifies a TINKAR component, then that specific component should utilize
+                        single Tinkar component (Concept, Semantic, Pattern), when a different user
+                        modifies a Tinkar component, then that specific component should utilize
                         STAMP versioning to capture a new version of the Author value.</para>
                 </listitem>
                 <listitem>
                     <para>Given the harmonization capabilities when having multiple knowledge
-                        standards represented as reusable TINKAR components (Concept, Semantic,
-                        Pattern), when a user modifies a TINKAR component shared across multiple
+                        standards represented as reusable Tinkar components (Concept, Semantic,
+                        Pattern), when a user modifies a Tinkar component shared across multiple
                         knowledge standards, then that specific component should utilize STAMP
                         versioning to associate the component changes to the correct Module
                         value.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the branching ability of TINKAR’s components, when a user wants to
+                    <para>Given the branching ability of Tinkar’s components, when a user wants to
                         promote, change or merge a branch context of a component, then that specific
                         component should utilize STAMP versioning to modify the Path value.</para>
                 </listitem>
@@ -665,148 +675,152 @@
                 updates within my health IT enterprise:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given the integrated nature of TINKAR components and its ability to
-                        represent various knowledge standards, when a user edits a TINKAR component,
+                    <para>Given the integrated nature of Tinkar components and its ability to
+                        represent various knowledge standards, when a user edits a Tinkar component,
                         then Komet should apply similar quality assurance rules as defined by the
-                        imported source knowledge standards</para>
+                        imported source knowledge standards.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the integrated nature of TINKAR components and its ability to
-                        represent various knowledge standards, when a user edits a TINKAR component,
+                    <para>Given the integrated nature of Tinkar components and its ability to
+                        represent various knowledge standards, when a user edits a Tinkar component,
                         then Komet should apply any configured quality assurance rules as defined by
-                        other users</para>
+                        other users.</para>
                 </listitem>
                 <listitem>
                     <para>Given the complexity of representing and curating several knowledge
-                        standards together as TINKAR components (Concept, Semantic, Pattern), when a
+                        standards together as Tinkar components (Concept, Semantic, Pattern), when a
                         user wants to intermittently save their curation progress (e.g., modifying
                         semantic field values), then Komet should store all modifications as
-                        transactions until the user is ready to commit them as formal TINKAR
-                        component edits</para>
+                        transactions until the user is ready to commit them as formal Tinkar
+                        component edits.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to apply similar TINKAR component edits across more than
-                        one individual component, when a user selects multiple TINKAR components to
+                    <para>Given the need to apply similar Tinkar component edits across more than
+                        one individual component, when a user selects multiple Tinkar components to
                         apply modifications to, then Komet will process those modifications adherent
-                        to a batch process framework</para>
+                        to a batch process framework.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to apply similar TINKAR component edits across more than
+                    <para>Given the need to apply similar Tinkar component edits across more than
                         one individual component within a data stream, when a user defines multiple
-                        TINKAR components to apply modifications to, then Komet will process those
-                        modifications adherent to a stream process framework</para>
+                        Tinkar components to apply modifications to, then Komet will process those
+                        modifications adherent to a stream process framework.</para>
                 </listitem>
                 <listitem>
                     <para>Given the need to provide real-time feedback when editing an individual
                         concept based on configured quality assurance rules, when a user tries to
-                        edit a particular TINKAR component that contains a quality assurance rule,
+                        edit a particular Tinkar component that contains a quality assurance rule,
                         then Komet should instantly display feedback regarding the validity of the
-                        component’s edit and adhere to a real-time process framework</para>
+                        component’s edit and adhere to a real-time process framework.</para>
                 </listitem>
             </itemizedlist>
         </sect2>
         <sect2>
             <title>Persona</title>
             <para>As a Knowledge Engineer, I want to be able to customize the layout, interfaces,
-                and functionality of my Knowledge Management Environment, so that I can more easily
-                accommodate various associated workflows when working with knowledge
-                standards:</para>
+                and functionality of my KM environment, so that I can more easily accommodate
+                various associated workflows when working with knowledge standards:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given the need to provide a customizable user experience with Komet and/or
-                        the Web Application, when a developer is working on importing a new
-                        knowledge standard, then there should be a set of detailed persona design
-                        documents that describe what user interface components are configurable
-                        within Komet and the Web Application.</para>
+                    <para>Given the need to provide a customizable user experience with the Komet
+                        contributed application and/or the Web Application, when a developer is
+                        working on importing a new knowledge standard, then there should be a set of
+                        detailed persona design documents that describe what user interface
+                        components are configurable within the Komet contributed application and the
+                        Web Application.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to customize Komet and/or the Web Application, when a user
-                        selects create a persona, then the user interface should open a
-                        configuration window where the user can create a new persona to modify all
-                        aspects of Komet and/or the Web Application.</para>
+                    <para>Given the need to customize the Komet contributed application and/or the
+                        Web Application, when a user selects create a persona, then the user
+                        interface should open a configuration window where the user can create a new
+                        persona to modify all aspects of the Komet contributed application and/or
+                        the Web Application.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to customize Komet and/or the Web Application, when a user
-                        selects update a persona, then the user interface should open a
-                        configuration window where the user can update an existing persona.</para>
+                    <para>Given the need to customize the Komet contributed application and/or the
+                        Web Application, when a user selects update a persona, then the user
+                        interface should open a configuration window where the user can update an
+                        existing persona.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to customize Komet and/or the Web Application, when a user
-                        selects delete a persona, then the user interface should open a
-                        configuration window where the user can delete an existing persona.</para>
+                    <para>Given the need to customize the Komet contributed application and/or the
+                        Web Application, when a user selects delete a persona, then the user
+                        interface should open a configuration window where the user can delete an
+                        existing persona.</para>
                 </listitem>
                 <listitem>
-                    <para>Given individual preferences of each Komet or Web Application user as to
-                        how they curate knowledge standards, when a user opens the persona
-                        configuration window and selects “Workflow”, then they should be presented
-                        with a customizable sequence of STAMP Path values that can “promote” a
-                        TINKAR component.</para>
+                    <para>Given individual preferences of each Komet contributed application or Web
+                        Application user as to how they curate knowledge standards, when a user
+                        opens the persona configuration window and selects “Workflow”, then they
+                        should be presented with a customizable sequence of STAMP Path values that
+                        can “promote” a Tinkar component.</para>
                 </listitem>
                 <listitem>
                     <para>Given the need to support various combinations of languages and dialects
-                        within Komet and the Web Application, when a user opens the persona
-                        preferences window and selects “Language”, then there should be options that
-                        work to modify the “Language” coordinate associated with the persona (e.g.,
-                        preferred language, preferred dialect, prioritized display of description
-                        [synonyms vs text vs fully qualified name]).</para>
+                        within the Komet contributed application and the Web Application, when a
+                        user opens the persona preferences window and selects “Language”, then there
+                        should be options that work to modify the “Language” coordinate associated
+                        with the persona (e.g., preferred language, preferred dialect, prioritized
+                        display of description [synonyms vs text vs fully qualified name]).</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to support various types of logical classifiers within
-                        Komet and the Web Application, when a user opens the persona preferences
-                        window and selects “Logic”, then there should be options that work to modify
-                        the logic coordinate associated with the persona (e.g., filtered results
-                        based on classifier, filtered versions from classifiers).</para>
+                    <para>Given the need to support various types of logical classifiers within the
+                        Komet contributed application and the Web Application, when a user opens the
+                        persona preferences window and selects “Logic”, then there should be options
+                        that work to modify the logic coordinate associated with the persona (e.g.,
+                        filtered results based on classifier, filtered versions from
+                        classifiers).</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to support various ways to view and search for TINKAR
-                        components within Komet and the Web Application, when a user opens the
-                        persona preferences window and selects “Navigation”, then there should be
-                        options that work to modify the navigation coordinate associated with the
-                        persona (e.g., stated vs inferred relationships, concept inclusion vs
-                        exclusion).</para>
+                    <para>Given the need to support various ways to view and search for Tinkar
+                        components within the Komet contributed application and the Web Application,
+                        when a user opens the persona preferences window and selects “Navigation”,
+                        then there should be options that work to modify the navigation coordinate
+                        associated with the persona (e.g., stated vs inferred relationships, concept
+                        inclusion vs exclusion).</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to support various ways to view all TINKAR components
-                        within Komet and the Web Application, when a user opens the persona
-                        preferences window and selects “STAMP”, then there should be options that
-                        work to modify the STAMP coordinate associated with the persona (e.g., most
-                        recent version, Set of data from several versions, all active components
-                        only).</para>
+                    <para>Given the need to support various ways to view all Tinkar components
+                        within the Komet contributed application and the Web Application, when a
+                        user opens the persona preferences window and selects “STAMP”, then there
+                        should be options that work to modify the STAMP coordinate associated with
+                        the persona (e.g., most recent version, Set of data from several versions,
+                        all active components only).</para>
                 </listitem>
                 <listitem>
                     <para>Given the need to show only specific or relevant tabs and panels within
-                        Komet and the Web Application, when a user opens the persona preferences
-                        window and selects “Dynamic Layout”, then there should be options that
-                        limit, re-arrange, remove, and add any combination of panels, tabs, and
-                        windows to the Komet, and Web Application interface associated with the
-                        persona.</para>
+                        the Komet contributed application and the Web Application, when a user opens
+                        the persona preferences window and selects “Dynamic Layout”, then there
+                        should be options that limit, re-arrange, remove, and add any combination of
+                        panels, tabs, and windows to the Komet contributed application and Web
+                        Application interface associated with the persona.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to integrate Komet and the Web Application with other
-                        technologies and services that capture user preferences, when a user opens
-                        the persona preferences window and selects
-                        “3<superscript>rd</superscript>Party Integrations”, then there should be
-                        options to login and integrate Komet and the Web Application with external
-                        preference services (e.g., GitHub).</para>
+                    <para>Given the need to integrate the Komet contributed application and the Web
+                        Application with other technologies and services that capture user
+                        preferences, when a user opens the persona preferences window and selects
+                            “3<superscript>rd</superscript>Party Integrations”, then there should be
+                        options to login and integrate the Komet contributed application and the Web
+                        Application with external preference services (e.g., GitHub).</para>
                 </listitem>
             </itemizedlist>
         </sect2>
         <sect2>
             <title>Contribution Model</title>
             <para>As a Systems Integrator, I want to be able to transmit and receive
-                binary-formatted TINKAR data in a language and implementation agnostic context, so
+                binary-formatted Tinkar data in a language and implementation agnostic context, so
                 that I am not limited by programming languages, implementation frameworks, and other
-                design choices when integrating TINKAR into my various health IT systems: </para>
+                design choices when integrating Tinkar into my various health IT systems: </para>
             <itemizedlist>
                 <listitem>
                     <para>Given the need for a language agnostic, framework neutral, and binary
-                        formatted TINKAR data representation, when developers are working to
-                        integrate TINKAR data into their health IT systems, they should be following
-                        a formalized TINKAR Protocol Buggers representation release format.</para>
+                        formatted Tinkar data representation, when developers are working to
+                        integrate Tinkar data into their health IT systems, they should be following
+                        a formalized Tinkar Protocol Buggers representation release format.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the evolution of the TINKAR data standard as more and more knowledge
-                        standards are transformed into TINKAR representations, when a developer is
+                    <para>Given the evolution of the Tinkar data standard as more and more knowledge
+                        standards are transformed into Tinkar representations, when a developer is
                         integrating the Protocol Buffers release format into an existing health IT
                         system, then there needs to be a strict adherence to Google’s implementation
                         best practices for safely evolving a Protocol Buffers implementation across
@@ -819,45 +833,46 @@
                 works and best practices of other KMP users:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given the modularity of TINKAR’s data structure and its STAMP versioning,
-                        when a user wants to collaborate or share TINKAR data, then a process can be
+                    <para>Given the modularity of Tinkar’s data structure and its STAMP versioning,
+                        when a user wants to collaborate or share Tinkar data, then a process can be
                         performed that calculates the difference between a preexisting version given
                         coordinate and STAMP conditions which will produce a concise “diff” release
-                        of TINKAR data.</para>
+                        of Tinkar data.</para>
                 </listitem>
                 <listitem>
                     <para>Given the high probability of having conflicting changes with another user
-                        on the same TINKAR data, when a user wants to share their TINKAR data with
-                        another user and merge conflicts are detected, then Komet and the Web
-                        Application will display a prompt that identifies the merge conflicts and
-                        offers an interface to perform reconciliation with all contributing
-                        users.</para>
+                        on the same Tinkar data, when a user wants to share their Tinkar data with
+                        another user and merge conflicts are detected, then the Komet contributed
+                        application and the Web Application will display a prompt that identifies
+                        the merge conflicts and offers an interface to perform reconciliation with
+                        all contributing users.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need to ensure that shared TINKAR knowledge data still meets
+                    <para>Given the need to ensure that shared Tinkar knowledge data still meets
                         your organizational or personal quality assurance process, when a user
-                        shares with or syncs their TINKAR data with other users, then there should
+                        shares with or syncs their Tinkar data with other users, then there should
                         be processes in place that allow users to define quality assurance checks
-                        against merged TINKAR data.</para>
+                        against merged Tinkar data.</para>
                 </listitem>
                 <listitem>
                     <para>Given the need to support both the localization of knowledge standards
                         (collaboratively) and the national/international release of knowledge
-                        standards, when a knowledge engineer is finished editing a TINKAR component,
-                        then Komet and/or the Web Application should be able to generate a valid
-                        release format of a given imported knowledge standard.</para>
+                        standards, when a knowledge engineer is finished editing a Tinkar component,
+                        then the Komet contributed application and/or the Web Application should be
+                        able to generate a valid release format of a given imported knowledge
+                        standard.</para>
                 </listitem>
                 <listitem>
                     <para>Given the benefits of collaborative knowledge representation engineering,
-                        when a user starts up Komet and/or the Web Application, then there should be
-                        a configurable feature to “auto sync” or pull TINKAR data from other
-                        users</para>
+                        when a user starts up the Komet contributed application and/or the Web
+                        Application, then there should be a configurable feature to “auto sync” or
+                        pull Tinkar data from other users.</para>
                 </listitem>
                 <listitem>
                     <para>Given the polarization of interpretation of knowledge extensions, when a
-                        user decides to sync their TINKAR data (pull from another repository) with
+                        user decides to sync their Tinkar data (pull from another repository) with
                         another user, then they should have the ability to control which users they
-                        auto pull TINKAR data from in a fine-grained way.</para>
+                        auto pull Tinkar data from in a fine-grained way.</para>
                 </listitem>
             </itemizedlist>
             <para>As a Knowledge Engineer, I want to focus on establishing a collaborative workflow
@@ -866,22 +881,23 @@
             <itemizedlist>
                 <listitem>
                     <para>Given the need for me, as a team lead, to assign review of certain
-                        problematic TINKAR knowledge data, when I identify the TINKAR component that
-                        needs review, then Komet and/or the Web Application will enable me to assign
-                        a member of my team (user) to resolve the component issue.</para>
+                        problematic Tinkar knowledge data, when I identify the Tinkar component that
+                        needs review, then the Komet contributed application and/or the Web
+                        Application will enable me to assign a member of my team (user) to resolve
+                        the component issue.</para>
                 </listitem>
                 <listitem>
                     <para>Given the ability for me to assign component review for my teammates, when
-                        I do assign work to a specific user, then Komet and the Web Application will
-                        provide that user with the appropriate alerts and notifications that there
-                        has been an assignment.</para>
+                        I do assign work to a specific user, then the Komet contributed application
+                        and the Web Application will provide that user with the appropriate alerts
+                        and notifications that there has been an assignment.</para>
                 </listitem>
                 <listitem>
                     <para>Given the potential resolution by my team member of an assigned
-                        problematic TINKAR component, when my team member believes they have
-                        resolved the issue, then Komet and/or the Web Application will provide them
-                        with the ability to request approval for proposed component
-                        resolution.</para>
+                        problematic Tinkar component, when my team member believes they have
+                        resolved the issue, then the Komet contributed application and/or the Web
+                        Application will provide them with the ability to request approval for
+                        proposed component resolution.</para>
                 </listitem>
                 <listitem>
                     <para>Given that a request for approval for a proposed component resolution has
@@ -892,54 +908,54 @@
                 <listitem>
                     <para>Given the ability for my team members to be creative in establishing their
                         own personas to improve their workflows, when I ask my teammate to share
-                        their persona configuration, then Komet and/or the Web Application should be
-                        able to load my team members’ persona configurations.</para>
+                        their persona configuration, then the Komet contributed application and/or
+                        the Web Application should be able to load my team members’ persona
+                        configurations.</para>
                 </listitem>
             </itemizedlist>
-            <para>As a Knowledge Engineer, I want to be able to restrict some of my TINKAR data
+            <para>As a Knowledge Engineer, I want to be able to restrict some of my Tinkar data
                 collaboration, so that I can maintain my organization’s proprietary
                 interests:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given that some of my TINKAR data is proprietary, when I go to sync my
-                        TINKAR data with other users, then I should have the ability to constrain or
-                        isolate which TINKAR components get shared with other users.</para>
+                    <para>Given that some of my Tinkar data is proprietary, when I go to sync my
+                        Tinkar data with other users, then I should have the ability to constrain or
+                        isolate which Tinkar components get shared with other users.</para>
                 </listitem>
                 <listitem>
-                    <para>Given that some of my TINKAR data is proprietary, when I login to Komet
-                        and/or the Web Application, then there should be a robust user access
-                        control infrastructure to grant proper authentication and authorization to
-                        users.</para>
+                    <para>Given that some of my Tinkar data is proprietary, when I login to the
+                        Komet contributed application and/or the Web Application, then there should
+                        be a robust user access control infrastructure to grant proper
+                        authentication and authorization to users.</para>
                 </listitem>
             </itemizedlist>
         </sect2>
         <sect2>
             <title>Mobile Application</title>
-            <para>As a Knowledge Consumer, I want to be able to access and view TINKAR data on my
-                various devices, so that I can view TINKAR data from any location:</para>
+            <para>As a Knowledge Consumer, I want to be able to access and view Tinkar data on my
+                various devices, so that I can view Tinkar data from any location:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Given the need for an iPhone Operating System (iOS) application for TINKAR
-                        data, when a developer wants to build a TINKAR iOS app integration, then
-                        there should be some iOS TINKAR Application design document that conveys the
-                        ability to integrate critical parts of TINKAR into the iOS application
-                        framework.</para>
+                    <para>Given the need for an iOS application for Tinkar data, when a developer
+                        wants to build a Tinkar iOS app integration, then there should be some iOS
+                        Tinkar Application design document that conveys the ability to integrate
+                        critical parts of Tinkar into the iOS application framework.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the fact I own an Apple device, when I want to view TINKAR data,
-                        then I should be able to see some basic form of TINKAR data in an iOS
+                    <para>Given the fact I own an Apple device, when I want to view Tinkar data,
+                        then I should be able to see some basic form of Tinkar data in an iOS
                         application.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the need for an Android application for TINKAR data, when a
-                        developer wants to build a TINKAR Android app integration, then there should
-                        be some Android TINKAR Application design document that conveys the ability
-                        to integrate critical parts of TINKAR into the Android application
+                    <para>Given the need for an Android application for Tinkar data, when a
+                        developer wants to build a Tinkar Android app integration, then there should
+                        be some Android Tinkar Application design document that conveys the ability
+                        to integrate critical parts of Tinkar into the Android application
                         framework.</para>
                 </listitem>
                 <listitem>
-                    <para>Given the fact I own an Android device, when I want to view TINKAR data,
-                        then I should be able to see some basic form of TINKAR data in an Android
+                    <para>Given the fact I own an Android device, when I want to view Tinkar data,
+                        then I should be able to see some basic form of Tinkar data in an Android
                         application.</para>
                 </listitem>
             </itemizedlist>
@@ -947,8 +963,9 @@
         <sect2>
             <title>Human Centered Design</title>
             <para>As a Knowledge Consumer, I want to have customized interfaces and experiences when
-                using TINKAR data, Komet, the Mobile Application, and/or the Web Application, so
-                that I can best use TINKAR to solve my business needs:</para>
+                using Tinkar data, the Komet contributed application, the Mobile Application, and/or
+                the Web Application, so that I can best use Tinkar to solve my business
+                needs:</para>
             <itemizedlist>
                 <listitem>
                     <para>Given the uniqueness of my business needs as an end-user, when a designer
@@ -966,8 +983,8 @@
                     <para>Given the uniqueness of my business needs as an end-user, when a designer
                         starts to understand the necessary capabilities, then there should be a
                         heuristic analysis conducted to better understand the current state of the
-                        user interface and experience regarding Komet and/or the Web
-                        Application.</para>
+                        user interface and experience regarding the Komet contributed application
+                        and/or the Web Application.</para>
                 </listitem>
             </itemizedlist>
         </sect2>
@@ -977,11 +994,11 @@
         <para>This Product Playbook is detailed but not exhaustive. For this playbook to provide a
             continuous impact on all aspects of design, development, and evolution of Komet and KMP
             over time, there must be regular updates. This playbook will serve as a living document
-            that provides durable value to not only the various teams working on Komet, but to the
-            FDA SHIELD program. There has been a great history of valiant efforts, brilliant design,
-            and profound ideas that have shaped the current iteration of Komet as we know it today.
-            This Playbook serves as both a historical record and a future roadmap to make Komet and
-            the KMP real. </para>
+            that provides durable value to the various teams working on the Komet contributed
+            application. There has been a great history of valiant efforts, brilliant design, and
+            profound ideas that have shaped the current iteration of Komet as we know it today. This
+            Playbook serves as both a historical record and a future roadmap to make the Komet
+            contributed application and the KMP real. </para>
     </sect1>
     <sect1>
         <title>Ethical and Practical Considerations in Localized Artificial Intelligence (AI) and

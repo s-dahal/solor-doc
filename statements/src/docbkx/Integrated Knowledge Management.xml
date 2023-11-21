@@ -204,7 +204,7 @@
         </itemizedlist>
     </section>
     <section>
-        <title>TermINology Knowledge Architecture (TINKAR) Overview</title>
+        <title>TermINology Knowledge Architecture (Tinkar) Overview</title>
         <para>Today’s healthcare system uses certain information systems to capture and manage
             clinical statements and terminologies. While multiple information systems and
             terminology standards exist, these standards represent and format equivalent concepts,
@@ -215,25 +215,25 @@
             are aiming to improve IKM capabilities and advancing an existing Health Level Seven
             International (HL7) project within the Vocabulary Working Group known as the ‘Guidelines
             for a Standardized Terminology Knowledge base”, also known as TermINology Knowledge
-            Architecture (TINKAR). TINKAR is intended to provide an architecture that delivers
-            integrated terminology to the healthcare enterprise and its information systems. TINKAR
+            Architecture (Tinkar). Tinkar is intended to provide an architecture that delivers
+            integrated terminology to the healthcare enterprise and its information systems. Tinkar
             addresses the differences in management and structure across reference terminology, and
             with local concepts and code lists/value sets. [5]</para>
-        <para>TINKAR is a self-describing and machine processed knowledge architecture that allows
+        <para>Tinkar is a self-describing and machine processed knowledge architecture that allows
             for effective and scalable querying of data, concepts, and information. Using locally
-            defined concepts, TINKAR can integrate various terminology standards into the common
+            defined concepts, Tinkar can integrate various terminology standards into the common
             model by accommodating, managing, and defining granular components and their respective
             data sources to support interoperability of semantics. Having the ability to manage
             complex and individual elements of each standard then allows continual process
             improvement, including rapid extension development. Edits to concepts or newly authored
-            concepts in TINKAR can be tested and previewed before deployment to a live environment
+            concepts in Tinkar can be tested and previewed before deployment to a live environment
             and historic versioning of meta data is perpetually maintained to support iterative
             authoring, development, and versioning. [5]</para>
-        <para>TINKAR aims to improve the quality of patient care across the healthcare enterprise by
+        <para>Tinkar aims to improve the quality of patient care across the healthcare enterprise by
             creating a cross-cutting and common model that can integrate other terminology standards
             and use a repeatable and standardized process to convert disparate clinical statements
             and terminologies into high-quality, interoperable, and exportable clinical data. The
-            four main problems that TINKAR and a common model can address are:</para>
+            four main problems that Tinkar and a common model can address are:</para>
         <orderedlist>
             <listitem>
                 <para>Suboptimal ability to identify equivalent concepts within and between
@@ -242,7 +242,7 @@
                     <listitem>
                         <para>Concepts like “Feels Feverish” and “Feels Hot/Feverish” are both
                             concepts in SNOMED CT® but are not recognized as equivalent within
-                            SNOMED CT®. TINKAR’s standardized process would support the
+                            SNOMED CT®. Tinkar’s standardized process would support the
                             identification of these findings as equivalent and create a relationship
                             between the concepts.</para>
                     </listitem>
@@ -254,7 +254,7 @@
                     <listitem>
                         <para>Terminology standards currently lack the ability to rapidly adapt and
                             deploy pertinent concepts in response to emerging phenomenon, such as
-                            COVID-19. TINKAR would allow for a standardized and repeatable process
+                            COVID-19. Tinkar would allow for a standardized and repeatable process
                             to rapidly develop and version concepts in response to real-time
                             healthcare developments.</para>
                     </listitem>
@@ -268,7 +268,7 @@
                         <para>The lack of standardized representation of concepts between standards
                             leads to unnecessary confusion, redundant and overlapping concepts, and
                             challenges identifying the most accurate concept when transmitting data
-                            between systems and terminology standards. TINKAR works to reduce this
+                            between systems and terminology standards. Tinkar works to reduce this
                             unnecessary complication with clear versioning hierarchies that allow
                             for precise identification and representations of appropriate
                             terminologies between standards.</para>
@@ -282,7 +282,7 @@
                     <listitem>
                         <para>Versioning within terminology standards is not currently well
                             documented or clearly conveyed to users and versioning between
-                            terminology standards is done asynchronously. TINKAR will support
+                            terminology standards is done asynchronously. Tinkar will support
                             transparent, detailed, standardized and rapid versioning that focuses on
                             improvements for users.</para>
                     </listitem>
@@ -291,17 +291,14 @@
         </orderedlist>
     </section>
     <section>
-        <title>The U.S. Food and Drug Administration (FDA), Systemic Harmonization and
-            Interoperability Enhancement for Laboratory Data (SHIELD), and IKM Capabilities</title>
-        <para>In collaboration with the U.S. Food and Drug Administration (FDA) and the Systemic
-            Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD) program,
-            this work aims to demonstrate how TINKAR architecture can optimize and implement IKM
-            capabilities and IKM principles through the development of a reference implementation.
-            One of FDA’s primary missions is “protecting the public health by ensuring the safety,
-            efficacy, and security of human and veterinary drugs, biological products, and medical
-            devices”. SHIELD aims to support increased patient safety through improved
-            interoperability, transmission, and quality of laboratory data between and within
-            healthcare systems. [6]</para>
+        <title>IKM Capabilities</title>
+        <para>This work aims to demonstrate how Tinkar architecture can optimize and implement IKM
+            capabilities and IKM principles through the development of a reference implementation
+            through collaboration with federal agencies and the Systemic Harmonization and
+            Interoperability Enhancement for Laboratory Data (SHIELD) collaboratice community.
+            SHIELD aims to support increased patient safety through improved interoperability,
+            transmission, and quality of laboratory data between and within healthcare systems.
+            [6]</para>
     </section>
     <section>
         <title>IKM Challenges</title>
@@ -329,7 +326,7 @@
                         that come from a well-known and widely available source of truth.</para>
                 </listitem>
                 <listitem>
-                    <para>The FDA will need to develop an authorization process that requires new
+                    <para>The U.S. Food and Drug Administration (FDA) will need to develop an authorization process that requires new
                         and existing terminology standard organizations, healthcare systems, product
                         developers, and more to comply with pertinent standards prior to
                         incorporation into the IKM platform.</para>
@@ -350,8 +347,7 @@
         </section>
         <section>
             <title>Stakeholder Incentives</title>
-            <para>While SHIELD and the FDA do not want to mandate the use of the IKM environment,
-                federal agencies will need to develop minimum requirements and incentives to
+            <para>Federal agencies will need to develop minimum requirements and incentives to
                 encourage higher education, private sector, and other stakeholders to participate.
                 Meeting the minimum requirements for data collection and data transmission will
                 require changes to the user interface (UI) and user experience (UX) that standardize
@@ -376,12 +372,12 @@
                 associated concepts throughout transmission and storage. This requires working with
                 a variety of terminology standards that asynchronously represent, update, manage,
                 and version concepts. The IKM architecture will require a robust and standardized
-                process to track changes across terminology standards and version TINKAR concepts
+                process to track changes across terminology standards and version Tinkar concepts
                 appropriately in a repeatable way. Changes will need to be made in real time and
                 will need to communicate the intricacies of updates, test the validity and
                 functionality of changes, and maintain Status, Time, Author,Module, and Path (STAMP)
                 principles. Changes to concepts may occur concurrently as terminology standards
-                release updates and will need to be tested and validated using the TINKAR authoring
+                release updates and will need to be tested and validated using the Tinkar authoring
                 environment.</para>
         </section>
     </section>
