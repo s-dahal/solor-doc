@@ -231,8 +231,8 @@
                         reflect quality aspects (e.g., code coverage, build status).</para>
                 </listitem>
             </itemizedlist>
-            <para>As a DocBook contributor to the IKM book, I want to follow industry leading DevOps
-                best practices, so that the content I contribute to the book are safely
+            <para>As a DocBook contributor to the IKM volumes, I want to follow industry leading
+                DevOps best practices, so that the content I contribute to the volumes are safely
                 managed:</para>
             <itemizedlist>
                 <listitem>
@@ -250,7 +250,7 @@
                 <listitem>
                     <para>Given a successful execution of a build pipeline, when Jenkins determines
                         all quality control gateways have passed, then Jenkins will publish the
-                        newest build of the IKM book as a PDF to a public repository.</para>
+                        newest build of the IKM volumes as a PDF to a public repository.</para>
                 </listitem>
             </itemizedlist>
             <para>As an open-source user of the Tinkar-based projects, I want to be able to report
