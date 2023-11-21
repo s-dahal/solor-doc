@@ -37,19 +37,7 @@
         </itemizedlist>
     </section>
     <section>
-        <title>Teaming Partners Overview</title>
-        <para>A variety of organizations are supporting the development of a solution that can meet
-            SHIELD goals and the current issues with data interoperability. </para><figure xml:id="TeamingPartners">
-                <title>Teaming Partners</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/Teaming%20Partners.png"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-            </section>
-    <section>
-        <title>Real World Evidence and Standards Overview</title>
+        <title>Real World Evidence (RWE) and Standards Overview</title>
         <para>Real world evidence (RWE) using RWD collected as part of routine clinical care, has
             been heralded as an answer to many of the woes of our medical system. A vision has been
             made popular that suggests a wealth of untapped data – electronic health records (EHR),
