@@ -8,7 +8,7 @@
         <title>Motivation for IKM</title>
         <para>Knowledge management (KM) is an important process organizations use to identify,
             organize, and disseminate information and is providing greater value and insights into
-            data with the emergence of technologies and advanced analytics, like artifical
+            data with the emergence of technologies and advanced analytics, such as artifical
             intelligence (AI) and machine learning (ML). Individuals and organizations alike are
             continuously generating data which may sit in siloed databases but, with the appropriate
             tools, can be aggregated across platforms, analyzed, and utilized. However, the flow of
@@ -32,12 +32,12 @@
         <para>Several organizations have emerged to address these issues through industry coding
             standards and implementation guidance. However, these have fallen short of ensuring high
             quality data with a common representation or standardization across the healthcare
-            ecosystem. Standards including Systematized Nomenclature of Medicine – Clinical Terms®
+            ecosystem. Standards including Systematized Nomenclature of Medicine Clinical Terms®
             (SNOMED CT®), Logical Observations Identifiers Names and Codes® (LOINC®), National
             Library of Medicine’s codification of the U.S. pharmacopeia (RxNorm) and others exist to
             address the variation in healthcare data and resulting inefficiencies by working with
             terminology, standards, and meaning. Each organization follows a set of rules that
-            govern the standards and add structure, however, even the best-meaning user may
+            govern the standards and add structure. However, even the best-meaning user may
             interpret the use of standards differently, highlighting the need to move beyond the
             reliance on standards alone. The integration of the above-mentioned organizations,
             users, and standards are important to create an interoperable and high-quality
@@ -66,18 +66,19 @@
                     <colspec colnum="2" colname="col2"/>
                     <tbody>
                         <row>
-                            <entry>SNOMED CT®</entry>
-                            <entry>A national standard that details comprehensive and precise
-                                multilingual health terminology globally [1]</entry>
+                            <entry>SNOMED CT® </entry>
+                            <entry>A national standard, comprehensive and precise multilingual
+                                health terminology globally [1]</entry>
                         </row>
                         <row>
                             <entry>LOINC®</entry>
-                            <entry>Standard that facilitates the exchange and pooling of clinical or
-                                laboratory results for clinical care, outcomes management, claims
-                                attachment, and research by providing a set of universal codes and
-                                names. LOINC® codes allow users to merge clinical results from many
-                                sources into one database for patient care, clinical research, or
-                                management [2]</entry>
+                            <entry>Logical Observation Identifiers Names and Codes terminology:
+                                facilitate the exchange and pooling of clinical or laboratory
+                                results for clinical care, outcomes management, claims attachment,
+                                and research by providing a set of universal codes and names. LOINC®
+                                codes allow users to merge clinical results from many sources into
+                                one database for patient care, clinical research, or management
+                                [2]</entry>
                         </row>
                         <row>
                             <entry>RxNorm</entry>
@@ -320,19 +321,20 @@
                 participation, like:</para>
             <itemizedlist>
                 <listitem>
-                    <para>The Centers for Medicare and Medicaid Services (CMS) and ONC will need to
-                        outline minimum data requirements for orders to ensure the participating
-                        entities are capturing standardized data elements for standardized questions
-                        that come from a well-known and widely available source of truth.</para>
+                    <para>The Centers for Medicare and Medicaid Services (CMS) and Office of the
+                        National Coordinator for Health IT (ONC) will need to outline minimum data
+                        requirements for orders to ensure the participating entities are capturing
+                        standardized data elements for standardized questions that come from a
+                        well-known and widely available source of truth.</para>
                 </listitem>
                 <listitem>
-                    <para>The U.S. Food and Drug Administration (FDA) will need to develop an authorization process that requires new
+                    <para>The FDA will need to develop an authorization process that requires new
                         and existing terminology standard organizations, healthcare systems, product
                         developers, and more to comply with pertinent standards prior to
                         incorporation into the IKM platform.</para>
                 </listitem>
                 <listitem>
-                    <para>Center for Disease Control and Prevention (CDC) must provide basic
+                    <para>The Centers for Disease Control and Prevention (CDC) must provide basic
                         standards and easily accessible guidance to enforce standardized data
                         collection, aggregation, and transmission for the various healthcare systems
                         within the IKM platform.</para>

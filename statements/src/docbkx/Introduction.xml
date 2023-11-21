@@ -100,7 +100,7 @@
                 resulting artifacts.</para>
             <para>The architecture presented in this book is inspired by core evolutionary design
                 principles called “Understandable, Reproducible, and Useful,” upon which
-                Systematized Nomenclature of Medicine-Clinical Terms (SNOMED CT®) development is
+                Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®) development is
                 still based. [1, 2] These criteria describe an approach for improving data quality
                 and increasing data integrity and agility: </para>
             <itemizedlist>
@@ -160,19 +160,20 @@
                 system upwards of $30 billion per year. The introduction of industry-wide
                 interoperability could improve upon these expenditures by reducing adverse events,
                 redundant testing, clinician’s time spent on manual data entry, and reducing length
-                of stay, resulting in $1.9B, $1.5B, $12B, and $18B in savings, respectively.[4-7]
-                Implementing Integrated Knowledge Management will reduce the challenges associated
-                with unpredictable, poorly controlled, and reactive health IT data. This lack of
-                interoperable data hinders advancements and innovation in the healthcare system,
-                including use of AI and Big Data, medical communications, research, and
-                international coordination, as new technologies must rely on suboptimal data and
-                cannot achieve their full potential. [8] The Knowledge Architecture described above
-                will provide the foundation for robust configuration management and quality
-                assurance of health IT data while allowing for a standardized update and extension
-                process. This approach will support increased clinical and laboratory data quality
-                and enable healthcare systems across the industry to conduct robust and meaningful
-                data analysis and increase overall interoperability, which ultimately enhances the
-                quality of care across all medical facilities. </para>
+                of stay, resulting in $1.9 billion, $1.5 billion, $12 billion, and $18 billion in
+                savings, respectively.[4-7] Implementing Integrated Knowledge Management will reduce
+                the challenges associated with unpredictable, poorly controlled, and reactive health
+                IT data. This lack of interoperable data hinders advancements and innovation in the
+                healthcare system, including use of Artificial Intelligence (AI) and Big Data,
+                medical communications, research, and international coordination, as new
+                technologies must rely on suboptimal data and cannot achieve their full potential.
+                [8] The Knowledge Architecture described above will provide the foundation for
+                robust configuration management and quality assurance of health IT data while
+                allowing for a standardized update and extension process. This approach will support
+                increased clinical and laboratory data quality and enable healthcare systems across
+                the industry to conduct robust and meaningful data analysis and increase overall
+                interoperability, which ultimately enhances the quality of care across all medical
+                facilities. </para>
             <para>The purpose of employing the Knowledge Architecture and enabling Integrated
                 Knowledge Management can be succinctly described through its benefits: increased
                 interoperability, improved patient outcomes, and meaningful data analysis. These
@@ -245,7 +246,8 @@
                         Set Hierarchy)</para>
                 </listitem>
                 <listitem>
-                    <para>Interoperability standards: SNOMED CT®, LOINC®, RxNorm, and similar</para>
+                    <para>Interoperability standards: SNOMED CT®, Logical Observation Identifiers
+                        Names and Codes® (LOINC®), RxNorm, and similar</para>
                 </listitem>
             </itemizedlist><emphasis role="bold">Defining a Standardized Form for clinical
                 statements:</emphasis><itemizedlist>
@@ -380,19 +382,19 @@
             <para>The most commonly known forms of Health IT systems, EHRs, or a systematized
                 collection of electronically stored patient and population health information, have
                 undoubtedly enabled dramatic advancements in patient care, allowing for breakthrough
-                technologies with advanced analytical capabilities (e.g., Machine Learning [ML],
-                Artificial Intelligence [AI]) to more easily identify new diseases and develop
-                treatments and reduce the need for patients to maintain and carry paper records from
-                provider to provider. </para>
+                technologies with advanced analytical capabilities (e.g., Machine Learning(ML), AI )
+                to more easily identify new diseases and develop treatments and reduce the need for
+                patients to maintain and carry paper records from provider to provider. </para>
             <para>Despite advancement in technologies like these, a Johns Hopkins study conducted in
                 2016 suggested that preventable medical errors, including those due to EHR errors,
                 accounted for approximately 250,000 patient deaths every year – making it the
-                third-leading cause of death in the United States. [15] When Crico, a medical
-                professional liability organization, identified 147 cases of patient harm over five
-                years in which an EHR was identified as a contributing factor, a staggering 80
-                percent of these cases involved moderate or severe harm to the patient. [16] In
-                total, an estimated $61 million in direct payments and legal expenses resulted from
-                these cases, at an average cost of $415,000 per case.</para>
+                third-leading cause of death in the United States. [15] When Controlled Risk
+                Insurance Company (CRICO), a medical professional liability organization, identified
+                147 cases of patient harm over five years in which an EHR was identified as a
+                contributing factor, a staggering 80 percent of these cases involved moderate or
+                severe harm to the patient. [16] In total, an estimated $61 million in direct
+                payments and legal expenses resulted from these cases, at an average cost of
+                $415,000 per case.</para>
             <para>On the surface, exciting new technology has continued to advance in the healthcare
                 ecosystem, but cases of patient harm, redundant testing, and over-expenditure
                 persists. This begs the question: <emphasis role="bold">is Health IT truly
@@ -426,16 +428,16 @@
                 identifying deviations from expected trends, informing preventive and public health
                 measures, supporting clinical research, and providing a legal and historical record.
                 [18] </para>
-            <para>To provide context with an example, when a primary care provider records a
-                diabetes diagnosis in the provider's local system, it is critical for that system to
-                share the data accurately and seamlessly to the pertinent pharmacy and laboratory
-                systems. These systems must then in turn communicate with one another and with the
-                primary care system to alert the provider that the patient has previously been
-                prescribed gentamicin and has recently been given an order for a radiologic
-                examination that requires intravenous iodine dye – both of which are known to affect
-                kidney function. If this information is not accurately communicated across
-                healthcare settings in a way that can be readily accessed, the patient may face
-                unnecessary harm or risks that could have been avoided.</para>
+            <para>For example, when a primary care provider records a diabetes diagnosis in the
+                provider's local system, it is critical for that system to share the data accurately
+                and seamlessly to the pertinent pharmacy and laboratory systems. These systems must
+                then in turn communicate with one another and with the primary care system to alert
+                the provider that the patient has previously been prescribed gentamicin and has
+                recently been given an order for a radiologic examination that requires intravenous
+                iodine dye – both of which are known to affect kidney function. If this information
+                is not accurately communicated across healthcare settings in a way that can be
+                readily accessed, the patient may face unnecessary harm or risks that could have
+                been avoided.</para>
             <para>The following sections aim to spell out some of the current problems with
                 electronic health data more clearly.</para>
             <section>
@@ -542,7 +544,7 @@
                 United States Department of Health and Human Services (HHS), the Office of the
                 National Coordinator for Health Information Technology (ONC) was born to promote a
                 national health information technology infrastructure and oversee its development.
-                While ONC is not an SDO, it works in close coordination with SDOs to support the
+                While ONC is not a SDO, it works in close coordination with SDOs to support the
                 adoption and application of health data standards in the U.S. </para>
             <para>While interoperable health data is a complex and nuanced topic, a primary
                 component is maintaining the meaning and intent of clinical data from the point of
@@ -586,9 +588,9 @@
                     parties but allows for structural variance. When people and systems use
                     different words and codes to describe synonymous or related things, healthcare
                     meaning standards translate the data to a common meaning. Healthcare terminology
-                    and meaning standards include SNOMED CT®, the Logical Observation Identifiers,
-                    Names, and Codes (LOINC®) and RxNorm (a terminology defining medications and
-                    ingredients from the National Library of Medicine).</para>
+                    and meaning standards include SNOMED CT®, LOINC® and RxNorm (a terminology
+                    defining medications and ingredients from the National Library of
+                    Medicine).</para>
                 <para>In the below example, the two sentences share a common <emphasis role="italic"
                         >meaning</emphasis>, however the sentence <emphasis role="italic"
                             >structure</emphasis> varies drastically. </para><figure xml:id="MeaningInteropoerability">
@@ -648,7 +650,7 @@
                         role="italic">meaning, </emphasis>in this case LOINC®. In the first HL7
                     segment for test 1, the LOINC® code is for a “Glucose [Mass/volume] in Serum or
                     Plasma”, whereas for test 2, the LOINC® code is for a “Glucose [Mass/volume] in
-                    Blood”. Different tests were conducted and therefore different LOINC® codes were
+                    Blood”. Different tests were conducted. Therefore, different LOINC® codes were
                     used in the HL7 v2 messages. The local laboratory information system and EHR
                     also define and use their own code systems to encode the tests; these are called
                     “local codes.” Although not universal, local codes are another way for health
@@ -665,7 +667,7 @@
                 </figure>
                 <para>The figure shows how the same local code can be erroneously mapped to
                     different LOINC® codes and transmitted in a Lab Result message. In this case
-                    example we see the same laboratory conducting two distinct tests and encoding
+                    example, we see the same laboratory conducting two distinct tests and encoding
                     each test with a different LOINC® code; however, both are mapped to the same
                     local code. This mock scenario highlights one example of the myriad of
                     interoperability challenges faced in healthcare today. [35] Successful
