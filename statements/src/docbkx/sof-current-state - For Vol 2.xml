@@ -7,19 +7,17 @@
     <section>
         <title>Purpose</title>
         <para>In an effort to resolve the challenges posed by data interoperability and unlock the
-            full potential of Real World Data (RWD) and Real World Evidence (RWE) across the health
-            care system, the Systemic Harmonization and Interoperability Enhancement  for Laboratory
-            Data (SHIELD) collaborative was formed. The SHIELD collaborative is a
-            multi-agency/stakeholder public-private initiative to develop and implement
-            collaborative policies and business models to overcome lab interoperability barriers.
-            Due to the complexity and vastness of this issue, SHIELD has embraced an ecosystem
-            perspective that recognizes no single entity has the authority or influence to
-            meaningfully impact the state of lab interoperability. SHIELD stakeholders include
-            Invitro Diagnostic (IVD) manufacturers, commercial and clinical center laboratories,
-            professional organizations, EHR vendors, Pew Charitable Trusts, numerous federal
-            agencies, standards development organizations, and patient advocates. SHIELD’s overall
-            objective is to ensure lab interoperability such that the same type of device is
-            described the same way throughout EHRs. </para>
+            full potential of  RWD and RWE across the health care system, the SHIELD collaborative
+            was formed. The SHIELD collaborative is a multi-agency/stakeholder public-private
+            initiative to develop and implement collaborative policies and business models to
+            overcome lab interoperability barriers. Due to the complexity and vastness of this
+            issue, SHIELD has embraced an ecosystem perspective that recognizes no single entity has
+            the authority or influence to meaningfully impact the state of lab interoperability.
+            SHIELD stakeholders include In vitro Diagnostic (IVD) manufacturers, commercial and
+            clinical center laboratories, professional organizations, EHR vendors, Pew Charitable
+            Trusts, numerous federal agencies, standards development organizations, and patient
+            advocates. SHIELD’s overall objective is to ensure lab interoperability such that the
+            same type of device is described the same way throughout EHRs. </para>
         <para>The purpose of this Summary of Findings – current state of RWE analytics including but
             not limited to information retrieval and Knowledge Management and discovery – is to
             explore the current state of real world data and real world evidence as it pertains to
