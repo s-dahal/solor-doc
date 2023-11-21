@@ -69,12 +69,12 @@
     </section>
     <section>
         <title>Real World Data (RWD) and Real World Evidence (RWE) Background</title>
-        <para>RWD is defined by the FDA as data relating to patient health status and/or the
-                delivery of health care routine collected from a variety of sources as part of
-                receiving care or daily living. It encompasses most sources of health data derived
-                from common sources such as traditional clinical trial settings, including EHRs,
-                claims and billing activities, disease registries, pharmacy records, as well as
-                non-standard sources such as social media and wearable devices. [2] </para>
+        <para>RWD is defined as data relating to patient health status and/or the delivery of health
+            care routine collected from a variety of sources as part of receiving care or daily
+            living. It encompasses most sources of health data derived from common sources such as
+            traditional clinical trial settings, including EHRs, claims and billing activities,
+            disease registries, pharmacy records, as well as non-standard sources such as social
+            media and wearable devices. [2] </para>
             <para>Large quantities of clinical data are generated throughout the various stages of
                 an individual’s health care journey. When a patient visits a care provider, has
                 their vitals recorded, reports their symptoms, undergoes laboratory tests, receives
@@ -115,26 +115,26 @@
             numbers of specimen collection centers for COVID testing. Each patient was required to
             report symptom status for loss of smell or taste prior to testing by antigen or
             polymerase chain reaction (PCR). Analysis showed that the presence of one or both
-            symptoms had a positive predictive value (PPV) of 80 percent for COVID. These RWD
-            provided the RWE to support pool testing of specimens to conserve testing reagents
-            during a period of severe test supply shortages. [5] </para>
-        <para>The use of RWD that is of sufficient quality to be used as RWE for purposes of FDA
-            market approval and post-market surveillance of medicines and in IVD presents a
-            potential rich environment and supplement to the current gold-standard controlled
-            clinical trial methodologies. To this effect, Congress signed the 21st Century Cures Act
-            (Cures Act) into law in 2016 to help accelerate the development of medical products and
-            bring new innovations to patient populations. [2] The law intends to increase the FDA’s
-            focus on evaluating RWD and RWE for regulatory decision making for new approvals,
-            support post-approval study requirements, and evaluate additional indications for
-            approved treatments. [2] Unfortunately, the broad readiness of the U.S. healthcare
-            ecosystem was not, and is not, in place to broadly harness and safely and effectively
-            use the data in the U.S. healthcare domain as captured in the EHR systems, public health
-            agencies, administrative systems, and potentially patient reported information. Such a
-            gap in surveillance, data capture, data exchange, data harmonization and subsequent
-            analytics place the U.S. at risk to repeat the “data scramble” in the event of another
-            emerging disease, as experienced during COVID. Despite existing issues with widescale
-            use of RWD, there are multiple examples of where and how RWD is being used effectively
-            from which future direction can be informed. </para>
+            symptoms had a positive predictive value (PPV) of 80% for COVID. These RWD provided the
+            RWE to support pool testing of specimens to conserve testing reagents during a period of
+            severe test supply shortages. [5] </para>
+        <para>The use of RWD that is of sufficient quality to be used as RWE for market approval,
+            post-market surveillance of medicines, and in IVD presents a potentially rich
+            environment and supplement to the current gold-standard controlled clinical trial
+            methodologies. To this effect, Congress signed the 21st Century Cures Act (Cures Act)
+            into law in 2016 to help accelerate the development of medical products and bring new
+            innovations to patient populations. [2] The law intends to increase federal focus on
+            evaluating RWD and RWE for regulatory decision making for new approvals, support
+            post-approval study requirements, and evaluate additional indications for approved
+            treatments. [2] Unfortunately, the broad readiness of the U.S. healthcare ecosystem was
+            not, and is not, in place to broadly harness and safely and effectively use the data in
+            the U.S. healthcare domain as captured in the EHR systems, public health agencies,
+            administrative systems, and potentially patient reported information. Such a gap in
+            surveillance, data capture, data exchange, data harmonization and subsequent analytics
+            place the U.S. at risk to repeat the “data scramble” in the event of another emerging
+            disease, as experienced during COVID. Despite existing issues with widescale use of RWD,
+            there are multiple examples of where and how RWD is being used effectively from which
+            future direction can be informed. </para>
         <section>
             <title>Current RWD Uses</title>
             <para>There are several national and international efforts to aggregate and expose
@@ -200,12 +200,8 @@
                 enclave would benefit from expanding its horizon beyond COVID-19 to other conditions
                 and general disease surveillance. [6] </para>
     </section>
-        <section>
-            <title>Patient-Centered Outcomes Research Institute (PCORI) &amp; National
-                Patient-Centered Clinical Research Network (PCORnet)</title>
-        </section>
             <section>
-                <title/>
+                <title>Patient-Centered Outcomes Research Institute (PCORI) and National Patient-Centered Clinical Research Network (PCORnet)</title>
                 <para>The Patient-Centered Outcomes Research Institute (PCORI) is an independent,
                 nonprofit, and leading funder of patient-centered comparative clinical effectiveness
                 research in the United States. The primary goal of PCORI is to increases useful
@@ -263,9 +259,6 @@
                 </section>
         <section>
             <title>Observational Health Data Sciences and Informatics (OHDSI)</title>
-        </section>
-        <section>
-            <title/>
             <para>Founded in 2014, the OHDSI is an interdisciplinary collaborative that aims to
                 maximize value in health data through large-scale analytics and a common data model.
                 The stated mission of OHDSI is “to improve health by empowering a community to
@@ -308,14 +301,14 @@
         <para>While OHDSI has demonstrated significant value, there are obstacles limiting its
                 applications. OHDSI’s broad reach and many collaborative partnerships add value to
                 the completeness and generalizability of information, the fact that the data is
-                largely international complicates its use in federal regulatory applications, such
-                as within FDA decision-making. Similarly, the structure of multiple disparate
-                contributors restrictions data flexibility and transparency. The data is fully and
-                irreversibly de-identified, which can limit analyses that require more individual or
-                time stamped data, as well as complicating retrospective quality control. The lack
-                of transparency is exacerbated by the fluidity of medical terminology, as the
-                rigidity of black-box data wrangling limit the agility required to respond to
-                standard terminology changes.</para> 
+                largely international complicates its use in federal regulatory applications.
+                Similarly, the structure of multiple disparate contributors restrictions data
+                flexibility and transparency. The data is fully and irreversibly de-identified,
+                which can limit analyses that require more individual or time stamped data, as well
+                as complicating retrospective quality control. The lack of transparency is
+                exacerbated by the fluidity of medical terminology, as the rigidity of black-box
+                data wrangling limit the agility required to respond to standard terminology
+                changes.</para> 
             <para>One large consideration with OHDSI data is that of correlation versus causation.
                 The nature of OHDSI’s data collection lends itself well towards evaluating trends,
                 identifying associations, and investigating intersections of drugs, treatments, and
