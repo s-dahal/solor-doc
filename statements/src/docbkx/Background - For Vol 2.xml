@@ -5,25 +5,6 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>IKM Book Background</title>
     <section>
-        <title>Federal Drug Administration (FDA) Overview</title>
-        <para>The U.S. Food and Drug Administration (FDA) is responsible for protecting public
-            health by ensuring the safety of consumer products and is responsible for advancing
-            innovative medical products and technology that further promote public health. Medical
-            devices, including instruments and products used for treating or diagnosing diseases
-            such as diabetes, must be approved for use by the public. This process was brought to
-            the public eye during the coronavirus disease 2019 (COVID-19) pandemic with the use of
-            Emergency Use Authorizations (EUA) for COVID-19 test kits. FDA’s Center for Devices and
-            Radiological Health (CDRH) maintains a database of Premarket Notification [510(k)]
-            approved products. 510(k) is a premarket submission that manufacturers make to the FDA
-            to prove their device is safe and equivalent to an already approved product that is
-            legally marketed. Beyond 510(k) approvals is the Premarket Approval (PMA). This
-            application seeks FDA approval based on rigorous scientific evidence that the device is
-            safe and effective. Through these and other processes FDA ensures the public has access
-            to cutting edge and safe tools to manage health. </para>
-        <para>FDA CDRH is the primary funder of Systemic Harmonization and Interoperability
-            Enhancement for Laboratory Data (SHIELD). </para>
-    </section>
-    <section>
         <title>Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
             Overview</title>
         <para>SHIELD is a public-private collaboration that started in 2015 with a singular focus:
@@ -56,10 +37,9 @@
         </itemizedlist>
     </section>
     <section>
-        <title>FDA SHIELD Partners Overview</title>
-        <para>FDA SHIELD has partnered with and awarded contracts to a variety of organizations to
-            support the development of a solution that can meet SHIELD goals and the current issues
-            with data interoperability. </para><figure xml:id="TeamingPartners">
+        <title>Teaming Partners Overview</title>
+        <para>A variety of organizations are supporting the development of a solution that can meet
+            SHIELD goals and the current issues with data interoperability. </para><figure xml:id="TeamingPartners">
                 <title>Teaming Partners</title>
                 <mediaobject>
                     <imageobject>
@@ -107,13 +87,13 @@
             observational data for safe patient care, comparative effectiveness research, and
             analysis including recording biases, workflow differences, and issues with variations in
             data collection, such as invalid, inconsistent, and missing data. [2] </para>
-        <para>The FDA has a need for aggregated RWE and reliable analytics and would benefit from
-            implementable methodologies that address interoperability and data aggregation gaps to
-            help establish a health data ecosystem capable for widespread use in FDA regulatory
-            efforts, public health surveillance, research, and care delivery. To achieve safe and
-            effective information retrieval and reproducible search and query practices across
-            various settings, the following constructs are needed to successfully build, maintain,
-            and analyze data/resources across key biomedical concepts of interest. </para>
+        <para>Aggregated RWE and reliable analytics would benefit from implementable methodologies
+            that address interoperability and data aggregation gaps to help establish a health data
+            ecosystem capable for widespread use in regulatory efforts, public health surveillance,
+            research, and care delivery. To achieve safe and effective information retrieval and
+            reproducible search and query practices across various settings, the following
+            constructs are needed to successfully build, maintain, and analyze data/resources across
+            key biomedical concepts of interest. </para>
         <section>
             <title>Data Interoperability Tooling Overview</title>
             <para>A generalized definition of interoperable health data that supports reliable RWE
@@ -221,19 +201,18 @@
                 align, normalize and aggregate the EHR data held by each individual client into a
                 large, de-identified data enclave for purposes of data analytics, quality
                 improvement and research. Unfortunately, these independent efforts are proprietary
-                and do not extend beyond the vendor user community. Further, the data normalization
+                and do not extend beyond the vendor-user community. Further, the data normalization
                 and representation process remains a "black box" and cannot be independently
                 verified for semantic correctness, data and information loss or gains, or
-                appropriate application of metadata standards. In fact, these vendor-centric face
-                the same issues on a smaller scale as the FDA SHIELD effort. Issues with
-                vendor-centric data alignment and reuse are known. [4-5] Despite these weaknesses,
-                an opportunity exists to collaborate with EHR vendors to normalize and apply
-                metadata standards safely and reliably to the EHR data created by their clients. To
-                capitalize on this opportunity, vendors must be allowed to create unique value in
-                their data offerings to the clientele but also be required to expose these data to
-                the broader community such that data collected by numbers of vendors can be safely
-                and reliably aggregated for research, public health, clinical quality improvement
-                and regulatory uses as described by SHIELD. </para>
+                appropriate application of metadata standards. In fact, these vendor-centric efforts
+                face the same issues with vendor-centric data alignment and reuse on a smaller
+                scale. [4-5] Despite these weaknesses, an opportunity exists to collaborate with EHR
+                vendors to normalize and apply metadata standards safely and reliably to the EHR
+                data created by their clients. To capitalize on this opportunity, vendors must be
+                allowed to create unique value in their data offerings to the clientele but also be
+                required to expose these data to the broader community such that data collected by
+                numbers of vendors can be safely and reliably aggregated for research, public
+                health, clinical quality improvement and regulatory uses as described by SHIELD. </para>
         </section>
         <section>
             <title>Metadata overview</title>
@@ -300,14 +279,13 @@
                 These environments extract data from various data sources, ideally into an
                 integrated knowledge base, housed in a central ecosystem – thereby reducing data
                 silos, enhancing security and governance, and eliminating system redundancies. For
-                data analytics conducted using RWE, analytics environments used by FDA and others
-                will be dependent on a variety of knowledge bases and datasets that may have some
-                common fields but also differing fields. A vast variety of biomedical and
-                administrative knowledge present the basis for RWE analytics and knowledge
-                management of these disparate datasets is a major element of consideration to
-                facilitate RWE analytics. Knowledge management includes the creation, discovery, and
-                application of knowledge assets to facilitate sharing and re-use across the
-                ecosystem. </para>
+                data analytics conducted using RWE, analytics environments will be dependent on a
+                variety of knowledge bases and datasets that may have some common fields but also
+                differing fields. A vast variety of biomedical and administrative knowledge present
+                the basis for RWE analytics and knowledge management of these disparate datasets is
+                a major element of consideration to facilitate RWE analytics. Knowledge management
+                includes the creation, discovery, and application of knowledge assets to facilitate
+                sharing and re-use across the ecosystem. </para>
             <para>The ability to use interoperable syntax and semantics between data sources is a
                 critical requirement to support effective knowledge management and reliable
                 analytics of disparate RWE datasets. Use of industry standards for syntax and
@@ -504,16 +482,6 @@
                 <para>
                     <itemizedlist>
                         <listitem>
-                            <para>The U.S. FDA requires LOINC® for lab test data in regulated
-                                studies and have articulated a broad vision of using real-world
-                                evidence in post market surveillance that depends on standardized
-                                data.</para>
-                        </listitem>
-                    </itemizedlist>
-                </para>
-                <para>
-                    <itemizedlist>
-                        <listitem>
                             <para>The LIVD (LOINC® to IVD) Mapping Specification is required by the
                                 United States Department of Health and Human Services (HHS) for
                                 SARS-CoV-2 reporting and harmonizes how IVD test information is
@@ -551,11 +519,11 @@
                 <para>
                     <itemizedlist>
                         <listitem>
-                            <para>Common Data models for Large-Scale Research Networks the National
-                                Patient-Centered Clinical Research Network (PCORnet), Observational
-                                Health Data Sciences and Informatics (OHDSI), the Observational
-                                Health Data Sciences and Informatics research group, and the FDA's
-                                Mini-Sentinel, all use LOINC® in their common data models.</para>
+                            <para>Common Data models for Large-Scale Research Networks like the
+                                National Patient-Centered Clinical Research Network (PCORnet),
+                                Observational Health Data Sciences and Informatics (OHDSI), and the
+                                Observational Health Data Sciences and Informatics research group
+                                all use LOINC® in their common data models.</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -1005,16 +973,16 @@
             <title>Safety Systems Use Case</title>
             <para>The Synensys document, "System Safety within Laboratory Data Exchanges", [WILL
                 <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT LINK TO
-                IKM.DEV WITH THIS PAPER<?oxy_custom_end?> IN OPTION PERIOD] analyzes the complex
-                challenges in laboratory data exchanges within healthcare, emphasizing the
-                importance of accurate communication, standardized procedures, and contextual
-                information in diagnostics. Various loss scenarios and potential risks are detailed,
-                highlighting the consequences of miscommunication and inconsistency in laboratory
-                data handling. The document is being cited as an example because it illustrates the
-                application of system safety principles in healthcare. Its focus on engineering
-                safety, quality, and reliability into laboratory data exchanges exemplifies the
-                broader theme of implementing systems thinking and high reliability practices,
-                providing a real-world perspective on these critical concepts. [20]</para>
+                IKM.DEV WITH THIS PAPER<?oxy_custom_end?>] analyzes the complex challenges in
+                laboratory data exchanges within healthcare, emphasizing the importance of accurate
+                communication, standardized procedures, and contextual information in diagnostics.
+                Various loss scenarios and potential risks are detailed, highlighting the
+                consequences of miscommunication and inconsistency in laboratory data handling. The
+                document is being cited as an example because it illustrates the application of
+                system safety principles in healthcare. Its focus on engineering safety, quality,
+                and reliability into laboratory data exchanges exemplifies the broader theme of
+                implementing systems thinking and high reliability practices, providing a real-world
+                perspective on these critical concepts. [20]</para>
         </section>
     </section>
     <section>
