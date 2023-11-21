@@ -2,9 +2,9 @@
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Introduction to the Integrated Knowledge Management (IKM) Book</title>
+    <title>Introduction to the Integrated Knowledge Management (IKM) Volumes</title>
     <section>
-        <title>IKM Book Motivation</title>
+        <title>IKM Volumes Motivation</title>
         <para>In today’s healthcare ecosystem, providers continually rely on data from an increasing
             number of sources to make informed clinical decisions. While this data is a critical
             component of providing patients with the best care possible, major challenges exist with
