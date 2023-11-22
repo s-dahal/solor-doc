@@ -12,7 +12,8 @@
    <packaging>pom</packaging>
 
    <properties>
-      <docbook.root>End-of-Year Report.xml</docbook.root>
+      <!-- <docbook.root>End-of-Year Report.xml</docbook.root> -->
+      <docbook.root>Volume 1 - Introduction.xml</docbook.root>
    </properties>
    <dependencies>
       <dependency>
