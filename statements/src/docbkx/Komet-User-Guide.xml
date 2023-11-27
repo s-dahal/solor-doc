@@ -83,8 +83,8 @@
             <orderedlist>
                 <listitem>
                     <para>For Windows, go to your search bar or apps folder and open “Komet”. For
-                        Mac, go to your applications folder, search for Komet, and run the Komet
-                        application.</para>
+                        Mac, go to your applications folder, search for Komet, and run the desktop
+                        version Komet contributed application.</para>
                 </listitem>
                 <listitem>
                     <para>The below Komet Startup window will open. Change data source to “Open
@@ -112,8 +112,8 @@
                         is stored in the Solor folder</para>
                 </listitem>
                 <listitem>
-                    <para>Exit Komet, re-open the application, and change the data source to “Open
-                        SpinedArrayStore”, your data source should appear</para>
+                    <para>Exit and re-open Komet. Change the data source to “Open SpinedArrayStore”;
+                        your data source should appear</para>
                 </listitem>
                 <listitem>
                     <para>Select the data source you would like to use and click “Ok” in the bottom
