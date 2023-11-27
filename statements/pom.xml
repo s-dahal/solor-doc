@@ -113,7 +113,7 @@
                   <configuration>
                      <!-- per execution configuration -->
                      <includes>${docbook.root}</includes>
-                     <draftMode>yes</draftMode>
+                     <draftMode>no</draftMode>
                      <externalFOPConfiguration>
                         ${project.build.directory}/extracted-dependencies/${project.groupId}/docbook-customization/fo/fop.xconf
                      </externalFOPConfiguration>
