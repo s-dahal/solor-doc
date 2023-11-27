@@ -10,8 +10,9 @@
             <orderedlist>
                 <listitem>
                     <para>Use the following link to <link
-                            xlink:href="https://github.com/ikmdev/komet/releases">download
-                            the latest Komet relase build</link> for your appropriate operating system</para>
+                            xlink:href="https://github.com/ikmdev/komet/releases">download the
+                            latest Komet release build</link> for your appropriate operating
+                        system</para>
                     <figure xml:id="KometDownload">
                         <title>Komet Download</title>
                         <mediaobject>
