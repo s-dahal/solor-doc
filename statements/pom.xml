@@ -13,7 +13,7 @@
 
    <properties>
       <!-- <docbook.root>End-of-Year Report.xml</docbook.root> -->
-      <docbook.root>Volume 8 - Komet User Guide.xml</docbook.root>
+      <docbook.root>Volume 6 - ANF Ballot.xml</docbook.root>
    </properties>
    <dependencies>
       <dependency>
