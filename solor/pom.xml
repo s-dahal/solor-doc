@@ -14,7 +14,7 @@
     </description>
 
     <properties>
-        <docbook.root>${project.artifactId}.xml</docbook.root>
+        <docbook.root>volume 6 - ANF Ballot.xml</docbook.root>
     </properties>
     <dependencies>
         <dependency>
