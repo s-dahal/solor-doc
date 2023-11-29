@@ -11,10 +11,13 @@
         <title>ANF Ballot</title>
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"/>
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-reference-model/anf-reference-model.xml"/>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"/>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"/>
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"/>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"/>
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"/>
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"/>
     </part>
