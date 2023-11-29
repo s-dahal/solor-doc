@@ -16,6 +16,6 @@
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"/>
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"/>
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"/>
-        <xi:include href="file:/C:/Users/rgeorgacopoulos/Code/solor-doc/statements/target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"/>
     </part>
 </book>
