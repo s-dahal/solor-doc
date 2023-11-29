@@ -145,12 +145,11 @@
                 </listitem>
                 <listitem>
                     <para>As a user, you can click and drag any of these activity streams into a
-                        different panel to reorganize as needed.</para>
+                        different panel to reorganize as needed</para>
                 </listitem>
                 <listitem>
                     <para>To view the new Komet prototype user interface (UI), go to the top menu
-                        and select Edit → New Journal on Windows or View → New Journal on
-                        Mac.</para>
+                        and select Edit → New Journal on Windows or View → New Journal on Mac</para>
                     <figure xml:id="NewJournal">
                             <title>New Journal</title>
                             <mediaobject>
@@ -159,7 +158,7 @@
                                 </imageobject>
                             </mediaobject>
                         </figure>
-                    <para>A Journal window will appear with the new the prototype UI.</para>
+                    <para>A Journal window will appear with the new the prototype UI</para>
                     <figure xml:id="JournalUI">
                         <title>Journal UI</title>
                         <mediaobject>
@@ -289,7 +288,7 @@
                         <listitem>
                             <para>To view hierarchical relationships, utilize the “Concept
                                 Navigator” and “Pattern Navigator” tabs in the Navigation activity
-                                stream (default location: left panel).</para>
+                                stream (default location: left panel)</para>
                             <figure xml:id="HierarchicalNavigation">
                                 <title>Hierarchical Navigation</title>
                                 <mediaobject>
@@ -334,7 +333,7 @@
             <orderedlist>
                 <listitem>
                     <para>In the global navigation menu to the left, click the magnifying glass to
-                        open the search tray. </para>
+                        open the search tray </para>
                 </listitem>
                 <listitem>
                     <para>Type a concept name in the search field and press Enter. A list of related
@@ -450,7 +449,7 @@
             <orderedlist>
                 <listitem>
                     <para>In the tool ribbon at the top of the concept window, click the green Time
-                        Travel button. <figure xml:id="TimeTravelButton">
+                        Travel button<figure xml:id="TimeTravelButton">
                             <title>Time Travel Button</title>
                             <mediaobject>
                                 <imageobject>
@@ -481,7 +480,7 @@
                 </listitem>
                 <listitem>
                     <para>Click the Properties toggle on the right, above the Timeline panel, to
-                        enable the Properties panel. <figure xml:id="PropertiesToggle">
+                        enable the Properties panel<figure xml:id="PropertiesToggle">
                             <title>Properties Toggle</title>
                             <mediaobject>
                                 <imageobject>
@@ -514,27 +513,25 @@
                 </listitem>
                 <listitem>
                     <para>Click the Range toggle below the Properties toggle to enable range
-                        selection on the timeline. 
-                        <figure xml:id="RangeToggle">
+                        selection on the timeline<figure xml:id="RangeToggle">
                             <title>Range Toggle</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata fileref="images/Range%20Toggle.png"/>
                                 </imageobject>
                             </mediaobject>
-                        </figure>This allows you to select event dots you wish to
-                        view within a specific time range. 
-                        <figure xml:id="EventsWithinaRange">
+                        </figure>This allows you to select event dots you wish to view within a
+                        specific time range. <figure xml:id="EventsWithinaRange">
                             <title>Events Within a Range</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata fileref="images/Events%20Within%20a%20Range.png"/>
                                 </imageobject>
                             </mediaobject>
-                        </figure>When you define a specific time range,
-                        the History view only shows event details for event dots contained within
-                        that time range. When an event dot is selected, the dot turns green and the
-                        corresponding historical record is outlined red.</para>
+                        </figure>When you define a specific time range, the History view only shows
+                        event details for event dots contained within that time range. When an event
+                        dot is selected, the dot turns green and the corresponding historical record
+                        is outlined red.</para>
                     <figure xml:id="HistoryWithinaRange">
                         <title>History Within a Range</title>
                         <mediaobject>
@@ -544,8 +541,8 @@
                         </mediaobject>
                     </figure>
                 </listitem>
-                <listitem><para>Click the dropdown at the top of the History view to filter historical records by Concept, Description, and Axiom change events.
-                </para><figure xml:id="HistoricalRecordsFilter">
+                <listitem><para>Click the dropdown at the top of the History view to filter historical records by Concept,
+                        Description, and Axiom change events</para><figure xml:id="HistoricalRecordsFilter">
                     <title>Historical Records Filter</title>
                     <mediaobject>
                         <imageobject>
