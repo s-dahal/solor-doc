@@ -10,8 +10,33 @@
     </section>
     <section>
         <title>Background</title>
-        <para>According to the American Health Information Management Association’s (AHIMA) HIM Body of Knowledge™, Health Data Standards are documented agreements on representations, formats, and definitions of common data. [1] To achieve interoperability, health data entities must conform to industry standards and specifications which act as a source of truth for methods of codifying information captured and exchanged. Data standards are developed and maintained by Standards Development Organizations (SDOs) who are member-supported organizations which act like a legislative body with detailed internal processes to ensure consistency and fairness among the entities subject to them.  </para>
-        <para>Two of the major Health IT SDOs in our analysis are Logical Observation Identifiers Names and Codes (LOINC) and Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT). LOINC was organized in 1994 to standardize a common terminology for laboratory and clinical observations as trends in electronic clinical data exchange were taking form. [2] Today, LOINC encodings are most often exchanged via Health Level Seven International (HL7) Version 2 transactions between health systems. SNOMED CT is an international standard for several purposes including problem list and public health reporting and is required by many countries’ certification criteria for EHRs. It is a computer-processable collection of medical terms, codes, synonyms, and definitions used in clinical documentation and reporting. Both SNOMED CT and LOINC can be used as a common terminology to represent clinical information consistently and comprehensively in the electronic exchange of health data, however two or more common terminologies which serve near-identical purposes is oxymoronic and leaves room for improvement, consolidation, and harmonization. For lab data exchange, SNOMED CT is typically used to encode test results and observations and LOINC is often used to encode tests (however, LOINC does also represent some test results) and these relationships, overlaps, and contradictions present implementers with the need to use these terminologies in more integrated ways. </para>
+        <para>According to the American Health Information Management Association’s (AHIMA)
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20231130T121650-0500" comment="Checked AHIMA website (11/30/23), no acronym spelled out for this. Most likely stands for Health Informatics Management like the org name does. "?>HIM<?oxy_comment_end?>
+            Body of Knowledge™, Health Data Standards are documented agreements on representations,
+            formats, and definitions of common data. [1] To achieve interoperability, health data
+            entities must conform to industry standards and specifications which act as a source of
+            truth for methods of codifying information captured and exchanged. Data standards are
+            developed and maintained by Standards Development Organizations (SDOs) who are
+            member-supported organizations which act like a legislative body with detailed internal
+            processes to ensure consistency and fairness among the entities subject to them. </para>
+        <para>Two of the major Health Information Technology (IT) SDOs in our analysis are Logical
+            Observation Identifiers Names and Codes (LOINC®) and Systematized Nomenclature of
+            Medicine Clinical Terms (SNOMED). LOINC® was organized in 1994 to standardize a common
+            terminology for laboratory and clinical observations as trends in electronic clinical
+            data exchange were taking form. [2] Today, LOINC® encodings are most often exchanged via
+            Health Level Seven International (HL7) Version 2 transactions between health systems.
+            SNOMED CT® is an international standard for several purposes including problem list and
+            public health reporting and is required by many countries’ certification criteria for
+            EHRs. It is a computer-processable collection of medical terms, codes, synonyms, and
+            definitions used in clinical documentation and reporting. Both SNOMED CT® and LOINC® can
+            be used as a common terminology to represent clinical information consistently and
+            comprehensively in the electronic exchange of health data, however two or more common
+            terminologies which serve near-identical purposes is oxymoronic and leaves room for
+            improvement, consolidation, and harmonization. For lab data exchange, SNOMED CT® is
+            typically used to encode test results and observations and LOINC® is often used to
+            encode tests (however, LOINC®does also represent some test results) and these
+            relationships, overlaps, and contradictions present implementers with the need to use
+            these terminologies in more integrated ways. </para>
     </section>
     <section>
         <title>Objectives and Approach</title>
