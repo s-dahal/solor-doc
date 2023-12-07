@@ -5,8 +5,8 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Assertional Knowledge</title>
     <section>
-        <title>Introduction</title>
-        <para>Previously we discussed definitional knowledge which defines purely structural
+        <title>Introduction to Assertional Knowledge</title>
+        <para>Previously, we discussed definitional knowledge which defines purely structural
             relationships among concepts. Definitional knowledge relationships do not represent how
             concepts influence or relate to each other in a clinical setting. This type of
             information is represented by assertional knowledge. For example, shortness of breath
@@ -79,7 +79,7 @@
             of use, and overall coverage. "Compositional balance" makes concept selection tasks
             efficient by reducing the effort to assemble complex concepts from general concepts, and
             reducing the time needed to search through long lists of precoordinated concepts. </para>
-        <para>Prior to 2012, SNOMED CT included qualifying relationships that could be used for
+        <para>Prior to 2012, SNOMED CT® included qualifying relationships that could be used for
             creating a user interface that would post-coordinate concepts using pre-approved
             attribute value pairs. With the introduction of the RF2, qualifying relationships were
             no longer released in favor of the Machine Readable Concept Model (MRCM). The MRCM is a
@@ -92,7 +92,7 @@
             <title>Facts Supporting Reasoning</title>
             <para>Attributes like the ones below are common in proprietary interface terminologies
                 and represent assertional knowledge that can then be mapped to standard reference
-                terminologies like SNOMED CT or RxNorm.</para>
+                terminologies like SNOMED CT® or RxNorm.</para>
             <itemizedlist>
                 <listitem>
                     <para>“Aspirin treats pain”</para>
@@ -196,7 +196,7 @@
             <para><emphasis role="underline"><emphasis role="bold">Eponyms</emphasis>:</emphasis>
                 "Levine sign" for "a clenched fist held over the chest indicating ischemic cardiac
                 chest pain"</para>
-            <para>However, rich synonymy may increase the chances that a given term may be used to
+            <para>However, rich synonymys may increase the chances that a given term may be used to
                 represent more than one concept (e.g., "cold" for "low temperature" and for "upper
                 respiratory tract viral infection". Parameters for metrics for evaluating the
                 completeness of synonym coverage in clinical interface terminologies include:</para>

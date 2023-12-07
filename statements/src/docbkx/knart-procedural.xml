@@ -4,51 +4,48 @@
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Procedural Knowledge Representation</title>
-    <para>Generally, Procedural Knowledge can pertain to Clinical Decision Support, e.g.: </para>
+    <para>Generally, Procedural Knowledge can pertain to Clinical Decision Support (CDS), e.g.: </para>
     <para>• Standard ways of performing a procedure</para>
     <para>• Treatment protocols for diseases</para>
     <para>• Standard evidence-based Order Sets</para>
-    <para>Applied Procedural Knowledge can enable the use of Clinical Decision Support,
-        <?oxy_comment_start author="steph" timestamp="20190507T125958-0600" comment="I don&apos;t think these need to be capitalized." id="vnl_sx2_c3b" mid="1"?><?oxy_comment_start author="rcholan" timestamp="20190615T214857-0400" comment="Stylistically, these are often captalized in Informatics Literature. I personally like capitalizing to make it clear that these are distinct concepts in the list. This can be re-visited in the proofing stage, or Stephanie we can discuss this more if you feel strongly. " parentID="vnl_sx2_c3b"?>Clinical
-        Pathways, and Knowledge Artifacts<?oxy_comment_end?><?oxy_comment_end mid="1"?> (KNARTs)
+    <para>Applied Procedural Knowledge can enable the use of CDS,
+        <?oxy_comment_start author="steph" timestamp="20190507T125958-0600" comment="I don&apos;t think these need to be capitalized." id="vnl_sx2_c3b"?><?oxy_comment_start author="rcholan" timestamp="20190615T214857-0400" comment="Stylistically, these are often captalized in Informatics Literature. I personally like capitalizing to make it clear that these are distinct concepts in the list. This can be re-visited in the proofing stage, or Stephanie we can discuss this more if you feel strongly. " parentID="vnl_sx2_c3b" mid="1"?>Clinical
+        Pathways, and Knowledge Artifacts<?oxy_comment_end mid="1"?><?oxy_comment_end?> (KNARTs)
         that
         <?oxy_comment_start author="steph" timestamp="20190507T130127-0600" comment="It&apos;s not clear to me if this is referring only to KNART or clinical pathways, CDS, and KNARTs.  If all of them, then don&apos;t they standardize more than just documentation?" flag="done"?>standardize
         patient documentation<?oxy_comment_end?>, quality improvement interventions, and protocols
         focused on specific clinical domains and patient situations.</para>
     <section>
-        <title>Introduction to Clinical Decision Support  </title>
-        <para>As defined by Osheroff et al <emphasis role="bold">Clinical decision
-                support</emphasis> (CDS) “provides clinicians, staff, patients, or other individuals
-            with knowledge and person-specific information, intelligently filtered or presented at
-            appropriate times, to enhance health and health care.”<citation>Osheroff</citation> CDS
-            encompasses a variety of tools to enhance decision-making in the clinical workflow.
-            Examples of CDS tools include but are not limited to: </para>
+        <title>Introduction to Clinical Decision Support (CDS)</title>
+        <para>As defined by Osheroff et al. CDS “provides clinicians, staff, patients, or other
+            individuals with knowledge and person-specific information, intelligently filtered or
+            presented at appropriate times, to enhance health and health care.” CDS encompasses a
+            variety of tools to enhance decision-making in the clinical workflow. Examples of CDS
+            tools include but are not limited to: </para>
         <itemizedlist>
             <listitem>
-                <para>order sets created for particular conditions or types of patients</para>
+                <para>order sets created for particular conditions or types of patients.</para>
             </listitem>
             <listitem>
                 <para>recommendations/databases that can provide information relevant to particular
-                    patients</para>
+                    patients.</para>
             </listitem>
             <listitem>
-                <para>reminders for preventive care</para>
+                <para>reminders for preventive care.</para>
             </listitem>
             <listitem>
-                <para>documentation templates</para>
+                <para>documentation templates.</para>
             </listitem>
             <listitem>
-                <para>diagnostic support</para>
+                <para>diagnostic support.</para>
             </listitem>
             <listitem>
-                <para>alerts about potentially dangerous situations. </para>
+                <para>alerts about potentially dangerous situations.</para>
             </listitem>
         </itemizedlist>
-        <para><emphasis>*Some of these ‘types’ of CDS are explored and discussed further in
-                subsequent sections that follow. </emphasis></para>
-        <para>Osheroff also published “The CDS 5 Rights framework” <citation>5Rights</citation>which
-            asserts that, to improve targeted healthcare decisions/outcomes with well developed and
-            deployed CDS interventions, the interventions must provide:</para>
+        <para>Osheroff also published “The CDS 5 Rights framework” (5Rights) which asserts that, to
+            improve targeted healthcare decisions/outcomes with well developed and deployed CDS
+            interventions, the interventions must provide:</para>
         <itemizedlist>
             <listitem>
                 <para>the <emphasis role="bold">right</emphasis>  information,</para>
@@ -108,8 +105,9 @@
             management—can reduce errors, improve the quality of care, reduce cost, and ease the
             cognitive burden on health care providers. <citation>CDSOptimize</citation> As a result,
             the impetus for achieving standardized, widespread adoption of CDS across health systems
-            is clear. The AMIA CDS Roadmap Development Steering Committee describes three pillars
-            for realizing this promise of CDS <citation>Osheroff</citation>: </para>
+            is clear. The American Medical Informatics Association (AMIA) CDS Roadmap Development
+            Steering Committee describes three pillars for realizing this promise of CDS
+                <citation>Osheroff</citation>: </para>
         <para>
             <orderedlist>
                 <listitem>
@@ -142,12 +140,12 @@
             systematic, and comprehensive. There have been a number of historical efforts that have
             aimed to achieve interoperable and robust CDS tools and artifacts that appropriately
             translate guidelines into care
-            (<?oxy_comment_start author="steph" timestamp="20190717T105119-0600" comment="Where is this section?  I couldn&apos;t find it." id="aqv_sdt_q3b" flag="done" mid="5"?><?oxy_comment_start author="timowilliams" timestamp="20190806T210726-0500" comment="Is this supposed to be Historical Context for Representing the Expression Logic of Clinical Decision Support?" parentID="aqv_sdt_q3b" flag="done"?><?oxy_comment_start author="rcholan" timestamp="20190808T094544-0400" comment="I added a link and fixed the title" parentID="aqv_sdt_q3b" flag="done" mid="4"?>see
+            (<?oxy_comment_start author="steph" timestamp="20190717T105119-0600" comment="Where is this section?  I couldn&apos;t find it." id="aqv_sdt_q3b" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190806T210726-0500" comment="Is this supposed to be Historical Context for Representing the Expression Logic of Clinical Decision Support?" parentID="aqv_sdt_q3b" flag="done" mid="4"?><?oxy_comment_start author="rcholan" timestamp="20190808T094544-0400" comment="I added a link and fixed the title" parentID="aqv_sdt_q3b" flag="done" mid="5"?>see
             subsequent <link linkend="CDSHistory">section</link> about the Historical Context for
             Representing the Expression
-            Logic<?oxy_comment_end mid="4"?><?oxy_comment_end?><?oxy_comment_end mid="5"?> of CDS).
-            The Agency for Healthcare Research and Quality depicts the following image representing
-            the “CDS lifecycle” for the following areas<citation>CDSConnect</citation>:<itemizedlist>
+            Logic<?oxy_comment_end mid="5"?><?oxy_comment_end mid="4"?><?oxy_comment_end?> of CDS).
+            The AHRQ depicts the following image representing the “CDS lifecycle” for the following
+                areas<citation>CDSConnect</citation>:<itemizedlist>
                 <listitem>
                     <para>authoring CDS tools and artifacts that leverage knowledge sources such as
                         clinical practice guidelines, quality measure specifications, and
@@ -163,11 +161,16 @@
                         subsequent design, build, and implementation of future CDS tools. </para>
                 </listitem>
             </itemizedlist></para>
-        <para><inlinemediaobject>
+        <para>
+            <figure xml:id="CDSConnectLifestyle">
+                <title>CDS Connect Lifestyle</title>
+                <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/CDS%20Connect%20Lifestyle.svg" scale="65"/>
                 </imageobject>
-            </inlinemediaobject></para>
+            </mediaobject>
+            </figure>
+        </para>
     </section>
     <section>
         <title>Lack of Standardized Encoded Clinical Data - Impact on CDS</title>
@@ -177,33 +180,33 @@
                     clinical decision support given the lack of standardization relating to how we
                     encode data?</emphasis></emphasis> We will discuss the challenges faced by
             authors, implementers and evaluators of CDS implementations by considering the following
-            example of a CDS intervention by Adam Wright et al in the NIH-funded “IQ-MAPLE” study
-            (i.e., Improving Quality by Making an Accurate Problem List in the EHR).
-                <citation>IQMAPLE</citation> In IQ-MAPLE, the investigators designed CDS
-            interventions in the EHRs of four study sites to alert physicians when a candidate
-            problem (e.g., Asthma, COPD, Hypertension, Hyperlipidemia) was detected that was missing
-            from the patient's problem list (i.e., absence of structured input of diagnosis
-            codes/terms to specify the key condition of interest). The clinician would then be able
-            to accept the alert and add the problem, override the alert, or ignore it entirely. The
-            investigators conducted a randomized trial and evaluated the effect of the problem list
-            alert on three endpoints: alert acceptance, problem list addition rate and clinical
-            quality. </para>
+            example of a CDS intervention by Adam Wright et al in the NIH-funded Improving Quality
+            by Making an Accurate Problem List in the Electronic Health Record (EHR) (IQ-MAPLE)
+            study. In IQ-MAPLE, the investigators designed CDS interventions in the EHRs of four
+            study sites to alert physicians when a candidate problem (e.g., Asthma, Hypertension,
+            Hyperlipidemia) was detected that was missing from the patient's problem list (i.e.,
+            absence of structured input of diagnosis codes/terms to specify the key condition of
+            interest). The clinician would then be able to accept the alert and add the problem,
+            override the alert, or ignore it entirely. The investigators conducted a randomized
+            trial and evaluated the effect of the problem list alert on three endpoints: alert
+            acceptance, problem list addition rate and clinical quality. </para>
         <para>In IQ-MAPLE, a team of clinical experts and informaticians designed and validated a
             series of problem inference algorithms, using rules-based techniques on structured data
-            in the electronic health record (EHR) and natural language processing on unstructured
-            data. Then, they created CDS rules for suggesting conditions to add to a patient’s
-            problem list that may have included the following example criteria:<itemizedlist>
+            in the EHR and natural language processing on unstructured data. Then, they created CDS
+            rules for suggesting conditions to add to a patient’s problem list that may have
+            included the following example criteria:<itemizedlist>
                 <listitem>
-                    <para>queries for the presence or absence of a diagnosis code (e.g., ICD-10CM,
-                        SNOMED CT value sets by key condition) included in a patient’s problem list
-                        or encounter diagnosis; </para>
+                    <para>queries for the presence or absence of a diagnosis code (e.g.,
+                        International Classification of Diseases [ICD]-10CM, SNOMED CT® value sets
+                        by key condition) included in a patient’s problem list or encounter
+                        diagnosis; </para>
                 </listitem>
                 <listitem>
                     <para>queries looking for currently active medications (e.g., RXCUI value sets
                         by medication classes) in the patient’s record; </para>
                 </listitem>
                 <listitem>
-                    <para>queries for lab values (e.g., LOINC value sets) that are within a
+                    <para>queries for lab values (e.g., LOINC® value sets) that are within a
                         specified range;</para>
                 </listitem>
                 <listitem>
@@ -214,12 +217,13 @@
         <para>Even though the CDS rules and value sets in the IQ-MAPLE study were created centrally,
             there would have inevitably been variation in the implementations of the rules against
             clinical data at the four study sites. A report produced out of the collaboration
-            between the ONC and the National Academy of Medicine (NAM) stated that there are at
-            least four important technical challenges to sharing and therefore standardizing
-            implementations of CDS content: (1) insufficient standardization of patient data
-            representation; (2) insufficient standardization of CDS knowledge representation; (3)
-            insufficient standardization of CDS integration mechanisms; and (4) a need to align with
-            broader standardization initiatives. <citation>CDSOptimize</citation>
+            between the Office of the National Coordinator for Health Information Technology (ONC)
+            and the National Academy of Medicine (NAM) stated that there are at least four important
+            technical challenges to sharing and therefore standardizing implementations of CDS
+            content: (1) insufficient standardization of patient data representation; (2)
+            insufficient standardization of CDS knowledge representation; (3) insufficient
+            standardization of CDS integration mechanisms; and (4) a need to align with broader
+            standardization initiatives. <citation>CDSOptimize</citation>
         </para>
         <para>Fundamentally, the representation and usage of clinical data and CDS knowledge across
             the four IQ-MAPLE study sites would have varied. One of the reasons that CDS
@@ -232,8 +236,7 @@
                 <citation>CDSOptimize</citation> In IQ-MAPLE, there were likely vast variations in
             the EHR user interfaces for how clinical data was entered in problem lists,
             representation of lab results, status and recording of currently active medications, and
-            other miscellaneous clinical data inputs in patients’ encounter notes. (see ‘Clinical
-            Input form’ in the Statement Representation Chapter) </para>
+            other miscellaneous clinical data inputs in patients’ encounter notes.</para>
         <para>In addition, there were likely variations in the usage of the value set and
             terminology content at the four study organizations. Therefore, there may have been
             discrepancies in how the CDS rules were triggered when they were deployed. For example,
@@ -659,8 +662,7 @@
                     Reality</emphasis> with “the goal…to present generic lessons from [their CDS]
                 experiences that may be useful to others, including informaticians, systems
                 developers, and health care organizations.” <citation>CDS10</citation> The paper
-                includes the following Ten Commandments for Effective CDS
-                <citation>CDS10</citation>:</para>
+                includes the following Ten Commandments for Effective CDS:</para>
             <orderedlist>
                 <listitem>
                     <para><emphasis role="bold">Speed is Everything</emphasis></para>
@@ -776,7 +778,7 @@
         <title>Historical Context for Representing the Expression Logic of Clinical Decision
             Support</title>
         <para>While there have been advancements over the past few decades in implementing clinical
-            data standards (e.g., SNOMED CT, LOINC), there is still room to improve portability of
+            data standards (e.g., SNOMED CT®, LOINC®), there is still room to improve portability of
             CDS implementations across healthcare organizations. Different health care institutions
             may increasingly have their clinical data encoded according to standards-based
             terminologies, but each site will still require human intervention and hand-crafted
@@ -832,19 +834,19 @@
                 directly.<citation>McCallie</citation></para>
         <para>In 1998, HL7 found the “curly brace” problem to be unsolvable by the Arden approach
             and began efforts to create expression logic standards based on HL7 Version 3 Reference
-            Information Model (RIM).<citation>RIM</citation> One attempt was the GELLO Expression
-            Language, which in theory was supposed to access and manipulate clinical data by common
-            clinical entities; however RIM was not proven to be a very practical representation of
-            the complexity of real-world data. Only a small number of vendors were successfully able
-            to implement RIM-based EHRs and therefore the vision of GELLO and HL7 V3 efforts
-            remained unproven. In 2013, HL7 replaced GELLO with ECA (“Event, Condition, Action”), an
-            expression in XML data structures intended to abstract the representation of expression
-            logic. Shortly thereafter, the standards community realized the benefit in aligning CDS
-            logic expression with those of eCQMs, as the goals of CDS rules are often used to prompt
-            clinicians to achieve improved clinical quality outcomes. Therefore, HL7 defined QUICK –
-            the Quality Improvement and Clinical Knowledge model. <citation>quick</citation> QUICK
-            and ECA have now been wrapped up into the Clinical Quality Language (CQL), which
-            attempts to capture lessons learned from Arden, GELLO, and ECA. </para>
+            Information Model (RIM). One attempt was the GELLO Expression Language, which in theory
+            was supposed to access and manipulate clinical data by common clinical entities; however
+            RIM was not proven to be a very practical representation of the complexity of real-world
+            data. Only a small number of vendors were successfully able to implement RIM-based EHRs
+            and therefore the vision of GELLO and HL7 V3 efforts remained unproven. In 2013, HL7
+            replaced GELLO with ECA (“Event, Condition, Action”), an expression in XML data
+            structures intended to abstract the representation of expression logic. Shortly
+            thereafter, the standards community realized the benefit in aligning CDS logic
+            expression with those of eCQMs, as the goals of CDS rules are often used to prompt
+            clinicians to achieve improved clinical quality outcomes. Therefore, HL7 defined the
+            Quality Improvement and Clinical Knowledge model (QUICK). QUICK and ECA have now been
+            wrapped up into the Clinical Quality Language (CQL), which attempts to capture lessons
+            learned from Arden, GELLO, and ECA. </para>
         <para>An emerging HL7 International standard that might help with electronic processing of
             eCQM and CDS logic is CQL, a new specification that focuses on a common model for
             representing expression logic for CQMs and Clinical Decision Support. According to CMS’
@@ -878,7 +880,7 @@
                 who are brought in an unconscious state; nurses in an operating theater have SOPs
                 for the forceps and swabs that they hand over to the operating surgeons; and
                 laboratory technicians have SOPs for handling, testing, and subsequently discarding
-                body fluids obtained from patients." <citation>SOP</citation></para>
+                body fluids obtained from patients."</para>
             <para>Now that EHRs and electronic clinical data in some capacity are essentially
                 ubiquitous in the US, Health IT implementations often come with tools making it
                 possible to achieve SOPs "into routine clinical practice; that is, not for special

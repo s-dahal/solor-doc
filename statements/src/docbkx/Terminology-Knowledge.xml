@@ -6,8 +6,10 @@
      <title>Terminology Knowledge</title>
     <section>
         <title>Introduction</title>
-        <para>For an introduction to Terminology Standards, please refer to Section 2.7 Terminology
-            Overview .</para>
+        <para>For an introduction to Terminology Standards, please refer to <link
+                xlink:href="https://www.ikm.dev/assets/files/Volume-2-444d31cfa9e0f40cef34b4462fa4574c.pdf"
+                >Integrated Knowledge Management (IKM) Volume 2 - Background Section 1.5 Terminology
+                Overview</link>.</para>
     </section>
     <section>
         <title>What is LOINC®?</title>
@@ -43,7 +45,7 @@
                 status. The second element carries the result value of the observation, e.g., 80
                 (mmHg), 40 (%), or “current everyday smoker”. When used together, these two elements
                 carry the instance of a specific test result for a given patient. A common pairing
-                is to use LOINC® as the standard code for the observation, and SNOMED CT ® as the
+                is to use LOINC® as the standard code for the observation, and Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT®) as the
                 standard code for the observation value, when needed. This approach is endorsed by
                 the developers of both terminologies and fits their design
             purpose.</emphasis></para>
@@ -99,7 +101,7 @@
             <para>“A fully specified test result or clinical observation can be described formally
                 with the following syntax: &lt;Analyte/component>:&lt;kind of property of
                 observation or measurement>:&lt;time aspect>:&lt;system
-                (sample)>:&lt;scale>:-&lt;method>” [2]</para>
+                (sample)>:&lt;scale>:-&lt;method>.” [2]</para>
             <para>Over time, LOINC® has not only grown in size, but also developed additional data
                 structures and content around its main codes for individual observations. The LOINC®
                 release contains a basic hierarchy that organizes LOINC® codes into a set of is-a
@@ -160,7 +162,7 @@
                     provides extensive coverage of laboratory tests and clinical measurements.
                 </emphasis>[1]</para>
             <para>While the initial partnership and memorandum of understanding signed between
-                SNOMED CT® and LOINC<emphasis role="italic">® </emphasis>developers paved the way
+                SNOMED CT® and LOINC® developers paved the way
                 for development teams to facilitate interoperability and minimize duplication of
                 effort, the collaborative relationship did not accomplish a complete integration of
                 the two disparate terminologies. Further integration has been proposed to leverage
@@ -236,10 +238,10 @@
                     current release format, called Release Format 2 (RF2), supports versioning,
                     providing access to any previous release of SNOMED CT®.</emphasis></para>
             <para>While SNOMED CT® has made much progress in their use of description logics, and
-                have also provided a tool on github, snomed-owl-toolkit [3], to facilitate the
+                have also provided a tool on github, snomed-owl-toolkit, to facilitate the
                 conversion and classification process, the official distribution of OWL refsets has
                 yet to be seen. It seems one reason is the lack of current clinical systems to
-                utilize them at this time [4]. </para>
+                utilize them at this time. [3-4]</para>
         </section>
         <section>
             <title>SNOMED CT® Collaborations</title>
@@ -395,10 +397,10 @@
                     release of RxNorm only contains detailed information about active drug products
                     in that release.</emphasis></para>
             <para>In 2019 Medication - Reference Terminology (MED-RT) replaced National Drug File -
-                Reference Terminology (NDF-RT) [5]. RxNorm is available as a resource in the HL7
+                Reference Terminology (NDF-RT). [5] RxNorm is available as a resource in the HL7
                 FHIR website. While it is currently in Standard for Trial Use (STU), it has been
                 advancing through the HL7 Ballot Levels to expose the RxNorm content as medication
-                resources [6].</para>
+                resources. [6]</para>
         </section>
         <section>
             <title>RxNorm Collaborations</title>
@@ -416,20 +418,129 @@
                     RxNorm drugs to various drug classification systems and to publicly available
                     sources of drug-drug interaction information. Drug classes for RxNorm drugs can
                     also be explored through the RxClass application.</emphasis></para>
-            <para>Table 1 is a comparison of terminologies on how well they meet Cimino’s Desiderata
-                [7]. The Desiderata is a list of attributes needed for a standard terminology to
-                meet the needs of its users. SNOMED CT® is the only terminology that meets all the
-                requirements as described by Cimino. However, as noted above, SNOMED CT® has
-                proprietary elements that limits its usefulness for interoperability.</para>
-            <figure xml:id="MetCriteriaofLOINCSNOMEDCTandRxNormtoCiminosDesiderata">
+            <para>The table below is a comparison of terminologies on how well they meet Cimino’s
+                Desiderata. [7] The Desiderata is a list of attributes needed for a standard
+                terminology to meet the needs of its users. SNOMED CT® is the only terminology that
+                meets all the requirements as described by Cimino. However, as noted above, SNOMED
+                CT® has proprietary elements that limits its usefulness for interoperability.</para>
+            <table>
                 <title>Met Criteria of LOINC®, SNOMED CT® and RxNorm to Cimino’s Desiderata</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="images/Met%20criteria%20of%20LOINC%C2%AE,%20SNOMED%20CT%20and%20RxNorm%20to%20Cimino%E2%80%99s%20Desiderata.png"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-            </section>
+                    <tgroup cols="4">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="4" colname="col4"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Tenant</emphasis></entry>
+                                <entry><emphasis role="bold">LOINC®</emphasis></entry>
+                                <entry><emphasis role="bold">SNOMED CT®</emphasis></entry>
+                                <entry><emphasis role="bold">RxNorm</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Concept Orientation</emphasis></entry>
+                                <entry>None</entry>
+                                <entry>Complete</entry>
+                                <entry>Complete</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Concept Permanence</emphasis></entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                                <entry>Complete</entry>
+                                <entry>
+                                    <para>Partial</para>
+                                    <para> </para>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Non-Semantic Concept
+                                        Identifier</emphasis></entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                                <entry>Complete</entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Polyhierarchical</emphasis></entry>
+                                <entry>None</entry>
+                                <entry>Complete</entry>
+                                <entry>Complete</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Formal Definitions</emphasis></entry>
+                                <entry>
+                                    <para>None</para>
+                                    <para> </para>
+                                </entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                                <entry>Partial</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Classification</emphasis></entry>
+                                <entry>None</entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Multiple
+                                    Granularities</emphasis></entry>
+                                <entry>None</entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Multiple Consistent
+                                    Views</emphasis></entry>
+                                <entry>None</entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Representation of
+                                    Context</emphasis></entry>
+                                <entry>None</entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                                <entry>
+                                    <para>Complete</para>
+                                    <para> </para>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                </section>
     </section>
     <section>
         <title>Terminology Principles and Best Practices</title>
@@ -582,7 +693,7 @@
         </section>
     </section>
     <section>
-        <title>Comparing LOINC®, SNOMED CT® and RxNorm® to Cimino’s Desiderata</title>
+        <title>Comparing LOINC®, SNOMED CT® and RxNorm to Cimino’s Desiderata</title>
         <para>Despite the guiding principles for terminology design and representation summarized
             above, “LOINC® does not fulfill the definition of a computable medical terminology as
             articulated by Cimino et al., that being one based in concept orientation, concept
@@ -591,14 +702,58 @@
             terminology – there is a deprecation process and has concept permanence where codes
             aren’t reused – but they do not establish the basic parameters of hierarchy and
             polyhierarchy. And, they are violating the tenants of Cimino’s Desiderata.</para>
-        <figure xml:id="CorrespondenceofLOINCtoCiminosDesiderata">
-            <title>Correspondence of LOINC® to Cimino’s Desiderata</title>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/Correspondence%20of%20LOINC%C2%AE%20to%20Cimino%E2%80%99s%20Desiderata.png"/>
-                </imageobject>
-            </mediaobject>
-        </figure>
+        <table>
+                <title>Correspondence of LOINC® to Cimino’s Desiderata</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Tenant</emphasis></entry>
+                            <entry><emphasis role="bold">LOINC®</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Concept Orientation</emphasis></entry>
+                            <entry>No</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Concept Permanence</emphasis></entry>
+                            <entry>Yes</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Non-Semantic Concept
+                                Identifier</emphasis></entry>
+                            <entry>Yes</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Polyhierarchy</emphasis></entry>
+                            <entry>No</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Formal Definitions</emphasis></entry>
+                            <entry>No</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Classification</emphasis></entry>
+                            <entry>No – they have a miscellaneous code</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Multiple Granularities</emphasis></entry>
+                            <entry>No</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Multiple Consistent
+                                Views</emphasis></entry>
+                            <entry>No</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Representation of
+                                Context</emphasis></entry>
+                            <entry>No, but they have Narrative Summary</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
         <section>
             <title>Comparison of SNOMED CT® to Cimino’s Desiderata</title>
             <para>SNOMED CT® is the terminology of our current awareness most closely aligns with
@@ -610,17 +765,62 @@
                 apparent in crisis situations such as COVID-19 pandemic. Otherwise, it has proven to
                 be robust and has a large global community to assist with its development and
                 vetting.</para>
-            <figure xml:id="CorrespondenceofSNOMEDCTtoCiminosDesiderata">
+            <table>
                 <title>Correspondence of SNOMED CT® to Cimino’s Desiderata</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/Correspondence%20of%20SNOMED%20CT%20to%20Cimino%E2%80%99s%20Desiderata.png"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Tenant</emphasis></entry>
+                                <entry><emphasis role="bold">SNOMED CT®</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Concept Orientation</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Concept Permanence</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Non-Semantic Concept
+                                        Identifier</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Polyhierarchy</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Formal Definitions</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Classification</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Multiple
+                                    Granularities</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Multiple Consistent
+                                    Views</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Representation of
+                                    Context</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
             </section>
         <section>
-            <title>Comparison of RxNorm® to Cimino’s Desiderata</title>
+            <title>Comparison of RxNorm to Cimino’s Desiderata</title>
             <para>While RxNorm meets most of the Desiderata’s requirements, there are a few that are
                 not met. Of particular importance is the lack of Description Logics. Use of a
                 Description Logics reasoner can help in overcoming important drawbacks of
@@ -629,12 +829,12 @@
                 concepts in a hierarchy. RxNorm has another issue of not being a global standard as
                 its development and main use is in the U.S. where it is a nationally recognized
                 standard, i.e. Meaningful Use. </para>
-            <para>However, recent work by Bona et al. [13] have been developing a Drug Ontology
-                product (DrOn), based on RxNorm and Chemical Entities of Biological Interest
-                Ontology, which is a modular and extensible ontology of drug products, their
-                ingredients and biological activity to enable comparative effectiveness and allow
-                researchers to query National Drug Codes (NDCs) in multiple ways. Bone et al. go on
-                to say the following:</para>
+            <para>However, recent work by Bona et al. have been developing a Drug Ontology product
+                (DrOn), based on RxNorm and Chemical Entities of Biological Interest Ontology, which
+                is a modular and extensible ontology of drug products, their ingredients and
+                biological activity to enable comparative effectiveness and allow researchers to
+                query National Drug Codes (NDCs) in multiple ways. Bone et al. go on to say the
+                following:</para>
             <para><emphasis role="italic">We have implemented a full accounting of national drug
                     codes and RxNorm unique concept identifiers as information content entities, and
                     of the processes involved in managing their creation and changes. This includes
@@ -645,18 +845,63 @@
                     retrieving and representing several individual NDCs, both active and inactive,
                     and the RxCUIs to which they are connected. We also demonstrate how historic
                     information about these identifiers in DrOn can be easily retrieved using a
-                    simple SPARQL Protocol and RDF Query Language (SPARQL).</emphasis></para>
+                    simple SPARQL Protocol and RDF Query Language (SPARQL).</emphasis>[13]</para>
             <para>This development may have a significant impact on improving knowledge management
                 as well as the ability to utilize Description Logics reasoners with its attendant
                 benefits.</para>
-            <figure xml:id="CorrespondenceofRxNormtoCiminosDesiderata">
-                <title>Correspondence of RxNorm to Cimino’s Desiderata</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/Correspondence%20of%20RxNorm%20to%20Cimino%E2%80%99s%20Desiderata.png"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
+                <table>
+                    <title>Correspondence of RxNorm to Cimino’s Desiderata</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Tenant</emphasis></entry>
+                                <entry><emphasis role="bold">RxNorm</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Concept Orientation</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Concept Permanence</emphasis></entry>
+                                <entry>No – remapping, changing atoms, splitting, etc.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Non-Semantic Concept
+                                        Identifier</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Polyhierarchy</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Formal Definitions</emphasis></entry>
+                                <entry>No – [Ingredients] [Strength] [Dose] enough?</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Classification</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Multiple
+                                    Granularities</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Multiple Consistent
+                                    Views</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Representation of
+                                    Context</emphasis></entry>
+                                <entry>Yes</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
             </section>
     </section>
     <section>
@@ -666,12 +911,12 @@
             <title>SNOMED CT® Existing Limitations</title>
             <section>
                 <title>Licensing Conditions</title>
-                <para>There are also licensing conditions [14] to SNOMED CT® that historically
-                    prevented its use as a common format for LOINC®. This issue needs to be
-                    addressed for building on SNOMED CT®'s foundation. Nonetheless, SNOMED CT®'s
-                    commitment to develop and expand their use of description logics formalism as
-                    called out by Tinkar efforts as well as their alignment with the Desiderata as
-                    described by Cimino, et at, is a step in the right direction.</para>
+                <para>There are also licensing conditions to SNOMED CT® that historically prevented
+                    its use as a common format for LOINC®. [14] This issue needs to be addressed for
+                    building on SNOMED CT®'s foundation. Nonetheless, SNOMED CT®'s commitment to
+                    develop and expand their use of description logics formalism as called out by
+                    Tinkar efforts as well as their alignment with the Desiderata as described by
+                    Cimino, et at, is a step in the right direction.</para>
             </section>
             <section>
                 <title>Submission Process Time</title>
@@ -685,7 +930,7 @@
             <section>
                 <title>Compositional Complexity </title>
                 <para>While SNOMED CT® uses explicit, elaborate axioms to clarify meaning, its
-                    complex representation (compositional grammar) limits its broad adoption.[15]
+                    complex representation (compositional grammar) limits its broad adoption. [15]
                     The learning curve to appropriately learn, author, and represent concepts using
                     SNOMED CT®'s compositional grammar (for post-coordinated expressions) and
                     constraint language is steep, resulting in few who want to spend the resources
@@ -719,7 +964,7 @@
                 <para>Without concepts of polyhierarchy, concept orientation, and concept
                     definition, there is additional pressure on technicians and other stakeholders
                     to correctly specify the correct LOINC® code: “When the terminology model is
-                    ultimately weak, it forces more onto the [statement] model”. [16]. “A challenge
+                    ultimately weak, it forces more onto the [statement] model”. [16] “A challenge
                     that remains to be solved is the binding of statement model and terminology.
                     There is often no clear demarcation between what is represented in the statement
                     model and what is represented in the terminology.” [9] </para>
@@ -790,11 +1035,11 @@
                     that could be selected. Results differed due to some labs incorrectly selecting
                     panels or the wrong system. For a D-Dimer test, results differed to differences
                     in component, property, system, and method.</para>
-                <para>As referenced in <xref linkend="CorrespondenceofSNOMEDCTtoCiminosDesiderata"
-                    />, many of the errors occurred from different selections in system, where the
-                    system could be whole blood or platelet form plasma. “For the analyzers used by
-                    the laboratories in this survey, coagulation tests such as APTT and
-                    International Normalized Ratio (INR) are performed on PPP and are never
+                <para>As referenced in the table "Correspondence of SNOMED CT® to Ciminos
+                    Desiderata", many of the errors occurred from different selections in system,
+                    where the system could be whole blood or platelet form plasma. “For the
+                    analyzers used by the laboratories in this survey, coagulation tests such as
+                    APTT and International Normalized Ratio (INR) are performed on PPP and are never
                     performed on whole blood, so the selection of a code that indicates the system
                     as PPP would more accurately represent the test performed as opposed to a code
                     that lists the system as blood (Bld). Superficially, an end-user may think that
@@ -820,7 +1065,7 @@
                 <para><emphasis role="bold">Case Study 2: Comparison of LOINC® Codes between IVD
                         Manufacturers and Medical Center Laboratories [20]</emphasis></para>
                 <para>In an assessment of LOINC® interoperability between diagnostic test
-                    manufacturers and five medical center laboratories [20], there were mismatches
+                    manufacturers and five medical center laboratories, there were mismatches
                     related to granularity identified such as discrepancies between choosing:</para>
                 <itemizedlist>
                     <listitem>
@@ -839,7 +1084,7 @@
                     <listitem>
                         <para>Different units of measure: mass/volume (e.g., 3094-0, Urea nitrogen
                             [Mass/volume] in Serum or Plasma) versus moles/volume (e.g., 1493-7,
-                            Urea nitrogen [Moles/volume] in Serum or Plasma)</para>
+                            Urea nitrogen [Moles/volume] in Serum or Plasma) [20]</para>
                     </listitem>
                 </itemizedlist>
             </section>
@@ -926,7 +1171,7 @@
                 <para>To quantify the magnitude of problems that the lab data ecosystem faces, the
                     FDA funded a pilot evaluation with five healthcare systems that found LOINC®
                     data maintained only 59% integrity as it moved from laboratory analyzer to
-                    laboratory information system [20<?oxy_comment_end?>]. Efforts to promote
+                    laboratory information system. [20<?oxy_comment_end?>] Efforts to promote
                     interoperability using LOINC® and related standards will require a more
                     comprehensive effort and continuing evaluation and quality control.</para>
             </section>
@@ -938,9 +1183,9 @@
                 <para>Although LOINC® has not officially adopted Description Logic and formal
                     knowledge representation languages, the U.S. National Library of Medicine
                     applied Description Logic to the quality assurance of LOINC® (based on the 2013
-                    collaborative agreement) and used it as a basis for auditing LOINC® [21]. This
-                    study helps demonstrate the usefulness of Description Logic for terminologies
-                    [21] by producing the following findings: </para>
+                    collaborative agreement) and used it as a basis for auditing LOINC®. [21] This
+                    study helps demonstrate the usefulness of Description Logic for terminologies by
+                    producing the following findings: </para>
                 <itemizedlist>
                     <listitem>
                         <para>427 sets of logically equivalent LOINC® codes</para>
@@ -960,7 +1205,7 @@
                     counts are relatively small considering the 450k+ concepts in LOINC® as part of
                     this study. However, the key takeaway from this body of work is that LOINC®
                     could benefit from the application of Description Logic by allowing for
-                    automated classification and equivalence detection. </para>
+                    automated classification and equivalence detection. [21]</para>
             </section>
             <section>
                 <title>LOINC® Document Ontology</title>
@@ -1010,8 +1255,7 @@
                     Furthermore, the use of the hierarchies and LOINC® parts are very restricted
                     under the LOINC® Copyright Notice and License. [24]</para>
                 <figure xml:id="RepresentationofASTinTheLOINCHierarchyBrowserTool">
-                    <title>Representation of AST in The LOINC Hierarchy
-                        Browser Tool</title>
+                    <title>Representation of AST in The LOINC® Hierarchy Browser Tool</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/Representation%20of%20AST%20in%20The%20LOINC%20Hierarchy%20Browser%20Tool.png"/>
@@ -1098,13 +1342,13 @@
             <title>Future Policy and Direction for LOINC®</title>
             <section>
                 <title>Improved Education</title>
-                <para>Establishing a certification program, more structure in the community, and
-                    more training.</para>
+                <para>Improving education through established certification programs, improved
+                    structure in the community, and more training are potential next steps.</para>
             </section>
             <section>
                 <title>Robust Quality Control</title>
                 <para>LOINC® may need more pruning of extraneous terms and duplicate terms. There is
-                    also potential room for the refinement of different levels of granularity of
+                    also potential room for refining the different levels of granularity of
                     terms.</para>
             </section>
         </section>
@@ -1112,10 +1356,10 @@
             <title>RxNorm Existing Limitations</title>
             <section>
                 <title>Lack of Description Logics</title>
-                <para>RxNorm lack of Description Logics formalism use, as proposed by SOLOR [1],
-                    limits its ability to use logic reasoners for inferencing. This limits RxNorms
-                    ability to find new patterns, relationships and identification of equivalence.
-                </para>
+                <para>RxNorm lack of Description Logics formalism use, as proposed by SOLOR, limits
+                    its ability to use logic reasoners for inferencing. This limits RxNorms ability
+                    to find new patterns, relationships and identification of equivalence.
+                    [1]</para>
             </section>
             <section>
                 <title>Concerns Over Concept Permanence</title>
@@ -1127,11 +1371,11 @@
             </section>
             <section>
                 <title>Formal Concept Definition</title>
-                <para>While RxNorm has ‘defined ingredients’ [27], historically it has lacked the
+                <para>While RxNorm has ‘defined ingredients’, historically it has lacked the
                     computational ability to define concepts by relationships, thereby allowing
-                    inferencing. However, recent efforts by Bona et al.[13] have successfully
+                    inferencing. [27] However, recent efforts by Bona et al. have successfully
                     created an OWL file to implement and define the classes necessary to model
-                    RxNorm and NDC concepts.</para>
+                    RxNorm and NDC concepts. [13]</para>
             </section>
         </section>
         <section>
@@ -1149,7 +1393,7 @@
                 interoperability, integration of SNOMED CT®, LOINC®, and RxNorm, while noting
                 different formalisms and tools for their representation in these technologies. [28]
                 Various terminologies have different semantics, models, release cycles, and
-                versioning mechanisms [1]. While there is recognition that terminologies are not
+                versioning mechanisms. [1] While there is recognition that terminologies are not
                 standardized at the exchange level, there is no consensus about harmonized next
                 steps to solve the challenges.</para>
             <para><?oxy_comment_start author="naylee" timestamp="20231130T111550-0600" comment="Removed &quot;Efforts such as SHIELD (Systemic Harmonization and Interoperability Enhancement for Laboratory Data) sponsored in part by the U.S. FDA sets strategies to transform the current U.S. laboratory ecosystem into an interoperable system, including the goals of harmonizing industry coding standards such as LOINC® to create a reference knowledge base where any user of laboratory data can obtain more information about the performed test in question.&quot; "?>Today<?oxy_comment_end?>,
@@ -1287,24 +1531,75 @@
             <para><emphasis>Aim 1: Review Workflow Schematic for Emerging Acute Chronic Infectious
                     Diseases, specifically focused on Data Capture Elements and Long COVID Value
                     Sets. </emphasis>The team downloaded and reviewed the COVID-19 VSAC value sets
-                outlined in <xref linkend="VSACValueSets"/>. The team used these value sets to extract an initial list of
+                outlined in the table below. The team used these value sets to extract an initial list of
                 generalized clinical concepts associated with a COVID-19 diagnosis that could
                 potentially contribute to a Long COVID diagnosis. [29]</para>
-            <figure xml:id="VSACValueSets">
-                <title>VSAC Value Sets</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/VSAC%20Value%20Set.png"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
+                <table>
+                    <title>VSAC Value Sets</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Value Set Name</emphasis></entry>
+                                <entry>Steward</entry>
+                                <entry>Value Set OID</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">COVID19 Potential Signs and
+                                        Symptoms</emphasis></entry>
+                                <entry>CareEvolution</entry>
+                                <entry>2.16.840.1.113762.1.4.1223.22</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Nonspecific Respiratory Viral
+                                        Infection</emphasis></entry>
+                                <entry>CareEvolution</entry>
+                                <entry>2.16.840.1.113762.1.4.1223.25</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">C19HCC SARSCoV2
+                                    Exposure</emphasis></entry>
+                                <entry>MITRE</entry>
+                                <entry>2.16.840.1.113762.1.4.1032.120</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">COVID19 Potential
+                                    Exposure</emphasis></entry>
+                                <entry>CareEvolution</entry>
+                                <entry>2.16.840.1.113762.1.4.1223.18</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">COVID19 Suspected
+                                    Infection</emphasis></entry>
+                                <entry>CareEvolution</entry>
+                                <entry>2.16.840.1.113762.1.4.1223.6</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">LIVD SARS CoV2 Test
+                                    Codes</emphasis></entry>
+                                <entry>ONC</entry>
+                                <entry>2.16.840.1.113762.1.4.1114.9</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">LIVD SARS CoV2 Test Result
+                                        Codes</emphasis></entry>
+                                <entry>ONC</entry>
+                                <entry>2.16.840.1.113762.1.4.1114.10</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
             <para><emphasis>Aim 2: Draft Potential Questionnaires to Standardize Use Case Data
                     Acquisition</emphasis>. An initial questionnaire was developed for the
                 generalized concepts extracted from the COVID-19 VSAC value sets that poses a simple
                 yes or no question for each of the concepts that could potentially aid in a Long
                 COVID diagnosis. This deliverable focuses on potential questionnaires for ‘Signs and
-                Symptoms’ and ‘Non-Specific Respiratory Diagnoses’, outlined in <xref linkend="HypotheticalSignsandSymptomsQuestionnaires"/> and <xref linkend="HypotheticalNonSpecificRespiratoryDiagnosesQuestionnaire"/>
-                respectively.[2]</para>
+                Symptoms’ and ‘Non-Specific Respiratory Diagnoses’, outlined in <xref
+                    linkend="HypotheticalSignsandSymptomsQuestionnaires"/> and <xref
+                    linkend="HypotheticalNonSpecificRespiratoryDiagnosesQuestionnaire"/>
+                respectively. [2]</para>
             <figure xml:id="HypotheticalSignsandSymptomsQuestionnaires">
                 <title>Hypothetical Signs and Symptoms Questionnaires</title>
                 <mediaobject>
@@ -1356,14 +1651,109 @@
                 terminology standard represents the condition. This variability leads to sub-optimal
                 data capture that can hinder data querying, data use, and the ability to identify
                 semantically equivalent concepts.</para>
-            <figure xml:id="VariabilityinRepresentationofFever">
-                <title>Variability in Representation of Fever</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/Variability%20in%20Representation%20of%20Fever.png"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
+                <table>
+                    <title>Variability in Representation of Fever</title>
+                    <tgroup cols="5">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="5" colname="col5"/>
+                        <tbody>
+                            <row>
+                                <entry> </entry>
+                                <entry><link
+                                    xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present.html#root"
+                                        ><emphasis role="bold">COVID19 Symptoms Present
+                                        Example</emphasis></link><emphasis role="bold"><emphasis
+                                        role="underline"> 1</emphasis></emphasis></entry>
+                                <entry><link
+                                    xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present.html#root"
+                                        ><emphasis role="bold">COVID19 Symptoms Present Example
+                                        2</emphasis></link></entry>
+                                <entry><link
+                                    xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present.html#root"
+                                        ><emphasis role="bold">COVID19 Symptoms Present Example
+                                        3</emphasis></link></entry>
+                                <entry><link
+                                    xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present.html#root"
+                                        ><emphasis role="bold">COVID19 Symptoms
+                                    Absent</emphasis></link></entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para><link
+                                            xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present-definitions.html#Condition"
+                                                ><emphasis role="bold"
+                                        >Condition</emphasis></link></para>
+                                    <para> </para>
+                                </entry>
+                                <entry>Fever Greater Than 100.4 Fahrenheit with Chills
+                                    Present</entry>
+                                <entry>Fever Greater Than 100.4 Fahrenheit with Chills
+                                    Present</entry>
+                                <entry>Fever Greater Than 100.4 Fahrenheit with Chills
+                                    Present</entry>
+                                <entry>Body Temperature Within Normal Range</entry>
+                            </row>
+                            <row>
+                                <entry><link
+                                        xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present-definitions.html#Condition.id"
+                                            ><emphasis role="bold">…...</emphasis></link></entry>
+                                <entry><link
+                                        xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present-definitions.html#Condition.id"
+                                            ><emphasis role="bold">…...</emphasis></link></entry>
+                                <entry><link
+                                        xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present-definitions.html#Condition.id"
+                                            ><emphasis role="bold">…...</emphasis></link></entry>
+                                <entry>
+                                    <link
+                                        xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present-definitions.html#Condition.id"
+                                            ><emphasis role="bold">…...</emphasis></link></entry>
+                                <entry>
+                                    <link
+                                        xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present-definitions.html#Condition.id"
+                                            ><emphasis role="bold">…...</emphasis></link></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold"><emphasis role="underline"
+                                            >Severity</emphasis></emphasis></entry>
+                                <entry>
+                                    <para>Null </para>
+                                    <para> </para>
+                                </entry>
+                                <entry>Greater than 100.4 Fahrenheit</entry>
+                                <entry>Greater than 100.4 Fahrenheit</entry>
+                                <entry>Between 97.6 and 99.6 Fahrenheit</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para><link
+                                            xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present-definitions.html#Condition.code"
+                                                ><emphasis role="bold">Code</emphasis></link></para>
+                                    <para> </para>
+                                </entry>
+                                <entry>Fever Greater Than 100.4 Fahrenheit with Chills
+                                    (finding)</entry>
+                                <entry>Fever with Chills (finding)</entry>
+                                <entry>Fever with Chills (finding)</entry>
+                                <entry>Regular Body Temperature (finding)</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para><link
+                                            xlink:href="https://covid-19-ig.logicahealth.org/StructureDefinition-covid19-symptoms-present-definitions.html#Condition.bodySite"
+                                                ><emphasis role="bold">Site</emphasis></link></para>
+                                    <para> </para>
+                                </entry>
+                                <entry>Null </entry>
+                                <entry>Null </entry>
+                                <entry>Mouth/Tongue</entry>
+                                <entry>Null </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
             <para><emphasis>Aim 4: Demonstrate ANF Ability to Standardize Terminology and Capture
                     Critical Data</emphasis>. The team demonstrated the value of ANF by developing a
                 tabular ANF representation for loss of sense of smell since onset of COVID-19
@@ -1383,15 +1773,257 @@
                 concepts for a certain symptom do not always exist across terminology standards, but
                 ANF is able to represent the absence of a symptom using a numerical countable
                 quantity, ensuring relevant and pertinent information is not lost.</para>
-            <figure xml:id="ANFStandardizedRepresentationofAnosmiaandAssociatedTerm">
-                <title>ANF Standardized Representation of Anosmia and
-                    Associated Term</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/ANF%20Standardized%20Representation%20of%20Anosmia%20and%20Associated%20Term.png"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
+                 <table>
+                    <title>ANF Standardized Representation of Anosmia and Associated Term Narrative 1</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col2">Narrative 1: <emphasis
+                                        role="bold">Loss of Sense of Smell</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry namest="col1" nameend="col2">
+                                    <para>id: <emphasis role="bold"
+                                            >XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</emphasis></para>
+                                    <para>time: <emphasis role="bold">1:17pm 2023-02-14
+                                            T09:20:00.00+01:00</emphasis></para>
+                                    <para>subjectOfRecordId: <emphasis role="bold"
+                                            >Participant</emphasis></para>
+                                    <para>author: <emphasis role="bold">Healthcare
+                                            Professional</emphasis></para>
+                                    <para>subjectOfInformation: <emphasis role="bold">Subject of
+                                            Record</emphasis></para>
+                                    <para>type: <emphasis role="bold">Performance</emphasis></para>
+                                    <para>topic: <emphasis role="bold">Loss of Sense of
+                                            Smell</emphasis></para>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry morerows="7">Circumstance</entry>
+                                <entry>PerformanceCircumstance</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>status: 
+                                                <emphasis role="bold">[Complete]</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>result: 
+                                                <emphasis role="bold">[1,1]</emphasis></para>
+                                            <itemizedlist>
+                                                <listitem>
+                                                  <para>resolution: 
+                                                      <emphasis role="bold">[N/A]</emphasis></para>
+                                                </listitem>
+                                                <listitem>
+                                                  <para>semantic: 
+                                                      <emphasis role="bold">[N/A]</emphasis></para>
+                                                </listitem>
+                                            </itemizedlist>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>healthRisk: 
+                                                <emphasis role="bold">[N/A]</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>participant: 
+                                                <emphasis role="bold">[Participant]</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>referenceRange 
+                                                <emphasis role="bold">[N/A]</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>timing: 
+                                            <emphasis role="bold">12:40pm 2023-02-14
+                                                T09:20:00.00+01:00</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>purpose: 
+                                                <emphasis role="bold">[N/A]</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry namest="col1" nameend="col2">Associations:</entry>
+                            </row>
+                            <row>
+                                <entry namest="col1" nameend="col2">
+                                    <para>associatedStatement: </para>
+                                    <para>[UUID] (Table: Associated Clinical Statement 1)</para>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <table>
+                    <title>ANF Standardized Representation of Anosmia and Associated Term Narrative 2</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col2">Narrative 2: <emphasis
+                                        role="bold">Since Onset of COVID-19
+                                    Symptoms</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry namest="col1" nameend="col2">
+                                    <para>id: <emphasis role="bold">[UUID] Associated Clinical
+                                            Statement 1</emphasis></para>
+                                    <para>time: <emphasis role="bold">1:17pm 20123-02-14
+                                            T09:20:00.00+01:00</emphasis></para>
+                                    <para>subjectOfRecordId: <emphasis role="bold"
+                                            >Participant</emphasis></para>
+                                    <para>author: <emphasis role="bold">Healthcare
+                                            professional</emphasis></para>
+                                    <para>subjectOfInformation: <emphasis role="bold">Subject of
+                                            record</emphasis></para>
+                                    <para>type: <emphasis role="bold"><emphasis role="italic"
+                                                >Observation Procedure</emphasis></emphasis></para>
+                                    <para>topic: <emphasis role="bold">Since onset of COVID
+                                            symptoms</emphasis></para>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry morerows="7">Circumstance</entry>
+                                <entry>PerformanceCircumstance</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>status: 
+                                                <emphasis role="bold">[Complete]</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>result:
+                                                <emphasis role="bold"> [1,1]</emphasis></para>
+                                            <itemizedlist>
+                                                <listitem>
+                                                  <para>resolution: 
+                                                      <emphasis role="bold">[N/A]</emphasis></para>
+                                                </listitem>
+                                                <listitem>
+                                                  <para>semantic: 
+                                                      <emphasis role="bold">[N/A]</emphasis></para>
+                                                </listitem>
+                                            </itemizedlist>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>healthRisk: 
+                                                <emphasis role="bold">[N/A]</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>participant: 
+                                                <emphasis role="bold">[Participant]</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>referenceRange: 
+                                                <emphasis role="bold">[N/A]</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>timing: 
+                                            <emphasis role="bold">1:17pm 20123-02-14
+                                                T09:20:00.00+01:00</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>purpose: 
+                                                <emphasis role="bold">[N/A]</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry namest="col1" nameend="col2">Associations:</entry>
+                            </row>
+                            <row>
+                                <entry namest="col1" nameend="col2">associatedStatement: <emphasis
+                                        role="bold">[N/A]</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry namest="col1" nameend="col2"> </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
         </section>
         <section>
             <title>Recommendations to Address Terminology Issues</title>
@@ -1460,17 +2092,166 @@
                 option has its own limitations and cost, the ability to address or minimize common
                 normalization errors justifies their use.
                 [29]<?oxy_comment_start author="naylee" timestamp="20231130T110056-0600" comment="The table below needs to define QVT = Query/View/Transformation in the first colum of the table. "?></para><?oxy_comment_end?>
-            <figure xml:id="BenefitsanddLimitations">
-                <title>Benefits and limitations of XLST, FHIR, QVT, and MDMI Transformation
-                    Languages and Architecture</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata
-                            fileref="images/Benefits%20and%20limitations%20of%20XLST,%20FHIR,%20QVT,%20and%20MDMI%20Transformation%20Languages%20and%20Architecture.png"
-                        />
-                    </imageobject>
-                </mediaobject>
-            </figure>
+            
+                <table>
+                    <title>Benefits and Limitations of XLST, FHIR, QVT, and MDMI Transformation Languages and Architecture</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1" align="left" rowsep="1"/>
+                        <colspec colnum="2" colname="col2" align="left" rowsep="1"/>
+                        <colspec colnum="3" colname="col3" align="left" rowsep="1"/>
+                        <thead>
+                            <row>
+                                <entry><emphasis role="bold">Standard or Language</emphasis></entry>
+                                <entry><emphasis role="bold">Benefits</emphasis></entry>
+                                <entry><emphasis role="bold">Limitations</emphasis></entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>eXtensible Stylesheet Language Transformation (XSLT)</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Robust language </para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Easily extensible via extension functions and
+                                                calls</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Auto matches templates to data</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Easy tooling</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Good documentation</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Transformation specifications are difficult to
+                                                read and understand</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Transformations are syntactic </para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>XML input only, other formats not translated
+                                            </para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>FHIR Mapping Language (FML)</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Supports input formats other XML</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Semantic DAGs can be rendered in variety of
+                                                syntaxes</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Concise and easy to read mapping
+                                                specifications</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Input and output outside of FHIR logical models
+                                                require extra custom programming</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Only XML and JSON supported as output syntaxes,
+                                                otherwise custom programming is required</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>To date, only one implementation </para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Limited tools needed for editing and authoring
+                                                scripts</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Limited documentation sources</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Limited pool of knowledgeable programmers</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>QVT</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Great flexibility and configurability to create
+                                                custom transformation languages</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Limited learning resources making it difficult to
+                                                learn and understand</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Model Driven Message Interoperability (MDMI)</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Any-to-any transformations support reuse of
+                                                transformation models for different use cases</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Minimal changes to other models if model
+                                                changes</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Simplifies development, tooling supports
+                                                development by SMEs and not dependent on
+                                                developers</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Enables automation tooling for models</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Available open-source models for HL7
+                                                formats</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Limited experience working with transformations of
+                                                detailed clinical models.</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Lacking user documentation</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Complex runtime tool</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para> </para>
         </section>
     </section>
     <section>
@@ -1644,4 +2425,3 @@
         </para>
     </section>
 </chapter>
-
