@@ -77,20 +77,20 @@ If you want to include original phrasing please use &quot;In collaboration with 
             safe and effective operation. [3] By modeling a control structure, we can assess every
             relationship therein to measure the effectiveness of control actions and identify those
             which are unsafe to the system operation, human operators, and ultimately, patients. </para>
-        <para>The purpose of this document is to supplement an initial control structure analysis
-            led by Synensys, LLC to identify and evaluate safety and quality controls and loss
-            scenarios within the laboratory data ecosystem. Specifically, we are focusing on
-            describing entities, behaviors, and business requirements to complement the current
-            model of the control structure which supports interoperability, use of terminology
-            systems, and industry coding standards such as LOINC® and SNOMED CT®. Within the control
-            structure diagrams that have been developed, we are enumerating requirements for the
-            "Data Flow for Encoding" to describe how data is encoded from labs and Laboratory
-            Information System (LIS) systems to standards, how data is encoded between manufacturers
-            and standards, and how new test names and codes are distributed by SDOs. These
-            requirements will help to clarify and articulate control action scenarios and pinpoint
-            specific scenarios in the safety assessment analysis by identifying unsafe control
-            actions and loss scenarios related to the standards development, implementation, and
-            maintenance processes in laboratories, devices, and standards. </para>
+        <para>The purpose of this document is to supplement an initial control structure analysis to
+            identify and evaluate safety and quality controls and loss scenarios within the
+            laboratory data ecosystem. Specifically, we are focusing on describing entities,
+            behaviors, and business requirements to complement the current model of the control
+            structure which supports interoperability, use of terminology systems, and industry
+            coding standards such as LOINC® and SNOMED CT®. Within the control structure diagrams
+            that have been developed, we are enumerating requirements for the "Data Flow for
+            Encoding" to describe how data is encoded from labs and Laboratory Information System
+            (LIS) systems to standards, how data is encoded between manufacturers and standards, and
+            how new test names and codes are distributed by SDOs. These requirements will help to
+            clarify and articulate control action scenarios and pinpoint specific scenarios in the
+            safety assessment analysis by identifying unsafe control actions and loss scenarios
+            related to the standards development, implementation, and maintenance processes in
+            laboratories, devices, and standards. </para>
     </section>
     <section>
         <?oxy_comment_start author="rgeorgacopoulos" timestamp="20231130T125558-0500" comment="This section makes mention of the Synensis contract and FDA work. Needs rewrite "?>
@@ -103,17 +103,15 @@ If you want to include original phrasing please use &quot;In collaboration with 
             vitro diagnostic (IVD) manufacturers and laboratories and while initial feedback with
             our stakeholders is positive, it could be made more comprehensive with the inclusion of
             SDOs’ process such as the interactions and influences between the various players with
-            LOINC and SNOMED International. For completeness we included diagrams primarily authored
-            by another contractor team (Synensys, LLC) working on contract # 75F40122C00112. Our
-            documentation adds context and business requirements to supplement these diagrams. </para>
+            LOINC and SNOMED International. Our documentation adds context and business requirements
+            to supplement these diagrams. </para>
         <para><xref linkend="DraftModeloftheDetailedLaboratoryEcosystemControlStructure"/> below
             illustrates the current draft model of the laboratory ecosystem control structure and
                 <xref
                 linkend="DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure"
             /> includes a specific draft depiction of the data flow for encoding. </para>
         <figure xml:id="DraftModeloftheDetailedLaboratoryEcosystemControlStructure">
-            <title>Draft Model of the Detailed Laboratory Ecosystem Control Structure (From
-                Synensys, LLC contract # 75F40122C00112)</title>
+            <title>Draft Model of the Detailed Laboratory Ecosystem Control Structure </title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/4.1.1%20image%201.png"/>
@@ -129,7 +127,7 @@ If you want to include original phrasing please use &quot;In collaboration with 
         <figure
             xml:id="DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure">
             <title>Draft Inset Model of the Encoding for Data Flow in the Laboratory Ecosystem
-                Control Structure (From Synensys, LLC contract # 75F40122C00112)</title>
+                Control Structure </title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/4.1.1%20imgae%202.png"/>

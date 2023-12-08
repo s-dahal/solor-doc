@@ -5,7 +5,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Summary of Findings – RWE Search and Query Methods</title>
     <sect1>
-        <title>Real World Evidence Introduction</title>
+        <title>Real World Evidence (RWE) Introduction</title>
         <para>Search and query methods are used for information retrieval to access unstructured
             data. Most health information is stored in an electronic health record (EHR), and most
             laboratory data are stored in a laboratory information system (LIS). It is important to
