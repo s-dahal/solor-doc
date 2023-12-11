@@ -139,26 +139,21 @@
             into implementable clinical tools needs to occur in a manner that is consistent,
             systematic, and comprehensive. There have been a number of historical efforts that have
             aimed to achieve interoperable and robust CDS tools and artifacts that appropriately
-            translate guidelines into care
-            (<?oxy_comment_start author="steph" timestamp="20190717T105119-0600" comment="Where is this section?  I couldn&apos;t find it." id="aqv_sdt_q3b" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190806T210726-0500" comment="Is this supposed to be Historical Context for Representing the Expression Logic of Clinical Decision Support?" parentID="aqv_sdt_q3b" flag="done" mid="4"?><?oxy_comment_start author="rcholan" timestamp="20190808T094544-0400" comment="I added a link and fixed the title" parentID="aqv_sdt_q3b" flag="done" mid="5"?>see
-            subsequent <link linkend="CDSHistory">section</link> about the Historical Context for
-            Representing the Expression
-            Logic<?oxy_comment_end mid="5"?><?oxy_comment_end mid="4"?><?oxy_comment_end?> of CDS).
-            The AHRQ depicts the following image representing the “CDS lifecycle” for the following
-                areas<citation>CDSConnect</citation>:<itemizedlist>
+            translate guidelines into care. The AHRQ depicts the following image representing the
+            “CDS lifecycle” for the following areas<citation>CDSConnect</citation>:<itemizedlist>
                 <listitem>
-                    <para>authoring CDS tools and artifacts that leverage knowledge sources such as
+                    <para>Authoring CDS tools and artifacts that leverage knowledge sources such as
                         clinical practice guidelines, quality measure specifications, and
-                        peer-reviewed journal articles; </para>
+                        peer-reviewed journal articles</para>
                 </listitem>
                 <listitem>
-                    <para>publishing CDS tools to a public repository (e.g., AHRQ’s CDS
-                        Connect);</para>
+                    <para>Publishing CDS tools to a public repository (e.g., AHRQ’s CDS
+                        Connect)</para>
                 </listitem>
                 <listitem>
-                    <para>implementing CDS tools in a community (i.e., learning network) and
+                    <para>Implementing CDS tools in a community (i.e., learning network) and
                         collecting on-the-ground stories and evaluation metrics to then inform the
-                        subsequent design, build, and implementation of future CDS tools. </para>
+                        subsequent design, build, and implementation of future CDS tools</para>
                 </listitem>
             </itemizedlist></para>
         <para>
@@ -193,21 +188,19 @@
         <para>In IQ-MAPLE, a team of clinical experts and informaticians designed and validated a
             series of problem inference algorithms, using rules-based techniques on structured data
             in the EHR and natural language processing on unstructured data. Then, they created CDS
-            rules for suggesting conditions to add to a patient’s problem list that may have
-            included the following example criteria:<itemizedlist>
+            rules for suggesting conditions to add to a patient’s problem list that may have included:<itemizedlist>
                 <listitem>
-                    <para>queries for the presence or absence of a diagnosis code (e.g.,
-                        International Classification of Diseases [ICD]-10CM, SNOMED CT® value sets
-                        by key condition) included in a patient’s problem list or encounter
-                        diagnosis; </para>
+                    <para>queries for the presence or absence of a diagnosis code (e.g., ICD-10CM,
+                        SNOMED CT® value sets by key condition) included in a patient’s problem list
+                        or encounter diagnosis.</para>
                 </listitem>
                 <listitem>
                     <para>queries looking for currently active medications (e.g., RXCUI value sets
-                        by medication classes) in the patient’s record; </para>
+                        by medication classes) in the patient’s record.</para>
                 </listitem>
                 <listitem>
                     <para>queries for lab values (e.g., LOINC® value sets) that are within a
-                        specified range;</para>
+                        specified range.</para>
                 </listitem>
                 <listitem>
                     <para>various combinations and compound queries made up of the aforementioned
@@ -241,7 +234,7 @@
             terminology content at the four study organizations. Therefore, there may have been
             discrepancies in how the CDS rules were triggered when they were deployed. For example,
             perhaps physicians at one of the study sites had been trained to use only diagnosis
-            codes that align with Hierarchical Condition Category (HCC) codes in CMS’
+            codes that align with Hierarchical Condition Category (HCC) codes in Centers for Medicare and Medicaid Services's (CMS)
             risk-adjustment model. These physicians would not have used any other diagnosis codes
             that may have existed in the IQ-MAPLE authored value sets for the CDS alerts. The other
             three study sites may not have operationalized such specific workflows, thereby reducing
@@ -300,12 +293,11 @@
                 <listitem>
                     <para>One such malfunction was described as involving <emphasis role="bold"
                                 ><emphasis role="underline"> inappropriate dependencies between and
-                                amongst the electronic health record system, clinical decision
-                                support system, and other external systems</emphasis></emphasis>
-                        (e.g., lab information systems) . For example, “an alert for monitoring
-                        thyroid function in patients receiving amiodarone stopped working when an
-                        internal identifier for amiodarone was changed in another system.”
-                            <citation>CDSMalfunction</citation>
+                                amongst the EHR system, CDS system, and other external
+                                systems</emphasis></emphasis> (e.g., lab information systems) . For
+                        example, “an alert for monitoring thyroid function in patients receiving
+                        amiodarone stopped working when an internal identifier for amiodarone was
+                        changed in another system.” <citation>CDSMalfunction</citation>
                     </para>
                 </listitem>
                 <listitem>
@@ -380,8 +372,8 @@
                 lessons on their own." <citation>CDSOptimize</citation> The following table shows
                 examples of measures to determine the impact of CDS interventions.
                     <citation>refine</citation><table frame="all">
-                    <title>Examples of measures commonly captured to measure the effects of CDS
-                        interventions </title>
+                    <title>Examples of Measures Commonly Captured to Measure the Effects of CDS
+                        Interventions </title>
                     <tgroup cols="2">
                         <colspec colname="c1" colnum="1" colwidth="1*"/>
                         <colspec colname="c2" colnum="2" colwidth="1*"/>
@@ -393,22 +385,22 @@
                         </thead>
                         <tbody>
                             <row>
-                                <entry>CDS satisfaction, usage, usability</entry>
+                                <entry>CDS Satisfaction, Usage, and Usability</entry>
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>usability assessments from end-users, end-user
+                                            <para>Usability assessments from end-users, end-user
                                                 feedback, use of CDS from logs</para>
                                         </listitem>
                                     </itemizedlist>
                                 </entry>
                             </row>
                             <row>
-                                <entry>Workflow impact, efficiency</entry>
+                                <entry>Workflow Impact and Efficiency</entry>
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>time to complete work tasks before and after CDS,
+                                            <para>Time to complete work tasks before and after CDS,
                                                 e.g., direct order entry, medication turn-around
                                                 time</para>
                                         </listitem>
@@ -416,15 +408,15 @@
                                 </entry>
                             </row>
                             <row>
-                                <entry>CDS use by clinicians</entry>
+                                <entry>CDS Use by Clinicians</entry>
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>alert use, rate of alerts firing alert
+                                            <para>Alert use, rate of alerts firing alert
                                                 overrides</para>
                                             <itemizedlist>
                                                 <listitem>
-                                                  <para>number of times CDS alerts happen: (e.g.,
+                                                  <para>Number of times CDS alerts happen: (e.g.,
                                                   absolute counts, central tendency, percent change
                                                   over time)</para>
                                                 </listitem>
@@ -434,11 +426,11 @@
                                 </entry>
                             </row>
                             <row>
-                                <entry>Healthcare services utilization and efficiencies</entry>
+                                <entry>Healthcare Services Utilization and Efficiencies</entry>
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>reductions in unnecessary or inappropriate
+                                            <para>Reductions in unnecessary or inappropriate
                                                 laboratory test orders</para>
                                         </listitem>
                                     </itemizedlist>
@@ -449,7 +441,7 @@
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>resource
+                                            <para>Resource
                                                 management,<?oxy_comment_start author="steph" timestamp="20190717T114026-0600" comment="What is provider medication cost?  Should it just be medication cost?" flag="done"?><?oxy_comment_end?>medication
                                                 (number, type, class) and laboratory test
                                                 costs</para>
@@ -458,34 +450,34 @@
                                 </entry>
                             </row>
                             <row>
-                                <entry>Unintended consequences (includes all measure types
-                                    above)</entry>
+                                <entry>Unintended Consequences (Includes All Measure Types
+                                    Above)</entry>
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>alert fatigue, overrides of serious alerts,
+                                            <para>Alert fatigue, overrides of serious alerts,
                                                 adverse events due to CDS</para>
                                         </listitem>
                                     </itemizedlist>
                                 </entry>
                             </row>
                             <row>
-                                <entry>Care processes, adherence to guidelines</entry>
+                                <entry>Care pProcesses, Adherence to Guidelines</entry>
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>adherence to clinical guidelines; time to ordering
+                                            <para>Adherence to clinical guidelines; time to ordering
                                                 of important medications</para>
                                         </listitem>
                                     </itemizedlist>
                                 </entry>
                             </row>
                             <row>
-                                <entry>Patient safety</entry>
+                                <entry>Patient Safety</entry>
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>error reports, adverse events, transfers to ICU,
+                                            <para>Error reports, adverse events, transfers to ICU,
                                                 death, medication prescribing errors</para>
                                         </listitem>
                                     </itemizedlist>
@@ -496,10 +488,10 @@
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>disease management related to adoption of
+                                            <para>Disease management related to adoption of
                                                 guidelines (e.g., blood pressure control, lipid
                                                 levels,
-                                                <?oxy_comment_start author="steph" timestamp="20190717T114254-0600" comment="Should this be A1c or HgbA1c instead?" id="ydk_3lr_q3b" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190806T152916-0500" comment="Changed to HBA1c" parentID="ydk_3lr_q3b" flag="done" mid="10"?>HBA1c<?oxy_comment_end mid="10"?><?oxy_comment_end?>
+                                                <?oxy_comment_start author="steph" timestamp="20190717T114254-0600" comment="Should this be A1c or HgbA1c instead?" id="ydk_3lr_q3b" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190806T152916-0500" comment="Changed to HBA1c" parentID="ydk_3lr_q3b" flag="done" mid="7"?>HBA1c<?oxy_comment_end mid="7"?><?oxy_comment_end?>
                                                 levels), hospital lengths of stay,
                                                 rehospitalizations </para>
                                         </listitem>
@@ -550,23 +542,22 @@
                     can be performed: <citation>kassakian</citation></para>
                 <itemizedlist>
                     <listitem>
-                        <para>Test #1 the presence of a single point outside the control limits
+                        <para>Test #1 - The presence of a single point outside the control limits
                             using the threshold
-                            3<?oxy_comment_start author="steph" timestamp="20190717T120833-0600" comment="Is this symbol correct?" id="iln_ksd_r3b"?><?oxy_comment_start author="rcholan" timestamp="20190808T085928-0400" comment="* denotes multiplication" parentID="iln_ksd_r3b" mid="11"?>*<?oxy_comment_end mid="11"?><?oxy_comment_end?>standard
+                            3<?oxy_comment_start author="steph" timestamp="20190717T120833-0600" comment="Is this symbol correct?" id="iln_ksd_r3b"?><?oxy_comment_start author="rcholan" timestamp="20190808T085928-0400" comment="* denotes multiplication" parentID="iln_ksd_r3b" mid="9"?>*<?oxy_comment_end mid="9"?><?oxy_comment_end?>standard
                             deviation.</para>
                     </listitem>
                     <listitem>
-                        <para>Test #2 two of three consecutive points are more than 2 standard
+                        <para>Test #2 - Two of three consecutive points are more than 2 standard
                             deviations from the average line and both on the same side of the
                             average line.</para>
                     </listitem>
                     <listitem>
-                        <para>Test #3 eight or more consecutive points on the same side of the
+                        <para>Test #3 - Eight or more consecutive points on the same side of the
                             average line.</para>
                     </listitem>
                     <listitem>
-                        <para>Test #4 consisted of 6 or more values steadily increasing or
-                            decreasing.</para>
+                        <para>Test #4 - Six or more values steadily increasing or decreasing.</para>
                     </listitem>
                 </itemizedlist>
                 <para>SPC anomaly detection can be attempted on time points for various time scales
@@ -609,8 +600,7 @@
                         evidence, clinical areas affected, and short description</para>
                 </listitem>
                 <listitem>
-                    <para>Manage terminologies and value sets using formal processes (e.g.,
-                        Solor)</para>
+                    <para>Manage terminologies and value sets using formal processes</para>
                 </listitem>
                 <listitem>
                     <para>Periodically review the clinical evidence and assertional knowledge
@@ -665,111 +655,63 @@
                 includes the following Ten Commandments for Effective CDS:</para>
             <orderedlist>
                 <listitem>
-                    <para><emphasis role="bold">Speed is Everything</emphasis></para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>“[T]he speed of an information system is the parameter that users
-                                value most. If the decision support is wonderful, but takes too long
-                                to appear, it will be useless.” </para>
-                        </listitem>
-                    </itemizedlist>
+                    <para><emphasis role="bold">Speed is Everything</emphasis> - “[T]he speed of an
+                        information system is the parameter that users value most. If the decision
+                        support is wonderful, but takes too long to appear, it will be useless.” </para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Anticipate Needs and Deliver in Real
-                        Time</emphasis></para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>“[A]pplications must anticipate clinician needs and bring
-                                information to clinicians at the time they need it.” </para>
-                        </listitem>
-                    </itemizedlist>
+                    <para><emphasis role="bold">Anticipate Needs and Deliver in Real Time</emphasis>
+                        - “[A]pplications must anticipate clinician needs and bring information to
+                        clinicians at the time they need it.” </para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Fit into the User’s Workflow</emphasis></para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>“Understanding clinician workflow, particularly when designing
-                                applications for the outpatient setting, is critical.”</para>
-                        </listitem>
-                    </itemizedlist>
+                    <para><emphasis role="bold">Fit into the User’s Workflow</emphasis> -
+                        “Understanding clinician workflow, particularly when designing applications
+                        for the outpatient setting, is critical.”</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Little Things Can Make a Big
-                        Difference</emphasis></para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>Usability matters a lot. CDS must be understandable, useful and
-                                encompass the needed functionality. Furthermore, CDS should be easy
-                                to learn, efficient to use, easy to remember, subjectively pleasing,
-                                and contain few (or no) errors. </para>
-                        </listitem>
-                    </itemizedlist>
+                    <para><emphasis role="bold">Little Things Can Make a Big Difference</emphasis> -
+                        Usability matters a lot. CDS must be understandable, useful and encompass
+                        the needed functionality. Furthermore, CDS should be easy to learn,
+                        efficient to use, easy to remember, subjectively pleasing, and contain few
+                        (or no) errors. </para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Recognize that Physicians Will Strongly Resist
-                            Stopping</emphasis></para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>Bates et al “found that physicians strongly resist suggestions not
-                                to carry out an action when [they did] not offer an alternative,
-                                even if the action they are about to carry out is virtually always
-                                counterproductive.”</para>
-                        </listitem>
-                    </itemizedlist>
+                            Stopping</emphasis> - Bates et al “found that physicians strongly resist
+                        suggestions not to carry out an action when [they did] not offer an
+                        alternative, even if the action they are about to carry out is virtually
+                        always counterproductive.”</para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Changing Direction Is Easier than
-                            Stopping</emphasis></para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>CDS can be a powerful tool for changing physician behavior. Bates
-                                et al were “especially effective when the issue at hand is one
-                                attribute of an order the physician probably does not have strong
-                                feelings about, such as the dose, route, or frequency of a
-                                medication or the views in a radiographic study.”</para>
-                        </listitem>
-                    </itemizedlist>
+                            Stopping</emphasis> - CDS can be a powerful tool for changing physician
+                        behavior. Bates et al were “especially effective when the issue at hand is
+                        one attribute of an order the physician probably does not have strong
+                        feelings about, such as the dose, route, or frequency of a medication or the
+                        views in a radiographic study.”</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Simple Interventions Work Best</emphasis></para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>“If you cannot fit a guideline on a single screen, clinicians will
-                                not be happy about using it.”</para>
-                        </listitem>
-                    </itemizedlist>
+                    <para><emphasis role="bold">Simple Interventions Work Best</emphasis> - “If you
+                        cannot fit a guideline on a single screen, clinicians will not be happy
+                        about using it.”</para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Ask for Additional Information Only When You Really
-                            Need It</emphasis></para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>“[<?oxy_comment_start author="steph" timestamp="20190717T122242-0600" comment="Is the right bracket missing or is the left included by mistake?" id="cgt_4lr_q3b" flag="done" mid="16"?><?oxy_comment_start author="timowilliams" timestamp="20190806T153107-0500" comment="Removed the bracket" parentID="cgt_4lr_q3b" flag="done"?><?oxy_comment_start author="rcholan" timestamp="20190808T094757-0400" comment="Fixed the bracket" parentID="cgt_4lr_q3b" flag="done" mid="15"?>T<?oxy_comment_end mid="15"?><?oxy_comment_end?><?oxy_comment_end mid="16"?>]he
-                                likelihood of success in implementing a computerized guideline is
-                                inversely proportional to the number of extra data elements
-                                needed.”</para>
-                        </listitem>
-                    </itemizedlist>
+                            Need It</emphasis> -
+                        “[<?oxy_comment_start author="steph" timestamp="20190717T122242-0600" comment="Is the right bracket missing or is the left included by mistake?" id="cgt_4lr_q3b" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190806T153107-0500" comment="Removed the bracket" parentID="cgt_4lr_q3b" flag="done" mid="12"?><?oxy_comment_start author="rcholan" timestamp="20190808T094757-0400" comment="Fixed the bracket" parentID="cgt_4lr_q3b" flag="done" mid="13"?>T<?oxy_comment_end mid="13"?><?oxy_comment_end mid="12"?><?oxy_comment_end?>]he
+                        likelihood of success in implementing a computerized guideline is inversely
+                        proportional to the number of extra data elements needed.”</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Monitor Impact, Get Feedback, and
-                        Respond</emphasis></para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>“Carefully evaluate and prune the CDS knowledge base.”</para>
-                        </listitem>
-                    </itemizedlist>
+                    <para><emphasis role="bold">Monitor Impact, Get Feedback, and Respond</emphasis>
+                        - “Carefully evaluate and prune the CDS knowledge base.”</para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Manage and Maintain Your Knowledge-based
-                            Systems</emphasis></para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>Maintaining the knowledge within the system and managing the
-                                individual pieces of the system are critical to successful delivery
-                                of decision support. </para>
-                        </listitem>
-                    </itemizedlist>
+                            Systems</emphasis> - Maintaining the knowledge within the system and
+                        managing the individual pieces of the system are critical to successful
+                        delivery of decision support. </para>
                 </listitem>
             </orderedlist>
         </section>
@@ -784,17 +726,17 @@
             terminologies, but each site will still require human intervention and hand-crafted
             implementations of computerized CDS, including patient safety alerts and health
             maintenance reminders intended to improve population health. One implementation of a CDS
-            alert at the Veterans Health Administration, for instance, is not completely
-            transferrable to another institution, even if the organization is using the same Health
-            IT system. Analysts at each organization will have to modify the underlying query so
-            that it is computable against their respective clinical database structure. Furthermore,
-            not all clinical concepts are recorded and stored in the same way in different EHR
-            implementations; what may be structured in one system may be free text in another. While
-            the Health Quality Measure Format (HQMF), Quality Data Model (QDM), and Clinical Quality
-            Langauge (CQL) are the more recent efforts to improve standard representations of CDS
-            expression logic, efforts date back to the mid 1970’s when early implementers of
-            computer-based clinical information systems were first recognizing the value of
-            computer-based decision support into their designs. </para>
+            alert at a given institution is not completely transferrable to another institution,
+            even if the organization is using the same Health IT system. Analysts at each
+            organization will have to modify the underlying query so that it is computable against
+            their respective clinical database structure. Furthermore, not all clinical concepts are
+            recorded and stored in the same way in different EHR implementations; what may be
+            structured in one system may be free text in another. While the Health Quality Measure
+            Format (HQMF), Quality Data Model (QDM), and Clinical Quality Langauge (CQL) are the
+            more recent efforts to improve standard representations of CDS expression logic, efforts
+            date back to the mid 1970’s when early implementers of computer-based clinical
+            information systems were first recognizing the value of computer-based decision support
+            into their designs. </para>
         <para>Notably, Clem McDonald’s work on the Regenstrief Medical Record System exemplifies
             important early work in pseudocode logic expression. McDonald realized that the number
             of CDS reminders and alerts would quickly increase, so rather than hand-crafting each
@@ -839,7 +781,7 @@
             RIM was not proven to be a very practical representation of the complexity of real-world
             data. Only a small number of vendors were successfully able to implement RIM-based EHRs
             and therefore the vision of GELLO and HL7 V3 efforts remained unproven. In 2013, HL7
-            replaced GELLO with ECA (“Event, Condition, Action”), an expression in XML data
+            replaced GELLO with “Event, Condition, Action” (ECA), an expression in XML data
             structures intended to abstract the representation of expression logic. Shortly
             thereafter, the standards community realized the benefit in aligning CDS logic
             expression with those of eCQMs, as the goals of CDS rules are often used to prompt
@@ -872,7 +814,7 @@
             Clinical Practice Guidelines, Clinical Pathways, Treatment Protocols, Order Sets, and
             KNARTs.</para>
         <section>
-            <title>Standard Operating Procedures</title>
+            <title>Standard Operating Procedures (SOP)</title>
             <para>Standard Operating Procedures (SOPs) "are a specific set of practices that are
                 required to be initiated and followed when specific circumstances arise. In clinical
                 care, clinicians have historically been familiar with SOPs in specific types of
@@ -882,11 +824,10 @@
                 laboratory technicians have SOPs for handling, testing, and subsequently discarding
                 body fluids obtained from patients."</para>
             <para>Now that EHRs and electronic clinical data in some capacity are essentially
-                ubiquitous in the US, Health IT implementations often come with tools making it
-                possible to achieve SOPs "into routine clinical practice; that is, not for special
-                patients (e.g. those who are unconscious) or for special circumstances (e.g.
-                clinical trials), but for every patient in everyday clinical
-                    care."<citation>SOP</citation></para>
+                ubiquitous in the United States, Health IT implementations often come with tools
+                making it possible to achieve SOPs "into routine clinical practice; that is, not for
+                special patients (e.g. those who are unconscious) or for special circumstances (e.g.
+                clinical trials), but for every patient in everyday clinical care."SOP</para>
         </section>
         <section>
             <title>C<?oxy_comment_start author="steph" timestamp="20190717T152102-0600" comment="I added &quot;Clinical Practice&quot; since that is how it was referred to in section12.6 above." flag="done"?>linical
@@ -940,12 +881,9 @@
             <para>Clinical Pathways are one of the main tools used to manage the quality in
                 healthcare concerning the standardization of care processes. They intend to reduce
                 variability and clinical practice, thereby improving outcomes. Clinical pathways
-                appeared as a result of the adaptation of the documents used in industrial quality
-                management,<?oxy_comment_start author="steph" timestamp="20190717T153223-0600" comment="Should this be hyphenated instead so it&apos;s clearer that you&apos;re referring to SOPs as the &quot;documents&quot;?  And I would make SOPs plural since you referred to them as plural previously (documents).  It would read:
-
-Clinical pathways appeared as a result of the adaptation of the documents used in industrial quality management - standard operating procedures - whose goals..." flag="done"?>
-                the Standard-Operating-Procedures,<?oxy_comment_end?> whose goals are to improve
-                efficiency in the use of resources and to finish work in a set time. </para>
+                appeared as a result of the adaptation of the SOP documents used in industrial
+                quality management whose goals are to improve efficiency in the use of resources and
+                to finish work in a set time. </para>
             <para>Clinical pathways incorporate evidence-based guidelines and protocols for common
                 diagnoses, conditions and procedures into algorithms. These algorithms are used by
                 the multidisciplinary care team in providing care to the patient.</para>
@@ -990,9 +928,10 @@ Clinical pathways appeared as a result of the adaptation of the documents used i
                 decreased costs. </para>
             <section>
                 <title>Pathways vs SOPs vs Guidelines</title>
-                <para>Rao et al provide definitions to help compare/contrast SOPs, guidelines, and
-                    <?oxy_comment_start author="steph" timestamp="20190717T154404-0600" comment="I didn&apos;t see clinical pathways discussed in the two paragraphs below." id="sms_5sd_r3b"?><?oxy_comment_start author="rcholan" timestamp="20190808T090227-0400" comment="It is mentioned in the first sentence and last sentence. Perhaps we need a new quote" parentID="sms_5sd_r3b" mid="21"?>clinical
-                    pathways: </para><?oxy_comment_end?><?oxy_comment_end mid="21"?>
+                <para><emphasis role="bold">Rao et al </emphasis>provide definitions to help
+                    compare/contrast SOPs, guidelines, and
+                    <?oxy_comment_start author="steph" timestamp="20190717T154404-0600" comment="I didn&apos;t see clinical pathways discussed in the two paragraphs below." id="sms_5sd_r3b"?><?oxy_comment_start author="rcholan" timestamp="20190808T090227-0400" comment="It is mentioned in the first sentence and last sentence. Perhaps we need a new quote" parentID="sms_5sd_r3b" mid="17"?>clinical
+                    pathways: </para><?oxy_comment_end?><?oxy_comment_end mid="17"?>
                 <para xml:id="__p7">"The terms SOPs, guidelines and [clinical] pathways are defined
                     by different medical bodies. Furthermore, whereas clinical practice guidelines
                     are systematically developed statements that assist decisions about appropriate
