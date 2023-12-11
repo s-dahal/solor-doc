@@ -16,10 +16,6 @@
     </part>
     <part>
         <title>Procedural Knowledge</title>
-        <xi:include href="Procedural-Knowledge.xml"/>
-    </part>
-    <part>
-        <title>Prior Procedural Knowledge Content (update title once finalized)</title>
         <xi:include href="knart-procedural.xml"/>
     </part>
 </book>
