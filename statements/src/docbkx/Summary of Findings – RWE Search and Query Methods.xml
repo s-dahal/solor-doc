@@ -12,20 +12,21 @@
             understand how data is stored and retrieved from these sources, and how to aggregate
             this data from different sources. Information systems record and manage clinical
             statements using a variety of standard or ad-hoc models. However, reliable querying and
-            information retrieval requires consistency not only at the format level (e.g., CDA,
-            FHIR, V2) but also the content model (i.e., the information model such as HL7 CIMI
-            model, or OMOP), and, finally, the semantic and terminology model. Not only is there a
-            potential for a lack of consistency with representing disparate health data with current
-            data models efforts, but there is also further variation in how the data are entered
-            into information systems by end-users. These differences pose challenges for how the
-            data are modeled and stored, and, therefore, have implications on data retrieval, data
-            analysis, and accuracy of clinical analysis results. For these reasons, it is important
-            to be able to test for equivalence across multiple data points. A well-defined query
-            that yields accurate results in one health system is not guaranteed to be successful in
-            another system because of a difference in the underlying data models. If normalization
-            can occur at the data level, time and resources can be saved through sharing queries
-            across different systems to achieve data fluidity and the ability to build layers of
-            data from different sources.</para>
+            information retrieval requires consistency not only at the format level (e.g., Clinical
+            Document Architecture (CDA), FHIR, HL7 V2) but also the content model (i.e., the
+            information model such as HL7 CIMI model, or Observational Medical Outcomes Partnership
+            (OMOP)), and, finally, the semantic and terminology model. There is not only a potential
+            for a lack of consistency with representing disparate health data with current data
+            models efforts but also further variation in how the data are entered into information
+            systems by end-users. These differences pose challenges for how the data are modeled and
+            stored, thereby generating implications on data retrieval, data analysis, and accuracy
+            of clinical analysis results. For these reasons, the ability to test for equivalence
+            across multiple data points is important. A well-defined query that yields accurate
+            results in one health system is not guaranteed to be successful in another system
+            because of a difference in the underlying data models. If normalization can occur at the
+            data level, time and resources can be saved through sharing queries across different
+            systems to achieve data fluidity and the ability to build layers of data from different
+            sources.</para>
         <para>Organizations like the National COVID Cohort Collaborative (N3C), Sentinel,
             Observational Health Data Sciences and Informatics (OHDSI) and others prove it is
             possible to develop, support and use real-world data (RWD) at “scale” across US and

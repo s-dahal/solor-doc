@@ -6,37 +6,38 @@
      <title>Open-Source</title>
     <section>
         <title>How to Contribute</title>
-        <para>For community members and users who would like to collaborate and contribute,
-            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>please visit the
-            ‘Community’ tab on IKM.dev<?oxy_custom_end?>. </para>
+        <para>For community members and users who would like to collaborate and contribute, please
+            visit the 'Community' tab on the<emphasis> IMK.dev</emphasis> website or go directly by
+            typing <emphasis>ikm.dev/community</emphasis>
+        </para>
     </section>
     <section>
         <title>What is Open-Source?</title>
-        <para>Open-source software is software that makes its source code, blueprints,
-            documentation, and other products publicly available for users to modify, contribute to,
-            and distribute. Open-source software uses a decentralized approach to software
-            development that supports open collaboration, testing, and improvements from the
-            community of users. In open-source, no one group is solely responsible for maintaining
-            or improving software because peer-to-peer production of code and documentation is
-            encouraged. While a governing body may exist in practice to maintain the software and
-            ensure contributions meet community guidelines, they may not hold special rights to the
-            software. Reasonable guidelines, such as extensive documentation procedures, enhance the
-            benefits and trust in open-source solutions, while simultaneously preventing an
-            “anything goes” mentality.</para>
+        <para>Open-source software makes its source code, blueprints, documentation, and other
+            products publicly available for users to modify, contribute to, and distribute.
+            Open-source software uses a decentralized approach to software development that supports
+            open collaboration, testing, and improvements from the community of users. In
+            open-source, no one group is solely responsible for maintaining or improving software
+            because peer-to-peer production of code and documentation is encouraged. While a
+            governing body may exist in practice to maintain the software and ensure contributions
+            meet community guidelines, they may not hold special rights to the software. Reasonable
+            guidelines, such as extensive documentation procedures, enhance the benefits and trust
+            in open-source solutions, while simultaneously preventing an “anything goes”
+            mentality.</para>
     </section>
     <section>
         <title>Why Does Open-Source Matter?</title>
         <para>The current restrictive and proprietary nature of software licensing within the
             healthcare ecosystem significantly hinders interoperability, particularly by preventing
             or restricting community engagement and contributions that could improve the software or
-            code to meet emerging needs. To achieve FDA and SHIELD’s goal of lossless data exchange
-            between and within systems, the Health IT community must consider open-source software
-            and open-source licensing models.While these licenses enable use, regardless of intent,
-            and the ability to modify, adapt, and extend software with minimal restrictions, they
-            also establish rules of the road and codify best practices to ensure adoptability and
-            ease of use for both the initial user and the broader downstream community. Open-source
-            licensing will support the public-private consortium needed to address gaps created by
-            varying rates of adoption and implementation of proprietary software.</para>
+            code to meet emerging needs. To achieve lossless data exchanges between and within
+            systems, the Health IT community must consider open-source software and open-source
+            licensing models.While these licenses enable use, regardless of intent, and the ability
+            to modify, adapt, and extend software with minimal restrictions, they also establish
+            rules of the road and codify best practices to ensure adoptability and ease of use for
+            both the initial user and the broader downstream community. Open-source licensing will
+            support the public-private consortium needed to address gaps created by varying rates of
+            adoption and implementation of proprietary software.</para>
         <para>Due to the decentralization and wide-spread availability of Open-Source software,
             errors and bugs are found much quicker because the code is utilized in a variety of
             contexts and stretched much farther. Instead of a single development team being tasked
@@ -45,12 +46,18 @@
             of modularity where it can be adaptive and flexible to the diverse needs of its
             users.</para>
         <para>Allowing for open licensing encourages improvements to terminology and standards by
-            ancillary bodies and creates a more robust and flexible system that can adapt to the
-            varying needs of organizations.</para>
+            ancillary bodies. The open licensing also creates a more robust and flexible system that
+            can adapt to the varying needs of organizations.</para>
     </section>
     <section>
-        <title>Our commitment to Open-Source</title>
-        <para>SHIELD is committed to open-source software managed through open-source licensing. A Permissive license will provide source code to users, carries minimal restriction over adaption, modification, and distribution of intellectual property of organizations, and allows the issuing body to impose some restrictions, such as the monetization, but does not exert special rights to derivative works. Permissive licensing throughout the foundational architecture, terminology knowledge, and statement model layers removes barriers imposed on modifications and extensions and improves the compatibility of different terminologies to support a common understanding of knowledge. 
-            </para>
+        <title>Preference for Open-Source</title>
+        <para>Open-source software is preferred and is managed through open-source licensing. A
+            permissive license will provide source code to users, carries minimal restriction over
+            adaption, modification, and distribution of intellectual property of organizations, and
+            allows the issuing body to impose some restrictions, such as the monetization. However,
+            the permissive license does not exert special rights to derivative works. Permissive
+            licensing throughout the foundational architecture, terminology knowledge, and statement
+            model layers removes barriers imposed on modifications and extensions and improves the
+            compatibility of different terminologies to support a common understanding of knowledge. </para>
     </section>
 </chapter>
