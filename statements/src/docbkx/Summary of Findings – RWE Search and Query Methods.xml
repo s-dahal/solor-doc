@@ -29,20 +29,20 @@
             sources.</para>
         <para>Organizations like the National COVID Cohort Collaborative (N3C), Sentinel,
             Observational Health Data Sciences and Informatics (OHDSI) and others prove it is
-            possible to develop, support and use real-world data (RWD) at “scale” across US and
-            internationally in research, public health, and clinical quality improvement. However,
-            the limitations highlighted provide the FDA the opportunity to address gaps commonly
+            possible to develop, support and use real-world data (RWD) at “scale” across the U.S.
+            and internationally in research, public health, and clinical quality improvement.
+            However, the highlighted limitations provide the opportunity to address gaps commonly
             observed across efforts such as data quality and interoperability and access to timely
             data, while replicating the successes. </para>
-        <para>A specific, yet generalizable, use case serves to elucidate the current FDA need for
-            real-world evidence (RWE) analytics, identify gaps, and form the basis of requirements
-            necessary to establish a health data ecosystem capable for widespread use in FDA
-            regulatory efforts, public health surveillance, research, and care delivery. The long
-            COVID use case, describes the need to broadly survey and analyze large data sets to
-            identify and define poorly understood health conditions for which new and/or existing
-            regulated technologies or substances can be evaluated for safety and efficacy. RWD needs
-            to be collected, queried, and evaluated to test and validate the “hypothesis” of the
-            regulatory exercise.</para>
+        <para>A specific, yet generalizable, use case demonstrates the need for real-world evidence
+            (RWE) analytics, identify gaps, and form the basis of requirements necessary to
+            establish a health data ecosystem capable for widespread collective efforts, public
+            health surveillance, research, and care delivery. The long COVID use case describes the
+            need to broadly survey and analyze large data sets. Doing so helps identify and define
+            poorly understood health conditions for which new and/or existing regulated technologies
+            or substances can be evaluated for safety and efficacy. RWD needs to be collected,
+            queried, and evaluated to test and validate the “hypothesis” of the regulatory
+            exercise.</para>
     </sect1>
     <sect1>
         <title>Long COVID Use Case: Loosely Defined and/or Poorly Understood Scenarios</title>
@@ -54,26 +54,28 @@
             symptom type, effect, and timespan, demonstrating how incomplete our medical
             understanding remains. [1] The NIH has stood up the Researching COVID to Enhance
             Recovery (RECOVER) Initiative, allocating $1.15 billion to better understand the
-            development and symptoms of long COVID. [2] Similarly, the UK has invested over £50
+            development and symptoms of long COVID. [2] Similarly, the U.K. has invested over £50
             million into long COVID research initiatives. [3] Countless other countries and research
             institutions are doing the same as evidence mounts demonstrating the significant public
             health risk of this largely undefined condition.</para>
-        <para>Our incomplete understanding of long COVID is akin to the HIV/AIDS epidemic of the
-            1980s and 1990s where the differentiation between HIV and AIDS was not yet known. Only
-            after substantial research was the distinction between HIV infection and AIDS understood
-            and effective treatments and secondary preventative treatments developed. [4] Likewise,
+        <para>Our incomplete understanding of long COVID is akin to the Human Immunodeficiency Virus
+            (HIV) / Acquired Immunodeficiency Syndrome (AIDS) epidemic of the 1980s and 1990s where
+            the differentiation between HIV and AIDS was not yet known. Only after substantial
+            research brought the proper discovery and understanding of  HIV infection and AIDS,
+            effective treatments and secondary preventative treatments developed. [4] Likewise,
             Alzheimer’s disease and related dementias (RD) were once considered syndromic; that is,
             poorly understood and only clinically characterized. After further research, we now
-            recognize Alzheimer’s as a biologically diagnosed condition- a definitive diagnosis that
-            is unfortunately only determined postmortem. [5]</para>
+            recognize Alzheimer’s as a biologically diagnosed condition - a definitive diagnosis
+            that is determined postmortem only. [5]</para>
         <para>The use of RWD resources has shown promise for hard-to-diagnose conditions. For
             example, Rheumatoid Arthritis related interstitial lung disease (RA-ILD) is a difficult
             diagnosis often only diagnosed reliably by rheumatologists in conjunction with
             substantial diagnostic work-up. However, studies at the VA and UNMC PCORnet and VA
             datasets demonstrate that commonly discrete data elements in the EHR can be used to
             identify RA-ILD patients based on their data phenotype. With the addition of low-level,
-            basic NLP for radiology report evaluations, high levels of PPV identification of RA-ILD
-            patient by data phenotype is possible.</para>
+            basic Natural Language Processing (NLP) for radiology report evaluations, high levels of
+            Positive Predictive Value (PPV) identification of RA-ILD patient by data phenotype is
+            possible.</para>
         <para>To address the long COVID use case, the FDA must have access to substantial amounts of
             data for patients positively diagnosed for COVID, for patients who exhibit identified
             long COVID symptoms (with and without a positive COVID diagnosis), and patients who have
@@ -89,7 +91,7 @@
             for diagnosing an emerging condition like long COVID, along with identifying risk
             factors for contracting it, and provide evidence to develop tests and drugs for
             confirming and treating the condition. </para>
-        <para>In addition to “validated” data such as existing laboratory and other diagnostic test
+        <para>In addition to “validated” data, such as existing laboratory and other diagnostic test
             data, provider-level patient reports and physician interpretation data must be
             collected. Furthermore, patient-reported, non-physician translated data should be
             considered, collected, and incorporated with the more clinically oriented data. Existing

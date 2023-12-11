@@ -20,41 +20,42 @@
             <para>A primary benefit of Komet and the Tinkar architecture used to manage integrated
                 knowledge is the ability to rapidly update integrated knowledge in accordance with
                 emerging or needed concepts and to address irregularities or errors. </para>
-            <para>One example of Komet’s ability to not only identify errors, but to also resolve
-                them is if you searched for “chronic lung disease” and opened the “Chronic lung
-                disease (disorder)” result in the concept navigator. You may notice that this
-                concept only displays two children concepts, which seems strange as there should be
-                many more children concepts for such a broad disorder. To explore and understand why
-                this potential error is occurring, a user could click on both the ‘Properties’ and
-                ‘Timeline’ buttons to open additional information about the “Chronic lung disease
-                (disorder)” concept. In the ‘Properties’ frame, the user could select ‘Hierarchy’
-                and turn the ‘Range’ option on in the Timeline frame. This will display how the
-                concept has changed over time, additions to concepts, and allows users to compare
-                select versions of a concept.</para>
+            <para>Komet is capable of not only identifying errors but also resolving them. For
+                example, if you searched for “chronic lung disease” and opened the “Chronic lung
+                disease (disorder)”  that takes an user to the concept navigator. The user may
+                notice that this concept only displays two children concepts, which seems incomplete
+                as there should be many more children concepts for such a broad disorder. To explore
+                and understand why this potential error is occurring, the user then could click on
+                both the ‘Properties’ and ‘Timeline’ buttons to open additional information about
+                the “Chronic lung disease (disorder)” concept. In the ‘Properties’ frame, the user
+                could select ‘Hierarchy’ and turn the ‘Range’ option on in the Timeline frame. Doing
+                so will display how the concept has changed over time, additions to concepts, and
+                allows users to compare select versions of a concept.</para>
             <para>While a user may see version history, there is still no information on why there
                 are only two children concepts. The user can then go back to the concept navigator
                 and edit the EL++ Axiom from ‘Necessary Set’ to ‘Sufficient Set’, select reasoner,
-                and run the ‘ELK Reasoner’. This then shows a recent edit was made that updated the
-                number of children concepts was increased to over 20.
+                and run the ‘ELK Reasoner’. This then shows the recent edit and update, which shows
+                the increased number of children concepts to over 20.
                 <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>WHY DOES THIS
-                HAPPEN, WHAT IS THIS TRYING TO SHOW? IS THIS JUST THAT THE USER HAD THE WRONG VIEW
-                UP OR THEY DID NOT PULL UPDATES</para><?oxy_custom_end?>
-            <para>While Komet, Tinkar, and our open-source approach allows user to identify an
-                error, navigate and understand the concept versioning and history, make edits to
-                resolve the issue in real-time, and commit the changes to the community at large,
-                other Terminology Standards lack this rapid approach. If a user identified this
-                error and submitted it to SNOMED CT®, they may have to wait a full six months before
-                SNOMED CT® pushed their bi-annual updates and may be forced to employ sub-optimal
-                work arounds to address the issue until then. This real-time approach to managing
-                integrated knowledge also allows for the creation of concepts, like COVID-19, to
-                meet emerging conditions and clinical needs.</para>
+                HAPPEN?, WHAT IS THIS TRYING TO SHOW? IS THIS JUST THAT THE USER HAD THE WRONG VIEW
+                UP OR THEY DID NOT PULL UPDATES?</para><?oxy_custom_end?>
+            <para>While Komet, Tinkar, and our open-source approach allow the user to identify an
+                error by navigating the site, understanding the concept versioning and history,
+                making edits to resolve the issue in real-time, and committing the changes to the
+                community at large, other Terminology Standards lack in coordinating this rapid
+                approach. If an user identified this error and submitted it to SNOMED CT®, they
+                might have to wait a full six months before SNOMED CT® pushed their bi-annual
+                updates and might be forced to employ sub-optimal work arounds to address the issue
+                until then. This real-time approach of managing integrated knowledge management also
+                allows the creation of concepts, such as COVID-19, to meet emerging conditions and
+                clinical needs.</para>
         </section>
         <section>
             <title>Komet Use Case – Integration of Terminology Standards</title>
             <para>Another fundamental component of Komet is the integration of various terminology
                 standards. When searching “urine homocysteine measurement”, a user can see the
-                SNOMED CT concept ‘Urine Homocysteine Measurement (procedure)’ in the navigation
-                panel, while simultaneously viewing LOINC children concepts. Komet can seamlessly
+                SNOMED CT® concept ‘Urine Homocysteine Measurement (procedure)’ in the navigation
+                panel, while simultaneously viewing LOINC® children concepts. Komet can seamlessly
                 integrate concepts from different terminology standards and identify which concepts
                 are associated by using a localized common language in the form of Analysis Normal
                 Form (ANF).</para>
@@ -62,7 +63,7 @@
         <section>
             <title>Komet Use Case – Detecting Equivalent Concepts</title>
             <para>Komet is also able to easily and clearly identify concepts that are equivalent and
-                display any minor differences between them. If a user were to search for a concept
+                display any minor differences between them. If an user were to search for a concept
                 to describe ankylosis in the left and right knees, they would be presented with
                 ‘Observation of ankylosis of both knee joints (procedure)’ and ‘Ankylosis of
                 bilateral knee joints (disorder)’. By running the Komet reasoner, selecting detect
@@ -160,19 +161,8 @@
                 further complicated by a variety of inaccurate, lost, or suboptimal data collection
                 and reporting. Due to these difficulties, there is no diagnostic test available for
                 Long COVID, and care providers often reach a Long COVID diagnosis by ruling out
-                other diseases or disorders with similar symptoms. [10-14]</para>
-            <para>A lack of comprehensive research, information, and clinical decision support (CDS)
-                impacts providers’ ability to accurately recognize and diagnose Long COVID. The US
-                Food and Drug Administration (FDA) and the Systemic Harmonization and
-                Interoperability Enhancement for Lab Data (SHIELD) collaborative must have access to
-                a substantial amount of data from a variety of sources to support improvements in
-                patient care for Long COVID and other emerging acute and chronic infectious
-                diseases. SHIELD is a public-private collaboration focused on improving
-                interoperability of in vitro diagnostic data between institutions. [15] Test data
-                from COVID-positive and COVID-negative patients with a wide range of symptoms
-                provide critical data that need to be captured and analyzed in support of these
-                efforts. These data must be comprehensive and contain all necessary elements to
-                support efficient querying and use in research and CDS.</para>
+                other diseases or disorders with similar symptoms. [10-14]
+                <?oxy_comment_start author="naylee" timestamp="20231211T134600-0600" comment="I am deleting this big paragraph: &quot;A lack of comprehensive research, information, and clinical decision support (CDS) impacts providers’ ability to accurately recognize and diagnose Long COVID. The US Food and Drug Administration (FDA) and the Systemic Harmonization and Interoperability Enhancement for Lab Data (SHIELD) collaborative must have access to a substantial amount of data from a variety of sources to support improvements in patient care for Long COVID and other emerging acute and chronic infectious diseases. SHIELD is a public-private collaboration focused on improving interoperability of in vitro diagnostic data between institutions. [15] Test data from COVID-positive and COVID-negative patients with a wide range of symptoms provide critical data that need to be captured and analyzed in support of these efforts. These data must be comprehensive and contain all necessary elements to support efficient querying and use in research and CDS.&quot;"?></para><?oxy_comment_end?>
             <para>This Long COVID use case helps advance our understanding of the health data
                 ecosystem and the necessary data capture and agility to ensure safe and effective
                 patient care. This workflow broadly represents and can be applied to other emerging
@@ -210,7 +200,7 @@
                     prescriptions, and it was noted whether those data are currently collected or
                     lost.</para> 
                 <figure xml:id="GeneralizedCurrentStateLongCovidWorkflow">
-                    <title>Generalized Current State Long Covid Workflow</title>
+                    <title>Generalized Current State Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/Generalized%20current%20state%20long%20covid%20workflow.png"/>
@@ -245,7 +235,7 @@
                     several points at which data are produced but not collected and therefore
                     lost.</para>
                 <figure xml:id="CurrentStateOutpatientlongcovidworkflow">
-                    <title>Current State Outpatient Long Covid Workflow</title>
+                    <title>Current State Outpatient Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/Current%20state%20long%20covid%20workflow.png"/>
@@ -262,7 +252,7 @@
                     individual patient and the larger population. The collection, storage, and
                     transmission of data are detailed in Aim 3.</para>
                 <figure xml:id="FutureStateOutpatientlongcovidworkflow">
-                    <title>Future State Outpatient Long Covid Workflow</title>
+                    <title>Future State Outpatient Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/Future%20state%20long%20covid%20workflow.png"/>
@@ -282,7 +272,7 @@
                     how data should be captured, transmitted, stored, and prepared for downstream
                     analytical and secondary use. </para>
                 <figure xml:id="IdealizedFuturestatedataLongCovidWorkflow">
-                    <title>Idealized Future State Data Long Covid Workflow</title>
+                    <title>Idealized Future State Data Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata
