@@ -110,7 +110,9 @@
             <listitem>
                 <para>improve public health outcomes associated with outbreaks of foodborne illness
                         <emphasis role="bold"
-                        >(<?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T095313-0500" comment="cannnot find"?>Wu<?oxy_comment_end?>
+                        >(<?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T095313-0500" comment="Wu, W. Y., G. Hripcsak, J. Lurio, M. Pichardo, R. Berg, M. D. Buck, F. P.
+Morrison, K. Kitson, N. Calman, and F. Mostashari. 2012. Impact of integrating public health clinical decision support alerts into electronic health records
+on testing for gastrointestinal illness. J Public Health Manag Pract 18(3):224–227."?>Wu<?oxy_comment_end?>
                         et al., 2012)</emphasis>; </para>
             </listitem>
             <listitem>
@@ -1009,7 +1011,7 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 clinical care by simplifying the treatment options, particularly in primary health
                 care. Standard treatment protocols can be developed by preparing new treatment
                 guidelines or by adapting or adopting existing national or international guidelines.
-                    <citation><?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T103924-0500" comment="no idea what this reference is"?>Protocols<?oxy_comment_end?></citation>
+                    <citation><?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T103924-0500" comment="find citatoin for treatment protocols"?>Protocols<?oxy_comment_end?></citation>
                 When embedded in electronic health records, treatment protocols can serve as
                 clinical decision support at the point of care so no opportunities are missed to
                 achieve control.
@@ -1024,7 +1026,7 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 improve user acceptance of computer-based physician order
                     entry.<citation>o<?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T104023-0500" comment="Order set - Clinfowiki [Internet]. clinfowiki.org. [cited 2023 Dec 12]. Available from: https://clinfowiki.org/wiki/index.php/Order_Set#:~:text=An%20order%20set%20is%20a%20group%20of%20related
 
-"?>rderset</citation><citation><?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T104348-0500" comment="not sure about this reference" mid="60"?>ordersets2<?oxy_comment_end?><?oxy_comment_end mid="60"?></citation></para>
+"?>rderset</citation><?oxy_comment_end?></para>
         </section>
         <section>
             <title>Knowledge Artifacts (KNARTs)</title>
