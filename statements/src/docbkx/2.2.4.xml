@@ -77,8 +77,8 @@
                 data exchanges between systems, the Health IT community must consider movement
                 towards open-source software and open-source licensing models.</emphasis> Gaps
             created by varying rates of adoption and implementation requires various avenues of
-            collaboration within the IKM community to address these issues within the entire Health
-            IT ecosystem. </para>
+            collaboration within the Integrated Knowledge Management (IKM) community to address
+            these issues within the entire Health IT ecosystem. </para>
         <para/>
     </section>
     <section>
@@ -301,7 +301,7 @@
             avenues of collaboration would help solve the data quality and interoperability issue
             that the healthcare IT ecosystem is facing. The meaningful semantic difference within
             terminologies requires preservation to prevent against varying clinical interpretations
-            and treatment. An <emphasis role="bold">Integrated Knowledge Management (IKM)</emphasis>
+            and treatment. An <emphasis role="bold">IKM</emphasis>
             <emphasis role="bold">approach</emphasis> can act as a method to standardize clinical
             statements and terminologies by providing abstraction and elimination of unnecessary
             complexity. Instead of a local code being incorrectly mapped to a standard code, the IKM
