@@ -1031,8 +1031,8 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
         <section>
             <title>Knowledge Artifacts (KNARTs)</title>
             <?oxy_comment_start author="timowilliams" timestamp="20190513T164136-0500" comment="Should this be it&apos;s own section?" flag="done"?>
-            <?oxy_comment_start author="steph" timestamp="20190610T094315-0600" comment="I think it should." flag="done" mid="20"?>
-            <para><?oxy_comment_end?><?oxy_comment_end mid="20"?>KNART is a Clinical Decision
+            <?oxy_comment_start author="steph" timestamp="20190610T094315-0600" comment="I think it should." flag="done" mid="61"?>
+            <para><?oxy_comment_end?><?oxy_comment_end mid="61"?>KNART is a Clinical Decision
                 Support Knowledge Artifact and is a structured way of documenting the
                 content/knowledge for three different types of CDS interventions: 1) event condition
                 action (ECA) rule (e.g., clinical reminder), 2) order sets, and 3) documentation
@@ -1043,6 +1043,9 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 other healthcare organizations in a standardized manner that they can take and
                 implement within their own EHR, if they choose.</para>
         </section>
+    </section>
+    <section>
+        <title>References</title>
     </section>
    
 </chapter>
