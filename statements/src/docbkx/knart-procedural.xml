@@ -1022,7 +1022,9 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 apply<?oxy_comment_end?> to a specified diagnosis or a particular period of time.
                 Order sets reduce both time spent entering orders and terminal usage, helping to
                 improve user acceptance of computer-based physician order
-                    entry.<citation>orderset</citation><citation>ordersets2</citation></para>
+                    entry.<citation>o<?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T104023-0500" comment="Order set - Clinfowiki [Internet]. clinfowiki.org. [cited 2023 Dec 12]. Available from: https://clinfowiki.org/wiki/index.php/Order_Set#:~:text=An%20order%20set%20is%20a%20group%20of%20related
+
+"?>rderset</citation><citation><?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T104348-0500" comment="not sure about this reference" mid="60"?>ordersets2<?oxy_comment_end?><?oxy_comment_end mid="60"?></citation></para>
         </section>
         <section>
             <title>Knowledge Artifacts (KNARTs)</title>
