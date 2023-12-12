@@ -8,13 +8,10 @@
     <para>• Standard ways of performing a procedure</para>
     <para>• Treatment protocols for diseases</para>
     <para>• Standard evidence-based Order Sets</para>
-    <para>Applied Procedural Knowledge can enable the use of CDS,
-        <?oxy_comment_start author="steph" timestamp="20190507T125958-0600" comment="I don&apos;t think these need to be capitalized." id="vnl_sx2_c3b"?><?oxy_comment_start author="rcholan" timestamp="20190615T214857-0400" comment="Stylistically, these are often captalized in Informatics Literature. I personally like capitalizing to make it clear that these are distinct concepts in the list. This can be re-visited in the proofing stage, or Stephanie we can discuss this more if you feel strongly. " parentID="vnl_sx2_c3b" mid="1"?>Clinical
-        Pathways, and Knowledge Artifacts<?oxy_comment_end mid="1"?><?oxy_comment_end?> (KNARTs)
-        that
-        <?oxy_comment_start author="steph" timestamp="20190507T130127-0600" comment="It&apos;s not clear to me if this is referring only to KNART or clinical pathways, CDS, and KNARTs.  If all of them, then don&apos;t they standardize more than just documentation?" flag="done"?>standardize
-        patient documentation<?oxy_comment_end?>, quality improvement interventions, and protocols
-        focused on specific clinical domains and patient situations.</para>
+    <para>Applied Procedural Knowledge can enable the use of CDS, clinical pathways, and knowledge
+        artifacts, also known as KNARTs, that standardize patient documentation, quality improvement
+        interventions, and protocols focused on specific clinical domains and patient
+        situations.</para>
     <section>
         <title>Introduction to Clinical Decision Support (CDS)</title>
         <para>As defined by Osheroff et al. CDS “provides clinicians, staff, patients, or other
@@ -75,30 +72,33 @@
             <citation>CDSOptimize</citation>:</para>
         <itemizedlist>
             <listitem>
-                <para>reduce adverse drug-drug interaction events and medication errors (Smithburger
-                    et al., 2011; Sonnichsen et al., 2016) (Fritz et al., 2012); </para>
+                <para>reduce adverse drug-drug interaction events and medication errors <emphasis
+                        role="bold">(Smithburger et al., 2011; Sonnichsen et al., 2016)
+                        </emphasis><emphasis role="bold">(Fritz et al., 2012)</emphasis>; </para>
             </listitem>
             <listitem>
-                <para>decrease unnecessary lab testing (Felcher et al., 2017);</para>
+                <para>decrease unnecessary lab testing <emphasis role="bold">(Felcher et al.,
+                        2017)</emphasis>;</para>
             </listitem>
             <listitem>
-                <para>reduce cardiovascular risk in patients with type 2 diabetes (Cleveringa et
-                    al., 2008); </para>
+                <para>reduce cardiovascular risk in patients with type 2 diabetes <emphasis
+                        role="bold">(Cleveringa et al., 2008)</emphasis>; </para>
             </listitem>
             <listitem>
-                <para>improve practitioner performance (Garg et al., 2005); </para>
+                <para>improve practitioner performance <emphasis role="bold">(Garg et al.,
+                        2005)</emphasis>; </para>
             </listitem>
             <listitem>
                 <para>increase cardiovascular disease risk assessment in routine primary care
-                    practice (Wells et al., 2008); </para>
+                    practice <emphasis role="bold">(Wells et al., 2008)</emphasis>; </para>
             </listitem>
             <listitem>
                 <para>improve public health outcomes associated with outbreaks of foodborne illness
-                    (Wu et al., 2012); </para>
+                        <emphasis role="bold">(Wu et al., 2012)</emphasis>; </para>
             </listitem>
             <listitem>
                 <para>and, produce cost savings associated with hospital-based pharmacy
-                    interventions (Calloway et al., 2013).</para>
+                    interventions <emphasis role="bold">(Calloway et al., 2013)</emphasis>.</para>
             </listitem>
         </itemizedlist>
         <para>The available evidence shows that CDS —when implemented properly with formal

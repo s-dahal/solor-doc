@@ -379,13 +379,8 @@
                     DrugBank), RxNorm focuses on drug products marketed in the U.S. Finally,
                     non-therapeutic radiopharmaceuticals, bulk powders, contrast media, food,
                     dietary supplements, and medical devices, such as bandages and crutches, are all
-                    out of scope for RxNorm. In addition to the codes from drug terminologies and
-                    knowledge bases,
-                    <?oxy_comment_start author="naylee" timestamp="20231130T121054-0600" comment="NaYoung needs to think about this section that mentions FDA. This is a known public fact about FDA, and I am not sure if we can still include it. "?>RxNorm
-                    integrates codes from the FDA’s National Drug Code (NDC) Directory, which serve
-                    as product identifiers for drugs in billing transactions, and contains links to
-                    Structured Product Labels (i.e., package inserts) submitted by drug
-                    manufacturers to the FDA. <?oxy_comment_end?></emphasis>[1]</para>
+                    out of scope for
+                    RxNorm.<?oxy_comment_start author="naylee" timestamp="20231211T145115-0600" comment="I deleted the whole section here. &quot;In addition to the codes from drug terminologies and knowledge bases, RxNorm integrates codes from the FDA’s National Drug Code (NDC) Directory, which serve as product identifiers for drugs in billing transactions, and contains links to Structured Product Labels (i.e., package inserts) submitted by drug manufacturers to the FDA.&quot; "?></emphasis><?oxy_comment_end?>[1]</para>
             <para>The September 2022 edition of RxNorm includes 13856 (base) ingredients, 5065 brand
                 names, 17226 semantic clinical drugs, 9424 semantic branded drugs, 474 generic
                 packs, and 543 branded backs. </para>
@@ -964,7 +959,7 @@
                 <para>Without concepts of polyhierarchy, concept orientation, and concept
                     definition, there is additional pressure on technicians and other stakeholders
                     to correctly specify the correct LOINC® code: “When the terminology model is
-                    ultimately weak, it forces more onto the [statement] model”. [16] “A challenge
+                    ultimately weak, it forces more onto the [statement] model”. [15] “A challenge
                     that remains to be solved is the binding of statement model and terminology.
                     There is often no clear demarcation between what is represented in the statement
                     model and what is represented in the terminology.” [9] </para>
@@ -973,7 +968,7 @@
                     multiaxial hierarchy, resulting in difficulties for data aggregation and
                     understanding across both different technicians and institution. [12] It has
                     been reported that choosing different ‘properties’ (i.e., parts) was the most
-                    frequent reason that different coding choices were made. [17] In a “study about
+                    frequent reason that different coding choices were made. [16] In a “study about
                     correctness of LOINC® mapping, choosing different ‘Method’, ‘Scale’ and
                     ‘Property’ attributes was the most common reason for different coding choices
                     among three large institutions. For example, in the ‘Method’ axis, some
@@ -989,10 +984,10 @@
                     also concluded that for some purposes, such as finding any code that could be
                     used to indicate the presence of a particular disease, rolling up LOINC® codes
                     and ignoring some LOINC® axes (e.g. method, scale, or property) can be
-                    beneficial.” [17]</para>
+                    beneficial.” [16]</para>
                 <para>There is not much management in terms of education in what codes are used for,
                     and medical technicians often do not have the LOINC® level of knowledge for
-                    encoding that is necessarily expected. [18] The results in the following example
+                    encoding that is necessarily expected. [17] The results in the following example
                     offer insight into how different codes may be selected for the same test from
                     different laboratories. </para>
                 <para><emphasis role="bold">Case Study 1: Cardiac Marker and Coagulation Laboratory
@@ -1052,7 +1047,7 @@
                     different than intended. End-users commonly use this concept when they intend to
                     represent “platelet form plasma”; this results in highly prevalent errors in
                     CoAg testing because the LOINC® concept for “Whole Blood” is perceived to be a
-                    general term when it is not. [16]</para>
+                    general term when it is not. [15]</para>
             </section>
             <section>
                 <title>Issues with Granularity and Specificity</title>
@@ -1061,7 +1056,7 @@
                     relate to methods. It appears that sometimes mappers link the method specific
                     codes to a more general LOINC® code, and at other times they link to a method
                     specific LOINC® code. This causes inconsistency in mappings across
-                    institutions.” [19]</para>
+                    institutions.” [17]</para>
                 <para><emphasis role="bold">Case Study 2: Comparison of LOINC® Codes between IVD
                         Manufacturers and Medical Center Laboratories [20]</emphasis></para>
                 <para>In an assessment of LOINC® interoperability between diagnostic test
@@ -1084,7 +1079,7 @@
                     <listitem>
                         <para>Different units of measure: mass/volume (e.g., 3094-0, Urea nitrogen
                             [Mass/volume] in Serum or Plasma) versus moles/volume (e.g., 1493-7,
-                            Urea nitrogen [Moles/volume] in Serum or Plasma) [20]</para>
+                            Urea nitrogen [Moles/volume] in Serum or Plasma) [18]</para>
                     </listitem>
                 </itemizedlist>
             </section>
@@ -1093,7 +1088,7 @@
                 <para>In addition to variation between how labs classify certain tests, there can
                     also be variation in test results from manufacturers. </para>
                 <para><emphasis role="bold">Case Study 3: D-Dimer Test Results from Different
-                        In-Vitro Diagnostic (IVD) Devices [16]</emphasis></para>
+                        In-Vitro Diagnostic (IVD) Devices [15]</emphasis></para>
                 <para><xref linkend="DDimerTestResultsfromDifferentDevices"/> represents data results for D-Dimer tests that are all
                     represented by the same LOINC® code. However, upon closer notice, the means
                     between the different devices are significantly different. This raises concern
@@ -1118,12 +1113,12 @@
                     manpower required to determine comparable LOINC® codes. At many institutions,
                     there are designated teams of doctors who must manually review submitted data to
                     their institution to ensure that codes can accurately be compared between
-                    existing data in their system. [16] This process results in a cumbersome
+                    existing data in their system. [15] This process results in a cumbersome
                     workflow process that involves personnel who must compare LOINC® codes, assess
                     the validity of codes, and submit reviewal processes for codes that must be
                     corrected.</para>
                 <para><emphasis role="bold">Case Study 4: Bone-Marrow Transplant Research Study
-                        [16]</emphasis></para>
+                        [15]</emphasis></para>
                 <para>An academic medical center in Texas is conducting a bone-marrow transplant
                     research center study, in order to build an interface that will allow users to
                     automatically submit data to the hospital. However, upon review, there are
@@ -1167,11 +1162,10 @@
                     harmonizes how IVD test information is represented using LOINC®. The LIVD file
                     format is currently led by IVD Industry Connectivity Consortium (IICC), and the
                     JavaScript Object Notation (JSON) representation is a project at HL7. </para>
-                <?oxy_comment_start author="naylee" timestamp="20231129T175337-0600" comment="This mentioning of FDA as a funding source needs to be removed. "?>
-                <para>To quantify the magnitude of problems that the lab data ecosystem faces, the
-                    FDA funded a pilot evaluation with five healthcare systems that found LOINC®
-                    data maintained only 59% integrity as it moved from laboratory analyzer to
-                    laboratory information system. [20<?oxy_comment_end?>] Efforts to promote
+                <para>To quantify the magnitude of problems that the lab data ecosystem faces,
+                    Cholan et al. describes a pilot evaluation with five healthcare systems that
+                    found LOINC® data maintained only 59% integrity as it moved from laboratory
+                    analyzer to laboratory information system. [20] Efforts to promote
                     interoperability using LOINC® and related standards will require a more
                     comprehensive effort and continuing evaluation and quality control.</para>
             </section>
@@ -1183,7 +1177,7 @@
                 <para>Although LOINC® has not officially adopted Description Logic and formal
                     knowledge representation languages, the U.S. National Library of Medicine
                     applied Description Logic to the quality assurance of LOINC® (based on the 2013
-                    collaborative agreement) and used it as a basis for auditing LOINC®. [21] This
+                    collaborative agreement) and used it as a basis for auditing LOINC®. [19] This
                     study helps demonstrate the usefulness of Description Logic for terminologies by
                     producing the following findings: </para>
                 <itemizedlist>
@@ -1205,7 +1199,7 @@
                     counts are relatively small considering the 450k+ concepts in LOINC® as part of
                     this study. However, the key takeaway from this body of work is that LOINC®
                     could benefit from the application of Description Logic by allowing for
-                    automated classification and equivalence detection. [21]</para>
+                    automated classification and equivalence detection. [19]</para>
             </section>
             <section>
                 <title>LOINC® Document Ontology</title>
@@ -1242,18 +1236,18 @@
                 <para>A semi structured interview conducted by consultants to government agencies
                     and pathology experts produced a finding that the “LOINC® document ontology
                     appears to be irrelevant to move things – not many people use it. It was a first
-                    attempt to apply some relationships between LOINC’s® concepts that formally
-                    don’t exist now, but it’s in a domain with low impact. [22]</para>
+                    attempt to apply some relationships between LOINC®'s concepts that formally
+                    don’t exist now, but it’s in a domain with low impact. [20]</para>
             </section>
             <section>
                 <title>LOINC® Hierarchy Browser</title>
                 <para>LOINC’s® website currently hosts ‘The Hierarchy Browser’ tool which allows
                     users to view various hierarchies located in LOINC®. Much of this functionality
-                    was previously only available in the RELMA® application. [23] While a good
+                    was previously only available in the RELMA® application. [22] While a good
                     starting point towards formal knowledge representation, the current hierarchies
                     are limited, and still do not provide full definitions for LOINC® parts.
                     Furthermore, the use of the hierarchies and LOINC® parts are very restricted
-                    under the LOINC® Copyright Notice and License. [24]</para>
+                    under the LOINC® Copyright Notice and License. [22]</para>
                 <figure xml:id="RepresentationofASTinTheLOINCHierarchyBrowserTool">
                     <title>Representation of AST in The LOINC® Hierarchy Browser Tool</title>
                     <mediaobject>
@@ -1301,7 +1295,7 @@
                         classifier and both ‘stated’ and ‘inferred’ relationships are included in
                         this release. This “Observables ontology” for laboratory medicine and
                         pathology is being published for evaluation and comment by the informatics
-                        community.</emphasis> [25]</para>
+                        community.</emphasis> [23]</para>
                 <para>The Nebraska Lexicon is a pragmatic example of harmonizing terminologies into
                     a single concept model and melding LOINC® and SNOMED CT® together. The content
                     is published with permission of the CAP. A common terminology data model that
@@ -1318,7 +1312,7 @@
                     quality assurance methods are not widely used. </para>
                 <para>The only published quality metrics from Regenstrief about LOINC® include
                     published stats about their submission queue describing how long it takes to
-                    create a LOINC® term (e.g., 182 days to turn around a revision). [26]</para>
+                    create a LOINC® term (e.g., 182 days to turn around a revision). [24]</para>
                 <para>Regenstrief relies on an occasional survey (either once per year or once every
                     few years) from ONC to the laboratory community to assess how labs are using
                     LOINC®, what are the barriers, etc.; however, the survey is very LOINC®-centric
@@ -1373,7 +1367,7 @@
                 <title>Formal Concept Definition</title>
                 <para>While RxNorm has ‘defined ingredients’, historically it has lacked the
                     computational ability to define concepts by relationships, thereby allowing
-                    inferencing. [27] However, recent efforts by Bona et al. have successfully
+                    inferencing. [26] However, recent efforts by Bona et al. have successfully
                     created an OWL file to implement and define the classes necessary to model
                     RxNorm and NDC concepts. [13]</para>
             </section>
@@ -1391,7 +1385,7 @@
                 attractive for the SNOMED CT®'s polyhierarchal structure and inferencing
                 capabilities. This concept leads to embrace a greater compatibility and
                 interoperability, integration of SNOMED CT®, LOINC®, and RxNorm, while noting
-                different formalisms and tools for their representation in these technologies. [28]
+                different formalisms and tools for their representation in these technologies. [26]
                 Various terminologies have different semantics, models, release cycles, and
                 versioning mechanisms. [1] While there is recognition that terminologies are not
                 standardized at the exchange level, there is no consensus about harmonized next
@@ -1531,9 +1525,9 @@
             <para><emphasis>Aim 1: Review Workflow Schematic for Emerging Acute Chronic Infectious
                     Diseases, specifically focused on Data Capture Elements and Long COVID Value
                     Sets. </emphasis>The team downloaded and reviewed the COVID-19 VSAC value sets
-                outlined in the table below. The team used these value sets to extract an initial list of
-                generalized clinical concepts associated with a COVID-19 diagnosis that could
-                potentially contribute to a Long COVID diagnosis. [29]</para>
+                outlined in the table below. The team used these value sets to extract an initial
+                list of generalized clinical concepts associated with a COVID-19 diagnosis that
+                could potentially contribute to a Long COVID diagnosis. [27]</para>
                 <table>
                     <title>VSAC Value Sets</title>
                     <tgroup cols="3">
@@ -2091,167 +2085,163 @@
                 transformation languages and the associated benefits and limitations. While each
                 option has its own limitations and cost, the ability to address or minimize common
                 normalization errors justifies their use.
-                [29]<?oxy_comment_start author="naylee" timestamp="20231130T110056-0600" comment="The table below needs to define QVT = Query/View/Transformation in the first colum of the table. "?></para><?oxy_comment_end?>
-            
-                <table>
-                    <title>Benefits and Limitations of XLST, FHIR, QVT, and MDMI Transformation Languages and Architecture</title>
-                    <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" align="left" rowsep="1"/>
-                        <colspec colnum="2" colname="col2" align="left" rowsep="1"/>
-                        <colspec colnum="3" colname="col3" align="left" rowsep="1"/>
-                        <thead>
-                            <row>
-                                <entry><emphasis role="bold">Standard or Language</emphasis></entry>
-                                <entry><emphasis role="bold">Benefits</emphasis></entry>
-                                <entry><emphasis role="bold">Limitations</emphasis></entry>
-                            </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>eXtensible Stylesheet Language Transformation (XSLT)</entry>
-                                <entry>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>Robust language </para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Easily extensible via extension functions and
-                                                calls</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Auto matches templates to data</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Easy tooling</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Good documentation</para>
-                                        </listitem>
-                                    </itemizedlist>
-                                </entry>
-                                <entry>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>Transformation specifications are difficult to
-                                                read and understand</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Transformations are syntactic </para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>XML input only, other formats not translated
-                                            </para>
-                                        </listitem>
-                                    </itemizedlist>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry>FHIR Mapping Language (FML)</entry>
-                                <entry>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>Supports input formats other XML</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Semantic DAGs can be rendered in variety of
-                                                syntaxes</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Concise and easy to read mapping
-                                                specifications</para>
-                                        </listitem>
-                                    </itemizedlist>
-                                </entry>
-                                <entry>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>Input and output outside of FHIR logical models
-                                                require extra custom programming</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Only XML and JSON supported as output syntaxes,
-                                                otherwise custom programming is required</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>To date, only one implementation </para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Limited tools needed for editing and authoring
-                                                scripts</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Limited documentation sources</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Limited pool of knowledgeable programmers</para>
-                                        </listitem>
-                                    </itemizedlist>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry>QVT</entry>
-                                <entry>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>Great flexibility and configurability to create
-                                                custom transformation languages</para>
-                                        </listitem>
-                                    </itemizedlist>
-                                </entry>
-                                <entry>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>Limited learning resources making it difficult to
-                                                learn and understand</para>
-                                        </listitem>
-                                    </itemizedlist>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry>Model Driven Message Interoperability (MDMI)</entry>
-                                <entry>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>Any-to-any transformations support reuse of
-                                                transformation models for different use cases</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Minimal changes to other models if model
-                                                changes</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Simplifies development, tooling supports
-                                                development by SMEs and not dependent on
-                                                developers</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Enables automation tooling for models</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Available open-source models for HL7
-                                                formats</para>
-                                        </listitem>
-                                    </itemizedlist>
-                                </entry>
-                                <entry>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>Limited experience working with transformations of
-                                                detailed clinical models.</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Lacking user documentation</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>Complex runtime tool</para>
-                                        </listitem>
-                                    </itemizedlist>
-                                </entry>
-                            </row>
-                        </tbody>
-                    </tgroup>
-                </table>
-                <para> </para>
+                [27]<?oxy_comment_start author="naylee" timestamp="20231130T110056-0600" comment="The table below needs to define QVT = Query/View/Transformation in the first colum of the table. "?></para><?oxy_comment_end?>
+            <table>
+                <title>Benefits and Limitations of XLST, FHIR, QVT, and MDMI Transformation
+                    Languages and Architecture</title>
+                <tgroup cols="3">
+                    <colspec colnum="1" colname="col1" align="left" rowsep="1"/>
+                    <colspec colnum="2" colname="col2" align="left" rowsep="1"/>
+                    <colspec colnum="3" colname="col3" align="left" rowsep="1"/>
+                    <thead>
+                        <row>
+                            <entry><emphasis role="bold">Standard or Language</emphasis></entry>
+                            <entry><emphasis role="bold">Benefits</emphasis></entry>
+                            <entry><emphasis role="bold">Limitations</emphasis></entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>eXtensible Stylesheet Language Transformation (XSLT)</entry>
+                            <entry>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Robust language </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Easily extensible via extension functions and
+                                            calls</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Auto matches templates to data</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Easy tooling</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Good documentation</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </entry>
+                            <entry>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Transformation specifications are difficult to read
+                                            and understand</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Transformations are syntactic </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>XML input only, other formats not translated </para>
+                                    </listitem>
+                                </itemizedlist>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>FHIR Mapping Language (FML)</entry>
+                            <entry>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Supports input formats other XML</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Semantic DAGs can be rendered in variety of
+                                            syntaxes</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Concise and easy to read mapping specifications</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </entry>
+                            <entry>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Input and output outside of FHIR logical models
+                                            require extra custom programming</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Only XML and JSON supported as output syntaxes,
+                                            otherwise custom programming is required</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>To date, only one implementation </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Limited tools needed for editing and authoring
+                                            scripts</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Limited documentation sources</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Limited pool of knowledgeable programmers</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>QVT</entry>
+                            <entry>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Great flexibility and configurability to create custom
+                                            transformation languages</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </entry>
+                            <entry>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Limited learning resources making it difficult to
+                                            learn and understand</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Model Driven Message Interoperability (MDMI)</entry>
+                            <entry>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Any-to-any transformations support reuse of
+                                            transformation models for different use cases</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Minimal changes to other models if model
+                                            changes</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Simplifies development, tooling supports development
+                                            by SMEs and not dependent on developers</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Enables automation tooling for models</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Available open-source models for HL7 formats</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </entry>
+                            <entry>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Limited experience working with transformations of
+                                            detailed clinical models.</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Lacking user documentation</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Complex runtime tool</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <para> </para>
         </section>
     </section>
     <section>
@@ -2341,13 +2331,6 @@
                     </para>
                 </listitem>
                 <listitem>
-                    <para>Bietenbeck A, Boeker M, Schulz S. NPU, LOINC, and SNOMED CT: a comparison
-                        of terminologies for laboratory results reveals individual advantages and a
-                        lack of possibilities to encode interpretive comments. Journal of Laboratory
-                        Medicine. 2018;42(6): 267-275. <link
-                            xlink:href="https://doi.org/10.1515/labmed-2018-0103"/></para>
-                </listitem>
-                <listitem>
                     <para>SHIELD Participants. Discussion on LOINC Challenges. [Personal interview,
                         6 May] Zoom; 2022 (unpublished).</para>
                 </listitem>
@@ -2355,11 +2338,6 @@
                     <para>Lin M, Vreeman D, McDonald C, et al. Auditing consistency and usefulness
                         of LOINC® use among three large institutions—using version spaces for
                         grouping LOINC® codes. J Biomed Inform 2012; 45 (4): 658–66.</para>
-                </listitem>
-                <listitem>
-                    <para>Rudolph S. Foundations of Description Logics. Krlsruhe Institute of
-                        Technology [Internet]. 2011 May [cited 2022 Jul 7]. Available from:
-                        https://www.aifb.kit.edu/images/1/19/DL-Intro.pdf </para>
                 </listitem>
                 <listitem>
                     <para>Lin M, Vreeman D, McDonald C, et al. A characterization of local LOINC®
