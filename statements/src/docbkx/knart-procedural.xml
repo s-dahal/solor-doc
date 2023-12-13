@@ -83,11 +83,11 @@
             </listitem>
             <listitem>
                 <para>increase cardiovascular disease risk assessment in routine primary care
-                    practice [9] <emphasis role="bold"> </emphasis></para>
+                    practice [9]  </para>
             </listitem>
             <listitem>
                 <para>improve public health outcomes associated with outbreaks of foodborne illness
-                    or/and [10] <emphasis role="bold"> </emphasis></para>
+                    or/and [10]  </para>
             </listitem>
             <listitem>
                 <para>and, produce cost savings associated with hospital-based pharmacy
@@ -96,11 +96,10 @@
         </itemizedlist>
         <para>The available evidence shows that CDS —when implemented properly with formal
             management—can reduce errors, improve the quality of care, reduce cost, and ease the
-            cognitive burden on health care providers. <citation>CDSOptimize</citation> As a result,
-            the impetus for achieving standardized, widespread adoption of CDS across health systems
-            is clear. The American Medical Informatics Association (AMIA) CDS Roadmap Development
-            Steering Committee describes three pillars for realizing this promise of CDS
-                <citation>Osheroff</citation>: </para>
+            cognitive burden on health care providers. [2] As a result, the impetus for achieving
+            standardized, widespread adoption of CDS across health systems is clear. The American
+            Medical Informatics Association (AMIA) CDS Roadmap Development Steering Committee
+            describes three pillars for realizing this promise of CDS: [1] </para>
         <para>
             <orderedlist>
                 <listitem>
@@ -133,7 +132,7 @@
             systematic, and comprehensive. There have been a number of historical efforts that have
             aimed to achieve interoperable and robust CDS tools and artifacts that appropriately
             translate guidelines into care. The AHRQ depicts the following image representing the
-            “CDS lifecycle” for the following areas<citation>CDSConnect</citation>:<itemizedlist>
+            “CDS lifecycle” for the following areas: [1]<itemizedlist>
                 <listitem>
                     <para>Authoring CDS tools and artifacts that leverage knowledge sources such as
                         clinical practice guidelines, quality measure specifications, and
@@ -164,7 +163,7 @@
         <title>Lack of Standardized Encoded Clinical Data - Impact on CDS</title>
         <para>In this section, we will explore an important question regarding appropriate and
             highly-reliable CDS: <emphasis><emphasis role="bold">how can we provide
-                    <?oxy_comment_start author="steph" timestamp="20190717T105415-0600" comment="Should this be hyphenated?" flag="done"?>patient-safe<?oxy_comment_end?>
+                    <?oxy_comment_start author="steph" timestamp="20190717T105415-0600" comment="Should this be hyphenated?" flag="done"?>patient-<?oxy_comment_end?>centered
                     clinical decision support given the lack of standardization relating to how we
                     encode data?</emphasis></emphasis> We will discuss the challenges faced by
             authors, implementers and evaluators of CDS implementations by considering the following
@@ -239,8 +238,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             different medical centers. </para>
         <para>The following challenges plaguing CDS implementations were described in a report
             produced out of the collaboration between the ONC and the National Academy of Medicine.
-            [13] <citation> </citation>
-        </para>
+            [13]  </para>
         <para>
             <orderedlist>
                 <listitem>
@@ -262,15 +260,14 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             in the ONC and NAM report – to a lack of clear standards for CDS content representation:
             "standards are not always defined clearly enough, so a developer will make a decision
             that enables content to work within [test] systems...but are not scalable nationally."
-                    [13]<citation><emphasis role="bold"> </emphasis></citation>Consequently, there
-            are vendor-specific solutions and organization-specific solutions that exist with
-            "either a laborious configuration of external licensed content or a laborious
-            reinvention of the wheel as the organization creates its own content." [13] Instead of
-            creating a knowledge representation based on a standardized clinical data
-            representation, current efforts are focused on creating and re-creating one-off
+            [13] Consequently, there are vendor-specific solutions and organization-specific
+            solutions that exist with "either a laborious configuration of external licensed content
+            or a laborious reinvention of the wheel as the organization creates its own content."
+            [13] Instead of creating a knowledge representation based on a standardized clinical
+            data representation, current efforts are focused on creating and re-creating one-off
             "solutions". Even the latest CDS content standards, including Clinical Quality Language
             (CQL), CDS Hooks, and OpenCDS have yet to achieve "the necessary level of detail in the
-            standards and how they are applied to clinical decisions." [13]   </para>
+            standards and how they are applied to clinical decisions." [13] </para>
         <para>Therefore, one of the overarching challenges of standards that aim to make CDS
             shareable and interoperable is that there is currently not a robust way to associate
             rules in knowledge-based systems with other dependencies in clinical data representation
@@ -313,8 +310,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             </itemizedlist></para>
     </section>
     <section>
-        <title><emphasis role="bold">Monitoring CDS -  Design &amp; Testing
-                Considerations</emphasis></title>
+        <title>Monitoring CDS - Design &amp; Testing Considerations</title>
         <para>As described above, Wright et al learned that Brigham and Women’s Hospital did not
             have a system to track the siloed components of their EHR and CDS systems, nor did they
             have a process for tracking changes to the CDS rules, logic, and terminology
@@ -563,9 +559,8 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
         <title>Best Practices for CDS Knowledge Management and Deployment</title>
         <para>As aforementioned in the section “Introduction to Clinical Decision Support”, the AMIA
             CDS Roadmap Development Steering Committee describes three pillars for realizing the
-            promise of CDS<emphasis role="bold">:</emphasis> (1) Best Knowledge Available When
-            Needed, (2) High Adoption and Effective Use, and (3) Continuous Improvement of Knowledge
-            and CDS Methods. [1]</para>
+            promise of CDS: (1) Best Knowledge Available When Needed, (2) High Adoption and
+            Effective Use, and (3) Continuous Improvement of Knowledge and CDS Methods. [1]</para>
         <para>Given our discussion of challenges that plague CDS implementations, we propose a
             fourth pillar to be explicitly added to this framework: </para>
         <itemizedlist>
@@ -788,15 +783,14 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             on implementers for consuming measure artifacts. CQL representations of eCQMs will
             replace the QDM pseudocode historically published in HQMF files; it aims to provide a
             human-readable, conceptual-level language to define eCQMs and clinical decision support
-            independent of specific data models, such as the QDM or FHIR (Fast Healthcare
-            Interoperability Resource). </para>
+            independent of specific data models, such as the QDM or FHIR. </para>
         <para>CMS is rapidly rolling out the CQL standard in its eCQMs and CDS for the 2019
             reporting year. The goal of CQL moving forward is to use emerging Application
             Programming Interfaces like FHIR
             <?oxy_comment_start author="steph" timestamp="20190610T095537-0600" comment="I don&apos;t think yoy need to spell this out again as you already did that in the preceding paragraph." flag="done"?><?oxy_comment_end?>as
             a way to allow for more direct access to clinical data that does not require the
-            overhead of RIM mapping. <citation>Jiang</citation> The potential for FHIR and CQL in
-            CDS and eCQM implementations remains to be seen, however, the community is optimistic. </para>
+            overhead of RIM mapping. [20] The potential for FHIR and CQL in CDS and eCQM
+            implementations remains to be seen, however, the community is optimistic. </para>
     </section>
     <section>
         <title>Tools that Enhance CDS</title>
@@ -818,7 +812,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                 ubiquitous in the United States, Health IT implementations often come with tools
                 making it possible to achieve SOPs "into routine clinical practice; that is, not for
                 special patients (e.g. those who are unconscious) or for special circumstances (e.g.
-                clinical trials), but for every patient in everyday clinical care."SOP</para>
+                clinical trials), but for every patient in everyday clinical care." [21]</para>
         </section>
         <section>
             <title>C<?oxy_comment_start author="steph" timestamp="20190717T152102-0600" comment="I added &quot;Clinical Practice&quot; since that is how it was referred to in section12.6 above." flag="done"?>linical
@@ -850,7 +844,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                     assessment of the benefits and harms of alternative care options. CPGs should
                     follow a sound, transparent methodology to translate best evidence into clinical
                     practice for improved patient outcomes. Additionally, evidence-based CPGs are a
-                    key aspect of patient-centered care. [23]  <citation> </citation></para>
+                    key aspect of patient-centered care. [23]  </para>
                 <para>AHRQ's Guidelines and Measures
                     (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T103344-0500" comment="Agency for Healthcare Research and Quality. Guidelines and Measures | Agency for Healthcare Research &amp; Quality [Internet]. Ahrq.gov. 2019. Available from: https://www.ahrq.gov/gam/index.html
 
@@ -883,37 +877,37 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
             <para> Items addressed on the clinical pathway may include:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Patient assessment and monitoring</para>
+                    <para>patient assessment and monitoring</para>
                 </listitem>
                 <listitem>
-                    <para>Tests and procedures</para>
+                    <para>tests and procedures</para>
                 </listitem>
                 <listitem>
-                    <para>Treatments</para>
+                    <para>treatments</para>
                 </listitem>
                 <listitem>
-                    <para>Consultations</para>
+                    <para>consultations</para>
                 </listitem>
                 <listitem>
-                    <para>Medications</para>
+                    <para>medications</para>
                 </listitem>
                 <listitem>
-                    <para>Activity</para>
+                    <para>activity</para>
                 </listitem>
                 <listitem>
-                    <para>Nutrition</para>
+                    <para>nutrition</para>
                 </listitem>
                 <listitem>
-                    <para>Education</para>
+                    <para>education</para>
                 </listitem>
                 <listitem>
-                    <para>Targeted length of stay</para>
+                    <para>targeted length of stay</para>
                 </listitem>
                 <listitem>
-                    <para>Outcome Criteria</para>
+                    <para>outcome Criteria</para>
                 </listitem>
                 <listitem>
-                    <para>Notification for deviations</para>
+                    <para>notification for deviations</para>
                 </listitem>
             </itemizedlist>
             <para>Standardizing treatments improves the continuity and coordination of care provided
@@ -939,7 +933,7 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                     to suit local circumstances and to achieve a feeling of ownership, both of which
                     are important factors in guideline uptake and use. SOPs, therefore, help bridge
                     the gap between evidence-based medicine, clinical practice guidelines, and the
-                    local realities at the point-of-care." [25] <citation> </citation></para>
+                    local realities at the point-of-care." [25]  </para>
             </section>
         </section>
         <section>
@@ -948,10 +942,9 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 clinical care by simplifying the treatment options, particularly in primary health
                 care. Standard treatment protocols can be developed by preparing new treatment
                 guidelines or by adapting or adopting existing national or international guidelines.
-                    <citation><?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T103924-0500" comment="find citatoin for treatment protocols"?>Protocols<?oxy_comment_end?></citation>
-                When embedded in electronic health records, treatment protocols can serve as
+                [26] When embedded in electronic health records, treatment protocols can serve as
                 clinical decision support at the point of care so no opportunities are missed to
-                achieve control. [26] <citation> </citation></para>
+                achieve control. [26]  </para>
         </section>
         <section>
             <title>Order Sets</title>
@@ -959,10 +952,7 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 <?oxy_comment_start author="steph" timestamp="20190717T154618-0600" comment="Suggest revising to &quot;can apply&quot; vs. &quot;can issue that apply&quot; as it&apos;s a little confusing." flag="done"?>can
                 apply<?oxy_comment_end?> to a specified diagnosis or a particular period of time.
                 Order sets reduce both time spent entering orders and terminal usage, helping to
-                improve user acceptance of computer-based physician order entry. [27]<citation>
-                    <?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T104023-0500" comment="Order set - Clinfowiki [Internet]. clinfowiki.org. [cited 2023 Dec 12]. Available from: https://clinfowiki.org/wiki/index.php/Order_Set#:~:text=An%20order%20set%20is%20a%20group%20of%20related
-
-"?></citation><?oxy_comment_end?></para>
+                improve user acceptance of computer-based physician order entry. [27] </para>
         </section>
         <section>
             <title>Knowledge Artifacts (KNARTs)</title>
@@ -1096,7 +1086,10 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                         Informatics. 2016;3–19.</para>
                 </listitem>
                 <listitem>
-                    <para>Jiang</para>
+                    <para>Jiang G, Prud’Hommeax E, Solbrig H. Developing A Semantic Web-based
+                        Framework for Executing the Clinical Quality Language Using FHIR.
+                        Proceedings of SWAT4LS Workshop. Avalailable from:
+                        www.swat4ls.org/wp-content/uploads/2017/11/SWAT4LS-2017_paper_40.pdf.</para>
                 </listitem>
                 <listitem>
                     <para>National Center for Complementary and Integrative Health. Clinical
