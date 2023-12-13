@@ -452,7 +452,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                                 </entry>
                             </row>
                             <row>
-                                <entry>Care pProcesses, Adherence to Guidelines</entry>
+                                <entry>Care Processes, Adherence to Guidelines</entry>
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
@@ -494,7 +494,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             <section>
                 <title>Signs of an Effective CDS Roll-Out </title>
                 <para>Health IT.gov published a how-to manual for healthcare organizations to
-                    monitor CDS rollout plans and included the following criteria: [15]  </para>
+                    monitor CDS rollout plans and included the following criteria: [15] </para>
                 <para>
                     <itemizedlist>
                         <listitem>
@@ -718,7 +718,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             their respective clinical database structure. Furthermore, not all clinical concepts are
             recorded and stored in the same way in different EHR implementations; what may be
             structured in one system may be free text in another. While the Health Quality Measure
-            Format (HQMF), Quality Data Model (QDM), and Clinical Quality Langauge (CQL) are the
+            Format (HQMF), Quality Data Model (QDM), and Clinical Quality Language (CQL) are the
             more recent efforts to improve standard representations of CDS expression logic, efforts
             date back to the mid 1970’s when early implementers of computer-based clinical
             information systems were first recognizing the value of computer-based decision support
@@ -915,10 +915,9 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 decreased costs. </para>
             <section>
                 <title>Pathways vs SOPs vs Guidelines</title>
-                <para><emphasis role="bold">Rao et al </emphasis>provide definitions to help
-                    compare/contrast SOPs, guidelines, and
-                    <?oxy_comment_start author="steph" timestamp="20190717T154404-0600" comment="I didn&apos;t see clinical pathways discussed in the two paragraphs below." id="sms_5sd_r3b"?><?oxy_comment_start author="rcholan" timestamp="20190808T090227-0400" comment="It is mentioned in the first sentence and last sentence. Perhaps we need a new quote" parentID="sms_5sd_r3b" mid="17"?>clinical
-                    pathways: </para><?oxy_comment_end?><?oxy_comment_end mid="17"?>
+                <para>Rao et al. provide definitions to help compare/contrast SOPs, guidelines, and
+                    <?oxy_comment_start author="steph" timestamp="20190717T154404-0600" comment="I didn&apos;t see clinical pathways discussed in the two paragraphs below." id="sms_5sd_r3b"?><?oxy_comment_start author="rcholan" timestamp="20190808T090227-0400" comment="It is mentioned in the first sentence and last sentence. Perhaps we need a new quote" parentID="sms_5sd_r3b" mid="16"?>clinical
+                    pathways: </para><?oxy_comment_end?><?oxy_comment_end mid="16"?>
                 <para xml:id="__p7">"The terms SOPs, guidelines and [clinical] pathways are defined
                     by different medical bodies. Furthermore, whereas clinical practice guidelines
                     are systematically developed statements that assist decisions about appropriate
@@ -933,7 +932,7 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                     to suit local circumstances and to achieve a feeling of ownership, both of which
                     are important factors in guideline uptake and use. SOPs, therefore, help bridge
                     the gap between evidence-based medicine, clinical practice guidelines, and the
-                    local realities at the point-of-care." [25]  </para>
+                    local realities at the point-of-care." [25] </para>
             </section>
         </section>
         <section>

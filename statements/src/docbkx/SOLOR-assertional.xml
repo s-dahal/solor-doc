@@ -24,7 +24,7 @@
             has been previously called interface terminology can be defined as a "systematic
             collection of clinically oriented phrases (terms) whose purpose is to support
             clinicians' entry of patient information into computer programs, such as clinical note
-            capture and decision support tools". <citation>Elkin_Terminology</citation></para>
+            capture and decision support tools". [1]</para>
         <para>This interface support is used to accomplish one of two tasks:</para>
         <orderedlist>
             <listitem>
@@ -38,7 +38,7 @@
         <para>This interface support must enable correct and rapid interaction between clinicians
             and structured clinical data, support ease of use by healthcare providers through easy
             understandability, and integrate well with other clinical computerized systems in the
-            environment. <citation>Rosenbloom_model</citation></para>
+            environment. [1]</para>
         <para>Assertional knowledge is key to supporting interface implementation of the terminology
             layer. Assertional knowledge can support interface implementations of terminology
             by:</para>
@@ -104,8 +104,9 @@
                     <para>“Myocardial infarction is associated with chest pain”</para>
                 </listitem>
             </itemizedlist>
-            <para>The VA's National Drug File - Reference Terminology (NDF-RT) has assertional
-                knowledge contained in relationships like:</para>
+            <para>The United States Department of Veterans Affairs (VA's) National Drug File -
+                Reference Terminology (NDF-RT) has assertional knowledge contained in relationships
+                like:</para>
             <itemizedlist>
                 <listitem>
                     <para>may_treat {}  DISEASE_KIND – therapeutic use or indication of a generic
@@ -225,6 +226,17 @@
         <para>The capability of associating statements enables the use of Assertional Knowledge to
             clinical decision support applications, clinical pathways and general information (“info
             button”) that can be made available to users of EMR systems. </para>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>Rosenbloom ST, Miller RA, Johnson KB, Elkin PL, Brown SH. Interface
+                    terminologies: Facilitating direct entry of clinical data into Electronic Health
+                    Record Systems. Journal of the American Medical Informatics Association.
+                    2006;13(3):277–88. doi:10.1197/jamia.m1957 </para>
+            </listitem>
+        </orderedlist>
     </section>
     
     
