@@ -13,7 +13,7 @@
 
    <properties>
       <!-- <docbook.root>End-of-Year Report.xml</docbook.root> -->
-      <docbook.root>Volume 7 - Use Cases.xml</docbook.root>
+      <docbook.root>Volume 5 - Knowledge Layers.xml</docbook.root>
    </properties>
    <dependencies>
       <dependency>
