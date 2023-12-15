@@ -13,7 +13,7 @@
    <packaging>pom</packaging>
 
    <properties>
-      <docbook.root>Volume 6 - ANF Ballot.xml</docbook.root>
+      <docbook.root>${project.artifactId}.xml</docbook.root>
    </properties>
    <dependencies>
       <dependency>
