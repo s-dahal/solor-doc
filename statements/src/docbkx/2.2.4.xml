@@ -167,7 +167,7 @@
                 <title>Restrictions Imposed by License Type</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/2.2.4%20Restrctions%20posed.png"/>
+                        <imagedata fileref="images/2.2.4%20Restrctions%20posed.svg" align="center" scale="60"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -351,7 +351,7 @@
             <title>Layers Within Knowledge Architecture</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/PASTF%20Model%203.png"/>
+                    <imagedata fileref="images/PASTF%20Model.svg" align="center" scale="20"/>
                 </imageobject>
             </mediaobject>
         </figure>

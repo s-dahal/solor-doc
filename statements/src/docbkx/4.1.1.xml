@@ -114,10 +114,10 @@ If you want to include original phrasing please use &quot;In collaboration with 
                 linkend="DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure"
             /> includes a specific draft depiction of the data flow for encoding. </para>
         <figure xml:id="DraftModeloftheDetailedLaboratoryEcosystemControlStructure">
-            <title>Draft Model of the Detailed Laboratory Ecosystem Control Structure </title>
+            <title>Draft Model of the Detailed Laboratory Ecosystem Control Structure</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/4.1.1%20image%201.png"/>
+                    <imagedata fileref="images/Draft%20Model%20of%20the%20Detailed%20Laboratory%20Ecosystem%20Control%20Structure.svg" align="center" scale="30"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -133,7 +133,7 @@ If you want to include original phrasing please use &quot;In collaboration with 
                 Control Structure </title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/4.1.1%20imgae%202.png"/>
+                    <imagedata fileref="images/DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure.svg" align="center" scale="15"/>
                 </imageobject>
             </mediaobject>
         </figure>

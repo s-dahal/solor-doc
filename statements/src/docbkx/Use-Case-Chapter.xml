@@ -22,9 +22,9 @@
                 emerging or needed concepts and to address irregularities or errors. </para>
             <para>Komet is capable of not only identifying errors but also resolving them. For
                 example, if you searched for “chronic lung disease” and opened the “Chronic lung
-                disease (disorder)”  that takes an user to the concept navigator. The user may
-                notice that this concept only displays two children concepts, which seems incomplete
-                as there should be many more children concepts for such a broad disorder. To explore
+                disease (disorder)” that takes an user to the concept navigator. The user may notice
+                that this concept only displays two children concepts, which seems incomplete as
+                there should be many more children concepts for such a broad disorder. To explore
                 and understand why this potential error is occurring, the user then could click on
                 both the ‘Properties’ and ‘Timeline’ buttons to open additional information about
                 the “Chronic lung disease (disorder)” concept. In the ‘Properties’ frame, the user
@@ -35,10 +35,8 @@
                 are only two children concepts. The user can then go back to the concept navigator
                 and edit the EL++ Axiom from ‘Necessary Set’ to ‘Sufficient Set’, select reasoner,
                 and run the ‘ELK Reasoner’. This then shows the recent edit and update, which shows
-                the increased number of children concepts to over 20.
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>WHY DOES THIS
-                HAPPEN?, WHAT IS THIS TRYING TO SHOW? IS THIS JUST THAT THE USER HAD THE WRONG VIEW
-                UP OR THEY DID NOT PULL UPDATES?</para><?oxy_custom_end?>
+                the increased number of children concepts to over
+                20.<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?></para><?oxy_custom_end?>
             <para>While Komet, Tinkar, and our open-source approach allow the user to identify an
                 error by navigating the site, understanding the concept versioning and history,
                 making edits to resolve the issue in real-time, and committing the changes to the
@@ -203,7 +201,7 @@
                     <title>Generalized Current State Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Generalized%20current%20state%20long%20covid%20workflow.png"/>
+                            <imagedata fileref="images/long%20covid%20workflow.svg" align="center" scale="25"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -238,7 +236,7 @@
                     <title>Current State Outpatient Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Current%20state%20long%20covid%20workflow.png"/>
+                            <imagedata fileref="images/Current%20State%20Long%20Covid%20Workflow.svg" align="center" scale="17"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -255,7 +253,7 @@
                     <title>Future State Outpatient Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Future%20state%20long%20covid%20workflow.png"/>
+                            <imagedata fileref="images/Future%20State%20Long%20Covid%20Workflow.svg" align="center" scale="17"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -276,8 +274,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata
-                                fileref="images/Idealized%20Future%20state%20data%20Long%20Covid%20Workflow.png"
-                            />
+                                fileref="images/Future%20State%20Data%20Flows%20for%20Long%20Covid.svg" align="center" scale="13"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -391,18 +388,170 @@
                     the outpatient Long COVID patient care workflow and similar data collection
                     steps are grouped by a box with a dashed line. This process was repeated
                     throughout the workflow for each data capture point.</para>
-                <figure xml:id="FutureStateDataCollectionPoints">
-                    <title>Future State Data Collection Points</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata
-                            fileref="images/Future%20state%20data%20collection%20Points.png"/>
-                    </imageobject>
-                </mediaobject>
-                </figure>
+                <table>
+                        <title>Future State Data Collection Points</title>
+                        <tgroup cols="6">
+                            <colspec colnum="1" colname="col1" align="left"/>
+                            <colspec colnum="2" colname="col2" align="left"/>
+                            <colspec colnum="3" colname="col3" align="left"/>
+                            <colspec colnum="4" colname="col4" align="left"/>
+                            <colspec colnum="5" colname="col5" align="left"/>
+                            <colspec colnum="6" colname="col6" align="left"/>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Reference</emphasis></entry>
+                                    <entry><emphasis role="bold">Current Data</emphasis></entry>
+                                    <entry><emphasis role="bold">Captured? (Y/N)</emphasis></entry>
+                                    <entry><emphasis role="bold">Collection
+                                        Methods</emphasis></entry>
+                                    <entry><emphasis role="bold">Needs for
+                                        Collection</emphasis></entry>
+                                    <entry><emphasis role="bold">Future State Standard
+                                            Data</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry>5B</entry>
+                                    <entry morerows="1">
+                                        <para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Date and time of test</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Symptom data (maybe)</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Test result</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </para>
+                                    </entry>
+                                    <entry morerows="1">N/A (unless proctored)</entry>
+                                    <entry morerows="1">N/A</entry>
+                                    <entry morerows="1">
+                                        <para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Data capture options with built in
+                                                  transmission paths </para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Intermediary for delivery of data to
+                                                  appropriate entities</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Clear labeling to support data options</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Instructions to perform test or interpret
+                                                  result embedded on data capture options</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Incentives to provide data</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Devices that broadcast data</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Devices that obfuscate results</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </para>
+                                    </entry>
+                                    <entry morerows="1">
+                                        <para>
+                                        <itemizedlist>
+                                            <listitem><para>Lab data standards (manufacturer, test, device ID,
+                                                etc.)</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Test result</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Symptom data</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Exposure source (if known)</para>
+                                            </listitem>
+                                            </itemizedlist>
+                                        </para>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>5D</entry>
+                                </row>
+                                <row>
+                                    <entry>10B</entry>
+                                    <entry>None</entry>
+                                    <entry>N/A</entry>
+                                    <entry>N/A</entry>
+                                    <entry>
+                                        <para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Symptom diary options</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Contact recording</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </para>
+                                    </entry>
+                                    <entry>
+                                        <para>
+                                            <itemizedlist>
+                                                <listitem>
+                                                    <para>Symptoms</para>
+                                                </listitem>
+                                                <listitem>
+                                                    <para>Dates</para>
+                                                </listitem>
+                                                <listitem>
+                                                    <para>Contacts</para>
+                                                </listitem>
+                                            </itemizedlist>
+                                        </para>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>11C</entry>
+                                    <entry>None</entry>
+                                    <entry>N/A</entry>
+                                    <entry>N/A</entry>
+                                    <entry>
+                                        <para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Symptom diary options</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Contact recording</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </para>
+                                    </entry>
+                                    <entry>
+                                        <para>
+                                            <itemizedlist>
+                                                <listitem>
+                                                    <para>Symptoms</para>
+                                                </listitem>
+                                                <listitem>
+                                                    <para>Dates</para>
+                                                </listitem>
+                                                <listitem>
+                                                    <para>Contacts</para>
+                                                </listitem>
+                                            </itemizedlist>
+                                        </para>
+                                    </entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table>
                 <para>The data collection groups were then transposed and used as the starting
-                    points for the idealized future state data workflow depicted in <xref linkend="FutureStateDataCollectionPoints"/>. This
-                    workflow outlines the idealized flow of data through the five key data
+                    points for the idealized future state data workflow depicted in table above.
+                    This workflow outlines the idealized flow of data through the five key data
                     dimensions listed in chronological order:</para>
                 <para><emphasis role="underline">Enablers</emphasis>: Enablers are key processes,
                     steps, or components that must be achieved to improve the quality and

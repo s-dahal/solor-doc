@@ -1008,7 +1008,7 @@
                     <title>Breakdown of LOINC® Codes Provided by Each Laboratory</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Breakdown%20of%20LOINC%C2%AE%20Codes%20Provided%20by%20Each%20Laboratory.png"/>
+                            <imagedata fileref="images/Breakdown%20of%20LOINC%C2%AE%20Codes%20Provided%20by%20Each%20Laboratory%20.svg" align="center" scale ="30"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1097,7 +1097,7 @@
                     <title>D-Dimer Test Results from Different Devices</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/D-Dimer%20Test%20Results%20from%20Different%20Devices.png"/>
+                            <imagedata fileref="images/D-Dimer%20Test%20Results%20from%20Different%20Devices.svg" align="center" scale="50"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1130,8 +1130,7 @@
                         <imageobject>
                             <?oxy_comment_start author="naylee" timestamp="20231129T174431-0600" comment="(R) is missing in the LOINC in the table (two places in the top heading row) "?>
                             <imagedata
-                                fileref="images/LOINC%C2%AE%20Codes%20Used%20at%20Two%20Different%20Institutions%20for%20the%20Same%20Tests.png"
-                            /><?oxy_comment_end?>
+                                fileref="images/LOINC%20Codes%20Used%20at%20Two%20Different%20Institutions%20for%20the%20Same%20Tests.svg" scale="40"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1252,7 +1251,7 @@
                     <title>Representation of AST in The LOINC® Hierarchy Browser Tool</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Representation%20of%20AST%20in%20The%20LOINC%20Hierarchy%20Browser%20Tool.png"/>
+                            <imagedata fileref="images/Representation%20of%20AST%20in%20The%20LOINC%20Hierarchy%20Browser%20Tool.svg" align="center" scale="30"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1598,7 +1597,7 @@
                 <title>Hypothetical Signs and Symptoms Questionnaires</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/Hypothetical%20Signs%20and%20Symptoms%20Questionnaires.png"/>
+                        <imagedata fileref="images/Hypothetical%20Signs%20and%20Symptoms%20Questionnaires.svg" align="center" scale="50"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -1629,7 +1628,7 @@
                     Questionnaire</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/Hypothetical%20Non-Specific%20Respiratory%20Diagnoses%20Questionnaire.png"/>
+                        <imagedata fileref="images/Hypothetical%20Non-Specific%20Respiratory%20Diagnoses%20Questionnaire.svg" align="center" scale="50"/>
                     </imageobject>
                 </mediaobject>
             </figure>
