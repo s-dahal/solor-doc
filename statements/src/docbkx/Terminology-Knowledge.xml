@@ -7,7 +7,7 @@
     <section>
         <title>Introduction</title>
         <para>For an introduction to Terminology Standards, please refer to <link
-                xlink:href="https://www.ikm.dev/assets/files/Volume-2-444d31cfa9e0f40cef34b4462fa4574c.pdf"
+            xlink:href="https://www.ikm.dev/Volume-2.pdf"
                 >Integrated Knowledge Management (IKM) Volume 2 - Background Section 1.5 Terminology
                 Overview</link>.</para>
     </section>
@@ -146,7 +146,7 @@
                     medical devices and personal health devices. Regenstrief is an active member of
                     the Health Standards Collaborative (HSC) which provides an executive forum for
                     senior leadership of the U.S. healthcare standards development community to
-                    improve interoperability. In 2017, Regenstrief worked with the Invitro
+                    improve interoperability. In 2017, Regenstrief worked with the In Vitro
                     Diagnostic (IVD) Industry Connectivity Consortium (IICC) on a specification for
                     publishing vendor IVD tests associated with a set of LOINC® codes that identify
                     the distinct observations produced by the test.</emphasis></para>
@@ -1157,7 +1157,7 @@
             <title>Current LOINC® Efforts to Improve Interoperability</title>
             <section>
                 <title>LOINC®-to-IVD (LIVD) Manufacturer Specifications</title>
-                <para>The LIVD (LOINC® to IVD) Mapping Specification is required by the United
+                <para>The LOINC® to IVD (LIVD) Mapping Specification is required by the United
                     States Department of Health and Human Services for SARS-CoV-2 reporting and
                     harmonizes how IVD test information is represented using LOINC®. The LIVD file
                     format is currently led by IVD Industry Connectivity Consortium (IICC), and the
@@ -1589,7 +1589,7 @@
                     Acquisition</emphasis>. An initial questionnaire was developed for the
                 generalized concepts extracted from the COVID-19 VSAC value sets that poses a simple
                 yes or no question for each of the concepts that could potentially aid in a Long
-                COVID diagnosis. This deliverable focuses on potential questionnaires for ‘Signs and
+                COVID diagnosis. This chapter focuses on potential questionnaires for ‘Signs and
                 Symptoms’ and ‘Non-Specific Respiratory Diagnoses’, outlined in <xref
                     linkend="HypotheticalSignsandSymptomsQuestionnaires"/> and <xref
                     linkend="HypotheticalNonSpecificRespiratoryDiagnosesQuestionnaire"/>
@@ -2021,8 +2021,8 @@
         </section>
         <section>
             <title>Recommendations to Address Terminology Issues</title>
-            <para>This deliverable aims to highlight some of the current shortcomings with the way
-                data is collected and represented. We propose the following recommendations for data
+            <para>This section aims to highlight some of the current shortcomings with the way data
+                is collected and represented. We propose the following recommendations for data
                 collection via patient questionnaires to reduce duplicative and vague data
                 collection, facilitate secondary data usage, and improve data
                 interoperability:</para>
@@ -2068,7 +2068,7 @@
             </orderedlist>
             <para>These recommendations can and should be applied across all data collection
                 questionnaires, not just the ‘Signs and Symptoms’ and ‘Non-Specific Respiratory
-                Diagnosis’ questionnaires represented in this deliverable. </para>
+                Diagnosis’ questionnaires represented in this chapter. </para>
         </section>
         <section>
             <title>Technologies that Support ANF </title>
@@ -2087,7 +2087,7 @@
                 normalization errors justifies their use.
                 [27]<?oxy_comment_start author="naylee" timestamp="20231130T110056-0600" comment="The table below needs to define QVT = Query/View/Transformation in the first colum of the table. "?></para><?oxy_comment_end?>
             <table>
-                <title>Benefits and Limitations of XLST, FHIR, QVT, and MDMI Transformation
+                <title>Benefits and Limitations of Transformation
                     Languages and Architecture</title>
                 <tgroup cols="3">
                     <colspec colnum="1" colname="col1" align="left" rowsep="1"/>

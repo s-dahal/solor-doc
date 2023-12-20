@@ -9,7 +9,7 @@
     <para>• Treatment protocols for diseases</para>
     <para>• Standard evidence-based Order Sets</para>
     <para>Applied Procedural Knowledge can enable the use of CDS, Clinical Pathways, and Knowledge
-        Artifacts, also known as KNARTs, that standardize patient documentation, quality improvement
+        Artifacts (KNARTs), that standardize patient documentation, quality improvement
         interventions, and protocols focused on specific clinical domains and patient
         situations.</para>
     <section>
@@ -153,7 +153,7 @@
                 <title>CDS Connect Lifestyle</title>
                 <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/CDS%20Connect%20Lifestyle.svg" scale="65"/>
+                    <imagedata fileref="images/CDS%20Connect%20Lifestyle.svg" align="center" scale="50"/>
                 </imageobject>
             </mediaobject>
             </figure>
@@ -452,7 +452,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                                 </entry>
                             </row>
                             <row>
-                                <entry>Care pProcesses, Adherence to Guidelines</entry>
+                                <entry>Care Processes, Adherence to Guidelines</entry>
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
@@ -494,26 +494,26 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             <section>
                 <title>Signs of an Effective CDS Roll-Out </title>
                 <para>Health IT.gov published a how-to manual for healthcare organizations to
-                    monitor CDS rollout plans and included the following criteria: [15]  </para>
+                    monitor CDS rollout plans and included the following criteria: [15] </para>
                 <para>
                     <itemizedlist>
                         <listitem>
-                            <para>all end-users were adequately trained for using the intervention </para>
+                            <para>All end-users were adequately trained to use the intervention </para>
                         </listitem>
                         <listitem>
-                            <para>end-users felt the trainings were well-timed in relation to the
+                            <para>End-users felt the trainings were well-timed in relation to the
                                 roll-out </para>
                         </listitem>
                         <listitem>
-                            <para>end-users did not feel overwhelmed by the introduction of
+                            <para>End-users did not feel overwhelmed by the introduction of
                                 CDS</para>
                         </listitem>
                         <listitem>
-                            <para>end-users knew how to provide feedback and get support if
+                            <para>End-users knew how to provide feedback and get support if
                                 needed</para>
                         </listitem>
                         <listitem>
-                            <para>changes in workflow were smooth and improved care processes</para>
+                            <para>Changes in workflow were smooth and improved care processes</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -607,27 +607,29 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             <para>Below are some suggestions for Best Practices for CDS Deployment: [17]  </para>
             <itemizedlist>
                 <listitem>
-                    <para>Use a process where changes to value set terminology codes made by
-                        Standards Development Organizations
+                    <para>CDS Deployment should use a process where changes to value set terminology
+                        codes made by Standards Development Organizations
                         (<?oxy_comment_start author="steph" timestamp="20190717T121740-0600" comment="Does this need to be spelled out?" flag="done"?>SDOs<?oxy_comment_end?>),
                         value set developers, or by ancillary department internal systems are
                         communicated and pushed to CDS authors, implementers, and evaluators to be
-                        analyzed for impact before the changes are made</para>
+                        analyzed for impact before the changes are made.</para>
                 </listitem>
                 <listitem>
-                    <para>Employ a process where changes to attribute values (e.g., units of
-                        measurement) are communicated and pushed to CDS authors, implementers, and
-                        evaluators to be analyzed for impact before the changes are made</para>
+                    <para>CDS Deployment should employ a process where changes to attribute values
+                        (e.g., units of measurement) are communicated and pushed to CDS authors,
+                        implementers, and evaluators to be analyzed for impact before the changes
+                        are made.</para>
                 </listitem>
                 <listitem>
-                    <para>Test and deploy EHR vendor patches and upgrades in a timely manner</para>
+                    <para>CDS Deployment test and deploy EHR vendor patches and upgrades in a timely
+                        manner.</para>
                 </listitem>
                 <listitem>
-                    <para>Inform users of significant CDS changes</para>
+                    <para>CDS Deployment should inform users of significant CDS changes.</para>
                 </listitem>
                 <listitem>
-                    <para>Require IT staff to use automated tools to migrate CDS rules between EHR
-                        system environments (e.g., test and production)</para>
+                    <para>CDS Deployment require IT staff to use automated tools to migrate CDS
+                        rules between EHR system environments (e.g., test and production).</para>
                 </listitem>
             </itemizedlist>
         </section>
@@ -718,7 +720,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             their respective clinical database structure. Furthermore, not all clinical concepts are
             recorded and stored in the same way in different EHR implementations; what may be
             structured in one system may be free text in another. While the Health Quality Measure
-            Format (HQMF), Quality Data Model (QDM), and Clinical Quality Langauge (CQL) are the
+            Format (HQMF), Quality Data Model (QDM), and Clinical Quality Language (CQL) are the
             more recent efforts to improve standard representations of CDS expression logic, efforts
             date back to the mid 1970’s when early implementers of computer-based clinical
             information systems were first recognizing the value of computer-based decision support
@@ -874,40 +876,40 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
             <para>Clinical pathways incorporate evidence-based guidelines and protocols for common
                 diagnoses, conditions and procedures into algorithms. These algorithms are used by
                 the multidisciplinary care team in providing care to the patient.</para>
-            <para> Items addressed on the clinical pathway may include:</para>
+            <para>Items addressed on the clinical pathway may include:</para>
             <itemizedlist>
                 <listitem>
-                    <para>patient assessment and monitoring</para>
+                    <para>patient assessment and monitoring,</para>
                 </listitem>
                 <listitem>
-                    <para>tests and procedures</para>
+                    <para>tests and procedures,</para>
                 </listitem>
                 <listitem>
-                    <para>treatments</para>
+                    <para>treatments,</para>
                 </listitem>
                 <listitem>
-                    <para>consultations</para>
+                    <para>consultations,</para>
                 </listitem>
                 <listitem>
-                    <para>medications</para>
+                    <para>medications,</para>
                 </listitem>
                 <listitem>
-                    <para>activity</para>
+                    <para>activity,</para>
                 </listitem>
                 <listitem>
-                    <para>nutrition</para>
+                    <para>nutrition,</para>
                 </listitem>
                 <listitem>
-                    <para>education</para>
+                    <para>education,</para>
                 </listitem>
                 <listitem>
-                    <para>targeted length of stay</para>
+                    <para>targeted length of stay,</para>
                 </listitem>
                 <listitem>
-                    <para>outcome Criteria</para>
+                    <para>outcome criteria, and</para>
                 </listitem>
                 <listitem>
-                    <para>notification for deviations</para>
+                    <para>notification for deviations.</para>
                 </listitem>
             </itemizedlist>
             <para>Standardizing treatments improves the continuity and coordination of care provided
@@ -915,10 +917,9 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 decreased costs. </para>
             <section>
                 <title>Pathways vs SOPs vs Guidelines</title>
-                <para><emphasis role="bold">Rao et al </emphasis>provide definitions to help
-                    compare/contrast SOPs, guidelines, and
-                    <?oxy_comment_start author="steph" timestamp="20190717T154404-0600" comment="I didn&apos;t see clinical pathways discussed in the two paragraphs below." id="sms_5sd_r3b"?><?oxy_comment_start author="rcholan" timestamp="20190808T090227-0400" comment="It is mentioned in the first sentence and last sentence. Perhaps we need a new quote" parentID="sms_5sd_r3b" mid="17"?>clinical
-                    pathways: </para><?oxy_comment_end?><?oxy_comment_end mid="17"?>
+                <para>Rao et al. provide definitions to help compare/contrast SOPs, guidelines, and
+                    <?oxy_comment_start author="steph" timestamp="20190717T154404-0600" comment="I didn&apos;t see clinical pathways discussed in the two paragraphs below." id="sms_5sd_r3b"?><?oxy_comment_start author="rcholan" timestamp="20190808T090227-0400" comment="It is mentioned in the first sentence and last sentence. Perhaps we need a new quote" parentID="sms_5sd_r3b" mid="16"?>clinical
+                    pathways: </para><?oxy_comment_end?><?oxy_comment_end mid="16"?>
                 <para xml:id="__p7">"The terms SOPs, guidelines and [clinical] pathways are defined
                     by different medical bodies. Furthermore, whereas clinical practice guidelines
                     are systematically developed statements that assist decisions about appropriate
@@ -933,7 +934,7 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                     to suit local circumstances and to achieve a feeling of ownership, both of which
                     are important factors in guideline uptake and use. SOPs, therefore, help bridge
                     the gap between evidence-based medicine, clinical practice guidelines, and the
-                    local realities at the point-of-care." [25]  </para>
+                    local realities at the point-of-care." [25] </para>
             </section>
         </section>
         <section>

@@ -6,25 +6,23 @@
      <title>Assertional Knowledge</title>
     <section>
         <title>Introduction to Assertional Knowledge</title>
-        <para>Previously, we discussed definitional knowledge which defines purely structural
-            relationships among concepts. Definitional knowledge relationships do not represent how
-            concepts influence or relate to each other in a clinical setting. This type of
-            information is represented by assertional knowledge. For example, shortness of breath
-            may be caused by myocardial infarction. Assertional knowledge represents facts related
-            to a domain of study and is used to provide nuance and context to a concept, but does
-            not define it. For example, Aspirin is used to treat pain, but it can also be used to
-            treat fevers, prevent blood clots, reduce the risk of stroke and heart attack and many
-            other things. The two major goals of including assertional knowledge are (1) to enhance
-            usability and (2) improve documentation quality when using a terminology. Additional
-            facts about clinical concepts can also be provided to support reasoning for automated
-            quality monitoring and clinical decision
-            support.<citation>Elkin_Terminology</citation></para>
+        <para>Previously, we discussed terminology knowledge which does not represent how concepts
+            influence or relate to each other in a clinical setting. This type of information is
+            represented by assertional knowledge. For example, shortness of breath may be caused by
+            myocardial infarction. Assertional knowledge represents facts related to a domain of
+            study and is used to provide nuance and context to a concept, but does not define it.
+            For example, Aspirin is used to treat pain, but it can also be used to treat fevers,
+            prevent blood clots, reduce the risk of stroke and heart attack and many other things.
+            The two major goals of including assertional knowledge are (1) to enhance usability and
+            (2) improve documentation quality when using a terminology. Additional facts about
+            clinical concepts can also be provided to support reasoning for automated quality
+            monitoring and clinical decision support. [1]</para>
         <para>Additionally, assertional knowledge supports interface implementation by providing
             increased synonymy that is specific as to the context in which it should be used. What
             has been previously called interface terminology can be defined as a "systematic
             collection of clinically oriented phrases (terms) whose purpose is to support
             clinicians' entry of patient information into computer programs, such as clinical note
-            capture and decision support tools". <citation>Elkin_Terminology</citation></para>
+            capture and decision support tools". [1]</para>
         <para>This interface support is used to accomplish one of two tasks:</para>
         <orderedlist>
             <listitem>
@@ -38,7 +36,7 @@
         <para>This interface support must enable correct and rapid interaction between clinicians
             and structured clinical data, support ease of use by healthcare providers through easy
             understandability, and integrate well with other clinical computerized systems in the
-            environment. <citation>Rosenbloom_model</citation></para>
+            environment. [1]</para>
         <para>Assertional knowledge is key to supporting interface implementation of the terminology
             layer. Assertional knowledge can support interface implementations of terminology
             by:</para>
@@ -51,11 +49,10 @@
                     <para>Representing additional relationships for clinical concepts</para>
                 </listitem>
                 <listitem>
-                    <para>Providing support for synonymy</para>
+                    <para>Providing support for synonymy [1]</para>
                 </listitem>
             </orderedlist>
         </para>
-        <para><link xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1513664/"/></para>
     </section>
     <section>
         <title>Adding Clinical Modifiers to Concepts</title>
@@ -104,8 +101,9 @@
                     <para>“Myocardial infarction is associated with chest pain”</para>
                 </listitem>
             </itemizedlist>
-            <para>The VA's National Drug File - Reference Terminology (NDF-RT) has assertional
-                knowledge contained in relationships like:</para>
+            <para>The United States Department of Veterans Affairs (VA's) National Drug File -
+                Reference Terminology (NDF-RT) has assertional knowledge contained in relationships
+                like:</para>
             <itemizedlist>
                 <listitem>
                     <para>may_treat {}  DISEASE_KIND – therapeutic use or indication of a generic
@@ -225,6 +223,17 @@
         <para>The capability of associating statements enables the use of Assertional Knowledge to
             clinical decision support applications, clinical pathways and general information (“info
             button”) that can be made available to users of EMR systems. </para>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>Rosenbloom ST, Miller RA, Johnson KB, Elkin PL, Brown SH. Interface
+                    terminologies: Facilitating direct entry of clinical data into Electronic Health
+                    Record Systems. Journal of the American Medical Informatics Association.
+                    2006;13(3):277–88. doi:10.1197/jamia.m1957 </para>
+            </listitem>
+        </orderedlist>
     </section>
     
     
