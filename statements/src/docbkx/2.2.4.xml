@@ -233,9 +233,11 @@
             itself. Organizations argue that the monetization of their software also allows them to
             create detailed guidance for implementation as well as more direct support to its
             customers while also protecting the proprietary source and implementation of its
-            product. This can contribute to unintended downstream effects that require a multistep
-            approach to solving. Advocacy towards open-source, permissive licenses is one aspect to
-            solutioning. </para>
+            product.
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240103T123833-0500" comment="Comment from Hashir: add some examples of these downstream effects "?>This
+            can contribute to unintended downstream effects that require a multistep approach to
+            solving.<?oxy_comment_end?> Advocacy towards open-source, permissive licenses is one
+            aspect to solutioning. </para>
         <para>Users are often left to determine their obligations to different licenses, especially
             when wanting to combine related software. How do researchers, laboratorians, and health
             providers navigate the intentional vague complexity of licenses when attempting to solve
