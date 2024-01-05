@@ -47,7 +47,7 @@
             <section>
                 <title>Post-coordination</title>
                 <para>Terminology models sometimes make it necessary to require post-coordination to
-                    provide domain coverage at the point of care, however, the information models we
+                    provide domain coverage at the point of care. However, the information models we
                     use in healthcare typically can’t handle post-coordination well. Reliance on the
                     information model to represent post-coordination has introduced complexity that
                     might be avoided if we used a dynamic means to assign unique identifiers to
@@ -77,7 +77,7 @@
             <section>
                 <title>Interoperability at the Expense of Operability</title>
                 <para>Interoperability provides an illusion of operability between disparate
-                    systems, and therefore there is no need to standardize.</para>
+                    systems. Therefore, there is no need to standardize.</para>
             </section>
             <section>
                 <title>Design by Committee Solutions</title>
@@ -90,29 +90,29 @@
         <section>
             <title>Stovepipe</title>
             <para>The Stovepipe Enterprise antipattern is characterized by a lack of coordination
-                and planning across a set of systems. If every subsystem has a unique interface,
-                then the system is overly complex. Absence of common multisystem conventions is a
-                key problem for systems. For example, currently, essentially no terminology systems
-                are the same with regard to their representation and semantics, despite the
-                requirement that they must work together.</para>
+                and planning across a set of systems. If every subsystem has a unique interface, the
+                system is overly complex. Absence of common multisystem conventions is a key problem
+                for systems. For example, currently, essentially no terminology systems are the same
+                with regard to their representation and semantics, despite the requirement that they
+                must work together.</para>
             <section>
                 <title>Overlapping and unreconciled models</title>
-                <para>SNOMED CT and LOINC are classic examples of two terminologies that are
+                <para>SNOMED CT® and LOINC® are classic examples of two terminologies that are
                     proposed for common use in health IT, but that are not well coordinated, and
                     have unreconciled content (content that is not made consistent or compatible).
-                    As an example of unreconciled content, SNOMED CT and LOINC both have
-                    representations for Amoxicillin. In LOINC, Amoxicillin is a textual value in the
-                    has-component field of the concept:</para>
+                    As an example of unreconciled content, SNOMED CT® and LOINC® both have
+                    representations for Amoxicillin. In LOINC®, Amoxicillin is a textual value in
+                    the has-component field of the concept:</para>
                 <para> </para>
                 <para>AMOXICILLIN [MASS/VOLUME] IN SERUM OR PLASMA</para>
                 <para>HAS-COMPONENT: AMOXICILLIN</para>
                 <para> </para>
-                <para>While SNOMED CT has the concept:</para>
+                <para>While SNOMED CT® has the concept:</para>
                 <para> </para>
                 <para>AMOXICILLIN MEASUREMENT (PROCEDURE)</para>
                 <para>COMPONENT: AMOXICILLIN (SUBSTANCE)</para>
                 <para> </para>
-                <para>In SNOMED CT, Amoxicillin is also a concept, rather than just a text
+                <para>In SNOMED CT®, Amoxicillin is also a concept, rather than just a text
                     value.</para>
                 <para> </para>
                 <para>From an end-user’s perspective, the artificial separation and uncoordinated
@@ -125,10 +125,10 @@
                     for implementers, we can allocate resources to solving more compelling
                     problems.</para>
                 <para>We hope that the newly announced cooperative agreement between IHTSDO (owners
-                    of SNOMED CT) and the Regenstrief Institute (owners of LOINC), and the NLM
+                    of SNOMED CT®) and the Regenstrief Institute (owners of LOINC®), and the NLM
                     (owners of RxNorm) will change the coordination of these systems in a
-                    significantly helpful way. Although SNOMED CT and LOINC are classic examples of
-                    overlapping and unreconciled models, there are many other examples. The UMLS
+                    significantly helpful way. Although SNOMED CT® and LOINC® are classic examples
+                    of overlapping and unreconciled models, there are many other examples. The UMLS
                     identifies over 150 sources, most of which are uncoordinated, and have
                     independent models. These overlapping and unreconciled models create an
                     unnecessary burden for the implementer.</para>
@@ -138,14 +138,15 @@
                 <para>Today, related components from different organizations do not share their work
                     prior to a release. The result of this lack of sharing is that dependent
                     components are always out of date with the latest release of the underlying
-                    standard. For example, how can you keep a mapping of SNOMED CT to ICD-10-CM
-                    components up to date, when it takes 6 months after the release of SNOMED CT to
+                    standard. For example, how can you keep a mapping of SNOMED CT® to ICD-10-CM
+                    components up to date, when it takes 6 months after the release of SNOMED CT® to
                     update and quality assure the map? As an implementer, does that mean you should
-                    wait 6 months for the map to be updated before deploying the latest SNOMED CT
-                    release? What if the new SNOMED CT release contains new content that may improve
-                    the diagnosis, treatment, or prevention of disease? Is it really acceptable to
-                    delay implementation of the latest SNOMED CT release by 6 months while waiting
-                    for dependent system components to be updated after the fact?</para>
+                    wait 6 months for the map to be updated before deploying the latest SNOMED CT®
+                    release? What if the new SNOMED CT® release contains new content that may
+                    improve the diagnosis, treatment, or prevention of disease? Is it really
+                    acceptable to delay implementation of the latest SNOMED CT® release by 6 months
+                    while waiting for dependent system components to be updated after the
+                    fact?</para>
             </section>
             <section>
                 <title>Stovepipe solutions</title>
