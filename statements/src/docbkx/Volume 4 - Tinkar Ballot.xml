@@ -25,4 +25,5 @@
             href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"/>
         <xi:include href="Foundational-Architecture.xml"/>
     </part>
+    <xi:include href="Volume%204%20-%20References.xml"/>
 </book>
