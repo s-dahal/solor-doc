@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Quick Reference Guide</title>
+    <section>
+        <title>Abbreviation Guide</title>
+        <para></para>
+    </section>
+    <section>
+        <title>IKM Terminology Definitions</title>
+        <para></para>
+    </section>
+    </appendix>
