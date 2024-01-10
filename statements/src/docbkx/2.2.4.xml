@@ -236,8 +236,13 @@
             product.
             <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240103T123833-0500" comment="Comment from Hashir: add some examples of these downstream effects "?>This
             can contribute to unintended downstream effects that require a multistep approach to
-            solving.<?oxy_comment_end?> Advocacy towards open-source, permissive licenses is one
-            aspect to solutioning. </para>
+            solving.<?oxy_comment_end?> Although there are understandable reasons for organizations
+            to license some or all of their software, limiting it's use inhibits contributors who
+            bring diverse and valuable perspectives and solutions. Every part of an organization's
+            work in relation to healthcare ultimately has an effect on patient welfare, quality, and
+            care. Ideas that are locked behind licenses cannot be part of the larger solution to
+            interoperability. Advocacy towards open-source, permissive licenses is one aspect to
+            solutioning. </para>
         <para>Users are often left to determine their obligations to different licenses, especially
             when wanting to combine related software. How do researchers, laboratorians, and health
             providers navigate the intentional vague complexity of licenses when attempting to solve
