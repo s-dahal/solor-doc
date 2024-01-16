@@ -139,7 +139,7 @@
                     </row>
                     <row>
                         <entry>
-                            <para> Foundation Layer of Knowledge Architecture</para>
+                            <para>Foundation Layer of Knowledge Architecture</para>
                         </entry>
                         <entry>The Foundation layer provides the common elements of interoperability
                             such as object identity, versioning, modularity, and knowledge
@@ -148,12 +148,11 @@
                             controlled over time.</entry>
                     </row>
                     <row>
-                        <entry> Terminology Layer of Knowledge Architecture</entry>
+                        <entry>Terminology Layer of Knowledge Architecture</entry>
                         <entry>The Terminology Knowledge Layer provides structured sets of medical
                             terms and codes that define concepts of interest. This includes
-                            descriptions, dialects, language, and semantic hierarchy; SNOMED
-                                CT<superscript>®</superscript>, LOINC<superscript>®</superscript>,
-                            and RxNorm are part of this layer.</entry>
+                            descriptions, dialects, language, and semantic hierarchy; SNOMED CT®,
+                            LOINC®, and RxNorm are part of this layer.</entry>
                     </row>
                     <row>
                         <entry>
@@ -171,11 +170,10 @@
                         <entry>Komet (Knowledge Management Environment)</entry>
                         <entry>
                             <para>Komet is an example implementation of the Tinkar model, and shows
-                                how terminologies like SNOMED CT<superscript>®</superscript>,
-                                    LOINC<superscript>®</superscript>, RxNorm shall be represented.
-                                Using the Komet browser users can view and search concepts, view
-                                concept details, and navigate hierarchies, among many other
-                                functions.</para>
+                                how terminologies like SNOMED CT®, LOINC®, RxNorm shall be
+                                represented. Using the Komet browser users can view and search
+                                concepts, view concept details, and navigate hierarchies, among many
+                                other functions.</para>
                         </entry>
                     </row>
                     <row>
