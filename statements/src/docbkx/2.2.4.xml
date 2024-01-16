@@ -200,6 +200,7 @@
             provider has to ensure the patient receives. Additionally, GDPR places the burden of
             proof of consent on the provider, and they must implement an audit trail for electronic
             consents. </para>
+        <para>test test test</para>
         <para><emphasis role="bold">Open-Source Licensing (OSL) </emphasis></para>
         <para>The implementation of open-source software is managed in-hand through open-source
             licensing (OSL). The license of the software sets out the guidelines on the usage and
