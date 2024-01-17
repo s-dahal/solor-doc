@@ -196,10 +196,10 @@
         <para>Healthcare organizations must adapt to these strict new regulations, and are charged
             with managing patient consent, data portability, and the consequences of non-compliance,
             which could be fines up to €22M+. For U.S. healthcare organization this means complying
-            with GDPR as well as HIPAA, which is another level of consent and information the
-            provider has to ensure the patient receives. Additionally, GDPR places the burden of
-            proof of consent on the provider, and they must implement an audit trail for electronic
-            consents. </para>
+            with GDPR as well as Health Insurance Portability and Accountability Act (HIPPA), which
+            is another level of consent and information the provider has to ensure the patient
+            receives. Additionally, GDPR places the burden of proof of consent on the provider, and
+            they must implement an audit trail for electronic consents. </para>
         <para>test test test</para>
         <para><emphasis role="bold">Open-Source Licensing (OSL) </emphasis></para>
         <para>The implementation of open-source software is managed in-hand through open-source
@@ -412,10 +412,10 @@
             of data. While organizations petition to have new codes created, they must continue to
             standardize their codes before their data is transferred to another system. During this
             step, data can be lost during the transfer from a local code to a standard LOINC® or
-            SNOMED® code. Doctors may lose the much-needed context surrounding patient care, leading
-            to redundancy in additional ordered tests and referrals. Moreover, the issuance of new
-            codes does not circumvent the usage of localized knowledge. New codes can be used in
-            place of local knowledge, but it can also be further adapted into knowledge for the
+            SNOMED CT® code. Doctors may lose the much-needed context surrounding patient care,
+            leading to redundancy in additional ordered tests and referrals. Moreover, the issuance
+            of new codes does not circumvent the usage of localized knowledge. New codes can be used
+            in place of local knowledge, but it can also be further adapted into knowledge for the
             specific needs of practitioners. This does not solve the transfer errors that can occur
             when local codes are standardized. </para>
     </section>
