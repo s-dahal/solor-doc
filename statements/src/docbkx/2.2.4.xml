@@ -155,6 +155,52 @@
         <para>Many software systems today utilize qualities of open-source software but lie in a
             gray area where they maintain proprietary techniques. These limits are imposed by their
             licensing models through their end-user agreements. </para>
+        <para><emphasis>Real World Example: General Data Protection Regulation (GDPR) and Data
+                Privacy in Healthcare</emphasis></para>
+        <para>The General Data Protection Regulation (GDPR) is an EU privacy and security law that
+            was put into effect May 25, 2018. This EU law imposes obligations onto organizations
+            anywhere in the world if they target or collect data related to EU citizens or
+            residents. The law outlines seven protection and accountability principles, listed
+            below:</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Lawfulness, fairness and transparency</para>
+                </listitem>
+                <listitem>
+                    <para>Purpose limitation</para>
+                </listitem>
+                <listitem>
+                    <para>Data minimization</para>
+                </listitem>
+                <listitem>
+                    <para>Accuracy</para>
+                </listitem>
+                <listitem>
+                    <para>Storage Limitation</para>
+                </listitem>
+                <listitem>
+                    <para>Integrity and confidentiality</para>
+                </listitem>
+                <listitem>
+                    <para>Accountability</para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>The GDPR has influenced data management and privacy practices in the healthcare sector
+            by compelling healthcare organizations to adopt stricter data protection measures and
+            transparency in data handling. According to GDPR law, health data is defined as personal
+            data related to the physical or mental health of a natural person, including the
+            provision of health care services, which reveal information about their health. This
+            health data also includes genetic and biometric data.</para>
+        <para>Healthcare organizations must adapt to these strict new regulations, and are charged
+            with managing patient consent, data portability, and the consequences of non-compliance,
+            which could be fines up to €22M+. For U.S. healthcare organization this means complying
+            with GDPR as well as HIPAA, which is another level of consent and information the
+            provider has to ensure the patient receives. Additionally, GDPR places the burden of
+            proof of consent on the provider, and they must implement an audit trail for electronic
+            consents. </para>
+        <para>test test test</para>
         <para><emphasis role="bold">Open-Source Licensing (OSL) </emphasis></para>
         <para>The implementation of open-source software is managed in-hand through open-source
             licensing (OSL). The license of the software sets out the guidelines on the usage and
@@ -255,6 +301,78 @@
                 interoperability within health IT and results in lower quality data with unattended,
                 downstream patient effects.</emphasis>
         </para>
+        <para><emphasis>Real-world Example: The Linux Kernel and Android Operating
+            System</emphasis></para>
+        <para>The Linux Kernel General Public License (GPL) is a real-world example of an
+            open-source licensing agreement that can be referenced and learned from as we continue
+            our IKM efforts. In the Linux Kernel contribution model, contributors need to complete
+            the following process to submit and merge code:</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Patch Development</emphasis>– External contributors
+                        create a new patch branch to author and finalize their code. The patch is
+                        then developed and details the differences between the main branch and the
+                        newly authored branch.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Review</emphasis>– Once the new code is finalized in
+                        its separate branch, it is submitted into a standardized and well-documented
+                        code review process. The Module Maintainer Team then conducts an initial,
+                        manual review of the code.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Testing</emphasis>– If the Module Maintainer Team
+                        deems that the patch passes the initial review process, it is entered into
+                        the Continuous Integration/Continuous Delivery (CI/CD) system that performs
+                        acceptance, integration, functionality, scaling, and performance
+                        tests.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Merging</emphasis>– If the patch passes all tests,
+                        the Module Maintainer Team notifies the contributor that their patch has
+                        been entered into the Merge Process queue before being merged into the main
+                        branch. However, if a patch fails a test, the Module Maintainer Team
+                        notifies the contributor that their patch has been rejected or needs
+                        revisions before it can be resubmitted.</para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>Some defining characteristics of the Linux Kernel contribution model include:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Mailing List-Based Review</emphasis>– Patch
+                        submissions are submitted to a centralized Module Maintainer Team then
+                        initiates the review process. This supports transparent discussion and
+                        visibility among the developer and contributor community but provides a less
+                        structured process that can be confusing for newer contributors.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Maintainer-Centric Approach</emphasis>– The Module
+                        Maintainer Team have an incredibly important role reviewing and approving
+                        all submitted branches. While this ensures a standardized and consistent
+                        process, it heavily relies on the maintainers.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Scalability</emphasis>– The Linux Kernel
+                        contribution model remains relatively unchanged as the size of the project
+                        increases, supporting effective scaling and continual content
+                        development.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>The Linux Kernel GPL allows any stakeholder to use, modify, or distribute its code
+            freely. Android is a large stakeholder that participates in the Linux Kernel GPL and
+            uses Linux Kernel as the base and foundation for the Android operating system (OS).
+            Android then employs its own, more permissive, open-source licensing agreement through
+            Apache License Version 2.0 as part of the Android Open-Source Project (AOSP). The AOSP
+            licensing agreement allows manufacturers to build custom versions of the operative
+            system, which facilitates the use of the Android OS in healthcare technology. The
+            prevalence of the Android OS, or a modified version through the AOSP, throughout
+            healthcare highlights the impact that licensing has on the development, adoption, and
+            implementation of code, software, and products in the healthcare industry and the
+            importance of having a well-curated licensing agreement.</para>
         <para><emphasis>Case-Study: LOINC® and SNOMED International Licensing
             Agreements</emphasis></para>
         <para>Logical Observation Identifiers Names and Code® (LOINC®) and Systemized Nomenclature
