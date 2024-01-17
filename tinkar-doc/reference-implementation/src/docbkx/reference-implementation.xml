@@ -11,9 +11,9 @@
         Concepts, view the Concept details (Semantics), and navigate hierarchies, as well as many
         other functions that are outside the scope of this ballot.</para>
     <para>Java Reference Classes for the Tinkar model can be accessed here:(<link
-        xlink:href="https://github.com/HL7/tinkar-java"/>).  C# Reference Classes
-        can be accessed here:(<link
-            xlink:href="https://github.com/HL7/tinkar-cs"/>).</para>
+            xlink:href="https://github.com/HL7/tinkar-java"/>). C# Reference Classes can be accessed
+            here:(<link xlink:href="https://github.com/HL7/tinkar-cs"/>).</para>
+    <para> </para>
   <section>
       <title>Concept</title>
       <para>

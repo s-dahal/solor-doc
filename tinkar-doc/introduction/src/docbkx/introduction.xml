@@ -7,28 +7,25 @@
       >[1]</link>. Acceleration and development of Electronic Health Record (EHR) systems has
     precipitated the emergence of “standard terminologies” and their widespread adoption in the
     clinical community. These include Systematized Nomenclature of Medicine Clinical Terms (SNOMED
-      CT<superscript>®</superscript>), the Logical Observation Identifiers, Names, and Codes
-      (LOINC<superscript>®</superscript>) and RxNorm. The availability of these clinical
-    terminologies through the terminology services of FHIR is facilitating their usage in support of
-    interoperability in healthcare. </para>
+    CT®), the Logical Observation Identifiers, Names, and Codes (LOINC®) and RxNorm. The
+    availability of these clinical terminologies through the terminology services of FHIR is
+    facilitating their usage in support of interoperability in healthcare. </para>
   <para>Interoperability requires standardized semantics based on reference terminology provided by
     standards development organizations, professional organizations, or government agencies. These
     organizations publish their content with the intention of licensing it to health IT vendors,
     providers, and research organizations. In the U.S., the core clinical reference terminology is
-    based on SNOMED CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, and RxNorm.
-    Healthcare organizations must adopt and integrate subsets or modules of various reference
-    terminology and manage references, dependencies, versions, and releases. It is important for the
-    integrity of medical records that the change history of concepts and value sets can be managed
-    and tracked to allow the exchange of either current or retrospective medical records. Therefore,
-    enterprise terminology requires integrated terminology using a common representation and
-    management.</para>
+    based on SNOMED CT®, LOINC®, and RxNorm. Healthcare organizations must adopt and integrate
+    subsets or modules of various reference terminology and manage references, dependencies,
+    versions, and releases. It is important for the integrity of medical records that the change
+    history of concepts and value sets can be managed and tracked to allow the exchange of either
+    current or retrospective medical records. Therefore, enterprise terminology requires integrated
+    terminology using a common representation and management.</para>
   <para>Despite the need to use standard terminologies in a highly integrated way, there is no
-    standard representation across SNOMED CT<superscript>®</superscript>,
-      LOINC<superscript>®</superscript>, RxNorm, etc. Some partnerships have been created among
-    development teams to facilitate interoperability and minimize duplication of effort. Further
-    integration has been proposed but will require additional resources to bring these terminologies
-    closer together. However, while this evolution leads to greater compatibility and
-    interoperability, integration of SNOMED CT<superscript>®</superscript>,
+    standard representation across SNOMED CT®, LOINC®, RxNorm, etc. Some partnerships have been
+    created among development teams to facilitate interoperability and minimize duplication of
+    effort. Further integration has been proposed but will require additional resources to bring
+    these terminologies closer together. However, while this evolution leads to greater
+    compatibility and interoperability, integration of SNOMED CT<superscript>®</superscript>,
       LOINC<superscript>®</superscript>, and RxNorm is non-trivial as these terminologies use
     different formalisms and tools for their representation. Various terminologies have different
     semantics, models, release cycles, and versioning mechanisms <link linkend="bib1">[1]</link>.
