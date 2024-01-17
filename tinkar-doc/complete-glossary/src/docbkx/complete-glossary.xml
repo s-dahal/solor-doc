@@ -53,9 +53,9 @@
                         assets.</entry>
                 </row>
                 <row>
-                    <entry>STAMP – (status, time, author, module, path)</entry>
-                    <entry>The precise version coordinates that govern granular change control for
-                        Tinkar assets. </entry>
+                    <entry>STAMP</entry>
+                    <entry>Status, time, author, module, path (STAMP) are the precise version
+                        coordinates that govern granular change control for Tinkar assets. </entry>
                 </row>
                 <row>
                     <entry>Path</entry>
@@ -151,15 +151,15 @@
                         <entry>Terminology Layer of Knowledge Architecture</entry>
                         <entry>The Terminology Knowledge Layer provides structured sets of medical
                             terms and codes that define concepts of interest. This includes
-                            descriptions, dialects, language, and semantic hierarchy; SNOMED CT®,
-                            LOINC®, and RxNorm are part of this layer.</entry>
+                            descriptions, dialects, language, and semantic hierarchy; Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®),
+                            Logical Observation Identifiers, Names, and Codes (LOINC®), and RxNorm are part of this layer.</entry>
                     </row>
                     <row>
                         <entry>
                             <para>Solor</para>
                             <para> </para>
                         </entry>
-                        <entry>A project sponsored by the Department of Veterans Affairs (VA) and
+                        <entry>System of Logical Representation (SOLOR) is a project sponsored by the Department of Veterans Affairs (VA) and
                             Logica Health that represents and brings together terminology standards
                             in a single model that can encompass any customized content. Solor
                             allows informaticists and developers to convert user-supplied
@@ -167,24 +167,25 @@
                             Solor content.</entry>
                     </row>
                     <row>
-                        <entry>Komet (Knowledge Management Environment)</entry>
+                        <entry>Komet </entry>
                         <entry>
-                            <para>Komet is an example implementation of the Tinkar model, and shows
-                                how terminologies like SNOMED CT®, LOINC®, RxNorm shall be
-                                represented. Using the Komet browser users can view and search
-                                concepts, view concept details, and navigate hierarchies, among many
-                                other functions.</para>
+                            <para>Knowledge Management Environment (Komet) is an example
+                                implementation of the Tinkar model, and shows how terminologies like
+                                SNOMED CT®, LOINC®, RxNorm shall be represented. Using the Komet
+                                browser users can view and search concepts, view concept details,
+                                and navigate hierarchies, among many other functions.</para>
                         </entry>
                     </row>
                     <row>
-                        <entry>UUID (Universally Unique Identifier)</entry>
-                        <entry>A 128-bit number used to identify information in computer
-                            systems.</entry>
+                        <entry>UUID </entry>
+                        <entry>Universally Unique Identifier (UUID) is a 128-bit number used to
+                            identify information in computer systems.</entry>
                     </row>
                     <row>
-                        <entry>FHIR (Fast Healthcare Interoperability Resource)</entry>
-                        <entry>A standard describing data formats and elements and an application
-                            programming interface for exchanging electronic health records. </entry>
+                        <entry>FHIR </entry>
+                        <entry>Fast Healthcare Interoperability Resource (FHIR) is a standard
+                            describing data formats and elements and an application programming
+                            interface for exchanging electronic health records. </entry>
                     </row>
                     <row>
                         <entry>Capability Maturity Model</entry>
