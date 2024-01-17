@@ -243,13 +243,13 @@
                             <para>A user adds, modifies, or deactivates content in the terminology
                                 assets of the standard, including assets provided to client
                                 terminology systems as well as management data used only within the
-                                knowledge base (e.g., changing SNOMED CT<superscript>®</superscript>
-                                relationships, inserting a concept in between two existing
-                                concepts). <emphasis>Note that a standard can only be modified by
-                                    the standard owner</emphasis>. A client enterprise may add to or
-                                modify the content in an “overlay,” but those changes are part of
-                                the local enterprise assets. The client enterprise cannot actually
-                                modify the standard.</para>
+                                knowledge base (e.g., changing SNOMED CT® relationships, inserting a
+                                concept in between two existing concepts). <emphasis>Note that a
+                                    standard can only be modified by the standard owner</emphasis>.
+                                A client enterprise may add to or modify the content in an
+                                “overlay,” but those changes are part of the local enterprise
+                                assets. The client enterprise cannot actually modify the
+                                standard.</para>
                         </entry>
                     </row>
                 </tbody>
@@ -455,8 +455,8 @@
                         </listitem>
                         <listitem>
                             <para>A type used to represent whether a term is a synonym, fully
-                                qualified name (for example: SNOMED CT Fully Specified Name or LOINC
-                                Long Common Name), definition, etc.</para>
+                                qualified name (for example: SNOMED CT® Fully Specified Name or
+                                LOINC® Long Common Name), definition, etc.</para>
                         </listitem>
                     </orderedlist>
                 </listitem>
@@ -588,12 +588,13 @@
                         including:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
-                            <para>Logical composition constraints on concepts (e.g., the SNOMED
-                                    CT<superscript>®</superscript> concept model)</para>
+                            <para>Logical composition constraints on concepts (e.g., the SNOMED CT®
+                                concept model)</para>
                         </listitem>
                         <listitem>
                             <para>Syntactic compositional constraints on strings (e.g., MIME types,
-                                ISO languages, or UCUM units)</para>
+                                ISO languages, or Unified Code for Units of Measure (UCUM)
+                                units)</para>
                         </listitem>
                         <listitem>
                             <para>Pattern constraints, e.g., presence of exactly one name classified
@@ -645,12 +646,10 @@
                             <para>Perform general quality assurance</para>
                         </listitem>
                  </orderedlist>
-                <para>For example, constraints would be used to represent standard
-                    terminology artifacts, like the SNOMED CT<superscript>®</superscript> Machine
-                    Readable Concept Model. Additionally, constraints could be used to ensure that
-                    the terminologies represented within a Tinkar implementation are completely and
-                    consistently queried and displayed. 
-                </para>
+                <para>For example, constraints would be used to represent standard terminology
+                artifacts, like the SNOMED CT® Machine Readable Concept Model. Additionally,
+                constraints could be used to ensure that the terminologies represented within a
+                Tinkar implementation are completely and consistently queried and displayed. </para>
                 <para>These same constraints can be used to create new content within a Tinkar
                     implementation to specify the minimally viable data that would be required. For
                         example:</para>
@@ -673,9 +672,8 @@
                     implementation. For example:<orderedlist numeration="arabic"
                         continuation="continues">
                         <listitem>
-                            <para>SNOMED CT<superscript>®</superscript> FullySpecifiedName hierarchy
-                                tags are applied based on where a concept exists in a
-                                hierarchy</para>
+                            <para>SNOMED CT® FullySpecifiedName hierarchy tags are applied based on
+                            where a concept exists in a hierarchy</para>
                         </listitem>
                         <listitem>
                             <para>Relationships between concepts have domain (based on hierarchy)
@@ -692,10 +690,10 @@
                 an Allow List could also be represented as a Semantic to record concepts that are
                 allowed to not conform to a constraint. Constraints would be represented using
                 semantics as they are self describing and can support multiple different
-                representations for constraints (SNOMED CT<superscript>®</superscript> Expression
-                Constraint Language, Drools, etc.). Representing Constraints as a Semantic also
-                ensures STAMP. STAMP is versioned over time, capturing author information and
-                allowing for tests and progress over different modules and paths.</para>
+                representations for constraints (SNOMED CT® Expression Constraint Language, Drools,
+                etc.). Representing Constraints as a Semantic also ensures STAMP. STAMP is versioned
+                over time, capturing author information and allowing for tests and progress over
+                different modules and paths.</para>
                     <para>Implementing Constraints would depend upon how the Constraints are written
                 and formatted. For example, implementers could utilize a Rete algorithm through
                 something like Drools to implement Constraints.</para>
@@ -708,11 +706,9 @@
                 <listitem><para>Infrastructure concepts a.k.a Tinkar Model Concepts to support the core patterns listed above</para></listitem>
                 <listitem><para>Import rules to support import of standard terminologies, including:</para>
                     <orderedlist numeration='loweralpha'>
-                            <listitem><para>Equivalences to support semantic integration of terminologies (e.g., that a
-                                        LOINC<superscript>®</superscript> “system” instantiates the
-                                    same relationship concept as the SNOMED
-                                        CT<superscript>®</superscript> “inheres in”
-                                    attribute)</para></listitem>
+                            <listitem><para>Equivalences to support semantic integration of terminologies (e.g., that a LOINC® “system”
+                                    instantiates the same relationship concept as the SNOMED CT®
+                                    “inheres in” attribute)</para></listitem>
                             <listitem>
                                 <para>Exclusions to support removal of non-semantic properties from
                                     classification (e.g., RxNorm Translated CDs)</para>
