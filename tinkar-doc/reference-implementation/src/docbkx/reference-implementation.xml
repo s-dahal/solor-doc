@@ -6,11 +6,10 @@
     <title>Example Implementation of Tinkar</title>
     <para>This section includes user documentation for an example implementation of Tinkar, referred
         to as Komet (<link xlink:href="https://github.com/logicahealth/komet"/>), and how various
-        terminologies, such as SNOMED CT<superscript>®</superscript>,
-            LOINC<superscript>®</superscript>, RxNorm, and HL7 terminologies shall be reproducibly
-        represented using Tinkar. The Komet browser allows users to view the search Concepts, view
-        the Concept details (Semantics), and navigate hierarchies, as well as many other functions
-        that are outside the scope of this ballot.</para>
+        terminologies, such as SNOMED CT®, LOINC®, RxNorm, and HL7 terminologies shall be
+        reproducibly represented using Tinkar. The Komet browser allows users to view the search
+        Concepts, view the Concept details (Semantics), and navigate hierarchies, as well as many
+        other functions that are outside the scope of this ballot.</para>
     <para>Java Reference Classes for the Tinkar model can be accessed here:(<link
         xlink:href="https://github.com/HL7/tinkar-java"/>).  C# Reference Classes
         can be accessed here:(<link
@@ -91,14 +90,14 @@
     <section>
         <title>Pattern</title>
         <para>Komet currently does not contain functionality to view and edit Patterns.
-            Functionality is in progress that will potentially be available to demonstrate before
-            the May 2021 HL7 meeting. Some examples of common patterns that are built into the
-            tooling are:<itemizedlist>
+            Functionality is in progress, and it will be potentially available in the near future.
+            <?oxy_comment_start author="naylee" timestamp="20240117T092400-0600" comment="Given that it is January 2024, before this sentence, I deleted this sentence: &quot;Functionality is in progress that will potentially be available to demonstrate before the May 2021 HL7 meeting.&quot; We will need to update this screenshot and obtain the latest on the Komet functionality. "?>Some<?oxy_comment_end?>
+            examples of common patterns that are built into the tooling are:<itemizedlist>
                 <listitem>
                     <para>STR Pattern: This pattern is used to associate a String to a Component.
                         The type of association to a Component is represented by a Tinkar Model
-                        Concept. In the example below, the type of String is SNOMED
-                            CT<superscript>®</superscript> integer ID.</para>
+                        Concept. In the example below, the type of String is SNOMED CT® integer
+                        ID.</para>
                     <figure>
                         <title>STR Pattern</title>
                         <mediaobject>
@@ -136,12 +135,9 @@
     </section>
     <section>
       <title>Concept Detail</title>
-      <para>Below, the details for the LOINC<superscript>®</superscript> Concept Homocystine
-            [Mass/time] in 24 hour Urine is presented. Users can see the (1)
-                LOINC<superscript>®</superscript> ID, (2) data from the
-                LOINC<superscript>®</superscript> table, (3) Solor assigned Names, and (4)
-            relationships from the LOINC<superscript>®</superscript>- SNOMED
-                CT<superscript>®</superscript> Cooperation Project. <figure>
+      <para>Below, the details for the LOINC® Concept Homocystine [Mass/time] in 24 hour Urine is
+            presented. Users can see the (1) LOINC® ID, (2) data from the LOINC® table, (3) Solor
+            assigned Names, and (4) relationships from the LOINC®- SNOMED CT® Cooperation Project. <figure>
                 <title>Concept Details</title>
                 <mediaobject>
                     <imageobject>
@@ -154,9 +150,8 @@
                 </caption>
             </figure>
         </para>
-      <para>In the following image, the latest STAMP information for the
-                LOINC<superscript>®</superscript> Concept Homocystine [Mass/time] in 24 hour Urine
-            is presented. <figure>
+      <para>In the following image, the latest STAMP information for the LOINC® Concept Homocystine
+            [Mass/time] in 24 hour Urine is presented. <figure>
                 <title>STAMP</title>
                 <mediaobject>
                     <imageobject>
@@ -172,13 +167,10 @@
   </section>
     <section>
         <title>Navigation View</title>
-        <para>In this example, users can see the results of combining the
-                LOINC<superscript>®</superscript>- SNOMED CT<superscript>®</superscript> Cooperation
-            Project module with the latest SNOMED CT<superscript>®</superscript> and
-                LOINC<superscript>®</superscript> releases. Users can then visualize and navigate
-            the SNOMED CT<superscript>®</superscript> hierarchy and arrive at associated
-                LOINC<superscript>®</superscript> codes that would be reached by the Urine
-            homocystine measurement Concept. <figure>
+        <para>In this example, users can see the results of combining the LOINC®- SNOMED CT®
+            Cooperation Project module with the latest SNOMED CT® and LOINC® releases. Users can
+            then visualize and navigate the SNOMED CT® hierarchy and arrive at associated LOINC®
+            codes that would be reached by the Urine homocystine measurement Concept. <figure>
                 <title>Navigation View</title>
                 <mediaobject>
                     <imageobject>
@@ -229,46 +221,43 @@
         </para>
   </section>
     <section>
-        <title>SNOMED CT<superscript>®</superscript> Example</title>
+        <title>SNOMED CT® Example</title>
         <para>
             <figure>
-                <title>SNOMED CT<superscript>®</superscript> Concept</title>
+                <title>SNOMED CT® Concept</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="SNOMED_concept.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">SNOMED CT<superscript>®</superscript>
-                            Concept</emphasis></para>
+                    <para><emphasis role="italics">SNOMED CT® Concept</emphasis></para>
                 </caption>
             </figure>
         </para>
         <para>
             <figure>
-                <title>SNOMED CT<superscript>®</superscript> Descriptions</title>
+                <title>SNOMED CT® Descriptions</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="SNOMED_desc.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">SNOMED CT<superscript>®</superscript>
-                            Descriptions</emphasis></para>
+                    <para><emphasis role="italics">SNOMED CT® Descriptions</emphasis></para>
                 </caption>
             </figure>
         </para>
         <para>
             <figure>
-                <title>SNOMED CT<superscript>®</superscript> Relationships</title>
+                <title>SNOMED CT® Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="SNOMED_rels.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">SNOMED CT<superscript>®</superscript>
-                            Relationships</emphasis></para>
+                    <para><emphasis role="italics">SNOMED CT® Relationships</emphasis></para>
                 </caption>
             </figure>
         </para>
@@ -277,39 +266,35 @@
         <title>LOINC<superscript>®</superscript> Example</title>
         <para>
             <figure>
-                <title>LOINC<superscript>®</superscript> Concept</title>
+                <title>LOINC® Concept</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_concept.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC<superscript>®</superscript>
-                            Concept</emphasis></para>
+                    <para><emphasis role="italics">LOINC® Concept</emphasis></para>
                 </caption>
             </figure>
         </para>
         <para>
             <figure>
-                <title>LOINC<superscript>®</superscript> Descriptions</title>
+                <title>LOINC® Descriptions</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_desc.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC<superscript>®</superscript>
-                            Descriptions</emphasis></para>
+                    <para><emphasis role="italics">LOINC® Descriptions</emphasis></para>
                 </caption>
             </figure>
         </para>
-        <para>The figure below shows the LOINC<superscript>®</superscript> inferred relationships
-            that are derived from the latest version of the SNOMED CT<superscript>®</superscript>
-                LOINC<superscript>®</superscript> Integration files. The parents and attributes
-            represented in the Sufficient and Necessary sets are represented using SNOMED
-                CT<superscript>®</superscript> concepts based on mappings from the LOINC Part
-            concepts to SNOMED CT<superscript>®</superscript> concepts.<figure>
-                <title>LOINC<superscript>®</superscript> Inferred Relationships</title>
+        <para>The figure below shows the LOINC® inferred relationships that are derived from the
+            latest version of the SNOMED CT® LOINC® Integration files. The parents and attributes
+            represented in the Sufficient and Necessary sets are represented using SNOMED CT®
+            concepts based on mappings from the LOINC® Part concepts to SNOMED CT® concepts.<figure>
+                <title>LOINC® Inferred Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels1.png" scalefit="1" width="100%"
@@ -317,17 +302,13 @@
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC<superscript>®</superscript> Inferred
-                            Relationships</emphasis></para>
+                    <para><emphasis role="italics">LOINC® Inferred Relationships</emphasis></para>
                 </caption>
-            </figure>The next figure shows the LOINC<superscript>®</superscript> stated
-            relationships that are contained within the latest version of the SNOMED
-                CT<superscript>®</superscript> LOINC<superscript>®</superscript> Integration files.
-            The parents and attributes represented in the Sufficient sets are represented using
-            SNOMED CT<superscript>®</superscript> concepts based on mappings from the
-                LOINC<superscript>®</superscript> Part concepts to SNOMED
-                CT<superscript>®</superscript> concepts.<figure>
-                <title>LOINC<superscript>®</superscript> Stated Relationships</title>
+            </figure>The next figure shows the LOINC® stated relationships that are contained within
+            the latest version of the SNOMED CT® LOINC® Integration files. The parents and
+            attributes represented in the Sufficient sets are represented using SNOMED CT® concepts
+            based on mappings from the LOINC® Part concepts to SNOMED CT® concepts.<figure>
+                <title>LOINC® Stated Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels2.png" scalefit="1" width="100%"
@@ -335,8 +316,7 @@
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC<superscript>®</superscript> Stated
-                            Relationships</emphasis></para>
+                    <para><emphasis role="italics">LOINC® Stated Relationships</emphasis></para>
                 </caption>
             </figure>
         </para>
@@ -370,9 +350,8 @@
             </figure>
         </para>
         <para>The figure below shows the Inferred and Stated Relationships based on a test version
-            of an OWL file of RxNorm Stated Relationships that are based on the new SNOMED
-                CT<superscript>®</superscript> drug model. The relationships are represented using
-            SNOMED CT<superscript>®</superscript>concepts.<figure>
+            of an OWL file of RxNorm Stated Relationships that are based on the new SNOMED CT® drug
+            model. The relationships are represented using SNOMED CT® concepts.<figure>
                 <title>RxNorm Relationships</title>
                 <mediaobject>
                     <imageobject>
@@ -390,12 +369,11 @@
         <title>Equivalences between Modules</title>
         <para>Komet includes the capability to use a description logic classifier to create inferred
             views and detect equivalences and other errors. The following image shows the results of
-            the classifier after merging the January 2021 version of the SNOMED
-                CT<superscript>®</superscript> International release with the September 2020 version
-            of the SNOMED CT<superscript>®</superscript> U.S. Edition and a Solor Extension to
-            SNOMED CT. The classifier has detected that there is an equivalence between the
-            Concepts: “Ankylosis of bilateral knee joints (disorder)” and “Ankylosis of both knee
-            joints (disorder).”<figure>
+            the classifier after merging the January 2021 version of the SNOMED CT® International
+            release with the September 2020 version of the SNOMED CT® U.S. Edition and a Solor
+            Extension to SNOMED CT®. The classifier has detected that there is an equivalence
+            between the Concepts: “Ankylosis of bilateral knee joints (disorder)” and “Ankylosis of
+            both knee joints (disorder).”<figure>
                 <title>Equivalences Detected by Classifier</title>
                 <mediaobject>
                     <imageobject>
@@ -423,8 +401,8 @@
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">SNOMED CT<superscript>®</superscript>
-                            Equivalences between Modules</emphasis></para>
+                    <para><emphasis role="italics">SNOMED CT® Equivalences between
+                            Modules</emphasis></para>
                 </caption>
             </figure>
         </para>
