@@ -33,10 +33,10 @@
     </section>
     <section>
         <title>Tinkar interfacing with FHIR</title>
-        <para>Tinkar data can be used to create FHIR compliant data. Tinkar data can be used to
-            generate FHIR data. Only a subset of the Tinkar data model would be converted to FHIR.
-            Roundtripping of data from Tinkar to FHIR and back is likely to result in Tinkar data
-            loss.</para>
+        <para>Tinkar data can be used to create Fast Healthcare Interoperability Resources (FHIR)
+            compliant data. Tinkar data can be used to generate FHIR data. Only a subset of the
+            Tinkar data model would be converted to FHIR. Roundtripping of data between Tinkar and
+            FHIR back and forth is likely to result in Tinkar data loss.</para>
         <para>Tinkar data items lost in FHIR conversion:</para>
         <orderedlist>
             <listitem>
@@ -58,8 +58,8 @@
                 to support clinical system operations. A system may request $expand on a ValueSet,
                 for instance, to populate a drop-down list in a user interface, or $validate-code to
                 confirm content in an interface conforming to a profile; a request for $subsumes on
-                a CodeSystem or $translate on a ConceptMap can be used to translate codes when
-                transforming native records to a standard format, and so forth.</para>
+                a CodeSystem or on a ConceptMap can be used to translate codes when transforming
+                native records to a standard format, and so forth.</para>
             <para>FHIR queries against the FHIR terminology server could use Tinkar originated
                 terminology data as well as other non-Tinkar generated terminology to fulfill the
                 requests.</para>
@@ -123,15 +123,15 @@
         <orderedlist>
             <listitem>
                 <para>Use of tools like KOMET to import, export, maintain and validate HL7
-                    terminology data.</para>
+                    terminology data</para>
             </listitem>
             <listitem>
                 <para>Use of Tinkar serialization format for serialization and distribution
-                    format.</para>
+                    format</para>
             </listitem>
             <listitem>
                 <para>Use of Tinkar and third-party tooling to convert Tinkar serialized data to
-                    FHIR records and import to FHIR terminology servers.</para>
+                    FHIR records and import to FHIR terminology servers</para>
             </listitem>
         </orderedlist>
     </section>
