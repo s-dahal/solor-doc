@@ -32,7 +32,7 @@
         </orderedlist>
     </section>
     <section>
-        <title>Tinkar interfacing with FHIR</title>
+        <title>Tinkar interfacing with Fast Healthcare Interoperability Resource (FHIR)</title>
         <para>Tinkar data can be used to create FHIR compliant data. Tinkar data can be used to
             generate FHIR data. Only a subset of the Tinkar data model would be converted to FHIR.
             Roundtripping of data between Tinkar and FHIR back and forth is likely to result in

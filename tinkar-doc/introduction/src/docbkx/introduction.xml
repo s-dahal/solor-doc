@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-  <title>Tinkar Overview</title>
+  <title>Terminology Knowledge Architecture (Tinkar) Overview</title>
   <para>Over the past decades, biomedical terminologies have increasingly been recognized as key
     resources for knowledge management, data integration, and decision support [1]. Acceleration and
     development of Electronic Health Record (EHR) systems has precipitated the emergence of
@@ -113,7 +113,7 @@
       data enables healthcare systems across the enterprise to conduct robust and meaningful data
       analysis and increase overall interoperability, which ultimately enhances quality of care
       across all medical facilities. </para>
-         <figure xml:id="Tinkar1,1">
+         <figure xml:id="Tinkar11">
         <title>Separation of Concerns: Knowledge Architecture</title>
       <mediaobject>
         <imageobject>
@@ -121,12 +121,11 @@
         </imageobject>
       </mediaobject>
     </figure>
-<caption>
+
       <para><emphasis>Separation of concerns is an architectural design principle, whereby a system
           is divided into distinct sections, such that each section can address separate concerns.
           In this case, each architectural layer may build upon artifacts from lower
           layers.</emphasis></para>
-    </caption>
   </section>
   <section>
     <title>The Problem Tinkar Addresses </title>
@@ -196,8 +195,8 @@
         wrong: [5-8]</emphasis></para>
     <itemizedlist>
       <listitem>
-        <emphasis role="bold">Computer error may have led to incorrect prescribing of statins to
-          thousands of patients.</emphasis>
+        <para><emphasis role="bold">Computer error may have led to incorrect prescribing of statins
+            to thousands of patients.</emphasis></para>
         <itemizedlist>
           <listitem>
             <para>Thousands of patients in England may have been incorrectly prescribed or taken off
@@ -210,8 +209,8 @@
         </itemizedlist>
       </listitem>
       <listitem>
-        <emphasis role="bold">Alert for monitoring thyroid function when taking Amiodarone stopped
-          working.</emphasis>
+        <para>><emphasis role="bold">Alert for monitoring thyroid function when taking Amiodarone stopped
+          working.</emphasis></para>
         <itemizedlist>
           <listitem>
             <para>Amiodarone is associated with several side effects, including thyroid dysfunction,
@@ -225,8 +224,8 @@
         </itemizedlist>
       </listitem>
       <listitem>
-        <emphasis role="bold">62% of clinical decision support (CDS) malfunctions were attributable
-          to changes in underlying codes or data fields.</emphasis>
+        <para><emphasis role="bold">62% of clinical decision support (CDS) malfunctions were attributable
+          to changes in underlying codes or data fields.</emphasis></para>
         <itemizedlist>
           <listitem>
             <para>Change is a constant feature of providing healthcare.</para>
