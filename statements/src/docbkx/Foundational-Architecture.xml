@@ -138,7 +138,8 @@
                 <para>Today, related components from different organizations do not share their work
                     prior to a release. The result of this lack of sharing is that dependent
                     components are always out of date with the latest release of the underlying
-                    standard. For example, how can you keep a mapping of SNOMED CT® to ICD-10-CM
+                    standard. For example, how can you keep a mapping of SNOMED CT® to International
+                    Classification of Diseases Tenth Revision Clinical Modification (ICD-10-CM)
                     components up to date, when it takes 6 months after the release of SNOMED CT® to
                     update and quality assure the map? As an implementer, does that mean you should
                     wait 6 months for the map to be updated before deploying the latest SNOMED CT®

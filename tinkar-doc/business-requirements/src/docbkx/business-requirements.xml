@@ -92,10 +92,6 @@
                 </tbody>
             </tgroup>
         </informaltable>
-        <para> </para>
-        <para> </para>
-        <para> </para>
-        <para> </para>
         <para><emphasis role="italic"> Clinical Use Cases</emphasis></para>
         <para>The key capability for a clinician should be <emphasis role="underline"
                 linkend="requirement_8">to record and review data quickly and accurately
@@ -187,15 +183,16 @@
                 the enterprise terminologies (Requirement 17)</emphasis> to the client clinical
             systems. The standard terminology publisher has the same needs around modification and
             publishing as the enterprise, and some standards import other standards as well (e.g.,
-            MedRT, which publishes relationships among other standards). </para>
-        <para>We distinguish between the Enterprise Terminologist and the Standards Development
-            Organization (SDO) Terminologist. The Enterprise Terminologist is responsible for
-            ensuring that the terminology resources provided to clinical systems are current and
-            accurate. This involves managing the consumption of external terminologies as well as
-            maintenance of assets defined within the enterprise. The SDO Terminologist is
-            responsible for ensuring that the terminology resources provided to other terminology
-            systems are current and accurate. This may involve managing the consumption of external
-            terminologies as well as maintenance of assets defined within the SDO.</para>
+            Medication Reference Terminology [MedRT], which publishes relationships among other
+            standards). </para>
+        <para>We distinguish between the Enterprise Terminologist and the SDO Terminologist. The
+            Enterprise Terminologist is responsible for ensuring that the terminology resources
+            provided to clinical systems are current and accurate. This involves managing the
+            consumption of external terminologies as well as maintenance of assets defined within
+            the enterprise. The SDO Terminologist is responsible for ensuring that the terminology
+            resources provided to other terminology systems are current and accurate. This may
+            involve managing the consumption of external terminologies as well as maintenance of
+            assets defined within the SDO.</para>
         <informaltable>
             <tgroup cols="1">
                 <colspec colnum="1" colname="col1"/>
@@ -330,10 +327,7 @@
                     within certain terminologies is a difficult subject that is out of scope for
                     this document, but having support for the ability to create modules, recognize
                     redundancy, and merge or retire concepts are important requirements that must be
-                    supported. <link
-                        linkend="bib13">[12]</link> <link
-                            linkend="bib14">[13]</link> <link
-                                linkend="bib15">[14]</link>  </para>
+                    supported. [12-14] </para>
             </listitem>
             <listitem>
                 <para>“Time” supports the ability to apply CDS rules as they would have looked in
@@ -356,18 +350,19 @@
             “brittle” specifications determine in advance where information belongs: a database may
             use column names to suggest what belongs in a column, but there is no way to determine
             whether the name is a good one, or whether an instance value meets the criterion implied
-            by the name. But flexible specifications support data definition. XML (a subset of SGML)
-            provides a way to specify types of data and structural (not semantic) relationships. RDF
-            goes one step further by making the relationship between an element and its containing
-            class an explicit part of every triplet. If this relationship is specified in a
-            controlled terminology, then assertions can be tested for validity. For example, if an
-            RDF Schema Specification (RDFS) asserts that the finding site of a lesion must be an
-            anatomical feature, then assertions about actual lesions can be tested for valid finding
-            sites. Furthermore, this logic specifies a “range” in the same syntactic structure as
-            the instance assertion: changes to the knowledge base do not affect the syntactical
-            representation of the knowledge. Systems that adopt this approach will require effort to
-            take advantage of new features of terminologies, without having to rebuild their
-            infrastructure when changes are made.</para>
+            by the name. But flexible specifications support data definition. Extensible Markup
+            Language (XML) (a subset of Standard Generalized Markup Language [SGML]) provides a way
+            to specify types of data and structural (not semantic) relationships. Resource
+            Description Framework (RDF) goes one step further by making the relationship between an
+            element and its containing class an explicit part of every triplet. If this relationship
+            is specified in a controlled terminology, then assertions can be tested for validity.
+            For example, if an RDF Schema Specification (RDFS) asserts that the finding site of a
+            lesion must be an anatomical feature, then assertions about actual lesions can be tested
+            for valid finding sites. Furthermore, this logic specifies a “range” in the same
+            syntactic structure as the instance assertion: changes to the knowledge base do not
+            affect the syntactical representation of the knowledge. Systems that adopt this approach
+            will require effort to take advantage of new features of terminologies, without having
+            to rebuild their infrastructure when changes are made.</para>
         <para>Having change data in discrete tagged change sets will allow the software to hide most
             of the complexity of version management from the human managers, allowing them to focus
             on significant decisions.</para>
@@ -376,8 +371,8 @@
         <title>Configuration Requirements</title>
         <para>A granular self-describing model will support any statement that can be made using
             concepts in a subject-predicate-object structure, and its compositional aspect permits
-            compound predicates. It is difficult to imagine a proposition that cannot be supported.
-            This power, however, means that there are multiple ways to support any specific kind of
+            compound predicates. It is difficult to imagine a proposition that cannot be supported,
+            however, this means that there are multiple ways to support any specific kind of
             statement that a terminology knowledge base must support. This section addresses best
             practices for these cases.</para>
         <section>
@@ -578,8 +573,9 @@
                             <para>Relationships for subsumption assertions</para>
                         </listitem>
                         <listitem>
-                            <para>Relationships for other functions (e.g., CDC Reportable Condition
-                                Mapping Table)</para>
+                            <para>Relationships for other functions (e.g., U.S. Center for Disease
+                                Control and Prevention (CDC) Reportable Condition Mapping
+                                Table)</para>
                         </listitem>
                     </orderedlist>
                 </listitem>
@@ -592,9 +588,9 @@
                                 concept model)</para>
                         </listitem>
                         <listitem>
-                            <para>Syntactic compositional constraints on strings (e.g., MIME types,
-                                ISO languages, or Unified Code for Units of Measure (UCUM)
-                                units)</para>
+                            <para>Syntactic compositional constraints on strings (e.g., Multipurpose
+                                Internet Mail Extension [MIME] types, International Organization for
+                                Standardization [ISO] languages, or UCUM units)</para>
                         </listitem>
                         <listitem>
                             <para>Pattern constraints, e.g., presence of exactly one name classified
@@ -672,8 +668,8 @@
                     implementation. For example:<orderedlist numeration="arabic"
                         continuation="continues">
                         <listitem>
-                            <para>SNOMED CT® FullySpecifiedName hierarchy tags are applied based on
-                            where a concept exists in a hierarchy</para>
+                            <para>SNOMED CT® Fully Specified Name hierarchy tags are applied based
+                            on where a concept exists in a hierarchy</para>
                         </listitem>
                         <listitem>
                             <para>Relationships between concepts have domain (based on hierarchy)
@@ -716,11 +712,8 @@
                         </orderedlist>
                 </listitem>
                 </orderedlist></para>
-            <para>Definitions for Tinkar Model Concepts are located in <link
-                    linkend="tinkar_model_concept_appenidix">Appendix C.</link></para>
         </section>
     </section>
-    <?hard-linebreak?>
     <section role="landscape">
         <title>List of Requirements</title>
         <informaltable>
