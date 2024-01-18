@@ -160,8 +160,8 @@
         <para>The General Data Protection Regulation (GDPR) is an EU privacy and security law that
             was put into effect May 25, 2018. This EU law imposes obligations onto organizations
             anywhere in the world if they target or collect data related to EU citizens or
-            residents. The law outlines seven protection and accountability principles, listed
-            below:</para>
+            residents. The law outlines seven protection and accountability principles, listed below
+            [4]:</para>
         <para>
             <orderedlist>
                 <listitem>
@@ -192,15 +192,16 @@
             transparency in data handling. According to GDPR law, health data is defined as personal
             data related to the physical or mental health of a natural person, including the
             provision of health care services, which reveal information about their health. This
-            health data also includes genetic and biometric data.</para>
+            health data also includes genetic and biometric data. [5]</para>
         <para>Healthcare organizations must adapt to these strict new regulations, and are charged
             with managing patient consent, data portability, and the consequences of non-compliance,
             which could be fines up to €22M+. For U.S. healthcare organization this means complying
             with GDPR as well as Health Insurance Portability and Accountability Act (HIPPA), which
-            is another level of consent and information the provider has to ensure the patient
+            is a separate level of consent and information the provider has to ensure the patient
             receives. Additionally, GDPR places the burden of proof of consent on the provider, and
-            they must implement an audit trail for electronic consents. </para>
-        <para>test test test</para>
+            they must implement an audit trail for electronic consents. This example demonstrates
+            how regulatory changes are shaping the future of data management in healthcare and
+            aligns with the need for clarity in data management guidelines.</para>
         <para><emphasis role="bold">Open-Source Licensing (OSL) </emphasis></para>
         <para>The implementation of open-source software is managed in-hand through open-source
             licensing (OSL). The license of the software sets out the guidelines on the usage and
@@ -243,7 +244,7 @@
             private type of licensing. In software, no source code is available. </para>
         <para>Open-source licensing is seen as a method to resolve the dispute between unauthorized
             copying and distribution of content as well as the copyright laws that have been created
-            to protect individual and businesses of their own work. [4] Instead of users finding
+            to protect individual and businesses of their own work. [6] Instead of users finding
             ways to circumvent barriers of access to content, the license serves as a pathway on how
             to freely access and modify software to the needs of users while protecting the
             proprietary interests of the originator. In this context, discussion surrounding the
@@ -263,7 +264,7 @@
             that the quality of software and source code is not inherently affected by the structure
             of the license. A balance, however, is required ensuring that the licenses do not cause
             unintended consequences surrounding the proper development and evolution of the code by
-            the user. [5] </para>
+            the user. [7] </para>
     </section>
     <section>
         <title>Examining License Agreements in Action</title>
@@ -294,7 +295,7 @@
             providers navigate the intentional vague complexity of licenses when attempting to solve
             interoperability? Instead, they experience restrictions and lock-in from standards that
             act as a hinderance to solving patient problems. Two related but distinguishable
-            implication of licenses are [6]: </para>
+            implication of licenses are [8]: </para>
         <para>1. The explicit terms and rights maintained on content derived from software, and </para>
         <para>2. The incompatibility of licensing in competing and related standards. </para>
         <para><emphasis role="bold">The current siloed approach of licensing models prevents
@@ -372,7 +373,7 @@
             prevalence of the Android OS, or a modified version through the AOSP, throughout
             healthcare highlights the impact that licensing has on the development, adoption, and
             implementation of code, software, and products in the healthcare industry and the
-            importance of having a well-curated licensing agreement.</para>
+            importance of having a well-curated licensing agreement. [9-10]</para>
         <para><emphasis>Case-Study: LOINC® and SNOMED International Licensing
             Agreements</emphasis></para>
         <para>Logical Observation Identifiers Names and Code® (LOINC®) and Systemized Nomenclature
@@ -380,7 +381,7 @@
             standards in the U.S. for clinical terminology. LOINC® is overseen by the Regenstrief
             Institute and utilizes a global team for maintaining, developing, and updating guidance
             on its terminology with the vision of promoting open terminology standards across every
-            clinical information system [7]. LOINC® advocates for open terminology standards but
+            clinical information system [11]. LOINC® advocates for open terminology standards but
             does not issue an open-source license. Instead, all users are required to hold a license
             to utilize LOINC®, with some licenses requiring a fee to implement and utilize the full
             functionality of LOINC®. Similarly, SNOMED-CT® is overseen by SNOMED International with
@@ -406,7 +407,7 @@
             under their SNOMED CT® Affiliate license and must go through a feedback process where
             users can petition for added codes in a future release cycle. This is to avoid confusion
             and ambiguity of SNOMED International codes and prevent against inconsistencies between
-            systems. [8] As a result there will be many forms of similarly derived codes in a
+            systems. [12] As a result there will be many forms of similarly derived codes in a
             localized format. </para>
         <para>This waiting cycle creates gaps that directly impact the quality and interoperability
             of data. While organizations petition to have new codes created, they must continue to
@@ -446,7 +447,7 @@
             code, disallowed under the existing licensing structure? Some licenses consider any work
             to be referential to be a “derivative” without fully specifying the scope of the
             reference. This is seen, for example, in the form of the GNU's Not Unix (GNU) General
-            Public License (GPL) and in references to GPL licensed libraries. [9] The navigation of
+            Public License (GPL) and in references to GPL licensed libraries. [13] The navigation of
             differing licenses and determining the varying responsibilities imposed by them can be a
             costly, time-consuming burden that often acts as a barrier for meaningful progress. It
             can quickly become a convoluted process that inhibits success of implementation,
@@ -657,19 +658,29 @@
             Informatics Association, 29(5), 753-760. doi:https://doi.org/10.1093/jamia/ocab289 </para>
         <para>3. Free Software Foundation. (n.d.). What is Free Software? Retrieved from GNU
             Operating System: https://www.gnu.org/philosophy/free-sw.en.html#copyleft </para>
-        <para>4. Wilbanks, J. (2008). Public domain, copyright licenses and the freedom to integrate
+        <para>4. Wolford B. What is GDPR, the EU’s new data protection law? [Internet]. GDPR.eu.
+            2018. Available from:
+            https://gdpr.eu/what-is-gdpr/#:~:text=The%20General%20Data%20Protection%20Regulation%20%28GDPR%29%20is%20the</para>
+        <para>5. GDPR and healthcare: Understanding health data and consent [Internet].
+            www.pega.com. 2018. Available from:
+            https://www.pega.com/insights/articles/gdpr-and-healthcare-understanding-health-data-and-consent</para>
+        <para>6. Wilbanks, J. (2008). Public domain, copyright licenses and the freedom to integrate
             science. Journal of Science Communication, 7(2). doi:https://doi.org/10.22323/2.07020304 </para>
-        <para>5. Reynolds, C. J., and Wyatt, J. C. (2011, February). Open Source, Open Standards,
+        <para>7. Reynolds, C. J., and Wyatt, J. C. (2011, February). Open Source, Open Standards,
             and Health Care Information Systems. Journal of Medical Internet Research.
             doi:https://doi.org/10.2196/jmir.1521 </para>
-        <para>6. Hosking, R., and Gahegan, M. (2013). The Effects of Licensing on Open Data:
+        <para>8. Hosking, R., and Gahegan, M. (2013). The Effects of Licensing on Open Data:
             Computing a Measure of Health for Our Scholarly Record. International Semantic Web
             Conference, 432-439. doi:https://doi.org/10.1007/978-3-642-41338-4_28 </para>
-        <para>7. Mission, Vision, and Principles for Open Terminology Development. (n.d.). Retrieved
-            from LOINC®: https://loinc.org/principles/ </para>
-        <para>8. SNOMED CT Affiliate License Agreement. (n.d.). Retrieved from SNOMED CT®:
-            https://www.snomed.org/_files/ugd/900274_689013e9e0c74d23892abe9caee02612.pdf </para>
-        <para>9. Scheibner, J. (2017). What price freedom (of software)? A guide for Australian
+        <para>9. Wikiwand - Android (operating system) [Internet]. Wikiwand. [cited 2024 Jan 17].
+            Available from: https://www.wikiwand.com/en/Android_(operating_system)</para>
+        <para>10. Licenses [Internet]. Android Open Source Project. Available from:
+            https://source.android.com/docs/setup/about/licenses</para>
+        <para>11. Mission, Vision, and Principles for Open Terminology Development. (n.d.).
+            Retrieved from LOINC®: https://loinc.org/principles/ </para>
+        <para>12. SNOMED CT Affiliate License Agreement. (n.d.). Retrieved from SNOMED CT®:
+            https://www.snomed.org/_files/ugd/900274_689013e9e0c74d23892abe9caee02612.pdf</para>
+        <para>13. Scheibner, J. (2017). What price freedom (of software)? A guide for Australian
             legal practitioners on open source licensing. Retrieved from Australian Lawyers
             Alliance: http://classic.austlii.edu.au/au/journals/PrecedentAULA/2017/23.html#fnB3 </para>
     </section>
