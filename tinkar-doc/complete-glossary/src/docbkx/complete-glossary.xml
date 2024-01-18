@@ -4,7 +4,7 @@
     <title>Glossary</title>
     <informaltable>
         <tgroup cols="2">
-            <colspec colnum="1" colname="col1" colwidth="1*"/>
+            <colspec colnum="1" colname="col1" colwidth="1*" align="left"/>
             <colspec colnum="2" colname="col2" colwidth="1.56*"/>
             <tbody>
                 <row>
@@ -111,7 +111,7 @@
     <para>
         <informaltable>
             <tgroup cols="2">
-                <colspec colnum="1" colname="col1" colwidth="1*"/>
+                <colspec colnum="1" colname="col1" colwidth="1*" align="left"/>
                 <colspec colnum="2" colname="col2" colwidth="1.56*"/>
                 <tbody>
                     <row>
