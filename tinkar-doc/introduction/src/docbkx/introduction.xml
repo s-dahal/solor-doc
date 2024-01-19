@@ -1,25 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<<<<<<< HEAD
   <title>Tinkar Overview *test*</title>
+=======
+  <title>Terminology Knowledge Architecture (Tinkar) Overview</title>
+>>>>>>> 3fc1f79387ce2d05712cb9dd4dfb9aeb7b7452ae
   <para>Over the past decades, biomedical terminologies have increasingly been recognized as key
-    resources for knowledge management, data integration, and decision support <link linkend="bib1"
-      >[1]</link>. Acceleration and development of Electronic Health Record (EHR) systems has
-    precipitated the emergence of “standard terminologies” and their widespread adoption in the
-    clinical community. These include Systematized Nomenclature of Medicine Clinical Terms (SNOMED
-    CT®), the Logical Observation Identifiers, Names, and Codes (LOINC®) and RxNorm. The
-    availability of these clinical terminologies through the terminology services of FHIR is
-    facilitating their usage in support of interoperability in healthcare. </para>
+    resources for knowledge management, data integration, and decision support [1]. Acceleration and
+    development of Electronic Health Record (EHR) systems has precipitated the emergence of
+    “standard terminologies” and their widespread adoption in the clinical community. These include
+    Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®), the Logical Observation
+    Identifiers, Names, and Codes (LOINC®) and RxNorm. The availability of these clinical
+    terminologies through the terminology services of Fast Healthcare Interoperability Resource
+    (FHIR) is facilitating their usage in support of interoperability in healthcare. </para>
   <para>Interoperability requires standardized semantics based on reference terminology provided by
     standards development organizations, professional organizations, or government agencies. These
-    organizations publish their content with the intention of licensing it to health IT vendors,
-    providers, and research organizations. In the U.S., the core clinical reference terminology is
-    based on SNOMED CT®, LOINC®, and RxNorm. Healthcare organizations must adopt and integrate
-    subsets or modules of various reference terminology and manage references, dependencies,
-    versions, and releases. It is important for the integrity of medical records that the change
-    history of concepts and value sets can be managed and tracked to allow the exchange of either
-    current or retrospective medical records. Therefore, enterprise terminology requires integrated
-    terminology using a common representation and management.</para>
+    organizations publish their content with the intention of licensing it to health information
+    technology (IT) vendors, providers, and research organizations. In the U.S., the core clinical
+    reference terminology is based on SNOMED CT®, LOINC®, and RxNorm. Healthcare organizations must
+    adopt and integrate subsets or modules of various reference terminology and manage references,
+    dependencies, versions, and releases. It is important for the integrity of medical records that
+    the change history of concepts and value sets can be managed and tracked to allow the exchange
+    of either current or retrospective medical records. Therefore, enterprise terminology requires
+    integrated terminology using a common representation and management.</para>
   <para>Despite the need to use standard terminologies in a highly integrated way, there is no
     standard representation across SNOMED CT®, LOINC®, RxNorm, etc. Some partnerships have been
     created among development teams to facilitate interoperability and minimize duplication of
@@ -27,10 +31,9 @@
     these terminologies closer together. However, while this evolution leads to greater
     compatibility and interoperability, integration of SNOMED CT®, LOINC®, and RxNorm is non-trivial
     as these terminologies use different formalisms and tools for their representation. Various
-    terminologies have different semantics, models, release cycles, and versioning mechanisms <link
-      linkend="bib1">[1]</link>. While there is recognition that terminologies are not standardized
-    at the exchange level, there is no consensus about harmonized next steps to solve the
-    challenges. </para>
+    terminologies have different semantics, models, release cycles, and versioning mechanisms [1].
+    While there is recognition that terminologies are not standardized at the exchange level, there
+    is no consensus about harmonized next steps to solve the challenges. </para>
   <para>This document focuses on the need for – and logical specification of – a Terminology
     Knowledge Architecture (Tinkar). The Tinkar Reference Model is a logical model that describes
     the standardized model for terminology and change management.    Tinkar provides an architecture
@@ -45,7 +48,7 @@
     to the next. An implementation of the Tinkar Specification can provide a single representation
     for all terminologies required in the U.S. and other countries, while also providing a better
     foundation for maturing change management models as described by the Capability Maturity Model
-      <link linkend="bib2">[2]</link>:</para>
+    [2]:</para>
   <para>
     <orderedlist>
       <listitem>
@@ -73,12 +76,12 @@
     </orderedlist>
   </para>
   <para>Tinkar aims to adhere to the following statement from a publication about developments in
-    clinical terminologies in the 2018 Yearbook of Medical Informatics <link linkend="bib1"
-      >[1]</link>: “The benefits of the integrated terminologies in terms of homogenous semantics
-    and inherent interoperability should, however, outweigh the complexity added to the system.”
-    This specification provides the foundation of a knowledge architecture that is intended to
-    integrate reference terminology from distributors (e.g., SNOMED CT®, LOINC®, RxNorm) with local
-    concepts to support interoperable information semantics across the enterprise. </para>
+    clinical terminologies in the 2018 Yearbook of Medical Informatics [1]: “The benefits of the
+    integrated terminologies in terms of homogenous semantics and inherent interoperability should,
+    however, outweigh the complexity added to the system.” This specification provides the
+    foundation of a knowledge architecture that is intended to integrate reference terminology from
+    distributors (e.g., SNOMED CT®, LOINC®, RxNorm) with local concepts to support interoperable
+    information semantics across the enterprise. </para>
   <section>
     <title>Motivation: Why Tinkar?</title>
     <para>Information systems that are used across the healthcare enterprise record and manage
@@ -92,7 +95,8 @@
     <itemizedlist>
       <listitem>
         <para>Representation of medications: RxNorm codes overlap with CVX codes. Investigational
-          vaccines from the FDA are not represented in RxNorm, CVX, or SNOMED CT®.</para>
+          vaccines from the U.S. Food and Drug Administration (FDA) are not represented in RxNorm,
+          CVX, or SNOMED CT®.</para>
       </listitem>
       <listitem>
         <para>Representation of COVID-19 result codes are inconsistent and are not equivalent (e.g.,
@@ -105,37 +109,27 @@
         Care</emphasis>, highlighted the unintended consequences of health IT-induced harm that can
       result in serious injury and death due to dosing errors, failure to detect serious illnesses,
       and delayed treatment due to poor human-computer interactions, confusing clinical terminology,
-      or unreliable data quality <link linkend="bib3">[3]</link>. Despite the widespread
-      understanding of the importance of the quality of clinical data, there is currently a lack of
-      integration and management of clinical terminologies across the healthcare enterprise. </para>
+      or unreliable data quality [3]. Despite the widespread understanding of the importance of the
+      quality of clinical data, there is currently a lack of integration and management of clinical
+      terminologies across the healthcare enterprise. </para>
     <para>Tinkar intends to support integration of clinical terminology and local concepts to
       support increased data quality for interoperable clinical information. High-quality clinical
       data enables healthcare systems across the enterprise to conduct robust and meaningful data
       analysis and increase overall interoperability, which ultimately enhances quality of care
       across all medical facilities. </para>
-      <!-- <figure> -->
-      <!-- <title>Separation of Concerns: Knowledge Architecture</title> -->
-      <informalfigure>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="Tinkar_1,1.png" scale="40" align="center"/>
-          </imageobject>
-        </mediaobject>
-      </informalfigure>
-<!--       <caption>
-        <para><emphasis>Separation of concerns is an architectural design principle, whereby a
-            system is divided into distinct sections, such that each section can address separate
-            concerns. In this case, each architectural layer may build upon artifacts from lower
-            layers.</emphasis></para>
-      </caption> -->
-    <!-- </figure> -->
-      <!-- <informalfigure> -->
-        <!-- <imageobject> -->
-<!--           <imageobject>
-            <imagedata fileref="Tinkar_1,1.png" scale="60" align="center"/>
-          </imageobject> -->
-        <!-- </imageobject> -->
-      <!-- </informalfigure> -->
+         <figure xml:id="Tinkar11">
+        <title>Separation of Concerns: Knowledge Architecture</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="Tinkar_1,1.png" scale="40" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+      <para><emphasis>Separation of concerns is an architectural design principle, whereby a system
+          is divided into distinct sections, such that each section can address separate concerns.
+          In this case, each architectural layer may build upon artifacts from lower
+          layers.</emphasis></para>
   </section>
   <section>
     <title>The Problem Tinkar Addresses </title>
@@ -168,9 +162,9 @@
               <listitem>
                 <para>A new set of local terminology may be managed with value sets and concept gaps
                   addressed in quick iterations (e.g., “COVID-19 negative test result” was needed in
-                  practical use before official SDO releases, or gaps like “mild anemia”, which was
-                  proposed, but not accepted, by both the international and U.S. SNOMED CT®
-                  release).</para>
+                  practical use before official Standards Development Organization (SDO) releases,
+                  or gaps like “mild anemia”, which was proposed, but not accepted, by both the
+                  international and U.S. SNOMED CT® release).</para>
               </listitem>
             </itemizedlist>
           </para>
@@ -188,8 +182,8 @@
           </para>
         </listitem>
         <listitem>
-          <para><emphasis role="bold">Inability to reliably and safely evolve over time <link
-                linkend="bib4">[4]</link>.</emphasis></para>
+          <para><emphasis role="bold">Inability to reliably and safely evolve over time
+              [4].</emphasis></para>
           <itemizedlist>
             <listitem>
               <para>There is a lack of clear, detailed descriptions of changes to terminologies over
@@ -202,12 +196,11 @@
       </orderedlist>
     </para>
     <para><emphasis role="bold">Consider the following examples of implementations that have gone
-        wrong: </emphasis><link linkend="bib5">[5]</link><link linkend="bib6">[6]</link><link
-        linkend="bib7">[7]</link><link linkend="bib8">[8]</link></para>
+        wrong: [5-8]</emphasis></para>
     <itemizedlist>
       <listitem>
-        <emphasis role="bold">Computer error may have led to incorrect prescribing of statins to
-          thousands of patients.</emphasis>
+        <para><emphasis role="bold">Computer error may have led to incorrect prescribing of statins
+            to thousands of patients.</emphasis></para>
         <itemizedlist>
           <listitem>
             <para>Thousands of patients in England may have been incorrectly prescribed or taken off
@@ -220,8 +213,8 @@
         </itemizedlist>
       </listitem>
       <listitem>
-        <emphasis role="bold">Alert for monitoring thyroid function when taking Amiodarone stopped
-          working.</emphasis>
+        <para>><emphasis role="bold">Alert for monitoring thyroid function when taking Amiodarone stopped
+          working.</emphasis></para>
         <itemizedlist>
           <listitem>
             <para>Amiodarone is associated with several side effects, including thyroid dysfunction,
@@ -235,8 +228,8 @@
         </itemizedlist>
       </listitem>
       <listitem>
-        <emphasis role="bold">62 percent of clinical decision support (CDS) malfunctions were
-          attributable to changes in underlying codes or data fields.</emphasis>
+        <para><emphasis role="bold">62% of clinical decision support (CDS) malfunctions were attributable
+          to changes in underlying codes or data fields.</emphasis></para>
         <itemizedlist>
           <listitem>
             <para>Change is a constant feature of providing healthcare.</para>
@@ -306,9 +299,9 @@
     <para>This specification introduces an agile approach to terminology design and formatting that
       promotes the use of self-describing data. It is a shift from hard-coded models that have been
       favored due to their prescriptive nature but have shown limited flexibility and extensibility.
-      Like FHIR, this specification places the focus on a self-describing, extensible approach to
-      representing terminology. Therefore, Tinkar aims to be both self-describing and completely
-      machine processed:</para>
+      This specification is similar to FHIR as it places the focus on a self-describing, extensible
+      approach to representing terminology. Therefore, Tinkar aims to be both self-describing and
+      completely machine processed:</para>
     <orderedlist>
       <listitem>
         <para>Self-describing machine-readable representation of terminology, such that if an
@@ -332,7 +325,7 @@
       mappings.</para>
     <para>A standard-based Tinkar specification is necessary to support the operation of a variety
       of systems intended to deliver knowledge management for terminology to vendors, providers, and
-      even standards-development organizations, like HL7. </para>
+      even standards-development organizations, like Health Level Seven (HL7). </para>
   </section>
   <section>
     <title>Related Efforts</title>
@@ -370,13 +363,15 @@
       is not an architecture for terminology management. It may only serve as a reference, noting
       the aforementioned limitations. An implementation of Tinkar may help address these
       limitations. </para>
-    <para>CTS2 is an architecture for terminology management that supports history retrieval, though
-      it does not support an arbitrarily granular change set model for versioning. The Tinkar
-      specification, in contrast, provides that every new assertion, whether a new component or a
-      change to an existing component, must have a precise version coordinate that govern granular
-      change control. CTS2 asserts a specific terminology model and does not support unanticipated
-      properties with a self-describing model.</para>
-    <para>The USCDI is an amalgamation of various encoding standards. The standards being identified
+    <para>Common Terminology Services 2<superscript>TM</superscript>
+        (CTS2<superscript>TM</superscript>) is an architecture for terminology management that
+      supports history retrieval, though it does not support an arbitrarily granular change set
+      model for versioning. The Tinkar specification, in contrast, provides that every new
+      assertion, whether a new component or a change to an existing component, must have a precise
+      version coordinate that govern granular change control. CTS2<superscript>TM</superscript>
+      asserts a specific terminology model and does not support unanticipated properties with a
+      self-describing model.</para>
+    <para>The U.S. Core Data for Interoperability (USCDI) is an amalgamation of various encoding standards. The standards being identified
       for specific data elements do not themselves provide consistency for how encoding is
       represented, how those encoding standards change over time, and how those encoding standards
       are distributed. As demonstrated by COVID-19 data needs, coordinated extension of content,
@@ -392,9 +387,9 @@
       is defined in a report from Queensland University of Technology as follows: “[t]he idea is
       that self-descriptions of data and other techniques would allow context-understanding programs
       to selectively find what users want, or for programs to work on behalf of humans and
-      organizations to make them more scalable, efficient and productive.” <link linkend="bib12"
-        >[9]</link> Key advantages of a self-describing architecture (or metadata driven
-      architecture) <link linkend="bib9">[10]</link> include the following details: </para>
+      organizations to make them more scalable, efficient and productive.” [9] Key advantages of a
+      self-describing architecture (or metadata driven architecture) [10] include the following
+      details: </para>
     <para><emphasis role="bold">Changes can be reviewed immediately</emphasis> – Every action or
       change by end users can be immediately previewed or tested, without needing any compilation or
       deployment process. The review can also be done before saving or publishing the changes, which
@@ -419,19 +414,19 @@
   </section>
   <section>
     <title>Approach - Architectural Separation of Concerns</title>
-     <para>Increased reliance on computerized health records, including Electronic Health Records
-      Systems, requires standardized medical terminology to encode health information consistently
-      across systems and enterprises. Clinicians require not only objective quantitative
-      measurements (e.g., 90 beats per minute for a patient’s pulse), but also procedural context
-      (e.g., pulse oximetry, manual) about past observations or requests for future interventions.
-      While two quantitative measurements may be the same, the procedural information could indicate
-      meaningful semantic differences and lead to different clinical interpretation and treatment.
-      As information is exchanged across systems, the solution requires a common understanding of
-      data, a method to support knowledge-representation, and clinical decision rules based on
-      common terminology and statements. Each component must address an aspect, and together need to
-      address the requirements of clinicians. Current HL7 standard implementations rely on profiles
-      and templates to disambiguate statement and terminology, and provide sufficient precision for
-      transactions, documents, and standards-based APIs. Therefore, the architectural approach
+     <para>Increased reliance on computerized health records, including EHR Systems, requires
+      standardized medical terminology to encode health information consistently across systems and
+      enterprises. Clinicians require not only objective quantitative measurements (e.g., 90 beats
+      per minute for a patient’s pulse), but also procedural context (e.g., pulse oximetry, manual)
+      about past observations or requests for future interventions. While two quantitative
+      measurements may be the same, the procedural information could indicate meaningful semantic
+      differences and lead to different clinical interpretation and treatment. As information is
+      exchanged across systems, the solution requires a common understanding of data, a method to
+      support knowledge-representation, and clinical decision rules based on common terminology and
+      statements. Each component must address an aspect, and together need to address the
+      requirements of clinicians. Current HL7 standard implementations rely on profiles and
+      templates to disambiguate statement and terminology, and provide sufficient precision for
+      transactions, documents, and standards-based application programming interface (APIs). Therefore, the architectural approach
       described here is applicable to standards organizations developing interoperability for
       enterprise and project-specific implementations in equal measure.</para>
     <para>Functional decomposition—often referred to as a <glossterm
@@ -477,8 +472,8 @@
       expressions may be used by higher level layers. </para>
     <para><emphasis role="bold">Statement Model</emphasis> – The Statement Model layer is
       responsible for defining how data elements are combined to create a statement. This layer
-      reuses the artifacts defined in the Terminology Knowledge layer. The ANF Reference Model <link
-        linkend="bib10">[11]</link> belongs in this layer.</para>
+      reuses the artifacts defined in the Terminology Knowledge layer. The analysis normal form
+      (ANF) Reference Model [11] belongs in this layer.</para>
     <para><emphasis role="bold">Assertional Knowledge</emphasis> – The Assertional Knowledge layer
       makes use of the Terminology Knowledge layer concepts to specify
         <emphasis>non-defining</emphasis> facts that may be used by procedural knowledge algorithms.
@@ -510,7 +505,7 @@
             values (e.g., systolic BP = 140 mmHg), or the categorical data (e.g., pregnancy induced
             hypertension vs. renal hypertension) within a standard data structure to facilitate
             information exchange or retrieval, such as within a standards-based clinical statement
-            (i.e., CIMI, CDA, FHIR, ANF, etc.). </para>
+            (i.e., Clinical Information Modeling Initiative [CIMI], Clinical Document Architecture [CDA], FHIR, ANF, etc.). </para>
         </listitem>
         <listitem>
           <para>The Assertional Knowledge layer represents non-procedural statements, or facts, such
@@ -551,7 +546,7 @@
       representation is outlined in Section 3. Section 4 shows how Tinkar brings together the
       biomedical terminologies by a common description format. An implementation of the Tinkar
       specification can be used to fill the gaps between the common HL7 Terminologies and other
-      systems like SNOMED CT®, RxNorm, UCUM, etc. The result is the distribution and sharing of
-      cohesive data across all platforms. </para>
+      systems like SNOMED CT®, RxNorm, Unified Code for Units of Measure (UCUM), etc. The result is
+      the distribution and sharing of cohesive data across all platforms. </para>
   </section>
 </chapter>

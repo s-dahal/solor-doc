@@ -5,15 +5,19 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Example Implementation of Tinkar</title>
     <para>This section includes user documentation for an example implementation of Tinkar, referred
-        to as Komet (<link xlink:href="https://github.com/logicahealth/komet"/>), and how various
-        terminologies, such as SNOMED CT®, LOINC®, RxNorm, and HL7 terminologies shall be
-        reproducibly represented using Tinkar. The Komet browser allows users to view the search
-        Concepts, view the Concept details (Semantics), and navigate hierarchies, as well as many
-        other functions that are outside the scope of this ballot.</para>
+        to as Knowledge Management Environment (Komet) (<link
+            xlink:href="https://github.com/logicahealth/komet"/>), and how various terminologies,
+        such as SNOMED CT®, LOINC®, RxNorm, and HL7 terminologies shall be reproducibly represented
+        using Tinkar. The Komet browser allows users to view the search Concepts, view the Concept
+        details (Semantics), and navigate hierarchies, as well as many other functions that are
+        outside the scope of this ballot.</para>
     <para>Java Reference Classes for the Tinkar model can be accessed here:(<link
         xlink:href="https://github.com/HL7/tinkar-java"/>).  C# Reference Classes
         can be accessed here:(<link
             xlink:href="https://github.com/HL7/tinkar-cs"/>).</para>
+    <para>Note: The below images of the Tinkar implementation are up to date as of  August 2021.
+        There is ongoing work to update the reference implementation and its user interface and user
+        experience (UI/UX).</para>
   <section>
       <title>Concept</title>
       <para>
@@ -42,9 +46,9 @@
                   </imageobject>
               </mediaobject>
               <caption>
-                  <para><emphasis role="italics">Accessing Identifiers</emphasis>
+                    <para><emphasis role="italics">Accessing Identifiers</emphasis>
                     </para>
-              </caption>
+                </caption>
           </figure>
       </para>
         <para>While there is a name displayed for human readable purposes, all information
@@ -221,7 +225,7 @@
         </para>
   </section>
     <section>
-        <title>SNOMED CT® Example</title>
+        <title>Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®) Example</title>
         <para>
             <figure>
                 <title>SNOMED CT® Concept</title>
@@ -263,7 +267,7 @@
         </para>
     </section>
     <section>
-        <title>LOINC<superscript>®</superscript> Example</title>
+        <title>Logical Observation Identifiers, Names, and Codes (LOINC®) Example</title>
         <para>
             <figure>
                 <title>LOINC® Concept</title>

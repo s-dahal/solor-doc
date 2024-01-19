@@ -32,11 +32,11 @@
         </orderedlist>
     </section>
     <section>
-        <title>Tinkar interfacing with FHIR</title>
-        <para>Tinkar data can be used to create Fast Healthcare Interoperability Resources (FHIR)
-            compliant data. Tinkar data can be used to generate FHIR data. Only a subset of the
-            Tinkar data model would be converted to FHIR. Roundtripping of data between Tinkar and
-            FHIR back and forth is likely to result in Tinkar data loss.</para>
+        <title>Tinkar interfacing with Fast Healthcare Interoperability Resource (FHIR)</title>
+        <para>Tinkar data can be used to create FHIR compliant data. Tinkar data can be used to
+            generate FHIR data. Only a subset of the Tinkar data model would be converted to FHIR.
+            Roundtripping of data between Tinkar and FHIR back and forth is likely to result in
+            Tinkar data loss.</para>
         <para>Tinkar data items lost in FHIR conversion:</para>
         <orderedlist>
             <listitem>
@@ -85,31 +85,29 @@
         </section>
     </section>
     <section>
-        <title>Tinkar interfacing with HL7 UTG, THO, HTA</title>
+        <title>Tinkar interfacing with HL7 Unified Terminology Governance (UTG), HL7 Terminological
+            Content (THO), and HL7 Terminology Authority (HTA)</title>
         <para>The three HL7 processes for maintaining and distributing HL7 terminology content are
-            UTG, THO, HTA. Our understanding of these HL7 Areas: </para>
+            Unified Terminology Governance (UTG), HL7 Terminological Content (THO), and HL7
+            Terminology Authority (HTA). Our understanding of these HL7 Areas: </para>
         <para>
             <itemizedlist>
                 <listitem>
-                    <para><emphasis role="bold">Unified Terminology Governance (UTG)</emphasis>: A
-                        process with associated tooling to support the process strictly for
-                        governance of HL7 terminological content. UTG is the maintenance process to
-                        keep it up to date and manage change. </para>
+                    <para><emphasis role="bold">UTG</emphasis>: A process with associated tooling to
+                        support the process strictly for governance of HL7 terminological content.
+                        UTG is the maintenance process to keep it up to date and manage change. </para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">HL7 Terminological Content (THO)</emphasis>: HL7
-                        Terminological Content refers to <emphasis role="underline"
-                            >t</emphasis>erminology.<emphasis role="underline"
-                            >h</emphasis>L7.<emphasis role="underline">o</emphasis>rg (THO) which is
-                        the domain address of the entry point for the published content. HL7
-                        terminology or THO refers to an enormous corpus of coded content that varies
-                        in quality and that has been developed in HL7 for about 30 years.</para>
+                    <para><emphasis role="bold">THO</emphasis>: HL7 Terminological Content refers to
+                        terminology.HL7.org (THO) which is the domain address of the entry point for
+                        the published content. HL7 terminology or THO refers to an enormous corpus
+                        of coded content that varies in quality and that has been developed in HL7
+                        for about 30 years.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">HL7 Terminology Authority (HTA)</emphasis>: The
-                        HTA’s primary purpose is to deal memorandum of understanding and publication
-                        interfaces with non-HL7 publishers and maintainers of terminological
-                        content. </para>
+                    <para><emphasis role="bold">HTA</emphasis>: The HTA’s primary purpose is to deal
+                        memorandum of understanding and publication interfaces with non-HL7
+                        publishers and maintainers of terminological content. </para>
                 </listitem>
             </itemizedlist>
         </para>

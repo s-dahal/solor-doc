@@ -3,18 +3,17 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Tinkar Reference Model</title>
     <para>The Tinkar Reference Model is a logical model described herein using the <emphasis>Object
-            Management Group (OMG) Unified Modeling Language (UML) 2.0</emphasis> notation to
-        describe the structure of integrated data representation and change management for
-        biomedical terminologies. Tinkar provides an architecture that delivers integrated
-        terminology to the enterprise and its information systems. In doing so, it addresses the
-        differences in management and structure across reference terminology, local concepts, and
-        code lists/value sets. This section describes classes of objects that support a common
-        foundational framework for terminology and knowledge base systems (e.g., SNOMED CT®, LOINC®,
-        RxNorm, HL7). An implementation of Tinkar can provide a single representation for all
-        terminologies required in the U.S. and other countries, while also providing a better
-        foundation for managing change. Tinkar could support the operation of a variety of systems
-        intended to deliver knowledge management for terminology to vendors providers, and
-        standards-development organizations like HL7.</para>
+            Management Group (OMG) UML 2.0</emphasis> notation to describe the structure of
+        integrated data representation and change management for biomedical terminologies. Tinkar
+        provides an architecture that delivers integrated terminology to the enterprise and its
+        information systems. In doing so, it addresses the differences in management and structure
+        across reference terminology, local concepts, and code lists/value sets. This section
+        describes classes of objects that support a common foundational framework for terminology
+        and knowledge base systems (e.g., SNOMED CT®, LOINC®, RxNorm, HL7). An implementation of
+        Tinkar can provide a single representation for all terminologies required in the U.S. and
+        other countries, while also providing a better foundation for managing change. Tinkar could
+        support the operation of a variety of systems intended to deliver knowledge management for
+        terminology to vendors providers, and standards-development organizations like HL7.</para>
     
     <section>
         <title>Standard Class Model</title>
@@ -40,26 +39,24 @@
                 <listitem>
                     <para><emphasis role="bold">Status:</emphasis> A status is identified by a
                         concept, which may be annotated with other identifying information. For
-                        example: active or inactive <emphasis role="underline"  linkend="requirement_19">(Requirement 19)</emphasis></para>
+                        example: active or inactive <emphasis role="underline">(<xref xlink:href="../../../business-requirements/src/docbkx/business-requirements.xml#requirement_19"/>Requirement_19)</emphasis></para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Time:</emphasis> Timestamps must employ a common
-                        standard, which must support precision and time zone. <emphasis role="underline"  linkend="requirement_20">(Requirement
-                            20)</emphasis></para>
+                        standard, which must support precision and time zone. <emphasis role="underline">(<xref xlink:href="../../../business-requirements/src/docbkx/business-requirements.xml#requirement_20"/>Requirement_20)</emphasis></para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Author:</emphasis> An author is identified by a
                         concept, which may be annotated with other identifying information as
-                        required. <emphasis role="underline"  linkend="requirement_21">(Requirement 21)</emphasis></para>
+                        required. <emphasis role="underline">(<xref xlink:href="../../../business-requirements/src/docbkx/business-requirements.xml#requirement_21"/>Requirement_21)</emphasis></para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Module: </emphasis>Assignment to the appropriate
-                        terminology (e.g., LOINC) or terminology component (e.g., SNOMED
-                            CT<superscript>®</superscript>, US Extension). A module is identified by
-                        a concept, which may be annotated with other identifying information.
-                            <emphasis role="underline" linkend="requirement_22">(Requirement
-                            22)</emphasis>
-                    </para>
+                        terminology (e.g., LOINC®) or terminology component (e.g., SNOMED CT®, US
+                        Extension). A module is identified by a concept, which may be annotated with
+                        other identifying information. <emphasis role="underline">(<xref
+                                xlink:href="../../../business-requirements/src/docbkx/business-requirements.xml#requirement_22"
+                            />Requirement_22)</emphasis></para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Path:</emphasis> Specification of an object under
@@ -68,9 +65,7 @@
                         synomyn for “branch” as used in current software version control best
                         practices/literature. A path is identified by a concept, which may be
                         annotated with other identifying information. A core set of paths is
-                        necessary to support publication to external organizations. <emphasis
-                            role="underline" linkend="requirement_23">(Requirement
-                        23)</emphasis></para>
+                        necessary to support publication to external organizations. <emphasis role="underline">(<xref xlink:href="../../../business-requirements/src/docbkx/business-requirements.xml#requirement_23"/>Requirement_23)</emphasis></para>
                 </listitem>
             </orderedlist>
         </para>
@@ -126,12 +121,12 @@
                 </caption>
             </figure>
         </para>
-        <para>All Components in Tinkar are uniquely identified using Universally Unique Identifiers
-            (UUID). A Component will be represented by an array of UUIDs with at least one UUID, but
-            can be represented by more than one UUID in the case of a concept being derived from
-            multiple sources. For example, the concept Acetaminophen (which exists in SNOMED CT®,
-            LOINC®, and RxNorm) could have a UUID from each terminology and be represented as an
-            array of UUIDs for this single concept within a Tinkar implementation. </para>
+        <para>All Components in Tinkar are uniquely identified using UUID. A Component will be
+            represented by an array of UUIDs with at least one UUID, but can be represented by more
+            than one UUID in the case of a concept being derived from multiple sources. For example,
+            the concept Acetaminophen (which exists in SNOMED CT®, LOINC®, and RxNorm) could have a
+            UUID from each terminology and be represented as an array of UUIDs for this single
+            concept within a Tinkar implementation. </para>
         <para>A Concept is identified using UUIDs and contains no information. To assemble groups of
             assertions and to provide information about Concepts, Tinkar uses a construct called a
                 <emphasis role="bold">Semantic</emphasis>. A Semantic is a class containing a set of
@@ -188,62 +183,61 @@
                 <listitem>
                     <para>String - a sequence of characters, either as a literal constant or as a
                         variable. Strings could be used to represent terms from code systems or
-                        URLs, textual definitions, etc.</para>
+                        URLs, textual definitions, etc</para>
                 </listitem>
                 <listitem>
                     <para>Integer - data type that represents some range of mathematical
-                        integers.</para>
+                        integers</para>
                 </listitem>
                 <listitem>
-                    <para>Float - represents values as high-precision fractional values.</para>
+                    <para>Float - represents values as high-precision fractional values</para>
                 </listitem>
                 <listitem>
-                    <para>Boolean - represents the values true and false.</para>
+                    <para>Boolean - represents the values true and false</para>
                 </listitem>
                 <listitem>
-                    <para>Byte Array - an array of 8-bit signed two’s complement integers.</para>
+                    <para>Byte Array - an array of 8-bit signed two’s complement integers</para>
                 </listitem>
                 <listitem>
                     <para>Directed Graph or Digraph - a graph whose edges are ordered pairs of
-                        vertices. Each edge can be followed from one vertex to another
-                        vertex.</para>
+                        vertices. Each edge can be followed from one vertex to another vertex</para>
                 </listitem>
                 <listitem>
-                    <para>Instant - models a single instantaneous point on a timeline.</para>
+                    <para>Instant - models a single instantaneous point on a timeline</para>
                 </listitem>
                 <listitem>
-                    <para>Planar Point - position in a two-dimensional space (a plane).</para>
+                    <para>Planar Point - position in a two-dimensional space (a plane)</para>
                 </listitem>
                 <listitem>
-                    <para>Spatial Point - position in a three-dimensional space.</para>
+                    <para>Spatial Point - position in a three-dimensional space</para>
                 </listitem>
                 <listitem>
-                    <para>Component ID List - an ordered list of Component IDs.</para>
+                    <para>Component ID List - an ordered list of Component IDs</para>
                 </listitem>
                 <listitem>
-                    <para>Component ID Set - an unordered list of Component IDs.</para>
+                    <para>Component ID Set - an unordered list of Component IDs</para>
                 </listitem>
                 <listitem>
-                    <para>UUID (Universally Unique Identifier) - A 128-bit number used to identify
-                        information in computer systems.</para>
+                    <para>UUID - A 128-bit number used to identify information in computer
+                        systems</para>
                 </listitem>
                 <listitem>
                     <para>Directed Tree or Ditree - a graph obtained from an undirected tree by
                         replacing each undirected edge by two directed edges with opposite
-                        directions.</para>
+                        directions</para>
                 </listitem>
                 <listitem>
                     <para>DiGraph - A graph in which a set of objects are connected where all the
-                        edges are directed from one vertex to another. </para>
+                        edges are directed from one vertex to another</para>
                 </listitem>
                 <listitem>
-                    <para>Vertex - The fundamental unit of data that makes up a graph or
-                        tree.</para>
+                    <para>Vertex - The fundamental unit of data that makes up a graph or tree</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>In Tinkar, property graphs are used as a general-purpose data
-                                pattern to represent an abstract syntax tree (AST), such as OWL
-                                EL++. This allows for data types without requiring custom nodes. </para>
+                                pattern to represent an abstract syntax tree (AST), such as Web
+                                Ontology Language (OWL) EL++. This allows for data types without
+                                requiring custom nodes. </para>
                             <orderedlist numeration='lowerroman'>
                                 <listitem>
                                     <para>An AST may be used “during semantic analysis, where the
@@ -254,8 +248,7 @@
                                         of the program. After verifying correctness, the AST serves
                                         as the base for code generation. The AST is often used to
                                         generate an intermediate representation, sometimes called an
-                                        intermediate language, for the code generation.” <link
-                                            linkend="bib11">[15]</link>
+                                        intermediate language, for the code generation.”
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -268,13 +261,17 @@
                         </listitem>
                         <listitem>
                             <para>Here is an example of Tinkar output of semantics that reference
-                                multiple concepts. <mediaobject>
-                                    <imageobject>
-                                        <imagedata fileref="propertygraph.PNG" format="PNG"
-                                            scalefit="1" width="100%" contentdepth="100%"
-                                            align="center"/>
-                                    </imageobject>
-                                </mediaobject>In this output, one can see a sufficient set and
+                                multiple concepts.
+                                <figure xml:id="MultiConceptTinkarOutput">
+                                    <title>Multi-Concept Tinkar Output</title>
+                                    <mediaobject>
+                                        <imageobject>
+                                            <imagedata fileref="propertygraph.PNG" format="PNG"
+                                                scalefit="1" width="100%" contentdepth="100%"
+                                                align="center"/>
+                                        </imageobject>
+                                    </mediaobject>
+                                </figure>In this output, one can see a sufficient set and
                                 necessary set. Bulleted items are properties in the node. The output
                                 is printed as a “depth first search.” Each depth adds 3 characters
                                 of padding and shows how OWL EL++ definitions, using only
@@ -295,7 +292,8 @@
                                 custom nodes. With no changes to the underlying data structures,
                                 Tinkar can represent more than OWL EL++. With updates to
                                 terminology, Tinkar can represent any parsable standard, such as
-                                BPMN and DMN, using this property graph model and a proper set of
+                                Business Process Model and Notation (BPMN) and Decision Model and
+                                Notation (DMN), using this property graph model and a proper set of
                                 terminology concepts and semantics represented using Tinkar.</para>
                         </listitem>
                     </orderedlist>
