@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-  <title>Tinkar Overview</title>
+  <title>Tinkar Overview *test*</title>
   <para>Over the past decades, biomedical terminologies have increasingly been recognized as key
     resources for knowledge management, data integration, and decision support <link linkend="bib1"
       >[1]</link>. Acceleration and development of Electronic Health Record (EHR) systems has
