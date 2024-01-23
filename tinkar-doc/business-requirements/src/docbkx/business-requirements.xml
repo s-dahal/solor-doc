@@ -719,7 +719,7 @@
         <informaltable>
             <tgroup cols="6">
                 <colspec colnum="1" colname="col1" colwidth="1*" align="left"/>
-                <colspec colnum="2" colname="col3" colwidth="4*"/>
+                <colspec colnum="2" colname="col3" colwidth="4*" align="left"/>
                 <colspec colname="newCol3" colnum="3" colwidth="1*"/>
                 <colspec colname="newCol4" colnum="4" colwidth="1*"/>
                 <colspec colname="newCol5" colnum="5" colwidth="1.5*"/>
@@ -963,7 +963,7 @@
          <informaltable>
             <tgroup cols="6">
                 <colspec colnum="1" colname="col1" colwidth="1*" align="left"/>
-                <colspec colnum="2" colname="col3" colwidth="4*"/>
+                <colspec colnum="2" colname="col3" colwidth="4*" align="left"/>
                 <colspec colname="newCol3" colnum="3" colwidth="1*"/>
                 <colspec colname="newCol4" colnum="4" colwidth="1*"/>
                 <colspec colname="newCol5" colnum="5" colwidth="1.5*"/>
