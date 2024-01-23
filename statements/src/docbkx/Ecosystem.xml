@@ -94,7 +94,7 @@
                     <title>IKM Product Backlog Epic Board</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/IKM%20Product%20Backlog%20Epic%20Board.svg"/>
+                            <imagedata fileref="images/IKM%20Product%20Backlog%20Epic%20Board.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -249,7 +249,7 @@
                 <title>FDA SHIELD Communications Curve</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/FDA%20SHIELD%20Communications%20Curve.svg"/>
+                        <imagedata fileref="images/FDA%20SHIELD%20Communications%20Curve.svg" align="center" scale="40"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -382,7 +382,7 @@
                     <title>Screenshot of Feedback Page on loincsnomed.org</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Screenshot%20of%20Feedback%20Page%20on%20LoincSnomed%20Website.svg"/>
+                            <imagedata fileref="images/Screenshot%20of%20Feedback%20Page%20on%20LoincSnomed%20Website.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -391,7 +391,7 @@
                     <title>Screenshot of GitHub Non-Technical Issue Submission Page</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Screenshot%20of%20GitHub%20Non%20Technical%20Issue%20Submission%20Page.svg"/>
+                            <imagedata fileref="images/Screenshot%20of%20GitHub%20Non%20Technical%20Issue%20Submission%20Page.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -414,7 +414,7 @@
                     <title>Screenshot of GitHub Issue Screen</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Screenshot%20of%20GitHub%20Issue%20Screen.svg"/>
+                            <imagedata fileref="images/Screenshot%20of%20GitHub%20Issue%20Screen.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -451,7 +451,7 @@
                     <title>LOINC® Ontology SNOMED CT® Browser Search Filters</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/LOINC%20Ontology%20SNOMED%20CT%20Browser%20Search%20Filters.svg"/>
+                            <imagedata fileref="images/LOINC%20Ontology%20SNOMED%20CT%20Browser%20Search%20Filters.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -466,7 +466,7 @@
                     <title>Taxonomy Structure in the LOINC® Ontology SNOMED CT® Browser</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Taxonomy%20Structure%20in%20the%20LOINC%20Ontology%20SNOMED%20CT%20Browser.svg"/>
+                            <imagedata fileref="images/Taxonomy%20Structure%20in%20the%20LOINC%20Ontology%20SNOMED%20CT%20Browser.svg" align="center" scale="25"></imagedata>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -488,7 +488,7 @@
                     <title>Hypothetical Optimized Search Function</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Hypothetical%20Optimized%20Search%20Function.svg"/>
+                            <imagedata fileref="images/Hypothetical%20Optimized%20Search%20Function.svg" scale="50"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -507,7 +507,7 @@
                     <title>View of the Summary Tab</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/View%20of%20the%20Summary%20Tab.svg"/>
+                            <imagedata fileref="images/View%20of%20the%20Summary%20Tab.svg" scale="30"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -519,7 +519,7 @@
                     <title>Concept Details Window</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Concept%20Details%20Window.svg"/>
+                            <imagedata fileref="images/Concept%20Details%20Window.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -538,7 +538,7 @@
                     <title>History Tab of Concept Details</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/History%20Tab%20of%20Concept%20Details.svg"/>
+                            <imagedata fileref="images/History%20Tab%20of%20Concept%20Details.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -559,7 +559,7 @@
                     <title>LOINC® Ontology SNOMED CT® Browser Indication of Equivalence</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/LOINC%20Ontology%20SNOMED%20CT%20Browser%20Indication%20of%20Equivalence.svg"/>
+                            <imagedata fileref="images/LOINC%20Ontology%20SNOMED%20CT%20Browser%20Indication%20of%20Equivalence.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -568,7 +568,7 @@
                     <title>Example of Hypothetical Concepts Versioning Record</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Example%20of%20Hypothetical%20Concepts%20Versioning%20Record.svg"/>
+                            <imagedata fileref="images/Example%20of%20Hypothetical%20Concepts%20Versioning%20Record.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -591,7 +591,7 @@
                     <title>Hypothetical IKM Tooling Collaboration</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Hypothetical%20IKM%20Tooling%20Collaboration.svg"/>
+                            <imagedata fileref="images/Hypothetical%20IKM%20Tooling%20Collaboration.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -754,7 +754,7 @@
                 <title>Example of Qualitative Laboratory Tests with Fixed Answer Lists</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/Example%20of%20Qualitative%20Laboratory%20Tests%20with%20Fixed%20Answer%20Lists.svg"/>
+                        <imagedata fileref="images/Example%20of%20Qualitative%20Laboratory%20Tests%20with%20Fixed%20Answer%20Lists.svg" align="center" scale="40"/>
                     </imageobject>
                 </mediaobject>
             </figure>
