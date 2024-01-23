@@ -233,7 +233,7 @@
         </section>
         <section>
             <title>Solution Adoption</title>
-            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+           
             <para>To date, the IKM Solution Adoption team has worked to identify key stakeholders
                 and tailor content to their understanding of  the goals of IKM. In this phase of
                 increasing awareness, the team has developed and disseminated informational
@@ -258,7 +258,7 @@
                     for stakeholders interested in collaboration and/or integration. Therefore, the
                     development of proper processes and documentation of work has been critical to
                     the IKM strategic communications efforts and will continue to be strengthened as
-                    we move towards driving engagement.<?oxy_custom_end?></para>
+                    we move towards driving engagement.</para>
             </section>
             <section>
                 <title>Defining Integrated Knowledge Management</title>
@@ -267,10 +267,10 @@
                     potential stakeholders effectively on the mission to increase cohesion in health
                     data standards and what problems that it may solve is paramount to advancing the
                     movement.
-                    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Based on
+                    Based on
                     feedback from stakeholder engagement sessions, the team has been iteratively
                     refining strategic communications initiatives to develop concise and aimed
-                    messaging to key stakeholders.<?oxy_custom_end?></para>
+                    messaging to key stakeholders.</para>
             </section>
             <section>
                 <title>Ensuring End User Adoption</title>
