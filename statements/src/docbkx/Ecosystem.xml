@@ -383,7 +383,7 @@
                     <title>Screenshot of GitHub Non-Technical Issue Submission Page</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Screenshot%20of%20GitHub%20Non%20Technical%20Issue%20Submission%20Page.svg" align="center" scale="40"/>
+                            <imagedata fileref="images/Screenshot%20of%20GitHub%20Non%20Technical%20Issue%20Submission%20Page.svg" align="center" scale="50"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -458,7 +458,7 @@
                     <title>Taxonomy Structure in the LOINC® Ontology SNOMED CT® Browser</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Taxonomy%20Structure%20in%20the%20LOINC%20Ontology%20SNOMED%20CT%20Browser.svg" align="center" scale="25"></imagedata>
+                            <imagedata fileref="images/Taxonomy%20Structure%20in%20the%20LOINC%20Ontology%20SNOMED%20CT%20Browser.svg" align="center" scale="30"></imagedata>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -551,7 +551,7 @@
                     <title>LOINC® Ontology SNOMED CT® Browser Indication of Equivalence</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/LOINC%20Ontology%20SNOMED%20CT%20Browser%20Indication%20of%20Equivalence.svg" align="center" scale="40"/>
+                            <imagedata fileref="images/LOINC%20Ontology%20SNOMED%20CT%20Browser%20Indication%20of%20Equivalence.svg" align="center" scale="55"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -560,7 +560,7 @@
                     <title>Example of Hypothetical Concepts Versioning Record</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Example%20of%20Hypothetical%20Concepts%20Versioning%20Record.svg" align="center" scale="40"/>
+                            <imagedata fileref="images/Example%20of%20Hypothetical%20Concepts%20Versioning%20Record.svg" align="center" scale="50"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
