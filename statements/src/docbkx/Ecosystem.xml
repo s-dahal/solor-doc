@@ -488,7 +488,7 @@
                     <title>Hypothetical Optimized Search Function</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Hypothetical%20Optimized%20Search%20Function.svg" scale="50"/>
+                            <imagedata fileref="images/Hypothetical%20Optimized%20Search%20Function.svg" align="center"  scale="50"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
