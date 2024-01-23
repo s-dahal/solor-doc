@@ -6,20 +6,20 @@
     <para>There are two fundamental differences between the ANF and CIMI Statement approach:</para>
     <orderedlist spacing="compact">
         <listitem>
-            <para>The representation of topic.</para>
+            <para>Section 1: The representation of topic.</para>
         </listitem>
         <listitem>
-            <para>The representation of results.</para>
+            <para>Section 2: The representation of results.</para>
         </listitem>
     </orderedlist>
     <section>
         <title>The Representation of Topic</title>
         <para>In the ANF Statement model, the topic is represented by a single field containing a
             terminology expression. This expression is not limited to any particular terminology
-            model, but in this document we use SNOMED CT, as Solor would potentially have extensions
-            to SNOMED CT. In the CIMI Statement model, all the pieces of information that make up
-            the topic can be broken out and structured as needed into a tree of objects with
-            multiple properties and appropriate data types.</para>
+            model. As Solor would potentially have extensions to SNOMED CT®, this document discusses
+            SNOMED CT®. In the CIMI Statement model, all the pieces of information that make up the
+            topic can be broken out and structured into a tree of objects with multiple properties
+            and appropriate data types, as needed.</para>
         <para>
             <figure>
                 <title>Topic Comparison</title>
@@ -64,29 +64,29 @@ Also, the implications of a more complex seperation of concerns with respect to 
                             CIMI Representations</emphasis></para>
                 </caption>
             </figure></para>
-        <para>One implication of this is that the ANF Statement Model is using two formalisms to
-            represent the clinical statement. First it uses the formalism that represents the ANF
-            reference model. Second, it uses SNOMED CT's syntax for post-coordinated SNOMED CT
-            expressions. Tools for authoring and analysis would be required to parse and process
-            both syntaxes. </para>
+        <para>One implication of this representation is that the ANF Statement Model is using two
+            formalisms to represent the clinical statement. First, it uses the formalism that
+            represents the ANF reference model. Second, it uses SNOMED CT®'s syntax for
+            post-coordinated SNOMED CT® expressions. Tools for authoring and analysis would be
+            required to parse and process both syntaxes. </para>
         <para>The CIMI Statement model in this example, on the other hand, would be fully
-            represented using the formalism that represents the CIMI reference model. This model
-            however allows for the possibility of multiple modeling style representations of the
+            represented using the formalism that represents the CIMI reference model. This model,
+            however, allows for the possibility of multiple modeling style representations of the
             same data that are then not easily queried for equivalence. </para>
     </section>
     <section>
         <title>The Representation of Results</title>
         <para>In the CIMI model, EvaluationResult and Assertion models are used to represent
-            observations. EvaluationResult has a topic representing what is being observed, and a
+            observations. EvaluationResult has a topic representing what is being observed and a
             result represented by a choice of data types. EvaluationResult can be thought of as a
-            question and an answer. An Assertion on the other hand, has simply a topic stating what
-            is observed, and a coded result stating presence or absence.</para>
+            question and an answer. An Assertion, on the other hand, has simply a topic stating what
+            is observed and a coded result stating presence or absence.</para>
         <para>In the ANF model, the topic represents what is being observed and the result may only
             be a range of a quantity. No coded results are allowed. Not allowing coded results
-            forces more of the semantics to be represented in the terminology model and limits the
-            ability to allow multiple different representations of the same data. In the examples
-            below we see Retinal hemorrhage represented in ANF as either present or with the number
-            of hemorrhages that exist.</para>
+            forces more semantics to be represented in the terminology model and limits the ability
+            to allow multiple different representations of the same data. In the below examples,
+            Retinal hemorrhage represents in ANF as either present or with a number of existing
+            hemorrhages.</para>
         <figure>
             <title>Retinal Hemorrhage Present - ANF Representation</title>
             <mediaobject>
@@ -116,7 +116,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
         </figure>
         <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="With different units of measure, how are these dot blot hemorrhages comparable to each other." flag="done"?><?oxy_comment_end?>
         <para>In the CIMI Statement model, when creating a model with a numeric result, the choice
-            is quite clear, and the choice will be an EvaluationResult, such as a topic of 'Systolic
+            is quite clear. The choice will be an EvaluationResult, such as a topic of 'Systolic
             Blood Pressure' and result with a numeric quantity. In this case, the CIMI and ANF
             models are very aligned, except for the fact that the ANF model will always use a range
             of that quantity.</para>
@@ -323,15 +323,15 @@ Also, the implications of a more complex seperation of concerns with respect to 
         </section>
         <section>
             <title>Complex Systolic Blood Pressure Statement</title>
-            <para>In this systolic blood pressure example the ANF model requires multiple statements
-                to accurately capture all parts of the narrative clinical statement. ANF may require
-                several statements to represent a single, complex CIMI statement.</para>
+            <para>In this example of systolic blood pressure, the ANF model requires multiple
+                statements to accurately capture all parts of the narrative clinical statement. ANF
+                may require several statements to represent a single, complex CIMI statement.</para>
             <para>For example, in the clinical statement "Systolic Blood Pressure 120 mmHg, taken on
                 right brachial artery, using BP cuff adult size, patient in sitting position for at
                 least 5 minutes, urinated not more than 30 minutes prior to measurement", the
                 patient sitting position and urination parts of the statement are recorded as
-                separate associated clinical statements since they could both be recorded as
-                clinical statements on their own if they were not associated with the blood pressure
+                separate associated clinical statements. This set of information could both be
+                recorded as clinical statements, if it was not associated with the blood pressure
                 clinical statement.</para>
             <para>The ANF model is much more expressive and is able to capture the timing
                 information for the position and urination that requires a separate precondition code to be created in the CIMI model.</para>
