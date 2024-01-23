@@ -11,15 +11,11 @@
         <?oxy_comment_start author="naylee" timestamp="20240123T114809-0600" comment="The below two tables have been integrated into the Glossary Table in the Appendix as of 1/23/2024. Please delete the below two tables. "?>
         <title>Foundational Architecture<?oxy_comment_end?></title>
         <xi:include
-            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/complete-glossary/complete-glossary.xml"/>
-        <xi:include
             href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"/>
         <xi:include
             href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/business-requirements/business-requirements.xml"/>
         <xi:include
             href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/tinkar-reference-model/tinkar-reference-model.xml"/>
-        <xi:include
-            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/reference-implementation/reference-implementation.xml"/>
         <xi:include
             href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"/>
         <xi:include

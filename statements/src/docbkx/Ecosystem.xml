@@ -73,12 +73,12 @@
                     is very limited. While we were able to conduct user interviews during our UI/UX
                     analysis to gain some understanding of necessary system functionalities, we do
                     have not regular access to those participants. </para>
-                <para>To solve for this, we’re leveraging experts within the SHIELD community to
-                    identify high priority capabilities that will be prioritized for upcoming
-                    milestones. These milestones will take shape in the form of conferences,
-                    community events, and other demonstration opportunities. For example, we plan to
-                    organize a Health Level Seven (HL7) Connect-a-thon event to conduct real-world
-                    testing scenarios with interested stakeholders.</para>
+                <para>To solve for this, we’re leveraging experts to identify high priority
+                    capabilities that will be prioritized for upcoming milestones. These milestones
+                    will take shape in the form of conferences, community events, and other
+                    demonstration opportunities. For example, we plan to organize a Health Level
+                    Seven (HL7) Connect-a-thon event to conduct real-world testing scenarios with
+                    interested stakeholders.</para>
                 <para>Leading up to the SNOMED CT® conference, we found that while we wanted to
                     support rapid development, we still needed a clear understanding of what system
                     capabilities were important to showcase for the demonstration and detailed
@@ -233,50 +233,44 @@
         </section>
         <section>
             <title>Solution Adoption</title>
-            <para>Since its inception in 2015, FDA SHIELD has connected over 70 entities from a
-                variety of fields including federal, academia, and industry to support efforts
-                improving health care data and technology. [7] FDA SHIELD has developed a robust
-                community of experts and stakeholders that continues to further the advancement of
-                data quality and integration between terminologies. The work is encapsulated by the
-                overarching movement towards IKM and the ability for healthcare data to be impactful
-                and actionable.</para>
-            <para>Uptake, however, is ultimately dependent on buy-in from the leaders, clinicians,
-                laboratorians, product developers, electronic healthcare companies, and many other
-                stakeholders. The following graphic serves as the base communication curve for FDA
-                SHIELD on how to capture, educate, and ultimately build loyalty with potential
-                users. </para>
-            <figure xml:id="FDASHIELDCommunicationsCurve">
-                <title>FDA SHIELD Communications Curve</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/FDA%20SHIELD%20Communications%20Curve.svg" align="center" scale="40"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-            <para>To date, the IKM Solution Adoption team has worked to identify key stakeholders and tailor content to their understanding of both the FDA SHIELD Program and the goals of IKM. In this phase of increasing awareness, the team has developed and disseminated informational presentations and trainings both internally to FDA leadership and centers and externally to federal and industry partners. Through this and additional presentations and demos of Komet at industry conferences (i.e., SNOMED International Expo, American Medical Informatics Association), the team has been able to identify champions for the IKM movement across the ecosystem. As awareness has increased, the team has been able to maintain stakeholder relationships through personalized communications to individual stakeholders at organizations of significance (i.e. Food and Drug Administration, Office of the National Coordinator for Health Information Technology, Graphite Health, Royal College of Pathologists of Australasia). [8]
-                
-                Through such engagements, the team has recognized the following key findings of developing successful communications that will propel the efforts up the communications curve trajectory. 
-            </para>
+            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+            <para>To date, the IKM Solution Adoption team has worked to identify key stakeholders
+                and tailor content to their understanding of  the goals of IKM. In this phase of
+                increasing awareness, the team has developed and disseminated informational
+                presentations and trainings both internally and externally to federal and industry
+                partners. Through this and additional presentations and demos of Komet at industry
+                conferences (i.e., SNOMED International Expo, American Medical Informatics
+                Association), the team has been able to identify champions for the IKM movement
+                across the ecosystem. As awareness has increased, the team has been able to maintain
+                stakeholder relationships through personalized communications to individual
+                stakeholders at organizations of significance (i.e. Food and Drug Administration,
+                Office of the National Coordinator for Health Information Technology, Graphite
+                Health, Royal College of Pathologists of Australasia).. [8] Through such
+                engagements, the team has recognized the following key findings of developing
+                successful communications that will propel the efforts up the communications curve
+                trajectory. </para>
             <para>Through such engagements, the team has recognized the following key findings of
                 developing successful communications that will propel the efforts up the
                 communications curve trajectory. </para>
             <section>
                 <title>Curating Technical Communications</title>
-                <para>FDA SHIELD has recognized a need in IKM communications to provide adequate
-                    technical guidance for stakeholders interested in collaboration and/or
-                    integration. Therefore, the development of proper processes and documentation of
-                    work has been critical to the IKM strategic communications efforts and will
-                    continue to be strengthened as we move towards driving engagement. </para>
+                <para>There is a need in IKM communications to provide adequate technical guidance
+                    for stakeholders interested in collaboration and/or integration. Therefore, the
+                    development of proper processes and documentation of work has been critical to
+                    the IKM strategic communications efforts and will continue to be strengthened as
+                    we move towards driving engagement.<?oxy_custom_end?></para>
             </section>
             <section>
                 <title>Defining Integrated Knowledge Management</title>
                 <para>Integrated Knowledge Management is an evolving and novel movement in the
                     healthcare information technology field. Therefore, communicating to all
-                    potential stakeholders effectively on its mission to increase cohesion in health
+                    potential stakeholders effectively on the mission to increase cohesion in health
                     data standards and what problems that it may solve is paramount to advancing the
-                    movement. Based on feedback from stakeholder engagement sessions, FDA SHIELD has
-                    been iteratively refining strategic communications initiatives to develop
-                    concise and aimed messaging to key stakeholders.</para>
+                    movement.
+                    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Based on
+                    feedback from stakeholder engagement sessions, the team has been iteratively
+                    refining strategic communications initiatives to develop concise and aimed
+                    messaging to key stakeholders.<?oxy_custom_end?></para>
             </section>
             <section>
                 <title>Ensuring End User Adoption</title>
@@ -313,7 +307,7 @@
                 translate easily between terminologies. SNOMED CT® utilizes Concepts, Descriptions,
                 and Relationships, organized hierarchically to convey clinical meanings to its
                 terms. LOINC® codes are represented by five or six main parts. And hierarchical
-                relationship between LOINC® terms is manually applied outside of the LOINC® SNOMED
+                relationship between LOINC® terms is manually applied outside of the LOINC® SNOMED®
                 Collaboration. The components from each of these terminologies may function as
                 crucial data structure components for axioms and related data properties within the
                 database. [9]</para>
@@ -337,18 +331,16 @@
         <title>Evaluation of Current SNOMED® LOINC® Collaboration</title>
         <para>In October 2022, Regenstrief Institute (RII) and SNOMED International, also known as
             International Health Terminology Standards Development Organization (IHTSDO), signed a
-            cooperative agreement to collaborate the work between LOINC<anchor xml:id="Hlk155689325"
-            />® and SNOMED CT®. This will eliminate duplicative data, allowing the two terminologies
-            to be used together by creating an extension of the SNOMED CT® with the LOINC® knowledge
-            standard included. Using the SNOMED CT® formats and concepts, the LOINC® knowledge
-            standard will be more defined and accessible. [10]</para>
+            cooperative agreement to collaborate the work between LOINC® and SNOMED CT®. This will
+            eliminate duplicative data, allowing the two terminologies to be used together by
+            creating an extension of the SNOMED CT® with the LOINC® knowledge standard included.
+            Using the SNOMED CT® formats and concepts, the LOINC® knowledge standard will be more
+            defined and accessible. [10]</para>
         <para>The SNOMED LOINC® Collaborative Agreement indicates a pivotal progression towards data
             interoperability as the two organizations are industry leaders in health data standards
-            and terminology. [11] As a champion of the IKM movement, actions and new developments
-            relating to integrating knowledge are key areas of interest for FDA SHIELD and its
-            stakeholders. We conducted an analysis of the current state of the collaboration project
-            to better understand the successes and pain points as well as assess how IKM may provide
-            additional solutions.</para>
+            and terminology. [11] We conducted an analysis of the current state of the collaboration
+            project to better understand the successes and pain points as well as assess how IKM may
+            provide additional solutions.</para>
         <section>
             <title>Knowledge Management: SNOMED® LOINC® Collaborative Agreement Demonstration
                 Project Progress Reports </title>
@@ -405,11 +397,11 @@
                     upon or what questions have been answered. According to GitHub, a leader in
                     open-source community best practices, keeping communication public is key so
                     that all members have access to the same information. [11]</para>
-                <para>IKM provides the ability for all issues submitted to be visible. The FDA
-                    SHIELD team can provide transparent updates, such as commenting to answer
-                    questions, assigning the issue for work, or assigning the issue to a milestone
-                    for release. This will allow the issue creator and the rest of the community to
-                    have full insight into when the issue may be addressed.</para>
+                <para>IKM provides the ability for all issues submitted to be visible. The team can
+                    provide transparent updates, such as commenting to answer questions, assigning
+                    the issue for work, or assigning the issue to a milestone for release. This will
+                    allow the issue creator and the rest of the community to have full insight into
+                    when the issue may be addressed.</para>
                 <figure xml:id="ScreenshotofGitHubIssueScreen">
                     <title>Screenshot of GitHub Issue Screen</title>
                     <mediaobject>
@@ -444,8 +436,8 @@
                     the “Group by concept” checkbox appear. After entering text, additional filters
                     appear, which are filtering by: language (e.g., English), semantic tag (e.g.,
                     observable event), module (SNOMED CT® core vs. LOINC® Extension module), and
-                    refset (e.g.,
-                    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>OWL<?oxy_custom_end?>
+                    refset (e.g., Web Ontology Language
+                    [OWL]
                     axiom reference set). [13]</para>
                 <figure xml:id="LOINCOntologySNOMEDCTBrowserSearchFilters">
                     <title>LOINC® Ontology SNOMED CT® Browser Search Filters</title>
@@ -607,18 +599,17 @@
                 IKM movement can provide indicators of success. </para>
             <section>
                 <title>Achievements in Technical Communications</title>
-                <para>Similar to the FDA SHIELD need for technical communications mentioned
-                    previously, the ontology browser homepage links to the documentation release,
-                    providing an introductory technical explanation of the processes utilized to
-                    link the two data standards. The release includes details on the content
-                    inclusions of the browser, modeling guidelines used to integrate standards,
-                    concept/attribute representation, and future steps that the technical
-                    partnership will embark on to improve the browser. This document is critical for
-                    the public to access the information regarding the collaborative processes and
-                    technical efforts made on the project and provides a background for
-                    non-technical individuals to understand its development and technical
-                    individuals to see where their own collaboration or implementation may align.
-                </para>
+                <para>Similar to the  need for technical communications, the ontology browser
+                    homepage links to the documentation release, providing an introductory technical
+                    explanation of the processes utilized to link the two data standards. The
+                    release includes details on the content inclusions of the browser, modeling
+                    guidelines used to integrate standards, concept/attribute representation, and
+                    future steps that the technical partnership will embark on to improve the
+                    browser. This document is critical for the public to access the information
+                    regarding the collaborative processes and technical efforts made on the project
+                    and provides a background for non-technical individuals to understand its
+                    development and technical individuals to see where their own collaboration or
+                    implementation may align. </para>
             </section>
             <section>
                 <title>Challenges of Integrated Knowledge Communications</title>
@@ -637,10 +628,10 @@
             </section>
             <section>
                 <title>Ensuring End User Adoption</title>
-                <para>As FDA SHIELD develops communications strategies, the crafting of specific
-                    messaging for end user segmentations is critical to promoting adoption of tools
-                    and IKM advancements. The LOINC®-SNOMED CT® collaboration will benefit from a
-                    similar approach in identifying end user groups and then building compelling
+                <para>As communication strategies are developed,  crafting specific messaging for
+                    end user segmentations is critical to promoting adoption of tools and IKM
+                    advancements. The LOINC®-SNOMED CT® collaboration will benefit from a similar
+                    approach in identifying end user groups and then building compelling
                     communications to each grouping based on key interests and pain points. The
                     collaborative partnership’s overall end user adoption strategy will be a duality
                     of technical information that supports the operational collaboration and the
