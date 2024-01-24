@@ -70,9 +70,10 @@
                     clinical informaticists so there are many thoughts and opinions about how IKM
                     should work and what features would be important. Though the potential
                     stakeholder base is large, the access to the community to illicit requirements
-                    is very limited. While we were able to conduct user interviews during our UI/UX
-                    analysis to gain some understanding of necessary system functionalities, we do
-                    have not regular access to those participants. </para>
+                    is very limited. While we were able to conduct user interviews during our User
+                    Interface and User Experience (UI/UX) analysis to gain some understanding of
+                    necessary system functionalities, we do have not regular access to those
+                    participants. </para>
                 <para>To solve for this, we’re leveraging experts to identify high priority
                     capabilities that will be prioritized for upcoming milestones. These milestones
                     will take shape in the form of conferences, community events, and other
@@ -88,8 +89,8 @@
                     appropriate milestones to generate our product feature backlog. As per agile
                     development best practices, these epics are revisited weekly to be defined,
                     refined, and prioritized. These epics are then decomposed into user stories with
-                    defined acceptance criteria for the development teams to develop against in 3
-                    week increments or sprints. [1]</para>
+                    defined acceptance criteria for the development teams to develop against in
+                    three week increments or sprints. [1]</para>
                 <figure xml:id="IKMProductBacklogEpicBoard">
                     <title>IKM Product Backlog Epic Board</title>
                     <mediaobject>
@@ -105,13 +106,13 @@
                         releases back to the IKM community. [3]</para>
             </section>
             <section>
-                <title>User Experience and User Interface (UI/UX) Design</title>
-                <para>In early 2023, a UI/UX assessment for IKM was conducted by Deloitte/Amplified
-                    to better understand the needs and pain points of healthcare professionals in
-                    their daily operations working with healthcare knowledge. The goal was to use
-                    findings from the assessment to determine user profiles, requirements, and
-                    priority, which were then used to strategize a human centered UI/UX design for a
-                    Next Gen IKM platform that promotes data interoperability. </para>
+                <title>User Interface and User Experience (UI/UX) Design</title>
+                <para>In early 2023, a UI/UX assessment for IKM was conducted to better understand
+                    the needs and pain points of healthcare professionals in their daily operations
+                    working with healthcare knowledge. The goal was to use findings from the
+                    assessment to determine user profiles, requirements, and priority, which were
+                    then used to strategize a human centered UI/UX design for a Next Gen IKM
+                    platform that promotes data interoperability. </para>
                 <para>The assessment was conducted in five phases:</para>
                 <orderedlist>
                     <listitem>
@@ -153,25 +154,25 @@
                     agile environment with changing requirements.</para>
             </section>
             <section>
-                <title>DevOps Processes</title>
-                <para>In the current state of health IT, healthcare data standard organizations have
+                <title>Development and Operations (DevOps) Processes</title>
+                <para>In the current state of Health IT, healthcare data standard organizations have
                     implemented restrictive licensing around their proprietary data and technology
-                    which creates siloes and the inability to collaborate across standards. IKM
+                    which creates silos and the inability to collaborate across standards. IKM
                     provides an open-source solution that could be used across the community to
-                    collaborate and further reduce these data siloes. Komet is an open-source
+                    collaborate and further reduce these data silos. Komet is an open-source
                     solution in the form of an installed Java application that provides users the
                     ability to visualize, manage and extend disparate medical terminologies.
                     [4]</para>
                 <para>Early in the development phase, we identified that we would need to make an
-                    investment in DevOps technologies and tooling to allow our open-source solutions
-                    to be rapidly developed and released to reach the largest audiences possible. We
-                    began by hosting our DevOps tools, as it was the quickest way to begin rapid
-                    prototyping. However, through this process, we’ve found that the hosting of
-                    these tools requires more overhead and manhours than we would like. Our larger
-                    goals and priorities require developers’ time to contribute to our solutions
-                    rather than supporting our DevOps tools. We are currently investigating and
-                    analyzing different alternative approaches to move to Software-as-a-Service
-                    (SaaS) solutions for DevOps.</para>
+                    investment in Development and Operations (DevOps) technologies and tooling to
+                    allow our open-source solutions to be rapidly developed and released to reach
+                    the largest audiences possible. We began by hosting our DevOps tools, as it was
+                    the quickest way to begin rapid prototyping. However, through this process,
+                    we’ve found that the hosting of these tools requires more overhead and manhours
+                    than we would like. Our larger goals and priorities require developers’ time to
+                    contribute to our solutions rather than supporting our DevOps tools. We are
+                    currently investigating and analyzing different alternative approaches to move
+                    to Software-as-a-Service (SaaS) solutions for DevOps.</para>
                 <para>Additionally, due to the licensing issues around proprietary data, as well as
                     other open-source technologies, we leverage both an internal and external code
                     repository. This arrangement allows us to continue development while we work
@@ -235,7 +236,7 @@
             <title>Solution Adoption</title>
            
             <para>To date, the IKM Solution Adoption team has worked to identify key stakeholders
-                and tailor content to their understanding of  the goals of IKM. In this phase of
+                and tailor content to their understanding of the goals of IKM. In this phase of
                 increasing awareness, the team has developed and disseminated informational
                 presentations and trainings both internally and externally to federal and industry
                 partners. Through this and additional presentations and demos of Komet at industry
@@ -245,10 +246,9 @@
                 stakeholder relationships through personalized communications to individual
                 stakeholders at organizations of significance (i.e. Food and Drug Administration,
                 Office of the National Coordinator for Health Information Technology, Graphite
-                Health, Royal College of Pathologists of Australasia).. [8] Through such
-                engagements, the team has recognized the following key findings of developing
-                successful communications that will propel the efforts up the communications curve
-                trajectory. </para>
+                Health, Royal College of Pathologists of Australasia). [8] Through such engagements,
+                the team has recognized the following key findings of developing successful
+                communications that will propel the efforts up the communications curve trajectory. </para>
             <para>Through such engagements, the team has recognized the following key findings of
                 developing successful communications that will propel the efforts up the
                 communications curve trajectory. </para>
@@ -261,16 +261,14 @@
                     we move towards driving engagement.</para>
             </section>
             <section>
-                <title>Defining Integrated Knowledge Management</title>
-                <para>Integrated Knowledge Management is an evolving and novel movement in the
-                    healthcare information technology field. Therefore, communicating to all
-                    potential stakeholders effectively on the mission to increase cohesion in health
-                    data standards and what problems that it may solve is paramount to advancing the
-                    movement.
-                    Based on
-                    feedback from stakeholder engagement sessions, the team has been iteratively
-                    refining strategic communications initiatives to develop concise and aimed
-                    messaging to key stakeholders.</para>
+                <title>Defining IKM</title>
+                <para>IKM is an evolving and novel movement in the healthcare information technology
+                    field. Therefore, communicating to all potential stakeholders effectively on the
+                    mission to increase cohesion in health data standards and what problems that it
+                    may solve is paramount to advancing the movement. Based on feedback from
+                    stakeholder engagement sessions, the team has been iteratively refining
+                    strategic communications initiatives to develop concise and aimed messaging to
+                    key stakeholders.</para>
             </section>
             <section>
                 <title>Ensuring End User Adoption</title>
@@ -294,12 +292,14 @@
         </section>
         <section>
             <title>Knowledge Representation</title>
-            <para>data and the connections between tables [15]. Also, descriptions of data
-                structures and constraints are included, allowing storage of a description of its
-                own structure within the database. While this self-describing approach is reference
-                terminology-agnostic, making it capable of accommodating various data sources,
-                challenges for determining the importance of terminology-specific data components
-                are introduced [16].</para>
+            <para>The advantages of utilizing a generalized, self-describing data structure are
+                well-documented. This data structure comprises not just the database but also
+                includes metadata that outlines and explains both the data and the connections
+                between tables [15]. Also, descriptions of data structures and constraints are
+                included, allowing storage of a description of its own structure within the
+                database. While this self-describing approach is reference terminology-agnostic,
+                making it capable of accommodating various data sources, challenges for determining
+                the importance of terminology-specific data components are introduced [16].</para>
             <para>Representing data properties such as concepts, patterns, or semantics becomes a
                 complex task, especially when importing data from multiple terminology standards. As
                 clinical reference terminologies, SNOMED CT® and LOINC® employ different data
@@ -328,7 +328,8 @@
         </section>
     </section>
     <section>
-        <title>Evaluation of Current SNOMED® LOINC® Collaboration</title>
+        <title>Evaluation of Current Systemized Nomenclature of Medicine – Clinical Terms® (SNOMED
+            CT®) Logical Observation Identifiers Names and Code® (LOINC®) Collaboration </title>
         <para>In October 2022, Regenstrief Institute (RII) and SNOMED International, also known as
             International Health Terminology Standards Development Organization (IHTSDO), signed a
             cooperative agreement to collaborate the work between LOINC® and SNOMED CT®. This will
@@ -342,8 +343,8 @@
             project to better understand the successes and pain points as well as assess how IKM may
             provide additional solutions.</para>
         <section>
-            <title>Knowledge Management: SNOMED® LOINC® Collaborative Agreement Demonstration
-                Project Progress Reports </title>
+            <title>Knowledge Management: SNOMED LOINC® Collaborative Agreement Demonstration Project
+                Progress Reports </title>
             <para>The SNOMED LOINC® Collaborative Agreement is a critical first step forward towards
                 data interoperability and a testament towards the collective need for collaborative
                 solutions. As described on the website, the LOINC® Ontology can be accessed in two
@@ -356,13 +357,13 @@
             <para>Regarding Knowledge Management, our analysis will be focused on the systems and
                 services provided by the LOINC® and SNOMED CT® Interoperability Solution as
                 described on their website. [12] The analysis of the user interface / user
-                experience will be discussed in section <emphasis role="bold">UI/UX: SNOMED LOINC
+                experience will be discussed in section <emphasis role="bold">UI/UX: SNOMED LOINC®
                     Collaborative Agreement Demonstration Project Progress Reports</emphasis> and
                 analysis of the data representation implications are expanded on in section<emphasis
-                    role="bold">Knowledge Representation: SNOMED LOINC Collaborative Agreement
+                    role="bold">Knowledge Representation: SNOMED LOINC® Collaborative Agreement
                     Demonstration Project Progress Reports</emphasis>. Further details regarding the
                 communications to the community is discussed in section <emphasis role="bold"
-                    >Ecosystem Engagement: SNOMED LOINC Collaborative Agreement Demonstration
+                    >Ecosystem Engagement: SNOMED LOINC® Collaborative Agreement Demonstration
                     Project Progress Reports </emphasis>.</para>
             <section>
                 <title>Hearing from the Community</title>
@@ -413,7 +414,7 @@
             </section>
         </section>
         <section>
-            <title>UI/UX: SNOMED® LOINC® Collaborative Agreement Demonstration Project Progress
+            <title>UI/UX: SNOMED LOINC® Collaborative Agreement Demonstration Project Progress
                 Reports </title>
             <para>Through their collaborative agreement, LOINC® and SNOMED CT® have developed the
                 LOINC® Ontology SNOMED CT® Browser, which allows users to navigate concepts, view
@@ -587,11 +588,14 @@
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para>The LOINC® Ontology SNOMED CT® browser is a useful tool that can be improved by focusing on the end user to improve UI/UX. Improvements and enhancements to the tool’s user experience will be a key component to its long-term viability.</para>
+                <para>The LOINC® Ontology SNOMED CT® browser is a useful tool that can be improved
+                    by focusing on the end user to improve UI/UX. Improvements and enhancements to
+                    the tool’s user experience will be a key component to its long-term
+                    viability.</para>
             </section>
         </section>
         <section>
-            <title>SNOMED LOINC Collaborative Agreement Demonstration Project Progress Reports </title>
+            <title>SNOMED LOINC® Collaborative Agreement Demonstration Project Progress Reports </title>
             <para>While the success of the technical integration is critical, of equivalent
                 significance is the organization’s ability to communicate about its efforts to
                 enable awareness and adoption of the newly integrated model. Evaluating the
@@ -645,7 +649,7 @@
             </section>
         </section>
         <section>
-            <title>Knowledge Representation: SNOMED LOINC Collaborative Agreement Demonstration
+            <title>Knowledge Representation: SNOMED LOINC® Collaborative Agreement Demonstration
                 Project Progress Reports </title>
             <para>Mapping LOINC® terms to SNOMED CT®, specifically for the laboratory component of
                 LOINC® required extensive discussion among stakeholders and an extension of the
@@ -658,8 +662,8 @@
                     <colspec colnum="3" colname="col3" align="left"/>
                     <tbody>
                         <row>
-                            <entry><emphasis role="bold">LOINC axis </emphasis></entry>
-                            <entry><emphasis role="bold">SNOMED CT attribute</emphasis></entry>
+                            <entry><emphasis role="bold">LOINC® Axis </emphasis></entry>
+                            <entry><emphasis role="bold">SNOMED CT® Attribute</emphasis></entry>
                             <entry><emphasis role="bold">Note</emphasis></entry>
                         </row>
                         <row>
@@ -718,8 +722,8 @@
             </informaltable>
             <para>Release notes acknowledge some terms defined by LOINC® Parts require additional
                 discussion before finalizing the modeling and terming. An example of this issue is
-                LOINC terms defined by LOINC® Part Antibiotic XXX” (‘other antibiotic’). In
-                addition, inclusion of the Great Britain (GB) English refset for LOINC terms is
+                LOINC®  terms defined by LOINC® Part Antibiotic XXX (‘other antibiotic’). In
+                addition, inclusion of the Great Britain (GB) English refset for LOINC® terms is
                 still pending. [11]</para>
             <para>LOINC® contains properties that define a Category Status of “Order Only,”
                 “Observation Only”, or “Both Order and Observation”. SNOMED CT® hierarchies define
@@ -749,7 +753,8 @@
                     </imageobject>
                 </mediaobject>
             </figure>
-            <para>A Clinical LOINC crosswalk for standardized assessment instruments and document ontology has not been addressed yet in the LOINC® SNOMED CT® Collaboration.</para>
+            <para>A Clinical LOINC® crosswalk for standardized assessment instruments and document
+                ontology has not been addressed yet in the LOINC® SNOMED CT® Collaboration.</para>
         </section>
     </section>
     <section>
