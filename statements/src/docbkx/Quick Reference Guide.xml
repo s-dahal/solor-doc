@@ -5,10 +5,1119 @@
     <title>Quick Reference Guide</title>
     <section>
         <title>Abbreviation Guide</title>
-        <para></para>
+        <para>
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1" colwidth="1*"/>
+                    <colspec colnum="2" colname="col2" colwidth="3.47*"/>
+                    <tbody>
+                        <row>
+                            <entry>AAFP</entry>
+                            <entry>American Academy of Family Physicians</entry>
+                        </row>
+                        <row>
+                            <entry>ACE</entry>
+                            <entry>Angiotensin-converting enzyme</entry>
+                        </row>
+                        <row>
+                            <entry>ADA</entry>
+                            <entry>Americans with Disabilities Act</entry>
+                        </row>
+                        <row>
+                            <entry>AHIMA</entry>
+                            <entry>American Health Information Management Association</entry>
+                        </row>
+                        <row>
+                            <entry>AHRQ</entry>
+                            <entry>Agency for Healthcare Research and Quality </entry>
+                        </row>
+                        <row>
+                            <entry>AI</entry>
+                            <entry>Artificial Intelligence</entry>
+                        </row>
+                        <row>
+                            <entry>AIDS</entry>
+                            <entry>Acquired Immunodeficiency Syndrome</entry>
+                        </row>
+                        <row>
+                            <entry>AMIA</entry>
+                            <entry>American Medical Informatics Association </entry>
+                        </row>
+                        <row>
+                            <entry>ANF RM</entry>
+                            <entry>Analysis Normal Form (ANF) Reference Model</entry>
+                        </row>
+                        <row>
+                            <entry>ANSI</entry>
+                            <entry>American National Standards Institute</entry>
+                        </row>
+                        <row>
+                            <entry>AST</entry>
+                            <entry>Abstract Syntax Tree</entry>
+                        </row>
+                        <row>
+                            <entry>AOE</entry>
+                            <entry>At order entry</entry>
+                        </row>
+                        <row>
+                            <entry>AOSP</entry>
+                            <entry>Android Open-Source Project </entry>
+                        </row>
+                        <row>
+                            <entry>APAC</entry>
+                            <entry>Asia-Pacific region featuring East Asia, South Asia, Southeast
+                                Asia, and Oceania</entry>
+                        </row>
+                        <row>
+                            <entry>API</entry>
+                            <entry>Application Programming Interface</entry>
+                        </row>
+                        <row>
+                            <entry>aPTT</entry>
+                            <entry>Activated Partial Thromboplastin Time </entry>
+                        </row>
+                        <row>
+                            <entry>ARIA</entry>
+                            <entry>Active Risk Identification and Analysis</entry>
+                        </row>
+                        <row>
+                            <entry>AST</entry>
+                            <entry>Asparate aminotransferase</entry>
+                        </row>
+                        <row>
+                            <entry>ASTM</entry>
+                            <entry>American Society for Testing and Materials</entry>
+                        </row>
+                        <row>
+                            <entry>ATC</entry>
+                            <entry>Anatomical Therapeutic Chemical (ATC)</entry>
+                        </row>
+                        <row>
+                            <entry>AWS</entry>
+                            <entry>Amazon Web Services</entry>
+                        </row>
+                        <row>
+                            <entry>BDD </entry>
+                            <entry>Behavior Driven Development</entry>
+                        </row>
+                        <row>
+                            <entry>BDOH</entry>
+                            <entry>Broad Determinants of Health</entry>
+                        </row>
+                        <row>
+                            <entry>Bld</entry>
+                            <entry>Whole blood</entry>
+                        </row>
+                        <row>
+                            <entry>BPMN</entry>
+                            <entry>Business Process Modeling Notation </entry>
+                        </row>
+                        <row>
+                            <entry>C-CDA</entry>
+                            <entry>Consolidated Clinical Document Architecture</entry>
+                        </row>
+                        <row>
+                            <entry>CAP</entry>
+                            <entry>College of American Pathologists</entry>
+                        </row>
+                        <row>
+                            <entry>CD</entry>
+                            <entry>Continuous Deployment</entry>
+                        </row>
+                        <row>
+                            <entry>CDA</entry>
+                            <entry>Clinical Document Architecture</entry>
+                        </row>
+                        <row>
+                            <entry>CDC</entry>
+                            <entry>Centers for Disease Control and Prevention</entry>
+                        </row>
+                        <row>
+                            <entry>CDM</entry>
+                            <entry>Common Data Model</entry>
+                        </row>
+                        <row>
+                            <entry>CDS</entry>
+                            <entry>Clinical Decision Support</entry>
+                        </row>
+                        <row>
+                            <entry>CER</entry>
+                            <entry>Clinical Effectiveness Research</entry>
+                        </row>
+                        <row>
+                            <entry>CFTR</entry>
+                            <entry>Cystic Fibrosis Transmembrane Conductance Regulator</entry>
+                        </row>
+                        <row>
+                            <entry>CI</entry>
+                            <entry>Continuous Integration; or Clinical Improvement</entry>
+                        </row>
+                        <row>
+                            <entry>CIF</entry>
+                            <entry>Clinical Input Form</entry>
+                        </row>
+                        <row>
+                            <entry>CIMI</entry>
+                            <entry>Clinical Information Modeling Initiative </entry>
+                        </row>
+                        <row>
+                            <entry>CLI</entry>
+                            <entry>Clinical Laboratory Improvement</entry>
+                        </row>
+                        <row>
+                            <entry>CLIA</entry>
+                            <entry>Clinical Laboratory Improvement Amendments</entry>
+                        </row>
+                        <row>
+                            <entry>CMIO</entry>
+                            <entry>Chief Medical Information Officers</entry>
+                        </row>
+                        <row>
+                            <entry>CMM</entry>
+                            <entry>Capability Maturity Model</entry>
+                        </row>
+                        <row>
+                            <entry>CMS</entry>
+                            <entry>Centers for Medicare &amp; Medicaid Services</entry>
+                        </row>
+                        <row>
+                            <entry>CNN</entry>
+                            <entry>Convolutional Neural Network</entry>
+                        </row>
+                        <row>
+                            <entry>CMT</entry>
+                            <entry>Convergent Medical Terminology</entry>
+                        </row>
+                        <row>
+                            <entry>CEBIO</entry>
+                            <entry>Chemical Entities of Biological Interest Ontology</entry>
+                        </row>
+                        <row>
+                            <entry>COVID</entry>
+                            <entry>Coronavirus disease</entry>
+                        </row>
+                        <row>
+                            <entry>CP</entry>
+                            <entry>Clinical pathways</entry>
+                        </row>
+                        <row>
+                            <entry>CPG</entry>
+                            <entry>Clinical Practice Guidelines</entry>
+                        </row>
+                        <row>
+                            <entry>CQL</entry>
+                            <entry>Clinical Quality Language</entry>
+                        </row>
+                        <row>
+                            <entry>CR</entry>
+                            <entry>Configuration Requirements</entry>
+                        </row>
+                        <row>
+                            <entry>CRICO</entry>
+                            <entry>Controlled Risk Insurance Company</entry>
+                        </row>
+                        <row>
+                            <entry>CRN</entry>
+                            <entry>Clinical Research Networks</entry>
+                        </row>
+                        <row>
+                            <entry>CT</entry>
+                            <entry>Computerized Tomography</entry>
+                        </row>
+                        <row>
+                            <entry>CTS2<superscript>TM</superscript></entry>
+                            <entry>Common Terminology Services
+                                2<superscript>TM</superscript></entry>
+                        </row>
+                        <row>
+                            <entry>CUI</entry>
+                            <entry>Concept Unique Identifiers</entry>
+                        </row>
+                        <row>
+                            <entry>CVX</entry>
+                            <entry>Codes that indicate the product used in a vaccination</entry>
+                        </row>
+                        <row>
+                            <entry>DAST</entry>
+                            <entry>Dynamic Application Security Testing</entry>
+                        </row>
+                        <row>
+                            <entry>DCM</entry>
+                            <entry>Detailed Clinical Model</entry>
+                        </row>
+                        <row>
+                            <entry>DevOps</entry>
+                            <entry>Development and Operation’s Collaboration</entry>
+                        </row>
+                        <row>
+                            <entry>DevSecOps</entry>
+                            <entry>Development, Security, and Operations</entry>
+                        </row>
+                        <row>
+                            <entry>DI</entry>
+                            <entry>Dependency Inversion</entry>
+                        </row>
+                        <row>
+                            <entry>DLC</entry>
+                            <entry>Description Logic Classifiers</entry>
+                        </row>
+                        <row>
+                            <entry>DMG</entry>
+                            <entry>(a type of installation when using an MSI installer and
+                                MacOs)</entry>
+                        </row>
+                        <row>
+                            <entry>dpGaP</entry>
+                            <entry>database of Genotypes and Phenotypes (dpGaP)</entry>
+                        </row>
+                        <row>
+                            <entry>DrOn</entry>
+                            <entry>Drug Ontology</entry>
+                        </row>
+                        <row>
+                            <entry>DSTU</entry>
+                            <entry>Draft Standard for Trial Use</entry>
+                        </row>
+                        <row>
+                            <entry>DTA</entry>
+                            <entry>Data Transfer Agreement</entry>
+                        </row>
+                        <row>
+                            <entry>DRY</entry>
+                            <entry>Don’t Repeat Yourself</entry>
+                        </row>
+                        <row>
+                            <entry>ECA</entry>
+                            <entry>Event Condition Action</entry>
+                        </row>
+                        <row>
+                            <entry>eCQM</entry>
+                            <entry>Electronic Clinical Quality Measure</entry>
+                        </row>
+                        <row>
+                            <entry>ECG</entry>
+                            <entry>Electrocardiogram</entry>
+                        </row>
+                        <row>
+                            <entry>EHR</entry>
+                            <entry>Electronic Health Records</entry>
+                        </row>
+                        <row>
+                            <entry>eMERGE</entry>
+                            <entry>Electronic Medical Records and Genomics</entry>
+                        </row>
+                        <row>
+                            <entry>ER</entry>
+                            <entry>Emergency Room</entry>
+                        </row>
+                        <row>
+                            <entry>ET</entry>
+                            <entry>Enterprise Terminology</entry>
+                        </row>
+                        <row>
+                            <entry>ETL</entry>
+                            <entry>Extract, Transform, Load</entry>
+                        </row>
+                        <row>
+                            <entry>EL</entry>
+                            <entry>Existential Logic</entry>
+                        </row>
+                        <row>
+                            <entry>ELK</entry>
+                            <entry>A type of reasoner</entry>
+                        </row>
+                        <row>
+                            <entry>FAERS</entry>
+                            <entry>Food and Drug Administration’s Adverse Event Reporting
+                                System</entry>
+                        </row>
+                        <row>
+                            <entry>FDA</entry>
+                            <entry>Food and Drug Administration</entry>
+                        </row>
+                        <row>
+                            <entry>FDAAA</entry>
+                            <entry>Food and Drug Administration Amendments Act</entry>
+                        </row>
+                        <row>
+                            <entry>FedRAMP</entry>
+                            <entry>Federal Risk and Authorization Management Program</entry>
+                        </row>
+                        <row>
+                            <entry>FHIR</entry>
+                            <entry>Fast Healthcare Interoperability Resources</entry>
+                        </row>
+                        <row>
+                            <entry>FLWOR</entry>
+                            <entry>For, Let, Where, Order by, Return</entry>
+                        </row>
+                        <row>
+                            <entry>FML</entry>
+                            <entry>FHIR Mapping Language</entry>
+                        </row>
+                        <row>
+                            <entry>FSF</entry>
+                            <entry>Free Software Foundation</entry>
+                        </row>
+                        <row>
+                            <entry>GAM</entry>
+                            <entry>Guidelines and Measures</entry>
+                        </row>
+                        <row>
+                            <entry>GDPR</entry>
+                            <entry>General Data Protection Regulation</entry>
+                        </row>
+                        <row>
+                            <entry>GLIP</entry>
+                            <entry>Guideline Interchange Format</entry>
+                        </row>
+                        <row>
+                            <entry>GMDNA</entry>
+                            <entry>Global Medical Device Nomenclature Agency</entry>
+                        </row>
+                        <row>
+                            <entry>GNU GPL</entry>
+                            <entry>GNU’s Not Unix General Public License</entry>
+                        </row>
+                        <row>
+                            <entry>GWAS</entry>
+                            <entry>Genome-wide association studies</entry>
+                        </row>
+                        <row>
+                            <entry>HADES</entry>
+                            <entry>Health Analytics Data-to-Evidence Suite</entry>
+                        </row>
+                        <row>
+                            <entry>HDS</entry>
+                            <entry>Health Data Standards</entry>
+                        </row>
+                        <row>
+                            <entry>HHS</entry>
+                            <entry>Health and Human Services</entry>
+                        </row>
+                        <row>
+                            <entry>HIE</entry>
+                            <entry>Health Information Exchange</entry>
+                        </row>
+                        <row>
+                            <entry>HIM</entry>
+                            <entry>Health Information Management</entry>
+                        </row>
+                        <row>
+                            <entry>HIPPA</entry>
+                            <entry>Health Insurance Portability and Accountability Act</entry>
+                        </row>
+                        <row>
+                            <entry>HIT</entry>
+                            <entry>Health Information Technology</entry>
+                        </row>
+                        <row>
+                            <entry>HITECH</entry>
+                            <entry>Health Information Technology for Economic and Clinical
+                                Health</entry>
+                        </row>
+                        <row>
+                            <entry>HIV</entry>
+                            <entry>Human Immunodeficiency Virus</entry>
+                        </row>
+                        <row>
+                            <entry>HL7 </entry>
+                            <entry>Health Level 7</entry>
+                        </row>
+                        <row>
+                            <entry>HQMF</entry>
+                            <entry>Home Quality Measure Format</entry>
+                        </row>
+                        <row>
+                            <entry>HRO </entry>
+                            <entry>Highly Reliability Organization</entry>
+                        </row>
+                        <row>
+                            <entry>HSC</entry>
+                            <entry>Health Standards Collaborative</entry>
+                        </row>
+                        <row>
+                            <entry>HTA</entry>
+                            <entry>HL7 Terminology Authority</entry>
+                        </row>
+                        <row>
+                            <entry>HTML</entry>
+                            <entry>Hyper Text Markup Language</entry>
+                        </row>
+                        <row>
+                            <entry>ICD-9 </entry>
+                            <entry>International Classification of Diseases, Ninth Revision</entry>
+                        </row>
+                        <row>
+                            <entry>ICD-10CM</entry>
+                            <entry>International Classification of Disease, Tenth Revision Clinical
+                                Modification</entry>
+                        </row>
+                        <row>
+                            <entry>ICNP</entry>
+                            <entry>International Classification of Diseases</entry>
+                        </row>
+                        <row>
+                            <entry>ICPC</entry>
+                            <entry>International Classification of Primary Care</entry>
+                        </row>
+                        <row>
+                            <entry>IDE</entry>
+                            <entry>Integrated Development Environment</entry>
+                        </row>
+                        <row>
+                            <entry>IEEE</entry>
+                            <entry>Institute of Electrical and Electronics Engineers</entry>
+                        </row>
+                        <row>
+                            <entry>IICC</entry>
+                            <entry>IVD Industry Connectivity Consortium (IICC)</entry>
+                        </row>
+                        <row>
+                            <entry>IHTSDO</entry>
+                            <entry>International Health Terminology Standards Development
+                                Organization</entry>
+                        </row>
+                        <row>
+                            <entry>IKM</entry>
+                            <entry>Integrated Knowledge Management</entry>
+                        </row>
+                        <row>
+                            <entry>INR</entry>
+                            <entry>International Normalized Ratio</entry>
+                        </row>
+                        <row>
+                            <entry>ISO</entry>
+                            <entry>International <emphasis role="bold">O</emphasis>rganization for
+                                    <emphasis role="bold">S</emphasis>tandardization (i.e. ISO
+                                languages and codes)</entry>
+                        </row>
+                        <row>
+                            <entry>ISP</entry>
+                            <entry>Interface Segregation Principle</entry>
+                        </row>
+                        <row>
+                            <entry>IT </entry>
+                            <entry>Information Technology</entry>
+                        </row>
+                        <row>
+                            <entry>IV&amp;V</entry>
+                            <entry>Independent Validation and Verification </entry>
+                        </row>
+                        <row>
+                            <entry>IVD</entry>
+                            <entry>In vitro Diagnostics</entry>
+                        </row>
+                        <row>
+                            <entry>GUI</entry>
+                            <entry>Graphical User Interface</entry>
+                        </row>
+                        <row>
+                            <entry>ISAAC</entry>
+                            <entry>To be known</entry>
+                        </row>
+                        <row>
+                            <entry>JAMA</entry>
+                            <entry>Journal of the American Medical Association</entry>
+                        </row>
+                        <row>
+                            <entry>JSON</entry>
+                            <entry>JavaScript Object Notation</entry>
+                        </row>
+                        <row>
+                            <entry>KM</entry>
+                            <entry>Knowledge Management</entry>
+                        </row>
+                        <row>
+                            <entry>KMP</entry>
+                            <entry>Knowledge Management Platform</entry>
+                        </row>
+                        <row>
+                            <entry>KNART</entry>
+                            <entry>Knowledge artifacts</entry>
+                        </row>
+                        <row>
+                            <entry>Komet </entry>
+                            <entry>Knowledge Management Environment</entry>
+                        </row>
+                        <row>
+                            <entry>KPI</entry>
+                            <entry>Kep Performance Indicators</entry>
+                        </row>
+                        <row>
+                            <entry>KRSS</entry>
+                            <entry>Knowledge Representation System Specification (KRSS)</entry>
+                        </row>
+                        <row>
+                            <entry>LAW</entry>
+                            <entry>Laboratory Analytical Workflow</entry>
+                        </row>
+                        <row>
+                            <entry>LBx</entry>
+                            <entry>Liquid Biopsy</entry>
+                        </row>
+                        <row>
+                            <entry>LHBA</entry>
+                            <entry>Linkage Honest Broker Agreement</entry>
+                        </row>
+                        <row>
+                            <entry>LIDR</entry>
+                            <entry>Laboratory Interoperability Data Repository</entry>
+                        </row>
+                        <row>
+                            <entry>LIMS</entry>
+                            <entry>Laboratory Information Management System</entry>
+                        </row>
+                        <row>
+                            <entry>LIS</entry>
+                            <entry>Laboratory Information System</entry>
+                        </row>
+                        <row>
+                            <entry>LIVD</entry>
+                            <entry>Loinc®-to-IVD (Invitro Diagnostics)</entry>
+                        </row>
+                        <row>
+                            <entry>LM</entry>
+                            <entry>Logical Model</entry>
+                        </row>
+                        <row>
+                            <entry>LOI</entry>
+                            <entry>Logical Observation Identifiers</entry>
+                        </row>
+                        <row>
+                            <entry>LOINC®</entry>
+                            <entry>Logical Observation Identifiers Names and Codes®</entry>
+                        </row>
+                        <row>
+                            <entry>LSP</entry>
+                            <entry>Liskov Substitution Principle</entry>
+                        </row>
+                        <row>
+                            <entry>MDMI</entry>
+                            <entry>Model Driven Message Interoperability</entry>
+                        </row>
+                        <row>
+                            <entry>MED-RT</entry>
+                            <entry>Medication - Reference Terminology</entry>
+                        </row>
+                        <row>
+                            <entry>MERS</entry>
+                            <entry>Middle East Respiratory Syndrome</entry>
+                        </row>
+                        <row>
+                            <entry>MeSH</entry>
+                            <entry>Medical Subject Headings</entry>
+                        </row>
+                        <row>
+                            <entry>ML</entry>
+                            <entry>Machine Learning</entry>
+                        </row>
+                        <row>
+                            <entry>MRC</entry>
+                            <entry>Minimally Required Content</entry>
+                        </row>
+                        <row>
+                            <entry>MU</entry>
+                            <entry>Meaningful Use</entry>
+                        </row>
+                        <row>
+                            <entry>NAM</entry>
+                            <entry>National Academy of Medicine</entry>
+                        </row>
+                        <row>
+                            <entry>NCPDP</entry>
+                            <entry>National Council for Prescription Drug Program</entry>
+                        </row>
+                        <row>
+                            <entry>NDC</entry>
+                            <entry>National Drug Code</entry>
+                        </row>
+                        <row>
+                            <entry>NDF-RT</entry>
+                            <entry>National Drug File – Reference Terminology</entry>
+                        </row>
+                        <row>
+                            <entry>NGC</entry>
+                            <entry>National Guideline Clearinghouse</entry>
+                        </row>
+                        <row>
+                            <entry>NHGRI</entry>
+                            <entry>National Human Genome Research Institute</entry>
+                        </row>
+                        <row>
+                            <entry>NLP</entry>
+                            <entry>Natural Language Processing</entry>
+                        </row>
+                        <row>
+                            <entry>N3C</entry>
+                            <entry>National COVID Cohort Collaborative</entry>
+                        </row>
+                        <row>
+                            <entry>NCAT</entry>
+                            <entry>National Center for Advancing Translational Sciences</entry>
+                        </row>
+                        <row>
+                            <entry>NDC</entry>
+                            <entry>National Drug Code</entry>
+                        </row>
+                        <row>
+                            <entry>NDF</entry>
+                            <entry>National Drug File</entry>
+                        </row>
+                        <row>
+                            <entry>NLM</entry>
+                            <entry>National Library of Medicine</entry>
+                        </row>
+                        <row>
+                            <entry>NQMC</entry>
+                            <entry>National Quality Measures Clearinghouse</entry>
+                        </row>
+                        <row>
+                            <entry>OBR/OBX</entry>
+                            <entry>Observation/Result Segment; OBR refer to many report headers; OBX
+                                to refer to many separate observation segments</entry>
+                        </row>
+                        <row>
+                            <entry>OHDSI</entry>
+                            <entry>Observational Health Data Sciences and Informatics</entry>
+                        </row>
+                        <row>
+                            <entry>OMG</entry>
+                            <entry>Object Management Group</entry>
+                        </row>
+                        <row>
+                            <entry>OMOP</entry>
+                            <entry>Observational Medical Outcomes Partnership</entry>
+                        </row>
+                        <row>
+                            <entry>ONC</entry>
+                            <entry>Office of the National Coordinator for Health Information
+                                Technology</entry>
+                        </row>
+                        <row>
+                            <entry>OO</entry>
+                            <entry>Object-oriented</entry>
+                        </row>
+                        <row>
+                            <entry>ORDO</entry>
+                            <entry>Orphanet ontology of rare diseases (<link
+                                    xlink:href="https://data.lhncbc.nlm.nih.gov/public/mor/pubs/pdf/2018-ybmi-ob.pdf"
+                                    >confirmed here</link>)</entry>
+                        </row>
+                        <row>
+                            <entry>OS</entry>
+                            <entry>Order Sets</entry>
+                        </row>
+                        <row>
+                            <entry>OSL</entry>
+                            <entry>Open-Source Licensing</entry>
+                        </row>
+                        <row>
+                            <entry>OSS</entry>
+                            <entry>Open-Source Software</entry>
+                        </row>
+                        <row>
+                            <entry>OTC</entry>
+                            <entry>Over-the-counter</entry>
+                        </row>
+                        <row>
+                            <entry>PASTF Model</entry>
+                            <entry>Procedural Knowledge, Assertional Knowledge, Statement Model,
+                                Terminology Knowledge, and Foundational Architecture</entry>
+                        </row>
+                        <row>
+                            <entry>PCORI</entry>
+                            <entry>Patient-Centered Outcomes Research Institute</entry>
+                        </row>
+                        <row>
+                            <entry>PCORnet</entry>
+                            <entry>The National Patient-Centered Clinical Research Network</entry>
+                        </row>
+                        <row>
+                            <entry>PCP</entry>
+                            <entry>Primary Care Physician</entry>
+                        </row>
+                        <row>
+                            <entry>PCR</entry>
+                            <entry>Polymerase Chain Reaction</entry>
+                        </row>
+                        <row>
+                            <entry>PDF</entry>
+                            <entry>Portable Document Format</entry>
+                        </row>
+                        <row>
+                            <entry>PHAMIS</entry>
+                            <entry>Public Health Automated Medical Information System</entry>
+                        </row>
+                        <row>
+                            <entry>PHL</entry>
+                            <entry>Public Health Lab</entry>
+                        </row>
+                        <row>
+                            <entry>PHQ</entry>
+                            <entry>Patient Health Questionnaire</entry>
+                        </row>
+                        <row>
+                            <entry>PII</entry>
+                            <entry>Personally Identifiable Information</entry>
+                        </row>
+                        <row>
+                            <entry>PMD</entry>
+                            <entry>(used with Java SAST?)</entry>
+                        </row>
+                        <row>
+                            <entry>POC</entry>
+                            <entry>Point of Care</entry>
+                        </row>
+                        <row>
+                            <entry>PPRL</entry>
+                            <entry>Privacy Preserving Record Linkage</entry>
+                        </row>
+                        <row>
+                            <entry>PPP</entry>
+                            <entry>Platelet-Poor Plasma</entry>
+                        </row>
+                        <row>
+                            <entry>PPV</entry>
+                            <entry>Positive Predictive Value</entry>
+                        </row>
+                        <row>
+                            <entry>PRS</entry>
+                            <entry>Polygenic Risk Scores</entry>
+                        </row>
+                        <row>
+                            <entry>PT</entry>
+                            <entry>Prothrombin Time</entry>
+                        </row>
+                        <row>
+                            <entry>PTSD</entry>
+                            <entry>Post Traumatic Stress Disorder</entry>
+                        </row>
+                        <row>
+                            <entry>QA</entry>
+                            <entry>Quality Assurance</entry>
+                        </row>
+                        <row>
+                            <entry>QC</entry>
+                            <entry>Quality Control</entry>
+                        </row>
+                        <row>
+                            <entry>QDM</entry>
+                            <entry>Quality Data Model</entry>
+                        </row>
+                        <row>
+                            <entry>QL</entry>
+                            <entry>Query Logic</entry>
+                        </row>
+                        <row>
+                            <entry>QUICK</entry>
+                            <entry>Quality Improvement and Clinical Knowledge Model</entry>
+                        </row>
+                        <row>
+                            <entry>QVT</entry>
+                            <entry>Query/View/Transformation</entry>
+                        </row>
+                        <row>
+                            <entry>RA</entry>
+                            <entry>Rheumatoid Arthritis</entry>
+                        </row>
+                        <row>
+                            <entry>RA-ILD</entry>
+                            <entry>Rheumatoid Arthritis related Interstitial lung disease</entry>
+                        </row>
+                        <row>
+                            <entry>RBAC</entry>
+                            <entry>Role Based Access Controls</entry>
+                        </row>
+                        <row>
+                            <entry>RCT</entry>
+                            <entry>Randomized Clinical Trial</entry>
+                        </row>
+                        <row>
+                            <entry>RD</entry>
+                            <entry>Related Dementia</entry>
+                        </row>
+                        <row>
+                            <entry>RDFS</entry>
+                            <entry>RDF Schema Specification</entry>
+                        </row>
+                        <row>
+                            <entry>RECOVER Initiative</entry>
+                            <entry>Researching COVID to Enhance Recovery (RECOVER)
+                                Initiative</entry>
+                        </row>
+                        <row>
+                            <entry>RELMA®</entry>
+                            <entry>Regenstrief LOINC® Mapping Assistant</entry>
+                        </row>
+                        <row>
+                            <entry>RF2</entry>
+                            <entry>Release Format 2</entry>
+                        </row>
+                        <row>
+                            <entry>RFID</entry>
+                            <entry>Radio-frequency Identification</entry>
+                        </row>
+                        <row>
+                            <entry>RIM</entry>
+                            <entry>Reference Information Model</entry>
+                        </row>
+                        <row>
+                            <entry>RL</entry>
+                            <entry>Rules Logic</entry>
+                        </row>
+                        <row>
+                            <entry>RT</entry>
+                            <entry>Reference Terminology</entry>
+                        </row>
+                        <row>
+                            <entry>RxCUI</entry>
+                            <entry>(Prescription) Concept Unique Identifiers</entry>
+                        </row>
+                        <row>
+                            <entry>RNN</entry>
+                            <entry>Recurrent Neural Network</entry>
+                        </row>
+                        <row>
+                            <entry>RRF</entry>
+                            <entry>Rich Release Format</entry>
+                        </row>
+                        <row>
+                            <entry>RWD</entry>
+                            <entry>Real World Data</entry>
+                        </row>
+                        <row>
+                            <entry>RWE</entry>
+                            <entry>Real World Evidence</entry>
+                        </row>
+                        <row>
+                            <entry>SaaS</entry>
+                            <entry>Software as a Service</entry>
+                        </row>
+                        <row>
+                            <entry>SARS1</entry>
+                            <entry>Severe Acute Respiratory Syndrome Coronavirus 1</entry>
+                        </row>
+                        <row>
+                            <entry>SARS-CoV-2</entry>
+                            <entry>Severe acute Respiratory Syndrome Coronavirus 2</entry>
+                        </row>
+                        <row>
+                            <entry>SAST</entry>
+                            <entry>Static Analysis Security Testing</entry>
+                        </row>
+                        <row>
+                            <entry>SC</entry>
+                            <entry><emphasis role="italic">Please look up </emphasis>SoC<emphasis
+                                    role="italic"> in this Abbreviation Guide.</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry>SCA</entry>
+                            <entry>Software Composition Analysis (SCA)</entry>
+                        </row>
+                        <row>
+                            <entry>SCDM</entry>
+                            <entry>Sentinel Common Data Model</entry>
+                        </row>
+                        <row>
+                            <entry>SDO</entry>
+                            <entry>Standards Development Organization</entry>
+                        </row>
+                        <row>
+                            <entry>SDOH</entry>
+                            <entry>Social Determinants of Health</entry>
+                        </row>
+                        <row>
+                            <entry>SGML</entry>
+                            <entry>Standard generalized markup language</entry>
+                        </row>
+                        <row>
+                            <entry>SHIELD</entry>
+                            <entry>Systemic Harmonization and Interoperability Enhancement for
+                                Laboratory Data</entry>
+                        </row>
+                        <row>
+                            <entry>SLA</entry>
+                            <entry>Service Level Agreement</entry>
+                        </row>
+                        <row>
+                            <entry>SNOMED CT®</entry>
+                            <entry>Systematized Nomenclature of Medicine Clinical Terms®</entry>
+                        </row>
+                        <row>
+                            <entry>SNOMED RT</entry>
+                            <entry>Systematized Nomenclature of Medicine Reference
+                                Terminology</entry>
+                        </row>
+                        <row>
+                            <entry>SNOP</entry>
+                            <entry>Systematized Nomenclature of Pathology</entry>
+                        </row>
+                        <row>
+                            <entry>SoC</entry>
+                            <entry>Separation of Concerns</entry>
+                        </row>
+                        <row>
+                            <entry>SOLID</entry>
+                            <entry>Single Responsibility Principle; Open/Closed Principle; Liskov
+                                Substitution Principle (LSP); Interface Segregation Principle (ISP);
+                                Dependency Inversion (DI)</entry>
+                        </row>
+                        <row>
+                            <entry>SOP</entry>
+                            <entry>Standard Operating Procedures</entry>
+                        </row>
+                        <row>
+                            <entry>SPARQL</entry>
+                            <entry>SPARQL [sparkle] Protocol and RDF Query Language</entry>
+                        </row>
+                        <row>
+                            <entry>SPL</entry>
+                            <entry>Structured Product Labels</entry>
+                        </row>
+                        <row>
+                            <entry>ST</entry>
+                            <entry>Standard Terminology</entry>
+                        </row>
+                        <row>
+                            <entry>SWEC</entry>
+                            <entry>Situation with Explicit Context</entry>
+                        </row>
+                        <row>
+                            <entry>STAMP</entry>
+                            <entry>Status, Time, Author, Module, and Path</entry>
+                        </row>
+                        <row>
+                            <entry>STPA</entry>
+                            <entry>System Theoretic Process Analysis</entry>
+                        </row>
+                        <row>
+                            <entry>STU</entry>
+                            <entry>Standard for Trial Use</entry>
+                        </row>
+                        <row>
+                            <entry>TDD</entry>
+                            <entry>Test Driven Development</entry>
+                        </row>
+                        <row>
+                            <entry>THO</entry>
+                            <entry><emphasis role="bold">t</emphasis>erminology.<emphasis
+                                    role="bold">H</emphasis>L7.<emphasis role="bold">o</emphasis>rg
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Tinkar</entry>
+                            <entry>TermINology Knowledge Architecture</entry>
+                        </row>
+                        <row>
+                            <entry>TOPX</entry>
+                            <entry>Terminal Operation System</entry>
+                        </row>
+                        <row>
+                            <entry>TP</entry>
+                            <entry>Treatment Protocols</entry>
+                        </row>
+                        <row>
+                            <entry>TMC</entry>
+                            <entry>Tinkar Model Concepts</entry>
+                        </row>
+                        <row>
+                            <entry>TRM</entry>
+                            <entry>Tinkar Reference Model</entry>
+                        </row>
+                        <row>
+                            <entry>XLST</entry>
+                            <entry>eXtensible Stylesheet Language Transformation </entry>
+                        </row>
+                        <row>
+                            <entry>XML</entry>
+                            <entry>Extensible Markup Language</entry>
+                        </row>
+                        <row>
+                            <entry>UCUM</entry>
+                            <entry>Unified Code for Units of Measure</entry>
+                        </row>
+                        <row>
+                            <entry>UI</entry>
+                            <entry>User Interface</entry>
+                        </row>
+                        <row>
+                            <entry>UML</entry>
+                            <entry>Unified Modeling Language </entry>
+                        </row>
+                        <row>
+                            <entry>UMLS</entry>
+                            <entry>United Medical Language System</entry>
+                        </row>
+                        <row>
+                            <entry>URU</entry>
+                            <entry>Understandable, Reproducible, Useful </entry>
+                        </row>
+                        <row>
+                            <entry>USCDI</entry>
+                            <entry>United States Core Data for Interoperability</entry>
+                        </row>
+                        <row>
+                            <entry>UTG</entry>
+                            <entry>Unified Terminology Governance</entry>
+                        </row>
+                        <row>
+                            <entry>U.K.</entry>
+                            <entry>United Kingdom</entry>
+                        </row>
+                        <row>
+                            <entry>U.S.</entry>
+                            <entry>United States</entry>
+                        </row>
+                        <row>
+                            <entry>UML</entry>
+                            <entry>Unified Modeling Language</entry>
+                        </row>
+                        <row>
+                            <entry>UMLS</entry>
+                            <entry>United Medical Language System</entry>
+                        </row>
+                        <row>
+                            <entry>UNMC</entry>
+                            <entry>University of Nebraska Medical Center</entry>
+                        </row>
+                        <row>
+                            <entry>UUID</entry>
+                            <entry>Universally Unique Identifiers</entry>
+                        </row>
+                        <row>
+                            <entry>UX </entry>
+                            <entry>User Experience</entry>
+                        </row>
+                        <row>
+                            <entry>VCR</entry>
+                            <entry>Version Control Repository </entry>
+                        </row>
+                        <row>
+                            <entry>VHA</entry>
+                            <entry>Veterans Health Administration</entry>
+                        </row>
+                        <row>
+                            <entry>VSAC</entry>
+                            <entry>Value Set Authority Center</entry>
+                        </row>
+                        <row>
+                            <entry>WCAG</entry>
+                            <entry>Web Content Accessibility Guidelines </entry>
+                        </row>
+                        <row>
+                            <entry>WHO</entry>
+                            <entry>World Health Organization</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </para>
+        <para>Updated on 1/23/2024</para>
     </section>
     <section>
         <title>IKM Terminology Definitions</title>
+        <para/>
         <informaltable>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1" colwidth="1*" align="left"/>
