@@ -383,7 +383,7 @@
                     <title>Screenshot of GitHub Non-Technical Issue Submission Page</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Screenshot%20of%20GitHub%20Non%20Technical%20Issue%20Submission%20Page.svg" align="center" scale="50"/>
+                            <imagedata fileref="images/Screenshot%20of%20GitHub%20Non%20Technical%20Issue%20Submission%20Page.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -406,7 +406,7 @@
                     <title>Screenshot of GitHub Issue Screen</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Screenshot%20of%20GitHub%20Issue%20Screen.svg" align="center" scale="40"/>
+                            <imagedata fileref="images/Screenshot%20of%20GitHub%20Issue%20Screen.svg" align="center" scale="70"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -443,7 +443,7 @@
                     <title>LOINC® Ontology SNOMED CT® Browser Search Filters</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/LOINC%20Ontology%20SNOMED%20CT%20Browser%20Search%20Filters.svg" align="center" scale="40"/>
+                            <imagedata fileref="images/LOINC%20Ontology%20SNOMED%20CT%20Browser%20Search%20Filters.svg" align="center" scale="70"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -480,7 +480,7 @@
                     <title>Hypothetical Optimized Search Function</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Hypothetical%20Optimized%20Search%20Function.svg" align="center"  scale="50"/>
+                            <imagedata fileref="images/Hypothetical%20Optimized%20Search%20Function.svg" align="center"  scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -560,7 +560,7 @@
                     <title>Example of Hypothetical Concepts Versioning Record</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Example%20of%20Hypothetical%20Concepts%20Versioning%20Record.svg" align="center" scale="50"/>
+                            <imagedata fileref="images/Example%20of%20Hypothetical%20Concepts%20Versioning%20Record.svg" align="center" scale="40"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
