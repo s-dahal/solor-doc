@@ -383,7 +383,7 @@
             clinical information system [11]. LOINC® advocates for open terminology standards but
             does not issue an open-source license. Instead, all users are required to hold a license
             to utilize LOINC®, with some licenses requiring a fee to implement and utilize the full
-            functionality of LOINC®. Similarly, SNOMED-CT® is overseen by SNOMED International with
+            functionality of LOINC®. Similarly, SNOMED CT® is overseen by SNOMED International with
             the intent to support, maintain, and implement SNOMED CT®. All users are required to
             accept SNOMED International’s licensing agreement through an end-user agreement and are
             issued a proprietary license with some requiring a fee depending on the usage and intent
@@ -406,7 +406,7 @@
             under their SNOMED CT® Affiliate license and must go through a feedback process where
             users can petition for added codes in a future release cycle. This is to avoid confusion
             and ambiguity of SNOMED International codes and prevent against inconsistencies between
-            systems. [12] As a result there will be many forms of similarly derived codes in a
+            systems. [12] As a result, there will be many forms of similarly derived codes in a
             localized format. </para>
         <para>This waiting cycle creates gaps that directly impact the quality and interoperability
             of data. While organizations petition to have new codes created, they must continue to

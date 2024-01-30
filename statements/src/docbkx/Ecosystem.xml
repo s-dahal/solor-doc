@@ -13,9 +13,9 @@
             quality and accuracy of their data. Terminology standards aim to ensure information is
             captured and represented in a repeatable and standardized format so that other
             organizations and stakeholders using said terminology standard have a common
-            understanding of the data. While terminology standards are a useful tool, extensive
-            knowledge management (KM) is needed to identify, manage, and share the standardized data
-            that these systems and standards capture. However, as data flows within and between
+            understanding of the data. While terminology standards are useful, extensive knowledge
+            management (KM) is needed to identify, manage, and share the standardized data that
+            these systems and standards capture. However, as data flows within and between
             healthcare systems, the use of different terminology standards, KM processes, and
             systems themselves can pose a threat to the integrity of data.</para>
         <para>IKM is an approach to data management that aims to maintain the meaning, integrity,
@@ -307,8 +307,8 @@
                 translate easily between terminologies. SNOMED CT® utilizes Concepts, Descriptions,
                 and Relationships, organized hierarchically to convey clinical meanings to its
                 terms. LOINC® codes are represented by five or six main parts. And hierarchical
-                relationship between LOINC® terms is manually applied outside of the LOINC® SNOMED®
-                Collaboration. The components from each of these terminologies may function as
+                relationship between LOINC® terms is manually applied outside of the LOINC® SNOMED
+                CT® Collaboration. The components from each of these terminologies may function as
                 crucial data structure components for axioms and related data properties within the
                 database. [9]</para>
             <para>Once imported into a self-describing data structure, determining equivalence with
