@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Ethical Consideration</title>
+    <section>
+        <title>Introduction to Ethical Imperatives</title>
+        <para>Ethics are individual or shared moral principles that govern our behavior and set standards for what is considered right or wrong. These moral principles can be applied to any component of human behavior, including personal, social, and economic or business decisions. Many organizations and businesses have internal ethical codes and guidelines for employees to follow when working , including medical and Standards Development Organizations (SDOs). [1]
+            As our team continues efforts towards Integrated Knowledge Management (IKM) and a contributed IKM application, it is critical that our work improves the interoperability and quality of healthcare data to support medical professionals and patients with ethical considerations.
+        </para>
+    </section>
+    <section>
+        <title>Medical Ethics</title>
+        <para>The medical field is driven by a strong code of Medical Ethics, or bioethics, that
+            guide providers through their daily practice, decision making, and issues related to
+            patient care. There are four pillars of medical ethics that guide providers as they
+            determine the best course of action for patient care:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Beneficence (doing good)</para>
+            </listitem>
+            <listitem>
+                <para>Non-maleficence (to do no harm)</para>
+            </listitem>
+            <listitem>
+                <para>Autonomy (giving the patient the freedom to choose freely, where they are
+                    able)</para>
+            </listitem>
+            <listitem>
+                <para>Justice (ensuring fairness) <para>[2]</para></para>
+            </listitem>
+        </itemizedlist>
+        <para>Unlike other fields, medical providers and other professionals involved in patient
+            care are often faced with moral decisions that have unique consequences for not only
+            patients, but also for the patient’s family, communities, and even themselves. The
+            Hippocratic Oath may come to mind when thinking about ethics in patient care. This
+                5<superscript>th</superscript> century Code of Ethics advanced the idea of relieving
+            patient suffering and promoting well-being through patient-physician relationship and
+            still guides providers today. The American Medical Association’s Code of Medical Ethics
+            is another ethical guide for providers that was adopted in 1847; this code explains the
+            standards of ethical conduct for physicians, patients, and the entire medical
+            profession/society. The current Code has greatly expanded since 1847 and offers general
+            rules of practice as well as providing tools for physicians facing novel ethical
+            questions. [3]</para>
+        <para>Patient care providers are not the only medical professionals that encounter scenarios
+            that raise ethical questions surrounding the care they provide, professionals involved
+            in medical research also face ethical dilemmas, like which patients qualify for
+            experimental treatments. The medical community created institutional review boards to
+            address ethics in research and develop guidelines and solutions for these
+            questions.</para>
+    </section>
+    <section>
+        <title>The Impact of Healthcare Terminologies on Ethics</title>
+        <para>An ongoing and developing conversation in medical ethics is the proper use of health
+            data. Genomics is an example of a data source that produces large volumes of health
+            data. The field of Genomics uses whole genome or whole exome sequencing extracted from
+            biological specimens to study genetically linked diseases, population wide health, and
+            rare or neglected diseases. However, while this data offers researchers quality insight,
+            the use of this data opens the door to questions about patient consent, data storage and
+            future use, and breaches in patient privacy. To manage, codify, and communicate the
+            large amounts of health data they collect, healthcare organizations use healthcare
+            terminology standards like Systematized Nomenclature of Medicine Clinical Terms© (SNOMED
+            CT©), Logical Observations Identifiers Names and Codes© (LOINC©), and National Library
+            of Medicine’s codification of the U.S. pharmacopeia (RxNorm) developed by SDOs. Although
+            SDOs continuously improve their codes, many terminology standards lack interoperability
+            between the standards themselves and the organizations that use them, which can impact
+            patient safety and the quality of care. </para>
+    </section>
+    <section>
+        <title>Ethical Implications for Providers</title>
+        <para>Beyond facilitating communication, healthcare terminology standards play a crucial
+            role in medical ethics. In an environment where every decision holds weight, these
+            terminologies work to ensure that healthcare professionals share a common understanding
+            of patient data so that providers can translate information into actionable insights and
+            improved patient outcomes. Making informed decisions is a critical component of a
+            medical professional’s ethical responsibility. Electing for a given treatment option
+            without understanding critical factors like existing health conditions, medical history,
+            or other pertinent information can have both ethical and qualitative impacts on patient
+            care. As efforts continue towards successful IKM, data must be seamlessly exchanged
+            within and between systems, while maintaining meaning and accuracy, to prevent
+            misunderstandings and errors and fulfill a provider’s ethical duty to “do good” and “do
+            no harm”.</para>
+        <para>Furthermore, these terminologies play a role in addressing challenges related to
+            health equity, including fairness and accessibility in healthcare. Terminology standards
+            provide a normalized and repeatable way to classify conditions, treatments, and various
+            other aspects of patient care. As we work to improve the interoperability and accuracy
+            of transmitted data through IKM, researchers and providers will more easily be able to
+            identify and address discrepancies in healthcare. Standardized terminologies are
+            instrumental in dismantling barriers that stem from linguistic, cultural, or systemic
+            differences by providing a universal language for health conditions and treatments to
+            support consistent care, irrespective of a patient or provider's background or
+            geographic location. Healthcare terminologies promote a shared understanding of
+            conditions and treatments across groups of people, reducing disparities in healthcare
+            delivery. Standardized terminologies benefit clinicians in the same way by providing
+            them with an unbiased language to navigate the world of clinical decision making and
+            potential ethical dilemmas. [4]</para>
+    </section>
+    <section>
+        <title>Ethical Implications for Patients</title>
+        <para>The ethical implications of patient comprehension are profound. In scenarios where
+            treatment options are complex or risky, the ability of patients to understand and weigh
+            these options is critical. Healthcare terminologies work to convey information in a
+            consistent and clear manner, reducing the likelihood of misunderstandings that could
+            impact patient decisions [4,5,6]. These terminologies serve as key facilitators in
+            enhancing patient communication and autonomy. By providing a clear and consistent
+            language for health information, they empower patients to understand their health
+            better, participate actively in their care, and make informed choices – all fundamental
+            to ethical and patient-centered healthcare.</para>
+        <para>Ethical patient care, including informed patient decision making, must remain a
+            driving force behind IKM. Ensuring that data, clinical concepts, and terminologies are
+            standardized and interoperable between and within systems like EHRs, patient portals and
+            educational materials can lead to improved patient comprehension, better self-management
+            of conditions, reduced hospital readmissions, and the ability for patients to ultimately
+            choose their care. [5]</para>
+    </section>
+    <section>
+        <title>Conclusion</title>
+        <para>Ethical considerations must remain a driving force behind the development,
+            implementation, and adoption of IKM. IKM must support providers and patients as they
+            navigate existing ethical dilemmas, while balancing the ethical concerns surrounding
+            patient data, personally identifiable information, and personal health information use
+            and storage. IKM will also need to rapidly integrate with new technologies to address
+            ethical considerations, particularly around privacy and consent, as artificial
+            intelligence, machine learning, and other technologies become more prominent in the
+            healthcare ecosystem.</para>
+    </section>
+    <section>
+        <title>References</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Smith IH, Kouchaki M. Building an Ethical Company [Internet]. Harvard
+                        Business Review. 2021. Available from: </para>
+                    <link xlink:href="https://hbr.org/2021/11/building-an-ethical-company"
+                        >https://hbr.org/2021/11/building-an-ethical-company</link>
+                </listitem>
+                <listitem>
+                    <para>Varkey B. Principles of Clinical Ethics and Their Application to Practice.
+                        Medical Principles and Practice [Internet]. 2021 Feb;30(1):17–28. Available
+                        from: </para>
+                    <link xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7923912/"
+                        >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7923912/</link>
+                </listitem>
+                <listitem>
+                    <para> Harvey JC. The Cambridge World History of Medical Ethics. JAMA. 2009 Dec
+                        2;302(21):2371.</para>
+                </listitem>
+                <listitem>
+                    <para>Blue Cross Blue Shield Association. Setting the standard: addressing
+                        health disparities with better data; 2-22 April [cited 2024 January 29].
+                        Available from: </para>
+                    <link
+                        xlink:href="https://www.bcbs.com/the-health-of-america/healthequity/setting-the-standard-addressing-health-disparities-better-data/"
+                        >Setting the standard: addressing health disparities with better data | Blue
+                        Health Equity (bcbs.com)</link>
+                </listitem>
+                <listitem>
+                    <para>AHRQ Health Literacy Universal Precautions Toolkit: Health Literacy and
+                        Patient Safety Agency for Healthcare Research and Quality; 2015 February
+                        [cited 2023 November 28]. Available from: </para>
+                    <link
+                        xlink:href="https://www.ahrq.gov/health-literacy/improve/precautions/tool2.html"
+                        >https://www.ahrq.gov/health-literacy/improve/precautions/tool2.html</link>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+</chapter>
