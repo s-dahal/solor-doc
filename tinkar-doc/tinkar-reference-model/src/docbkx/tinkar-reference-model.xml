@@ -248,8 +248,7 @@
                                         of the program. After verifying correctness, the AST serves
                                         as the base for code generation. The AST is often used to
                                         generate an intermediate representation, sometimes called an
-                                        intermediate language, for the code generation.”
-                                    </para>
+                                        intermediate language, for the code generation.” [15]</para>
                                 </listitem>
                                 <listitem>
                                     <para>An AST is made up of nodes and branches. In Tinkar, every

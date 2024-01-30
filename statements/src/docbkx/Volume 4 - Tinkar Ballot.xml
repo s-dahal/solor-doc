@@ -5,11 +5,10 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
         <title>Integrated Knowledge Management (IKM) Volume 4</title>
-        <subtitle>Version 1- Last Update 1/18/2024</subtitle>
+        <subtitle>Version 1- Last Update 1/25/2024</subtitle>
         </info>
     <part>
-        <?oxy_comment_start author="naylee" timestamp="20240123T114809-0600" comment="The below two tables have been integrated into the Glossary Table in the Appendix as of 1/23/2024. Please delete the below two tables. "?>
-        <title>Foundational Architecture<?oxy_comment_end?></title>
+        <title>Foundational Architecture</title>
         <xi:include
             href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"/>
         <xi:include

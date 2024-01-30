@@ -2,7 +2,7 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Quick Reference Guide</title>
+    <title>Reference Guide</title>
     <section>
         <title>Abbreviation Guide</title>
         <para>
@@ -44,8 +44,12 @@
                             <entry>American Medical Informatics Association </entry>
                         </row>
                         <row>
+                            <entry>ANF</entry>
+                            <entry>Analysis Normal Form</entry>
+                        </row>
+                        <row>
                             <entry>ANF RM</entry>
-                            <entry>Analysis Normal Form (ANF) Reference Model</entry>
+                            <entry>Analysis Normal Form Reference Model</entry>
                         </row>
                         <row>
                             <entry>ANSI</entry>
@@ -90,7 +94,7 @@
                         </row>
                         <row>
                             <entry>ATC</entry>
-                            <entry>Anatomical Therapeutic Chemical (ATC)</entry>
+                            <entry>Anatomical Therapeutic Chemical</entry>
                         </row>
                         <row>
                             <entry>AWS</entry>
@@ -263,12 +267,12 @@
                         </row>
                         <row>
                             <entry>DMG</entry>
-                            <entry>(a type of installation when using an MSI installer and
-                                MacOs)</entry>
+                            <entry>A type of installation when using an MSI installer and
+                                MacOs</entry>
                         </row>
                         <row>
                             <entry>dpGaP</entry>
-                            <entry>database of Genotypes and Phenotypes (dpGaP)</entry>
+                            <entry>Database of Genotypes and Phenotypes</entry>
                         </row>
                         <row>
                             <entry>DrOn</entry>
@@ -471,7 +475,7 @@
                         </row>
                         <row>
                             <entry>IICC</entry>
-                            <entry>IVD Industry Connectivity Consortium (IICC)</entry>
+                            <entry>IVD Industry Connectivity Consortium</entry>
                         </row>
                         <row>
                             <entry>IHTSDO</entry>
@@ -488,8 +492,7 @@
                         </row>
                         <row>
                             <entry>ISO</entry>
-                            <entry>International <emphasis role="bold">O</emphasis>rganization for
-                                    <emphasis role="bold">S</emphasis>tandardization (i.e. ISO
+                            <entry>International Organization for Standardization (i.e. ISO
                                 languages and codes)</entry>
                         </row>
                         <row>
@@ -546,7 +549,7 @@
                         </row>
                         <row>
                             <entry>KRSS</entry>
-                            <entry>Knowledge Representation System Specification (KRSS)</entry>
+                            <entry>Knowledge Representation System Specification</entry>
                         </row>
                         <row>
                             <entry>LAW</entry>
@@ -574,7 +577,7 @@
                         </row>
                         <row>
                             <entry>LIVD</entry>
-                            <entry>Loinc®-to-IVD (Invitro Diagnostics)</entry>
+                            <entry>Loinc®-to-IVD</entry>
                         </row>
                         <row>
                             <entry>LM</entry>
@@ -700,9 +703,7 @@
                         </row>
                         <row>
                             <entry>ORDO</entry>
-                            <entry>Orphanet ontology of rare diseases (<link
-                                    xlink:href="https://data.lhncbc.nlm.nih.gov/public/mor/pubs/pdf/2018-ybmi-ob.pdf"
-                                    >confirmed here</link>)</entry>
+                            <entry>Orphanet ontology of rare diseases</entry>
                         </row>
                         <row>
                             <entry>OS</entry>
@@ -763,7 +764,7 @@
                         </row>
                         <row>
                             <entry>PMD</entry>
-                            <entry>(used with Java SAST?)</entry>
+                            <entry>A source code analyzer</entry>
                         </row>
                         <row>
                             <entry>POC</entry>
@@ -843,8 +844,7 @@
                         </row>
                         <row>
                             <entry>RECOVER Initiative</entry>
-                            <entry>Researching COVID to Enhance Recovery (RECOVER)
-                                Initiative</entry>
+                            <entry>Researching COVID to Enhance Recovery Initiative</entry>
                         </row>
                         <row>
                             <entry>RELMA®</entry>
@@ -1001,9 +1001,7 @@
                         </row>
                         <row>
                             <entry>THO</entry>
-                            <entry><emphasis role="bold">t</emphasis>erminology.<emphasis
-                                    role="bold">H</emphasis>L7.<emphasis role="bold">o</emphasis>rg
-                            </entry>
+                            <entry>Terminology.HL7.org </entry>
                         </row>
                         <row>
                             <entry>Tinkar</entry>
@@ -1113,11 +1111,9 @@
                 </tgroup>
             </informaltable>
         </para>
-        <para>Updated on 1/23/2024</para>
     </section>
     <section>
         <title>IKM Terminology Definitions</title>
-        <para/>
         <informaltable>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1" colwidth="1*" align="left"/>
