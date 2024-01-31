@@ -115,6 +115,428 @@
             choose their care. [5]</para>
     </section>
     <section>
+        <title>Ethical and Practical Considerations in Localized Artificial Intelligence (AI) and
+            Machine Learning (ML) Development </title>
+        <section>
+            <title>Concerns About Localized AI/ML Models</title>
+            <para>While localized development of AI and ML offers customization and optimization
+                benefits, the associated risks and challenges necessitate careful consideration.
+                Without adequate safeguards and oversight, localized development can lead to biased,
+                unreliable, and inequitable AI/ML algorithms, compromising patient care and
+                outcomes. The concerns associated with localized development highlighted below
+                document the need for a more standardized, equitable, and generalizable approach to
+                developing AI/ML algorithms in healthcare.</para>
+            <para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Bias Risk </emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Concern; There is a risk of introducing or worsening biases
+                                    when developing algorithms locally especially if the dataset
+                                    used is not diverse enough.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Impact; This could result in predictions and unreliable
+                                    outcomes, for groups potentially leading to suboptimal care for
+                                    these patients.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Limited Applicability</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Concern; Algorithms developed and validated on localized data
+                                    may not perform well when applied in healthcare settings or
+                                    patient populations. </para>
+                            </listitem>
+                            <listitem>
+                                <para>Impact; The lack of applicability can limit the usefulness and
+                                    effectiveness of the algorithm in healthcare contexts.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Inconsistency in Healthcare</emphasis>
+                        </para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Concern; Different healthcare facilities may develop their
+                                    localized algorithms resulting in inconsistent sepsis detection
+                                    and care approaches. </para>
+                            </listitem>
+                            <listitem>
+                                <para>Impact; This inconsistency can cause confusion among
+                                    healthcare providers. Compromise the quality and standardization
+                                    of care across settings. </para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Regulatory Hurdles</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Concern; Regulatory bodies may face challenges when evaluating
+                                    and approving versions of localized algorithms. </para>
+                            </listitem>
+                            <listitem>
+                                <para>Impact; The variability introduced by localized development
+                                    adds complexity to the approval process and oversight.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                <listitem>
+                        <para><emphasis role="bold">Challenges with Maintenance and
+                                Updates</emphasis>
+                        </para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Concern; Managing, maintaining and updating localized
+                                    algorithms can be resource intensive and complex. </para>
+                            </listitem>
+                            <listitem>
+                                <para>Impact; This complexity can lead to difficulties, with version
+                                    control (as in fact mentioned by Shawn in the document he shared
+                                    on the teams thread), updates and continuous improvement of the
+                                    algorithms.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Ethical and Equity Concerns</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Issue; The development and implementation of localized
+                                    algorithms raise concerns regarding fairness, equity and ethical
+                                    considerations. </para>
+                            </listitem>
+                            <listitem>
+                                <para>Effect; If not properly regulated localized algorithms could
+                                    worsen healthcare disparities and give rise to concerns.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Lack of Standardization</emphasis>
+                        </para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Issue; The presence of localized algorithms may lead to a lack
+                                    of standardization, in the detection and treatment practices for
+                                    sepsis. </para>
+                            </listitem>
+                            <listitem>
+                                <para>Effect; This absence of standardization can impede the
+                                    integration and compatibility of AI/ML tools, across healthcare
+                                    systems.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </orderedlist>
+            </para>
+</section>
+        <section>
+            <title>Ethical Considerations and Concerns with Localized AI/ML Models</title>
+            <para>Allowing smaller sepsis AI device manufacturers to pursue localized development
+                raises several ethical considerations and requires careful oversight. Ethical
+                considerations include;</para>
+            <para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Equity and Fairness</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Concern: Smaller manufacturers might have access to limited
+                                    datasets, which may not be representative of diverse patient
+                                    populations. This limitation can lead to the development of
+                                    biased algorithms that do not perform equitably across different
+                                    groups.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Ethical Question: Is it ethical to deploy algorithms that
+                                    might not provide equitable benefits to all patient groups due
+                                    to limitations in data diversity and representativeness?</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                
+            
+            
+                
+                    <listitem>
+                        <para><emphasis role="bold">Quality and Safety</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Concern: Smaller manufacturers might lack the resources to
+                                    conduct extensive validation and testing of their algorithms,
+                                    potentially compromising the quality and safety of their
+                                    devices.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Ethical Question: Can we ensure that devices developed by
+                                    smaller manufacturers meet the necessary quality and safety
+                                    standards to protect patient health and well-being?</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+
+                
+                    <listitem>
+                        <para><emphasis role="bold">Transparency and
+                            Accountability</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Concern: There might be variations in the level of
+                                    transparency and accountability among smaller manufacturers,
+                                    raising concerns about the ethical deployment and use of their
+                                    devices.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Ethical Question: How can we ensure that smaller manufacturers
+                                    adhere to ethical standards of transparency and accountability
+                                    in the development and deployment of their devices? </para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                
+                
+                    <listitem>
+                        <para><emphasis role="bold">Regulatory Compliance</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Concern: Smaller manufacturers might face challenges in
+                                    navigating and complying with regulatory requirements,
+                                    potentially leading to non-compliance and associated
+                                    risks.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Ethical Question: Is it ethical to allow the deployment of
+                                    devices that might not fully comply with regulatory standards
+                                    and requirements due to limitations in resources and
+                                    expertise?</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                
+
+            
+                <listitem>
+                    <para><emphasis role="bold">Access and Affordability</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Concern: Devices developed by smaller manufacturers might have
+                                limited availability and accessibility, potentially exacerbating
+                                healthcare disparities.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Ethical Question: How can we ensure that devices developed by
+                                smaller manufacturers are accessible and affordable to all patients
+                                who might benefit from them?</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </orderedlist>
+            </para>
+        </section>
+        <section>
+            <title>Recommendations for Ethical Practices</title>
+            <para>While smaller sepsis AI device manufacturers pursuing localized development raises
+                several ethical consideration, with the appropriate support, resources, and
+                guidelines, it is possible to address the ethical concerns associated with localized
+                development by smaller manufacturers that support innovation and diversity in the
+                field. </para>
+            <orderedlist>
+            <listitem><para><emphasis role="bold">Ethical Oversight</emphasis>; It is important to establish mechanisms
+                        for oversight in order to thoroughly review and monitor the development and
+                        deployment of devices by manufacturers (if not already there).</para></listitem>
+            <listitem><para><emphasis role="bold">Support and Resources</emphasis>; Smaller manufacturers should be
+                        provided with support and resources to ensure their adherence to standards
+                        and regulatory requirements.</para></listitem>
+            <listitem><para><emphasis role="bold">Partnership</emphasis>; Encouraging smaller manufacturers to collaborate
+                        with institutions, academia and research organizations will grant them
+                        access, to datasets and expertise fostering better development
+                        practices.</para></listitem>
+            <listitem><para><emphasis role="bold">Tailored Ethical Guidelines</emphasis>; Developing and implementing
+                        guidelines that are specifically tailored for manufacturers will serve as a
+                        comprehensive framework guiding their responsible development and deployment
+                        processes.</para></listitem>
+            </orderedlist>
+        </section>
+        <section>
+            <title>Recommendations and Guidelines for Small Vendors Developing Localized AI/ML
+                Models</title>
+            <para>Support resources and guidelines are crucial for addressing ethical concerns
+                related to localized development by smaller manufacturers while fostering innovation
+                and diversity in the field. Below are examples of such resources and
+                guidelines:</para>
+            <section>
+                <title>Support Resources</title>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Data Sharing Platforms</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Description: Establish platforms where healthcare
+                                    institutions, researchers, and manufacturers can share and
+                                    access diverse and representative datasets.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Purpose: To check that smaller manufacturers have access to
+                                    the data needed for developing unbiased and generalizable
+                                    algorithms.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                
+                    <listitem>
+                        <para><emphasis role="bold">Funding and Grants (not just Broad Agency
+                                Announcements)</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Description: Provide financial support through grants,
+                                    subsidies, or low-interest loans specifically aimed at
+                                    supporting ethical AI/ML development in healthcare.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Purpose: To alleviate financial constraints that might hinder
+                                    the ethical development and validation of AI/ML algorithms by
+                                    smaller manufacturers.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+          
+           <listitem>
+                            <para><emphasis role="bold">Technical Assistance</emphasis></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Description: Offer technical support and assistance to
+                                        smaller manufacturers in the development, validation, and
+                                        deployment of AI/ML algorithms.</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purpose: To help smaller manufacturers navigate technical
+                                        challenges and implement best practices in algorithm
+                                        development and validation.</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    
+                
+     
+            
+                        <listitem>
+                            <para><emphasis role="bold">Educational Resources</emphasis></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Description: Develop and disseminate educational
+                                        materials, workshops, and training programs on ethical AI/ML
+                                        development in healthcare.</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purpose: To educate and inform smaller manufacturers about
+                                        the ethical considerations and best practices in AI/ML
+                                        development.</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title>Ethical Guidelines</title>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Ethical Principles for AI/ML
+                                Development</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Description: Establish a set of ethical principles that guide
+                                    the development and deployment of AI/ML algorithms in
+                                    healthcare, focusing on fairness, transparency, accountability,
+                                    and non-discrimination.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Purpose: To provide a foundational ethical framework for
+                                    smaller manufacturers to adhere to during the development
+                                    process.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                
+                
+                        <listitem>
+                            <para><emphasis role="bold">Best Practices for Data
+                                    Management</emphasis></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Description: Outline best practices for data collection,
+                                        management, and usage, emphasizing the importance of data
+                                        diversity, representativeness, privacy, and security.</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purpose: To guide smaller manufacturers in managing data
+                                        ethically and responsibly.</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    
+                        <listitem>
+                            <para><emphasis role="bold">Algorithm Validation and Testing
+                                    Guidelines</emphasis></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Description: Develop guidelines for the validation and
+                                        testing of AI/ML algorithms, including recommendations for
+                                        external validation and performance assessment.</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purpose: To check that algorithms developed by smaller
+                                    manufacturers are rigorously tested and validated for safety and
+                                    efficacy.</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    
+                        <listitem>
+                            <para><emphasis role="bold">Transparency and Accountability
+                                    Standards</emphasis></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Description: Set standards for transparency and
+                                        accountability in AI/ML development, including requirements
+                                        for documentation, explanation, and justification of
+                                        algorithmic decisions.</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purpose: To promote transparency and accountability among
+                                        smaller manufacturers in the development and deployment of
+                                        AI/ML algorithms.</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    
+                        <listitem>
+                            <para><emphasis role="bold">Community Engagement
+                                    Recommendations</emphasis></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Description: Provide recommendations for engaging with
+                                        patient communities, healthcare providers, and other
+                                        stakeholders during the development process.</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purpose: To foster collaboration and input from the
+                                        broader community to ensure that AI/ML algorithms address
+                                        the needs and concerns of all stakeholders.</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    </orderedlist>
+
+            </section>
+        </section>
+    </section>
+    <section>
         <title>Conclusion</title>
         <para>Ethical considerations must remain a driving force behind the development,
             implementation, and adoption of IKM. IKM must support providers and patients as they

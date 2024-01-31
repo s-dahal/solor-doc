@@ -198,6 +198,19 @@
         <!--<xi:include href="komet-assertions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
         <!--<xi:include href="komet-procedural.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
     </part>
+    <part>
+        <title>Volume Series</title>
+        <xi:include href="Volume%201%20-%20Introduction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%202%20-%20Background.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%203%20-%20IKM%20Overview.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%204%20-%20References.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:einclude href="Volume%205%20-%20Knowledge%20Layers.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="volume%206%20-%20ANF%20Ballot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%207%20-%20Use%20Cases.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%208%20-%20Komet%20User%20Guide.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%209%20-%20Open-Source%20and%20Ecosystem.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%20Appendix.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
     
     <!--<part>-->
         <!--<title>Instance representation</title>-->
