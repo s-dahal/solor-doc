@@ -5,7 +5,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
         <title>Integrated Knowledge Management (IKM) Volume 3</title>
-        <subtitle>Version 1 - Last Updated 11/21/2023</subtitle>
+        <subtitle>Version 1 - Last Updated 1/31/2024</subtitle>
         </info>
     <part>
         <title>IKM Overview</title>
@@ -14,9 +14,13 @@
     <part>
         <title>Current State of IKM</title>
         <xi:include href="1.2.2%20for%20Volume%203"/>
-        <xi:include href="Current%20KM%20Technologies,%20Industry%20Coding%20Standards,%20and%20KM%20Hosting%20Options%20for%20Volume%203.xml"></xi:include>
+        <xi:include
+            href="Current%20KM%20Technologies,%20Industry%20Coding%20Standards,%20and%20KM%20Hosting%20Options%20for%20Volume%203.xml"/>
     </part>
+    <part>
+        <title>Ethical Imperatives in Public Health and Healthcare</title>
     <xi:include href="Ethical%20Consideration2.xml"/>
+    </part>    
     <part>
         <title>Development of IKM</title>
         <xi:include href="Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3%20for%20Volume%203.xml"/>
