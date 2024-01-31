@@ -16,6 +16,7 @@
         <xi:include href="1.2.2%20for%20Volume%203"/>
         <xi:include href="Current%20KM%20Technologies,%20Industry%20Coding%20Standards,%20and%20KM%20Hosting%20Options%20for%20Volume%203.xml"></xi:include>
     </part>
+    <xi:include href="Ethical%20Consideration2.xml"/>
     <part>
         <title>Development of IKM</title>
         <xi:include href="Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3%20for%20Volume%203.xml"/>
