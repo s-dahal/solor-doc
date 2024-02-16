@@ -77,8 +77,8 @@
                 data exchanges between systems, the Health IT community must consider movement
                 towards open-source software and open-source licensing models.</emphasis> Gaps
             created by varying rates of adoption and implementation requires various avenues of
-            collaboration within the Integrated Knowledge Management (IKM) community to address
-            these issues within the entire Health IT ecosystem. </para>
+            collaboration within the IKM community to address these issues within the entire Health
+            IT ecosystem. </para>
     </section>
     <section>
         <title>The Case for a More Open Future in Healthcare</title>
@@ -503,18 +503,17 @@
             and additional standards pose questions regarding compatibility due to modification and
             extensions limitations. The complexity widens when further standards based on other
             standards are integrated further in the terminology layer, like the Laboratory
-            Interoperability Data Repository (LIDR) and the TermINology Knowledge Architecture
-            (Tinkar). The loss of data often occurs in this layer and breaks the functionality of
-            standards where local codes are mapped to the incorrect standard codes. The IKM platform
-            aims to solve this issue by harmonizing standards but cannot be successfully implemented
-            unless the underlying licenses allow an IKM platform to reconcile variances. In the
-            Statement Model, the artifacts as defined below are reused and demonstrate how the data
-            elements should be packaged into clinical statements through clinical formatting, such
-            as Health Level 7 Fast Healthcare Interoperability Resources (HL7 FHIR) or Clinical
-            Informational Modeling Initiative (CIMI). The shift towards a permissive license in
-            regard to terminologies and standards improves the compatibility of how different
-            terminologies work together and thereby is integral to the functionality of higher
-            layers and interoperability overall. </para>
+            Interoperability Data Repository (LIDR) and Tinkar. The loss of data often occurs in
+            this layer and breaks the functionality of standards where local codes are mapped to the
+            incorrect standard codes. The IKM platform aims to solve this issue by harmonizing
+            standards but cannot be successfully implemented unless the underlying licenses allow an
+            IKM platform to reconcile variances. In the Statement Model, the artifacts as defined
+            below are reused and demonstrate how the data elements should be packaged into clinical
+            statements through clinical formatting, such as Health Level 7 Fast Healthcare
+            Interoperability Resources (HL7 FHIR) or Clinical Informational Modeling Initiative
+            (CIMI). The shift towards a permissive license in regard to terminologies and standards
+            improves the compatibility of how different terminologies work together and thereby is
+            integral to the functionality of higher layers and interoperability overall. </para>
     </section>
     <section>
         <title>Conclusion</title>
