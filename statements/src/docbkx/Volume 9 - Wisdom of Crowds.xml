@@ -5,10 +5,11 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
         <title>Integrated Knowledge Management (IKM) Volume 9</title>
-        <subtitle>Version 1 - Last Updated 1/25/2024</subtitle>
+        <subtitle>Version 2 - Last Updated 2/16/2024</subtitle>
     </info>
     <part>
-        <title>Open-Source Overview</title>
+        <title>Wisdom of Crowds and Open-Source</title>
+        <xi:include href="Wisdom%20of%20Crowds.xml"/>
         <xi:include href="Open-Source.xml"/>
         <xi:include href="2.2.4.xml"/>
     </part>

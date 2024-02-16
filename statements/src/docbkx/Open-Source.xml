@@ -3,14 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>Open-Source</title>
-    <section>
-        <title>How to Contribute</title>
-        <para>For community members and users who would like to collaborate and contribute, please
-            visit the 'Community' tab on the<emphasis>
-                <link xlink:href="https://www.ikm.dev/">IKM.dev</link></emphasis> website or click
-            on <emphasis role="bold">Community</emphasis> in the top header for additional options. </para>
-    </section>
+     <title>Open-Source Overview</title>
     <section>
         <title>What is Open-Source?</title>
         <para>Open-source software makes its source code, blueprints, documentation, and other
@@ -31,14 +24,13 @@
             healthcare ecosystem significantly hinders interoperability, particularly by preventing
             or restricting community engagement and contributions that could improve the software or
             code to meet emerging needs. To achieve lossless data exchanges between and within
-            systems, the Health Information Technology (IT) community must consider open-source
-            software and open-source licensing models. While these licenses enable use, regardless
-            of intent, and the ability to modify, adapt, and extend software with minimal
-            restrictions, they also establish rules of the road and codify best practices to ensure
-            adoptability and ease of use for both the initial user and the broader downstream
-            community. Open-source licensing will support the public-private consortium needed to
-            address gaps created by varying rates of adoption and implementation of proprietary
-            software.</para>
+            systems, the Health IT community must consider open-source software and open-source
+            licensing models. While these licenses enable use, regardless of intent, and the ability
+            to modify, adapt, and extend software with minimal restrictions, they also establish
+            rules of the road and codify best practices to ensure adoptability and ease of use for
+            both the initial user and the broader downstream community. Open-source licensing will
+            support the public-private consortium needed to address gaps created by varying rates of
+            adoption and implementation of proprietary software.</para>
         <para>Due to the decentralization and wide-spread availability of open-source software,
             errors and bugs are found much quicker because the code is utilized in a variety of
             contexts and stretched much farther. Instead of a single development team being tasked
