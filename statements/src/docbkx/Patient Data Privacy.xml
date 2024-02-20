@@ -136,13 +136,11 @@
         </section>
         <section>
             <title><anchor xml:id="Toc158988555"/>LOINC®</title>
-            <para>As LOINC®’s privacy policy states in the <link
-                    xlink:href="https://loinc.org/privacy-policy/">Privacy Policy – LOINC</link>®,
-                LOINC® does not collect any personal health information. LOINC® is a catalog of
-                measurements that includes laboratory tests and clinical measures, that are not
-                limited to vital signs and anthropometric measures, and standardized survey
-                instruments. LOINC® also contains codes for the collection types for these items,
-                such as panels, forms, and documents. [11]</para>
+            <para>As LOINC's privacy policy states, LOINC does not collect any personal health
+                information. LOINC® is a catalog of measurements that includes laboratory tests and
+                clinical measures, that are not limited to vital signs and anthropometric measures,
+                and standardized survey instruments. LOINC® also contains codes for the collection
+                types for these items, such as panels, forms, and documents. [11]</para>
         </section>
     </section>
     <section>
@@ -174,7 +172,9 @@
                 </listitem>
                 <listitem>
                     <para>21st Century Cures Act Information Blocking Rule" [Internet]. Available
-                        from: [URL]</para>
+                        from: <link
+                            xlink:href="https://oig.hhs.gov/reports-and-publications/featured-topics/information-blocking/"
+                        /></para>
                 </listitem>
                 <listitem>
                     <para>Office of the National Coordinator for Health Information Technology
