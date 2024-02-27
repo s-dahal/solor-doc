@@ -107,33 +107,44 @@
             current with emerging therapies and technologies. Advancing health equity is a key issue
             that needs to be addressed, and addressing healthcare disparities, including
             socioeconomic, racial, and gender-based inequities, is a complex and critical challenge
-            in healthcare [8]. All of these challenges are bookeended by patient safety, with issues
+            in healthcare. All of these challenges are bookeended by patient safety, with issues
             like medication errors, diagnostic inaccuracies, and hospital-acquired infections (HAIs)
             continue to pose significant challenges to healthcare quality [8]. </para>
         <para><emphasis role="bold">The Role of Data and Information Management in Healthcare
                 Quality</emphasis>
         </para>
-        <para>1. Enhancing Decision-Making: Effective data management, particularly through EHRs,
-            enables accurate diagnosis and decision-making, improving the quality of patient care
-            [9]. </para>
-        <para>2. Improving Clinical Validity: Accurate information from EHRs assists in clinical
-            order entry and measures clinical validity, enhancing patient care quality [9]. </para>
-        <para>3. Patient Engagement and Safety: EHRs facilitate patient engagement in healthcare
-            services and decision-making processes, building trust and confidence, which are crucial
-            for identifying specific adherence barriers [9]. </para>
-        <para>4. Addressing Data Management Challenges: Poor data management practices lead to
-            recurrent errors and associated injuries or deaths, mostly due to issues like illegible
-            paper-based records [9]. </para>
+        <para>1. <emphasis>Enhancing Decision-Making</emphasis>: Effective data management,
+            particularly through EHRs, enables accurate diagnosis and decision-making, improving the
+            quality of patient care [9]. </para>
+        <para>2. <emphasis>Improving Clinical Validity</emphasis>: Accurate information from EHRs
+            assists in clinical order entry and measures clinical validity, enhancing patient care
+            quality [9]. </para>
+        <para>3. <emphasis>Patient Engagement and Safety</emphasis>: EHRs facilitate patient
+            engagement in healthcare services and decision-making processes, building trust and
+            confidence, which are crucial for identifying specific adherence barriers [9]. </para>
+        <para>4. <emphasis>Addressing Data Management Challenges</emphasis>: Poor data management
+            practices lead to recurrent errors and associated injuries or deaths, mostly due to
+            issues like illegible paper-based records [9]. </para>
         <para><emphasis role="bold">Case Studies of Current Issues</emphasis>
         </para>
-        <para>1. Improving Customer Service and Access in a Surgical Practice: A surgical practice
-            implemented a six-step plan to enhance customer service and access, leading to improved
-            patient experiences [10]. </para>
-        <para>2. Improving Hospital Inpatient Nursing Care: A large acute care hospital successfully
-            implemented a plan to improve the emotional support provided to inpatients by nursing
-            staff, enhancing patient care quality [10]. </para>
-        <para>3. Improving Performance for Health Plan Customer Service: A health plan employed
-            quality improvement methods to enhance customer service for its members, demonstrating
-            the impact of targeted initiatives on service quality [10]. </para>
+        <para>The Agency for Healthcare Research and Quality has highlighed 3 case studies that
+            showcase efforts to improve performance of a patient's healthcare experience, and cover
+            performance issues, strategy and action plans, implementing action plans, and results.
+            Below are a brief overview of the 3 case studies:</para>
+        <para>1. <link
+                xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/Case_Study_Specialty_Practice_Updated.pdf"
+                >Improving Customer Service and Access in a Surgical Practice:</link> A surgical
+            practice implemented a six-step plan to enhance customer service and access, leading to
+            improved patient experiences [10]. </para>
+        <para>2. <link
+                xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/WR_751_AHRQ_Quigley_08_26_10.pdf"
+                >Improving Hospital Inpatient Nursing Care</link>: A large acute care hospital
+            successfully implemented a plan to improve the emotional support provided to inpatients
+            by nursing staff, enhancing patient care quality [10]. </para>
+        <para>3. <link
+                xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/ExecSummcaseplancustsvce-RAND7607.pdf"
+                >Improving Performance for Health Plan Customer Service:</link> A health plan
+            employed quality improvement methods to enhance customer service for its members,
+            demonstrating the impact of targeted initiatives on service quality [10]. </para>
     </section>
 </chapter>
