@@ -579,7 +579,7 @@
                         <title>Structural Interoperability</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Structural%20Interoperability2.png"/>
+                                <imagedata fileref="images/Structural%20Interoperability2.svg" scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -598,9 +598,9 @@
                                 <title>Meaning Interoperability</title>
                 <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Meaning%20Interoperability%202.png"/>
+                            <imagedata fileref="images/Meaning%20Interoperability%202.svg" scale="30" align="center"/>
                         </imageobject>
-                    </mediaobject>
+                    </mediaobject> 
                 </figure>
                 <para>While <xref linkend="StructuralInteropoerability"/> and <xref
                         linkend="MeaningInteropoerability"/>  intend to illustrate <emphasis
@@ -662,7 +662,7 @@
                     <title>Erroneous LOINC® Mapping</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Erroneous%20Loinc%20Mapping.png"/>
+                            <imagedata fileref="images/Erroneous%20Loinc%20Mapping.svg" scale="55" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>

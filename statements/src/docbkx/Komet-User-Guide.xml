@@ -17,7 +17,7 @@
                         <title>Komet Download</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Komet%20Download.png"/>
+                                <imagedata fileref="images/Komet%20Download.svg" scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -42,7 +42,7 @@
                         <title>Komet Installer File</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Komet%20Installer%20File.png"/>
+                                <imagedata fileref="images/Komet%20Installer%20File.svg" scale="60" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -54,7 +54,7 @@
                         <title>Run Komet</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Run%20Komet.png"/>
+                                <imagedata fileref="images/Run%20Komet.svg" scale="60" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -65,7 +65,7 @@
                             <title>Komet Mac Installer File</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Komet%20Mac%20Installer%20File.png"/>
+                                    <imagedata fileref="images/Komet%20Mac%20Installer%20File.svg" scale="20" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -94,7 +94,7 @@
                         <title>Open SpinedArrayStore</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Open%20SpinedArrayStore.png"/>
+                                <imagedata fileref="images/Open%20SpinedArrayStore.svg" scale="60" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -136,7 +136,7 @@
                                 <title>Komet Interface</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/Komet%20Interface.png"/>
+                                        <imagedata fileref="images/Komet%20Interface.svg" scale="30" align="center"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -154,7 +154,7 @@
                             <title>New Journal</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/New%20Journal.png"/>
+                                    <imagedata fileref="images/New%20Journal.svg" scale="15" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -163,7 +163,7 @@
                         <title>Journal UI</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Journal%20UI.png"/>
+                                <imagedata fileref="images/Journal%20UI.svg" scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -185,7 +185,7 @@
                         <title>Import Artifact</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Import%20Artifact.png"/>
+                                <imagedata fileref="images/Import%20Artifact.svg" scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -197,7 +197,7 @@
                         <title>Select File</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Select%20File.png"/>
+                                <imagedata fileref="images/Select%20File.svg" scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -229,7 +229,7 @@
                         <title>Komet Concept Search</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Concept%20Search.png"/>
+                                <imagedata fileref="images/Concept%20Search.svg" scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -258,7 +258,7 @@
                             <title>View Concept Details</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/View%20Concept%20Details.png"/>
+                                    <imagedata fileref="images/View%20Concept%20Details.svg" scale="60" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -270,7 +270,7 @@
                             <title>Dropdown Options</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Dropdown%20Options.png"/>
+                                    <imagedata fileref="images/Dropdown%20Options.svg" scale="40" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -293,7 +293,7 @@
                                 <title>Hierarchical Navigation</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/Hierarchical%20navigation.png"/>
+                                        <imagedata fileref="images/Hierarchical%20navigation.svg" scale="60" align="center"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -342,7 +342,7 @@
                             <title>Journal Concept Search</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Journal%20Search.png"/>
+                                    <imagedata fileref="images/Journal%20Search.svg" scale="50" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -357,7 +357,7 @@
                                 <title>Journal Concept Details</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/Journal%20Concept%20Details.png"/>
+                                        <imagedata fileref="images/Journal%20Concept%20Details.svg" scale="30" align="center"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -428,7 +428,7 @@
                         <title>Export Artifact</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/export%20artifact.png"/>
+                                <imagedata fileref="images/export%20artifact.svg" scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -453,7 +453,7 @@
                             <title>Time Travel Button</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Time%20Travel%20Button.png"/>
+                                    <imagedata fileref="images/Time%20Travel%20Button.svg" scale="80" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>The Timeline panel opens to the right. Colored lines in the
@@ -461,7 +461,7 @@
                             <title>Timeline Panel</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Timeline%20Panel.png"/>
+                                    <imagedata fileref="images/Timeline%20Panel.svg" scale="40" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -473,7 +473,7 @@
                             <title>Timeline Settings</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Timeline%20Settings.png"/>
+                                    <imagedata fileref="images/Timeline%20Settings.svg" scale="60" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -484,7 +484,7 @@
                             <title>Properties Toggle</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Properties%20Toggle.png"/>
+                                    <imagedata fileref="images/Properties%20Toggle.svg" scale="60" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>This opens the Properties panel between the concept details view
@@ -494,7 +494,7 @@
                         <title>Properties Panel</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Properties%20Panel.png"/>
+                                <imagedata fileref="images/Properties%20Panel.svg" scale="50" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -506,7 +506,7 @@
                             <title>Timeline and History</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Timeline%20and%20History.png"/>
+                                    <imagedata fileref="images/Timeline%20and%20History.svg" scale="30" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -517,7 +517,7 @@
                             <title>Range Toggle</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Range%20Toggle.png"/>
+                                    <imagedata fileref="images/Range%20Toggle.svg" scale="50" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>This allows you to select event dots you wish to view within a
@@ -525,7 +525,7 @@
                             <title>Events Within a Range</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Events%20Within%20a%20Range.png"/>
+                                    <imagedata fileref="images/Events%20Within%20a%20Range.svg" scale="50" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>When you define a specific time range, the History view only shows
@@ -536,7 +536,7 @@
                         <title>History Within a Range</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/History%20Within%20a%20Range.png"/>
+                                <imagedata fileref="images/History%20Within%20a%20Range.svg" scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -546,7 +546,7 @@
                     <title>Historical Records Filter</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Historical%20Records%20Filter.png"/>
+                            <imagedata fileref="images/Historical%20Records%20Filter.svg" scale="30" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>

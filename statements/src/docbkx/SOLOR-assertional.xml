@@ -144,8 +144,7 @@
                     <title>Interface Term</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/InterfaceTerm_DL.png" scalefit="1" width="100%"
-                                contentdepth="100%"/>
+                            <imagedata fileref="images/InterfaceTerm_DL.svg" scale="80" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>

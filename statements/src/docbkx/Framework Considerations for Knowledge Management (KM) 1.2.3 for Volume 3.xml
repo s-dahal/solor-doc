@@ -108,7 +108,7 @@
                     <title>Unit Test Code Coverage Report for Komet Using JaCoCo</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Komet%20Using%20JaCoCo.png"/>
+                            <imagedata fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Komet%20Using%20JaCoCo.svg" scale="80" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -116,7 +116,7 @@
                 <title>Unit Test Code Coverage Report for Tinkar using JaCoCo</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Tinkar%20using%20JaCoCo.png"/>
+                        <imagedata fileref="images/Unit%20Test%20Code%20Coverage%20Report%20for%20Tinkar%20using%20JaCoCo.svg" scale="80" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -479,7 +479,7 @@
                         Comments</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Example%20of%20Package%20or%20Namespace%20Comments.png"/>
+                            <imagedata fileref="images/Example%20of%20Package%20or%20Namespace%20Comments.svg" scale="10" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -500,7 +500,7 @@
                                 <title>Example of Class Comments</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/Example%20of%20Class%20Comments.png"/>
+                                        <imagedata fileref="images/Example%20of%20Class%20Comments.svg" scale="10" align="center"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -517,7 +517,7 @@
                     <title>Example of Method/Function Comments</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Example%20of%20Method%20and%20Function%20Comments.png"/>
+                            <imagedata fileref="images/Example%20of%20Method%20and%20Function%20Comments.svg" scale="10" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -539,7 +539,7 @@
                     <title>Example of Inline Comment</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Example%20of%20Inline%20Comment.png"/>
+                            <imagedata fileref="images/Example%20of%20Inline%20Comment.svg" scale="10" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -590,7 +590,7 @@
                     <title>Relative Cost to Fix Bugs, Based on Time of Detection</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Relative%20Cost%20to%20Fix%20Bugs,%20Based%20on%20Time%20of%20Detection.png"/>
+                            <imagedata fileref="images/Relative%20Cost%20to%20Fix%20Bugs,%20Based%20on%20Time%20of%20Detection.svg" scale="80" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -637,7 +637,7 @@
                         <title>Monetary and Time Costs of Testing Types</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Monetary%20and%20Time%20Costs%20of%20Testing%20Types.png"/>
+                                <imagedata fileref="images/Monetary%20and%20Time%20Costs%20of%20Testing%20Types.svg" scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -670,7 +670,7 @@
                         <title>TDD Cycle Diagram</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/TDD%20Cycle%20Diagram.png"/>
+                                <imagedata fileref="images/TDD%20Cycle%20Diagram.svg" scale="50" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -716,7 +716,7 @@
                             <title>PseudocodeforCreatingMyArrayList</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Pseudocode%20for%20Creating%20MyArrayList.png"/>
+                                    <imagedata fileref="images/Pseudocode%20for%20Creating%20MyArrayList.svg" scale="10" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -725,7 +725,7 @@
                             <title>Simplest Code for Creating the MyArrayList Application</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Simplest%20Code%20for%20Creating%20the%20MyArrayList%20Application.png"/>
+                                    <imagedata fileref="images/Simplest%20Code%20for%20Creating%20the%20MyArrayList%20Application.svg" scale="10" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -817,7 +817,7 @@
                             <title>Example of Behavior Driven Development</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Example%20of%20Behavior%20Driven%20Development.png"/>
+                                    <imagedata fileref="images/Example%20of%20Behavior%20Driven%20Development.svg" scale="10" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -929,7 +929,7 @@
                 <title>Framework for Continuous Integration</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/Framework%20for%20Continuous%20Integration.png"/>
+                        <imagedata fileref="images/Framework%20for%20Continuous%20Integration.svg" scale="30" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -1073,7 +1073,7 @@
                 <title>Framework for Continuous Deployment</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/Framework%20for%20Continuous%20Deployment.png"/>
+                        <imagedata fileref="images/Framework%20for%20Continuous%20Deployment.svg" scale="30" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
