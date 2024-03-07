@@ -199,6 +199,8 @@
       </plugins>
    </reporting>
    <modules>
+      <module>anf</module>
+      <module>tinkar-doc</module>
       <module>appendices</module>
       <module>statements</module>
       <module>bibliography-db</module>
