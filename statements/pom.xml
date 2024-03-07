@@ -13,7 +13,7 @@
 
    <properties>
       <!-- <docbook.root>End-of-Year Report.xml</docbook.root> -->
-      <docbook.root>Volume 10 - Appendix.xml</docbook.root>
+      <docbook.root>Volume 3 - IKM Overview.xml</docbook.root>
    </properties>
    <dependencies>
       <dependency>
