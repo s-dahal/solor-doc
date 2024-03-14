@@ -90,3 +90,9 @@ Contact **Keith Campbell** for write priviliges.
       
     Note: you may need to "Pull" before you can "Push". In which case, press on the "Pull" button (next to "Push" button described above). Be sure to **uncheck** "Commit merged changes immediately" checkbox to avoid any conflicts.  
     ![src/site/resources/images/readme_screenshot_sourcetree_commit_04.jpg](src/site/resources/images/readme_screenshot_sourcetree_commit_04.jpg)
+    
+## Issues and Contributions
+
+Technical and non-technical issues can be reported to the Issue Tracker (LINK TO ISSUE TRACKER ONCE PUT IN REPO).
+
+Contributions can be submitted via pull requests. Please check the [contribution guide](CONTRIBUTING.md) for more details.
