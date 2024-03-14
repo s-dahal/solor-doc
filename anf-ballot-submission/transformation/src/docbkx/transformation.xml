@@ -92,7 +92,7 @@
             <title>Transformation to ANF</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/transformationToAnf.png" align="center" format="png" width="100%"/>
+                    <imagedata fileref="images/transformationToAnf.svg" align="center" width="100%"/>
                 </imageobject>
             </mediaobject>
             <caption><para><emphasis>Various isosemantic representations of statement models can be brought together into
@@ -471,7 +471,7 @@
                 <title>MDMI Standard</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/mdmi_standard.png" align="center" format="png" width="100%" scale="70"/>
+                        <imagedata fileref="images/mdmi_standard.svg" align="center" width="100%" scale="70"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -500,7 +500,7 @@
                 <title>MDMI Transformation Process</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/mdmi_transformation_process.png" align="center" format="png" width="100%" scale="70"/>
+                        <imagedata fileref="images/mdmi_transformation_process.svg" align="center" width="100%" scale="70"/>
                     </imageobject>
                 </mediaobject>
                 <caption><para><emphasis>The MDMI Transformation Process</emphasis></para></caption>

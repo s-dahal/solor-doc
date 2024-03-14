@@ -392,7 +392,7 @@ Doing family history, donor statements using subject of information is now the n
                         Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/bp_complex2_anf.png" format="PNG"
+                            <imagedata fileref="images/bp_complex2_anf.svg"
                                 scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -411,7 +411,7 @@ Doing family history, donor statements using subject of information is now the n
                             <?oxy_comment_start author="timowilliams" timestamp="20190625T204051-0500" comment="Should I add a timing here?" parentID="eys_3pz_23b" mid="25"?>
                             <?oxy_comment_start author="Ioana" timestamp="20191107T221111-0500" comment="The result = 30 minutes for &quot;micturition finding&quot; needs to be replaced with result = [1,1] and timing = no more 30 minutes before the main statement.
 The table representation is correct." mid="24"?>
-                            <imagedata fileref="images/bp_complex3_anf.png" format="png"
+                            <imagedata fileref="images/bp_complex3_anf.svg"
                                 scalefit="1" width="100%" contentdepth="100%"
                             /><?oxy_comment_end?><?oxy_comment_end mid="25"?><?oxy_comment_end mid="24"?>
                         </imageobject>

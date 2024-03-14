@@ -83,7 +83,7 @@
                     
                     <mediaobject role="bordered">
                         <imageobject>
-                            <imagedata fileref="images/ANF-FHIR-API.png" scale="40"/>
+                            <imagedata fileref="images/ANF-FHIR-API.svg" scale="40"/>
                         </imageobject>
                     </mediaobject>
                     <caption>
@@ -118,7 +118,7 @@
                            
                            <mediaobject role="bordered">
                                <imageobject>
-                                   <imagedata fileref="images/derivation.png" scale="40"/>
+                                   <imagedata fileref="images/derivation.svg" scale="40"/>
                                </imageobject>
                            </mediaobject>
                            <caption>
@@ -143,7 +143,7 @@
             
             <mediaobject role="bordered">
                 <imageobject>
-                    <imagedata fileref="images/data-mining.png" scale="40"/>
+                    <imagedata fileref="images/data-mining.svg" scale="40"/>
                 </imageobject>
             </mediaobject>
             <caption>
