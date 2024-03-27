@@ -342,7 +342,7 @@ set       toc,title
   </xsl:attribute>
 </xsl:attribute-set>
 <xsl:param name="header.rule" select="1"/>
-<xsl:param name="header.column.widths">1 2 1</xsl:param>
+<xsl:param name="header.column.widths">1 8 1</xsl:param>
 <xsl:param name="header.table.height">14pt</xsl:param>
 <xsl:attribute-set name="header.table.properties">
   <xsl:attribute name="table-layout">fixed</xsl:attribute>
