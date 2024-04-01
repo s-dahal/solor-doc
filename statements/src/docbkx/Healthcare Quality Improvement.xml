@@ -19,13 +19,13 @@
             of efforts from healthcare professionals, patients, researchers, and educators to make
             changes leading to better patient outcomes, system performance, and professional
             development. [3]</para>
-        <para>IKM in healthcare refers to the systematic management of knowledge resources, aimed at
-            increasing access to available, accurate, and timely information. It involves a quality
-            improvement approach comprising a multipart sequence and cycle, including data
-            collection, storage, dissemination, review, analysis, and recommendations for
-            improvement. [4] An IKM approach is intended to achieve institutional goals through
-            continuous quality improvement, a focus on efficiency, collaboration, and
-            transparency.</para>
+        <para>Integrated Knowledge Management (IKM) in healthcare refers to the systematic
+            management of knowledge resources, aimed at increasing access to available, accurate,
+            and timely information. It involves a quality improvement approach comprising a
+            multipart sequence and cycle, including data collection, storage, dissemination, review,
+            analysis, and recommendations for improvement. [4] An IKM approach is intended to
+            achieve institutional goals through continuous quality improvement, a focus on
+            efficiency, collaboration, and transparency.</para>
         <para>Tinkar is an IKM framework designed to manage and standardize healthcare terminology.
             It ensures the consistency and accuracy of medical records, which is crucial for
             effective communication and treatment planning. Tinkar plays a vital role in data
@@ -34,15 +34,15 @@
             equivalence mappings.</para>
         <para>Training healthcare staff is a critical component of healthcare QI and in the
             healthcare delivery process. Training is a core tenant of maintaining a safe and high
-            quality health care system and ensures an environment that encourages staff retention.
+            quality healthcare system and ensures an environment that encourages staff retention.
             Healthcare professionals must meet and maintain professional standards set by their
             respective professional organizations, as well as legislative and regulatory
             requirements. These standards are often updated, and training can ensure staff are aware
             of updated knowledge, best practices, and policies. </para>
         <para>There are a wide range of stakeholders involved in the delivery of care and in the
             healthcare ecosystem, from physicians, laboratorians, nurses, support staff, and more,
-            that all genereate and share curated knowledge with each other. Organizing and relaying
-            this information in an efficient and effective way is not a simple task. Often times,
+            who genereate and share curated knowledge with each other. Organizing and relaying this
+            information in an efficient and effective way is not a simple task. Often times,
             critical information and context is lost or distorted during data exchange within and
             between systems, resulting in incomplete or inaccurate knowledge. IKM aims to ensure
             systems maintain and communicate information without data loss as it flows between
@@ -64,8 +64,9 @@
             <listitem>
                 <para>Highlight the impact of these systems on healthcare quality
                     improvement.</para>
-     <para>This section explores the critical role of IKM and Tinkarin enhancing
-                    healthcare quality. It delves into how these systems can be leveraged to improve
+     <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240401T133947-0500" comment="Tom, can you fix this indentation? "?>This<?oxy_comment_end?>
+                    section explores the critical role of IKM and Tinkar in enhancing healthcare
+                    quality. It delves into how these systems can be leveraged to improve
                     decision-making, patient care, the overall efficiency of healthcare services,
                     and healthcare education. The key findings highlight the transformative impact
                     of IKM and Tinkar in managing healthcare knowledge, standardizing terminology,
@@ -79,18 +80,17 @@
         <section>
             <title/>
             <para>All healthcare organizations are continuously striving towards Healthcare QI, a
-                process used to identify and address healthcare disparities and reduce harm and
+                process used to identify and address healthcare disparities, and reduce harm and
                 issues that may arise from administrative or technical mistakes. Inaccuracies or
-                omissions in health records may lead to unintended andharmful effects to the patient
-                so improving upon certain processes can help mitigate these small errors, thus
-                having a positive impact for patients and healthcare providers.</para>
+                omissions in health records may lead to unintended and harmful effects to the
+                patient. Improving upon certain processes can help mitigate these small errors and
+                have a positive impact for patients and healthcare providers.</para>
             <para>IKM can help play a pivotal role in Healthcare QI through the following:</para>
             <orderedlist>
                 <listitem><emphasis role="bold">Enhanced Decision-Making: </emphasis>IKM plays a
                     pivotal role in healthcare by facilitating the flow and management of knowledge
                     throughout its lifecycle. This process is crucial for informed clinical
-                    decision-mak- ing, which directly impacts patient care quality. [5<emphasis
-                        role="bold">]</emphasis></listitem>
+                    decision-mak- ing, which directly impacts patient care quality. [5]</listitem>
                 <listitem><emphasis role="bold">Standardized Healthcare Terminology:
                     </emphasis>Tinkar addresses the need for standardized terminology in healthcare.
                     It ensures consistency and accuracy in medical records, which is fundamental for
@@ -114,8 +114,11 @@
                     patient outcomes, provider experience, and the efficacy and efficiency of IKM
                     itself.</listitem>
             </orderedlist>
-            <para>Education and training are important processes in the healthcare system needed to
-                maintain quality patient care and to meet high quality healthcare standards.
+            <para>To achieve the goal of healthcare QI, patients and healthcare professionals will
+                need a thorough understading of IKM and how IKM contributes to patient care.
+                Education and training are important processes in the healthcare system that will
+                help align the knowledge base of patients and healtcare professionals, and is needed
+                to maintain quality patient care and to meet high quality healthcare standards.
                 Training is the organization and sharing of important and relevant information
                 amassed from best practices and experience. Proper training can ensure all
                 individuals involved in delivery of care are up to date on the most relevant
@@ -123,7 +126,7 @@
                 and will play an important part in any well-developed training curriculum.</para>
             <para>The implementation of IKM and Tinkar in healthcare settings is not just a
                 technological upgrade but a strategic move towards a more efficient, accurate, and
-                patient-centered healthcare system. Theirrole in standardizing healthcare
+                patient-centered healthcare system. Their role in standardizing healthcare
                 terminology and enhancing knowledge management paves the way for improved healthcare
                 quality, education, and patient outcomes.</para>
         </section>
@@ -159,8 +162,8 @@
                 equity by addressing healthcare disparities, including socioeconomic, racial, and
                 gender-based inequities, is a complex and critical challenge in healthcare. All of
                 these challenges are bookended by patient safety, with issues like medication
-                errors, diagnostic inaccuracies, and hospital-acquired infections (HAIs) continue to
-                pose significant challenges to healthcare quality. [8]</para>
+                errors, diagnostic inaccuracies, and hospital-acquired infections (HAIs) continuing
+                to pose significant challenges to healthcare quality. [8]</para>
         </section>
         <section><title>The Role of Data and Information Management in Healthcare
                 Quality</title>
@@ -231,7 +234,8 @@
                 decisions regarding their treatment. [15]</para>
         </section>
         <section>
-            <title>Opportunities to Improve Healthcare Quality</title>
+            <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240401T133453-0500" comment="change title?"?>Opportunities
+                to Improve Healthcare Quality<?oxy_comment_end?></title>
         </section>
         <section>
         
@@ -254,26 +258,21 @@
                 >Improving Performance for Health Plan Customer Service:</link> A health plan
             employed quality improvement methods to enhance customer service for its members,
             demonstrating the impact of targeted initiatives on service quality. </para>
-            <para>IKM can have a positive effect on clinical decision making, patient care and
-                coordination, and research and development by allowing the harmonization of
-                information between systems. However, IKM also plays an important role in healthcare
-                education and training. The benefits of a well curated IKM training program can
-                benefit both patient care and employee happiness and retention, which effectively
-                leads to better patient care. Comprehensive training programs are more critical than
-                ever as advanced technology is introduced into the workflow. Many healthcare
-                organizations are facing critical staffing shortages and are expanding their pool of
-                candidates via telehealth. However, this strategy alone cannot alleviate the need
-                for a technologically prepared workforce. Upskilling is a growing trend in
-                workplaces. Instead of looking for new talent with relevant skills, organization can
-                train their current staff in the skills needed. Upskilling calls for a robust
-                training program that pulls together information from different parts of healthcare.
-                IKM can help pull this information together by collecting and storing information.
-                [17]</para>
-            <para>The U.S. has many large healthcare systems that extend across locations, making it
-                difficult to amass critical knowledge infrastructure. For example, one hospital
-                system on the West Coast may be implementing a new process that is showing success
-                and may be helpful for locations based on the East Coast. How does this information
-                make it there and successfully get implemented? </para>
+            <para>Similarly to these case studies, IKM can have a positive effect on clinical
+                decision making, patient care and coordination, and research and development by
+                allowing the harmonization of information between systems. However, IKM also plays
+                an important role in healthcare education and training. The benefits of a well
+                curated IKM training program can benefit both patient care and employee happiness
+                and retention, which effectively leads to better patient care. Comprehensive
+                training programs are more critical than ever as advanced technology is introduced
+                into the workflow. Many healthcare organizations are facing critical staffing
+                shortages and are expanding their pool of candidates via telehealth. However, this
+                strategy alone cannot alleviate the need for a technologically prepared workforce.
+                Upskilling is a growing trend in workplaces. Instead of looking for new talent with
+                relevant skills, organization can train their current staff in the skills needed.
+                Upskilling calls for a robust training program that pulls together information from
+                different parts of healthcare. IKM can help pull this information together by
+                collecting and storing information. [17]</para>
             <para>Training requires involvement and buy in from both the healthcare administration
                 and employees. It is important that both understand the benefit of training and
                 upskilling: a well-run organization that is successful, satisfied employees,
@@ -285,23 +284,27 @@
                 information to include in the trainings. </para>
             <para>Healthcare professionals do not work in silos. Physicians depend on hospital
                 administrations, researchers depend on accurate electronic health records, and
-                patients depend on the entire system to operate smoothly, in unison. Trainings
+                patients depend on the entire system to operate smoothly and in unison. Trainings
                 should involve a similar approach to knowledge management and content curation.
                 Important information from different fields in the healthcare realm ensure the
                 entire system in functioning smoothly. Trainings should emphasize the importance of
-                integrated knowledge management so that employees understand why their role and the
-                information they create, process and document is important </para>
+                IKM so that employees understand why their role and the information they create,
+                process and document is important. Healthcare systems can take the opportunity to
+                not only increase the quality of their care, but also increase workforce retention
+                and reduce burnout. </para>
         </section>
     </section>
     <section>
         <title>Future Implementation Strategies</title>
         <para>Implementing IKM and Tinkar in healthcare organizations will involve several key
-            steps. The first step is an Assessment of Current Systems to evaluate existing knowledge
-            management and data systems to identify gaps and areas for improvement. It is important
-            to involve key stakeholders, including healthcare providers, Information Technology (IT)
-            professionals, and administrators, to ensure alignment and support. Our team can also
-            prepare healthcare systems for the implementation of IKM and Tinkar by developing a
-            strategic plan that outlines the goals, timelines, resources, and responsibilities for
+            steps. The first step is an
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240401T133520-0500" comment="does this need to be capitalized?"?>Assessment
+            of Current Systems<?oxy_comment_end?> to evaluate existing knowledge management and data
+            systems to identify gaps and areas for improvement. It is important to involve key
+            stakeholders, including healthcare providers, Information Technology (IT) professionals,
+            and administrators, to ensure alignment and support. Our team can also prepare
+            healthcare systems for the implementation of IKM and Tinkar by developing a strategic
+            plan that outlines the goals, timelines, resources, and responsibilities for
             implementing IKM and Tinkar. Training and education should be provided for healthcare
             professionals and IT staff on the new systems and processes to ensure the success of the
             implementation. Throughout the implementation, thorough and continual testing of the new
@@ -434,22 +437,22 @@
             healthcare quality and education improvement. Both IKM and Tinkar play a crucial role in
             enhancing healthcare quality by improving decision-making, standardizing care processes,
             ensuring data accuracy, and optimizing both healthcare professional and patient
-            education. Successful implementation requiresa strategic approach, including stakeholder
-            engagement, training, continuous monitoring, and the development of well refined key
-            performance indicators that are collaboratively developed with various stakeholder
-            groups.</para>
+            education. Successful implementation requires a strategic approach, including
+            stakeholder engagement, training, continuous monitoring, and the development of well
+            refined key performance indicators that are collaboratively developed with various
+            stakeholder groups.</para>
         <para>Overcoming challenges such as resistance to change, technical barriers, and data
-            security concerns is es- sential for effective implementation but can be proactively
+            security concerns is esssential for effective implementation but can be proactively
             mitigated with industry best practices. It is recommendedthat healthcare organizations
-            embrace technological advancements, foster a culture of con- tinuous learning,
-            prioritize data security and privacy, and engage in collaborative efforts to maximize
-            the benefits of IKM and Tinkar in healthcare. Patients and providers can achieve a
-            higher quality of healthcare through curated trainings and educational programs enhanced
-            by the benefits of IKM. In conclusion, the integration of IKM and Tinkar holds signif-
-            icant potential for advancing healthcare quality. By embracing these technologies and
-            addressing associ- ated challenges, healthcare organizations can improve patient
-            outcomes, enhance operational efficiency, and pave the way for a more dynamic and
-            patient-centered healthcare system.</para>
+            embrace technological advancements, foster a culture of continuous learning, prioritize
+            data security and privacy, and engage in collaborative efforts to maximize the benefits
+            of IKM and Tinkar in healthcare. Patients and providers can achieve a higher quality of
+            healthcare through curated trainings and educational programs enhanced by the benefits
+            of IKM. In conclusion, the integration of IKM and Tinkar holds significant potential for
+            advancing healthcare quality. By embracing these technologies and addressing associated
+            challenges, healthcare organizations can improve patient outcomes, enhance operational
+            efficiency, and pave the way for a more dynamic and patient-centered healthcare
+            system.</para>
     </section>
     <section>
         <title>References</title>
