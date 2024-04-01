@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Use Cases</title>
+    <section>
+        <title>Proficiency Testing and Interoperability Overview</title>
+        <para>Laboratory proficiency testing (PT) participation is a requirement for performance of
+            clinical testing under the Clinical Laboratory Improvement Amendments of 1988 (CLIA 88)
+            to provide an important comparison and objective assessment of lab staff competencies,
+            specimen handling, equipment functionality, and results reporting. PT is an external
+            quality and accuracy assessment process that tests unknown specimens from a PT provider
+            to ensure accurate laboratory results. After submitting test results, the laboratories
+            receive data that compares their performance with that of other laboratories in their
+            peer group (e.g., other laboratories that performed the same test on the same instrument
+            and reagent platforms). The interoperability issues that make direct transmission
+            results from the performing laboratory to quality organizations such as PT vendors
+            challenging are very similar to the issues that laboratories face when they receive
+            results from external laboratories through Health Information Exchanges (HIE) and HL7
+            interfaces. Individual laboratories have always utilized their own local test codes,
+            tests names, normal range values, and formats of test results and associated units. To
+            compensate for this lack of standardization, PT vendors have had to implement a system
+            of custom codes to standardize the representation of required data elements across
+            result submissions from laboratories to allow them to perform their function of
+            assessing the accuracy of results and comparing the performance of the subscriber
+            laboratory to their peer groups of other laboratories utilizing the same instrumentation
+            and reagents. Like HIE laboratory result transmission, being able to correctly interpret
+            PT tests and determine equivalence of test results often requires more information than
+            is currently available with most test result transmissions. Method information such as
+            instrument and reagent information are not currently able to be captured or transmitted
+            through Laboratory Information System (LIS) and Electronic Health Record (EHR) systems.
+            The methodology information is not transmitted with the result and must be “married up”
+            within the PT vendor information system when the PT result is received. Methodology
+            information is stored in the PT vendor system and is often derived from historical
+            reporting and must be manually changed by the subscriber laboratory whenever there is a
+            change. </para>
+    </section>
+    <section>
+        <title>Current State Architecture </title>
+    </section>
+</chapter>

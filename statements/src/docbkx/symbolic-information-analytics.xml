@@ -223,7 +223,8 @@
         <xi:include href="Pizza%20Ontology.xml"/>
         <xi:include href="Synensys%20Deliverable%201%20.xml"/>
         <xi:include href="Synensys%20Task%201.xml"/>
-        </part>
+        <xi:include href="Synensys%20Task%201.3"/>
+    </part>
     
     <!--<part>-->
         <!--<title>Instance representation</title>-->
