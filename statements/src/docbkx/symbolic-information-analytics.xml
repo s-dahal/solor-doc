@@ -217,6 +217,7 @@
     <part>
         <Title>Miscellaneous Work</Title>
         <xi:include href="CAP%20Deliverable%200324.xml"/>
+        <xi:include href="CAP%20Deliverable%202_7.xml"/>
         <xi:include href="Document%20Data%20Transmission%20Infrastructure%20CAP.xml"/>
         <xi:include href="Laboratory%20Data%20Touch%20Points,%20Methods,%20and%20Associated%20Risks%20CAP.xml"/>
         <xi:include href="Self%20and%20External%20Assessment%20Evaluation%20Approach%20for%20Laboratory%20Data%20Coding%20Quality%20CAP.xml"/>
