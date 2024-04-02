@@ -10,29 +10,29 @@
         <para>While Integrated Knowledge Management (IKM) and other content is explored in more
             detail in other volumes, the following areas are key components to healthcare quality
             improvement (QI).</para>
-        <para>Healthcare QI is a systematic and continuous action aimed at measurable improvements
-            in healthcare services and the health status of targeted patient groups. [1] The
-            National Academy of Medicine defines healthcare quality as the degree to which health
-            services for individuals and populations increase the likelihood of desired health
-            outcomes consistent with current professional knowledge. [2] QI seeks to standardize
-            processes and structure to reduce variation, achieve predictable results, and improve
-            outcomes for patients, healthcare systems, and organizations. It involves a combination
-            of efforts from healthcare professionals, patients, researchers, and educators to make
-            changes leading to better patient outcomes, system performance, and professional
-            development. [3]</para>
-        <para>IKM in healthcare refers to the systematic management of knowledge resources, aimed at
-            increasing access to available, accurate, and timely information. It involves a quality
-            improvement approach comprising a multipart sequence and cycle, including data
-            collection, storage, dissemination, review, analysis, and recommendations for
-            improvement. [4] An IKM approach is intended to achieve institutional goals through
-            continuous quality improvement, a focus on efficiency, collaboration, and
-            transparency.</para>
-        <para>Tinkar is an IKM framework designed to manage and standardize healthcare terminology.
-            It ensures the consistency and accuracy of medical records, which is crucial for
-            effective communication and treatment planning. Tinkar plays a vital role in data
-            interoperability and accuracy, supporting healthcare organizations as they manage
-            standard terminology modules, value sets, coding systems, and local terms and
-            equivalence mappings.</para>
+        <para><emphasis role="bold">Healthcare QI</emphasis> is a systematic and continuous action
+            aimed at measurable improvements in healthcare services and the health status of
+            targeted patient groups. [1] The National Academy of Medicine defines healthcare quality
+            as the degree to which health services for individuals and populations increase the
+            likelihood of desired health outcomes consistent with current professional knowledge.
+            [2] QI seeks to standardize processes and structure to reduce variation, achieve
+            predictable results, and improve outcomes for patients, healthcare systems, and
+            organizations. It involves a combination of efforts from healthcare professionals,
+            patients, researchers, and educators to make changes leading to better patient outcomes,
+            system performance, and professional development. [3]</para>
+        <para><emphasis role="bold">IKM</emphasis> in healthcare refers to the systematic management
+            of knowledge resources, aimed at increasing access to available, accurate, and timely
+            information. It involves a quality improvement approach comprising a multipart sequence
+            and cycle, including data collection, storage, dissemination, review, analysis, and
+            recommendations for improvement. [4] An IKM approach is intended to achieve
+            institutional goals through continuous quality improvement, a focus on efficiency,
+            collaboration, and transparency.</para>
+        <para><emphasis role="bold">Tinkar</emphasis> is an IKM framework designed to manage and
+            standardize healthcare terminology. It ensures the consistency and accuracy of medical
+            records, which is crucial for effective communication and treatment planning. Tinkar
+            plays a vital role in data interoperability and accuracy, supporting healthcare
+            organizations as they manage standard terminology modules, value sets, coding systems,
+            and local terms and equivalence mappings.</para>
         <para>Training healthcare staff is a critical component of healthcare QI and in the
             healthcare delivery process. Training is a core tenant of maintaining a safe and high
             quality healthcare system and ensures an environment that encourages staff retention.
@@ -67,13 +67,6 @@
                     improvement.</para>
             </listitem>
         </orderedlist>
-        <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240401T163421-0500" comment="remove"?>This
-            section explores the critical role of IKM and Tinkar in enhancing healthcare quality. It
-            delves into how these systems can be leveraged to improve decision-making, patient care,
-            the overall efficiency of healthcare services, and healthcare education. The key
-            findings highlight the transformative impact of IKM and Tinkar in managing healthcare
-            knowledge, standardizing terminology, and fostering evidence-based practices to improve
-            patient care and quality.</para><?oxy_comment_end?>
         <section>
             <title>Importance of IKM and Tinkar in Healthcare Quality Improvement</title>
             <para>All healthcare organizations are continuously striving towards healthcare QI, a
