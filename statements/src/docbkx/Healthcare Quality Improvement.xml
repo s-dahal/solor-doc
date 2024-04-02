@@ -64,18 +64,18 @@
             </listitem>
             <listitem>
                 <para>Highlight the impact of these systems on healthcare quality
-                    improvement.</para></listitem></orderedlist>
-                <para>This section explores the critical role of IKM and Tinkar in enhancing
-            healthcare quality. It delves into how these systems can be leveraged to improve
-            decision-making, patient care, the overall efficiency of healthcare services, and
-            healthcare education. The key findings highlight the transformative impact of IKM and
-            Tinkar in managing healthcare knowledge, standardizing terminology, and fostering
-            evidence-based practices to improve patient care and quality.</para>
-            
-        
+                    improvement.</para>
+            </listitem>
+        </orderedlist>
+        <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240401T163421-0500" comment="remove"?>This
+            section explores the critical role of IKM and Tinkar in enhancing healthcare quality. It
+            delves into how these systems can be leveraged to improve decision-making, patient care,
+            the overall efficiency of healthcare services, and healthcare education. The key
+            findings highlight the transformative impact of IKM and Tinkar in managing healthcare
+            knowledge, standardizing terminology, and fostering evidence-based practices to improve
+            patient care and quality.</para><?oxy_comment_end?>
         <section>
             <title>Importance of IKM and Tinkar in Healthcare Quality Improvement</title>
-        
             <para>All healthcare organizations are continuously striving towards healthcare QI, a
                 process used to identify and address healthcare disparities, to reduce harm and
                 issues that may arise from administrative or technical mistakes. Inaccuracies or
@@ -84,32 +84,45 @@
                 positive impact on patients and healthcare providers.</para>
             <para>IKM can help play a pivotal role in Healthcare QI through the following:</para>
             <orderedlist>
-                <listitem><para><emphasis role="bold">Enhanced Decision-Making: </emphasis>IKM plays a pivotal role in
-                        healthcare by facilitating the flow and management of knowledge throughout
-                        its lifecycle. This process is crucial for informed clinical
-                        decision-making, which directly impacts patient care quality. [5]</para></listitem>
-                <listitem><para><emphasis role="bold">Standardized Healthcare Terminology:
-                    </emphasis>Tinkar addresses the need for standardized terminology in healthcare.
-                    It ensures consistency and accuracy in medical records, which is fundamental for
-                    effective communication and treatment planning. [6]</para></listitem>
-                <listitem><para><emphasis role="bold">Evidence-Based Medical Practices (EBMP): </emphasis>The integration of
-                        research evidence, clinical expertise, and patient preferences in clinical
-                        decision-making is a cornerstone of EBMP. IKM and Tinkar support this
-                        integration by managing both tacit and explicit knowledge, crucial for
-                        successful EBMP. [5]</para></listitem>
-                <listitem><para><emphasis role="bold">Operational Efficiency: </emphasis>IKM and Tinkar support efficient
-                        knowledge management in healthcare and add significant value to diagnostic,
-                        decision-making, and treatment processes. Efficient knowledge management
-                        helps reduce medical errors caused by misdiagnosis or incorrect information.
-                        [6]</para></listitem>
-                <listitem><para><emphasis role="bold">Knowledge Sharing and Organizational Learning:
-                    </emphasis>These systems foster a culture of knowledge sharing,leading to
-                    organizational learning. This aspect is vital for continuous improvement in
-                    healthcare practices and patient safety. [7]</para></listitem>
-                <listitem><para><emphasis role="bold">Healthcare Education: </emphasis>The role of IKM in
-                    healthcare education is another critical component that can be used to improve
-                    patient outcomes, provider experience, and the efficacy and efficiency of IKM
-                    itself.</para></listitem>
+                <listitem>
+                    <para><emphasis role="bold">Enhanced Decision-Making: </emphasis>IKM plays a
+                        pivotal role in healthcare by facilitating the flow and management of
+                        knowledge throughout its lifecycle. This process is crucial for informed
+                        clinical decision-making, which directly impacts patient care quality.
+                        [5]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Standardized Healthcare Terminology:
+                        </emphasis>Tinkar addresses the need for standardized terminology in
+                        healthcare. It ensures consistency and accuracy in medical records, which is
+                        fundamental for effective communication and treatment planning. [6]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Evidence-Based Medical Practices (EBMP):
+                        </emphasis>The integration of research evidence, clinical expertise, and
+                        patient preferences in clinical decision-making is a cornerstone of EBMP.
+                        IKM and Tinkar support this integration by managing both tacit and explicit
+                        knowledge, crucial for successful EBMP. [5]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Operational Efficiency: </emphasis>IKM and Tinkar
+                        support efficient knowledge management in healthcare and add significant
+                        value to diagnostic, decision-making, and treatment processes. Efficient
+                        knowledge management helps reduce medical errors caused by misdiagnosis or
+                        incorrect information. [6]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Knowledge Sharing and Organizational Learning:
+                        </emphasis>These systems foster a culture of knowledge sharing,leading to
+                        organizational learning. This aspect is vital for continuous improvement in
+                        healthcare practices and patient safety. [7]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Healthcare Education: </emphasis>The role of IKM in
+                        healthcare education is another critical component that can be used to
+                        improve patient outcomes, provider experience, and the efficacy and
+                        efficiency of IKM itself.</para>
+                </listitem>
             </orderedlist>
             <para>To undergo optimal healthcare QI, patients and healthcare professionals will need
                 a thorough understanding of IKM and how IKM contributes to patient care. Education
@@ -231,25 +244,25 @@
         </section>
         <section>
             <title>Opportunities to Improve Healthcare Quality</title>
-        <para>The Agency for Healthcare Research and Quality has highlighted three case studies that
-                showcase efforts to improve a patient's healthcare experience and health outcomes by
-                addressing performance issues and updating and implementing strategy and action
-                plans. [16]</para>
-        <para>1. <link
-                xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/Case_Study_Specialty_Practice_Updated.pdf"
-                >Improving Customer Service and Access in a Surgical Practice:</link> A surgical
-            practice implemented a six-step plan to enhance customer service and access, leading to
-            improved patient experiences. </para>
-        <para>2. <link
-                xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/WR_751_AHRQ_Quigley_08_26_10.pdf"
-                >Improving Hospital Inpatient Nursing Care</link>: A large acute care hospital
-            successfully implemented a plan to improve the emotional support provided to inpatients
-            by nursing staff, enhancing patient care quality. </para>
-        <para>3. <link
-                xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/ExecSummcaseplancustsvce-RAND7607.pdf"
-                >Improving Performance for Health Plan Customer Service:</link> A health plan
-            employed quality improvement methods to enhance customer service for its members,
-            demonstrating the impact of targeted initiatives on service quality. </para>
+            <para>The Agency for Healthcare Research and Quality has highlighted three case studies
+                that showcase efforts to improve a patient's healthcare experience and health
+                outcomes by addressing performance issues and updating and implementing strategy and
+                action plans. [16]</para>
+            <para>1. <link
+                    xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/Case_Study_Specialty_Practice_Updated.pdf"
+                    >Improving Customer Service and Access in a Surgical Practice:</link> A surgical
+                practice implemented a six-step plan to enhance customer service and access, leading
+                to improved patient experiences. </para>
+            <para>2. <link
+                    xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/WR_751_AHRQ_Quigley_08_26_10.pdf"
+                    >Improving Hospital Inpatient Nursing Care</link>: A large acute care hospital
+                successfully implemented a plan to improve the emotional support provided to
+                inpatients by nursing staff, enhancing patient care quality. </para>
+            <para>3. <link
+                    xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/ExecSummcaseplancustsvce-RAND7607.pdf"
+                    >Improving Performance for Health Plan Customer Service:</link> A health plan
+                employed quality improvement methods to enhance customer service for its members,
+                demonstrating the impact of targeted initiatives on service quality. </para>
             <para>Similarly to these case studies, IKM can have a positive effect on clinical
                 decision making, patient care and coordination, and research and development by
                 allowing the harmonization of information between systems. However, IKM also plays
@@ -274,16 +287,6 @@
                 IKM can help identify these areas that need focus and training. As well, those
                 curating the trainings will benefit from IKM by having access to accurate and timely
                 information to include in the trainings. </para>
-            <para>Healthcare professionals do not work in silos. Physicians depend on hospital
-                administrations, researchers depend on accurate electronic health records, and
-                patients depend on the entire system to operate smoothly and in unison. Trainings
-                should involve a similar approach to knowledge management and content curation.
-                Important information from different fields in the healthcare realm ensure the
-                entire system in functioning smoothly. Trainings should emphasize the importance of
-                IKM so that employees understand why their role and the information they create,
-                process and document is important. Healthcare systems can take the opportunity to
-                not only increase the quality of their care, but also increase workforce retention
-                and reduce burnout. </para>
         </section>
     </section>
     <section>
