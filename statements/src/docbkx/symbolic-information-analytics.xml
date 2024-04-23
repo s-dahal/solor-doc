@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
-<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
@@ -205,7 +204,7 @@
         <xi:include href="Volume%203%20-%20IKM%20Overview.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Volume%204%20-%20References.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Volume%205%20-%20Knowledge%20Layers.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="volume%206%20-%20ANF%20Ballot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        
         <xi:include href="Volume%207%20-%20Use%20Cases.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Volume%208%20-%20Komet%20User%20Guide.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Volume%209%20-%20Wisdom%20of%20Crowds.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -223,8 +222,8 @@
         <xi:include href="Self%20and%20External%20Assessment%20Evaluation%20Approach%20for%20Laboratory%20Data%20Coding%20Quality%20CAP.xml"/>
         <xi:include href="Pizza%20Ontology.xml"/>
         <xi:include href="Synensys%20Deliverable%201%20.xml"/>
-        <xi:include href="Synensys%20Task%201.xml"/>
-        <xi:include href="Synensys%20Task%201.3"/>
+        
+        <xi:include href="Synensys%20Task%201-3.xml"/>
     </part>
     
     <!--<part>-->

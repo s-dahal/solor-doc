@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<chapter xmlns="http://docbook.org/ns/docbook"
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>Komet User Guide</title>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Komet User Guide</title>
     <section>
         <title>Downloading Komet</title>
         <para>
@@ -17,11 +17,12 @@
                         <title>Komet Download</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Komet%20Download.svg" scale="30" align="center"/>
+                                <imagedata fileref="images/Komet%20Download.svg" scale="30"
+                                    align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
-                    </listitem>
+                </listitem>
                 <listitem>
                     <para>Save the download file to the location of your choice</para>
                 </listitem>
@@ -42,7 +43,8 @@
                         <title>Komet Installer File</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Komet%20Installer%20File.svg" scale="60" align="center"/>
+                                <imagedata fileref="images/Komet%20Installer%20File.svg" scale="60"
+                                    align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -54,21 +56,24 @@
                         <title>Run Komet</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Run%20Komet.svg" scale="60" align="center"/>
+                                <imagedata fileref="images/Run%20Komet.svg" scale="60"
+                                    align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
                     <para>On Mac, run the installer and follow the onscreen installation
-                        instructions until installation is complete</para><figure xml:id="KometMacInstallerFile">
-                            <title>Komet Mac Installer File</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/Komet%20Mac%20Installer%20File.svg" scale="20" align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>
+                        instructions until installation is complete</para>
+                    <figure xml:id="KometMacInstallerFile">
+                        <title>Komet Mac Installer File</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Komet%20Mac%20Installer%20File.svg"
+                                    scale="20" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
                     <para>Once complete, nothing will automatically pop-up, so you will need to
@@ -83,9 +88,9 @@
         <para>
             <orderedlist>
                 <listitem>
-                    <para>For Windows, go to your search bar or apps folder and open “Komet”. For
-                        Mac, go to your applications folder, search for Komet, and run the desktop
-                        version Komet contributed application.</para>
+                    <para>For Windows, go to your search bar or apps folder and search for “Komet”.
+                        For Mac, go to your applications folder, search for Komet, and run the
+                        desktop version Komet contributed application.</para>
                 </listitem>
                 <listitem>
                     <para>The below Komet Startup window will open. Change data source to “Open
@@ -94,14 +99,16 @@
                         <title>Open SpinedArrayStore</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Open%20SpinedArrayStore.svg" scale="60" align="center"/>
+                                <imagedata fileref="images/Open%20SpinedArrayStore.svg" scale="60"
+                                    align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
-                    </listitem>
+                </listitem>
                 <listitem>
                     <para>Select the data source you would like to use and click “Ok” in the bottom
-                        right. Proceed to Step 8.</para>
+                        right. Currently, solor-ids-256.sa is the most up-to-date data source.
+                        Proceed to Step 8.</para>
                 </listitem>
                 <listitem>
                     <para>If you do not see a data source, copy and paste the zip file containing
@@ -121,49 +128,31 @@
                         right</para>
                 </listitem>
                 <listitem>
-                    <para>Komet will open and load in with the 'default' view that consists
-                        of:</para>
-                    <orderedlist>
-                        <listitem>
-                            <para>The Navigation activity stream in the left-hand panel</para>
-                        </listitem>
-                        <listitem>
-                            <para>The Detail Viewer activity stream in the center panel</para>
-                        </listitem>
-                        <listitem>
-                            <para>The Search activity stream in the right-hand panel</para>
-                            <figure xml:id="KometInterface">
-                                <title>Komet Interface</title>
-                                <mediaobject>
-                                    <imageobject>
-                                        <imagedata fileref="images/Komet%20Interface.svg" scale="30" align="center"/>
-                                    </imageobject>
-                                </mediaobject>
-                            </figure>
-                        </listitem>
-                    </orderedlist>
-                </listitem>
-                <listitem>
-                    <para>As a user, you can click and drag any of these activity streams into a
-                        different panel to reorganize as needed</para>
-                </listitem>
-                <listitem>
-                    <para>To view the new Komet prototype user interface (UI), go to the top menu
-                        and select Edit → New Journal on Windows or View → New Journal on Mac</para>
-                    <figure xml:id="NewJournal">
-                            <title>New Journal</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/New%20Journal.svg" scale="15" align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>
-                    <para>A Journal window will appear with the new the prototype UI</para>
-                    <figure xml:id="JournalUI">
-                        <title>Journal UI</title>
+                    <para>Komet will open to the landing page</para>
+                    <figure xml:id="KometInterface">
+                        <title>Komet Interface</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Journal%20UI.svg" scale="30" align="center"/>
+                                <imagedata fileref="images/Landing%20Page.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>As a user, you can start a session by clicking "New Project
+                        Journal"</para>
+                </listitem>
+                <listitem>
+                    <para>The Project Journal will open to the default view with the Navigation and
+                        Search functionality in the left-hand bar and the detail viewer in the
+                        center.</para>
+                    <figure xml:id="NewJournal">
+                        <title>New Journal</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/New%20Journal%20Panel.svg" scale="45"
+                                    align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -172,8 +161,7 @@
         </para>
     </section>
     <section>
-        <title>Importing and Reading-In Data</title>
-        
+        <title>Importing and Reading-In Data (Placeholder)</title>
         <para><emphasis role="bold">Note</emphasis>: This process is to import data after you have
             finished the initial Komet download and install process</para>
         <para>
@@ -185,11 +173,12 @@
                         <title>Import Artifact</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Import%20Artifact.svg" scale="30" align="center"/>
+                                <imagedata fileref="images/Import%20Artifact.svg" scale="30"
+                                    align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
-                    </listitem>
+                </listitem>
                 <listitem>
                     <para>A “Select your file for import” window will pop up. Click on “Select A
                         File” button </para>
@@ -197,11 +186,12 @@
                         <title>Select File</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Select%20File.svg" scale="30" align="center"/>
+                                <imagedata fileref="images/Select%20File.svg" scale="30"
+                                    align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
-                    </listitem>
+                </listitem>
                 <listitem>
                     <para>Browse and select the zip file of your choice and click “Open”</para>
                 </listitem>
@@ -214,344 +204,343 @@
                 </listitem>
             </orderedlist>
         </para>
-        
     </section>
     <section>
         <title>How To Find A Concept</title>
-        <section><title>Komet Interface</title>
         <para>
             <orderedlist>
                 <listitem>
-                    <para>Type the keyword or concept name into the "enter search query" bar in the
-                        Search activity stream (default location: right panel) to find a
-                        concept</para>
+                    <para>Select the magnifying glass icon at the top of the left-hand bar</para>
+                </listitem>
+                <listitem>
+                    <para>Type the keyword or concept name into the "enter search query" bar at the
+                        top of the left-hand panel to find a concept</para>
                     <figure xml:id="ConceptSearch">
                         <title>Komet Concept Search</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Concept%20Search.svg" scale="30" align="center"/>
+                                <imagedata fileref="images/Concept%20Search.svg" scale="30"
+                                    align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
-                    </listitem>
+                </listitem>
                 <listitem>
                     <para>Results containing the keyword will populate in the field below the search
                         bar, with keywords highlighted in green</para>
                 </listitem>
-                <listitem>
-                    <para>Click on a result to view more details in the center panel </para>
-                </listitem>
             </orderedlist>
         </para>
-            <section>
-                <title>How to View Details</title>
-                <orderedlist>
-                    <listitem>
-                        <para>To view a concept, click or drag it to the Detail Viewer activity
-                            stream (default location: center panel)</para>
-                    </listitem>
-                    <listitem>
-                        <para>Use the tabs at the top of the Detail Viewer activity stream (default
-                            location: center panel) to view various details and information about
-                            the selected concept, such as description semantics</para>
-                        <figure xml:id="ViewConceptDetails">
-                            <title>View Concept Details</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/View%20Concept%20Details.svg" scale="60" align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>
-                    </listitem>
-                    <listitem>
-                        <para>Use the “+” drop down to select additional tabs to display information
-                            or to re-open a closed tab for a certain concept</para>
-                        <figure xml:id="DropdownOptions">
-                            <title>Dropdown Options</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/Dropdown%20Options.svg" scale="40" align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>
-                    </listitem>
-                    <listitem>
-                        <para> You can select the language and/or dialect for the concept you want
-                            to display</para>
-                    </listitem>
-                </orderedlist>
-            </section>
-            <section>
-                <title>How to Visualize Hierarchical Relationships</title>
-                <para>
-                    <orderedlist>
-                        <listitem>
-                            <para>To view hierarchical relationships, utilize the “Concept
-                                Navigator” and “Pattern Navigator” tabs in the Navigation activity
-                                stream (default location: left panel)</para>
-                            <figure xml:id="HierarchicalNavigation">
-                                <title>Hierarchical Navigation</title>
-                                <mediaobject>
-                                    <imageobject>
-                                        <imagedata fileref="images/Hierarchical%20navigation.svg" scale="60" align="center"/>
-                                    </imageobject>
-                                </mediaobject>
-                            </figure>
-                        </listitem>
-                        <listitem>
-                            <para>These tabs can also be found when viewing a concept in the Detail
-                                Viewer activity stream (default location: center panel) by clicking
-                                the “+” drop down menu</para>
-                        </listitem>
-                        <listitem>
-                            <para>Utilize the arrows within the Navigation activity stream (default
-                                location: left panel) to collapse or expand hierarchical
-                                relationships </para>
-                        </listitem>
-                        <listitem>
-                            <para>The Detail Viewer activity stream (default location: center panel)
-                                can display additional views, including:</para>
-                            <orderedlist>
-                                <listitem>
-                                    <para>Description Semantic with language and dialect</para>
-                                </listitem>
-                                <listitem>
-                                    <para>Relationship destination and relationship origin</para>
-                                </listitem>
-                                <listitem>
-                                    <para>EL++ Stated terminological axioms showing hierarchical
-                                        relationships</para>
-                                </listitem>
-                            </orderedlist>
-                        </listitem>
-                    </orderedlist>
-                </para>
-            </section>
-        </section>
         <section>
-            <title>Journal Interface</title>
+            <title>How to View Details</title>
             <orderedlist>
                 <listitem>
-                    <para>In the global navigation menu to the left, click the magnifying glass to
-                        open the search tray </para>
+                    <para>To view a concept, double click on a result to view more details in the
+                        center panel </para>
                 </listitem>
                 <listitem>
-                    <para>Type a concept name in the search field and press Enter. A list of related
-                        results will appear.</para>
-                    <figure xml:id="JournalConceptSearch">
-                            <title>Journal Concept Search</title>
+                    <para>You can click the magnifying glass icon at the top of the left-hand bar
+                        again to minimize the search panel for more space (this can be done for any
+                        icon in the left-hand bar)</para>
+                </listitem>
+                <listitem>
+                    <para>Use the icons at the top of the concept window to view various details and
+                        information about the selected concept</para>
+                    <figure xml:id="ViewConceptDetails">
+                        <title>View Concept Details</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Concept%20Details.svg" scale="45"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>The concept window can display additional information, including:</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>Description Semantic with language and dialect</para>
+                        </listitem>
+                        <listitem>
+                            <para>Relationship destination and relationship origin</para>
+                        </listitem>
+                        <listitem>
+                            <para>EL++ Stated terminological axioms showing hierarchical
+                                relationships</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+            </orderedlist>
+        </section>
+        <section>
+            <title>How to Visualize Hierarchical Relationships</title>
+            <para>
+                <orderedlist>
+                    <listitem>
+                        <para>To view hierarchical relationships, select the Hierarchical
+                            Relationships icon in the left-hand bar and drag the desired concept
+                            from the Axioms section into the Hierarchical Realtionships panel.
+                            Inferred navigation pattern information will appear on the left-hand
+                            side. </para>
+                        <figure xml:id="HierarchicalNavigation">
+                            <title>Hierarchical Navigation</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/Journal%20Search.svg" scale="50" align="center"/>
+                                    <imagedata
+                                        fileref="images/Visualize%20Hierarchical%20Relationships.svg" scale="15" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
-                </listitem>
-            </orderedlist>
-            <section>
-                <title>How to View Details</title>
-                <orderedlist>
+                    </listitem>
                     <listitem>
-                        <para>In the search results, double click the concept you wish to view. A
-                            concept window with concept details will open to the right.</para><figure xml:id="JournalConceptDetails">
-                                <title>Journal Concept Details</title>
-                                <mediaobject>
-                                    <imageobject>
-                                        <imagedata fileref="images/Journal%20Concept%20Details.svg" scale="30" align="center"/>
-                                    </imageobject>
-                                </mediaobject>
-                            </figure>
+                        <para>Hierarchical Relationships can also be viewed in the center panel by
+                            toggling the "Properties" button on and selecting the "Hierarchy" icon
+                            at the top of the concept window </para>
+                        <figure xml:id="OtherHierarchicalNavigation">
+                            <title>Alternative Hierarchical Navigation</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata
+                                        fileref="images/Other%20Hierarchical%20Relationship%20View.svg"
+                                        scale="35" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                    <listitem>
+                        <para>Utilize the arrows within either Hierarchical Relationships panel to
+                            collapse or expand relationships, as needed</para>
                     </listitem>
                 </orderedlist>
-            </section>
-            <section>
-                <title>How to Visualize Hierarchical Relationships</title>
-                <para>Will be in next test installers</para>
-            </section>
+            </para>
         </section>
     </section>
     <section>
         <title>Viewing Versioning</title>
-    </section>
-    <section>
-        <title>Editing/Modifying</title>
-        <section><title>Komet Interface</title>
-        <section>
-            <title>Primitive Editing </title>
-            <para>text values or number changes</para>
-        </section>
-        <section>
-            <title>Concept Editing</title>
-            <para>language change from English to French</para>
-        </section>
-        <section>
-            <title>STAMP Editing</title>
-        </section>
-        <section>
-            <title>Retiring Concepts</title>
-        </section>
-    </section>
-        <section><title>Journal Interface</title>
-                <section>
-                    <title>Primitive Editing </title>
-                    <para>text values or number changes</para>
-                </section>
-                <section>
-                    <title>Concept Editing</title>
-                    <para>language change from English to French</para>
-                </section>
-                <section>
-                    <title>STAMP Editing</title>
-                </section>
-                <section>
-                    <title>Retiring Concepts</title>
-                </section>
-            </section>
-    </section>
-    <section>
-        <title>Exporting and Sharing Data</title>
-        <section><title>Komet Interface</title>
-        <para><orderedlist>
-                <listitem>
-                    <para>Select the concept or concepts you would like to export on the Navigation
-                        activity stream (default location: left panel) </para>
-                    <orderedlist>
-                        <listitem>
-                            <para>Use shift or control click to select multiple concepts</para>
-                        </listitem>
-                    </orderedlist>
-                </listitem>
-                <listitem>
-                    <para>Right click and select export OR use the “+” dropdown menu and select
-                        "Export Artifact"</para>
-                    <figure xml:id="ExportArtifactt">
-                        <title>Export Artifact</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="images/export%20artifact.svg" scale="30" align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-        </orderedlist></para>
-            </section>
-        <section>
-            <title>Journal Interface</title>
-        </section>   
-    </section>
-    <section>
-        <title>Viewing Concept Timeline Properties</title>
-        <section>
-            <title>Komet Interface</title>
-        </section>
-        <section>
-            <title>Journal Interface</title>
-            <orderedlist>
-                <listitem>
-                    <para>In the tool ribbon at the top of the concept window, click the green Time
-                        Travel button<figure xml:id="TimeTravelButton">
-                            <title>Time Travel Button</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/Time%20Travel%20Button.svg" scale="80" align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>The Timeline panel opens to the right. Colored lines in the
-                        Timeline panel represent different data extensions.</para><figure xml:id="TimelinePanel">
-                            <title>Timeline Panel</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/Timeline%20Panel.svg" scale="40" align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>
-                </listitem>
-                <listitem>
-                    <para>Click the three vertical dots on the right to view Timeline settings. You
-                        can change which extensions you wish to view in the Timeline panel.</para>
-                    <figure xml:id="TimelineSettings">
-                            <title>Timeline Settings</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/Timeline%20Settings.svg" scale="60" align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>
-                </listitem>
-                <listitem>
-                    <para>Click the Properties toggle on the right, above the Timeline panel, to
-                        enable the Properties panel<figure xml:id="PropertiesToggle">
-                            <title>Properties Toggle</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/Properties%20Toggle.svg" scale="60" align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>This opens the Properties panel between the concept details view
-                        and the Timeline panel. The Properties panel contains options for the Edit,
-                        Hierarchy, History, and Comments views.</para>
-                    <figure xml:id="PropertiesPanel">
-                        <title>Properties Panel</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="images/Properties%20Panel.svg" scale="50" align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-                <listitem>
-                    <para>Click the History view in the Properties panel. The History view shows
-                        event details for each event dot on the Timeline extension(s).</para>
-                    <figure xml:id="TimelineandHistory">
-                            <title>Timeline and History</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/Timeline%20and%20History.svg" scale="30" align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>
-                </listitem>
-                <listitem>
-                    <para>Click the Range toggle below the Properties toggle to enable range
-                        selection on the timeline<figure xml:id="RangeToggle">
-                            <title>Range Toggle</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/Range%20Toggle.svg" scale="50" align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>This allows you to select event dots you wish to view within a
-                        specific time range. <figure xml:id="EventsWithinaRange">
-                            <title>Events Within a Range</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/Events%20Within%20a%20Range.svg" scale="50" align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>When you define a specific time range, the History view only shows
-                        event details for event dots contained within that time range. When an event
-                        dot is selected, the dot turns green and the corresponding historical record
-                        is outlined red.</para>
-                    <figure xml:id="HistoryWithinaRange">
-                        <title>History Within a Range</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="images/History%20Within%20a%20Range.svg" scale="30" align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-                <listitem><para>Click the dropdown at the top of the History view to filter historical records by Concept,
-                        Description, and Axiom change events</para><figure xml:id="HistoricalRecordsFilter">
-                    <title>Historical Records Filter</title>
+        <orderedlist>
+            <listitem>
+                <para>In the tool ribbon at the top left of the concept window, click the Time
+                    Travel button</para>
+                <figure xml:id="GettoVersioning">
+                    <title>Versioning Panel</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Historical%20Records%20Filter.svg" scale="30" align="center"/>
+                            <imagedata fileref="images/Get%20to%20Versioning.svg" scale="35"
+                                align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
+                <para>The Timeline panel opens to the right. The blue lines in the Timeline panel
+                    represent different data extensions.</para>
+            </listitem>
+            <listitem>
+                <para>Toggle the "Properties" button on in the top right of the concept
+                    window</para>
+            </listitem>
+            <listitem>
+                <para>Then toggle the "Range" button on</para>
+                <figure xml:id="ViewingVersioning">
+                    <title>Viewing Versioning</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Viewing%20Versioning.svg" scale="60"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Drag the top or bottom horizontal blue bars to view concept version
+                    information over a specified date range. When you define a specific time range,
+                    the History view only shows event details for event nodes within that time range
+                </para>
+            </listitem>
+            <listitem>
+                <para>Selecting a specifc node on the timeline will turn the node green and
+                    highlight information pertaining to that change or concept version</para>
+                <figure xml:id="ViewingVersioning2">
+                    <title>Version Nodes</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Viewing%20Versioning2.svg" scale="60"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>You can further narrow the versioning by selecting the "All" drop down arrow
+                    to filter historical events by Concept, Description, and Axiom changes.</para>
+                <figure xml:id="ConceptHistoryOptions">
+                    <title>Concept Version Options</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Concept%20History%20Options.svg" scale="35"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section>
+        <title>Editing/Modifying</title>
+        <orderedlist>
+            <listitem>
+                <para>To edit a concept, ensure the "Properties" button is toggled on and select the
+                    "Edit" icon at the top right of the concept viewing window</para>
+                <figure xml:id="EditingaConcept">
+                    <title>Editing a Concept</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Edit%20Concept.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+        </orderedlist>
+        <section>
+            <title>Edit Descriptions</title>
+            <orderedlist>
+                <listitem>
+                    <para>Selecting "Edit Description" leads to two additional options</para>
+                    <figure xml:id="EditDescription">
+                        <title>Edit Description</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Editing%20a%20Concept.svg" scale="35"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Selecting "Edit Fully Qualified" allows you to edit the selected concept's
+                        Fully Qualified Name and associated information</para>
+                    <figure xml:id="EditingaConcept2">
+                        <title>Editing a Fully Qualified Name</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Editing%20a%20Concept2.svg" scale="35"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Selecting "Add Other Name" allows you to add a new description of the
+                        concept and associated information</para>
+                    <figure xml:id="EditingaConcept3">
+                        <title>Adding a New Description</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Editing%20a%20Concept3.svg" scale="35"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
             </orderedlist>
         </section>
+        <section>
+            <title>Edit Axiom</title>
+            <orderedlist>
+                <listitem>
+                    <para>Button isn't functional as of 4/10/24</para>
+                </listitem>
+                <listitem>
+                    <para>Axioms can also be edited by selecting the Pencil Icon next to the Axiom's
+                        concept and selecting the appropriate action from the drop down menu</para>
+                    <figure xml:id="AxiomEditing">
+                        <title>Editing an Axiom</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Axiom%20Editing2.svg" scale="45"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+            </orderedlist>
+        </section>
+    </section>
+    <section>
+        <title>Exporting and Sharing Data (Placeholder)</title>
+        <section>
+            <title>Komet Interface</title>
+            <para>
+                <orderedlist>
+                    <listitem>
+                        <para>Select the concept or concepts you would like to export on the
+                            Navigation activity stream (default location: left panel) </para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Use shift or control click to select multiple concepts</para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Right click and select export OR use the “+” dropdown menu and select
+                            "Export Artifact"</para>
+                        <figure xml:id="ExportArtifact">
+                            <title>Export Artifact</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/export%20artifact.svg" scale="30"
+                                        align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                </orderedlist>
+            </para>
+        </section>
+        <section>
+            <title>Journal Interface</title>
+        </section>
+    </section>
+    <section>
+        <title>Running the Reasoner</title>
+        <orderedlist>
+            <listitem>
+                <para>To run the reasoner, select the Reasoner icon at the top of the concept
+                    window</para>
+                <figure xml:id="OpenReasoner">
+                    <title>Open Reasoner</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Open%20Reasoner.svg" scale="30" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>You can also open the Reasoner panel by selecting the Reasoner icon in the
+                    left-hand tool ribbon</para>
+                <figure xml:id="Reasoner">
+                    <title>Reasoner</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Reasoner.svg" scale="30" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Select the drop down menu in the top left of the Reasoner panel and select the
+                    desired action</para>
+                <figure xml:id="RuntheReasoner">
+                    <title>Run the Reasoner</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Run%20Reasoner.svg" scale="30"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+        </orderedlist>
     </section>
 </chapter>
