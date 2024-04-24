@@ -59,25 +59,20 @@
             pandemics, chemical spills, man-made disasters, and terrorist and cyber-attacks. The
             five mission areas are defined as follows:</para>
         <orderedlist>
-            <listitem>Prevention<emphasis role="bold">: </emphasis>Prevent, avoid or stop an
-                imminent, threatened or actual act of terrorism<para> [10]</para></listitem>
-            <listitem>Protection<emphasis role="bold">: </emphasis>Protect our citizens, residents,
+            <listitem>Prevention: Prevent, avoid or stop an
+                imminent, threatened or actual act of terrorism [10]</listitem>
+            <listitem>Protection: Protect our citizens, residents,
                 visitors, and assets against the greatest threats and hazards in a manner that
-                allows our interests, aspirations and way of life to
-                thrive<para>[10]</para></listitem>
-            <listitem>
-                <para>Mitigation: Reduce the loss of life and property by lessening the impact of
-                    future disasters</para>
-                <para> [10]</para>
-            </listitem>
-            <listitem>Response<emphasis role="bold">: </emphasis>Respond quickly to save lives,
+                allows our interests, aspirations and way of life to thrive [10]</listitem>
+            <listitem>Mitigation: Reduce the loss of life and property by lessening the impact of
+                    future disasters [10]</listitem>
+            <listitem>Response: Respond quickly to save lives,
                 protect property and the environment, and meet basic human needs in the aftermath of
-                a catastrophic incident<para> [10]</para></listitem>
-            <listitem>Recovery<emphasis role="bold">: </emphasis>Recover through a focus on the
+                a catastrophic incident [10]</listitem>
+            <listitem>Recovery: Recover through a focus on the
                 timely restoration, strengthening and revitalization of infrastructure, housing and
                 a sustainable economy, as well as the health, social, cultural, historic and
-                environmental fabric of communities affected by a catastrophic
-                    incident<para>[10]</para></listitem>
+                environmental fabric of communities affected by a catastrophic incident [10]</listitem>
         </orderedlist>
         <para>A simple way to think about emergency management is by breaking down a response into
             before, during, and after the response. In this paper we explore how IKM can play into
@@ -85,8 +80,7 @@
             
     </section>
     <section>
-        <title><emphasis role="bold">Examples of Knowledge Management in Emergency
-                Response</emphasis></title>
+        <title>Examples of Knowledge Management in Emergency Response</title>
         <section>
             <para>Emergency preparedness can broadly be split in pre-emergency, emergency response,
                 and post emergency. Knowledge management and communications is critical during all
@@ -193,8 +187,6 @@
     <section>
         <title>References</title>
         <para>
-            <example>
-                <caption>
                     <para>1. Occupational Safety and Health Administration. Emergency Preparedness
                         and Response [Internet]. U.S. Department of Labor; 2024 [cited 2024 April
                         9]. Available from <link
@@ -291,8 +283,6 @@
                         Available from: <link
                             xlink:href="https://www2.deloitte.com/us/en/insights/industry/public-sector/automation-and-generative-ai-in-government/leveraging-ai-in-emergency-management-and-crisis-response.html"
                             >https://www2.deloitte.com/us/en/insights/industry/public-sector/automation-and-generative-ai-in-government/leveraging-ai-in-emergency-management-and-crisis-response.html</link></para>
-                </caption>
-            </example>
         </para>
     </section>
     
