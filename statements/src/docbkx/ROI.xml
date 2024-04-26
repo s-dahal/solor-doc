@@ -3,7 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Return on Investment (ROI)</title>
+    <title>ROI</title>
     <section>
         <title>ROI Summary</title>
         <para>The adoption of Integrated Knowledge Management (IKM) within healthcare organizations
@@ -39,23 +39,21 @@
                     highlighting a critical need for comprehensive and integrated data management
                     solutions. [7]</para>
                 <para>In response to these challenges, the strategic imperative for healthcare
-                    organizations is to adopt and implement robust data management frameworks that
-                    can address present needs and is scalable and flexible enough to adapt to future
-                    requirements. The 2020-2025 Federal Health IT Strategic Plan outlines a vision
-                    for a more integrated, interoperable healthcare ecosystem, underscoring the
-                    national priority placed on enhancing the quality and interoperability of
-                    healthcare data. [5]</para>
-                <para>Enter IIKM, a forward-thinking solution designed to meet the complex demands
-                    of contemporary healthcare data management. At its core, IKM aims to harmonize
-                    data across the healthcare continuum, leveraging the strengths of its
-                    components—Laboratory Interoperability Data Repository (LIDR) and Terminology
-                    Knowledge Architecture (TINKAR)—to create a cohesive, interoperable framework
-                    that enhances data accuracy, quality, and usability. [6] LIDR focuses on
-                    standardizing laboratory data for seamless integration and exchange across
-                    systems, while TINKAR provides a robust architecture for managing and utilizing
-                    clinical terminologies, together ensuring that healthcare data is not only
-                    interoperable but also meaningful and actionable for healthcare providers and
-                    patients alike. [7]</para>
+            organizations is to adopt and implement robust data management frameworks that can
+            address present needs and are scalable and flexible enough to adapt to future
+            requirements. The 2020-2025 Federal Health IT Strategic Plan outlines a vision for a
+            more integrated, interoperable healthcare ecosystem, underscoring the national priority
+            placed on enhancing the quality and interoperability of healthcare data. [5]</para>
+                <para>Enter IKM, a forward-thinking solution designed to meet the complex demands of
+            contemporary healthcare data management. At its core, IKM aims to harmonize data across
+            the healthcare continuum, leveraging the strengths of its components—Laboratory
+            Interoperability Data Repository (LIDR) and Terminology Knowledge Architecture
+            (TINKAR)—to create a cohesive, interoperable framework that enhances data accuracy,
+            quality, and usability. [6] LIDR focuses on standardizing laboratory data for seamless
+            integration and exchange across systems, while TINKAR provides a robust architecture for
+            managing and utilizing clinical terminologies, together ensuring that healthcare data is
+            not only interoperable but also meaningful and actionable for healthcare providers and
+            patients alike. [7]</para>
                 <para>By addressing the foundational challenges of healthcare data management and
                     offering a comprehensive solution that aligns with strategic healthcare
                     objectives, IKM represents a pivotal step towards realizing the vision of a
@@ -65,14 +63,13 @@
                     in how healthcare data is managed, utilized, and leveraged for better patient
                     care and outcomes.</para>
                 <para> While IKM has a myriad of benefits, the perceived cost of implementing and
-                    standing up any new system may cause leaders and executives to question if there
-                    will be a positive return. Return on investment (ROI), is a popular metric used
-                    to calculate if the benefits of a solution outweigh the cost. Traditionally,
-                    this is used in a more basic sense to calculate the fiscal cost to an
-                    organization, however ROI can also include the costs and benefits of human
-                    resources, time, patient care and safety, and other valuable components of a
-                    multifaceted organization. In this Volume, we explore the potential costs of
-                    implementing IKM and the positive ROI an organization can expect. </para>
+            standing up any new system may cause leaders and executives to question if there will be
+            a positive return. ROI, is a popular metric used to calculate if the benefits of a
+            solution outweigh the cost. Traditionally, this is used in a more basic sense to
+            calculate the fiscal cost to an organization, however ROI can also include the costs and
+            benefits of human resources, time, patient care and safety, and other valuable
+            components of a multifaceted organization. In this Volume, we explore the potential
+            costs of implementing IKM and the positive ROI an organization can expect. </para>
             
     </section>
     <section>
@@ -99,7 +96,7 @@
             <para>The adoption of IKM leads to significant improvements in interoperability and data
                 accuracy within healthcare systems. Studies have shown that initiatives aimed at
                 enhancing health IT infrastructure, akin to IKM, can lead to widespread adoption of
-                advanced EHR systems, reduced data errors, and enhanced patient care. [11]Further,
+                advanced EHR systems, reduced data errors, and enhanced patient care. [11] Further,
                 the integration of clinical decision support tools with IKM can substantially
                 improve treatment outcomes and patient safety by providing healthcare professionals
                 with access to accurate, real-time data that can be shared within and between
@@ -113,9 +110,10 @@
                 value of IKM in supporting clinical decision-making processes. [12] One controlled
                 study found that when knowledge management was integrated into a medication
                 order-entry system serious errors were reduced by 55%. [13] Additionally, when
-                subject matter experts identified a new prescription medication was beneficial for
-                heart problems, the integrated medication order-entry knowledge management resulted
-                in an increase in that medication’s ordering from 12% to 81%. [13]</para></section>
+                subject matter experts (SMEs) identified a new prescription medication was
+                beneficial for heart problems, the integrated medication order-entry knowledge
+                management resulted in an increase in that medication’s ordering from 12% to 81%.
+                [13]</para></section>
         <section>
             <title>Operational Efficiency and Cost Reduction</title>
             <para>By streamlining data management processes, IKM significantly contributes to
@@ -125,7 +123,7 @@
                 efficient data exchange and interoperability can lead to considerable cost savings.
                 Quantitative analyses have highlighted the economic benefits of enhanced health
                 information exchange, including a potential $77.8 billion net value per year once
-                standardized electronic health care information exchange and interoperability (HIEI)
+                standardized electronic healthcare information exchange and interoperability (HIEI)
                 is fully implemented. Efforts like standardized HIEI align with IKM's goal and hint
                 at the operational and financial benefits and efficiency that IKM can provide.
                 [14]</para>
@@ -138,6 +136,9 @@
                 framework to ensure compliance with the appropriate standards and minimizes risk by
                 sharing highly accurate and interoperable data with providers to make informed
                 decisions.</para>
+        </section>
+        <section>
+            <title>IKM in Healthcare ROI Summary</title>
             <para>In conclusion, the implementation of IKM within healthcare organizations promises
                 a multi-faceted ROI, enhancing interoperability, decision-making capabilities,
                 operational efficiency, and compliance. These benefits collectively contribute to a
@@ -169,7 +170,7 @@
             <title>Financial Incentives</title>
             <para>The financial incentives associated with IKM are significant. Long-term cost
                 savings achieved through improved operational efficiency and reduced errors directly
-                impact the bottom line. [17]Additionally, the excellence in data management IKM
+                impact the bottom line. [17] Additionally, the excellence in data management IKM
                 provides can attract increased funding and investments, as stakeholders recognize
                 the value of data-driven healthcare delivery. [18]</para>
         </section>
@@ -181,11 +182,11 @@
                 practices, by providing a robust framework for data analysis and management. [13,18]
                 This not only positions the organization at the forefront of healthcare innovation
                 but also ensures readiness for future challenges and opportunities, such as new or
-                emerging diseases. IKM would support the conglomeration and use of real-world data
-                and information at a critical time for healthcare providers and public health
-                experts and would drive the creation and use of temporary or placeholder terminology
-                concepts before standard development organizations (SDOs) could release their
-                official versions. </para>
+                emerging diseases. IKM and IKM tools would support the conglomeration and use of
+                real-world data and information at a critical time for healthcare providers and
+                public health experts and could drive the creation and use of temporary or
+                placeholder terminology concepts before standard development organizations (SDOs)
+                could release their official versions. </para>
         </section>
         <section>
             <title>C-Suite Value Summary</title>
@@ -228,20 +229,18 @@
                         Principles, lessons learned from prior IKM adoption use cases can provide
                         valuable insight to support more efficient and effective
                         implementation.</para>
-                <para>One notable example involves the adoption of
-                        health information exchange (HIEs) systems, a system that allows providers
-                        to access health data from other health systems while maintaining patient
-                        rights, which share similarities and objectives with IKM. [21,22] These
-                        initiatives have demonstrated significant benefits, such as enhanced
-                        interoperability between disparate healthcare systems and improved patient
-                        care. A study analyzing the financial impact of HIE in emergency departments
-                        revealed notable cost savings and efficiency gains, underlining the
-                        potential financial benefits that IKM could offer to healthcare
-                        organizations. The implementation of HIEs across all regional emergency
-                        departments was found to produce a total of $1.9million in annual savings.
-                        While the operating cost of the HIE was $880,000 per year, the net savings
-                        would still reach over $1million for the regional emergency departments.
-                        [22]</para><para>Another important lesson comes from understanding the
+                <para>One notable example involves the adoption of health information exchange
+                (HIEs) systems, a system that allows providers to access health data from other
+                health systems while maintaining patient rights, which share similarities and
+                objectives with IKM. [21,22] These initiatives have demonstrated significant
+                benefits, such as enhanced interoperability between disparate healthcare systems and
+                improved patient care. A study analyzing the financial impact of HIE in emergency
+                departments revealed notable cost savings and efficiency gains, underlining the
+                potential financial benefits that IKM could offer to healthcare organizations. The
+                implementation of HIEs across all regional emergency departments was found to
+                produce a total of $1.9million in annual savings. While the operating cost of the
+                HIE was $880,000 per year, the net savings still amounted to over $1million for the
+                regional emergency departments. [22]</para><para>Another important lesson comes from understanding the
                         persistent challenges in HIEs, like ensuring data quality, achieving system
                         interoperability, and training healthcare providers to utilize these
                         technologies effectively, and the strategies developed to overcome these

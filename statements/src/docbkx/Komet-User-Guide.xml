@@ -107,8 +107,23 @@
                 </listitem>
                 <listitem>
                     <para>Select the data source you would like to use and click “Ok” in the bottom
-                        right. Currently, solor-ids-256.sa is the most up-to-date data source.
-                        Proceed to Step 8.</para>
+                        right and proceed to Step 8.. There are currently three data sources to
+                        choose from</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>PLACEHOLDER - Currently, solor-ids-256.sa is the data source that
+                                works for me. </para>
+                        </listitem>
+                        <listitem>
+                            <para>SNOMED CT</para>
+                        </listitem>
+                        <listitem>
+                            <para>SNOMED-LOINC Collaboration</para>
+                        </listitem>
+                        <listitem>
+                            <para>LIDR  </para>
+                        </listitem>
+                    </orderedlist>
                 </listitem>
                 <listitem>
                     <para>If you do not see a data source, copy and paste the zip file containing
@@ -160,51 +175,7 @@
             </orderedlist>
         </para>
     </section>
-    <section>
-        <title>Importing and Reading-In Data (Placeholder)</title>
-        <para><emphasis role="bold">Note</emphasis>: This process is to import data after you have
-            finished the initial Komet download and install process</para>
-        <para>
-            <orderedlist>
-                <listitem>
-                    <para>In the Detail Viewer activity stream (default loaction: center panel)
-                        click drop down button “+”, and click “Import Artifact"</para>
-                    <figure xml:id="ImportArtifact">
-                        <title>Import Artifact</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="images/Import%20Artifact.svg" scale="30"
-                                    align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-                <listitem>
-                    <para>A “Select your file for import” window will pop up. Click on “Select A
-                        File” button </para>
-                    <figure xml:id="SelectFile">
-                        <title>Select File</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="images/Select%20File.svg" scale="30"
-                                    align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-                <listitem>
-                    <para>Browse and select the zip file of your choice and click “Open”</para>
-                </listitem>
-                <listitem>
-                    <para>A progress bar will monitor the import of your files</para>
-                </listitem>
-                <listitem>
-                    <para>The files will be displayed in the left panel under “Concept
-                        Navigator”</para>
-                </listitem>
-            </orderedlist>
-        </para>
-    </section>
+    
     <section>
         <title>How To Find A Concept</title>
         <para>
@@ -385,7 +356,78 @@
         </orderedlist>
     </section>
     <section>
-        <title>Editing/Modifying</title>
+        <title>Creating a Concept</title>
+        <orderedlist>
+            <listitem>
+                <para>To create a concept, click the "+" icon at the top of the Komet window and
+                    select "New Concept"</para>
+                <figure xml:id="CreateNewConcept">
+                    <title>Creating a Concept</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Create%20New%20Concept.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>A new concept viewing window will appear</para>
+                <figure xml:id="NewConcept">
+                    <title>New Concept</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/New%20Concept.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>To add STAMP properties of the new concept, select the elipsis in the top
+                    right of the concept window</para>
+                <figure xml:id="EditSTAMP">
+                    <title>Creating STAMP Properties</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Edit%20STAMP.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Select the pencil icon on the right-hand side of the description section of
+                    the concept window to add a description, including a fully qualified name or
+                    other name</para>
+                <figure xml:id="NewDescription">
+                    <title>Adding a Description</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/New%20Description.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Finally, select the pencil icon on the right-hand side of the description
+                    section of the concept window to add axiom information, including sufficient and
+                    necessary sets</para>
+                <figure xml:id="NewAxiom">
+                    <title>Adding an Axiom</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/New%20Axiom.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section>
+        <title>Editing/Modifying a Concept</title>
         <orderedlist>
             <listitem>
                 <para>To edit a concept, ensure the "Properties" button is toggled on and select the
@@ -467,6 +509,28 @@
         </section>
     </section>
     <section>
+        <title>Creating LIDR Data</title>
+        <orderedlist>
+            <listitem>
+                <para>To create LIDR Data</para>
+            </listitem>
+            <listitem>
+                <para>PLACEHOLDER</para>
+            </listitem>
+        </orderedlist>
+        <section>
+            <title>Viewing LIDR Data</title>
+            <orderedlist>
+                <listitem>
+                    <para>To view LIDR data</para>
+                </listitem>
+                <listitem>
+                    <para>PLACEHOLDER</para>
+                </listitem>
+            </orderedlist>
+        </section>
+    </section>
+    <section>
         <title>Exporting and Sharing Data (Placeholder)</title>
         <section>
             <title>Komet Interface</title>
@@ -497,9 +561,51 @@
                 </orderedlist>
             </para>
         </section>
-        <section>
-            <title>Journal Interface</title>
-        </section>
+    </section>
+    <section>
+        <title>Importing and Reading-In Data (Placeholder)</title>
+        <para><emphasis role="bold">Note</emphasis>: This process is to import data after you have
+            finished the initial Komet download and install process</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>In the Detail Viewer activity stream (default loaction: center panel)
+                        click drop down button “+”, and click “Import Artifact"</para>
+                    <figure xml:id="ImportArtifact">
+                        <title>Import Artifact</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Import%20Artifact.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>A “Select your file for import” window will pop up. Click on “Select A
+                        File” button </para>
+                    <figure xml:id="SelectFile">
+                        <title>Select File</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Select%20File.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Browse and select the zip file of your choice and click “Open”</para>
+                </listitem>
+                <listitem>
+                    <para>A progress bar will monitor the import of your files</para>
+                </listitem>
+                <listitem>
+                    <para>The files will be displayed in the left panel under “Concept
+                        Navigator”</para>
+                </listitem>
+            </orderedlist>
+        </para>
     </section>
     <section>
         <title>Running the Reasoner</title>
