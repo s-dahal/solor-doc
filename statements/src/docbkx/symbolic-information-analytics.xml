@@ -214,7 +214,7 @@
         <xi:include href="Volume%20Appendix.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </part>
     <part>
-        <Title>Miscellaneous Work</Title>
+        <title>Miscellaneous Work</title>
         <xi:include href="CAP%20Deliverable%200324.xml"/>
         <xi:include href="CAP%20Deliverable%202_7.xml"/>
         <xi:include href="Document%20Data%20Transmission%20Infrastructure%20CAP.xml"/>
