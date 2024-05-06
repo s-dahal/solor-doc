@@ -132,7 +132,8 @@
                 technological upgrade but a strategic move towards a more efficient, accurate, and
                 patient-centered healthcare system. IKM and Tinkar's role in standardizing
                 healthcare terminology and enhancing knowledge management paves the way for improved
-                healthcare quality, education, and patient outcomes.</para>
+                healthcare quality, education, and patient
+                outcomes.<?oxy_comment_start author="rgeorgacopoulos" timestamp="20240506T154103-0500" comment="add sentence about health policy"?></para><?oxy_comment_end?>
         </section>
     </section>
     <section>
@@ -255,7 +256,9 @@
                     xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/ExecSummcaseplancustsvce-RAND7607.pdf"
                     >Improving Performance for Health Plan Customer Service:</link> A health plan
                 employed quality improvement methods to enhance customer service for its members,
-                demonstrating the impact of targeted initiatives on service quality. </para>
+                demonstrating the impact of targeted initiatives on
+                serv<?oxy_comment_start author="rgeorgacopoulos" timestamp="20240506T154252-0500" comment="add case study for health policy"?>ice
+                quality. <?oxy_comment_end?></para>
             <para>Similarly to these case studies, IKM can have a positive effect on clinical
                 decision making, patient care and coordination, and research and development by
                 allowing the harmonization of information between systems. However, IKM also plays
@@ -292,12 +295,13 @@
             systems will need to take place to ensure they meet the required standards and are
             user-friendly. As the process evolves, continuous monitoring of the systems is necessary
             to measure effectiveness and make necessary adjustments.</para>
-        <para>Implementing IKM and Tinkar in healthcare can face several challenges. Many
-            organizations face difficulties implementing new processes simply due to resistance to
-            change. Addressing resistance by involving staff in the planning process and clearly
-            communicating the benefits can help reduce the amount of resistance. Another reason
-            workers may be hesitant to change is their perception of the difficulties in adapting to
-            new technology. Ensuring robust IT support to manage technical issues related to system
+        <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240506T154329-0500" comment="add a few sentences here about policy"?>Implementing<?oxy_comment_end?>
+            IKM and Tinkar in healthcare can face several challenges. Many organizations face
+            difficulties implementing new processes simply due to resistance to change. Addressing
+            resistance by involving staff in the planning process and clearly communicating the
+            benefits can help reduce the amount of resistance. Another reason workers may be
+            hesitant to change is their perception of the difficulties in adapting to new
+            technology. Ensuring robust IT support to manage technical issues related to system
             integration and data standardization can help mitigate this reluctance. As well as IT
             support, ongoing training will help workers adapt to the new environment. Providing
             comprehensive training to help staff adapt to new systems and processes, as well as
