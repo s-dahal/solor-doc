@@ -135,29 +135,30 @@
                 healthcare quality, education, and patient outcomes.</para>
         </section>
         <section>
-            <title>The Importance of IKM and Tinkar in Healthcare Policy</title>
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240508T234147-0500" comment="added section about policy"?>
+            <title><?oxy_comment_end?>The Importance of IKM and Tinkar in Healthcare Policy</title>
             <para>Evidence informed decision making (EIDM), also known as Evidence Based Decision
-                Making) is a process that entails using the best available data (evidence) for
-                forming policy. Major global health organization such as WHO and CDC use this
-                process to provide the public with clear and well-informed public health guidelines.
-                The CDC process for guideline creation adapts standards from universal health
-                organizations such as WHO, the U.K. National Institute of Clinical Excellence, the
-                U.S. Institute of Medicine, the U.S. Preventative Task Force (USPTF), and the
-                Community Preventive Services Task Force (CPSTF), and releases guidelines that are
-                based on scientific evidence obtained through a systematic review of the literature. </para>
-            <para>Health data from EHRs is a strong part of scientific evidence, but factors such as
-                context, public knowledge and opinion, DEI, implementation feasibility, and other
-                factors; these types of evidence are broadly organized into the categoreis of
-                scientific evidence, tacit evidence, and local and global evidence. Together these
-                differenet types of evidence create the clearest picture and path towards safe and
-                effectice policy. </para>
-            <para>Gathering strong evidnece is only half of effective policy, with knowledge
-                translation and integration of interventions making up the latter. This is often
-                known as the research-to-policy gap, and can affect any well informed policy or
-                guidline. Effective knowledge transfer is the key to succesful implementation and
-                policy outputs. The standardization of healthcare data though IKM can facilitate
-                better evidence, greater transparency, and ulitmatley more effective policies and
-                guidelines. </para>
+                Making, is a process that entails using the best available data (evidence) for
+                forming policy. Gathered evidence originates from many sources, and includes data
+                from EHRs, and factors such as context, public knowledge and opinion, DEI,
+                implementation feasibility, and other factors. These types of evidence are broadly
+                organized into the categories of scientific evidence, tacit evidence, and local and
+                global evidence. Together these differenet types of evidence create the clearest
+                picture and path towards safe and effectice policy. </para>
+            <para>Major global health organization such as WHO and CDC use the EIDM process to
+                provide the public with clear and well-informed public health guidelines. The CDC
+                process for guideline creation adapts standards from universal health organizations
+                such as WHO, the U.K. National Institute of Clinical Excellence, the U.S. Institute
+                of Medicine, the U.S. Preventative Task Force (USPTF), and the Community Preventive
+                Services Task Force (CPSTF), and releases guidelines that are based on scientific
+                evidence obtained through a systematic review of the literature. </para>
+            <para>Gathering strong evidence is only half of the effort needed to create effective
+                policy; knowledge translation and integration of interventions make up the latter.
+                This is often known as the research-to-policy gap, and can affect any well informed
+                policy or guideline. Effective knowledge transfer is the key to succesful
+                implementation and policy outputs, and require xxxxxxxx The standardization of
+                healthcare data though IKM can facilitate better evidence, greater transparency, and
+                ulitmatley more effective policies and guidelines. </para>
         </section>
     </section>
     <section>
@@ -211,6 +212,14 @@
                 impacts. Addressing poor data management practices is a vital aspect of a
                 well-functioning healthcare ecosystem and can help support patient engagement and
                 improve safety.</para>
+            <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240508T234159-0500" comment="added section about policy"?>Properly<?oxy_comment_end?>
+                managed data contributes to well-informed and evidenced based policies and decision
+                making. Good data management begins at the individual level and scaled to population
+                level health metrics. Large data sets with high quality data can provide researches
+                with insights into social determinants of health, populations trends, and both
+                prevent poor health outcomes and promote better health decision. Health policy is
+                aimed at targeting the health of the population, and is built on a strong foundation
+                of single data points. </para>
         </section>
         <section>
             <title>The Role of Healthcare Education in Healthcare Quality</title>
@@ -303,6 +312,37 @@
                 employees, lessened burnout, greater retention, and better patient care and patient
                 experience. </para>
         </section>
+        <section>
+            <title>Health Policy Case Studies </title>
+            <para>The Division of Health Care Quality and Outcomes (HQO) as part of the Department
+                of Health and Human services is responsbile for evaluating policies related to
+                health care quality. The Office of the Assistant Secretary for Planning and
+                Evalution (ASPE) supported HHS during the COVID-19 pandemic by providing population
+                level analyses of Social Determinants of Health (SDoH). The insights gathered by
+                this office highlighted the need for standardization of data elements to better
+                understand the pandemic and it's effects. <link
+                    xlink:href="https://aspe.hhs.gov/sites/default/files/documents/53fc356858b67f5e9810d107f09ce169/sdoh-covid-19-scoping-review-report.pdf"
+                /></para>
+            <para>This scorping review report highlights the need for data standardization and how
+                it applies to healthcare quality. The report found that SDOH are risk factors for
+                COVID-19, and that more research needs to be done to better understand this
+                connection. This type of evidence based reporting is critical for policy making; it
+                provides a thorough review of evidence and highlights opportunities for improving
+                standardization of data elements. </para>
+            <para>Stakeholders play an important part in health policy and guidelines too, such as
+                with the Secretary's Advisory Committee on National Health Promotion and Disease
+                Prevention Objectives. This committee makes recommendations to HHS on the objectives
+                relating to disease prevention and Healthy People 2030 goals. In their report #5,
+                the committee suggests participation of stakeholders from every sector in the
+                economy can help drive better health outcomes to achive the Health People 2030
+                goals. <link
+                    xlink:href="https://health.gov/sites/default/files/2021-09/Stakeholder%20Engagement_Communication%20Report_12-02-18_FINAL-WEB-Version_508c.pdf"
+                />
+            </para>
+            <para>This report is a great example of how different sectors are affected by health,
+                and how stakeholders from these sectors can help drive health policy and guidelines.
+            </para>
+        </section>
     </section>
     <section>
         <title>Future Implementation Strategies</title>
@@ -319,13 +359,12 @@
             systems will need to take place to ensure they meet the required standards and are
             user-friendly. As the process evolves, continuous monitoring of the systems is necessary
             to measure effectiveness and make necessary adjustments.</para>
-        <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240506T154329-0500" comment="add a few sentences here about policy"?>Implementing<?oxy_comment_end?>
-            IKM and Tinkar in healthcare can face several challenges. Many organizations face
-            difficulties implementing new processes simply due to resistance to change. Addressing
-            resistance by involving staff in the planning process and clearly communicating the
-            benefits can help reduce the amount of resistance. Another reason workers may be
-            hesitant to change is their perception of the difficulties in adapting to new
-            technology. Ensuring robust IT support to manage technical issues related to system
+        <para>Implementing IKM and Tinkar in healthcare can face several challenges. Many
+            organizations face difficulties implementing new processes simply due to resistance to
+            change. Addressing resistance by involving staff in the planning process and clearly
+            communicating the benefits can help reduce the amount of resistance. Another reason
+            workers may be hesitant to change is their perception of the difficulties in adapting to
+            new technology. Ensuring robust IT support to manage technical issues related to system
             integration and data standardization can help mitigate this reluctance. As well as IT
             support, ongoing training will help workers adapt to the new environment. Providing
             comprehensive training to help staff adapt to new systems and processes, as well as
@@ -384,6 +423,41 @@
                 continuously updated to reflect evolving knowledge. A benefit of implementing IKM
                 into trainings is the ability to simplify the coordination of different sources of
                 knowledge. [19]</para>
+        </section>
+        <section>
+            <title>Implementing IKM into Healthcare Policy</title>
+            <para/>
+            <para>Drafting policy is split into mutiple phases including the following:</para>
+            <para>
+                <orderedlist>
+                    <listitem>
+                        <para>Problem Identification</para>
+                    </listitem>
+                    <listitem>
+                        <para>Policy Analysis</para>
+                    </listitem>
+                    <listitem>
+                        <para>Strategy and Policy Development</para>
+                    </listitem>
+                    <listitem>
+                        <para>Policy Enactment </para>
+                    </listitem>
+                    <listitem>
+                        <para>Policy Implementation</para>
+                        <para>IKM plays a critical role in the beginning stages of policy
+                            development. IKM can help standardize health data that is collected and
+                            analysized during the problem identification stage, giving policy makers
+                            a clearer picture of the problem and what is happening. IKM lends itself
+                            to the making of high quality health data, which is critical for
+                            understanding the root of the problem, who is affected, and how
+                            widespread the problem is occuring. High quality data can help policy
+                            makers target highly impacted populations, and help solve the most
+                            pressing issues. <link
+                                xlink:href="https://www.cdc.gov/policy/paeo/process/index.html"
+                            /></para>
+                    </listitem>
+                </orderedlist>
+            </para>
         </section>
     </section>
     <section>
