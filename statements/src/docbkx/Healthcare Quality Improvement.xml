@@ -139,26 +139,36 @@
             <title><?oxy_comment_end?>The Importance of IKM and Tinkar in Healthcare Policy</title>
             <para>Evidence informed decision making (EIDM), also known as Evidence Based Decision
                 Making, is a process that entails using the best available data (evidence) for
-                forming policy. Gathered evidence originates from many sources, and includes data
-                from EHRs, and factors such as context, public knowledge and opinion, DEI,
-                implementation feasibility, and other factors. These types of evidence are broadly
-                organized into the categories of scientific evidence, tacit evidence, and local and
-                global evidence. Together these differenet types of evidence create the clearest
-                picture and path towards safe and effectice policy. </para>
+                forming policy. Evidence, such as real world evidence or real world data, can
+                originate from many sources and includes data from EHRs, and factors such as
+                context, public knowledge and opinion, DEI, implementation feasibility, and other
+                factors. These types of evidence are broadly organized into the categories of
+                scientific evidence, tacit evidence, and local and global evidence. Together these
+                differenet types of evidence create the clearest picture and path towards drafting
+                safe and effectice policy. [8] </para>
             <para>Major global health organization such as WHO and CDC use the EIDM process to
                 provide the public with clear and well-informed public health guidelines. The CDC
                 process for guideline creation adapts standards from universal health organizations
                 such as WHO, the U.K. National Institute of Clinical Excellence, the U.S. Institute
                 of Medicine, the U.S. Preventative Task Force (USPTF), and the Community Preventive
                 Services Task Force (CPSTF), and releases guidelines that are based on scientific
-                evidence obtained through a systematic review of the literature. </para>
-            <para>Gathering strong evidence is only half of the effort needed to create effective
+                evidence obtained through a systematic review of the literature. [9] CDC guidelines
+                fall into three categories: interim, standard, and update. Interim giudelines are
+                usually developed during an emergency response when limited data is available. These
+                interim guidelines rely heavily on expert opinion and emerging evidence, and
+                evidence generated form sources outside of health settings. These guidelines are
+                often updated due to the evolving nature of the evidence used. In these cases large
+                amounts of "indirect" evidence including ethical perspectives, common sense, and
+                feasiblity will influene the guidelines. In these evolving emergency response
+                situation, knowledge and data is less organized indicating a strong need for
+                knowledge management practices. [9]</para>
+            <para>Gathering strong evidence is only part of the effort needed to create effective
                 policy; knowledge translation and integration of interventions make up the latter.
-                This is often known as the research-to-policy gap, and can affect any well informed
+                This is often known as the research-to-policy gap, and can affect any well-developed
                 policy or guideline. Effective knowledge transfer is the key to succesful
-                implementation and policy outputs, and require xxxxxxxx The standardization of
-                healthcare data though IKM can facilitate better evidence, greater transparency, and
-                ulitmatley more effective policies and guidelines. </para>
+                implementation and policy outputs, and require training of all involved. The
+                standardization of healthcare data though IKM can facilitate better evidence,
+                greater transparency, and ultimately more effective policies and guidelines. </para>
         </section>
     </section>
     <section>
@@ -193,19 +203,19 @@
                 gender-based inequities, is a complex and critical challenge in healthcare. All of
                 these challenges are bookended by patient safety, with issues like medication
                 errors, diagnostic inaccuracies, and hospital-acquired infections (HAIs) continuing
-                to pose significant challenges to healthcare quality. [8]</para>
+                to pose significant challenges to healthcare quality. [10]</para>
         </section>
         <section><title>The Role of Data and Information Management in Healthcare
                 Quality</title>
         
         <para>Data and information management play a vital role in improving the quality of
-                healthcare by ensuring the data used during  decision making processes is of the
+                healthcare by ensuring the data used during decision making processes is of the
                 highest quality and accurate. High quality data can enhance the decision making
                 process by allowing providers to see a clear picture of the patient's health and is
                 critical for patient health management, research, and any other area that data is
                 used. Proper data management entails accurately entering information into EHRs,
                 which in turn helps improve clinical validity and can enable more accurate
-                diagnosis, ultimately improving the quality of patient care. [9] Poor data
+                diagnosis, ultimately improving the quality of patient care. [11] Poor data
                 management practices can lead to recurrent errors, associated injuries or deaths
                 caused by issues like illegible paper-based records, a lack of trust in providers
                 and the healthcare system as a whole, decreased visits, and other negative health
@@ -214,12 +224,12 @@
                 improve safety.</para>
             <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240508T234159-0500" comment="added section about policy"?>Properly<?oxy_comment_end?>
                 managed data contributes to well-informed and evidenced based policies and decision
-                making. Good data management begins at the individual level and scaled to population
-                level health metrics. Large data sets with high quality data can provide researches
-                with insights into social determinants of health, populations trends, and both
-                prevent poor health outcomes and promote better health decision. Health policy is
-                aimed at targeting the health of the population, and is built on a strong foundation
-                of single data points. </para>
+                making. Good data management begins at the individual level, with good knowledge
+                management practices leading to high quality population level health metrics. Large
+                data sets with high quality data can provide researchers with insights into social
+                determinants of health, populations trends, and both prevent poor health outcomes
+                and promote better health decisions. Health policy is aimed at targeting the health
+                of the population, and is built on a strong foundation of single data points. </para>
         </section>
         <section>
             <title>The Role of Healthcare Education in Healthcare Quality</title>
@@ -251,30 +261,30 @@
                 learning not only facilitates improved diagnoses, treatment, communication, and
                 patient outcomes, but also supports workflow and operation optimization, process
                 improvement, and business outcomes for other professionals and organizations
-                involved in patient care. [10, 11] For instance, Certified Nursing Assistants and
+                involved in patient care. [12, 13] For instance, Certified Nursing Assistants and
                 other nursing home healthcare personnel were provided an interactive educational
                 program regarding infection prevention and control (IPC). Following each module, IPC
                 knowledge scores were recorded and showed significant improvement. Not only did this
                 education improve healthcare knowledge for healthcare workers, but it also supported
                 improvements to workflows, processes, and patient care by reducing
                 multidrug-resistant organisms and infections in a high-risk community like nursing
-                homes. [12]</para>
+                homes. [14]</para>
             <para>Beyond training for providers, healthcare education for patients is critical and
                 its impact is well documented, resulting in significant health outcomes for
                 prevention and control of obesity, reduction of tobacco use in adolescents, and
-                more. [13, 14] Low healthcare literacy can lead to lower overall health outcomes,
+                more. [15, 16] Low healthcare literacy can lead to lower overall health outcomes,
                 misuse of medication, overall misunderstanding of health information, and longer
                 wait times to seek treatment, which itself can compound health problems. By
                 improving health literacy through expanded healthcare education, patients will have
                 a better understanding of their diagnoses and will be able to make more informed
-                decisions regarding their treatment. [15]</para>
+                decisions regarding their treatment. [17]</para>
         </section>
         <section>
             <title>Opportunities to Improve Healthcare Quality</title>
             <para>The Agency for Healthcare Research and Quality has highlighted three case studies
                 that showcase efforts to improve a patient's healthcare experience and health
                 outcomes by addressing performance issues and updating and implementing strategy and
-                action plans. [16]</para>
+                action plans. [18]</para>
             <para>1. <link
                     xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/Case_Study_Specialty_Practice_Updated.pdf"
                     >Improving Customer Service and Access in a Surgical Practice:</link> A surgical
@@ -289,9 +299,7 @@
                     xlink:href="https://www.ahrq.gov/sites/default/files/wysiwyg/cahps/quality-improvement/reports-and-case-studies/ExecSummcaseplancustsvce-RAND7607.pdf"
                     >Improving Performance for Health Plan Customer Service:</link> A health plan
                 employed quality improvement methods to enhance customer service for its members,
-                demonstrating the impact of targeted initiatives on
-                serv<?oxy_comment_start author="rgeorgacopoulos" timestamp="20240506T154252-0500" comment="add case study for health policy"?>ice
-                quality. <?oxy_comment_end?></para>
+                demonstrating the impact of targeted initiatives on service quality. </para>
             <para>Similarly to these case studies, IKM can have a positive effect on clinical
                 decision making, patient care and coordination, and research and development by
                 allowing the harmonization of information between systems. However, IKM also plays
@@ -305,10 +313,10 @@
                 Instead of looking to hire new talent with relevant skills, organizations can train
                 their current staff in the necessary skills. IKM can support the transfer,
                 management, and retrieval of information from different parts of the healthcare
-                system to create a robust training program to upskill staff. [17]</para>
+                system to create a robust training program to upskill staff. [19]</para>
             <para>Training requires active participation and buy in from both the healthcare
                 administration and employees. It is important that both understand the benefit of
-                training and upskilling: a well-run organization that is successful, satisfied
+                training and upskilling: a well-run organization that is successful with satisfied
                 employees, lessened burnout, greater retention, and better patient care and patient
                 experience. </para>
         </section>
@@ -318,30 +326,24 @@
                 of Health and Human services is responsbile for evaluating policies related to
                 health care quality. The Office of the Assistant Secretary for Planning and
                 Evalution (ASPE) supported HHS during the COVID-19 pandemic by providing population
-                level analyses of Social Determinants of Health (SDoH). The insights gathered by
+                level analyses of Social Determinants of Health (SDOH). The insights gathered by
                 this office highlighted the need for standardization of data elements to better
-                understand the pandemic and it's effects. <link
-                    xlink:href="https://aspe.hhs.gov/sites/default/files/documents/53fc356858b67f5e9810d107f09ce169/sdoh-covid-19-scoping-review-report.pdf"
-                /></para>
-            <para>This scorping review report highlights the need for data standardization and how
-                it applies to healthcare quality. The report found that SDOH are risk factors for
-                COVID-19, and that more research needs to be done to better understand this
-                connection. This type of evidence based reporting is critical for policy making; it
-                provides a thorough review of evidence and highlights opportunities for improving
-                standardization of data elements. </para>
+                understand the pandemic and it's effects. [20] This scoping review report highlights
+                the need for data standardization and how it applies to healthcare quality. The
+                report found that SDOH are risk factors for COVID-19, and that more research needs
+                to be done to better understand this connection. This type of evidence based
+                reporting is critical for policy making; it provides a thorough review of evidence
+                and highlights opportunities for improving standardization of data elements. </para>
             <para>Stakeholders play an important part in health policy and guidelines too, such as
                 with the Secretary's Advisory Committee on National Health Promotion and Disease
                 Prevention Objectives. This committee makes recommendations to HHS on the objectives
-                relating to disease prevention and Healthy People 2030 goals. In their report #5,
+                relating to disease prevention and Healthy People 2030 goals. In their Report #5,
                 the committee suggests participation of stakeholders from every sector in the
                 economy can help drive better health outcomes to achive the Health People 2030
-                goals. <link
-                    xlink:href="https://health.gov/sites/default/files/2021-09/Stakeholder%20Engagement_Communication%20Report_12-02-18_FINAL-WEB-Version_508c.pdf"
-                />
-            </para>
-            <para>This report is a great example of how different sectors are affected by health,
-                and how stakeholders from these sectors can help drive health policy and guidelines.
-            </para>
+                goals. [21] </para>
+            <para>This report is a great example of how different sectors play a part in nation
+                health care, and how stakeholders from these sectors can help drive health policy
+                and guidelines by providing industry knowledge as evidence. </para>
         </section>
     </section>
     <section>
@@ -409,11 +411,11 @@
                         designed to alter healthcare workflows, processes, or treatment based on the
                         latest research and information sharing and patients should change their
                         behavior, thinking, and interactions with their healthcare journey.
-                        [15]</para>
+                        [22]</para>
                 </listitem>
             </itemizedlist>
             <para>Studies show that multidisciplinary and interdisciplinary knowledge is lacking in
-                higher-education. [18] IKM offers a unique opportunity to support education
+                higher-education. [22] IKM offers a unique opportunity to support education
                 development in the interdisciplinary field of healthcare by sharing knowledge from a
                 wide range of resources and disciplines. Proper integration of IKM can improve
                 healthcare education for both healthcare professionals and patients by addressing
@@ -422,11 +424,10 @@
                 integration of knowledge from a wide array of sources, and trainings will be
                 continuously updated to reflect evolving knowledge. A benefit of implementing IKM
                 into trainings is the ability to simplify the coordination of different sources of
-                knowledge. [19]</para>
+                knowledge. [23]</para>
         </section>
         <section>
             <title>Implementing IKM into Healthcare Policy</title>
-            <para/>
             <para>Drafting policy is split into mutiple phases including the following:</para>
             <para>
                 <orderedlist>
@@ -452,9 +453,7 @@
                             understanding the root of the problem, who is affected, and how
                             widespread the problem is occuring. High quality data can help policy
                             makers target highly impacted populations, and help solve the most
-                            pressing issues. <link
-                                xlink:href="https://www.cdc.gov/policy/paeo/process/index.html"
-                            /></para>
+                            pressing issues. [24] </para>
                     </listitem>
                 </orderedlist>
             </para>
@@ -475,14 +474,15 @@
                 measures like the reduction in data discrepancies and errors in patient
                 records.</para></listitem>
             <listitem><para><emphasis role="italic">Staff</emphasis><emphasis role="italic"
-                    >Satisfaction</emphasis><emphasis role="italic">and</emphasis><emphasis
-                    role="italic">Engagement: </emphasis>Surveys and feedback mechanisms to gauge
-                the impact on healthcare providers' workflow and job satisfaction. [20]</para></listitem>
+                        >Satisfaction</emphasis><emphasis role="italic">and</emphasis><emphasis
+                        role="italic">Engagement: </emphasis>Surveys and feedback mechanisms to
+                    gauge the impact on healthcare providers' workflow and job satisfaction.
+                    [25]</para></listitem>
             <listitem><para><emphasis role="italic">Health </emphasis><emphasis role="italic">Equity:
-                </emphasis>Collection of patient data including Race, Ethnicity, and Language, and
-                percentage of workforce trained in collecting this data. Other domains include data
-                collection and use, cultural competency trainings, DEI in leadership, and strength
-                of community partnerships. [21]</para></listitem>
+                    </emphasis>Collection of patient data including Race, Ethnicity, and Language,
+                    and percentage of workforce trained in collecting this data. Other domains
+                    include data collection and use, cultural competency trainings, DEI in
+                    leadership, and strength of community partnerships. [26]</para></listitem>
         </orderedlist>
         <para>Evaluating the effectiveness of IKM and Tinkar requires a robust data analysis to
             assess the changes in healthcare delivery and outcomes before and after implementation.
@@ -501,18 +501,18 @@
             and patient monitoring. Shifting the focus to patient engagement, the healthcare process
             experience, and regular training and education will ensure that both patients and
             providers are centered in the process and healthcare professionals are up-to-date with
-            the latest technologies and practices in healthcare quality improvement. [22]</para>
+            the latest technologies and practices in healthcare quality improvement. [27]</para>
     </section>
     <section>
         <title>Conclusion</title>
         <para>This volume has explored the integration and potential impact of IKM and Tinkar in
             healthcare quality and education improvement. Both IKM and Tinkar play a crucial role in
             enhancing healthcare quality by improving decision-making, standardizing care processes,
-            ensuring data accuracy, and optimizing both healthcare professional and patient
-            education. Successful implementation requires a strategic approach, including
-            stakeholder engagement, training, continuous monitoring, and the development of well
-            refined key performance indicators that are collaboratively developed with various
-            stakeholder groups.</para>
+            ensuring data accuracy,  optimizing healthcare professional and patient education, and
+            providing strong building blocks for health policy. Successful implementation requires a
+            strategic approach, including stakeholder engagement, training, continuous monitoring,
+            and the development of well refined key performance indicators that are collaboratively
+            developed with various stakeholder groups.</para>
         <para>Overcoming challenges such as resistance to change, technical barriers, and data
             security concerns is essential for effective implementation but can be proactively
             mitigated with industry best practices. It is recommended that healthcare organizations
@@ -521,10 +521,10 @@
             of IKM and Tinkar in healthcare. Patients and providers can achieve a higher quality of
             healthcare through curated trainings and educational programs enhanced by the benefits
             of IKM. In conclusion, the integration of IKM and Tinkar holds significant potential for
-            advancing healthcare quality. By embracing these technologies and addressing associated
-            challenges, healthcare organizations can improve patient outcomes, enhance operational
-            efficiency, and pave the way for a more dynamic and patient-centered healthcare
-            system.</para>
+            advancing healthcare quality and health policy. By embracing these technologies and
+            addressing associated challenges, healthcare organizations can improve patient outcomes,
+            enhance operational efficiency, and pave the way for a more dynamic and patient-centered
+            healthcare system.</para>
     </section>
     <section>
         <title>References</title>
@@ -567,6 +567,15 @@
                 <para>Why is Knowledge Management in Healthcare so Important? [Internet].
                     KnowledgeBase Blog. Available
                     from:https://www.knowledgebase.com/blog/knowledge-management-in-healthcare-so-important/</para>
+            </listitem>
+            <listitem>
+                <para>WHO guide for evidence-informed decision-making [Internet]. Available from:
+                    https://iris.who.int/bitstream/handle/10665/350994/9789240039872-eng.pdf?sequence=1</para>
+            </listitem>
+            <listitem>
+                <para>Carande-Kulis V, Elder RW, Koffman DM -. Standards Required for the
+                    Development of CDC Evidence-Based Guidelines. MMWR Supplements. 2022 Jan
+                    14;71(1):1–6.</para>
             </listitem>
             <listitem>
                 <para>Kluwer W. Six challenges to delivering quality healthcare [Internet].<link
@@ -633,6 +642,17 @@
                     https://pathstream.com/upskilling-in-healthcare/#:~:text=To%20realistically%20embed%20learning%20into%20healthcare%20contexts%2C%20organizations</para>
             </listitem>
             <listitem>
+                <para>Scoping Review Report Data Elements for Research on the Role of Social
+                    Determinants of Health in Coronavirus Disease 2019 Infection and Outcomes in the
+                    U.S. PROJECT REPORT [Internet]. 2022 [cited 2024 May 9]. Available from:
+                    https://aspe.hhs.gov/sites/default/files/documents/53fc356858b67f5e9810d107f09ce169/sdoh-covid-19-scoping-review-report.pdf</para>
+            </listitem>
+            <listitem>
+                <para>Secretary’s Advisory Committee Report #5: Stakeholder Engagement and
+                    Communication for Healthy People 2030 [Internet]. Available from:
+                    https://health.gov/sites/default/files/2021-09/Stakeholder%20Engagement_Communication%20Report_12-02-18_FINAL-WEB-Version_508c.pdf</para>
+            </listitem>
+            <listitem>
                 <para>Galgotia D, Lakshmi N. Implementation of Knowledge Management in higher
                     education: A comparative study of private and Government Universities in India
                     and abroad. Frontiers in Psychology [Internet]. 2022 Jun 16 [cited 2024 Mar
@@ -647,6 +667,11 @@
                     27];19(11):6440. Available from:
                     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9180308/ doi:10.3390/ijerph19116440
                 </para>
+            </listitem>
+            <listitem>
+                <para>CDC. CDC Policy Process | Policy, Performance, and Evaluation | CDC
+                    [Internet]. www.cdc.gov. 2023. Available from:
+                    https://www.cdc.gov/policy/paeo/process/index.html</para>
             </listitem>
             <listitem>
                 <para>Orand J. Most important metrics for a healthcare quality management dashboard
