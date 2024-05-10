@@ -114,7 +114,7 @@ If you want to include original phrasing please use &quot;In collaboration with 
                 linkend="DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure"
             /> includes a specific draft depiction of the data flow for encoding. </para>
         <figure xml:id="DraftModeloftheDetailedLaboratoryEcosystemControlStructure">
-            <title>Draft Model of the Detailed Laboratory Ecosystem Control Structure</title>
+            <title>Detailed Laboratory Ecosystem Control Structure</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/Draft%20Model%20of%20the%20Detailed%20Laboratory%20Ecosystem%20Control%20Structure.svg" align="center" scale="30"/>
@@ -194,12 +194,13 @@ If you want to include original phrasing please use &quot;In collaboration with 
             to define requirements in a joint effort to promote interoperability. The Health
             Information Technology for Economic and Clinical Health (HITECH) Act of 2009 grants ONC
             the authority to establish programs to promote the adoption of health technologies such
-            as electronic health records and secure data exchange. Additional laws, including the
-            ONC 21st Century Cures Act and CMS Interoperability and Patient Access Rule, identify
-            specific standards as shown in HL7’s Fast Healthcare Interoperability Resources (FHIR)
-            Release 4.0.1 to be adopted by industry. Many of these regulations are required for use
-            in hospitals, but non-hospital laboratories are not as strictly required to adhere to
-            the use of industry coding standards. </para>
+            as electronic health records and secure data exchange. Additional laws, like the ONC
+            21st Century Cures Act and CMS Interoperability and Patient Access Rule, and agreements,
+            like ONC's version 2.0 of the Trusted Exchange Framework and Common Agreement (TEFCA),
+            identify specific standards (as shown in HL7’s Fast Healthcare Interoperability
+            Resources (FHIR) Release 4.0.1) to be adopted by industry. Many of these regulations are
+            required for use in hospitals, but non-hospital laboratories are not as strictly
+            required to adhere to the use of industry coding standards. </para>
         <para>The adoption of standards like LOINC® aid in distinguishing laboratory data among
             disparate health systems. However, reliance on standard laboratory test names alone does
             not go far enough in realizing the benefit of interoperability or minimizing loss
@@ -327,7 +328,10 @@ If you want to include original phrasing please use &quot;In collaboration with 
             Observation Identifiers Names and Codes for Laboratorians: Potential Solutions and
             Challenges for Interoperability. Arch Pathol Lab Med 1 February 2020; 144 (2): 229–239.
             doi: https://doi.org/10.5858/arpa.2018-0477-RA </para>
-        <para>3. Leveson, N. G. (2016). Engineering a safer world: Systems thinking applied to
-            safety. The MIT Press. </para>
+        <para>3.  Leveson N, Thomas J, Harrington, Polly, Rodrigo, Rose, Stephen P, Keller, Alana.
+            System Safety within Laboratory Data Exchanges Report [Internet]. Massachusetts
+            Institute of Technology Partnership for Systems Approaches to Safety and Security and
+            Synensys, LLC; 2023 Sep. Available from:
+            https://synensysglobal.com/wp-content/uploads/2023/12/System-Safety-within-Laboratory-Data-Exchanges-Report.pdf </para>
     </section>
 </chapter>

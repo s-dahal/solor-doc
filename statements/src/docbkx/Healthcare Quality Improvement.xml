@@ -15,7 +15,7 @@
             targeted patient groups. [1] The National Academy of Medicine defines healthcare quality
             as the degree to which health services for individuals and populations increase the
             likelihood of desired health outcomes consistent with current professional knowledge.
-            [2] QI seeks to standardize processes and structure to reduce variation, achieve
+            [2] QI seeks to standardize processes and structures to reduce variation, achieve
             predictable results, and improve outcomes for patients, healthcare systems, and
             organizations. It involves a combination of efforts from healthcare professionals,
             patients, researchers, and educators to make changes leading to better patient outcomes,
@@ -27,46 +27,33 @@
             recommendations for improvement. [4] An IKM approach is intended to achieve
             institutional goals through continuous quality improvement, a focus on efficiency,
             collaboration, and transparency.</para>
-        <para><emphasis role="bold">Tinkar</emphasis> is an IKM framework designed to manage and
-            standardize healthcare terminology. It ensures the consistency and accuracy of medical
-            records, which is crucial for effective communication and treatment planning. Tinkar
-            plays a vital role in data interoperability and accuracy, supporting healthcare
-            organizations as they manage standard terminology modules, value sets, coding systems,
-            and local terms and equivalence mappings.</para>
-        <para>Training healthcare staff is a critical component of healthcare QI and in the
-            healthcare delivery process. Training is a core tenant of maintaining a safe and high
-            quality healthcare system and ensures an environment that encourages staff retention.
-            Healthcare professionals must meet and maintain professional standards set by their
-            respective professional organizations, as well as legislative and regulatory
-            requirements. These standards are often updated, and training can ensure staff are aware
-            of updated knowledge, best practices, and policies. </para>
+        <para><emphasis role="bold">Terminology Knowledge Architecture (Tinkar)</emphasis> is an IKM
+            framework designed to manage and standardize healthcare terminology. It ensures the
+            consistency and accuracy of medical records, which is crucial for effective
+            communication and treatment planning. Tinkar plays a vital role in data interoperability
+            and accuracy, supporting healthcare organizations as they manage standard terminology
+            modules, value sets, coding systems, local terms, and equivalence mappings.</para>
+        <para>Training healthcare staff is a critical component of healthcare QI and the healthcare
+            delivery process. Training is a core tenant of maintaining a safe and high quality
+            healthcare system and ensures an environment that encourages staff retention. Healthcare
+            professionals must meet and maintain professional standards set by their respective
+            professional organizations, as well as legislative and regulatory requirements. These
+            standards are often updated, and training can ensure staff are aware of updated
+            knowledge, best practices, and policies. </para>
         <para>There are a wide range of stakeholders involved in the delivery of care and in the
-            healthcare ecosystem, from physicians, laboratorians, nurses, support staff, and more,
-            who generate and share curated knowledge with each other. Organizing and relaying this
-            information in an efficient and effective way is not a simple task. Often times,
-            critical information and context is lost or distorted during data exchange within and
-            between systems, resulting in incomplete or inaccurate knowledge. IKM aims to ensure
-            systems maintain and communicate information without data loss as it flows between
-            systems. Healthcare employees rely on IKM to receive timely and correct information for
-            their training.</para>
-        <para><emphasis role="bold">Objectives of this Volume:</emphasis></para>
-        <orderedlist>
-            <listitem>
-                <para>Explore the role of IKM and Tinkar in enhancing healthcare quality.</para>
-            </listitem>
-            <listitem>
-                <para>Discuss how these systems can be integrated into healthcare settings to
-                    improve patient care and operational efficiency.</para>
-            </listitem>
-            <listitem>
-                <para>Provide insights into the implementation strategies and challenges of adopting
-                    IKM and Tinkar.</para>
-            </listitem>
-            <listitem>
-                <para>Highlight the impact of these systems on healthcare quality
-                    improvement.</para>
-            </listitem>
-        </orderedlist>
+            healthcare ecosystem, from physicians, laboratorians, nurses, support staff, policy
+            makers, and more, who generate and share curated knowledge with each other. Organizing
+            and relaying this information in an efficient and effective way is not a simple task.
+            Often times, critical information and context is lost or distorted during data exchange
+            within and between systems, resulting in incomplete or inaccurate knowledge. IKM aims to
+            ensure systems maintain and communicate information without data loss as it flows
+            between systems. Healthcare employees rely on IKM to receive timely and correct
+            information for their training.</para>
+        <para>This volume aims to explore the role of IKM and Tinkar in enhancing healthcare quality
+            and how these systems can be integrated into healthcare settings to improve patient
+            care, operational efficiency, and health policy. We provide insights into the
+            implementation strategies and challenges of adopting IKM and Tinkar and highlight the
+            impact of these systems on healthcare quality improvement.</para>
         <section>
             <title>Importance of IKM and Tinkar in Healthcare Quality Improvement</title>
             <para>All healthcare organizations are continuously striving towards healthcare QI, a
@@ -78,11 +65,10 @@
             <para>IKM can help play a pivotal role in Healthcare QI through the following:</para>
             <orderedlist>
                 <listitem>
-                    <para><emphasis role="bold">Enhanced Decision-Making: </emphasis>IKM plays a
-                        pivotal role in healthcare by facilitating the flow and management of
-                        knowledge throughout its lifecycle. This process is crucial for informed
-                        clinical decision-making, which directly impacts patient care quality.
-                        [5]</para>
+                    <para><emphasis role="bold">Enhanced Decision-Making: </emphasis>IKM can
+                        facilitate the flow and management of knowledge throughout its lifecycle.
+                        This process is crucial for informed clinical decision-making, which
+                        directly impacts patient care quality. [5]</para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Standardized Healthcare Terminology:
@@ -138,37 +124,39 @@
             <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240508T234147-0500" comment="added section about policy"?>
             <title><?oxy_comment_end?>The Importance of IKM and Tinkar in Healthcare Policy</title>
             <para>Evidence informed decision making (EIDM), also known as Evidence Based Decision
-                Making, is a process that entails using the best available data (evidence) for
-                forming policy. Evidence, such as real world evidence or real world data, can
-                originate from many sources and includes data from EHRs, and factors such as
-                context, public knowledge and opinion, DEI, implementation feasibility, and other
-                factors. These types of evidence are broadly organized into the categories of
-                scientific evidence, tacit evidence, and local and global evidence. Together these
-                differenet types of evidence create the clearest picture and path towards drafting
-                safe and effective policy. [8] </para>
-            <para>Major global health organization such as WHO and CDC use the EIDM process to
-                provide the public with clear and well-informed public health guidelines. The CDC
-                process for guideline creation adapts standards from universal health organizations
-                such as WHO, the U.K. National Institute of Clinical Excellence, the U.S. Institute
-                of Medicine, the U.S. Preventative Task Force (USPTF), and the Community Preventive
-                Services Task Force (CPSTF), and releases guidelines that are based on scientific
-                evidence obtained through a systematic review of the literature. [9] CDC guidelines
-                fall into three categories: interim, standard, and update. Interim guidelines are
-                usually developed during an emergency response when limited data is available. These
-                interim guidelines rely heavily on expert opinion and emerging evidence, and
-                evidence generated form sources outside of health settings. These guidelines are
-                often updated due to the evolving nature of the evidence used. In these cases large
+                Making, is a process that uses the best available data (evidence) to form policies
+                with the intent of providing the best possible outcomes for those affected. Evidence
+                and real-world data can originate from many sources, including EHRs and other
+                healthcare systems, and can represent a variety of factors like context, public
+                knowledge and opinion, implementation feasibility, and more. These types of
+                information are broadly organized into the categories of scientific evidence, tacit
+                evidence, and local and global evidence. Together these differenet types of evidence
+                create the clearest picture and path towards drafting safe and effective policy. [8] </para>
+            <para>Major global health organization such as World Health Organization (WHO) and
+                Center for Disease Control and Prevention (CDC) use the EIDM process to provide the
+                public with clear and well-informed public health guidelines. The CDC process for
+                guideline creation adapts standards from universal health organizations such as WHO,
+                the U.K. National Institute of Clinical Excellence, the U.S. Institute of Medicine,
+                the U.S. Preventative Task Force (USPTF), and the Community Preventive Services Task
+                Force (CPSTF). CDC releases guidelines that are based on scientific evidence
+                obtained through a systematic review of pertinent literature and fall into three
+                categories: interim, standard, and update. Interim guidelines are usually developed
+                during an emergency response when limited data is available. These interim
+                guidelines rely heavily on expert opinion and emerging evidence, and evidence
+                generated form sources outside of health settings. These guidelines are often
+                updated due to the evolving nature of the evidence used. In these cases large
                 amounts of "indirect" evidence including ethical perspectives, common sense, and
                 feasibility will influence the guidelines. In these evolving emergency response
                 situation, knowledge and data is less organized indicating a strong need for
-                knowledge management practices. [9]</para>
+                comprehensive and accurate IKM practices. [8,9]</para>
             <para>Gathering strong evidence is only part of the effort needed to create effective
-                policy; knowledge translation and integration of interventions make up the latter.
-                This is often known as the research-to-policy gap, and can affect any well-developed
-                policy or guideline. Effective knowledge transfer is the key to successful
-                implementation and policy outputs, and require training of all involved. The
-                standardization of healthcare data though IKM can facilitate better evidence,
-                greater transparency, and ultimately more effective policies and guidelines. </para>
+                policy; knowledge translation and integration of interventions is also an essential
+                component. This is often known as the research-to-policy gap, and can affect any
+                well-developed policy or guideline. Effective knowledge transfer is the key to
+                successful implementation and policy outputs, and require training for all involved
+                stakeholders. The standardization of healthcare data though IKM can facilitate
+                better evidence, greater transparency, and ultimately more effective policies and
+                guidelines. [8]</para>
         </section>
     </section>
     <section>
@@ -210,12 +198,11 @@
         
         <para>Data and information management play a vital role in improving the quality of
                 healthcare by ensuring the data used during decision making processes is of the
-                highest quality and accurate. High quality data can enhance the decision making
-                process by allowing providers to see a clear picture of the patient's health and is
-                critical for patient health management, research, and any other area that data is
-                used. Proper data management entails accurately entering information into EHRs,
-                which in turn helps improve clinical validity and can enable more accurate
-                diagnosis, ultimately improving the quality of patient care. [11] Poor data
+                highest quality and accuracy. This provides a clear representation of the patient's
+                health and is critical for patient health management, research, and any other area
+                that data is used. Proper data management entails accurately entering information
+                into EHRs, which in turn helps improve clinical validity and can enable more
+                accurate diagnosis, ultimately improving the quality of patient care. [11] Poor data
                 management practices can lead to recurrent errors, associated injuries or deaths
                 caused by issues like illegible paper-based records, a lack of trust in providers
                 and the healthcare system as a whole, decreased visits, and other negative health
@@ -224,12 +211,13 @@
                 improve safety.</para>
             <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240508T234159-0500" comment="added section about policy"?>Properly<?oxy_comment_end?>
                 managed data contributes to well-informed and evidenced based policies and decision
-                making. Good data management begins at the individual level, with good knowledge
-                management practices leading to high quality population level health metrics. Large
-                data sets with high quality data can provide researchers with insights into social
-                determinants of health, populations trends, and both prevent poor health outcomes
-                and promote better health decisions. Health policy is aimed at targeting the health
-                of the population, and is built on a strong foundation of single data points. </para>
+                making. High quality data management begins at the individual level, with good
+                knowledge management practices leading to high quality population level health
+                metrics. Large data sets with accurate and up-to-date data can provide researchers
+                with insights into social determinants of health, populations trends, and both
+                prevent poor health outcomes and promote better health decisions. Health policy is
+                aimed at targeting the health of the population, and is built on a strong foundation
+                of individual data points. </para>
         </section>
         <section>
             <title>The Role of Healthcare Education in Healthcare Quality</title>
@@ -322,25 +310,25 @@
         </section>
         <section>
             <title>Health Policy Case Studies </title>
-            <para>The Division of Health Care Quality and Outcomes (HQO) as part of the Department
-                of Health and Human services is responsible for evaluating policies related to
-                health care quality. The Office of the Assistant Secretary for Planning and
+            <para>The Division of Health Care Quality and Outcomes (HQO), as part of the Department
+                of Health and Human services (HHS), is responsible for evaluating policies related
+                to health care quality. The Office of the Assistant Secretary for Planning and
                 Evaluation (ASPE) supported HHS during the COVID-19 pandemic by providing population
-                level analyses of Social Determinants of Health (SDOH). The insights gathered by
-                this office highlighted the need for standardization of data elements to better
-                understand the pandemic and it's effects. [20] This scoping review report highlights
-                the need for data standardization and how it applies to healthcare quality. The
-                report found that SDOH are risk factors for COVID-19, and that more research needs
-                to be done to better understand this connection. This type of evidence based
-                reporting is critical for policy making; it provides a thorough review of evidence
-                and highlights opportunities for improving standardization of data elements. </para>
-            <para>Stakeholders play an important part in health policy and guidelines too, such as
-                with the Secretary's Advisory Committee on National Health Promotion and Disease
-                Prevention Objectives. This committee makes recommendations to HHS on the objectives
-                relating to disease prevention and Healthy People 2030 goals. In their Report #5,
-                the committee suggests participation of stakeholders from every sector in the
-                economy can help drive better health outcomes to achieve the Health People 2030
-                goals. [21] </para>
+                level analyses of Social Determinants of Health (SDOH). The insights gathered by the
+                Office of the Assistant Secretary for ASPE highlighted the need for standardized
+                data elements to better understand the pandemic and its effects. They developed a
+                report that demonstrated that SDOH are risk factors for COVID-19 and that more
+                research needed to be done to better understand this connection. This type of
+                evidence based reporting is critical for policy making; it provides a thorough
+                review of evidence and highlights opportunities for improving the standardization of
+                data elements and healthcare quality. [20] </para>
+            <para>There is a wide range of stakeholders that play an important role in health policy
+                and guidelines development, such as the Secretary's Advisory Committee on National
+                Health Promotion and Disease Prevention Objectives. This committee makes
+                recommendations to HHS on the objectives relating to disease prevention and Healthy
+                People 2030 goals. In their Report #5, the committee suggests participation of
+                stakeholders from every sector in the economy can help drive better health outcomes
+                to achieve the Health People 2030 goals. [21] </para>
             <para>This report is a great example of how different sectors play a part in nation
                 health care, and how stakeholders from these sectors can help drive health policy
                 and guidelines by providing industry knowledge as evidence. </para>
@@ -361,7 +349,7 @@
             systems will need to take place to ensure they meet the required standards and are
             user-friendly. As the process evolves, continuous monitoring of the systems is necessary
             to measure effectiveness and make necessary adjustments.</para>
-        <para>Implementing IKM and Tinkar in healthcare can face several challenges. Many
+        <para>Implementing IKM and Tinkar in healthcare settings can face several challenges. Many
             organizations face difficulties implementing new processes simply due to resistance to
             change. Addressing resistance by involving staff in the planning process and clearly
             communicating the benefits can help reduce the amount of resistance. Another reason
@@ -428,35 +416,43 @@
         </section>
         <section>
             <title>Implementing IKM into Healthcare Policy</title>
-            <para>Drafting policy is split into multiple phases including the following:</para>
+            <para>Drafting and developping policy is a multiphase processes that generally includes
+                the following steps:</para>
             <para>
                 <orderedlist>
                     <listitem>
-                        <para>Problem Identification</para>
+                        <para>Problem Identification: Identify how the problem at hand impacts
+                            population health</para>
                     </listitem>
                     <listitem>
-                        <para>Policy Analysis</para>
+                        <para>Policy Analysis: Evaluate potential policies to identify the optimal
+                            solution</para>
                     </listitem>
                     <listitem>
-                        <para>Strategy and Policy Development</para>
+                        <para>Strategy and Policy Development: Define how the policy will work and
+                            adoption strategies</para>
                     </listitem>
                     <listitem>
-                        <para>Policy Enactment </para>
+                        <para>Policy Enactment: Follow processes to pass policy</para>
                     </listitem>
                     <listitem>
-                        <para>Policy Implementation</para>
-                        <para>IKM plays a critical role in the beginning stages of policy
-                            development. IKM can help standardize health data that is collected and
-                            analysed during the problem identification stage, giving policy makers a
-                            clearer picture of the problem and what is happening. IKM lends itself
-                            to the making of high quality health data, which is critical for
-                            understanding the root of the problem, who is affected, and how
-                            widespread the problem is occurring. High quality data can help policy
-                            makers target highly impacted populations, and help solve the most
-                            pressing issues. [24] </para>
+                        <para>Policy Implementation: Implement the processes, tools, or
+                            recommendations into action</para>
                     </listitem>
                 </orderedlist>
             </para>
+            <para>This is a process cycle that requires continual process improvement, stakeholder
+                engagement, and iterative education. IKM plays a critical role in each stage of
+                policy development, including standardization of health data that is collected and
+                analyzed during the problem identification stage, management and utilization of
+                real-world data to support policy analysis, identification and representation of key
+                pefromance indicators and outcome measurements during policy impelmentation, and
+                more. IKM lends itself to the collection and management of high quality health data,
+                which is critical for understanding the root of the problem, who is affected, and
+                the extent to which the problem is impacting stakeholders. IKM provides policy
+                makers with a clear picture of the problem, real-world data and trends, and high
+                quality data to help policy makers target highly impacted populations, and help
+                solve the most pressing issues. [24] </para>
         </section>
     </section>
     <section>

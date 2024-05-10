@@ -178,6 +178,8 @@
     
     <section>
         <title>How To Find A Concept</title>
+        <para>Users may want to search for concepts to see concept details, pertinent relationships,
+            and associated authoring information.</para>
         <para>
             <orderedlist>
                 <listitem>
@@ -289,6 +291,9 @@
     </section>
     <section>
         <title>Viewing Versioning</title>
+        <para>Users may want to view concept versioning to understand how a concept has evolved over
+            time, including when certain characteristics or details were added or removed and when
+            axiom changes were made.</para>
         <orderedlist>
             <listitem>
                 <para>In the tool ribbon at the top left of the concept window, click the Time
@@ -357,6 +362,10 @@
     </section>
     <section>
         <title>Creating a Concept</title>
+        <para>Users may want to create a concept to represent new or emerging clinical conditions or
+            create temporary concepts while Standards Developing Organizations create official
+            representations. Creating a concept allows users to enter assocaited information like
+            STAMP, stated relationships, and more.</para>
         <orderedlist>
             <listitem>
                 <para>To create a concept, click the "+" icon at the top of the Komet window and
@@ -428,6 +437,8 @@
     </section>
     <section>
         <title>Editing/Modifying a Concept</title>
+        <para>Users may want to edit or modify a concept to reflect new and emerging real-world data
+            or real-world evidence.</para>
         <orderedlist>
             <listitem>
                 <para>To edit a concept, ensure the "Properties" button is toggled on and select the
@@ -609,6 +620,8 @@
     </section>
     <section>
         <title>Running the Reasoner</title>
+        <para>Users may want to run the pertinent reasoner to updated the inferred relationshops
+            based on the stated relationships that the author enters for a concept.</para>
         <orderedlist>
             <listitem>
                 <para>To run the reasoner, select the Reasoner icon at the top of the concept

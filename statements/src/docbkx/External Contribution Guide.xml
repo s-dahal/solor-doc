@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>External Contributor Guide</title>
+<section>
+        <title>Who Can Contribute?</title>
+    </section>
+    <section>
+        <title>What Type of Content Can be Contributed</title>
+    </section>
+    <section>
+        <title>How to Submit Content</title>
+    </section>
+    <section>
+        <title>Contribution Requirements</title>
+        <section>
+            <title>Citations</title>
+        </section>
+        <section>
+            <title>Reviewed and Polished Content</title>
+            <section>
+                <title>Alignment to Style Guide</title>
+            </section>
+        </section>
+        <section>
+            <title>Evidence Based Content</title>
+        </section>
+        <section>
+            <title>Points of Contact</title>
+        </section>
+    </section>
+    <section>
+        <title>Resources Used by Our Team</title>
+        <section>
+            <title>Zoterro</title>
+        </section>
+        <section>
+            <title>GitLab</title>
+        </section>
+        <section>
+            <title>Oxygen</title>
+        </section>
+    </section>
+</chapter>

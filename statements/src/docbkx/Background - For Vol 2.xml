@@ -181,26 +181,26 @@
             <para>Another pragmatic methodology would be to engage vendors and incentivize them to
                 implement an open, common data model and produce shareable output in interoperable,
                 reproducible, and understandable formats that could then be ingested by other
-                systems. Major U.S. EHR vendors including Epic and Cerner which represent > 80% of
-                the U.S. healthcare EHR implementations represent a possible avenue to normalizing
-                and aggregating EHR-based data in the U.S. on a broad scale. Individually, each
-                vendor has independently attempted to create such clinical data resources and
-                product offerings for their user communities. These efforts entail attempts to
-                align, normalize and aggregate the EHR data held by each individual client into a
-                large, de-identified data enclave for purposes of data analytics, quality
-                improvement and research. Unfortunately, these independent efforts are proprietary
-                and do not extend beyond the vendor-user community. Further, the data normalization
-                and representation process remains a "black box" and cannot be independently
-                verified for semantic correctness, data and information loss or gains, or
-                appropriate application of metadata standards. In fact, these vendor-centric efforts
-                face the same issues with vendor-centric data alignment and reuse on a smaller
-                scale. [4-5] Despite these weaknesses, an opportunity exists to collaborate with EHR
-                vendors to normalize and apply metadata standards safely and reliably to the EHR
-                data created by their clients. To capitalize on this opportunity, vendors must be
-                allowed to create unique value in their data offerings to the clientele but also be
-                required to expose these data to the broader community such that data collected by
-                numbers of vendors can be safely and reliably aggregated for research, public
-                health, clinical quality improvement and regulatory uses as described by SHIELD. </para>
+                systems. Major U.S. EHR vendors, which represent > 80% of the U.S. healthcare EHR
+                implementations, represent a possible avenue to normalizing and aggregating
+                EHR-based data in the U.S. on a broad scale. Individually, each vendor has
+                independently attempted to create such clinical data resources and product offerings
+                for their user communities. These efforts entail attempts to align, normalize and
+                aggregate the EHR data held by each individual client into a large, de-identified
+                data enclave for purposes of data analytics, quality improvement and research.
+                Unfortunately, these independent efforts are proprietary and do not extend beyond
+                the vendor-user community. Further, the data normalization and representation
+                process remains a "black box" and cannot be independently verified for semantic
+                correctness, data and information loss or gains, or appropriate application of
+                metadata standards. In fact, these vendor-centric efforts face the same issues with
+                vendor-centric data alignment and reuse on a smaller scale. [4-5] Despite these
+                weaknesses, an opportunity exists to collaborate with EHR vendors to normalize and
+                apply metadata standards safely and reliably to the EHR data created by their
+                clients. To capitalize on this opportunity, vendors must be allowed to create unique
+                value in their data offerings to the clientele but also be required to expose these
+                data to the broader community such that data collected by numbers of vendors can be
+                safely and reliably aggregated for research, public health, clinical quality
+                improvement and regulatory uses as described by SHIELD. </para>
         </section>
         <section>
             <title>Metadata overview</title>
@@ -342,9 +342,9 @@
                     meaning.</para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Meaning Interoperability</emphasis> – Meaning
-                    interoperability works to ensure that the receiving system interprets data in an
-                    identical way as the original system.</para>
+                <para><emphasis role="bold">Meaning Interoperability</emphasis> – Meaning, or
+                    semantic, interoperability works to ensure that the receiving system interprets
+                    data in an identical way as the original system.</para>
             </listitem>
         </itemizedlist>
         <para>Working to ensure that transmitted data maintains both structure and meaning is a
