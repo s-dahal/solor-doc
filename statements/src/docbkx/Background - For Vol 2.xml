@@ -456,7 +456,7 @@
             <section>
                 <title>LOINC® Overview</title>
                 <para>Approximately 20 U.S. federal agencies have adopted LOINC® as a designated
-                    standard and mandated LOINC® for use in various programs [13], such as:</para>
+                    standard and mandated LOINC® for use in various programs [14], such as:</para>
                 <para>
                     <itemizedlist>
                         <listitem>
@@ -617,7 +617,7 @@
                             <para>While RxNorm has ‘defined ingredients’ [13], historically it has
                                 lacked the computational definition where concepts are defined by
                                 relationships, therefore determining equivalence and allowing
-                                inferencing. However, recent efforts by Bona et al.[15] have
+                                inferencing. However, recent efforts by Bona et al. [15] have
                                 successfully created an OWL file to implement and define the classes
                                 necessary to model RxNorm and NDC concepts.</para>
                         </listitem>
@@ -741,8 +741,8 @@
             <section>
                 <title>HRO Overview</title>
                 <para>A HRO is an organization that avoids accidents and hazards, even in complex
-                    environments where accidents are common. HROs are based on five key
-                    principles:</para>
+                    environments where accidents are common. HROs are based on five key principles
+                    [16]:</para>
                 <orderedlist>
                     <listitem>
                         <para>Preoccupation with Failure</para>
@@ -838,7 +838,7 @@
                 improving data interoperability, reliability, and quality in the health care system.
                 Our work will build upon the findings of these subject matter experts and will
                 incorporate lessons learned to address known issues with current state knowledge
-                management constructs.</para>
+                management constructs. [17-18]</para>
             <section>
                 <title>Increasing the Value of Health Data by Engineering Safety, Quality, and High
                     Reliability into the Data Life Cycle Overview</title>
@@ -856,14 +856,14 @@
                     learned that will need to be addressed to continue improvements to health care
                     data, including the need to embed data and informatics SMEs into EHR
                     modernization (EHRM) efforts and to expand HRO principles to Standards
-                    organizations and health care system data processes. [16]</para>
+                    organizations and health care system data processes. [19]</para>
             </section>
             <section>
                 <title>A Risk-Based Methodology for the Quality Assurance of Healthcare Knowledge
                     Artifacts Overview</title>
                 <para>Greg Rehwoldt outlines a real-world use case of developing and applying a
                     risk-based methodology to improve the quality of current state knowledge
-                    artifacts in this 2018 dissertation. [17] This paper highlights a variety of
+                    artifacts in this 2018 dissertation. [20] This paper highlights a variety of
                     issues with current state knowledge management, particularly the lack of
                     effective quality assurance for existing knowledge artifacts. Current approaches
                     to quality tend to focus on system specific events or stakeholder mistakes, but
@@ -874,7 +874,7 @@
                     impact quality assurance. It is critical that data validation and assurance
                     methods are implemented optimally to reduce the risk of hazards or patient
                     safety issues while accounting for organizational constraints and pressures.
-                    [17]</para>
+                    [20]</para>
             </section>
             <section>
                 <title>Capability Maturity Model Integration (CMMI) Background</title>
@@ -888,7 +888,7 @@
                 <para>The CMMI-DEV examines 22 process areas and ranks an organization’s maturity
                     for each area and that area’s process capabilities. By examining each area, this
                     model identifies areas where improvements would provide the highest value and
-                    allows organizations to tailor their focus and efforts. [18]</para>
+                    allows organizations to tailor their focus and efforts. [21]</para>
             </section>
             <section>
                 <title>Our National Rush to the EHR - An Analysis of Current Clinical Information
@@ -935,9 +935,42 @@
                     <listitem>
                         <para>Data issues that affect multiple records can occur as automated data
                             flows apply terminology maps based on the received map, rather than the
-                            original source data. [19]</para>
+                            original source data. [22]</para>
                     </listitem>
                 </orderedlist>
+            </section>
+            <section>
+                <title>Analysis of Laboratory Data Transmission Between Two Healthcare Institutions
+                    Using a Widely Used Point-to-Point Health Information Exchange Platform: a Case
+                    Report</title>
+                <para>This report examined the data transmission of nine laboratory tests to
+                    determine the accuracy and completeness of transferred information. The data was
+                    analyzed at various stages of transmission, including the sending and receiving
+                    EHR, the HL7 V2 message, and LIS and found five key patient safety issues:</para>
+                    <orderedlist>
+                            <listitem>
+                                <para>The specimen source was consistently missing</para>
+                            </listitem>
+                    <listitem>
+                        <para>The analytical technique or instrument platform was not
+                            reported</para>
+                    </listitem>
+                    <listitem>
+                        <para>Units and reference ranges were inconsistent</para>
+                    </listitem>
+                    <listitem>
+                        <para>The LOINC codes used varied for the same tests</para>
+                    </listitem>
+                    <listitem>
+                        <para>Using different versions of HL7 led to unnecessary complexity and
+                            exacerbated data accuracy issues</para>
+                    </listitem>
+                        </orderedlist>
+                <para>The report goes on to discuss how the use of standardized messaging, through a
+                    health information exchange, along with industry best practices would improve
+                    the accuracy and completeness of data transmission. However, the pertinent and
+                    associated EHRs would need to be enhanced to support the necessary data elements
+                    and improvements. [23]</para>
             </section>
         </section>
         <section>
@@ -959,18 +992,18 @@
         </section>
         <section>
             <title>Safety Systems Use Case</title>
-            <para>The Synensys document, "System Safety within Laboratory Data Exchanges", [WILL
-                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>INSERT LINK TO
-                IKM.DEV WITH THIS PAPER<?oxy_custom_end?>] analyzes the complex challenges in
-                laboratory data exchanges within healthcare, emphasizing the importance of accurate
-                communication, standardized procedures, and contextual information in diagnostics.
-                Various loss scenarios and potential risks are detailed, highlighting the
-                consequences of miscommunication and inconsistency in laboratory data handling. The
-                document is being cited as an example because it illustrates the application of
-                system safety principles in healthcare. Its focus on engineering safety, quality,
-                and reliability into laboratory data exchanges exemplifies the broader theme of
-                implementing systems thinking and high reliability practices, providing a real-world
-                perspective on these critical concepts. [20]</para>
+            <para>The Synensys document, "<link
+                    xlink:href="https://synensysglobal.com/wp-content/uploads/2023/12/Executive-Summary_System-Safety-within-Laboratory-Data-Exchanges-Report.pdf"
+                    >System Safety within Laboratory Data Exchanges</link>", analyzes the complex
+                challenges in laboratory data exchanges within healthcare, emphasizing the
+                importance of accurate communication, standardized procedures, and contextual
+                information in diagnostics. Various loss scenarios and potential risks are detailed,
+                highlighting the consequences of miscommunication and inconsistency in laboratory
+                data handling. The document is being cited as an example because it illustrates the
+                application of system safety principles in healthcare. Its focus on engineering
+                safety, quality, and reliability into laboratory data exchanges exemplifies the
+                broader theme of implementing systems thinking and high reliability practices,
+                providing a real-world perspective on these critical concepts. [24]</para>
         </section>
     </section>
     <section>
@@ -1068,6 +1101,24 @@
                             >https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8</link></para>
                 </listitem>
                 <listitem>
+                    <para>Weick KE, Sutcliffe KM. Managing the unexpected: Assuring high performance
+                        in an age of complexity. San Francisco, CA, US: Jossey-Bass; 2001. xvi, 200
+                        p. (Managing the unexpected: Assuring high performance in an age of
+                        complexity.). </para>
+                </listitem>
+                <listitem>
+                    <para>Leveson N, Samost A, Dekker S, Finkelstein S, Raman J. A Systems Approach
+                        to Analyzing and Preventing Hospital Adverse Events. J Patient Saf. 2020
+                        Jun;16(2):162–7. </para>
+                </listitem>
+                <listitem>
+                    <para>Cantu J, Tolk J, Fritts S, Gharehyakheh A. High Reliability Organization
+                        (HRO) systematic literature review: Discovery of culture as a foundational
+                        hallmark. Contingencies &amp; Crisis Mgmt [Internet]. 2020 [cited 2024 May
+                        14];28(4):399–410. Available from:
+                        https://onlinelibrary.wiley.com/doi/10.1111/1468-5973.12293 </para>
+                </listitem>
+                <listitem>
                     <para>Campbell KE, Montella D, Brown SH, Powell SM, Campbell SW, Cholan RA, et
                         al. Increasing the Value of Health Data by Engineering Safety, Quality, and
                         High Reliability into the Data Lifecycle 2022. </para>
@@ -1087,6 +1138,15 @@
                     <para>Hawry PL, Clouse T, Spisla C, Konieck D. Our National Rush to the EHR - An
                         Analysis of Current Clinical Information Quality and Data Governance
                         Practices 2013.</para>
+                </listitem>
+                <listitem>
+                    <para>Luu HS, Campbell WS, Cholan RA, Edgerton ME, Englund A, Keller A, et al.
+                        Analysis of laboratory data transmission between two healthcare institutions
+                        using a widely used point-to-point health information exchange platform: a
+                        case report. JAMIA Open [Internet]. 2024 Apr 8 [cited 2024 May
+                        14];7(2):ooae032. Available from:
+                        https://academic.oup.com/jamiaopen/article/doi/10.1093/jamiaopen/ooae032/7657767
+                    </para>
                 </listitem>
                 <listitem>
                     <para>Campbell SW, Case JT, Cholan R, England A, Geary C, Green A, et al. FDA

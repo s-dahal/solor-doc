@@ -121,8 +121,7 @@
                 healthcare quality, education, and patient outcomes.</para>
         </section>
         <section>
-            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240508T234147-0500" comment="added section about policy"?>
-            <title><?oxy_comment_end?>The Importance of IKM and Tinkar in Healthcare Policy</title>
+            <title>The Importance of IKM and Tinkar in Healthcare Policy</title>
             <para>Evidence informed decision making (EIDM), also known as Evidence Based Decision
                 Making, is a process that uses the best available data (evidence) to form policies
                 with the intent of providing the best possible outcomes for those affected. Evidence
@@ -209,15 +208,14 @@
                 impacts. Addressing poor data management practices is a vital aspect of a
                 well-functioning healthcare ecosystem and can help support patient engagement and
                 improve safety.</para>
-            <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240508T234159-0500" comment="added section about policy"?>Properly<?oxy_comment_end?>
-                managed data contributes to well-informed and evidenced based policies and decision
-                making. High quality data management begins at the individual level, with good
-                knowledge management practices leading to high quality population level health
-                metrics. Large data sets with accurate and up-to-date data can provide researchers
-                with insights into social determinants of health, populations trends, and both
-                prevent poor health outcomes and promote better health decisions. Health policy is
-                aimed at targeting the health of the population, and is built on a strong foundation
-                of individual data points. </para>
+            <para>Properly managed data contributes to well-informed and evidenced based policies
+                and decision making. High quality data management begins at the individual level,
+                with good knowledge management practices leading to high quality population level
+                health metrics. Large data sets with accurate and up-to-date data can provide
+                researchers with insights into social determinants of health, populations trends,
+                and both prevent poor health outcomes and promote better health decisions. Health
+                policy is aimed at targeting the health of the population, and is built on a strong
+                foundation of individual data points. </para>
         </section>
         <section>
             <title>The Role of Healthcare Education in Healthcare Quality</title>
