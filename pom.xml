@@ -21,8 +21,101 @@
 
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <slf4j.version>2.0.13</slf4j.version>
       <!--<project.version>1.0-SNAPSHOT</project.version>-->
    </properties>
+
+   <dependencyManagement>
+      <dependencies>
+         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j2-impl</artifactId>
+            <version>3.0.0-alpha1</version>
+            <scope>test</scope>
+         </dependency>
+
+         <!--- Bind To SLF4J Dependencies (Start) -->
+
+         <!-- Binding log4j to slf4j -->
+         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
+         </dependency>
+
+         <!-- Binding commons-logging to slf4j -->
+         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
+         </dependency>
+
+         <!-- Binding commons-logging to slf4j -->
+         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <version>${slf4j.version}</version>
+         </dependency>
+
+         <!-- Bind To SLF4J Dependencies (End) -->
+
+         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>test</scope>
+         </dependency>
+      </dependencies>
+   </dependencyManagement>
+
+   <dependencies>
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-api</artifactId>
+      </dependency>
+
+
+      <!--- Bind To SLF4J Dependencies (Start) -->
+
+      <!-- Binding log4j to slf4j -->
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>log4j-over-slf4j</artifactId>
+      </dependency>
+
+      <!-- Binding commons-logging to slf4j -->
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>jcl-over-slf4j</artifactId>
+      </dependency>
+
+      <!-- Binding commons-logging to slf4j -->
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-jdk14</artifactId>
+      </dependency>
+
+      <!-- Bind To SLF4J Dependencies (End) -->
+
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-simple</artifactId>
+         <scope>test</scope>
+      </dependency>
+
+      <dependency>
+         <groupId>org.apache.logging.log4j</groupId>
+         <artifactId>log4j-slf4j2-impl</artifactId>
+         <scope>test</scope>
+      </dependency>
+   </dependencies>
+
    <build>
       <pluginManagement>
          <plugins>
