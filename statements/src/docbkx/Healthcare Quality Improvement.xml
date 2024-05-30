@@ -22,24 +22,25 @@
             system performance, and professional development. [3]</para>
         <para><emphasis role="bold">IKM</emphasis> in healthcare refers to the systematic management
             of knowledge resources, aimed at increasing access to available, accurate, and timely
-            information. It involves a quality improvement approach comprising a multipart sequence
-            and cycle, including data collection, storage, dissemination, review, analysis, and
-            recommendations for improvement. [4] An IKM approach is intended to achieve
+            information. It incorporates a quality improvement approach comprising a multipart
+            sequence and cycle, including data collection, storage, dissemination, review, analysis,
+            and recommendations for improvement. [4] An IKM approach is intended to achieve
             institutional goals through continuous quality improvement, a focus on efficiency,
             collaboration, and transparency.</para>
         <para><emphasis role="bold">Terminology Knowledge Architecture (Tinkar)</emphasis> is an IKM
             framework designed to manage and standardize healthcare terminology. It ensures the
             consistency and accuracy of medical records, which is crucial for effective
-            communication and treatment planning. Tinkar plays a vital role in data interoperability
-            and accuracy, supporting healthcare organizations as they manage standard terminology
-            modules, value sets, coding systems, local terms, and equivalence mappings.</para>
+            communication, treatment planning, and clinical decision making. Tinkar plays a vital
+            role in data interoperability and accuracy, supporting healthcare organizations as they
+            manage standard terminology modules, value sets, coding systems, local terms, and
+            equivalence mappings.</para>
         <para>Training healthcare staff is a critical component of healthcare QI and the healthcare
-            delivery process. Training is a core tenant of maintaining a safe and high quality
-            healthcare system and ensures an environment that encourages staff retention. Healthcare
-            professionals must meet and maintain professional standards set by their respective
-            professional organizations, as well as legislative and regulatory requirements. These
-            standards are often updated, and training can ensure staff are aware of updated
-            knowledge, best practices, and policies. </para>
+            delivery process. Healthcare professionals must be trained on patient safety and quality
+            improvement methods to safely and effectively operate within increasingly complex work
+            systems. Healthcare professionals must also meet and maintain professional standards set
+            by their respective professional organizations and legislative and regulatory
+            requirements. These standards are often updated, and training can ensure staff are aware
+            of updated knowledge, best practices, and policies. </para>
         <para>There are a wide range of stakeholders involved in the delivery of care and in the
             healthcare ecosystem, from physicians, laboratorians, nurses, support staff, policy
             makers, and more, who generate and share curated knowledge with each other. Organizing
@@ -47,7 +48,7 @@
             Often times, critical information and context is lost or distorted during data exchange
             within and between systems, resulting in incomplete or inaccurate knowledge. IKM aims to
             ensure systems maintain and communicate information without data loss as it flows
-            between systems. Healthcare employees rely on IKM to receive timely and correct
+            between systems. Healthcare professionals rely on IKM to receive timely and correct
             information for their training.</para>
         <para>This volume aims to explore the role of IKM and Tinkar in enhancing healthcare quality
             and how these systems can be integrated into healthcare settings to improve patient
@@ -58,17 +59,17 @@
             <title>Importance of IKM and Tinkar in Healthcare Quality Improvement</title>
             <para>All healthcare organizations are continuously striving towards healthcare QI, a
                 process used to identify and address healthcare disparities, to reduce harm and
-                issues that may arise from administrative or technical mistakes. Inaccuracies or
+                issues that may arise from administrative or technical errors. Inaccuracies or
                 omissions in health records may lead to unintended and harmful effects to the
                 patient. Improving upon certain processes can help mitigate these errors and have a
                 positive impact on patients and healthcare providers.</para>
             <para>IKM can help play a pivotal role in Healthcare QI through the following:</para>
             <orderedlist>
                 <listitem>
-                    <para><emphasis role="bold">Enhanced Decision-Making: </emphasis>IKM can
-                        facilitate the flow and management of knowledge throughout its lifecycle.
-                        This process is crucial for informed clinical decision-making, which
-                        directly impacts patient care quality. [5]</para>
+                    <para><emphasis role="bold">Enhanced Clinical Decision-Making: </emphasis>IKM
+                        can facilitate the flow and management of knowledge throughout its
+                        lifecycle. This process is crucial for informed clinical decision-making,
+                        which directly impacts patient care quality. [5]</para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Standardized Healthcare Terminology:
@@ -142,11 +143,11 @@
                 categories: interim, standard, and update. Interim guidelines are usually developed
                 during an emergency response when limited data is available. These interim
                 guidelines rely heavily on expert opinion and emerging evidence, and evidence
-                generated form sources outside of health settings. These guidelines are often
+                generated from sources outside of health settings. These guidelines are often
                 updated due to the evolving nature of the evidence used. In these cases large
                 amounts of "indirect" evidence including ethical perspectives, common sense, and
                 feasibility will influence the guidelines. In these evolving emergency response
-                situation, knowledge and data is less organized indicating a strong need for
+                situations, knowledge and data is less organized indicating a strong need for
                 comprehensive and accurate IKM practices. [8,9]</para>
             <para>Gathering strong evidence is only part of the effort needed to create effective
                 policy; knowledge translation and integration of interventions is also an essential
@@ -182,13 +183,16 @@
             <para>Additionally, challenges with technology adoption are a major issue facing an
                 already overburdened health system. While the use of advanced technology in
                 healthcare workflows is meant to save time and improve efficiencies, it often leads
-                to added stress and burnout. Healthcare systems will need to find a way to upskill
-                the workforce to lessen the technological burden and alleviate the stress of a
-                diminished talent pipeline. </para>
+                to added stress, burnout, fatigue, and errors. Healthcare systems will need to find
+                a way to upskill the workforce to lessen the technological burden, improve existing
+                work systems, and alleviate the stress of a diminished talent pipeline. </para>
         <para>Another key component of healthcare delivery is health equity. Advancing health equity
                 by addressing healthcare disparities, including socioeconomic, racial, and
-                gender-based inequities, is a complex and critical challenge in healthcare. All of
-                these challenges are bookended by patient safety, with issues like medication
+                gender-based inequities, is a complex and critical challenge in healthcare. High
+                quality demographic data has been linked to improved, patient-centered outcomes and
+                is critical for identifying, addressing, and reducing current health
+                disparities.[<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>X<?oxy_custom_end?>]
+                All of these challenges are bookended by patient safety, with issues like medication
                 errors, diagnostic inaccuracies, and hospital-acquired infections (HAIs) continuing
                 to pose significant challenges to healthcare quality. [10]</para>
         </section>
@@ -223,8 +227,8 @@
             <orderedlist>
                 <listitem>
                     <para>Training and education for providers, researchers, public health experts,
-                        and other professionals involved in the delivery, research, or study of
-                        patient care. </para>
+                        and other professionals involved in the delivery, research, system
+                        maintenance, or study of patient care. </para>
                 </listitem>
                 <listitem>
                     <para>Education for patients to understand their conditions, treatments,
@@ -232,15 +236,15 @@
                         promote healthy, voluntary behaviors that improve health outcomes.</para>
                 </listitem>
             </orderedlist>
-            <para>Knowledge management structures and applications that support provider training
-                and learning or the delivery of care include clinical decision support, patient care
-                coordination, the use of new technologies like telehealth/telemedicine, and the
-                sharing of state-of-the-art research on emerging conditions. IKM supports this
-                version of healthcare education throughout the various stages of a healthcare
-                professional’s journey by conglomerating disparate knowledge into a singular source
-                that is then accessible to the provider, reducing cognitive burden, fostering
-                collaboration between organizations, lowering wait times by removing the need for
-                providers to extensively search for information, and improving provider knowledge
+            <para>Knowledge management structures and applications that support professional
+                training and learning or the delivery of care include clinical decision support,
+                patient care coordination, the use of new technologies like telehealth/telemedicine,
+                and the sharing of state-of-the-art research on emerging conditions. IKM supports
+                this version of healthcare education throughout the various stages of a healthcare
+                professional’s journey by integrating disparate knowledge into a singular source
+                that is more accessible to the provider, reduces cognitive burden, fosters
+                collaboration between organizations, lowers wait times by removing the need for
+                providers to extensively search for information, and improves professional knowledge
                 and patient care. Healthcare students (MD, RN, NP, PhD, Masters, etc.), providers,
                 researchers, public health experts, and more can all benefit from more efficient and
                 optimized information management, organization, and sharing. This type of healthcare
@@ -255,9 +259,9 @@
                 improvements to workflows, processes, and patient care by reducing
                 multidrug-resistant organisms and infections in a high-risk community like nursing
                 homes. [14]</para>
-            <para>Beyond training for providers, healthcare education for patients is critical and
-                its impact is well documented, resulting in significant health outcomes for
-                prevention and control of obesity, reduction of tobacco use in adolescents, and
+            <para>Beyond training for healthcare professionals, healthcare education for patients is
+                critical and its impact is well documented, resulting in significant health outcomes
+                for prevention and control of obesity, reduction of tobacco use in adolescents, and
                 more. [15, 16] Low healthcare literacy can lead to lower overall health outcomes,
                 misuse of medication, overall misunderstanding of health information, and longer
                 wait times to seek treatment, which itself can compound health problems. By
@@ -290,16 +294,17 @@
                 decision making, patient care and coordination, and research and development by
                 allowing the harmonization of information between systems. However, IKM also plays
                 an important role in healthcare education and training. The benefits of a well
-                curated IKM training program can benefit both patient care and employee happiness
+                curated IKM training program can benefit both patient care and employee satisfaction
                 and retention, which effectively leads to better patient care. Comprehensive
-                training programs are more critical than ever as advanced technology is introduced
-                into the workflow. Many healthcare organizations are facing critical staffing
-                shortages and are expanding their pool of candidates via telehealth. However, this
-                strategy alone cannot alleviate the need for a technologically prepared workforce.
-                Instead of looking to hire new talent with relevant skills, organizations can train
-                their current staff in the necessary skills. IKM can support the transfer,
-                management, and retrieval of information from different parts of the healthcare
-                system to create a robust training program to upskill staff. [19]</para>
+                training programs are more critical than ever as more complex technology is
+                introduced into the workflow. Many healthcare organizations are facing critical
+                staffing shortages and are expanding their pool of candidates via telehealth.
+                However, this strategy alone cannot alleviate the need for a technologically
+                prepared workforce. Instead of looking to hire new talent with relevant skills,
+                organizations can train their current staff in the necessary skills. IKM can support
+                the transfer, management, and retrieval of information from different parts of the
+                healthcare system to create a robust training program to upskill current staff.
+                [19]</para>
             <para>Training requires active participation and buy in from both the healthcare
                 administration and employees. It is important that both understand the benefit of
                 training and upskilling: a well-run organization that is successful with satisfied
@@ -458,8 +463,8 @@
             impact of IKM and Tinkar, and healthcare training and education on healthcare
             quality:</para>
         <orderedlist>
-            <listitem><para><emphasis role="italic">Patient Outcomes: </emphasis>Metrics such as
-                readmission rates, patient recovery times, and complication rates.</para></listitem>
+            <listitem><para><emphasis role="italic">Patient Outcomes: </emphasis>Metrics such as readmission rates,
+                    patient recovery times, adverse event rates, and complication rates.</para></listitem>
             <listitem><para><emphasis role="italic">Operational Efficiency: </emphasis>Indicators like
                 average length of hospital stay, time to treatment, and resource utilization
                 rates.</para></listitem>
@@ -474,14 +479,15 @@
             <listitem><para><emphasis role="italic">Health </emphasis><emphasis role="italic">Equity:
                     </emphasis>Collection of patient data including Race, Ethnicity, and Language,
                     and percentage of workforce trained in collecting this data. Other domains
-                    include data collection and use, cultural competency trainings, DEI in
-                    leadership, and strength of community partnerships. [26]</para></listitem>
+                    include data collection and use, cultural competency trainings, Diversity,
+                    Equity, and Inclusion (DEI) in leadership, and strength of community
+                    partnerships. [26]</para></listitem>
         </orderedlist>
         <para>Evaluating the effectiveness of IKM and Tinkar requires a robust data analysis to
             assess the changes in healthcare delivery and outcomes before and after implementation.
-            Gathering user feedback from healthcare providers and IT staff on the usability and
-            impact of  solutions is  a helpful tool when evaluating effectiveness, as well as
-            regular quality audits to ensure that the solutions are being used effectively and are
+            Gathering user feedback from healthcare professionals and IT staff on the usability and
+            impact of solutions is a helpful tool when evaluating effectiveness, as well as regular
+            quality audits to ensure that the solutions are being used effectively and are
             contributing to continuous healthcare improvement. Lastly, comparative studies comparing
             performance with similar healthcare organizations that have not implemented IKM and
             Tinkar can be used to identify the success of the implementation.</para>
@@ -569,6 +575,12 @@
                 <para>Carande-Kulis V, Elder RW, Koffman DM -. Standards Required for the
                     Development of CDC Evidence-Based Guidelines. MMWR Supplements. 2022 Jan
                     14;71(1):1–6.</para>
+            </listitem>
+            <listitem>
+                <para>Bilheimer LT, Klein RJ. Data and Measurement Issues in the Analysis of Health
+                    Disparities. Health Serv Res [Internet]. 2010 Oct [cited 2024 May 30];45(5 Pt
+                    2):1489–507. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2965888/ </para>
             </listitem>
             <listitem>
                 <para>Kluwer W. Six challenges to delivering quality healthcare [Internet].<link

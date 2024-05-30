@@ -523,23 +523,153 @@
         <title>Creating LIDR Data</title>
         <orderedlist>
             <listitem>
-                <para>To create LIDR Data</para>
+                <para>To create LIDR Data, select the "+" at the top of the project journal</para>
+                <figure xml:id="NewLIDRRecord">
+                    <title>New LIDR Record</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/NewLIDRRecord.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
             </listitem>
             <listitem>
-                <para>PLACEHOLDER</para>
+                <para>This will open a blank LIDR template to fill out</para>
+                <figure xml:id="LIDRViewer">
+                    <title>LIDR Viewer</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/LIDR%20Viewer.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>First, start by selecting the elipsis on the right had side to create a STAMP
+                    for the LIDR concept</para>
+                <figure xml:id="AuthorLIDRStamp">
+                    <title>Author LIDR STAMP</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Author%20LIDR%20STAMP.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>Selecting Status, Module, and Path will open a dropdown menu of possible
+                    choices for users to select from when authoring STAMP</para>
+            </listitem>
+            <listitem>
+                <para>Once you have selected the Status, Module, and Path, click the LIDR Viewer
+                    window and the properties will populate</para>
+                <figure xml:id="LIDRStamp">
+                    <title>LIDR STAMP</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/LIDR%20STAMP.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Next, select the pencil icon in the Device(s) Summary section to open the
+                    Properties section and add a device</para>
+                <figure xml:id="EditDeviceSummary">
+                    <title>Edit Device Summary</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Edit%20Device%20Summary.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Users can search for a device, manually enter a device, or drag and drop a
+                    device from the Hierarchical Relationship tab in the left-hand bar. Users can
+                    navigate to the "Tinkar root concept" → "Model concept" → "Device" section to
+                    click and drag a device to the LIDR Viewer Properties panel</para>
+                <figure xml:id="AddDevice">
+                    <title>Add Device by Dragging</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Add%20Device.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>The device will appear in the Device Summary Properties panel</para>
+                <figure xml:id="ConfirmDevice">
+                    <title>Confirm Device</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Confirm%20Device.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Once you click "Done" in the bottom right of the Device Summary Properties
+                    panel, it will appear in the LIDR Viewer window</para>
+                <figure xml:id="DeviceSummary">
+                    <title>Device Summary</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Device%20Summary.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Finally, select the pencil icon in the LIDR Record Details section to open the
+                    Properties section and add Analytes, Targets, Results, and Specimens. Similar to
+                    the Device Summary, Analytes, Targets, Results, and Specimens can be searched
+                    for, manually added, or dragged from the Hierarchical Relationship tab in the
+                    left-hand bar. These can be found in "Tinkar root concept" → "Model concept" →
+                    "Analyte", "Targets", "Result Constraints", and "Specimens" respectively</para>
+                <figure xml:id="AddLIDRRecordDetails">
+                    <title>Add LIDR Record Details</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Add%20LIDR%20Record%20Details.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>Users can add multiple Targets, Result Constraints, and Specimen but are
+                    limited to a single Analyte. If you manually add any data, such as a Result
+                    Constraint, be sure to run the reasoner once you are finished so that the data
+                    is added to the appropriate Hierarchical Relationship path. See <link
+                        linkend="RunningTheReasoner">Running the Reasoner</link> for further
+                    instructions</para>
+            </listitem>
+            <listitem>
+                <para>Once you click "Done" in the bottom right of the LIDR Record Details panel, it
+                    will appear in the LIDR Viewer window</para>
+                <figure xml:id="ViewLIDRRecordDetails">
+                    <title>View LIDR Record Details</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/View%20LIDR%20Record%20Details.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>The Analyte, Results, and Specimens within the LIDR Record Details section can
+                    be expanded for more information</para>
+            </listitem>
+            <listitem>
+                <para>You can then go to the Hierarchical Relationship tab in the left-hand bar,
+                    locate the device you created, right click, and select "LIDR Viewer" to view the
+                    concept in the LIDR Viewer window without having to re-enter all of the
+                    data</para>
             </listitem>
         </orderedlist>
-        <section>
-            <title>Viewing LIDR Data</title>
-            <orderedlist>
-                <listitem>
-                    <para>To view LIDR data</para>
-                </listitem>
-                <listitem>
-                    <para>PLACEHOLDER</para>
-                </listitem>
-            </orderedlist>
-        </section>
     </section>
     <section>
         <title>Exporting and Sharing Data (Placeholder)</title>
@@ -619,9 +749,11 @@
         </para>
     </section>
     <section>
-        <title>Running the Reasoner</title>
-        <para>Users may want to run the pertinent reasoner to updated the inferred relationshops
-            based on the stated relationships that the author enters for a concept.</para>
+        <title xml:id="RunningTheReasoner">Running the Reasoner</title>
+        <para>Users may want to run the pertinent reasoner to update the inferred relationships,
+            based on the stated relationships, that the author enters for a concept. The reasoner
+            can also be ran to update the Hierarchical Relationship tab in the left-hand bar with
+            manually entered LIDR result names.</para>
         <orderedlist>
             <listitem>
                 <para>To run the reasoner, select the Reasoner icon at the top of the concept
