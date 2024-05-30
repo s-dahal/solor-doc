@@ -1,8 +1,10 @@
 package plugin.client;
 
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import jdk.jpackage.internal.Log;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import schemas.docbook.*;
 import schemas.mendeley.Person;
 import schemas.mendeley.UserDocument;
@@ -18,7 +20,7 @@ import java.util.Optional;
 
 public class BibliographyUtility {
 
-    protected static final Logger LOG = LogManager.getLogger();
+    protected static final Logger LOG = LogManager.getLogger(BibliographyUtility.class);
 
     private final MendeleyClient mendeleyClient;
     private final String bibliographyFilePath;
