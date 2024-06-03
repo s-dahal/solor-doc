@@ -253,7 +253,7 @@
                     <listitem>
                         <para>To view hierarchical relationships, select the Hierarchical
                             Relationships icon in the left-hand bar and drag the desired concept
-                            from the Axioms section into the Hierarchical Realtionships panel.
+                            from the Axioms section into the Hierarchical Relationships panel.
                             Inferred navigation pattern information will appear on the left-hand
                             side. </para>
                         <figure xml:id="HierarchicalNavigation">
@@ -333,7 +333,7 @@
                 </para>
             </listitem>
             <listitem>
-                <para>Selecting a specifc node on the timeline will turn the node green and
+                <para>Selecting a specific node on the timeline will turn the node green and
                     highlight information pertaining to that change or concept version</para>
                 <figure xml:id="ViewingVersioning2">
                     <title>Version Nodes</title>
@@ -364,7 +364,7 @@
         <title>Creating a Concept</title>
         <para>Users may want to create a concept to represent new or emerging clinical conditions or
             create temporary concepts while Standards Developing Organizations create official
-            representations. Creating a concept allows users to enter assocaited information like
+            representations. Creating a concept allows users to enter associated information like
             STAMP, stated relationships, and more.</para>
         <orderedlist>
             <listitem>
@@ -393,7 +393,7 @@
                 </figure>
             </listitem>
             <listitem>
-                <para>To add STAMP properties of the new concept, select the elipsis in the top
+                <para>To add STAMP properties of the new concept, select the ellipsis in the top
                     right of the concept window</para>
                 <figure xml:id="EditSTAMP">
                     <title>Creating STAMP Properties</title>
@@ -547,7 +547,7 @@
                 </figure>
             </listitem>
             <listitem>
-                <para>First, start by selecting the elipsis on the right had side to create a STAMP
+                <para>First, start by selecting the ellipsis on the right had side to create a STAMP
                     for the LIDR concept</para>
                 <figure xml:id="AuthorLIDRStamp">
                     <title>Author LIDR STAMP</title>
@@ -710,7 +710,7 @@
         <para>
             <orderedlist>
                 <listitem>
-                    <para>In the Detail Viewer activity stream (default loaction: center panel)
+                    <para>In the Detail Viewer activity stream (default location: center panel)
                         click drop down button “+”, and click “Import Artifact"</para>
                     <figure xml:id="ImportArtifact">
                         <title>Import Artifact</title>
