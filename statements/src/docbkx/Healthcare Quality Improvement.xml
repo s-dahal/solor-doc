@@ -503,15 +503,60 @@
             the latest technologies and practices in healthcare quality improvement. [27]</para>
     </section>
     <section>
+        <title>Implementation Considerations</title>
+        <para>While this volume focuses on the prospective benefits and impact of IKM, the following
+            list explores potential challenges with IKM implementation. While this list is not
+            exhaustive, it is important to acknowledge and understand potential challenges to
+            improve implementation and adoption. </para>
+        <orderedlist>
+            <listitem>
+                <para><emphasis role="bold">Usability and User-Centered Design</emphasis>: IKM and
+                    the IKM reference implementation are heavily reliant on technology and
+                    electronic communication. While technology is an essential part of both modern
+                    healthcare and IKM, it is critical that human factors engineering and
+                    human-centered design remain a driving force in the design of IKM and personal
+                    interactions continue during delivery of patient care.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Scalability and Continuous Updates</emphasis>:
+                    Optimizing the implementation of IKM across the healthcare system will require
+                    careful consideration. There are a diverse array of healthcare settings, all
+                    with their own technological infrastructures, resource availabilities, and
+                    unique challenges. Scaling IKM to incorporate new and emerging concepts, such as
+                    terminology standards or new best practices, will also require continuous
+                    process improvement and refinement. This process must be managed efficiently to
+                    maintain the accuracy of IKM systems and the healthcare data it
+                    represents.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Cost Implications and Integration with Existing
+                        Systems</emphasis>: IKM implementation will require financial investments
+                    from institutions in the form of updated technology, training, and support for
+                    end-users. Healthcare systems will also need to ensure that IKM can seamlessly
+                    integrate with existing systems, which can be complex and could cause
+                    disruptions. Application Program Interfaces (API) and data quality validation
+                    harnesses are examples of tools that could be provided to reduce the financial
+                    and resource burdens on healthcare systems.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Data Overload</emphasis>: IKM and IKM reference
+                    implementations will handle vast amounts of data. It is important that end-users
+                    are not overburdened with unnecessary information and data. Data should be
+                    filtered to ensure that only relevant, pertinent, and actionable information is
+                    presented.</para>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section>
         <title>Conclusion</title>
         <para>This volume has explored the integration and potential impact of IKM and Tinkar in
             healthcare quality and education improvement. Both IKM and Tinkar play a crucial role in
             enhancing healthcare quality by improving decision-making, standardizing care processes,
-            ensuring data accuracy,  optimizing healthcare professional and patient education, and
+            ensuring data accuracy, optimizing healthcare professional and patient education, and
             providing strong building blocks for health policy. Successful implementation requires a
             strategic approach, including stakeholder engagement, training, continuous monitoring,
             and the development of well refined key performance indicators that are collaboratively
-            developed with various stakeholder groups.</para>
+            developed with various stakeholder groups. </para>
         <para>Overcoming challenges such as resistance to change, technical barriers, and data
             security concerns is essential for effective implementation but can be proactively
             mitigated with industry best practices. It is recommended that healthcare organizations
