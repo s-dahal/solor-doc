@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <info>
+        <title>Integrated Knowledge Management (IKM) Book</title>
+        <subtitle>Version 1 - Last Updated 06/06/2024</subtitle>
+    </info>
+    <part>
+        <title>Introduction</title>
+        <xi:include href="Book%20Introduction.xml"/>
+    </part>
+    <part>
+        <title>Background</title>
+        <xi:include href="Background.xml"/>
+        <xi:include href="sof-current-state.xml"></xi:include>
+    </part>
+    <part>
+        <title>IKM Overview</title>
+        <xi:include href="Integrated%20Knowledge%20Management.xml"/>
+        <xi:include href="1.2.2.xml"/>
+        <xi:include href="Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"></xi:include>
+        <xi:include href="Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3"/>
+    </part>
+    <part>
+        <title>Foundational Architecture</title>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/business-requirements/business-requirements.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/tinkar-reference-model/tinkar-reference-model.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"/>
+        <xi:include href="Foundational-Architecture.xml"/>
+        <xi:include href="Volume%204%20-%20References.xml"/>
+        <xi:include href="solor-foundation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+    <part>
+        <title>Terminology Knowledge</title>
+        <xi:include href="terminology-intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="terminology_conceptsandcodes.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="language.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <!--<xi:include href="SOLOR-language.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <xi:include href="definitional.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="terminology_application.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+    <part>
+        <title>Statement Model</title>
+        <chapter>
+            <title>Statement Model Principles</title>
+            <xi:include href="statement-intro-begin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>   
+            <xi:include href="statement-intro-patterns.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </chapter>
+        <chapter>
+            <title>Statement Historical Implementations</title>
+            <xi:include href="statement-openehr.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="statement-clinical-input-form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </chapter>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-reference-model/anf-reference-model.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"/>
+    </part>
+</book>

@@ -708,7 +708,7 @@
                 <title>Modules and Extensions</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/Versioning%20and%20Modules.png"/>
+                        <imagedata fileref="images/Versioning%20and%20Modules.svg" scale="70" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>

@@ -751,9 +751,9 @@
     <section>
         <title xml:id="RunningTheReasoner">Running the Reasoner</title>
         <para>Users may want to run the pertinent reasoner to update the inferred relationships,
-            based on the stated relationships, that the author enters for a concept. The reasoner
-            can also be ran to update the Hierarchical Relationship tab in the left-hand bar with
-            manually entered LIDR result names.</para>
+            based on the stated relationships, that the author enters for a concept, to update the
+            Hierarchical Relationship tab in the left-hand bar with manually entered LIDR result
+            names, to detect equivalences, and more.</para>
         <orderedlist>
             <listitem>
                 <para>To run the reasoner, select the Reasoner icon at the top of the concept
@@ -762,7 +762,7 @@
                     <title>Open Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Open%20Reasoner.svg" scale="30" align="center"/>
+                            <imagedata fileref="images/Open%20Reasoner.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -774,19 +774,72 @@
                     <title>Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Reasoner.svg" scale="30" align="center"/>
+                            <imagedata fileref="images/Reasoner.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
             <listitem>
-                <para>Select the drop down menu in the top left of the Reasoner panel and select the
-                    desired action</para>
+                <para>Select the drop down menu in the top left of the Reasoner panel and select
+                    "Run Full Reasoner"</para>
                 <figure xml:id="RuntheReasoner">
                     <title>Run the Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Run%20Reasoner.svg" scale="30"
+                            <imagedata fileref="images/Run%20Reasoner.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+        
+            <listitem>
+                <para>The reasoner may take up to a few minutes to successfully run, you should see
+                    the reasoner running in the activity tab</para>
+                <figure xml:id="ReasonerInAction">
+                    <title>Reasoner In Action</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Reasoner%20In%20Action.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Once finished, the reasoner will generate results in the Reasoner Results tab.
+                    Results include concept size, cycles, orphans, and equivalences. These
+                    equivalences can then be expanded to see the specific equivalent
+                    concepts.</para>
+                <figure xml:id="ReasonerResults">
+                    <title>Reasoner Results</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Reasoner%20Results.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>You can then compare the equivalent concepts by selecting each concept, right
+                    clicking, and choosing "Compare Concepts"</para>
+                <figure xml:id="CompareResults">
+                    <title>Compare Results</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Compare%20Results.svg" scale="45"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>This will then open all of the concept windows to allow users to understand
+                    the similarities and differences of each concept</para>
+                <figure xml:id="UnderstandEquivalents">
+                    <title>Understand Equivalents</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Understand%20Equivalents.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
