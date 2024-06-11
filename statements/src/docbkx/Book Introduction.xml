@@ -38,11 +38,12 @@
     </section>
     <section>
         <title>Overview of the IKM Book</title>
-        <para>The Integrated Knowledge Management (IKM) Book serve as an educational resource to
+        <para>The Integrated Knowledge Management (IKM) Book serves as an educational resource to
             allow stakeholders to perform a deep dive into the IKM Architecture this team has worked
             to develop. </para>
         <section>
-            <title>Purpose of This Document</title>
+            <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240611T141231-0500" comment="Propose that we summarize and reword so that it is in paragraph format. As is it makes it seem more like a report or short written piece?"?>Purpose
+                of This Document<?oxy_comment_end?></title>
             <para>This Book will act as 1) a reference for understanding the complex, multi-layered,
                 and highly inter-dependent Health IT landscape, and 2) a framework for the
                 implementation of a layered, architecture-based approach to integrating and managing
@@ -121,7 +122,7 @@
                 </listitem>
             </itemizedlist>
             <para>In order to produce highly reliable software, the following tenets must be applied
-                within a tooling’s software development methodology: Use-case driven,
+                within a tooling’s software development methodology: use-case driven,
                 architecture-centric, iterative and incremental.<itemizedlist>
                     <listitem>
                         <para><emphasis role="bold">Use-case Driven</emphasis>: Defining,
@@ -213,15 +214,20 @@
     </section>
     <section>
         <title>The Knowledge Architecture</title>
-        <para>Increased reliance on computerized health records, including EHR Systems, requires
-            standardized medical terminology to encode health information consistently across
-            systems and enterprises. Clinicians require not only objective quantitative measurements
-            (e.g., 90 beats per minute for a patient’s pulse), but also procedural context (e.g.,
-            pulse oximetry, manual) about past observations or requests for future interventions.
-            While two quantitative measurements may be the same, the procedural information could
-            indicate meaningful semantic differences and lead to different clinical interpretation
-            and treatment. As information is exchanged across systems, the solution requires a
-            common understanding of data, a method to support knowledge representation, and clinical
+        <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240611T142558-0500" comment="add a sentence that give an intro to what knowledge architecture is, such as an architecture 101. 
+
+for example &quot;in this book we will often refer to the knowledge archtircutre..... this KA is a core componenet of our work.....&quot;
+
+it will give this section a more understandable launching point. "?>Increased<?oxy_comment_end?>
+            reliance on computerized health records, including EHR Systems, requires standardized
+            medical terminology to encode health information consistently across systems and
+            enterprises. Clinicians require not only objective quantitative measurements (e.g., 90
+            beats per minute for a patient’s pulse), but also procedural context (e.g., pulse
+            oximetry, manual) about past observations or requests for future interventions. While
+            two quantitative measurements may be the same, the procedural information could indicate
+            meaningful semantic differences and lead to different clinical interpretation and
+            treatment. As information is exchanged across systems, the solution requires a common
+            understanding of data, a method to support knowledge representation, and clinical
             decision rules based on common terminology and statements. Each component must address
             an aspect and together need to address the requirements of clinicians. Current HL7
             standard implementations rely on profiles and templates to disambiguate statement and
@@ -345,7 +351,9 @@
             </itemizedlist></para>
     </section>
     <section>
-        <title> Preface from Keith Campbell</title>
+        <title>
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240611T141711-0500" comment="Make this the first section/opener to the book "?>Preface
+            from Keith Campbell</title><?oxy_comment_end?>
         <para>This section is currently a placeholder.</para>
     </section>
     <section>
