@@ -9,15 +9,13 @@
         <para>Health IT standards are critical for representing and sharing health data in a large
             health ecosystem. Multiple users with roles in various fields can produce and access
             health data, compelling the need for a common way to format the data standards. This is
-            particularly important for data encoded in electronic health records (EHR) and
-            laboratory information systems (LIS). Standards, such as Systematized Nomenclature of
-            Medicine Clinical Terms (SNOMED CT®), Logical Observations Identifiers Names and Codes®
-            (LOINC®), and RxNorm (National Library of Medicine’s codification of the U.S.
+            particularly important for data encoded in EHR and LIS. Standards, such as SNOMED CT®,
+            LOINC®, and RxNorm (National Library of Medicine’s codification of the U.S.
             pharmacopeia), provide a common language for certain types of health information to be
             represented and understood. However, multiple industry knowledge standards exist in a
             variety of environments and need to be harmonized to ensure data interoperability. An
-            integrated knowledge management (IKM) platform is needed to harmonize these standards,
-            ultimately generating high quality data for downstream use. </para>
+            IKM platform is needed to harmonize these standards, ultimately generating high quality
+            data for downstream use. </para>
         <para>Knowledge standards are currently managed by different organization and stakeholder
             groups. These standards are often promulgated by the organizations to advance their use;
             however, the evolution of these standards occur in silos, compounding the complexity of
@@ -36,10 +34,10 @@
             organizations and systems to achieve a safe and effective healthcare system. </para>
         <section>
             <title>Findings</title>
-            <para>While High Reliability Organization (HRO) principles and IKM serve as a
-                well-structured architecture to support the harmonization and standardization of
-                disparate clinical terminology standards, there are key advancements that must be
-                made and technologies that must be utilized to optimize this work. </para>
+            <para>While HRO principles and IKM serve as a well-structured architecture to support
+                the harmonization and standardization of disparate clinical terminology standards,
+                there are key advancements that must be made and technologies that must be utilized
+                to optimize this work. </para>
             <section>
                 <title>Data Management</title>
                 <para>Data management is the safe and efficient storage, management, and use of
@@ -52,13 +50,13 @@
                 <orderedlist>
                     <listitem>
                         <para><emphasis role="bold">Ease of Access</emphasis> – While an increasing
-                            number of healthcare organizations rely on Information Technology (IT)
-                            systems to store, manage, and access data collected from a variety of
-                            sources, the ability to identify, access, and then utilize that data in
-                            an impactful and meaningful way is an ongoing challenge. Our work aims
-                            to improve both author’s and user’s ability to efficiently capture data
-                            from across the healthcare ecosystem and to effectively analyze that
-                            data for actionable decision making. </para>
+                            number of healthcare organizations rely on IT systems to store, manage,
+                            and access data collected from a variety of sources, the ability to
+                            identify, access, and then utilize that data in an impactful and
+                            meaningful way is an ongoing challenge. Our work aims to improve both
+                            author’s and user’s ability to efficiently capture data from across the
+                            healthcare ecosystem and to effectively analyze that data for actionable
+                            decision making. </para>
                     </listitem>
                     <listitem>
                         <para><emphasis role="bold">Integrating Disparate Data Sources</emphasis> –
@@ -90,19 +88,18 @@
                 </orderedlist>
                 <para><emphasis>Tinkar</emphasis>
                 </para>
-                <para>TermINology Knowledge Architecture (Tinkar) is a self-describing knowledge
-                    architecture intended to represent other terminology standards in a human
-                    readable and machine processable format. Tinkar supports improvements to data
-                    management by integrating terminology standards into a common model that
-                    efficiently captures granular details and data sources of each standard for
-                    rapid and scalable data querying and analysis while maintaining meaning.
-                    Versioning is another important component of maintaining data integrity. Tinkar
-                    will maintain a detailed version history to clearly convey how concepts have
-                    changed over time and will allow authors to preview or test edits to concepts
-                    before pushing to a live environment to maintain appropriate concept
-                    representations and relationships. [2] As new healthcare systems or terminology
-                    standards emerge, the data they represent will be “Tinkarized” and integrated
-                    into Tinkar and the IKM architecture. </para>
+                <para>Tinkar is a self-describing knowledge architecture intended to represent other
+                    terminology standards in a human readable and machine processable format. Tinkar
+                    supports improvements to data management by integrating terminology standards
+                    into a common model that efficiently captures granular details and data sources
+                    of each standard for rapid and scalable data querying and analysis while
+                    maintaining meaning. Versioning is another important component of maintaining
+                    data integrity. Tinkar will maintain a detailed version history to clearly
+                    convey how concepts have changed over time and will allow authors to preview or
+                    test edits to concepts before pushing to a live environment to maintain
+                    appropriate concept representations and relationships. [2] As new healthcare
+                    systems or terminology standards emerge, the data they represent will be
+                    “Tinkarized” and integrated into Tinkar and the IKM architecture. </para>
                 <para><emphasis>Protocol Buffers</emphasis>
                 </para>
                 <para>Protocol buffers are an agnostic and unopinionated way to represent structured
@@ -115,7 +112,7 @@
                     manage that data, and then transmit that data with maintained data integrity to
                     another system to display the concept in the disparate, local terminology
                     standard. [3] </para>
-                <para><emphasis>Universally Unique Identifiers (UUID) v5</emphasis>
+                <para><emphasis>UUID v5</emphasis>
                 </para>
                 <para>UUID version 5 uses a 128-bit label to idempotently represent data in a
                     completely unique and unambiguous way. Idempotent data representation means that
@@ -203,13 +200,14 @@
                 or systems, which leads to multiple dependencies. It is not only important for our
                 team to identify dependencies, but we must also categorize them to understand the
                 direction, frequency, and type of dependency and to optimally prioritize and
-                mitigate potential issues caused by these relationships. For example, LIDR has a
-                dependency on both SNOMED CT® and LOINC® and when SNOMED CT® or LOINC® are updated,
-                validation must be performed in a comprehensive manner to determine if LIDR is
-                correctly using the current interpretation of said dependent standards (SNOMED CT®
-                and LOINC®). As we continue to work towards IKM, it is critical that we select and
-                implement technologies that will support the management of these dependencies to
-                reduce patient safety issues and unnecessary complications. [7] </para>
+                mitigate potential issues caused by these relationships. For example, Lab
+                Interoperability Data Repository (LIDR) has a dependency on both SNOMED CT® and
+                LOINC® and when SNOMED CT® or LOINC® are updated, validation must be performed in a
+                comprehensive manner to determine if LIDR is correctly using the current
+                interpretation of said dependent standards (SNOMED CT® and LOINC®). As we continue
+                to work towards IKM, it is critical that we select and implement technologies that
+                will support the management of these dependencies to reduce patient safety issues
+                and unnecessary complications. [7] </para>
             <para><emphasis>Maven</emphasis>
             </para>
             <para>Maven is a project management tool with dependency management features for
@@ -253,25 +251,25 @@
         </section>
         <section><title>User Interface and Experience </title>
                         <para>Harmonizing self-sustaining and contained knowledge standards requires
-                a robust and tailored User Interface and User Experience (UI/UX) design. A strong
-                UI/UX interface meets the needs of the user, is intuitive to use, and provides an
-                environment for tackling complex terminological overlaps between various standards
-                which is needed for properly harmonized knowledge. Without a good user interface,
-                work to harmonize standards cannot be done. Good UI/UX design provides users a
-                visible interface to work with different coding standards. All users cannot be
-                expected to be proficient coders who can readily access and use the backend
-                software/coding language. UI/UX is all about the user, and users come from a variety
-                of backgrounds including laboratory technicians, clinicians, researchers, regulatory
-                personnels, and others. Good UI/UX is built off human centric design principles and
-                provides components that give the user the ability to create, edit, and retire
-                knowledge. Tinkar core is the harmonization which lives in the backend, but UI/UX
-                provides an interface that allows users to interact with the logic and harmonize
-                between different coding standards. The UI/UX is tailored to the different users and
-                their roles and their needs. UI/UX can also incorporate features such as multiple
-                languages and dialects, which allow for a user to have a tailored experience and can
-                be focused on a particular regional preference for descriptions and other text
-                information to emphasize different features which may prompt the desired response or
-                use from the user. </para>
+                a robust and tailored UI/UX design. A strong UI/UX interface meets the needs of the
+                user, is intuitive to use, and provides an environment for tackling complex
+                terminological overlaps between various standards which is needed for properly
+                harmonized knowledge. Without a good user interface, work to harmonize standards
+                cannot be done. Good UI/UX design provides users a visible interface to work with
+                different coding standards. All users cannot be expected to be proficient coders who
+                can readily access and use the backend software/coding language. UI/UX is all about
+                the user, and users come from a variety of backgrounds including laboratory
+                technicians, clinicians, researchers, regulatory personnels, and others. Good UI/UX
+                is built off human centric design principles and provides components that give the
+                user the ability to create, edit, and retire knowledge. Tinkar core is the
+                harmonization which lives in the backend, but UI/UX provides an interface that
+                allows users to interact with the logic and harmonize between different coding
+                standards. The UI/UX is tailored to the different users and their roles and their
+                needs. UI/UX can also incorporate features such as multiple languages and dialects,
+                which allow for a user to have a tailored experience and can be focused on a
+                particular regional preference for descriptions and other text information to
+                emphasize different features which may prompt the desired response or use from the
+                user. </para>
             <para><emphasis>Komet</emphasis>
             </para>
             <para>Komet serves as the knowledge management integrated development environment (IDE)
@@ -326,10 +324,10 @@
             <para>Komet’s ability to use a description logic classifier to detect equivalences and
                 errors between concepts is important when harmonizing knowledge standards. In
                 particular, the ELK Classifier, a description-logic classifier, is an ontology
-                reasoner that supports OWL 2EL profile and provides a quick reasoning engine for OWL
-                EL because current features and reasoning tasks are limited (although this is fine
-                for SNOMED CT®). This classifier reasons over Tinkar data and distinguishes if the
-                asserted facts on concepts (via semantics) are true. [13] </para>
+                reasoner that supports Web Ontology Language (OWL) 2EL profile and provides a quick
+                reasoning engine for OWL EL because current features and reasoning tasks are limited
+                (although this is fine for SNOMED CT®). This classifier reasons over Tinkar data and
+                distinguishes if the asserted facts on concepts (via semantics) are true. [13] </para>
         </section>
     </section>
     <section>
@@ -383,3 +381,4 @@
             https://github.com/liveontologies/elk-reasoner/wiki/OwlFeatures </para>
     </section>
 </chapter>
+

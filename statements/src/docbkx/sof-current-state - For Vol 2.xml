@@ -138,7 +138,7 @@
             <para>There are several national and international efforts to aggregate and expose
                 EHR/RWD for use by researchers and public health scientists. Such efforts include
                 the National Patient-Centered Clinical Research Network (PCORnet), Observational
-                Health Data Sciences and Informatics (OHDSI), National COVID Cohoert Collaborative
+                Health Data Sciences and Informatics (OHDSI), National COVID Cohort Collaborative
                 (N3C) and its potential spin offs. Common to each of these efforts is the extraction
                 of EHR data from participating entities, transforming these data to a common data
                 model, annotating/managing the data with standardized medical terminologies and

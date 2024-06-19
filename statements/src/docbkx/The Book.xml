@@ -9,19 +9,19 @@
     </info>
     <part>
         <title>Introduction</title>
-        <xi:include href="Book%20Introduction.xml"/>
+        <xi:include href="Book%20Content/Book%20Introduction.xml"/>
     </part>
     <part>
         <title>Background</title>
-        <xi:include href="Background.xml"/>
-        <xi:include href="sof-current-state.xml"></xi:include>
+        <xi:include href="Book%20Content/Book%20Background.xml"/>
+        <xi:include href="sof-current-state - For Vol 2.xml"></xi:include>
     </part>
     <part>
         <title>IKM Overview</title>
         <xi:include href="Integrated%20Knowledge%20Management.xml"/>
-        <xi:include href="1.2.2.xml"/>
+        <xi:include href="Book%20Content/Book%201.2.2.xml"/>
         <xi:include href="Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"></xi:include>
-        <xi:include href="Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3"/>
+        <xi:include href="Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3%20for%20Volume%203.xml"/>
     </part>
     <part>
         <title>Foundational Architecture</title>
@@ -50,7 +50,7 @@
     </part>
     <part>
         <title>Statement Model</title>
-        <chapter>
+        <chapter> 
             <title>Statement Model Principles</title>
             <xi:include href="statement-intro-begin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>   
             <xi:include href="statement-intro-patterns.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

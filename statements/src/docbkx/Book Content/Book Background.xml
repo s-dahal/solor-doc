@@ -5,29 +5,10 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>IKM Book Background</title>
     <section>
-        <title>Federal Drug Administration (FDA) Overview</title>
-        <para>The U.S. Food and Drug Administration (FDA) is responsible for protecting public
-            health by ensuring the safety of consumer products and is responsible for advancing
-            innovative medical products and technology that further promote public health. Medical
-            devices, including instruments and products used for treating or diagnosing diseases
-            such as diabetes, must be approved for use by the public. This process was brought to
-            the public eye during the coronavirus disease 2019 (COVID-19) pandemic with the use of
-            Emergency Use Authorizations (EUA) for COVID-19 test kits. FDA’s Center for Devices and
-            Radiological Health (CDRH) maintains a database of Premarket Notification [510(k)]
-            approved products. 510(k) is a premarket submission that manufacturers make to the FDA
-            to prove their device is safe and equivalent to an already approved product that is
-            legally marketed. Beyond 510(k) approvals is the Premarket Approval (PMA). This
-            application seeks FDA approval based on rigorous scientific evidence that the device is
-            safe and effective. Through these and other processes FDA ensures the public has access
-            to cutting edge and safe tools to manage health. </para>
-        <para>FDA CDRH is the primary funder of Systemic Harmonization and Interoperability
-            Enhancement for Laboratory Data (SHIELD). </para>
-    </section>
-    <section>
         <title>Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
             Overview</title>
         <para>SHIELD is a public-private collaboration that started in 2015 with a singular focus:
-            improving the interoperability and utility of in-vitro diagnostic (IVD) test data. To
+            improving the interoperability and utility of in vitro diagnostic (IVD) test data. To
             accomplish their mission of being able to “Describe the same test the same way anywhere
             in the Healthcare ecosystem”, SHIELD is working to develop a solution that focuses
             on:</para>
@@ -44,8 +25,8 @@
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Systems Thinking</emphasis> - Re-engineering the
-                    laboratory data transfer process in a manner that prioritizes safety, integrity,
-                    and graceful evolution over time above all else.</para>
+                    laboratory data transfer or exchange process in a manner that prioritizes
+                    safety, integrity, and graceful evolution over time above all else.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Knowledge Management</emphasis> - Promoting an
@@ -56,20 +37,7 @@
         </itemizedlist>
     </section>
     <section>
-        <title>FDA SHIELD Partners Overview</title>
-        <para>FDA SHIELD has partnered with and awarded contracts to a variety of organizations to
-            support the development of a solution that can meet SHIELD goals and the current issues
-            with data interoperability. </para><figure xml:id="TeamingPartners">
-                <title>Teaming Partners</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/Teaming%20Partners.png"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-            </section>
-    <section>
-        <title>Real World Evidence and Standards Overview</title>
+        <title>Real World Evidence (RWE) and Standards Overview</title>
         <para>Real world evidence (RWE) using RWD collected as part of routine clinical care, has
             been heralded as an answer to many of the woes of our medical system. A vision has been
             made popular that suggests a wealth of untapped data – electronic health records (EHR),
@@ -107,13 +75,13 @@
             observational data for safe patient care, comparative effectiveness research, and
             analysis including recording biases, workflow differences, and issues with variations in
             data collection, such as invalid, inconsistent, and missing data. [2] </para>
-        <para>The FDA has a need for aggregated RWE and reliable analytics and would benefit from
-            implementable methodologies that address interoperability and data aggregation gaps to
-            help establish a health data ecosystem capable for widespread use in FDA regulatory
-            efforts, public health surveillance, research, and care delivery. To achieve safe and
-            effective information retrieval and reproducible search and query practices across
-            various settings, the following constructs are needed to successfully build, maintain,
-            and analyze data/resources across key biomedical concepts of interest. </para>
+        <para>Aggregated RWE and reliable analytics would benefit from implementable methodologies
+            that address interoperability and data aggregation gaps to help establish a health data
+            ecosystem capable for widespread use in regulatory efforts, public health surveillance,
+            research, and care delivery. To achieve safe and effective information retrieval and
+            reproducible search and query practices across various settings, the following
+            constructs are needed to successfully build, maintain, and analyze data/resources across
+            key biomedical concepts of interest. </para>
         <section>
             <title>Data Interoperability Tooling Overview</title>
             <para>A generalized definition of interoperable health data that supports reliable RWE
@@ -213,27 +181,26 @@
             <para>Another pragmatic methodology would be to engage vendors and incentivize them to
                 implement an open, common data model and produce shareable output in interoperable,
                 reproducible, and understandable formats that could then be ingested by other
-                systems. Major U.S. EHR vendors including Epic and Cerner which represent > 80% of
-                the U.S. healthcare EHR implementations represent a possible avenue to normalizing
-                and aggregating EHR-based data in the U.S. on a broad scale. Individually, each
-                vendor has independently attempted to create such clinical data resources and
-                product offerings for their user communities. These efforts entail attempts to
-                align, normalize and aggregate the EHR data held by each individual client into a
-                large, de-identified data enclave for purposes of data analytics, quality
-                improvement and research. Unfortunately, these independent efforts are proprietary
-                and do not extend beyond the vendor user community. Further, the data normalization
-                and representation process remains a "black box" and cannot be independently
-                verified for semantic correctness, data and information loss or gains, or
-                appropriate application of metadata standards. In fact, these vendor-centric face
-                the same issues on a smaller scale as the FDA SHIELD effort. Issues with
-                vendor-centric data alignment and reuse are known. [4-5] Despite these weaknesses,
-                an opportunity exists to collaborate with EHR vendors to normalize and apply
-                metadata standards safely and reliably to the EHR data created by their clients. To
-                capitalize on this opportunity, vendors must be allowed to create unique value in
-                their data offerings to the clientele but also be required to expose these data to
-                the broader community such that data collected by numbers of vendors can be safely
-                and reliably aggregated for research, public health, clinical quality improvement
-                and regulatory uses as described by SHIELD. </para>
+                systems. Major U.S. EHR vendors, which represent > 80% of the U.S. healthcare EHR
+                implementations, represent a possible avenue to normalizing and aggregating
+                EHR-based data in the U.S. on a broad scale. Individually, each vendor has
+                independently attempted to create such clinical data resources and product offerings
+                for their user communities. These efforts entail attempts to align, normalize and
+                aggregate the EHR data held by each individual client into a large, de-identified
+                data enclave for purposes of data analytics, quality improvement and research.
+                Unfortunately, these independent efforts are proprietary and do not extend beyond
+                the vendor-user community. Further, the data normalization and representation
+                process remains a "black box" and cannot be independently verified for semantic
+                correctness, data and information loss or gains, or appropriate application of
+                metadata standards. In fact, these vendor-centric efforts face the same issues with
+                vendor-centric data alignment and reuse on a smaller scale. [4-5] Despite these
+                weaknesses, an opportunity exists to collaborate with EHR vendors to normalize and
+                apply metadata standards safely and reliably to the EHR data created by their
+                clients. To capitalize on this opportunity, vendors must be allowed to create unique
+                value in their data offerings to the clientele but also be required to expose these
+                data to the broader community such that data collected by numbers of vendors can be
+                safely and reliably aggregated for research, public health, clinical quality
+                improvement and regulatory uses as described by SHIELD. </para>
         </section>
         <section>
             <title>Metadata overview</title>
@@ -253,7 +220,7 @@
             <para>Ideally, to support RWE analytics and aggregation, enterprise terminology requires
                 an integrated terminology using a common representation (metadata) and management. A
                 common terminology model, such as HL7 Standardized Terminology Knowledge Base (also
-                known as TermINology Knowledge Architecture or TINKAR) would allow analytics on top
+                known as TermINology Knowledge Architecture [Tinkar]) would allow analytics on top
                 of aggregated RWE data sets the following [7]: </para>
             <para>
                 <itemizedlist>
@@ -300,14 +267,13 @@
                 These environments extract data from various data sources, ideally into an
                 integrated knowledge base, housed in a central ecosystem – thereby reducing data
                 silos, enhancing security and governance, and eliminating system redundancies. For
-                data analytics conducted using RWE, analytics environments used by FDA and others
-                will be dependent on a variety of knowledge bases and datasets that may have some
-                common fields but also differing fields. A vast variety of biomedical and
-                administrative knowledge present the basis for RWE analytics and knowledge
-                management of these disparate datasets is a major element of consideration to
-                facilitate RWE analytics. Knowledge management includes the creation, discovery, and
-                application of knowledge assets to facilitate sharing and re-use across the
-                ecosystem. </para>
+                data analytics conducted using RWE, analytics environments will be dependent on a
+                variety of knowledge bases and datasets that may have some common fields but also
+                differing fields. A vast variety of biomedical and administrative knowledge present
+                the basis for RWE analytics and knowledge management of these disparate datasets is
+                a major element of consideration to facilitate RWE analytics. Knowledge management
+                includes the creation, discovery, and application of knowledge assets to facilitate
+                sharing and re-use across the ecosystem. </para>
             <para>The ability to use interoperable syntax and semantics between data sources is a
                 critical requirement to support effective knowledge management and reliable
                 analytics of disparate RWE datasets. Use of industry standards for syntax and
@@ -376,9 +342,9 @@
                     meaning.</para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Meaning Interoperability</emphasis> – Meaning
-                    interoperability works to ensure that the receiving system interprets data in an
-                    identical way as the original system.</para>
+                <para><emphasis role="bold">Meaning Interoperability</emphasis> – Meaning, or
+                    semantic, interoperability works to ensure that the receiving system interprets
+                    data in an identical way as the original system.</para>
             </listitem>
         </itemizedlist>
         <para>Working to ensure that transmitted data maintains both structure and meaning is a
@@ -413,11 +379,10 @@
             chunks of related information into smaller parts. [8]</para>
         <para>Today, clinical statements are often represented in unpredictable and denormalized
             forms, which makes reliable and safe decision support challenging and reduces the
-            quality of other types of data processing. Analysis Normal Form (ANF) is an approach to
-            clinical statements that ensures the statement representation is reproducible and
-            scalable, with the adherence to principles of being simple, reproducible, and use case
-            driven, with a clean separation between statement concerns and terminology concerns.
-            [8]</para>
+            quality of other types of data processing. ANF is an approach to clinical statements
+            that ensures the statement representation is reproducible and scalable, with the
+            adherence to principles of being simple, reproducible, and use case driven, with a clean
+            separation between statement concerns and terminology concerns. [8]</para>
         <para>In linguistics, words have their very own definitions, however, if it’s not paired
             with proper sentence structure, the words convey very little meaning and are open to
             interpretation. When this framework is applied to the healthcare system, clinical data,
@@ -427,7 +392,7 @@
                 <title>Terminology and Structure Examples</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/Terminology%20and%20Structure.png"/>
+                        <imagedata fileref="images/Terminology%20and%20Structure.svg" scale="35" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -491,7 +456,7 @@
             <section>
                 <title>LOINC® Overview</title>
                 <para>Approximately 20 U.S. federal agencies have adopted LOINC® as a designated
-                    standard and mandated LOINC® for use in various programs [13], such as:</para>
+                    standard and mandated LOINC® for use in various programs [14], such as:</para>
                 <para>
                     <itemizedlist>
                         <listitem>
@@ -499,16 +464,6 @@
                                 Interoperability requires LOINC® in messages reporting laboratory
                                 test results, exchanging medical summaries, and sending data to
                                 cancer registries and public health agencies.</para>
-                        </listitem>
-                    </itemizedlist>
-                </para>
-                <para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>The U.S. FDA requires LOINC® for lab test data in regulated
-                                studies and have articulated a broad vision of using real-world
-                                evidence in post market surveillance that depends on standardized
-                                data.</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -528,9 +483,9 @@
                     <itemizedlist>
                         <listitem>
                             <para>Federal, State, and Local Public Health Reporting Requirements use
-                                messaging standards such as Health Level Seven (HL7). Inside these
-                                messages, laboratories and clinical systems use LOINC® codes to
-                                identify which test is being reported.</para>
+                                messaging standards such as HL7. Inside these messages, laboratories
+                                and clinical systems use LOINC® codes to identify which test is
+                                being reported.</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -552,11 +507,11 @@
                 <para>
                     <itemizedlist>
                         <listitem>
-                            <para>Common Data models for Large-Scale Research Networks the National
-                                Patient-Centered Clinical Research Network (PCORnet), Observational
-                                Health Data Sciences and Informatics (OHDSI), the Observational
-                                Health Data Sciences and Informatics research group, and the FDA's
-                                Mini-Sentinel, all use LOINC® in their common data models.</para>
+                            <para>Common Data models for Large-Scale Research Networks like the
+                                National Patient-Centered Clinical Research Network (PCORnet),
+                                Observational Health Data Sciences and Informatics (OHDSI), and the
+                                Observational Health Data Sciences and Informatics research group
+                                all use LOINC® in their common data models.</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -662,7 +617,7 @@
                             <para>While RxNorm has ‘defined ingredients’ [13], historically it has
                                 lacked the computational definition where concepts are defined by
                                 relationships, therefore determining equivalence and allowing
-                                inferencing. However, recent efforts by Bona et al.[15] have
+                                inferencing. However, recent efforts by Bona et al. [15] have
                                 successfully created an OWL file to implement and define the classes
                                 necessary to model RxNorm and NDC concepts.</para>
                         </listitem>
@@ -786,8 +741,8 @@
             <section>
                 <title>HRO Overview</title>
                 <para>A HRO is an organization that avoids accidents and hazards, even in complex
-                    environments where accidents are common. HROs are based on five key
-                    principles:</para>
+                    environments where accidents are common. HROs are based on five key principles
+                    [16]:</para>
                 <orderedlist>
                     <listitem>
                         <para>Preoccupation with Failure</para>
@@ -871,7 +826,7 @@
                         Challenges</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Common%20Knowledge%20Management%20Construct%20Challenges.png"/>
+                            <imagedata fileref="images/Common%20Knowledge%20Management%20Construct%20Challenges.svg" scale="50" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -883,7 +838,7 @@
                 improving data interoperability, reliability, and quality in the health care system.
                 Our work will build upon the findings of these subject matter experts and will
                 incorporate lessons learned to address known issues with current state knowledge
-                management constructs.</para>
+                management constructs. [17-18]</para>
             <section>
                 <title>Increasing the Value of Health Data by Engineering Safety, Quality, and High
                     Reliability into the Data Life Cycle Overview</title>
@@ -901,14 +856,14 @@
                     learned that will need to be addressed to continue improvements to health care
                     data, including the need to embed data and informatics SMEs into EHR
                     modernization (EHRM) efforts and to expand HRO principles to Standards
-                    organizations and health care system data processes. [16]</para>
+                    organizations and health care system data processes. [19]</para>
             </section>
             <section>
                 <title>A Risk-Based Methodology for the Quality Assurance of Healthcare Knowledge
                     Artifacts Overview</title>
                 <para>Greg Rehwoldt outlines a real-world use case of developing and applying a
                     risk-based methodology to improve the quality of current state knowledge
-                    artifacts in this 2018 dissertation. [17] This paper highlights a variety of
+                    artifacts in this 2018 dissertation. [20] This paper highlights a variety of
                     issues with current state knowledge management, particularly the lack of
                     effective quality assurance for existing knowledge artifacts. Current approaches
                     to quality tend to focus on system specific events or stakeholder mistakes, but
@@ -919,7 +874,7 @@
                     impact quality assurance. It is critical that data validation and assurance
                     methods are implemented optimally to reduce the risk of hazards or patient
                     safety issues while accounting for organizational constraints and pressures.
-                    [17]</para>
+                    [20]</para>
             </section>
             <section>
                 <title>Capability Maturity Model Integration (CMMI) Background</title>
@@ -933,7 +888,7 @@
                 <para>The CMMI-DEV examines 22 process areas and ranks an organization’s maturity
                     for each area and that area’s process capabilities. By examining each area, this
                     model identifies areas where improvements would provide the highest value and
-                    allows organizations to tailor their focus and efforts. [18]</para>
+                    allows organizations to tailor their focus and efforts. [21]</para>
             </section>
             <section>
                 <title>Our National Rush to the EHR - An Analysis of Current Clinical Information
@@ -980,9 +935,42 @@
                     <listitem>
                         <para>Data issues that affect multiple records can occur as automated data
                             flows apply terminology maps based on the received map, rather than the
-                            original source data. [19]</para>
+                            original source data. [22]</para>
                     </listitem>
                 </orderedlist>
+            </section>
+            <section>
+                <title>Analysis of Laboratory Data Transmission Between Two Healthcare Institutions
+                    Using a Widely Used Point-to-Point Health Information Exchange Platform: a Case
+                    Report</title>
+                <para>This report examined the data transmission of nine laboratory tests to
+                    determine the accuracy and completeness of transferred information. The data was
+                    analyzed at various stages of transmission, including the sending and receiving
+                    EHR, the HL7 V2 message, and LIS and found five key patient safety issues:</para>
+                    <orderedlist>
+                            <listitem>
+                                <para>The specimen source was consistently missing</para>
+                            </listitem>
+                    <listitem>
+                        <para>The analytical technique or instrument platform was not
+                            reported</para>
+                    </listitem>
+                    <listitem>
+                        <para>Units and reference ranges were inconsistent</para>
+                    </listitem>
+                    <listitem>
+                        <para>The LOINC codes used varied for the same tests</para>
+                    </listitem>
+                    <listitem>
+                        <para>Using different versions of HL7 led to unnecessary complexity and
+                            exacerbated data accuracy issues</para>
+                    </listitem>
+                        </orderedlist>
+                <para>The report goes on to discuss how the use of standardized messaging, through a
+                    health information exchange, along with industry best practices would improve
+                    the accuracy and completeness of data transmission. However, the pertinent and
+                    associated EHRs would need to be enhanced to support the necessary data elements
+                    and improvements. [23]</para>
             </section>
         </section>
         <section>
@@ -1005,8 +993,8 @@
         <section>
             <title>Safety Systems Use Case</title>
             <para>The Synensys document, "<link
-                xlink:href="https://synensysglobal.com/wp-content/uploads/2023/12/Executive-Summary_System-Safety-within-Laboratory-Data-Exchanges-Report.pdf"
-                >System Safety within Laboratory Data Exchanges</link>", analyzes the complex
+                    xlink:href="https://synensysglobal.com/wp-content/uploads/2023/12/Executive-Summary_System-Safety-within-Laboratory-Data-Exchanges-Report.pdf"
+                    >System Safety within Laboratory Data Exchanges</link>", analyzes the complex
                 challenges in laboratory data exchanges within healthcare, emphasizing the
                 importance of accurate communication, standardized procedures, and contextual
                 information in diagnostics. Various loss scenarios and potential risks are detailed,
@@ -1015,7 +1003,7 @@
                 application of system safety principles in healthcare. Its focus on engineering
                 safety, quality, and reliability into laboratory data exchanges exemplifies the
                 broader theme of implementing systems thinking and high reliability practices,
-                providing a real-world perspective on these critical concepts. [20]</para>
+                providing a real-world perspective on these critical concepts. [24]</para>
         </section>
     </section>
     <section>
@@ -1113,6 +1101,24 @@
                             >https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8</link></para>
                 </listitem>
                 <listitem>
+                    <para>Weick KE, Sutcliffe KM. Managing the unexpected: Assuring high performance
+                        in an age of complexity. San Francisco, CA, US: Jossey-Bass; 2001. xvi, 200
+                        p. (Managing the unexpected: Assuring high performance in an age of
+                        complexity.). </para>
+                </listitem>
+                <listitem>
+                    <para>Leveson N, Samost A, Dekker S, Finkelstein S, Raman J. A Systems Approach
+                        to Analyzing and Preventing Hospital Adverse Events. J Patient Saf. 2020
+                        Jun;16(2):162–7. </para>
+                </listitem>
+                <listitem>
+                    <para>Cantu J, Tolk J, Fritts S, Gharehyakheh A. High Reliability Organization
+                        (HRO) systematic literature review: Discovery of culture as a foundational
+                        hallmark. Contingencies &amp; Crisis Mgmt [Internet]. 2020 [cited 2024 May
+                        14];28(4):399–410. Available from:
+                        https://onlinelibrary.wiley.com/doi/10.1111/1468-5973.12293 </para>
+                </listitem>
+                <listitem>
                     <para>Campbell KE, Montella D, Brown SH, Powell SM, Campbell SW, Cholan RA, et
                         al. Increasing the Value of Health Data by Engineering Safety, Quality, and
                         High Reliability into the Data Lifecycle 2022. </para>
@@ -1134,6 +1140,15 @@
                         Practices 2013.</para>
                 </listitem>
                 <listitem>
+                    <para>Luu HS, Campbell WS, Cholan RA, Edgerton ME, Englund A, Keller A, et al.
+                        Analysis of laboratory data transmission between two healthcare institutions
+                        using a widely used point-to-point health information exchange platform: a
+                        case report. JAMIA Open [Internet]. 2024 Apr 8 [cited 2024 May
+                        14];7(2):ooae032. Available from:
+                        https://academic.oup.com/jamiaopen/article/doi/10.1093/jamiaopen/ooae032/7657767
+                    </para>
+                </listitem>
+                <listitem>
                     <para>Campbell SW, Case JT, Cholan R, England A, Geary C, Green A, et al. FDA
                         System Safety within Laboratory Data Exchanges End of Base Year Report. </para>
                 </listitem>
@@ -1141,4 +1156,3 @@
         </para>
     </section>
 </chapter>
-

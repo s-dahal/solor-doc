@@ -680,7 +680,7 @@
                     <itemizedlist>
                         <listitem>
                             <para>Functional Tests - At least one functional test should be
-                                perfromed, but likely more than one will be needed.</para>
+                                performed, but likely more than one will be needed.</para>
                         </listitem>
                         <listitem>
                             <para>Positive (also known as "Happy Path") Testing - Positive Testing
@@ -860,7 +860,7 @@
                         the large number of possible interactions.</para>
                     <para>Designing the UI tests around the functional tests makes sense. For
                         example, given an input form, a UI test would ensure that the visual
-                        representation is consistent across devices, is accessible and interactable,
+                        representation is consistent across devices, is accessible and interactive,
                         and is consistent across code changes.</para>
                     <para>UI Tests will catch 'runtime' bugs that unit and functional tests won't.
                         For example, if the submit button for an input form is rendered but not
@@ -1184,7 +1184,7 @@
             allow for some concurrency in use. This, however, needs to be tested to validate that no
             corruption of data occurs, and that expected load can be maintained. Performance testing
             will need to start with web access first, followed by direct access from users.
-            Performance service level agreemnts (SLAs) will need to be further flushed out and
+            Performance service level agreements (SLAs) will need to be further flushed out and
             defined, and automated performance tests will need to be created to execute at each
             sprint end, prior to a release. As currently no part of this exists, this will be
             something we focus on in the architecture and design discussions.</para>

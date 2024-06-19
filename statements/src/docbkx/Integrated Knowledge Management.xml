@@ -8,7 +8,7 @@
         <title>Motivation for IKM</title>
         <para>Knowledge management (KM) is an important process organizations use to identify,
             organize, and disseminate information and is providing greater value and insights into
-            data with the emergence of technologies and advanced analytics, such as artifical
+            data with the emergence of technologies and advanced analytics, such as artificial
             intelligence (AI) and machine learning (ML). Individuals and organizations alike are
             continuously generating data which may sit in siloed databases but, with the appropriate
             tools, can be aggregated across platforms, analyzed, and utilized. However, the flow of
@@ -298,7 +298,7 @@
         <para>This work aims to demonstrate how Tinkar architecture can optimize and implement IKM
             capabilities and IKM principles through the development of a reference implementation
             through collaboration with federal agencies and the Systemic Harmonization and
-            Interoperability Enhancement for Laboratory Data (SHIELD) collaboratice community.
+            Interoperability Enhancement for Laboratory Data (SHIELD) collaborative community.
             SHIELD aims to support increased patient safety through improved interoperability,
             transmission, and quality of laboratory data between and within healthcare systems.
             [6]</para>
@@ -330,10 +330,11 @@
                         well-known and widely available source of truth.</para>
                 </listitem>
                 <listitem>
-                    <para>The FDA will need to develop an authorization process that requires new
-                        and existing terminology standard organizations, healthcare systems, product
-                        developers, and more to comply with pertinent standards prior to
-                        incorporation into the IKM platform.</para>
+                    <para>The Food and Drug Administration (FDA) will need to develop an
+                        authorization process that requires new and existing terminology standard
+                        organizations, healthcare systems, product developers, and more to comply
+                        with pertinent standards prior to incorporation into the IKM
+                        platform.</para>
                 </listitem>
                 <listitem>
                     <para>The Centers for Disease Control and Prevention (CDC) must provide basic
