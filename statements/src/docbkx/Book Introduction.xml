@@ -4,6 +4,15 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Introduction to the Integrated Knowledge Management (IKM) Book</title>
     <section>
+        <title>Preface</title>
+        <para>“The discipline of bringing all knowledge resources into a unified paradigm where the
+            resources all share a common underlying representation that integrates version control,
+            configuration management, modularity, concept-oriented representation, and standardized
+            viewing, collaborative editing, and extension development capabilities within a shared
+            knowledge-management environment.”</para>
+        <para>Keith E. Campbell, MD, PhD</para>
+    </section>
+    <section>
         <title>IKM Book Motivation</title>
         <para>In today’s healthcare ecosystem, providers continually rely on data from an increasing
             number of sources to make informed clinical decisions. While this data is a critical
