@@ -108,9 +108,10 @@
                 following evolutionary design criteria: </para>
             <itemizedlist>
                 <listitem>
-                    <para>Understandable: The data model for normalizing disparate health data can
-                        be processed by health IT systems and understood by most healthcare
-                        providers without reference to private or inaccessible information.</para>
+                    <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T153607-0500" comment="this is covered in BookIntroduction.xml"?>Understandable:
+                        The data model for normalizing disparate health data can be processed by
+                        health IT systems and understood by most healthcare providers without
+                        reference to private or inaccessible information.</para>
                 </listitem>
                 <listitem>
                     <para>Reproducible: Multiple users or systems apply the model and normal form to
@@ -120,7 +121,7 @@
                     <para>Useful: The model is fit-for-purpose—it has practical value for data
                         analysis, in support of clinical decision support, research, and population
                         health that requires information aggregated across health IT systems.</para>
-                </listitem>
+                </listitem><?oxy_comment_end?>
             </itemizedlist>
             <para>Normalization of disparate health data and knowledge is defined as "the ability to
                 identify every representational format that confers the same meaning as being
@@ -336,15 +337,16 @@
             interoperability. </para>
         <itemizedlist>
             <listitem>
-                <para><emphasis role="bold">Structural Interoperability</emphasis> – While structure
-                    focuses on maintaining how systems format data, it cannot ensure that the
-                    receiving system will understand the structured data with the original
-                    meaning.</para>
+                <para><emphasis role="bold"
+                        ><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T154038-0500" comment="already included in bookintroduction.xml (which also has the diagrams/images. it&apos;s probably fine to keep here because it&apos;s just reinforcing the info"?>Structural
+                        Interoperability</emphasis> – While structure focuses on maintaining how
+                    systems format data, it cannot ensure that the receiving system will understand
+                    the structured data with the original meaning.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Meaning Interoperability</emphasis> – Meaning, or
                     semantic, interoperability works to ensure that the receiving system interprets
-                    data in an identical way as the original system.</para>
+                    data in an identical w<?oxy_comment_end?>ay as the original system.</para>
             </listitem>
         </itemizedlist>
         <para>Working to ensure that transmitted data maintains both structure and meaning is a
@@ -566,9 +568,10 @@
                                 SHIELD by building on the SNOMED CT® foundation. Nonetheless, SNOMED
                                 CT's® commitment to develop and expand their use of description
                                 logics formalism as called out by the System of Logical
-                                Representation (SOLOR) as well as their alignment with the
-                                Desiderata as described by Cimino, et at, is a step in the right
-                                direction. [13]</para>
+                                Representation
+                                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T154501-0500" comment="first instance of solor"?>SOLOR<?oxy_comment_end?>)
+                                as well as their alignment with the Desiderata as described by
+                                Cimino, et at, is a step in the right direction. [13]</para>
                         </listitem>
                     </itemizedlist></para>
                 <para>Examples of Scholarly and Practical Efforts to Assess LOINC® from LOINC®
@@ -626,15 +629,18 @@
         </section>
     </section>
     <section>
-        <title>Modularity and Versioning Overview</title>
+        <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T154720-0500" comment="I think we should remove this from the background. It does not provide a high level overveiw like the other sections in the background and is too technical? Perhaps we move this to architecture section?"?>Modularity
+            and Versioning Overview<?oxy_comment_end?></title>
         <para>When dealing with the complexities of the various architectural layers of the
             informatics architectural separation of concerns, one of the most important things to
             note is that any one of the architectural layers will be undergoing modifications at any
             given point in time, as various Standards Development Organizations go through each of
             their various drafting, balloting, and approval lifecycles. Therefore, it is important
-            to establish a foundation for Solor as a versioning and modularity architecture that
-            allows changes and subchanges to be referenced uniquely so that all parties can be on
-            the same page as to a particular version.</para>
+            to establish a foundation for
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T154531-0500" comment="mentions solor but no sig background or overview of solor previously provided"?>Solor<?oxy_comment_end?>
+            as a versioning and modularity architecture that allows changes and subchanges to be
+            referenced uniquely so that all parties can be on the same page as to a particular
+            version.</para>
         <para>For example, the following diagram shows how each module could be given a unique
             version number and contain all layers of the architectural stack. In the instance that a
             particular versioned module needs to be extended, an extension module could be added to
@@ -832,7 +838,8 @@
                 </figure>
                     </section>
         <section>
-            <title>Related Safety Systems Thinking and HRO Work</title>
+            <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T154900-0500" comment="move to later chapter? too much detail for backround chapter"?>Related
+                Safety Systems Thinking and HRO Work<?oxy_comment_end?></title>
             <para>Subject matter experts and other industry leaders have demonstrated use cases for
                 the feasibility and applicability of a Systems Safety and HRO-based approach to
                 improving data interoperability, reliability, and quality in the health care system.
@@ -992,7 +999,9 @@
         </section>
         <section>
             <title>Safety Systems Use Case</title>
-            <para>The Synensys document, "<link
+            <para>The
+                <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T154754-0500" comment="remove synensys name?"?>Synensys<?oxy_comment_end?>
+                document, "<link
                     xlink:href="https://synensysglobal.com/wp-content/uploads/2023/12/Executive-Summary_System-Safety-within-Laboratory-Data-Exchanges-Report.pdf"
                     >System Safety within Laboratory Data Exchanges</link>", analyzes the complex
                 challenges in laboratory data exchanges within healthcare, emphasizing the
