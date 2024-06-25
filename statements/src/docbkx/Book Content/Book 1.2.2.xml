@@ -46,14 +46,14 @@
                     enterprise that must undergo advancements to support optimized knowledge
                     standard harmonization, improved patient safety and outcomes, and enhanced data
                     quality. [1] While data management covers a wide range of processes and
-                    functions, our work focuses on three key areas: </para>
+                    functions, the work focuses on three key areas: </para>
                 <orderedlist>
                     <listitem>
                         <para><emphasis role="bold">Ease of Access</emphasis> – While an increasing
                             number of healthcare organizations rely on IT systems to store, manage,
                             and access data collected from a variety of sources, the ability to
                             identify, access, and then utilize that data in an impactful and
-                            meaningful way is an ongoing challenge. Our work aims to improve both
+                            meaningful way is an ongoing challenge. The work aims to improve both
                             author’s and user’s ability to efficiently capture data from across the
                             healthcare ecosystem and to effectively analyze that data for actionable
                             decision making. </para>
@@ -66,10 +66,9 @@
                             standards exist, the formatting and representation of clinical data
                             across standards can vary significantly, leading to issues with data
                             interoperability and suboptimal concept representation between standards
-                            and systems. Using a standardized and repeatable process, our team will
-                            work to ensure the common model can integrate and represent data from a
-                            variety of sources, including well established standards and newly
-                            emerging systems. </para>
+                            and systems. Using a standardized and repeatable process to ensure the
+                            common model can integrate and represent data from a variety of sources,
+                            including well established standards and newly emerging systems. </para>
                     </listitem>
                     <listitem>
                         <para><emphasis role="bold">Data Integrity</emphasis> – Patient care and
@@ -77,7 +76,7 @@
                             healthcare data. Currently, as data is transferred within and between
                             healthcare systems, including EHRs, LISs, and pharmaceutical systems, it
                             can often lose meaning and pertinent information regarding relationships
-                            and associated concepts. Our work will develop a common model that will
+                            and associated concepts. The work will develop a common model that will
                             use a standardized process to ensure data integrated from disparate data
                             sources maintains meaning and all pertinent information throughout data
                             transmission, storage, and use. Tools such as universally unique
@@ -119,11 +118,11 @@
                     identical seed values or concepts will be labeled with the same UUID, supporting
                     identification of semantically equivalent concepts within and between
                     terminology standards and optimized access to data. Additionally, by labeling
-                    each concept, semantic, and pattern within Tinkar with a UUID, our team is able
-                    to integrate a variety of terminology standards while avoiding duplicative or
+                    each concept, semantic, and pattern within Tinkar with a UUID, the ability to
+                    integrate a variety of terminology standards while avoiding duplicative or
                     redundant concepts, preventing accidental and inappropriate labeling of a
                     concept or component, and harmonizing internal representation of knowledge
-                    standards. [4] </para>
+                    standards is possible. [4] </para>
             </section>
         </section>
         <section>
@@ -197,17 +196,17 @@
                 will require an extensive approach to dependency management, the process and
                 approach to managing dependencies between people, process, and systems. With Tinkar,
                 outputs to one system can often originate from a wide range of terminology standards
-                or systems, which leads to multiple dependencies. It is not only important for our
-                team to identify dependencies, but we must also categorize them to understand the
-                direction, frequency, and type of dependency and to optimally prioritize and
-                mitigate potential issues caused by these relationships. For example, Lab
-                Interoperability Data Repository (LIDR) has a dependency on both SNOMED CT® and
-                LOINC® and when SNOMED CT® or LOINC® are updated, validation must be performed in a
-                comprehensive manner to determine if LIDR is correctly using the current
-                interpretation of said dependent standards (SNOMED CT® and LOINC®). As we continue
-                to work towards IKM, it is critical that we select and implement technologies that
-                will support the management of these dependencies to reduce patient safety issues
-                and unnecessary complications. [7] </para>
+                or systems, which leads to multiple dependencies. It is not only important to
+                identify dependencies, but also to categorize them to understand the direction,
+                frequency, and type of dependency and to optimally prioritize and mitigate potential
+                issues caused by these relationships. For example, Lab Interoperability Data
+                Repository (LIDR) has a dependency on both SNOMED CT® and LOINC® and when SNOMED CT®
+                or LOINC® are updated, validation must be performed in a comprehensive manner to
+                determine if LIDR is correctly using the current interpretation of said dependent
+                standards (SNOMED CT® and LOINC®). As we continue to work towards IKM, it is
+                critical that we select and implement technologies that will support the management
+                of these dependencies to reduce patient safety issues and unnecessary complications.
+                [7] </para>
             <para><emphasis>Maven</emphasis>
             </para>
             <para>Maven is a project management tool with dependency management features for
@@ -340,11 +339,11 @@
             systems while maintaining meaning, associated concepts, and other pertinent information.
             This paper outlines various technologies and tools that are needed to support critical
             aspects of IKM. </para>
-        <para>As our team continues to work towards the harmonization of terminology standards
-            through Tinkar and IKM, it is critical that we continue to refine and incorporate the
-            various components of data, change, and dependency management and quality assurance
-            mentioned above. The components outlined in this paper are not exhaustive and will
-            evolve as our team continues with our work and as new information emerges. </para>
+        <para>As the work continues towards the harmonization of terminology standards through
+            Tinkar and IKM, it is critical that it continues to refine and incorporate the various
+            components of data, change, and dependency management and quality assurance mentioned
+            above. The components outlined in this book are not exhaustive and will evolve as the
+            work continues and as new information emerges. </para>
     </section>
     <section>
         <title>References</title>
