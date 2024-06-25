@@ -21,7 +21,7 @@
             that main versioned module without the need to go to a completely new full module
             version. This arrangement accounts for the constant change in the healthcare
             interoperability space while still allowing two organizations to baseline on the same
-            version for testing or exchange purposes (i.e. Module M13, Extension E25)</para>
+            version for testing or exchange purposes (i.e. Module M13, Extension E25).</para>
         <para>In software engineering, modularity refers to the extent to which software may be
             divided into smaller modules. Modularity emphasizes separating the functionality of a
             program into independent, interchangeable modules, such that each contains everything
