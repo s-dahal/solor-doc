@@ -269,7 +269,7 @@
                 
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/New%20PASTF.svg" scale="10" align="center"/>
+                            <imagedata fileref="../images/New%20PASTF.svg" scale="10" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -579,7 +579,7 @@
                         <title>Structural Interoperability</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Structural%20Interoperability2.svg" scale="30" align="center"/>
+                                <imagedata fileref="../images/Structural%20Interoperability2.svg" scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -598,7 +598,7 @@
                                 <title>Meaning Interoperability</title>
                 <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Meaning%20Interoperability%202.svg" scale="30" align="center"/>
+                            <imagedata fileref="../images/Meaning%20Interoperability%202.svg" scale="30" align="center"/>
                         </imageobject>
                     </mediaobject> 
                 </figure>
@@ -662,7 +662,7 @@
                     <title>Erroneous LOINC® Mapping</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Erroneous%20Loinc%20Mapping.svg" scale="55" align="center"/>
+                            <imagedata fileref="../images/Erroneous%20Loinc%20Mapping.svg" scale="55" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>

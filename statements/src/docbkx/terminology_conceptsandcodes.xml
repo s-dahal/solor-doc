@@ -258,7 +258,8 @@
             Unique Identifier (UUID).</para>
     </section>
     <section>
-        <title>Interoperability by Mapping</title>
+        <title>Inte<?oxy_comment_start author="tocrow" timestamp="20240624T173028-0400" comment="I think this is covered in other sections"?>roperability
+            by Mappi<?oxy_comment_end?>ng</title>
         <para>Today's health care terminology standards encompass methods, terminologies, and
             specifications for the exchange, storage, and retrieval of information associated with
             health care systems. These standards contain terminologies and concepts that are used in

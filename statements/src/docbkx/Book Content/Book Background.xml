@@ -392,7 +392,7 @@
                 <title>Terminology and Structure Examples</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/Terminology%20and%20Structure.svg" scale="35" align="center"/>
+                        <imagedata fileref="../images/Terminology%20and%20Structure.svg" scale="35" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -663,7 +663,7 @@
                 <title>Modules and Extensions</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/Versioning%20and%20Modules.svg" scale="70" align="center"/>
+                        <imagedata fileref="../images/Versioning%20and%20Modules.svg" scale="70" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -826,7 +826,7 @@
                         Challenges</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Common%20Knowledge%20Management%20Construct%20Challenges.svg" scale="50" align="center"/>
+                            <imagedata fileref="../images/Common%20Knowledge%20Management%20Construct%20Challenges.svg" scale="50" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
