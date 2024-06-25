@@ -4,6 +4,15 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Introduction to the Integrated Knowledge Management (IKM) Book</title>
     <section>
+        <title>Preface</title>
+        <para>“The discipline of bringing all knowledge resources into a unified paradigm where the
+            resources all share a common underlying representation that integrates version control,
+            configuration management, modularity, concept-oriented representation, and standardized
+            viewing, collaborative editing, and extension development capabilities within a shared
+            knowledge-management environment.”</para>
+        <para>Keith E. Campbell, MD, PhD</para>
+    </section>
+    <section>
         <title>IKM Book Motivation</title>
         <para>In today’s healthcare ecosystem, providers continually rely on data from an increasing
             number of sources to make informed clinical decisions. While this data is a critical
@@ -44,7 +53,7 @@
         <section>
             <title>Purpose of This Document</title>
             <para>This Book will act as 1) a reference for understanding the complex, multi-layered,
-                and highly inter-dependent Health IT landscape, and 2) a framework for the
+                and highly interdependent Health IT landscape, and 2) a framework for the
                 implementation of a layered, architecture-based approach to integrating and managing
                 knowledge in the healthcare ecosystem that will seek to solve the previously
                 identified issues.</para>
@@ -343,10 +352,6 @@
                         support for workflow and conditional logic (i.e., if-then-else).</para>
                 </listitem>
             </itemizedlist></para>
-    </section>
-    <section>
-        <title> Preface from Keith Campbell</title>
-        <para>This section is currently a placeholder.</para>
     </section>
     <section>
         <title> IKM Book Introduction</title>
