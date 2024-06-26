@@ -720,6 +720,7 @@
         <para>OHDSI's Standard Vocabulary relies heavily on mapping non-standard concepts to the
             Standard Concepts.  </para>
     </section>
+    <xi:include href="Book%20SOLOR%20Terminology.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <section>
         <title>Language</title>
         <para>Language is used to describe identified components. While the initial focus of
@@ -1072,6 +1073,7 @@
             could affect a system to conduct reasoning properly or successfully. </para>
     </section>
     <xi:include href="../definitional_primer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="../definitional_solorDesign.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="../definitional_topicsOfConcern.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <section>
         <title>Terminology Principles and Best Practices</title>

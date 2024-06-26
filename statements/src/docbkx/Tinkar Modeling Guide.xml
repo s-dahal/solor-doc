@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <info>
+        <title>Terminology Knowledge Architecture (Tinkar) Modeling Guide [Draft]</title>
+        <subtitle>Subtitle</subtitle>
+    </info>
+    
+        <chapter>
+            <title>Tinkar Modeling Guide Introduction</title>
+        <para>This modeling guide establishes the process and outputs for modeling domain concepts
+            in the Terminology Knowledge Architecture (Tinkar) specification. This guide does not
+            encompass all the details and information about the Tinkar model. Therefore, it is
+            encouraged to review the <link
+                xlink:href="https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pdf"
+                >HL7 informative ballot</link> before this guide.</para>
+        <section>
+            <title>What is Tinkar?</title>
+            <para>Tinkar is a logical model that aims to provide a foundation for a knowledge
+                architecture that will integrate medical and laboratory terminologies like SNOMED,
+                LOINC, RxNorm, etc. and local systems, to support clinical information that can
+                communicate effectively across multiple systems.​ Tinkar is intended to support
+                health care organizations’ standard terminology modules, value sets, and coding
+                systems as well as local terms and equivalence mappings. It allows enterprises to
+                extend their terminology standards and implement extensions quickly.</para>
+        </section>
+        <section>
+            <title>Why Tinkar?</title>
+            <para>Information systems that are used across the healthcare enterprise record and
+                manage clinical data using clinical statements and clinical terminologies in
+                non-standardized ways. Interoperability specifications aim to require terminology
+                bindings to concepts, code systems, and reusable value sets. Currently, there is
+                variation in clinical data exchange across the enterprise, as existing payloads and
+                clinical statements use inconsistent and highly variable enterprise terminologies.
+                The management of the concepts, code systems, and value sets is non-trivial because
+                developers, implementers, and end users are forced to manage “unnecessary
+                complexity.” For example:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Representation of medications: RxNorm codes overlap with CVX codes.
+                        Investigational vaccines from the FDA are not represented in RxNorm, CVX, or
+                        SNOMED CT®.</para>
+                </listitem>
+                <listitem>
+                    <para>Representation of COVID-19 result codes are inconsistent and are not
+                        equivalent (e.g., detected, undetected, positive, negative, etc.).</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        </chapter>
+    <chapter>
+        <title>Tinkar Logical Model</title>
+        <para>The Tinkar logical model consists of three different attributes: concepts, patterns, and semantics . The model can represent any knowledge standard, while still allowing for transparency of the data and traceability.
+            <figure xml:id="TinkarLogicalModel">
+                <title>Tinkar Logical Model</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/Tinkar%20Logical%20Model.svg" scale="70" align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            Before modeling a data set in the logical Tinkar model, the current Tinkar logical model starter data concepts, patterns and semantics should be understood.  The goal is to use what already exists in Tinkar as much as possible and only create new concepts/patterns/ semantics when needed.  This section gives a basic rundown of the Tinkar logical model.  The full description of the logical model is in the HL7 ballot, linked in the Introduction of this document.
+        </para>
+        <section>
+            <title>Components</title>
+            <para>All components in Tinkar are uniquely identified using UUIDs. A component will be
+                represented by an array of UUIDs with at least one UUID but can be represented by
+                more than one UUID in the case of a concept being derived from multiple sources. For
+                example, the concept Acetaminophen (which exists in SNOMED CT®, LOINC, and RxNorm)
+                could have a UUID from each terminology and be represented as an array of UUIDs for
+                this single concept within a Tinkar implementation. Concepts, patterns, and
+                semantics are types of components. </para>
+        </section>
+        <section>
+            <title>Concepts</title>
+            <para>A concept in Tinkar is a component identified using Universally Unique Identifiers
+                (UUIDs) and a STAMP. It contains no information other than what’s contained within
+                the STAMP. Concepts have emergent meaning. For example, Acetaminophen can be
+                represented by attaching the description “Acetaminophen” to a concept. The concept
+                has no meaning without additional information. Additional information is provided by
+                semantics. The specific meaning, purpose, and data elements of a semantic are
+                defined by a pattern. </para>
+            <para>For example, for the concept of Acute Pelvic Pain, there needs to be information
+                to describe it, which is all asserted by one or more semantics of one or more
+                patterns (possibly multiple descriptions, a logical definition, …). Examples of that
+                assertion include descriptions of the concept, the fully qualified name, and unique
+                relationships related to the concept.</para>
+        </section>
+        <section>
+            <title>Patterns</title>
+            <para>A pattern defines a meaning and purpose for its semantics, and a set of fields,
+                which also have a specific a purpose, and a meaning, in addition to a datatype.
+                Every semantic of a pattern exactly follows that pattern. These fields describe what
+                type of information and what format the data in a semantic following this pattern
+                will be. Using the pattern, semantics with varying fields and field types can be
+                specified to represent any structure needed to provide meaning to a component. The
+                table below shows the Description Pattern.
+            <table>
+                <title>Description Pattern</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1" align="center"/>
+                    <colspec colnum="2" colname="col2" align="center"/>
+                    <tbody>
+                        <row>
+                            <entry namest="col1" nameend="col2">Description Pattern</entry>
+                        </row>
+                        <row>
+                            <entry>Semantic Meaning</entry>
+                            <entry>Description Semantic</entry>
+                        </row>
+                        <row>
+                            <entry>Semantic Purpose</entry>
+                            <entry>Description Semantic</entry>
+                        </row>
+                        <row>
+                            <entry namest="col1" nameend="col2">Field 1: Language</entry>
+                        </row>
+                        <row>
+                            <entry>Meaning</entry>
+                            <entry>Language for Description</entry>
+                        </row>
+                        <row>
+                            <entry>Purpose</entry>
+                            <entry>Language</entry>
+                        </row>
+                        <row>
+                            <entry>Field Type</entry>
+                            <entry>Component Field</entry>
+                        </row>
+                        <row>
+                            <entry namest="col1" nameend="col2">Field 2: Description</entry>
+                        </row>
+                        <row>
+                            <entry>Meaning</entry>
+                            <entry>Text for Description</entry>
+                        </row>
+                        <row>
+                            <entry>Purpose</entry>
+                            <entry>Description</entry>
+                        </row>
+                        <row>
+                            <entry>Field Type</entry>
+                            <entry>String</entry>
+                        </row>
+                        <row>
+                            <entry namest="col1" nameend="col2">Field 3: Description Case
+                                Significance</entry>
+                        </row>
+                        <row>
+                            <entry>Meaning</entry>
+                            <entry>Description Case Significance</entry>
+                        </row>
+                        <row>
+                            <entry>Purpose</entry>
+                            <entry>Description Case Significance</entry>
+                        </row>
+                        <row>
+                            <entry>Field Type</entry>
+                            <entry>Component Field</entry>
+                        </row>
+                        <row>
+                            <entry namest="col1" nameend="col2">Field 4: Description Type</entry>
+                        </row>
+                        <row>
+                            <entry>Meaning</entry>
+                            <entry>Description Type</entry>
+                        </row>
+                        <row>
+                            <entry>Purpose</entry>
+                            <entry>Description Type</entry>
+                        </row>
+                        <row>
+                            <entry>Field Type</entry>
+                            <entry>Component Field</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+                The meaning and purpose concepts shown in the above table for the Description Pattern also are concepts in Tinkar with definitions.  The table below shows the definition for the meaning and purpose concepts from the Description Pattern table. </para>
+            <table>
+                <title>Description Pattern Meaning and Purpose Concepts</title>
+                <tgroup cols="3">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="3" colname="col3"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Pattern Field</emphasis></entry>
+                            <entry><emphasis role="bold">Concept </emphasis></entry>
+                            <entry><emphasis role="bold">Definition </emphasis></entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para><emphasis role="bold">Description Pattern Semantic Meaning and
+                                        Purpose</emphasis></para>
+                            </entry>
+                            <entry>Description Semantic </entry>
+                            <entry>Purpose and meaning for the description pattern and dialect
+                                patterns</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Field 1: Language
+                                Meaning</emphasis></entry>
+                            <entry>Language for Description </entry>
+                            <entry>The semantic value indicating which language is used in the
+                                description text</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Field 1: Language
+                                Purpose</emphasis></entry>
+                            <entry>Language </entry>
+                            <entry>Specifies the language of the description text.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Field 2: Description
+                                Meaning</emphasis></entry>
+                            <entry>Text for Description</entry>
+                            <entry>Captures the human readable text for a description in
+                                Komet</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Field 2: Description
+                                Purpose</emphasis></entry>
+                            <entry>Description</entry>
+                            <entry>Human readable text for a concept</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Field 3: Description Case Significance
+                                    Meaning and Purpose</emphasis></entry>
+                            <entry>Description Case Significance </entry>
+                            <entry>Specifies how to handle the description text in terms of case
+                                sensitivity</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Field 4: Description Type Meaning and
+                                    Purpose</emphasis></entry>
+                            <entry>Description Type </entry>
+                            <entry>Specifying what type of description, e.g., fully qualified or
+                                regular, etc.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <section>
+            <title>Semantics</title>
+            <para>To give computer-processable meaning to components, Tinkar uses semantics. A
+                semantic is a class containing a set of fields about the subject (the meaning and
+                purpose defined by its pattern). <emphasis role="bold">A semantic adds
+                    meaning</emphasis> to the components it references, through the fields it
+                contains. A semantic supports the specification of value sets, compositional
+                definitions, and other components requiring internal structure, and it specifies the
+                nature of the compositional relationship explicitly. </para>
+        </section>
+        <section>
+            <title>STAMP</title>
+            <para>The STAMP in the Tinkar model allows for capturing a complete change record of all
+                changes to a <emphasis role="bold">component</emphasis>including the Status, Time,
+                Author, Module and Path. The following describes each of these attributes:</para>
+            <para><emphasis role="bold">Status</emphasis> – A status is identified by a concept and
+                may be annotated with additional information. For example, inactive or active. The
+                tables below show the parent and children concepts aligned to Status.</para>
+            <table>
+                <title>Status Parent Concept</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Parent Concept </emphasis></entry>
+                            <entry><emphasis role="bold">Definition</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Status Value </emphasis></entry>
+                            <entry>The status represented by the STAMP (Active, Cancelled, Inactive,
+                                Primordial, Withdrawn)</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <table>
+                <title>Status Children Concepts</title>
+                <tgroup cols="3">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="3" colname="col3"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Children Concept </emphasis></entry>
+                            <entry><emphasis role="bold">Definition</emphasis></entry>
+                            <entry><emphasis role="bold">Business Rules</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Premundane Status</emphasis></entry>
+                            <entry>Concept used to represent a status for the default status. It’s
+                                the original default status when creating a concept that has not
+                                transitioned to a different status.</entry>
+                            <entry>In the Primordial status, components can move to the Cancelled or
+                                Active statuses. Since primordial components were never committed to
+                                a database there would be no reason to move them to the Inactive or
+                                Withdrawn statuses.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Canceled Status</emphasis></entry>
+                            <entry>Concept used to represent a status for components that are
+                                canceled – Canceled means it was never successfully committed to the
+                                database, and so this state would be local only, and also transient…
+                                It will eventually be removed from memory and from the database and
+                                will not propagate from one database to another.</entry>
+                            <entry>The Cancelled status is a terminal status, meaning it cannot be
+                                moved from the Cancelled status back to a different status.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Active Status</emphasis></entry>
+                            <entry>Concept used to represent a status for components that are
+                                active.</entry>
+                            <entry>In the Active status, components can move to the Inactive status
+                                if a component is no longer active or the Withdraw status, if the
+                                component is realized to be a mistake.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Inactive Status</emphasis></entry>
+                            <entry>Concept used to represent a status for components that are no
+                                longer active.</entry>
+                            <entry>In the Inactive status, components can move to the Withdraw
+                                status, if the component is realized to be a mistake. In special
+                                circumstances with a good business reason, components may be moved
+                                from Inactive back to Active.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Withdrawn Status </emphasis></entry>
+                            <entry>Concept used to represent a status for components that are
+                                withdrawn. Withdrawn indicates that a component was successfully
+                                released, but that the component’s release was a mistake, and all
+                                references to a withdrawn component should be reassigned. </entry>
+                            <entry>The Withdrawn status is a terminal status. </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <para>When representing a new data set using the Tinkar model, only the status values
+                above are allowed and must follow the business rules defined. The business rules do
+                not account for the accidental moving of a component. The diagram below shows the
+                mapping between each status.
+                <figure xml:id="StatusDiagram">
+                    <title>Status Diagram</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Status%20Diagram.svg" scale="70"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure> 
+                If an additional information is required (i.e., the LOINC discouraged
+                state), they should be represented via an additional pattern and semantic. The STAMP
+                status values should never be extended beyond the provided starter set. </para>
+            <para><emphasis role="bold">Time </emphasis>– The timestamp is captured with precision
+                and a time zone. The table below shows the parent concept aligned to Time. <table>
+                    <title>Time Parent Concept</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Parent Concept </emphasis></entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Time </emphasis></entry>
+                                <entry>
+                                    <para>The timestamp is capture with precision and a time
+                                        zone</para>
+                                    <para> </para>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <emphasis role="bold">Author – </emphasis>The author is identified by a concept and
+                may be annotated with more information and represents the change's author<emphasis
+                    role="bold">.</emphasis> The tables below show the parent concept aligned to
+                Author. <table>
+                    <title>Author Parent Concept</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Parent Concept </emphasis></entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Author </emphasis></entry>
+                                <entry>
+                                    <para>The author is identified by a concept, and may be
+                                        annotated with other identifyinginformation and represents
+                                        the author responsible for authoring the change</para>
+                                    <para> </para>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <emphasis role="bold">Module </emphasis>– This is the assignment to the appropriate
+                terminology (e.g. LOINC) or terminology component (SNOMED CT). A module is
+                identified by a concept and may be annotated with additional information. The tables
+                below show the parent and children concepts aligned to Module. <table>
+                    <title>Module Parent Concept</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Parent Concept </emphasis></entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Module</emphasis></entry>
+                                <entry>A module is identified by a concept and may be annotated with
+                                    additional information such as organizing content for
+                                    maintenance and publication purposes.</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <table>
+                    <title>Module Child Concept</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Child Concept </emphasis></entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Primordial Module</emphasis></entry>
+                                <entry>The base/foundational/default module assigned prior to
+                                    creating other model/module concepts the primordial module is
+                                    reserved for starter set information that all Tinkar models
+                                    require. Information that is specific to a particular data set
+                                    (i.e., SNOMED or LOINC) should be contained in a module specific
+                                    to that data set (i.e. a SNOMED or LOINC starter set
+                                    module)</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <emphasis role="bold">Path –</emphasis> Specification of version control within a
+                development lifecycle, for example development, testing, staging, or production. A
+                path is identified by a concept and may be annotated with additional information.
+                The tables below show the parent and children concepts aligned to Path. <table>
+                    <title>Path Parent Concept</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Parent Concept </emphasis></entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Path</emphasis></entry>
+                                <entry>A set of assets under version control that can be managed
+                                    distinctly from other assets. Paths “branch” from other paths
+                                    when established and can be “merged” with other paths as well.
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table><table>
+                    <title>Path Children Concepts in the starter set. Additional paths may be
+                        created as need to organize development activities appropriately for a
+                        particular purpose (sandbox paths, feature paths, …) </title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Children Concept </emphasis></entry>
+                                <entry><emphasis role="bold">Definitio</emphasis>n</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Primordial Path</emphasis></entry>
+                                <entry><emphasis role="bold">The default path when creating a new
+                                        component.</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Sandbox Path</emphasis></entry>
+                                <entry><emphasis role="bold"> A path “branch” for components under
+                                        testing.</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Development Path</emphasis></entry>
+                                <entry><emphasis role="bold">A path “branch” that specifies that the
+                                        components are currently under
+                                    development</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Master Path</emphasis></entry>
+                                <entry><emphasis role="bold">A default path “branch” for
+                                        components</emphasis>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table></para>
+        </section>
+        <section>
+            <title>Tinkar Representation Examples</title>
+            <para>The section below highlights examples of how common medical tests can be
+                represented in Tinkar. The examples show how the tests, currently represented in
+                both SNOMED and LOINC terminologies, can be modeled in the Tinkar logical
+                model.
+                <figure xml:id="Example1UrineHomocysteineRepresentationinTinkar">
+                    <title>Example 1: Urine Homocysteine Representation in Tinkar</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Example%201%20Urine%20Homocysteine%20Representation%20in%20Tinkar.svg" scale="70"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure> 
+                <figure xml:id="Example2SubstanceConcentrationofGlucoseinSpecimeninTinkar">
+                    <title>Example 2: Substance Concentration of Glucose in Specimen in Tinkar</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Example%202%20Substance%20Concentration%20of%20Glucose%20in%20Specimen%20in%20Tinkar.svg" scale="70"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure> 
+            </para>
+        </section>
+        
+    </chapter>
+    <chapter>
+        <title>Creating a Representative Tinkar Model for a Dataset</title>
+        <para>Converting a <emphasis role="bold">domain </emphasis><emphasis role="bold">data
+                set</emphasis> into the Tinkar model involves several key steps. The sections below
+            detail the current <emphasis role="bold">Tinkar starter data</emphasis> and the steps
+            one will take to translate a dataset into the Tinkar logical model.
+            <figure xml:id="KeyStepstoRepresentaDataSetinTinkar">
+                <title>Key Steps to Represent a Data Set in Tinkar</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/Key%20Steps%20to%20Represent%20a%20Data%20Set%20in%20Tinkar.svg" scale="70"
+                            align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure> 
+        </para>
+        <section>
+            <title>Defining The Data Elements</title>
+            <para>Once the current basic Tinkar model is understood, the data set’s required
+                patterns can be determined. Some patterns will come from the Tinkar starter set,
+                other patterns will be created specifically for the data set’s unique properties or
+                may be reused from other systems such as SNOMED, LOINC, or RxNorm. that needs to be
+                cross walked into a Tinkar Model can be analyzed.</para>
+            <para>In preparation to model in Tinkar, there are two different ways to start: from
+                anexisting system’spredefineddata set like SNOMED, LOINC, or RxNorm or a new model
+                using elements that might already exist and/or have brand new elements that need to
+                be represented (e.g., LIDR). The differences between cross walking a predefined data
+                set and a new data set are minimal. The main difference is with a predefined data
+                set, information about the model is usually well documented so identifying a unique
+                list of data elements and definitions is more straight forward. With a new data set,
+                unique data elements and definitions will take more time to validateanalyze/
+                create.</para>
+            <para>The first step in modeling in Tinkar from any data set is analyzing the data set
+                or source file that needs to be represented in Tinkar. The recommended starting
+                point is pulling out all unique data fields in the data set or source file and
+                putting them into angiving themxcel file where each data element can be given a
+                meaning, purpose, and definition.</para>
+            <para>In general, the term meaning refers to the concept or idea that a word, phrase,
+                symbol, or other form of communication represents. Within the Tinkar Reference
+                Model, "meaning" is applied to a field within a Semantic and indicates the type of
+                information or data the field is designed to hold. For example, a field used to
+                describe an SDO's website would have the meaning of "URL." This implies that the
+                field is meant to contain a URL, which is a specific type of data representing a web
+                address.</para>
+            <para>The purpose within the Tinkar Reference Model refers to the specific role or
+                function that a field within a Semantic is intended to serve. It provides a broader
+                context for why the field and its data exist within the model. For example, in the
+                field describing an SDO's website, the purpose is "Website." This indicates that the
+                field's role is to provide the website address for the SDO, adding context to the
+                meaning "URL.".</para>
+            <para>For a data set that is part of a well-established source such as RxNorm and
+                SNOMED, definitions of fields can typically be found in documentation online of the
+                terminology. For a data set that is not well-established, the definitions might have
+                to be created.</para>
+            <para><?oxy_comment_start author="tocrow" timestamp="20240625T164519-0400" comment="Add LOINC Example"?>To
+                show a practical example of a predefined data set, an image below shows a snippet of
+                the LOINC transformation. LOINC is a predefined data set with definitions and fields
+                listed in a source file. In this snippet, some of the unique LOINC fields provided
+                in the data set are added to an excel in preparation for a cross walk. The purpose,
+                meaning, and definitions are added to give an example of what these definitions
+                should be.<?oxy_comment_end?></para>
+            <para>Once unique data elements have been recorded, the elements can be cross walked to
+                current Tinkar semantics/ concepts/ patterns.</para>
+        </section>
+        <section>
+            <title>Determine Description Semantics</title>
+            <para>It is recommended to start with the description semantic and review the components
+                and determine which of the fields in the data set being analyzed can be represented
+                using the Tinkar description semantics. The Description Semantics are how names and
+                definitions are assigned to components. The fields in the Description Pattern in
+                Table 1 should be reviewed to determine what values/concepts to use in the data set
+                being analyzed or if something new needs to be created. The meaning and purpose
+                concepts are also below to reference are listed in Table 2.</para>
+            <para>To understand how this has been done before, examples of terminology snippets from
+                SNOMED, LOINC, RxNorm, and LIDR are provided below. As the following sections walk
+                through modeling the Description Semantic, these snippets will be referred to as
+                examples for how to model certain fields. The example in the below screenshot, shows
+                a row of SNOMED data that will be used to show how the data set was represented
+                using the Description Semantics.
+                <figure xml:id="SNOMEDDescriptionDataExample">
+                    <title>SNOMED Description Data Example</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/SNOMED%20Description%20Data%20Example.svg" scale="70"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure> 
+                The example in the below screenshot, shows a row of LOINC data that will be used to show how the data set was represented using the Description Semantics.
+                <figure xml:id="LOINCDescriptionDataExample">
+                    <title>SNOMED Description Data Example</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/LOINC%20Description%20Data%20Example.svg" scale="70"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure> 
+                The example in the below screenshot, shows a row of RxNorm data that will be used to show how the data set was represented using the Description Semantics.
+                <figure xml:id="RxNormOWLFileExample">
+                    <title>RxNorm OWL File Example</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/RxNorm%20OWL%20File%20Example.svg" scale="70"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure> 
+                The example in the below screenshot, shows multiple rows in LIDR Data all corresponding to one Device. This data that will be used to show how the data set was represented using the Description Semantics for a Device concept.
+                <figure xml:id="LIDRDescriptionDataExample">
+                    <title>LIDR Description Data Example</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/LIDR%20Description%20Data%20Example.svg" scale="70"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure> 
+            </para>
+            <section>
+                <title>Field 1: Language</title>
+                <para>A language concept is assigned as the first field value for the Description
+                    Semantic. The language field's purpose is to identify the concept's language and
+                    description. The table below outlines the current available languages to select
+                    from. If the specific language concept does not exist in Tinkar, a new concept
+                    to represent that specific language will need to be added. 
+                    <informaltable>
+                        <tgroup cols="2">
+                            <colspec colnum="1" colname="col1"/>
+                            <colspec colnum="2" colname="col2"/>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Concept </emphasis></entry>
+                                    <entry><emphasis role="bold">Definition</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">English Language
+                                        </emphasis></entry>
+                                    <entry>A concept representing the English Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Spanish Language</emphasis></entry>
+                                    <entry>A concept representing the Spanish Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Chinese Language</emphasis></entry>
+                                    <entry>A concept representing the Chinese Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Czech Language</emphasis></entry>
+                                    <entry>A concept representing the Czech Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Danish Language</emphasis></entry>
+                                    <entry>A concept representing the Danish Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Dutch Language</emphasis></entry>
+                                    <entry>A concept representing the Dutch Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">French Language</emphasis></entry>
+                                    <entry>A concept representing the French Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">German Language</emphasis></entry>
+                                    <entry>A concept representing the German Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Irish Language</emphasis></entry>
+                                    <entry>A concept representing the Irish Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Italian Language</emphasis></entry>
+                                    <entry>A concept representing the Italian Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Korean Language</emphasis></entry>
+                                    <entry>A concept representing the Korean Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Lithuanian
+                                        Language</emphasis></entry>
+                                    <entry>A concept representing the Lithuanian Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Polish Language</emphasis></entry>
+                                    <entry>A concept representing the Polish Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Russian Language</emphasis></entry>
+                                    <entry>A concept representing the Russian Language</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Swedish Language</emphasis></entry>
+                                    <entry>A concept representing the Swedish Language</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </informaltable>Revisiting the examples provided above, the following representations
+                    and/or gaps were identified: </para>
+                <table>
+                    <title>Language Examples</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Example</emphasis></entry>
+                                <entry><emphasis role="bold">Description</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 1: SNOMED</emphasis></entry>
+                                <entry>From the SNOMED export file,The lLanguage Code can be
+                                    represented by the language concept. In this case, 'en' would be
+                                    used for English.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 2: LOINC</emphasis></entry>
+                                <entry>From the LOINC export file, the English version has been
+                                    obtained, so all descriptions can be represented by the language
+                                    concept.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 3: RxNorm</emphasis></entry>
+                                <entry>From the RxNorm export file, the English version has been
+                                    obtained, so all descriptions can be represented by the language
+                                    concept and English can be used.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 4: LIDR</emphasis></entry>
+                                <entry>From the LIDR Excel File, the data was entered using the
+                                    English Language, so all descriptions can be represented by the
+                                    language concept and English can be used.</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para>No new concepts would need to be created since the above strings can be
+                    represented with what already exists in Tinkar.</para>
+                <para>If the data set has a language concept that currently isnot’t in Tinkar, a new
+                    concept representing the new language will have to be created.</para>
+                <para><emphasis role="bold">To add a language concept:</emphasis></para>
+                <orderedlist>
+                    <listitem>
+                        <para>Create a new concept.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Give it the Fully Qualified name of the specific language the concept
+                            is representing.</para>
+                    </listitem>
+                    <listitem>
+                        <para>In the Stated Definition, add an is-A relationship to language under
+                            the necessary set.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title>Field 2: Description String</title>
+                <para>The description string field is the literal string representation of the data,
+                    which is generally just the name of the element. </para>
+                <informaltable>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Concept </emphasis></entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Description String </emphasis></entry>
+                                <entry>The string value that represents the data.</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </informaltable>
+                <para>Revisiting the examples provided above, the following representations were
+                    identified:</para>
+                <table>
+                    <title>Description String Examples</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Example</emphasis></entry>
+                                <entry><emphasis role="bold">Description</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 1: SNOMED</emphasis></entry>
+                                <entry>From the SNOMED export file, the string value of the Term
+                                    field "Chronic lung disease" is taken to represent the Tinkar
+                                    Description String value in the Description Semantic.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 2: LOINC</emphasis></entry>
+                                <entry>From the LOINC export file, the string value of the Long
+                                    Common Name "Meadow Fescue IgG Ab [Units/volume] in Serum" is
+                                    taken to represent the Tinkar Description String value in the
+                                    Description Semantic.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 3: RxNorm</emphasis></entry>
+                                <entry>From the RxNorm export file, the string value of the text
+                                    inside the quotations "amLODIPine (as amLODIPine besilate) 5 MG
+                                    / HCTZ 25 MG / olmesartan medoxomil 40 MG Oral Tablet" is taken
+                                    to represent the Tinkar Description String value in the
+                                    Description Semantic.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 4: LIDR</emphasis></entry>
+                                <entry>From the LIDR Data File, the String Value of the text inside
+                                    the Model cell “BD SARS-CoV-2/Flu for BD MAX System” is the
+                                    secription which can be represented using the Tinkar Description
+                                    String value in the Description Semantic.</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para>No new concepts would need to be created since the above strings can be
+                    represented with what already exists in Tinkar.</para>
+            </section>
+            <section>
+                <title>Field 3: Description Case Significance</title>
+                <para>The description case significance specifies how the capitalization of the
+                    string value should be handled, e.g., is it case sensitive or is it case
+                    insensitive. If the data has more specific capitalization rules, a new concept
+                    would need to be created to represent it.</para>
+                <table>
+                    <title>Description Case Significance</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Concept </emphasis></entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Description Case
+                                    Sensitive</emphasis></entry>
+                                <entry>Assumes the description is dependent on
+                                    capitalization</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Description Not Case Sensitive
+                                    </emphasis></entry>
+                                <entry>Value which designates character as not sensitive for a given
+                                    description</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para>Revisiting the examples provided in section 3.2, the following representations
+                    and/or gaps were identified:
+                    <table>
+                        <title>Case Significance Example</title>
+                        <tgroup cols="2">
+                            <colspec colnum="1" colname="col1"/>
+                            <colspec colnum="2" colname="col2"/>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Example</emphasis></entry>
+                                    <entry><emphasis role="bold">Description</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Example 1:
+                                        SNOMED</emphasis></entry>
+                                    <entry>From the SNOMED export, the caseSignificanceID can be
+                                        represented using the Case Significance child concept.
+                                        Specifically, in this scenario, Description Not Case
+                                        Sensitive would be used.</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Example 2: LOINC</emphasis></entry>
+                                    <entry>In the LOINC export file, there is no requirement to
+                                        enforce case sensitivity on the long common name during a
+                                        search, hence Description Not Case Sensitive would be used
+                                        to represent its case significance.</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Example 3:
+                                        RxNorm</emphasis></entry>
+                                    <entry>In the RxNorm export file, the Tallman synonym
+                                        specifically incorporates certain capital letters with a
+                                        particular purpose, thus Description Case Sensitive would be
+                                        used to represent its case significance.</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Example 4: LIDR</emphasis></entry>
+                                    <entry>In the LIDR Data, there is no requirement to enforce case
+                                        sensitivity during a search, hence Description Not Case
+                                        Sensitive would be used to represent its case
+                                        significance.</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table>
+                    No new concepts would need to be created since the above Description Case Significance can be represented with what already exists in Tinkar.
+                </para>
+            </section>
+            <section>
+                <title>Field 4: Description Type</title>
+                <para>The description type field is assigned to determine the type of description
+                    the string represents about that component. For example, the Fully Qualified
+                    Name is the main way a component is referred to. The Regular Name is any other
+                    common way or synonym referring to that concept. The Definition Description Type
+                    can be used to give a definition to any concept. If none of the description
+                    types below represent the description specific to the data set, a new concept
+                    would be created under Description Type to represent the new type of
+                    data.</para>
+                <informaltable>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Concept </emphasis></entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Description Type</emphasis></entry>
+                                <entry>Specifying what type of description it is i.e. is it fully
+                                    qualified or regular and etc.</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </informaltable>
+                <table>
+                    <title>Description Type</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Children Concept</emphasis></entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Definition Description Type
+                                    </emphasis></entry>
+                                <entry>Semantic value describing the description type for the
+                                    description pattern is a definition</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Fully Qualified Name Description
+                                        Type</emphasis></entry>
+                                <entry>Fully qualified name is a description that uniquely
+                                    identifies and differentiates it from other concepts with
+                                    similar descriptions</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Regular Name Description Type
+                                    </emphasis></entry>
+                                <entry>There may be descriptions/synonyms marked as
+                                    “regular.”</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para>Revisiting the examples provided in section 2.3, the following representations
+                    and/or gaps were identified:
+                    <table>
+                        <title>Description Type Examples</title>
+                        <tgroup cols="2">
+                            <colspec colnum="1" colname="col1"/>
+                            <colspec colnum="2" colname="col2"/>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Example</emphasis></entry>
+                                    <entry><emphasis role="bold">Description</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Example 1:
+                                        SNOMED</emphasis></entry>
+                                    <entry>From the SNOMED export file, typeId is represented using
+                                        one of the Description Types. Specifically, Synonym is
+                                        represented using the Tinkar Regular Name Description
+                                        Type.</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Example 2: LOINC</emphasis></entry>
+                                    <entry>From the LOINC export file, the long common name can be
+                                        represented using the Fully Qualified Name Description
+                                        Type.</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Example 3:
+                                        RxNorm</emphasis></entry>
+                                    <entry>From the RxNorm export file, considering the list of
+                                        Tinkar Description Types above (Fully Qualified Name,
+                                        Regular Name, etc.), none of them directly represent the
+                                        Tallman Synonym. Given that the Tallman Synonym is
+                                        specifically used to emphasize capitalizing certain
+                                        portions, a new concept is created as a child concept under
+                                        Description Type. This concept is termed "Tallman
+                                        Synonym".</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Example 4: LIDR</emphasis></entry>
+                                    <entry>From the LIDR Data, only the Model is given to represent
+                                        the Name of the Device. So in this case the Fully Qualified
+                                        Name Description Type would be used.</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table>
+                    One new concept was created to represent the Tallman synonym for RxNorm.  Otherwise, for SNOMED and LOINC, no new concepts were created.
+                </para>
+            </section>
+        </section>
+    </chapter>
+    
+
+</book>
