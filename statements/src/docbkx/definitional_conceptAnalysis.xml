@@ -5,7 +5,7 @@
     <title>Content Requiring Special Handling</title>
     <section>
         <title>Purpose</title>
-        <para>The creation of groupings (Assemblage) containing SNOMED CT concepts that require
+        <para>The creation of groupings (Assemblage) containing SNOMED CT® concepts that require
             special handling supports the maintenance of this content over time without the
             necessity of re-reviewing the entire content. Within Solor, these various Assemblages
             are imported and are properly grouped within the system. Subsequently, a set of rules
@@ -95,7 +95,7 @@
                 the apple/fruit example would complicate any calculations.Therefore, it was deemed
                 necessary that such "absent" concepts within SNOMED required identification such
                 that they can be segregated for further special handling.</para>
-            <para>“Absence” vs. “Affirmation” are two polar opposite paradigms within the SNOMED CT
+            <para>“Absence” vs. “Affirmation” are two polar opposite paradigms within the SNOMED CT®
                 Concept Model. Where “Affirmation” represents a statement that e.g. a finding or a
                 disorder is present, absent states their absence.</para>
             <para>However, in SNOMED, the expression of "no diabetes" is a positive assertion that
@@ -129,7 +129,7 @@
                 <para>For each of the Assemblages for inclusion, word patterns that explicitly or
                     implicitly identify a concept as a member of the Assemblage were developed. As a
                     first automated step, queries using string matching of those patterns or
-                    keywords were applied to the following SNOMED CT hierarchies:<orderedlist>
+                    keywords were applied to the following SNOMED CT® hierarchies:<orderedlist>
                         <listitem>
                             <para>Clinical Findings</para>
                         </listitem>
@@ -156,7 +156,7 @@
             </section>
             <section>
                 <title>Rule Set Considerations</title>
-                <para>Besides clearly <emphasis>stated</emphasis> absence in the SNOMED CT (SCT)
+                <para>Besides clearly <emphasis>stated</emphasis> absence in the SNOMED CT® (SCT)
                     Fully Specified Names (FSN), implied absence had to be considered in a number of
                     contexts. </para>
                 <para><emphasis role="bold"><emphasis role="underline"
@@ -336,7 +336,7 @@
 
         <section>
             <title>Concepts Where Patient Is Not Subject of Record</title>
-            <para>The default context of SNOMED CT concepts as stated in the SNOMED CT Editorial
+            <para>The default context of SNOMED CT® concepts as stated in the SNOMED CT® Editorial
                 Guide means that, unless stated otherwise within the description or the definition
                 of the concept, clinical findings are occurring to the subject of record (the
                 patient) and procedures are performed on the subject of record (the patient). </para>
@@ -353,7 +353,7 @@
                 <para>For each of the Assemblages for inclusion, word patterns that explicitly or
                     implicitly identify a concept as a member of the Assemblage were developed. As a
                     first automated step, queries using string matching of those patterns or
-                    keywords were applied to the following SNOMED CT hierarchies:<orderedlist>
+                    keywords were applied to the following SNOMED CT® hierarchies:<orderedlist>
                         <listitem>
                             <para>Clinical Findings</para>
                         </listitem>
@@ -380,9 +380,9 @@
             </section>
             <section>
                 <title>Rule Set Considerations</title>
-                <para><emphasis role="bold">Definition for Inclusion: The SNOMED CT concept is about
-                        something / someone other than the patient.</emphasis></para>
-                <para>Although it can be assumed that all SNOMED CT concepts which are included in
+                <para><emphasis role="bold">Definition for Inclusion: The SNOMED CT® concept is
+                        about something / someone other than the patient.</emphasis></para>
+                <para>Although it can be assumed that all SNOMED CT® concepts which are included in
                     this Assemblage are ultimately used to document something in a patient’s record,
                     this particular concept for documentation is <emphasis role="bold"
                         >NOT</emphasis> about the patient.</para>
@@ -476,7 +476,7 @@
 
         <section>
             <title>Concepts Including Compound Observation</title>
-            <para>Compound Observations are the set of concepts within SNOMED CT that involve the
+            <para>Compound Observations are the set of concepts within SNOMED CT® that involve the
                 combination of more than one observation. While these concepts do not necessarily
                 have issues with them, the fact that they combine multiple concepts into one can
                 cause modeling issues that affect retrieval.</para>
@@ -488,7 +488,7 @@
                 <para>For each of the Assemblages for inclusion, word patterns that explicitly or
                     implicitly identify a concept as a member of the Assemblage were developed. As a
                     first automated step, queries using string matching of those patterns or
-                    keywords were applied to the following SNOMED CT hierarchies:<orderedlist>
+                    keywords were applied to the following SNOMED CT® hierarchies:<orderedlist>
                         <listitem>
                             <para>Clinical Findings</para>
                         </listitem>
@@ -515,7 +515,7 @@
             </section>
             <section>
                 <title>Rule Set Considerations</title>
-                <para><emphasis role="bold">Definition for Inclusion: The SNOMED CT concept
+                <para><emphasis role="bold">Definition for Inclusion: The SNOMED CT® concept
                         describes more than one observation or procedure</emphasis></para>
                 <para><emphasis role="bold">Rules for Inclusion in “Compound Observation”
                         Assemblage:</emphasis></para>
@@ -669,7 +669,7 @@
                 Concepts<?oxy_comment_end?><?oxy_comment_end mid="13"?><?oxy_comment_end mid="12"?></title>
             <para>The purpose of the Laterality Assemblages is to identify concepts that are not
                 currently modelled with the correct body structure that utilizes laterality. This
-                only pertains to laterality as currently represented in SNOMED CT, which is used to
+                only pertains to laterality as currently represented in SNOMED CT®, which is used to
                 designate one or both of paired bilaterally symmetrical (or near symmetrical) body
                 structures. It therefore does not apply to sidedness of specific body structures.
                 For example 364006 |Acute left-sided heart failure (disorder)| is not a lateralized
@@ -677,7 +677,9 @@
                 information on laterality vs sidedness, please see <link
                     xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2244155/?page=1"
                         ><emphasis role="italic">Choosing Sides. Assigning Laterality as an
-                            Attribute in SNOMED® CT.</emphasis></link><footnote><para>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2244155/?page=1</para></footnote></para>
+                        Attribute in SNOMED® CT.</emphasis></link><footnote>
+                    <para>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2244155/?page=1</para>
+                </footnote></para>
             <section>
                 <title>Approach</title>
                 <para>To identify content that would need to be evaluated for laterality
@@ -726,7 +728,7 @@
                                 correct laterality, it will be marked as incorrect. For example,
                                 16730001000004104 |Thrombosis of left peroneal vein (disorder)|
                                 should be defined with Structure of left peroneal vein, which does
-                                not currently exist in SNOMED CT.</para>
+                                not currently exist in SNOMED CT®.</para>
                             <para>
                                 <figure>
                                     <title>Thrombosis of left peroneal vein (disorder) Laterality
@@ -743,7 +745,7 @@
                         </listitem>
                         <listitem>
                             <para>All bilateral concepts were evaluated against the current SNOMED
-                                CT modelling guidance, which requires the use of two separate role
+                                CT® modelling guidance, which requires the use of two separate role
                                 groups with one representing the right body structure and one
                                 representing the left body structure. If the concept is modelled
                                 using the bilateral body structure (e.g. 40638003 |Structure of both
@@ -773,8 +775,8 @@
                                 would be considered to represent bilaterality and evaluated it as
                                 such. For example, 248422003 |Warm hands (finding)| does not specify
                                 right, left, or bilateral in the FSN but since it uses the term
-                                “hands,” it would be considered as bilateral and evaluated against the
-                                current SNOMED CT modelling guidance as stated above.</para>
+                                “hands,” it would be considered as bilateral and evaluated against
+                                the current SNOMED CT® modelling guidance as stated above.</para>
                         </listitem>
                         <listitem>
                             <para>If the concept being evaluated represented sidedness of a
@@ -801,9 +803,9 @@
             <para>The purpose of the Inverse Assemblages is to identify concepts that <emphasis
                     role="underline">should</emphasis> have an opposing concept due to a description
                 indicating an opposite or inverse concept, regardless of whether that opposing
-                concept currently exists in SNOMED CT. It is <emphasis role="underline"
+                concept currently exists in SNOMED CT®. It is <emphasis role="underline"
                     >not</emphasis> the purpose to identify and pair opposing concepts. In many
-                cases, the opposing concept does not exist in SNOMED CT and the next iteration of
+                cases, the opposing concept does not exist in SNOMED CT® and the next iteration of
                 this Assemblage should be to link the two inverse concepts together to identify
                 missing content.</para>
 
@@ -1089,7 +1091,7 @@
                 <orderedlist>
                     <listitem>
                         <para>Concepts were only considered inverse if a valid opposing concept
-                            should exist in SNOMED CT. For example, 56313000|Abnormal placenta
+                            should exist in SNOMED CT®. For example, 56313000|Abnormal placenta
                             affecting management of mother (disorder)| was not considered to be
                             inverse since the opposing concept would be “Normal placenta affecting
                             management of mother” which would not be a valid concept.</para>
@@ -1118,8 +1120,8 @@
         <section>
             <title>Primitive Concepts</title>
             <para>The purpose of the Primitive Assemblage is to identify concepts that could be
-                easily fully defined under the current concept model of SNOMED CT. From the SNOMED
-                CT Technical Implementation Guide, a fully defined concept is defined as:</para>
+                easily fully defined under the current concept model of SNOMED CT®. From the SNOMED
+                CT® Technical Implementation Guide, a fully defined concept is defined as:</para>
             <para> “A <link xlink:href="https://confluence.ihtsdotools.org/display/DOCGLOSS/Concept"
                     ><?oxy_comment_start author="steph" timestamp="20190312T123302-0600" comment="In the PDF version of this, the URL to the reference is shown immediately afterward the word to which it refers.  This makes it very difficult to read this section because there are so many references and it appears that the same reference is displayed multiple times, in some cases such as for &quot;concept&quot; and &quot;fully defined&quot;.  Recommend making these either as footnotes or endnotes.  I know this information is coming straight from the SCT technical implementation guide but in the PDF, it&apos;s very hard to read this section without your eyes glossing over." id="uhq_ljs_hhb" flag="done" mid="14"?><?oxy_comment_start author="timowilliams" timestamp="20190403T151208-0500" comment="We will look into how it is being transformed to make sure it isn&apos;t including the link going forward.  My viewpoint is that we should link to it the first time it appears in a document or section but don&apos;t have to link to it every time.  For example, &quot;Concept&quot; should only have one link in this document and not the 12 or so it does now." parentID="uhq_ljs_hhb" flag="done" mid="15"?><?oxy_comment_start author="kmaulden" timestamp="20190404T101456-0400" comment="Link rendering in the PDF has been removed." parentID="uhq_ljs_hhb" flag="done"?>Concept<?oxy_comment_end?><?oxy_comment_end mid="15"?><?oxy_comment_end mid="14"?></link>
                 is considered to be <link
@@ -1195,8 +1197,8 @@
                     <orderedlist>
                         <listitem>
                             <para>If the evaluated concept can be fully defined within the current
-                                SNOMED CT concept model and no changes are required, then it will be
-                                placed in the Can Be Fully Defined Assemblage. For example,
+                                SNOMED CT® concept model and no changes are required, then it will
+                                be placed in the Can Be Fully Defined Assemblage. For example,
                                 201558003 |Reactive arthropathy of shoulder (disorder)| can be
                                 changed to fully defined today as there is nothing missing from its
                                 definition.</para>

@@ -2,23 +2,23 @@
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title><?oxy_comment_start author="timowilliams" timestamp="20190823T110530-0500" comment="Add ISO 1087, and Chute et al requirements as well."?>Terminology
-        Intro<?oxy_comment_end?>duction</title>
+    <title>Terminology Introduction</title>
     <para>The desiderata for the design of a controlled healthcare terminology was published in 1989
         with seven items and was expanded in 1998 to a list of twelve desiderata in the paper by JJ
-            Cimino.<citation>desiderata</citation> These desiderata are used to describe desirable
-        characteristics of controlled medical terminologies. They are: <orderedlist>
+            Cimino.<citation><?oxy_comment_start author="tocrow" timestamp="20240626T125320-0400" comment="cite"?>desiderata<?oxy_comment_end?></citation>
+        These desiderata are used to describe desirable characteristics of controlled medical
+        terminologies. They are: <orderedlist>
             <listitem>
                 <para><emphasis role="bold">Content</emphasis>: While missing content is expected,
                     formally stated processes for requesting and adding content is required. SNOMED
-                    CT, LOINC and RxNorm all have formal processes in place for requesting changes
+                    CT®, LOINC® and RxNorm all have formal processes in place for requesting changes
                     to the terminologies either through the organization that maintains them or
-                    through a national release center in the case of SNOMED CT. While content can be
-                    added using these formal processes, there is usually a delay before a formal
-                    <?oxy_comment_start author="steph" timestamp="20191016T103843-0600" comment="Should this be &quot;edition&quot; instead?"?>addition<?oxy_comment_end?>
-                    is available for use. In addition to the formal processes available through the
-                    standards development organizations (SDOs), SNOMED CT includes formal mechanisms
-                    for users to extend the terminology and add missing content locally.</para>
+                    through a national release center in the case of SNOMED CT®. While content can
+                    be added using these formal processes, there is usually a delay before a formal
+                    addition is available for use. In addition to the formal processes available
+                    through the standards development organizations (SDOs), SNOMED CT® includes
+                    formal mechanisms for users to extend the terminology and add missing content
+                    locally.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Concept Orientation</emphasis>: The most granular piece
@@ -28,16 +28,15 @@
                     <?oxy_comment_start author="tocrow" timestamp="20240624T131234-0400" comment="cite"?>1998
                     paper <citation>Representing Thoughts, Words, and Things in the
                         UMLS<?oxy_comment_end?></citation> the authors describe that the Ogden
-                    Richards' semiotic triangle<quote> shows that, although written or spoken
-                        symbols (words) cannot completely capture the essence of a reference
-                        (thought) or of a referent (thing), there is a correspondence among them.
-                        Either a word or an object can inspire a thought, and people may endeavor to
-                        express their thoughts with words or by identifying objects in the world.
-                        The relationship between a word and a thing is indirect, however. The link
-                        can be completed only when an interpreter (usually a person) processes the
-                        word, which invokes a corresponding thought, and then links that thought to
-                        a thing in the world (the “referent”). This diagram is seductive in its
-                        simplicity.</quote></para>
+                    Richards' semiotic triangle "shows that, although written or spoken symbols
+                    (words) cannot completely capture the essence of a reference (thought) or of a
+                    referent (thing), there is a correspondence among them. Either a word or an
+                    object can inspire a thought, and people may endeavor to express their thoughts
+                    with words or by identifying objects in the world. The relationship between a
+                    word and a thing is indirect, however. The link can be completed only when an
+                    interpreter (usually a person) processes the word, which invokes a corresponding
+                    thought, and then links that thought to a thing in the world (the “referent”).
+                    This diagram is seductive in its simplicity."</para>
                 <para><quote>By implying a one-to-one relationship between each pair of members in
                         the triangle, this simple diagram masks hidden complexity. Ogden and
                         Richards alluded to this complexity by the dotted line between a symbol and
@@ -68,9 +67,9 @@
                     cannot change, and concepts cannot be deleted after they have been released.
                     Once added to a terminology, concepts and their identifiers should persist.
                     However, a mechanism to make concepts inactive when they are deemed to be
-                    duplicate or erroneous should be available. Terminologies like SNOMED CT and
-                    LOINC both have mechanisms for inactivating concepts after they have been deemed
-                    to be in error.</para>
+                    duplicate or erroneous should be available. Terminologies like SNOMED CT® and
+                    LOINC® both have mechanisms for inactivating concepts after they have been
+                    deemed to be in error.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Meaningless Concept Identifiers</emphasis>: Concepts
@@ -81,13 +80,14 @@
             <listitem>
                 <para><emphasis role="bold">Polyhierarchy</emphasis>: In traditional classification
                     systems, categories are only allowed to exist in a single monohierarchical
-                    representation. For example, in ICD-10 A39.0 Meningococcal meningitis only
-                    exists as a subtype of A39 Meningococcal infection. In this representation you
-                    can easily find all meningococcal infections, but if you need to find all types
-                    of meningitis you are required to know all the various codes that represent the
-                    different classifications of meningitis.<figure>
-                        <title><?oxy_comment_start author="steph" timestamp="20190903T155353-0600" comment="Can you center the text in the boxes below and fix the first box where the text is cutoff?" flag="done"?><?oxy_comment_start author="steph" timestamp="20191016T113247-0600" comment="This is still a problem - the text is cutoff." mid="5"?>Monohierarchy
-                            Example<?oxy_comment_end?><?oxy_comment_end mid="5"?></title>
+                    representation. For example, in International Classification of Diseases Tenth
+                    Revision (ICD-10) A39.0 Meningococcal meningitis only exists as a subtype of A39
+                    Meningococcal infection. In this representation you can easily find all
+                    meningococcal infections, but if you need to find all types of meningitis you
+                    are required to know all the various codes that represent the different
+                    classifications of meningitis.<figure>
+                        <title><?oxy_comment_start author="steph" timestamp="20190903T155353-0600" comment="Can you center the text in the boxes below and fix the first box where the text is cutoff?" flag="done"?><?oxy_comment_start author="steph" timestamp="20191016T113247-0600" comment="This is still a problem - the text is cutoff." mid="4"?>Monohierarchy
+                            Example<?oxy_comment_end?><?oxy_comment_end mid="4"?></title>
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="../images/meningitis_monohierarchy.svg"
@@ -97,9 +97,9 @@
                     </figure></para>
                 <para>In a well designed terminology, concepts should be allowed to exist in
                     multiple hierarchies if multiple parent concepts are appropriate. For example,
-                    <?oxy_comment_start author="timowilliams" timestamp="20190430T201423-0500" comment="Add image representing the polyhierarchy" id="m3l_gb2_xhb" flag="done"?><?oxy_comment_start author="rcholan" timestamp="20190528T215454-0400" comment="Adding initial image. Will re-create." parentID="m3l_gb2_xhb" flag="done" mid="7"?><?oxy_comment_start author="steph" timestamp="20190806T085004-0600" comment="Recommend removing most of the white space around the image that isn&apos;t needed and is forcing &quot;hierarchies&quot; to be hyphenated and shown before and after the image." flag="done" mid="8"?>Bacterial
+                    <?oxy_comment_start author="timowilliams" timestamp="20190430T201423-0500" comment="Add image representing the polyhierarchy" id="m3l_gb2_xhb" flag="done"?><?oxy_comment_start author="rcholan" timestamp="20190528T215454-0400" comment="Adding initial image. Will re-create." parentID="m3l_gb2_xhb" flag="done" mid="6"?><?oxy_comment_start author="steph" timestamp="20190806T085004-0600" comment="Recommend removing most of the white space around the image that isn&apos;t needed and is forcing &quot;hierarchies&quot; to be hyphenated and shown before and after the image." flag="done" mid="7"?>Bacterial
                     meningitis is both a subtype of Bacterial Meningitis and Meningococcal
-                    infectious disease and should exist in both hierarchies.<?oxy_comment_end mid="8"?><?oxy_comment_end mid="7"?><?oxy_comment_end?>
+                    infectious disease and should exist in both hierarchies.<?oxy_comment_end mid="7"?><?oxy_comment_end mid="6"?><?oxy_comment_end?>
                     <figure>
                         <title>Polyhierarchy Example</title>
                         <mediaobject>
@@ -113,8 +113,8 @@
             <listitem>
                 <para><emphasis role="bold"
                         ><?oxy_comment_start author="timowilliams" timestamp="20190430T201919-0500" comment="Should we add a comparison of stated vs inferred definitions here?
-" flag="done"?><?oxy_comment_start author="steph" timestamp="20190507T163331-0600" comment="I think that would be helpful." id="p3x_b22_xhb" flag="done" mid="10"?><?oxy_comment_start author="rcholan" timestamp="20190528T221625-0400" comment="Added some draft explanation. Need example to help." parentID="p3x_b22_xhb" flag="done" mid="11"?><?oxy_comment_start author="steph" timestamp="20190812T161629-0600" comment="I think it needs to be more &quot;in your face,&quot; where you have the each term of stated and inferred, followed by their own definitions." flag="done" mid="12"?>Formal
-                        Definitions<?oxy_comment_end mid="12"?><?oxy_comment_end mid="11"?><?oxy_comment_end mid="10"?><?oxy_comment_end?></emphasis>:
+" flag="done"?><?oxy_comment_start author="steph" timestamp="20190507T163331-0600" comment="I think that would be helpful." id="p3x_b22_xhb" flag="done" mid="9"?><?oxy_comment_start author="rcholan" timestamp="20190528T221625-0400" comment="Added some draft explanation. Need example to help." parentID="p3x_b22_xhb" flag="done" mid="10"?><?oxy_comment_start author="steph" timestamp="20190812T161629-0600" comment="I think it needs to be more &quot;in your face,&quot; where you have the each term of stated and inferred, followed by their own definitions." flag="done" mid="11"?>Formal
+                        Definitions<?oxy_comment_end mid="11"?><?oxy_comment_end mid="10"?><?oxy_comment_end mid="9"?><?oxy_comment_end?></emphasis>:
                     While hierarchical information is paramount, the inclusion of additional
                     definitional knowledge can help maintain and correctly place concepts within the
                     appropriate hierarchy. Allowing computers to use this additional information can
@@ -129,9 +129,9 @@
                     all the possible parents. By adding the additional information, like Finding
                     Site in the example below, additional hierarchical relationships can be inferred.<figure>
                         <?oxy_comment_start author="steph" timestamp="20190903T164307-0600" comment="Need to fix the text in circles to make it fit fully and not be cutoff, as it currently is.  With the text being white on a white background, the cutoff text cannot be read outside of the circles.  Same for the second diagram for inferred below." flag="done"?>
-                        <?oxy_comment_start author="steph" timestamp="20191016T113507-0600" comment="Still not fixed.  I think it needs to be fixed; otherwise, it appears as sloppy work." mid="14"?>
+                        <?oxy_comment_start author="steph" timestamp="20191016T113507-0600" comment="Still not fixed.  I think it needs to be fixed; otherwise, it appears as sloppy work." mid="13"?>
                         <title>Relationships Stated by a Content
-                            Modeler<?oxy_comment_end?><?oxy_comment_end mid="14"?></title>
+                            Modeler<?oxy_comment_end?><?oxy_comment_end mid="13"?></title>
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="../images/stated_relationships.svg" scalefit="1"
@@ -139,12 +139,13 @@
                             </imageobject>
                         </mediaobject>
                     </figure></para>
-                <para>DL ontologies can be classified (i.e., some relationships between concepts are
-                    inferred from the asserted class descriptions) using a DL classifier and a new
-                    set of inferred relationships is created for concepts. Solor provides both views
-                    of stated and inferred relationships, and allow users to compare the
-                    differences. Solor has blocks of necessary &amp; sufficient, necessary, and
-                    inherited (i.e., inferred) relationships. <figure>
+                <para>Description Logic (DL) ontologies can be classified (i.e., some relationships
+                    between concepts are inferred from the asserted class descriptions) using a DL
+                    classifier and a new set of inferred relationships is created for concepts.
+                    <?oxy_comment_start author="tocrow" timestamp="20240626T135838-0400" comment="talking about solor"?>Solor<?oxy_comment_end?>
+                    provides both views of stated and inferred relationships, and allow users to
+                    compare the differences. Solor has blocks of necessary &amp; sufficient,
+                    necessary, and inherited (i.e., inferred) relationships. <figure>
                         <title>Inferred Relationships by DL Classifier</title>
                         <mediaobject>
                             <imageobject>
@@ -181,10 +182,10 @@
                         <mediaobject>
                             <imageobject>
                                 <?oxy_comment_start author="steph" timestamp="20190610T132412-0600" comment="In the PDF, the &quot;After&quot; image is not shown, only the before image.  Either need to resize or move the &quot;After&quot; image below the &quot;Before&quot; image." flag="done"?>
-                                <?oxy_comment_start author="timowilliams" timestamp="20190814T134943-0500" comment="convert to SVG" mid="16"?>
+                                <?oxy_comment_start author="timowilliams" timestamp="20190814T134943-0500" comment="convert to SVG" mid="15"?>
                                 <imagedata fileref="../images/CranialNerves.svg" scalefit="1"
                                     width="100%" contentdepth="100%"
-                                ><?oxy_comment_end?></imagedata><?oxy_comment_end mid="16"?>
+                                ><?oxy_comment_end?></imagedata><?oxy_comment_end mid="15"?>
                             </imageobject>
                         </mediaobject>
                     </figure>
