@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SOLOR and Terminology Knowledge</title>
+<section>
+        <title>Solor</title>
+        <para>Solor integrates terminology content (SNOMED, LOINC, RxNorm, etc.) from its native
+            format into a common Solor format. Once the content is in Solor, there is a step where
+            equivalency is determined through various methods where concepts of the same idea are
+            aggregated. For example, Gentamycin from SNOMED is the same as Gentamycin from LOINC,
+            and is also the same Gentamycin from RxNorm. The end result from this process is the
+            creation of a Solor concept that is devoid of any source information (but will have
+            traceability). This end result is what will be exposed to the user to view, use, and
+            extend. In the Gentamycin example, a user will find a concept that is devoid of any
+            source information and will not need to know if this is the SNOMED/LOINC/RxNorm
+            Gentamycin that needs to be selected. Solor concepts are identified using a Universally
+            Unique Identifier (UUID).</para>
+    </section>
+    <section>
+        <title>Inte<?oxy_comment_start author="tocrow" timestamp="20240624T173028-0400" comment="I think this is covered in other sections"?>roperability
+            by Mappi<?oxy_comment_end?>ng</title>
+        <para>Today's health care terminology standards encompass methods, terminologies, and
+            specifications for the exchange, storage, and retrieval of information associated with
+            health care systems. These standards contain terminologies and concepts that are used in
+            medical records to describe patient symptoms, lab results, prescription medications,
+            etc. In today's health care industry, the standard approach to integrating multiple
+            disparate health data sources is to conduct mapping, a manual process that attempts to
+            associate data to different systems for exchanging patient information and other data.
+            Mapping, while pragmatically actionable, is prone to information loss and errors.</para>
+        <para>Preserving the meaning of information when exchanging electronic health record data
+            (i.e., semantic interoperability) is critical for delivering safe patient care and
+            leveraging standards-based clinical decision support. Given that individuals often
+            receive health care from more than one health system, integration of data from multiple
+            sources is needed to ‘view’ a patient’s complete health record and avoid erroneous
+            clinical decisions based on incomplete or inaccurate information, such as decisions that
+            lead to performing unnecessary tests or giving a patient a drug to which they are known
+            to be allergic. To date, the strategy for achieving semantic interoperability between
+            the clinical systems of the Department of Defense (DoD) and the Veterans Administration
+            (VA) has been to ‘map’ millions of data elements used in the respective EHRs to standard
+            terminologies (e.g., SNOMED CT, LOINC, and RxNorm). However, ‘round trip testing’ of the
+            mapped concepts has identified problems with the quality of the mappings for
+            bidirectional use. New strategies are required to achieve semantic interoperability to
+            support safe patient care, both before and after the two organizations start using a
+            single vendor for their electronic health record systems. The use of logical definitions
+            and terminology system extensions to manage concepts used in the delivery of care can
+            overcome key challenges with the mapping strategy.</para>
+        <section>
+            <title>Mapping is Operational, but Incomplete</title>
+            <para>Despite the fact that mapping is plagued by challenges (e.g., being out of date,
+                not scalable, inconsistent, overly complex, incoherent, unstandardized), it still
+                serves an operational need. Current data standards hinder true interoperability, so
+                mapping allows disparate organizations to share and use at least some of their
+                clinical data across health systems. In this section, we will highlight some of the
+                immediate benefits that mapping provides from an operational perspective.
+                Subsequently, we will discuss the challenges associated with mapping. These
+                challenges may ultimately compromise patient safety and clinical decisions. </para>
+            <para>Here’s how terminology mapping accomplishes partial interoperability at the
+                semantic level <citation>HL</citation>:<orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Makes Data Exchange Possible</emphasis>:
+                            Terminology mapping enables semantic interoperability, helping the
+                            healthcare sector reach the objective of fluent machine-to-machine
+                            communication. This function lets IT systems, such as EHRs, map
+                            different terms to a shared semantics, or meaning.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Provides a Trusted Source</emphasis>: Adopts a
+                            unified approach for managing terminology so that a single source of
+                            terminology can be leveraged across health systems. Mapping can help
+                            achieve a partially normalized data set that allows departmental systems
+                            to operate.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Incorporates Terminology into
+                                Applications</emphasis>: Terminology mapping also provides a method
+                            for incorporating standard clinical terminology within healthcare apps,
+                            thereby promoting semantic interoperability among organizations.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Manages a Range of Terminology Value
+                                Sets</emphasis>: A structured approach to mapping terminology can
+                            help an organization monitor the multitude of groupers and value sets
+                            that are required for use for different purposes. </para>
+                    </listitem>
+                </orderedlist></para>
+        </section>
+        <section>
+            <title>Challenges with Mapping</title>
+            <para>The current lack of highly reliable, consistent, and complete semantic
+                interoperability limits healthcare organizations’ ability to exchange information
+                and pursue collaborative care. The standard approach to integrating multiple
+                disparate health data sources is to conduct mapping, a manual process that
+                is:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Out of date</para>
+                </listitem>
+                <listitem>
+                    <para>Not scalable using local terminology</para>
+                </listitem>
+                <listitem>
+                    <para>Inconsistent and loses information at each transformation</para>
+                </listitem>
+                <listitem>
+                    <para>Unnecessarily complex and incoherent</para>
+                </listitem>
+                <listitem>
+                    <para>Lacking a standard approach and structure</para>
+                </listitem>
+            </itemizedlist>
+            <section>
+                <title>Summary of Solor white paper - "From retrospective mapping to prospective
+                    standardization" </title>
+                <para>Methods: To describe the current mapping approach, we reviewed reports
+                    submitted by a consulting terminology expert who evaluated the process and
+                    outcomes from the multi-year mapping efforts, summarized key features of the
+                    mapping methods that threaten quality, and identified examples to illustrate
+                    mapping challenges. To describe the new approach, we explain the strategy for
+                    representing concepts required for interoperability, internal use, or
+                    integration of historical data, and we present basic models for representing
+                    concepts and managing requests for new concepts. Finally, we applied the new
+                    approach to the problems identified from the mapping strategy and discussed
+                    strengths and limitations.<citation>MappingPaper</citation>
+                </para>
+                <para>Results: A major threat to quality concerned the requirement that local source
+                    terms be mapped to a single standardized terminology element; no creation of
+                    logical expressions was allowed to represent target concepts. The quality of the
+                    mappings were also impacted by incomplete and different mapping rules used by
+                    the two organizations. Ongoing resources are required to assess and maintain
+                    mappings over time. <citation>MappingPaper</citation>
+                </para>
+            </section>
+            <section>
+                <title>Example of Challenges due to Mapping</title>
+                <para>Mapping is an approach to share data; unfortunately, mapping at each step in
+                    the data exchange process creates additional opportunities for error and for
+                    loss of information that may lead to a patient’s harm. SNOMED CT and other
+                    meaningful use standards are frequently used as targets of this mapping, and
+                    their use is mandated as part of the Meaningful Use regulations. Tables 1 and 2
+                    below show how equivalent concepts in two different care settings leads to
+                    information loss when they are mapped to SNOMED CT because SNOMED CT does not
+                    represent the equivalent meaning. In Tables 1 and 2, the Local Concept column
+                    represents the concept created by Hospital A during the care of a patient, the
+                    Map Type column specifies broader than or narrower than or equivalent, and the
+                    SNOMED CT Concept column represents the concept to which the local concept has
+                    been mapped. The Meaning Lost column describes the information lost due to
+                    mapping because an equivalent match of the local concept is not found in SNOMED
+                    CT. In Table 1 below, the SNOMED CT Concept is broader than the local concept,
+                    causing important tumor morphology information to be lost during mapping. In
+                    Table 2, the SNOMED CT Concept is also broader than the local concept, causing
+                    important tumor location information to be lost in the mapping process.</para>
+                <para><inlinemediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Mapping.png" scale="50"/>
+                        </imageobject>
+                    </inlinemediaobject></para>
+            </section>
+        </section>
+        <section>
+            <title>The Solor Solution</title>
+            <para>What’s needed is a semantically normalized information model (i.e., Solor) with an
+                appropriate separation of concerns in regard to the informatics architectural
+                layers. Such a model is critical for the success of a number of forward-thinking
+                healthcare initiatives. Solor does not map one terminology system to another.
+                Rather, Solor integrates specific terminologies such as – but not limited to –
+                SNOMED CT, LOINC, RxNorm. These three terminologies form the foundation of Solor
+                because they are meaningful use standards, where when integrated together, they
+                represent the breadth of information necessary for clinical data
+                representation.</para>
+            <para>The new approach to data integration involves the use of description logic to
+                model and manage concepts from standard terminologies to support clinical care.
+                Instead of mapping an existing local code or term to a standard code with the goal
+                of creating semantic equivalence, challenges created by mapping were avoided by
+                directly representing concepts using standard codes or logical expressions that
+                conform to a description logic model. We described the strategy for representing
+                ‘things’ (i.e. meanings) about patient care using existing single SNOMED, LOINC, and
+                RxNorm concepts, computable logical expressions based on SNOMED CT, LOINC, or RxNorm
+                that are added to extensions managed by an organization, organization specific
+                identifiers to support specific local needs, and by adding ‘names’ (i.e., new
+                dialect-specific synonyms) to already-existing ‘things’. Finally, ‘alternate
+                identifiers’ for SNOMED, LOINC or RxNorm concepts are useful for integrating
+                historical data so source terms (linked to alternative identifiers) are accurately
+                represented using standard concepts defined using description logic.</para>
+            <section>
+                <title>Design Features - Understandable, Reproducible and Useful</title>
+                <para>Content in Solor aims to adhere to design features for concept
+                    validity:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Understandable: The meaning of a concept can be understood, without
+                            reference to private or inaccessible information.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Reproducible: Multiple users can apply the concept to the same
+                            situations.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Useful: The concept has a practical value to users that is
+                            self-evident or can be readily explained.</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+            <section>
+                <title>Licensing and Solor</title>
+                <para>Solor is not intended to compete with existing standards and processes, and
+                    does not redistribute content. It enables the community of Solor to integrate
+                    terminologies – their own terminology and others’ terminology. Those who are
+                    distributing terminology must have a license to distribute these terminologies.
+                    For example: If organization A is distributing SNOMED CT, LOINC and its curated
+                    terminology, then organization A needs to ensure it has a license to
+                    redistribute SNOMED CT and LOINC. Solor’s transformation processes and
+                    architectural foundation are available under the Apache 2 Open Source License. </para>
+                <para>SNOMED CT, LOINC and RXNorm are foundational terminologies in Solor. Solor
+                    fully supports and relies on these standards and their organizations. Solor’s
+                    intent is to complement these standards. Organizations are free to integrate
+                    Solor content into their standards.</para>
+                <section>
+                    <title>LOINC License</title>
+                    <para>The LOINC database can be obtained from the Regenstrief LOINC website
+                            (<link xlink:href="http://www.regenstrief.org/loinc/"
+                            >http://www.regenstrief.org/loinc/</link>), as a PDF report sorted
+                        alphabetically by class, as a tab-delimited ASCII text file, and/or as an
+                        Access database. The LOINC database and associated documents and programs
+                        are copyrighted, but the copyright permits all commercial and noncommercial
+                        uses in perpetuity at no cost. If the LOINC database or its contents are
+                        distributed as a database, such distributions must include all parts of the
+                        formal LOINC term, the LOINC short name, the LOINC code, the deprecated
+                        flag, and the copyright. The copyright notice is needed to prevent variants,
+                        which would defeat the purpose of this standard. No such notice is required
+                        when LOINC codes are used in messages to report test results.</para>
+                </section>
+                <section>
+                    <title>SNOMED CT License</title>
+                    <para>Use of SNOMED CT is subject to the SNOMED International Affiliate license
+                        provisions and is free in Member territories including the United States, in
+                        low income countries, and for Qualifying Research Projects in any country.
+                        To learn more, please see the SNOMED CT and Licensing page. Users should
+                        carefully read the license agreement before re-distributing any content in
+                        any type of application as there may be additional restrictions, permissions
+                        or copyright considerations imposed by the content providers. Users must
+                        contact the vocabulary content providers regarding any use that is not
+                        covered by the license. The content providers may charge fees for these
+                        additional uses of their content. Appendix 1 of the license agreement lists
+                        contact information for each content provider. The SNOMED CT® Affiliate
+                        License Agreement is included as Appendix 2 of the UMLS Metathesaurus
+                        License and outlines possible costs. NLM is a member of SNOMED International
+                        and there is no charge for SNOMED CT use in the United States and other
+                        Member territories. For information about fees in non-member countries, see
+                        the SNOMED International website.</para>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section>
+        <?oxy_comment_start author="timowilliams" timestamp="20190430T211931-0500" comment="How does this relate to the SNOMED CT Integration efforts?
+"?>
+        <title>Solor Integration - Integrating LOINC Method Attributes and SNOMED CT
+            Concepts<?oxy_comment_end?></title>
+        <para>The collaborative agreement between LOINC and SNOMED CT developers has enabled
+            informaticists to leverage SNOMED CT for the representation of the building blocks of
+            LOINC (e.g., method) and for a more consistent representation of clinical and laboratory
+            observations in SNOMED CT. We utilized the derivative works from this collaborative
+            effort to represent LOINC and SNOMED CT in Solor, an open-source ecosystem for
+            integrating disparate medical terminologies in a common model. </para>
+        <para>Seamless integration of LOINC and SNOMED CT is non-trivial because LOINC and SNOMED CT
+            have different semantics models, and use different formalisms and tools for their
+            representation, have separate release cycles, and different versioning mechanisms.
+            Furthermore, the initial collaboration between LOINC and SNOMED CT provided equivalent
+            concepts between LOINC laboratory concepts and SNOMED CT concepts but did not include
+            many clinical concepts from LOINC. In this work, our objectives are: (1) to assess the
+            extent to which LOINC method attributes can be represented by concepts in SNOMED CT, (2)
+            to describe how to integrate equivalent LOINC method attributes and SNOMED CT concepts
+            in the Solor common model, and (3) to explore the benefits and challenges of integrating
+            LOINC and SNOMED CT in the Solor common model. </para>
+        <para><emphasis role="bold">Methods:</emphasis> We sought to identify the overlaps and gaps
+            between method attributes in LOINC and concepts in SNOMED CT, and integrated the
+            equivalent concepts in Solor – an integrated common model for medical terminologies.
+            First, we gathered the list of method attributes from LOINC version 2.63 and mapped each
+            to a concept unique identifier (CUI) from the UMLS (using the UMLS API). For CUIs
+            representing a LOINC method attribute, we retrieved associated atoms from SNOMED CT in
+            the
+            <?oxy_comment_start author="steph" timestamp="20190508T125835-0600" comment="Is this correct?  What is UMLS.2?  Is it supposed to be a reference?" flag="done"?>UMLS.
+                <citation>Cholan_NLM</citation><?oxy_comment_end?>Next, we imported each LOINC
+            identifier and attached description logic defining whether there was equivalency of the
+            method attribute to SNOMED CT concepts. When there was an overlap, a Solor-navigation
+            concept was created which facilitated an inferred taxonomy representation with semantic
+            context from SNOMED CT attached to the right LOINC method attribute. Finally, we
+            evaluated the alignments obtained between LOINC method attributes and SNOMED CT concepts
+            to determine what method attributes in LOINC were not covered by concepts in SNOMED CT. </para>
+        <para><emphasis role="bold">Results: </emphasis><emphasis role="italic"><emphasis
+                    role="underline">Semantic profile of LOINC method
+                attributes</emphasis></emphasis><emphasis role="italic"> –</emphasis> The method
+            axis of LOINC is used to specify methods used for particular clinical observations and
+            measurements. The distribution of the most prevalent semantic groups found in LOINC
+            method attributes include procedures (58%), concepts/ideas (14%), living beings (13%),
+            occupations (8%), and disorders (2%). Whereas, SNOMED CT concepts represent disorders
+            (22%), procedures (17%), body structures (11%), clinical findings other than disorders
+            (10%), and organisms (10%).<citation>Bodenreider_Solor</citation>
+            <?oxy_comment_start author="steph" timestamp="20190508T130256-0600" comment="Is this supposed to be a reference?" flag="done"?><?oxy_comment_end?></para>
+        <para><emphasis role="italic"><emphasis role="underline">Coverage of LOINC method attributes
+                    by the UMLS and SNOMED CT</emphasis></emphasis><emphasis role="italic"> –
+            </emphasis>Of the 1702 LOINC methods, 1688 (99%) were mapped to a UMLS CUI. Sampling the
+            1% not mapped implies provisional codes added to a LOINC version update that were not
+            yet added to the UMLS version release. We computed the coverage of LOINC method
+            attributes by SNOMED CT by analyzing the count of LOINC method attributes that shared at
+            least 1 UMLS CUI with a corresponding SNOMED CT concept. Of the 1688 CUIs that
+            represented LOINC method attributes, 383 (23%) were associated with a SNOMED CT
+            concept.</para>
+        <para><emphasis role="italic"><emphasis role="underline">Solor
+                Transformation</emphasis></emphasis> –Solor is an ecosystem that allows users to
+            import, transform, view, and export content from disparate medical terminologies, all in
+            one common model. Users can navigate and search Solor content, view details of the data
+            elements, and select specific concepts to view more information. Solor has two
+            fundamental building blocks: concepts and semantics. A concept is defined as an idea or
+            a general notion and is represented by a universally unique identifier (UUID). A
+            semantic is attached to a concept to provide contextual meaning and semantic data to the
+            concept’s content. </para>
+        <para> Integrating LOINC method attributes into Solor required a transformation process in
+            which the LOINC data was transformed into Solor components using these defining
+            relationships to create OWL EL++ description logic definitions. The LOINC identifier was
+            used to create a Type 5 UUID for a Solor concept, so that the identifiers used in Solor
+            are idempotent, and are derivable directly from the LOINC data. Additionally, the
+            original LOINC identifier for this concept is properly represented, as are the other
+            data elements required by the LOINC license. These Solor concepts integrate SNOMED CT
+            and LOINC semantics; the LOINC Method semantic and SNOMED CT semantic are grouped under
+            the same Solor concept. The
+            f<?oxy_comment_start author="steph" timestamp="20190508T131130-0600" comment="In the PDF, it&apos;s actually Figure 3.1.  Also, in the figure, while the SNOMED CT name is displayed, there isn&apos;t anything that states that.  Should there be?" flag="done"?>igure
+            <?oxy_comment_end?>below exemplifies the integration: the LOINC method attribute is
+            “AUDIT”, and the SNOMED CT concept is displayed as “Alcohol use disorders identification
+            test”.</para>
+        <figure>
+            <title><emphasis role="bold">Solor Editor: Representation of LOINC and SNOMED CT in a
+                    common model</emphasis></title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Komet_LOINC_Int.png" scalefit="1" width="100%"
+                        contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para><emphasis role="bold">Conclusion</emphasis>: LOINC method attributes include concepts
+            ranging from procedures, administrative concepts, occupations, and a small number of
+            disorders and phenomena. Only about 23% of LOINC method attributes can be directly
+            represented by a SNOMED CT concept. The overall interoperability between LOINC method
+            attributes and SNOMED CT concepts was limited at best. Interestingly, there were a
+            number of procedures and specimen source details in LOINC method attributes with little
+            or no coverage by SNOMED CT. One suggestion is for developers of LOINC and SNOMED CT to
+            review these gaps and include better coverage in future versions, if appropriate. </para>
+        <para>Solor may assist in providing a collaborative ecosystem to host local extensions for
+            SNOMED CT to represent LOINC method attributes. Currently, implementers of LOINC and
+            SNOMED CT must traverse the distinct hierarchies of each source terminology and version.
+            Integrating the terminology content of LOINC and SNOMED CT into the Solor common model
+            may have a beneficial impact on the usability (i.e., reduced burden) for implementers in
+            both traversing distinct formalisms and maintaining version control. It may be helpful
+            to communicate more specific details about LOINC method attributes by leveraging the
+            right SNOMED CT concepts for additional details about the method attributes. Next steps
+            include conducting a formative evaluation with a purposive sample of experts in standard
+            clinical terminologies to assess the benefits and challenges of integrating and
+            representing overlapping LOINC and SNOMED CT content in Solor’s common model. We aim to
+            have this evaluation completed by Summer 2019 and will include these updated results if
+            accepted. Solor’s integration of disparate medical terminology content may help
+            implementers and authors of medical terminologies with orienting concepts and traversing
+            relationships between disparate standards. </para>
+    </section>
+    <section>
+        <title>Evaluating the impact of implementing Solor</title>
+        <para>Electronic clinical quality measures (eCQMs) and clinical decision support (CDS)
+            alerts are triggered by clinical data that is encoded by standards based clinical
+            terminologies. Because these measures and alerts intend to promote evidence-based
+            clinical processes, variations in data caused by having inaccurate or antiquated
+            implementations of underlying terminology standards may impact the ability of clinicians
+            to assess care and improve quality. Jean-Jacques et al. showed that health information
+            technology-supported quality improvement (QI) initiatives can decrease disparities for
+            some chronic disease management and preventive measures <citation>QI</citation>.
+            Data-driven QI efforts rely heavily on patient-level data generated by eCQM reports or
+            CDS alerts, which are dependent upon standards-based encoded EHR data. If clinicians
+            rely on inaccurate implementations of eCQMs and CDS, then they may have lists/alerts
+            with patients intended to be excluded from a measure/alert, and may therefore, target
+            inappropriate patients for therapies, such as recommending aspirin use for someone at
+            high-risk for a fatal bleeding event. Furthermore, their lists/alerts will not include
+            the
+            <?oxy_comment_start author="steph" timestamp="20190508T135639-0600" comment="I didn&apos;t make the connection of how newly added patients can lead to inaccurate results or recommendations." id="bsj_b4d_vhb" flag="done" mid="16"?><?oxy_comment_start author="rcholan" timestamp="20190521T163713-0400" comment="This is explained below in the paragraph with Number-needed-to-treat statistics. If this needs additional clarification I can add text here. " parentID="bsj_b4d_vhb" flag="done" mid="17"?><?oxy_comment_start author="steph" timestamp="20190610T133425-0600" comment="Okay." flag="done"?>newly
+            added patients
+            <?oxy_comment_end?><?oxy_comment_end mid="17"?><?oxy_comment_end mid="16"?>who may need
+            certain therapies to improve outcomes. Having accurate eCQMs/CDS may translate into
+            potential lives saved, and avoidable harms. Furthermore, the comparability of clinical
+            quality performance scores between healthcare organizations is negatively impacted by
+            the vast variation in standards-based terminology implementations. Value-based payment
+            programs rely on standardized implementations of standards-based data that generate eCQM
+            data to be able to benchmark scores effectively, and administer value-based payments
+            accordingly. In the current ecosystem, eCQM data and their underlying standards-based
+            encoded clinical data may not be implemented in a standardized way, and therefore the
+            ability to increase value, and enhance population health, may be hindered. </para>
+        <para>For official eCQMs endorsed by CMS, regular updates occur at least annually, and
+            sometimes two to three times per year. These updates to eCQM definitions may result in
+            changes to measure logic or to the official sets of included and excluded codes in the
+            standards-based terminologies (i.e. value set vocabularies). In previous work, we found
+            that clinics often lag behind in implementing the most updated, and accurate, versions
+            of official eCQM as outlined by value set specifications. When older and newer versions
+            of eCQMs were implemented against the same clinical data, we found changes in
+            measurement of quality of up to 5% difference in overall performance score, and up to
+            28% difference in the number of patients included in a measure’s denominator.
+                <citation>Cholan_shift</citation> Similarly, in other work, we showed that
+            implementations of the same eCQM using distinct value set specifications also led to
+            variations in the calculated prevalence of patients at risk for key conditions, and in
+            some cases led to variations in CQM performance
+                percentages.<citation>concepts</citation>
+        </para>
+        <para><emphasis role="bold"><emphasis role="underline">Proposed Study to Evaluate the Impact
+                    of Solor</emphasis></emphasis></para>
+        <para><emphasis role="underline">Purpose</emphasis></para>
+        <para>Solor provides an easier way to verify that value sets are up to date and covered.
+            Solor can also suggest and add additional codes based on Solor concepts to value set
+            specifications. In this study, our objective is to use Solor to identify codes from eCQM
+            value sets, to better understand the usage of these codes against clinical data, and to
+            assess the impact of the pre and post Solor codes on eCQM performance. </para>
+        <para/>
+        <para><emphasis role="underline">Methods</emphasis></para>
+        <para>First, we will identify differences in the coverage of vocabulary specifications –
+            unique identifiers, concepts, code groups, and coding systems – between what is covered
+            in VSAC value sets and what is intended to be covered in value sets according to Solor
+            to define global concepts in measures. After this, we will query clinical data at xxx to
+            determine the frequency of patients for whom the new Solor codes are used. Finally, we
+            will implement the measures in a quality measure calculation registry and CDS
+            environment to estimate the performance differences before and after Solor’s mapping of
+            non-covered value set codes. </para>
+        <para><emphasis role="underline">Evaluation</emphasis></para>
+        <para>We will compute the frequency of patients who use any of the codes contained in CQM
+            value sets, stratified by measure. We will compare the change in frequencies before and
+            after Solor’s addition of equivalent codes. We will use Fisher’s exact test to compare
+            aggregate-CQM performance rates between the original versions of measures and the
+            versions of measures after Solor value sets are implemented. We will use the Jaccard
+            similarity index to assess the similarity between the patients included in the original
+            versions of the measures, and the versions including complete value set coverage. Number
+            Needed to Treat and Number Needed to Harm Statistics can be used to calculate the
+            potential harms avoided, and harms causes based on pre and post Solor encoded data. </para>
+        <para><emphasis role="underline">Goals</emphasis></para>
+        <orderedlist>
+            <listitem>
+                <para>Assess VSAC value sets before and after the use of Solor.</para>
+            </listitem>
+            <listitem>
+                <para>Understand the frequency of patients that are impacted by newly added Solor
+                    value set concepts. </para>
+            </listitem>
+            <listitem>
+                <para>Understand how increasing value set code coverage impacts CQM performance
+                    estimates, and the patients included in measure populations, and implications on
+                    population health. </para>
+            </listitem>
+        </orderedlist>
+        <para>
+            <emphasis role="underline">Example Results</emphasis><emphasis role="bold"><emphasis
+                    role="underline">s</emphasis></emphasis></para>
+        <para>
+            <inlinemediaobject>
+                <imageobject>
+                    <?oxy_comment_start author="timowilliams" timestamp="20190430T212054-0500" comment="Convert to SVG?
+"?>
+                    <imagedata fileref="images/NNT.png" scale="50"/><?oxy_comment_end?>
+                </imageobject>
+            </inlinemediaobject>
+        </para>
+        <para> Assuming that the Solor value set specifications of a measure represent “perfect”
+            inclusion, then every newly included patient can be thought of as needing the
+            evidence-based therapy (such as aspirin for secondary prevention of heart attacks) in
+            order to avoid bad outcomes. Under the same assumption, every dropped patient between
+            value set versions of a measure can be thought of as avoiding potential harm caused by
+            the promoted therapy. For aspirin use, Number-Needed-to- Treat (NNT) statistics show
+            that of patients with known cardiovascular risk who took aspirin, 1.3% were helped by
+            preventing a non-fatal heart attack, and 0.25% were harmed by a major bleeding
+                event.<citation>Aspirin</citation>, <citation>antiplatelet</citation> In the Cholan
+            et al study <citation>Cholan_shift</citation>, 121 (92%) of the patients dropped in the
+            Solor version of the Aspirin measure were also taking an anticoagulant medication, so
+            the Number-Needed-to-Harm (NNH) statistic for this subset of patients is likely much
+            higher, and for these clinics, 1 to 2 people may have been harmed if the pre-Solor
+            definition persisted, as Hansen et. al showed that patients with combinations of
+            aspirin, warfarin, and clopidogrel are associated with up to a three-fold higher risk of
+            bleeding for patients on dual therapy and triple therapy.<citation>Hansen</citation>
+            With another measure for statin therapy, 1 in 21 people have a repeat heart attack,
+            stroke or death avoided, so even 10 missed people have significant risk of events.
+            Similarly, 10% are harmed by muscle damage or pain, or ~1 of the 14 inappropriately
+                included.<citation>efficacy</citation> Even in this small study, failure to include
+            or exclude patients could have led to real harm. With eCQM implementation and QI
+            infrastructure increasing, the problem of having, and using, antiquated CQM versions of
+            value sets could have significant potential negative impact on population health by not
+            avoiding events, and avoiding harms for patients.</para>
+    </section>
+</section>
+
+
