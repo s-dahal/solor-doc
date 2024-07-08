@@ -76,4 +76,8 @@
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"/>
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"/>
     </part>
+    <part>
+        <title>Assertional Knowledge</title>
+        <xi:include href="SOLOR-assertional.xml"/>
+    </part>
 </book>
