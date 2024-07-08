@@ -21,14 +21,6 @@
         <xi:include href="Book%20Content/Book%20Integrated%20Knowledge%20Management.xml"/>
         <xi:include href="Book%20Content/Book%201.2.2.xml"/>
         <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T162627-0500" comment="We can add teh solor-foundation.xml here as part of the ikm overview and write a 2 sentence intro to solor? "?>
-        <xi:include
-            href="Book%20Content/Book%20Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"
-            ><?oxy_comment_end?></xi:include>
-        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T161709-0500" comment="move to appendix?"?>
-        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T161719-0500" comment="move to appendix?" mid="10"?>
-        <xi:include
-            href="Book%20Content/Book%20Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3.xml"
-            ><?oxy_comment_end?><?oxy_comment_end mid="10"?></xi:include>
     </part>
     <part>
         <title>Foundational Architecture</title>
@@ -75,5 +67,24 @@
             href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"/>
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"/>
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"/>
+    </part>
+    <part>
+        <title>Komet</title>
+        <xi:include
+            href="Book%20Content/Book%20Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3.xml"
+            ><?oxy_comment_end?><?oxy_comment_end mid="10"?></xi:include>
+        <xi:include
+            href="Book%20Content/Book%20Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"
+            ><?oxy_comment_end?></xi:include>
+        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T161709-0500" comment="move to appendix?"?>
+        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T161719-0500" comment="move to appendix?" mid="10"?>
+        <xi:include href="Volume%208%20-%20Komet%20User%20Guide.xml"></xi:include>
+    </part>
+    <part>
+        <title>Assertional Model</title>
+    </part>
+    <part>
+        <title>Procedural Knowledge</title>
+        <title>Procedural Knowledge</title>
     </part>
 </book>
