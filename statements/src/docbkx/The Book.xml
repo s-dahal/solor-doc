@@ -69,7 +69,6 @@
         <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"/>
     </part>
     <part>
-<<<<<<< HEAD
         <title>Komet</title>
         <xi:include
             href="Book%20Content/Book%20Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3.xml"
@@ -82,14 +81,7 @@
         <xi:include href="Volume%208%20-%20Komet%20User%20Guide.xml"></xi:include>
     </part>
     <part>
-        <title>Assertional Model</title>
-    </part>
-    <part>
-        <title>Procedural Knowledge</title>
-        <title>Procedural Knowledge</title>
-=======
         <title>Assertional Knowledge</title>
         <xi:include href="SOLOR-assertional.xml"/>
->>>>>>> d06206e31f99acc0cb57ea045e257b5766ce848b
     </part>
 </book>
