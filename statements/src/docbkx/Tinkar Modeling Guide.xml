@@ -275,7 +275,7 @@
                         <row>
                             <entry><emphasis role="bold">Status Value </emphasis></entry>
                             <entry>The status represented by the STAMP (Active, Cancelled, Inactive,
-                                Primordial, Withdrawn)</entry>
+                                Premundane, Withdrawn)</entry>
                         </row>
                     </tbody>
                 </tgroup>
@@ -343,7 +343,8 @@
             <para>When representing a new data set using the Tinkar model, only the status values
                 above are allowed and must follow the business rules defined. The business rules do
                 not account for the accidental moving of a component. The diagram below shows the
-                mapping between each status.
+                mapping between each status.</para>
+            <para>
                 <figure xml:id="StatusDiagram">
                     <title>Status Diagram</title>
                     <mediaobject>
@@ -352,7 +353,7 @@
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
-                </figure> 
+                </figure>
                 If an additional information is required (i.e., the LOINC discouraged
                 state), they should be represented via an additional pattern and semantic. The STAMP
                 status values should never be extended beyond the provided starter set. </para>
@@ -370,18 +371,17 @@
                             <row>
                                 <entry><emphasis role="bold">Time </emphasis></entry>
                                 <entry>
-                                    <para>The timestamp is capture with precision and a time
+                                    <para>The timestamp is captured with precision and a time
                                         zone</para>
                                     <para> </para>
                                 </entry>
                             </row>
                         </tbody>
                     </tgroup>
-                </table>
-                <emphasis role="bold">Author – </emphasis>The author is identified by a concept and
-                may be annotated with more information and represents the change's author<emphasis
-                    role="bold">.</emphasis> The tables below show the parent concept aligned to
-                Author. <table>
+                </table><emphasis role="bold">Author – </emphasis>The author is identified by a
+                concept and may be annotated with more information and represents the change's
+                    author<emphasis role="bold">.</emphasis> The tables below show the parent
+                concept aligned to Author. <table>
                     <title>Author Parent Concept</title>
                     <tgroup cols="2">
                         <colspec colnum="1" colname="col1"/>
@@ -436,7 +436,9 @@
                                 <entry><emphasis role="bold">Definition</emphasis></entry>
                             </row>
                             <row>
-                                <entry><emphasis role="bold">Primordial Module</emphasis></entry>
+                                <entry><emphasis role="bold"
+                                        ><?oxy_comment_start author="tocrow" timestamp="20240627T101554-0400" comment="Premundane?"?>Primordial<?oxy_comment_end?>
+                                        Module</emphasis></entry>
                                 <entry>The base/foundational/default module assigned prior to
                                     creating other model/module concepts the primordial module is
                                     reserved for starter set information that all Tinkar models
@@ -480,33 +482,43 @@
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Children Concept </emphasis></entry>
-                                <entry><emphasis role="bold">Definitio</emphasis>n</entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
                             </row>
                             <row>
-                                <entry><emphasis role="bold">Primordial Path</emphasis></entry>
-                                <entry><emphasis role="bold">The default path when creating a new
-                                        component.</emphasis></entry>
+                                <entry><emphasis role="bold">Prerequisite Path</emphasis></entry>
+                                <entry>A path that contains components that are shared across all
+                                    paths and contain infrastructure components.</entry>
                             </row>
                             <row>
                                 <entry><emphasis role="bold">Sandbox Path</emphasis></entry>
-                                <entry><emphasis role="bold"> A path “branch” for components under
-                                        testing.</emphasis></entry>
+                                <entry> A path “branch” for components under testing.</entry>
                             </row>
                             <row>
                                 <entry><emphasis role="bold">Development Path</emphasis></entry>
-                                <entry><emphasis role="bold">A path “branch” that specifies that the
-                                        components are currently under
-                                    development</emphasis></entry>
+                                <entry>A path “branch” that specifies that the components are
+                                    currently under development</entry>
                             </row>
                             <row>
                                 <entry><emphasis role="bold">Master Path</emphasis></entry>
-                                <entry><emphasis role="bold">A default path “branch” for
-                                        components</emphasis>
-                                </entry>
+                                <entry>A default path “branch” for components. This path represents
+                                    those finalized or published components in production</entry>
                             </row>
                         </tbody>
                     </tgroup>
-                </table></para>
+                </table>
+                The diagram below shows the relationship between different Paths. 
+                <figure xml:id="PathDiagram">
+                    <title>Path Diagram</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Path%20Status.svg" scale="70"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                
+                The STAMP attributes are used to help describe versions of components. As a model changes and evolves, with each change made in a component, a new version is created for that change. To track information like when and who made the changes, a STAMP is assigned to each version, so the history is recorded and preserved.
+            </para>
         </section>
         <section>
             <title>Tinkar Representation Examples</title>
@@ -541,16 +553,17 @@
         <para>Converting a <emphasis role="bold">domain </emphasis><emphasis role="bold">data
                 set</emphasis> into the Tinkar model involves several key steps. The sections below
             detail the current <emphasis role="bold">Tinkar starter data</emphasis> and the steps
-            one will take to translate a dataset into the Tinkar logical model.
-            <figure xml:id="KeyStepstoRepresentaDataSetinTinkar">
+            one will take to translate a dataset into the Tinkar logical model. <figure
+                xml:id="KeyStepstoRepresentaDataSetinTinkar">
                 <title>Key Steps to Represent a Data Set in Tinkar</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/Key%20Steps%20to%20Represent%20a%20Data%20Set%20in%20Tinkar.svg" scale="70"
-                            align="center"/>
+                        <imagedata
+                            fileref="images/Key%20Steps%20to%20Represent%20a%20Data%20Set%20in%20Tinkar.svg"
+                            scale="70" align="center"/>
                     </imageobject>
                 </mediaobject>
-            </figure> 
+            </figure>
         </para>
         <section>
             <title>Defining The Data Elements</title>
@@ -590,15 +603,18 @@
                 SNOMED, definitions of fields can typically be found in documentation online of the
                 terminology. For a data set that is not well-established, the definitions might have
                 to be created.</para>
-            <para><?oxy_comment_start author="tocrow" timestamp="20240625T164519-0400" comment="Add LOINC Example"?>To
-                show a practical example of a predefined data set, an image below shows a snippet of
-                the LOINC transformation. LOINC is a predefined data set with definitions and fields
-                listed in a source file. In this snippet, some of the unique LOINC fields provided
-                in the data set are added to an excel in preparation for a cross walk. The purpose,
-                meaning, and definitions are added to give an example of what these definitions
-                should be.<?oxy_comment_end?></para>
-            <para>Once unique data elements have been recorded, the elements can be cross walked to
-                current Tinkar semantics/ concepts/ patterns.</para>
+            <para>To show a practical example of a predefined data set, an image below shows a
+                snippet of the LOINC transformation. LOINC is a predefined data set with definitions
+                and fields listed in a source file. In this snippet, some of the unique LOINC fields
+                provided in the data set are added to an excel in preparation for a cross walk. The
+                purpose, meaning, and definitions are added to give an example of what these
+                definitions should be.</para>
+            <annotation>
+                <?oxy_comment_start author="tocrow" timestamp="20240627T112401-0400" comment="ADD LOINC"?>
+                <para>ADD LOINC</para><?oxy_comment_end?>
+                <para>Once unique data elements have been recorded, the elements can be cross walked
+                    to current Tinkar semantics/ concepts/ patterns.</para>
+            </annotation>
         </section>
         <section>
             <title>Determine Description Semantics</title>
@@ -608,33 +624,39 @@
                 definitions are assigned to components. The fields in the Description Pattern in
                 Table 1 should be reviewed to determine what values/concepts to use in the data set
                 being analyzed or if something new needs to be created. The meaning and purpose
-                concepts are also below to reference are listed in Table 2.</para>
+                concepts are also below to reference.are listed in Table 2.</para>
             <para>To understand how this has been done before, examples of terminology snippets from
                 SNOMED, LOINC, RxNorm, and LIDR are provided below. As the following sections walk
                 through modeling the Description Semantic, these snippets will be referred to as
-                examples for how to model certain fields. The example in the below screenshot, shows
-                a row of SNOMED data that will be used to show how the data set was represented
-                using the Description Semantics.
+                examples for how to model certain fields.</para>
+            <para>The example in the below screenshot, shows a row of LOINC data that will be used
+                to show how the data set was represented using the Description Semantics. </para>
+            <para>
                 <figure xml:id="SNOMEDDescriptionDataExample">
                     <title>SNOMED Description Data Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/SNOMED%20Description%20Data%20Example.svg" scale="70"
-                                align="center"/>
+                            <imagedata fileref="images/SNOMED%20Description%20Data%20Example.svg"
+                                scale="70" align="center"/>
                         </imageobject>
                     </mediaobject>
-                </figure> 
-                The example in the below screenshot, shows a row of LOINC data that will be used to show how the data set was represented using the Description Semantics.
+                    <para>The example in the below screenshot, shows a row of LOINC data that will
+                        be used to show how the data set was represented using the Description
+                        Semantics.</para>
+                </figure>
                 <figure xml:id="LOINCDescriptionDataExample">
                     <title>SNOMED Description Data Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/LOINC%20Description%20Data%20Example.svg" scale="70"
-                                align="center"/>
+                            <imagedata fileref="images/LOINC%20Description%20Data%20Example.svg"
+                                scale="70" align="center"/>
                         </imageobject>
                     </mediaobject>
-                </figure> 
-                The example in the below screenshot, shows a row of RxNorm data that will be used to show how the data set was represented using the Description Semantics.
+                </figure>
+            </para>
+            <para>The example in the below screenshot, shows a row of RxNorm data that will be used
+                to show how the data set was represented using the Description Semantics.</para>
+            <para>
                 <figure xml:id="RxNormOWLFileExample">
                     <title>RxNorm OWL File Example</title>
                     <mediaobject>
@@ -643,17 +665,21 @@
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
-                </figure> 
-                The example in the below screenshot, shows multiple rows in LIDR Data all corresponding to one Device. This data that will be used to show how the data set was represented using the Description Semantics for a Device concept.
+                </figure>
+            </para>
+            <para>The example in the below screenshot, shows multiple rows in LIDR Data all
+                corresponding to one Device. This data that will be used to show how the data set
+                was represented using the Description Semantics for a Device concept.</para>
+            <para>
                 <figure xml:id="LIDRDescriptionDataExample">
                     <title>LIDR Description Data Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/LIDR%20Description%20Data%20Example.svg" scale="70"
-                                align="center"/>
+                            <imagedata fileref="images/LIDR%20Description%20Data%20Example.svg"
+                                scale="70" align="center"/>
                         </imageobject>
                     </mediaobject>
-                </figure> 
+                </figure>
             </para>
             <section>
                 <title>Field 1: Language</title>
@@ -661,15 +687,16 @@
                     Semantic. The language field's purpose is to identify the concept's language and
                     description. The table below outlines the current available languages to select
                     from. If the specific language concept does not exist in Tinkar, a new concept
-                    to represent that specific language will need to be added. 
-                    <informaltable>
+                    to represent that specific language will need to be added.</para>
+                <para><informaltable>
                         <tgroup cols="2">
                             <colspec colnum="1" colname="col1"/>
                             <colspec colnum="2" colname="col2"/>
                             <tbody>
-                                <row>
-                                    <entry><emphasis role="bold">Concept </emphasis></entry>
-                                    <entry><emphasis role="bold">Definition</emphasis></entry>
+                                <row >
+                                    
+                                    <entry align="center"><emphasis role="bold" >Concept </emphasis></entry>
+                                    <entry align="center"><emphasis role="bold">Definition</emphasis></entry>
                                 </row>
                                 <row>
                                     <entry><emphasis role="bold">English Language
@@ -735,8 +762,8 @@
                                 </row>
                             </tbody>
                         </tgroup>
-                    </informaltable>Revisiting the examples provided above, the following representations
-                    and/or gaps were identified: </para>
+                    </informaltable>Revisiting the examples provided above, the following
+                    representations and/or gaps were identified: </para>
                 <table>
                     <title>Language Examples</title>
                     <tgroup cols="2">
@@ -749,7 +776,7 @@
                             </row>
                             <row>
                                 <entry><emphasis role="bold">Example 1: SNOMED</emphasis></entry>
-                                <entry>From the SNOMED export file,The lLanguage Code can be
+                                <entry>From the SNOMED export file, the language code can be
                                     represented by the language concept. In this case, 'en' would be
                                     used for English.</entry>
                             </row>
@@ -776,7 +803,7 @@
                 </table>
                 <para>No new concepts would need to be created since the above strings can be
                     represented with what already exists in Tinkar.</para>
-                <para>If the data set has a language concept that currently isnot’t in Tinkar, a new
+                <para>If the data set has a language concept that currently is not in Tinkar, a new
                     concept representing the new language will have to be created.</para>
                 <para><emphasis role="bold">To add a language concept:</emphasis></para>
                 <orderedlist>
@@ -891,8 +918,7 @@
                     </tgroup>
                 </table>
                 <para>Revisiting the examples provided in section 3.2, the following representations
-                    and/or gaps were identified:
-                    <table>
+                    and/or gaps were identified: <table>
                         <title>Case Significance Example</title>
                         <tgroup cols="2">
                             <colspec colnum="1" colname="col1"/>
@@ -934,9 +960,8 @@
                                 </row>
                             </tbody>
                         </tgroup>
-                    </table>
-                    No new concepts would need to be created since the above Description Case Significance can be represented with what already exists in Tinkar.
-                </para>
+                    </table> No new concepts would need to be created since the above Description
+                    Case Significance can be represented with what already exists in Tinkar. </para>
             </section>
             <section>
                 <title>Field 4: Description Type</title>
@@ -959,8 +984,8 @@
                             </row>
                             <row>
                                 <entry><emphasis role="bold">Description Type</emphasis></entry>
-                                <entry>Specifying what type of description it is i.e. is it fully
-                                    qualified or regular and etc.</entry>
+                                <entry>Specifying what type of description it is (i.e., is it fully
+                                    qualified or regular and etc.)</entry>
                             </row>
                         </tbody>
                     </tgroup>
@@ -997,9 +1022,8 @@
                         </tbody>
                     </tgroup>
                 </table>
-                <para>Revisiting the examples provided in section 2.3, the following representations
-                    and/or gaps were identified:
-                    <table>
+                <para>Revisiting the examples provided above, the following representations and/or
+                    gaps were identified: <table>
                         <title>Description Type Examples</title>
                         <tgroup cols="2">
                             <colspec colnum="1" colname="col1"/>
@@ -1043,11 +1067,2159 @@
                                 </row>
                             </tbody>
                         </tgroup>
-                    </table>
-                    One new concept was created to represent the Tallman synonym for RxNorm.  Otherwise, for SNOMED and LOINC, no new concepts were created.
-                </para>
+                    </table>One new concept was created to represent the Tallman synonym for RxNorm.
+                    Otherwise, for SNOMED and LOINC, no new concepts were created. </para>
             </section>
         </section>
+        <section>
+            <title>Determine Identifier Semantics</title>
+            <para>The Identifier Semantics are used to assign unique identifiers to components that
+                point to outside data sources in which the identifier is used. For example, SNOMED
+                CT Identifiers and LOINC ID’s that can be assigned to concepts. The Identifier
+                Pattern and children concepts are shown below.</para>
+            <table>
+                <title>Identifier Pattern</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry namest="col1" nameend="col2" align="center">Identifier
+                                Pattern</entry>
+                        </row>
+                        <row>
+                            <entry>Semantic Meaning</entry>
+                            <entry>Identifier Source</entry>
+                        </row>
+                        <row>
+                            <entry>Semantic Purpose</entry>
+                            <entry>Identifier Source</entry>
+                        </row>
+                        <row>
+                            <entry namest="col1" nameend="col2" align="center">Field 1: Identifier
+                                Source </entry>
+                        </row>
+                        <row>
+                            <entry>Meaning</entry>
+                            <entry>Identifier Source</entry>
+                        </row>
+                        <row>
+                            <entry>Purpose</entry>
+                            <entry>Identifier Source</entry>
+                        </row>
+                        <row>
+                            <entry>Field Type</entry>
+                            <entry>Component Field</entry>
+                        </row>
+                        <row>
+                            <entry namest="col1" nameend="col2" align="center">Field 2: Identifier
+                                Value</entry>
+                        </row>
+                        <row>
+                            <entry>Meaning</entry>
+                            <entry>Identifier Source</entry>
+                        </row>
+                        <row>
+                            <entry>Purpose</entry>
+                            <entry>Identifier Source</entry>
+                        </row>
+                        <row>
+                            <entry>Field Type</entry>
+                            <entry>String</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <table>
+                <title>Identifier Pattern Concept</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Concept </emphasis></entry>
+                            <entry><emphasis role="bold">Definition</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Identifier Source </emphasis></entry>
+                            <entry>An identifier that is used to label the identity of a unique
+                                component.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <para>To understand how this has been done before, examples of terminology snippets from
+                SNOMED, LOINC, RxNorm, and LIDR are provided below. As the following sections walk
+                through modeling the Identifier Semantic, these snippets will be referred to as
+                examples for how to model certain fields.</para>
+            <para>The example in the below screenshot, shows a row SNOMED data that will be used to
+                show how the data set was represented using the Identifier Semantics.</para>
+            <para>
+                <figure>
+                    <title>SNOMED UUID Example</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/SNOMED%20Description%20Data%20Example.svg"
+                                scale="70" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                    <para>The example in the below screenshot, shows a row LOINC data that will be
+                        used to show how the data set was represented using the Identifier
+                        Semantics.</para>
+                </figure>
+                <figure>
+                    <title>LOINC UUID Example</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/LOINC%20Description%20Data%20Example.svg"
+                                scale="70" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+            <para>The example in the below screenshot, shows a row RxNorm data that will be used to
+                show how the data set was represented using the Identifier Semantics.</para>
+            <para>
+                <figure>
+                    <title>RxNorm OWL File Identifier</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/RxNorm%20OWL%20File%20Example.svg" scale="70"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+            <para>The example in the below screenshot, shows multiple rows in LIDR Data all
+                corresponding to one Device. This data will be used to show how the data set was
+                represented using the Identifier Semantics.</para>
+            <para>
+                <figure>
+                    <title>LIDR Data File Identifier</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/LIDR%20Description%20Data%20Example.svg"
+                                scale="70" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+            <section>
+                <title>Field 1: Identifier Source</title>
+                <para>The Identifier source is a unique identifier representing the data source it
+                    comes from, such as SNOMED or LOINC. In cases where a data set is being
+                    represented for the first time in Tinkar, the source most likely will not exist
+                    yet and a concept will need to be created for it.</para>
+                <table>
+                    <title>UUID Concept</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Children Concept </emphasis></entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Universally Unique Identifier
+                                    </emphasis></entry>
+                                <entry>A universally unique identifier that uniquely represents a
+                                    concept in Tinkar</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para>Revisiting the examples outlined in Section 3.3, the following representations
+                    and/or gaps were identified:</para>
+                <table>
+                    <title>Identifier Source Examples</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Example</emphasis></entry>
+                                <entry><emphasis role="bold">Description</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 1: SNOMED</emphasis></entry>
+                                <entry>From the SNOMED export file, given that the ID is not a UUID,
+                                    a new concept is needed. This concept, referred to as "SNOMED CT
+                                    Identifier Source", becomes a child concept of Identifier
+                                    Source. The Semantic Field Value references this newly created
+                                    concept.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 2: LOINC</emphasis></entry>
+                                <entry>From the LOINC export file, absence of an Identifier Source
+                                    like in Example 1 exists. Thus, creation of a new "LOINC Number"
+                                    concept under Identifier Source is needed, and used for the
+                                    Semantic Field Value.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 3: RxNorm</emphasis></entry>
+                                <entry>
+                                    <para>From the RxNorm export file, assignment of two different
+                                        Identifiers to the concept results in two separate
+                                        Identifier Semantics. One Semantic references the RxNorm
+                                        CUI, while the other references the SNOMED CT ID</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>In the case of the RxNorm CUI, creation of a new
+                                                concept under Identifier Source is required, named
+                                                "RxNorm CUI". This becomes the Semantic Field Value
+                                                for the first Identifier Semantic.</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Regarding the SNOMED CT ID, a new concept needs
+                                                creation, or utilization of the concept from Example
+                                                1 would be used if it was previously created in the
+                                                model.</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 4: LIDR</emphasis></entry>
+                                <entry>From the LIDR Data, the specific Issuing Agency and
+                                    Jurisdiction have been combined to signify the source of the
+                                    Name ID assigned. Thus, creation of a new “GS1_US FDA” concept
+                                    under Identifier Source is needed, and used for the Semantic
+                                    Field Value.</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para>In these examples, each example needed a new concept to represent the Unique
+                    Identifier.</para>
+            </section>
+            <section>
+                <title>Field 2: Identifier Value</title>
+                <para>The identifier value is the string representation of the Identifier, usually a
+                    random integer. Revisiting the examples provided in section 3.3, the following
+                    representations and/or gaps were identified:</para>
+                <table>
+                    <title>Identifier Value Examples</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Example</emphasis></entry>
+                                <entry><emphasis role="bold">Description</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 1: SNOMED</emphasis></entry>
+                                <entry>From the SNOMED export file, the literal string value
+                                    representing the ID column “413839001” is used for the field
+                                    value.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 2: LOINC</emphasis></entry>
+                                <entry>From the LOINC export file, the literal string value
+                                    representing the LOINC_NUM column “7364-3” is used for the field
+                                    value.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 3: RxNorm</emphasis></entry>
+                                <entry>
+                                    <para>From the RxNorm export file, in the previous example, 2
+                                        fields were created using 2 semantics. The string value
+                                        representing each ID would be used to represent the field
+                                        value.</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>“1000001” For RxNorm CUI</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>“447089002” For SNOMED CT</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 4: LIDR</emphasis></entry>
+                                <entry>From the LIDR Data file, the literal string value
+                                    representing the DI (Device Identifier “00382904453619” will be
+                                    the field value</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+        </section>
+        <section>
+            <title>Determine Stated Definition Semantics</title>
+            <para>The Stated Definition Semantic represents the unique relationships that define a
+                concept. This can be difficult to model against because it requires the
+                determination of which data elements can go into the existing stated definition vs
+                which elements will need new/ different patterns and semantics. </para>
+            <para>In this step, the properties of concepts that need to be represented make the
+                concept unique, i.e., what are the underlying properties that make one concept in
+                the model different from another, need to be identified. </para>
+            <para>The stated definition pattern is represented below along with the meaning and
+                purpose concepts.</para>
+            <table>
+                <title>Stated Definition Pattern</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry namest="col1" nameend="col2" align="center">Stated Definition Pattern</entry>
+                        </row>
+                        <row>
+                            <entry>Semantic Meaning</entry>
+                            <entry>Descriptum</entry>
+                        </row>
+                        <row>
+                            <entry>Semantic Purpose</entry>
+                            <entry>Logical Definition</entry>
+                        </row>
+                        <row>
+                            <entry namest="col1" nameend="col2" align="center">Field 1: Logical Definition</entry>
+                        </row>
+                        <row>
+                            <entry>Meaning</entry>
+                            <entry>EL++ Stated Terminological Axioms</entry>
+                        </row>
+                        <row>
+                            <entry>Purpose</entry>
+                            <entry>Logical Definition</entry>
+                        </row>
+                        <row>
+                            <entry>Field Type</entry>
+                            <entry>DiTree</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <table>
+                <title>Stated Definition Meaning and Purpose Concepts</title>
+                <tgroup cols="3">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="3" colname="col3"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Pattern Field</emphasis></entry>
+                            <entry><emphasis role="bold">Concept </emphasis></entry>
+                            <entry><emphasis role="bold">Definition</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Semantic Meaning</emphasis></entry>
+                            <entry>Descriptum</entry>
+                            <entry>The semantic meaning for the EL++ patterns</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Logical Definition
+                                Purpose</emphasis></entry>
+                            <entry>Logical Definition</entry>
+                            <entry>The semantic value describing the purpose of the stated and
+                                inferred terminological axioms. </entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Logical Definition
+                                Meaning</emphasis></entry>
+                            <entry>EL++ Stated Terminological Axioms</entry>
+                            <entry>The stated relationships that uniquely define a concept in EL++
+                                description logic.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Logical Definition </emphasis><emphasis
+                                    role="bold">Field Type</emphasis></entry>
+                            <entry>DiTree</entry>
+                            <entry>A display field that references a graph obtained from an
+                                undirected tree by replacing each undirected edge by two directed
+                                edges with opposite directions.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <para>In cases where the data set is predefined, like SNOMED CT or RxNORM, the OWL
+                Description Logic String is provided which is used and transformed into the EL++
+                Stated Terminological Axioms. When creating a new model, the following properties of
+                EL++ Terminological Axioms must be investigated to see how to describe the
+                uniqueness of the concepts being modeled. </para>
+            <para>The stated definition child concepts are listed below.</para>
+            <table>
+                <title>Stated Definition Children Concepts</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Children Concept </emphasis></entry>
+                            <entry><emphasis role="bold">Definition</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Implication
+                                    Set</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Implication Set </emphasis></entry>
+                            <entry>A set of relationships that indicate something has an
+                                implication. Not necessarily or sufficient but implicated.</entry>
+                        </row>
+                        <row>
+                            <entry ><emphasis role="bold">Necessary Set </emphasis></entry>
+                            <entry>A set of relationships that is always true of a concept.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Property Set</emphasis></entry>
+                            <entry>A set of relationships that are non-defining and are not used by
+                                a description logic classifier.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Sufficient Set </emphasis></entry>
+                            <entry>A set of relationships that differentiate a concept and its
+                                subtypes from all other concepts. A concept that contains at least
+                                one set of necessary and sufficient conditions is considered
+                                defined.</entry>
+                        </row>
+                        <row>
+                            <entry namest="col1" nameend="col2" align="center"><emphasis role="bold"
+                                    >Roles</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Role group </emphasis></entry>
+                            <entry>An association between a set of attribute or axiom value pairs
+                                that causes them to be considered together within a concept
+                                definition or post-coordinated expression.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Role</emphasis></entry>
+                            <entry>It is an abstract representation of a high-level role for a
+                                therapeutic medicinal product; the concepts are not intended to
+                                describe a detailed indication for therapeutic use nor imply that
+                                therapeutic use is appropriate in all clinical situations.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Role Type</emphasis></entry>
+                            <entry>Refers to a concept that represents a particular kind of
+                                relationship that can exist between two entities. It defines the
+                                specific function or responsibility that one entity plays in
+                                relation to another.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Role Value</emphasis></entry>
+                            <entry>(?)</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Is a </emphasis></entry>
+                            <entry>Designates the parent child relationship</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <para>To understand how the Stated Definitions Semantic has been modeled, examples of
+                terminology snippets from SNOMED, LOINC, RxNorm, and LIDR are provided below. As the
+                following sections walk through modeling the Stated Definitions Semantic, these
+                snippets will be referred to as examples for how to model certain fields.</para>
+            <para>The example in the below screenshots, shows SNOMED Axiom example and then the
+                Axiom expression that will be used to show how the data set was represented using
+                the Stated Definitions Semantics. <figure xml:id="SNOMEDExampleOWLExpression">
+                    <title>SNOMED Axiom Example for OWL Expression</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/SNOMED%20Example%20OWL%20Expression.svg"
+                                scale="70" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <figure xml:id="SNOMEDExampleOWLExpression2">
+                    <title>SNOMED Example OWL Expression</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/SNOMED%20Example%20OWL%20Expression2.svg"
+                                scale="70" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+            <para>LOINC Does not have OWL String representation. However, the following information
+                shown below shows the data from LOINC that was used to represent LOINC using the
+                Tinkar Stated Definitions Semantics. 
+                <figure>
+                    <title>LOINC Example OWL Expression</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/LOINC%20Description%20Data%20Example.svg"
+                                scale="70" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+            <para>The example in the below screenshot, shows the RxNorm OWL file that is used to
+                show how the data was represented using the Stated Definitions Semantics.
+                <figure xml:id="RxNormExampleOWLExpression">
+                    <title>RxNorm Example OWL Expression</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/RxNorm%20Example%20OWL%20Expression.svg"
+                                scale="70" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+            <para>The example in the below screenshot, shows the LIDR Data file that is used to show
+                how the data was represented using the Stated Definitions Semantics.
+                <figure xml:id="LIDRTestKitDeviceExample">
+                    <title>LIDR Test Kit Device Example</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/LIDR%20Test%20Kit%20Device%20Example.svg"
+                                scale="70" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+            <section>
+                <title>Determine Description Logic</title>
+                <para>Description logic is an attempt to represent and characterize classes of
+                    objects and the relationships between them. SNOMED CT, for example, uses
+                    description logic that corresponds to the EL++ language to define Stated and
+                    Inferred relationships and axioms. </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Given that all source files differ, not all contain OWL Description
+                            Logic. (If they do contain an OWL Description Logic String, it should be
+                            utilized to avoid manually creating another string.)</para>
+                    </listitem>
+                </itemizedlist>
+                <para>Revisiting the examples provided in section 3.4, the following representations
+                    and/or gaps were identified:</para>
+                <table>
+                    <title>Description Logic Example</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Example</emphasis></entry>
+                                <entry><emphasis role="bold">Description</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 1: SNOMED</emphasis></entry>
+                                <entry>
+                                    <para>Utilization of the owlExpression column allows for the
+                                        representation of the field using the Tinkar description
+                                        logic. This string can be imported using EL++ Description
+                                        Logic, leading to the generation of Stated Axioms.</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>“EquivalentClasses(:90708001
+                                                ObjectIntersectionOf(:64572001
+                                                ObjectSomeValuesFrom(:609096000
+                                                ObjectSomeValuesFrom(:363698007
+                                                :64033007))))”</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                    <para> </para>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 2: LOINC</emphasis></entry>
+                                <entry>
+                                    <para>LOINC lacks an OWL String representation unless
+                                        SNOMED-LOINC collaboration files are used, but these files
+                                        lack completeness. Documentation reveals six main parts
+                                        comprising a LOINC Code</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Component</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Property</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Time</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>System</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Scale</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Method</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                    <para>Part definitions from LOINC are treated as "Roles" in the
+                                        stated definition. "Role Type" corresponds to one of the six
+                                        parts above. "Role Value" corresponds to the concept
+                                        representation of the value</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>To represent the data in the Stated Definitions
+                                                Semantics, create a new concept for each main LOINC
+                                                Part, and a new concept for each unique value for
+                                                each of the six parts so they can be assigned in the
+                                                LOINC Code Role</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>In addition to these six parts, we need an “Is A”
+                                                relationship to designate the parent concept. In the
+                                                SNOMED-LOINC Collaboration, all LOINC Concepts are
+                                                listed as a child of “Observable Entity”. So all
+                                                LOINC Codes will have an “Is A -> Observable Entity”
+                                                relationship.</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                    <para> </para>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 3: RxNorm</emphasis></entry>
+                                <entry>In the RxNorm OWL release file, the OWL Syntax literal string
+                                    row can be used to represent the Tinkar description logic field
+                                    in the Stated Definitions semantics.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Example 4: LIDR</emphasis></entry>
+                                <entry>
+                                    <para>LIDR does not have an OWL String representation so one
+                                        must be created based on properties that uniquely define a
+                                        device. Based on the Data Provided, we have:</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Manufacturer</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Labeler</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                    <para>These are treated as different “Roles” in the stated
+                                        definition. “Role Type” corresponds to whomever the device
+                                        was “Manufactured By” or “Labeled By”. The “Role Value” will
+                                        be the concept representing the Manufacturer or
+                                        Labeler.</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>To represent the data in the Stated Definition
+                                                Semantics, create a new concept for each unique
+                                                Manufacturer and Labeler so they can be assigned to
+                                                the device</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>In addition to these two parts, we need an “IsA”
+                                                relationship to designate the parent concept. For
+                                                what we are creating in the LIDR Data we create a
+                                                new concept “Device” since we are creating device
+                                                concepts. So all the Device concepts will have an
+                                                “Is A -> Device” relationship. </para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+        </section>
+        <section>
+            <title>Create New Patterns</title>
+            <para>Once the current patterns are analyzed and representation using Tinkar is
+                determined, there may be some outlying data that still needs to be extended into new
+                Patterns in the Tinkar model. In this section, the steps for creating new patterns
+                will be reviewed.</para>
+            <section>
+                <title>Filter for Data Elements associated to Concepts</title>
+                <para>Start by filtering data elements that are associated with the concept being
+                    modeled first. In other words, start with only the data elements that are
+                    associated to the concept being modeled and are not describing other data
+                    elements in the file rather than the concept itself. Because semantics
+                    refer/point to any component (any concept, pattern, or semantic), start with the
+                    patterns that refer/point to the concepts being modeled. </para>
+                <section>
+                    <title>Example 1: SNOMED</title>
+                    <para>In SNOMED there are descriptions and dialects. Descriptions are the
+                        patterns/semantics that are created and modeled first since they point to
+                        the actual concepts (semantic referring to a concept) themselves while
+                        Dialects refer/point to those Descriptions (semantic referring to a
+                        semantic).</para>
+                </section>
+                <section>
+                    <title>Example 2: LOINC</title>
+                    <para>In LOINC we have a data element for STATUS. This directly describes an
+                        attribute to a LOINC Concept. However there are additional data elements:
+                        STATUS_REASON, STATUS_TEXT, and CHANGE_REASON_PUBLIC. These 3 additional
+                        data elements don’t directly describe attributes of the LOINC Concept
+                        itself, but are descriptive attributes of the STATUS. </para>
+                </section>
+            </section>
+            <section>
+                <title>Group by Similar Data Elements </title>
+                <para>Data fields with similar elements should be grouped together. Meaning, that
+                    elements that seem similar purposes and occur at the same frequency should be
+                    grouped together in a Pattern. They do not always have to have the same values
+                    across concepts. Once the related concepts are represented, these groupings are
+                    going to become new patterns. </para>
+                <section>
+                    <title>Example 1: RxNorm</title>
+                    <para>In RxNorm, HUMAN_DRUG and PRESCRIBABLE are two data elements that are
+                        closely related and seen together, but it’s not expected for them to occur
+                        with a field like VET_DRUG. </para>
+                    <itemizedlist>
+                        <listitem>
+                            <para> In this case to add these 3 data elements, there would need to be
+                                2 different patterns <itemizedlist>
+                                    <listitem>
+                                        <para>HUMAN_DRUG + PRESCRIBABLE</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>VET_DRUG</para>
+                                    </listitem>
+                                </itemizedlist></para>
+                        </listitem>
+                    </itemizedlist>
+                </section>
+                <section>
+                    <title>Example 2: LIDR</title>
+                    <para>In LIDR we have data elements like the Instrument Equipment Device, all
+                        six LOINC parts (Component, Property, Time, System, Scale, and Method), and
+                        a Test Ordered and Test Performed LOINC Code. The Instrument Equipment
+                        Device is the only data elements that can sometimes not exist in the cases
+                        of a take home test for example. So, we need a separate pattern for this
+                        data element and add a semantic to depending on if there is data present or
+                        not.</para>
+                    <para>For the other six LOINC parts and the two LOINC Codes, if we look at the
+                        occurrences of them, we see that there are 4 of the parts (Property, Time,
+                        Scale, and Method) as well as the Test Ordered LOINC Code that always exist
+                        once. For the remaining elements (System, Component, and Test Performed
+                        LOINC Code), they can exist one or more times with different values for the
+                        same test. Because of this the design needs to be able to account for these
+                        situations and relationships so they are separated into two different
+                        patterns: the Diagnostic Device Pattern, and the Test Performed
+                        Pattern.</para>
+                </section>
+            </section>
+            <section>
+                <title>Determine Field Types</title>
+                <para>Once the new properties are grouped into the new patterns that need to be
+                    modeled, each data element will be treated as a field type. For each field, it
+                    needs to be determined how to represent the field in the model. A list of field
+                    types is below:</para>
+                <table>
+                    <title>Field Types</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Concept </emphasis></entry>
+                                <entry><emphasis role="bold">Definition</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Component Field </emphasis></entry>
+                                <entry>A display field type that references a concept ID.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Component ID List </emphasis></entry>
+                                <entry>A display field that references an ordered list of Concept
+                                    IDs.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Component ID Set Field
+                                    </emphasis></entry>
+                                <entry>A display field that references an unordered list of Concept
+                                    IDs.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">DiGraph Filed </emphasis></entry>
+                                <entry>A display field that references a di-graph whose edges are
+                                    ordered pairs of vertices. Each edge can be followed from one
+                                    vertex to another vertex.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">DiTree Field </emphasis></entry>
+                                <entry>A display field that references a graph obtained from an
+                                    undirected tree by replacing each undirected edge by two
+                                    directed edges with opposite directions.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Float Field </emphasis></entry>
+                                <entry>Represents values as high-precision fractional
+                                    values.</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Integer Field </emphasis></entry>
+                                <entry>A data type that represents some range of mathematical
+                                    integers</entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">String </emphasis></entry>
+                                <entry>A sequence of characters, either as a literal constant or as
+                                    a variable. Strings could be used to represent terms from code
+                                    systems or URLs, textual definitions, etc.</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para>The most common field types to use are the Component Field, Component Set
+                    Field, and String Field. Things to consider:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>If it’s a unique element that can vary significantly between concepts
+                            and rarely has a chance of two concepts having the same value, then it
+                            should be treated as a String or something similar.</para>
+                    </listitem>
+                    <listitem>
+                        <para>If the value for the data element might be common across different
+                            concepts that are being modeled, than it should be considered to make
+                            that value its own concept and treat this field as a component field
+                            that’s going to have a value of that concept.</para>
+                    </listitem>
+                    <listitem>
+                        <para>If there could be multiple values for the data element that can be
+                            shared or common across different concepts, then a Component Set Field
+                            can be used, and all the values can be modeled as different concepts and
+                            be in the “set”.</para>
+                    </listitem>
+                </itemizedlist>
+                <section>
+                    <title>Example 1: Diagnostic Device Pattern</title>
+                    <para>For this example, Laboratory InVitro Diagnostic Repository (LIDR) is used
+                        to explain how to approach creating new patterns. Starting by grouping
+                        together similar concepts as outlined in Section 2.6.1, there are 5 data
+                        elements that can be grouped together and applied to a Device
+                        concept.</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>Test Ordered</para>
+                        </listitem>
+                        <listitem>
+                            <para>Method</para>
+                        </listitem>
+                        <listitem>
+                            <para>Time</para>
+                        </listitem>
+                        <listitem>
+                            <para>Scale</para>
+                        </listitem>
+                        <listitem>
+                            <para>Property</para>
+                        </listitem>
+                    </orderedlist>
+                    <para>Together they describe a Device concept in terms of it being a Diagnostic
+                        Device in which a Test is ordered. The new pattern's meaning and purpose is
+                        to show how a test being ordered for a diagnostic purpose should be coded in
+                        a health system. The field values are LOINC Parts that describe the
+                        properties of the device. </para>
+                    <para>When looking at the Field Types for the 5 data elements, they are all
+                        LOINC Parts. In defining a Test that would get ordered and have a LOINC Code
+                        assigned, there would only be 1 possible code which would translate to one
+                        possible value for each property. It is possible to re-use these concepts
+                        created by the LOINC import and treat each field type as concept fields and
+                        point to the corresponding concepts in the semantic values. The resulting
+                        pattern format is shown below. In this example, a new concept was created
+                        called “Test Ordered” to assign as the meaning and purpose of the field and
+                        the pattern itself. The others assigned to the meaning and purpose can be
+                        pulled from the LOINC Import.</para>
+                    <table>
+                        <title>Diagnostic Device Pattern</title>
+                        <tgroup cols="2">
+                            <colspec colnum="1" colname="col1"/>
+                            <colspec colnum="2" colname="col2"/>
+                            <tbody>
+                                <row>
+                                    <entry namest="col1" nameend="col2" align="center"><emphasis role="bold"
+                                            >Diagnostic Device Pattern</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Semantic Meaning</emphasis></entry>
+                                    <entry>Test Ordered</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Semantic Purpose</emphasis></entry>
+                                    <entry>Test Ordered</entry>
+                                </row>
+                                <row>
+                                    <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Field
+                                            1</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Meaning</emphasis></entry>
+                                    <entry>Test Ordered</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Purpose</emphasis></entry>
+                                    <entry>Test Ordered</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Field Type</emphasis></entry>
+                                    <entry>Concept Field</entry>
+                                </row>
+                                <row>
+                                    <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Field
+                                            2</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Meaning</emphasis></entry>
+                                    <entry>Method</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Purpose</emphasis></entry>
+                                    <entry>Method</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Field Type</emphasis></entry>
+                                    <entry>Concept Field</entry>
+                                </row>
+                                <row>
+                                    <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Field
+                                            3</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Meaning</emphasis></entry>
+                                    <entry>Time</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Purpose</emphasis></entry>
+                                    <entry>Time</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Field Type</emphasis></entry>
+                                    <entry>Concept Field</entry>
+                                </row>
+                                <row>
+                                    <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Field
+                                            4</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Meaning</emphasis></entry>
+                                    <entry>Scale</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Purpose</emphasis></entry>
+                                    <entry>Scale</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Field Type</emphasis></entry>
+                                    <entry>Concept Field</entry>
+                                </row>
+                                <row>
+                                    <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Field
+                                            5</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Meaning</emphasis></entry>
+                                    <entry>Property</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Purpose</emphasis></entry>
+                                    <entry>Property</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Field Type</emphasis></entry>
+                                    <entry>Concept Field</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table>
+                </section>
+                <section>
+                    <title>Example 2: Test Performed Pattern</title>
+                    <para>For this next example, a pattern was needed to describe the properties of
+                        a test being performed in LIDR. These properties are not specific to the
+                        device like in the Diagnostic Device Semantic but are properties of a test
+                        being performed by that device. Therefore, this semantic would be a semantic
+                        of a diagnostic device semantic, not of the device concept. When looking at
+                        it in this manner there could be multiple different tests being performed
+                        for a single ordered test. Therefore, there could be multiple Test Performed
+                        semantics to a single Diagnostic Device semantic.</para>
+                    <para>When looking at the LIDR Information Requirements, the data elements to
+                        include in this pattern/semantic, the following fields were analyzed:</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Test Performed</para>
+                        </listitem>
+                        <listitem>
+                            <para>Analyte</para>
+                        </listitem>
+                        <listitem>
+                            <para>Target</para>
+                        </listitem>
+                        <listitem>
+                            <para>Specimen</para>
+                        </listitem>
+                    </itemizedlist>
+                    <para>These data elements all describe how a test being performed in a health
+                        system should be properly coded. Since there is only one test performed per
+                        semantic, the Test Performed and Analyte Fields are treated as Concept
+                        Fields. There is only one concept value they should point to. However, for
+                        Targets and Specimen, there could be multiple possible concepts each
+                        describing a case for how to properly code the test. For these fields
+                        component set fields are used. The resulting pattern format created is shown
+                        below. </para>
+                    <para>In this example, a new concept for each unique meaning and purpose did not
+                        exist so they would be created. Additionally, when creating a semantic of
+                        this pattern, all Field Values must be created before assignment (Analyte,
+                        Target, Specimen). The Test Performed Values reference LOINC Codes that are
+                        available through importing LOINC.</para>
+                    <table>
+                        <title>Test Performed Pattern</title>
+                        <tgroup cols="2">
+                            <colspec colnum="1" colname="col1"/>
+                            <colspec colnum="2" colname="col2"/>
+                            <tbody>
+                                <row>
+                                    <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Test
+                                            Performed Pattern</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Semantic Meaning</emphasis></entry>
+                                    <entry>Test Performed</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Semantic Purpose</emphasis></entry>
+                                    <entry>Test Performed</entry>
+                                </row>
+                                <row>
+                                    <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Field
+                                            1</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Meaning</emphasis></entry>
+                                    <entry>Test Performed</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Purpose</emphasis></entry>
+                                    <entry>Test Performed</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Field Type</emphasis></entry>
+                                    <entry>Concept Field</entry>
+                                </row>
+                                <row>
+                                    <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Field
+                                            2</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Meaning</emphasis></entry>
+                                    <entry>Analyte</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Purpose</emphasis></entry>
+                                    <entry>Analyte</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Field Type</emphasis></entry>
+                                    <entry>Concept Field</entry>
+                                </row>
+                                <row>
+                                    <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Field
+                                            3</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Meaning</emphasis></entry>
+                                    <entry>Target</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Purpose</emphasis></entry>
+                                    <entry>Target</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Field Type</emphasis></entry>
+                                    <entry>Concept ID Set Field </entry>
+                                </row>
+                                <row>
+                                    <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Field
+                                            4</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Meaning</emphasis></entry>
+                                    <entry>Specimen</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Purpose</emphasis></entry>
+                                    <entry>Specimen</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Field Type</emphasis></entry>
+                                    <entry>Concept ID Set Field</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table>
+                </section>
+            </section>
+        </section>
+        <section>
+            <title>Build Data Model and Starter Data</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>The Data Model is created using a modeling tool, mapping out the
+                            patterns, semantics, and concepts</para>
+                    </listitem>
+                    <listitem>
+                        <para>Examples of current data models will be added here with
+                            descriptions.</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Validating Models </title>
+            <para>To ensure the creation of a stable and reliable model, each model must go through
+                a validation process. The validation process includes three key roles:</para>
+            <itemizedlist>
+                <listitem><para><emphasis role="bold">Modelers</emphasis> who initially built and documented the model they
+                        created. If possible, involve multiple modelers in the process to help
+                        diversify the insights and approaches.</para></listitem>
+                <listitem><para><emphasis role="bold">Domain Subject Matter Experts (SMEs)</emphasis> who can provide critical
+                        feedback based on their specialized knowledge.</para></listitem>
+                <listitem><para><emphasis role="bold">Tinkar SMEs</emphasis> who can provide insight on ways to reuse current
+                        Tinkar components and be sure that any components that are reused, do so
+                        correctly.</para></listitem>
+            </itemizedlist>
+            <para>The ultimate goal of this validation process is to achieve consensus on a stable
+                model that all relevant parties agree upon, providing a solid foundation that
+                ensures the model's accuracy and reliability for future developments.</para>
+            <para>There are three key steps when initiating the validation process: Discussing the
+                initial model and gathering feedback, implementing the feedback, and coming to a
+                group consensus on the final state of the initial model.</para>
+            <para>When the initial model is complete, modelers should work to collect and create
+                documentation of the model. This documentation should include the logical data model
+                drawing and documentation of all modeling decisions including Tinkar patterns,
+                concepts, and semantics that were reused and new concepts, patterns, and/or
+                semantics that were created. Rationale behind the decisions made should also be
+                included. </para>
+            <para>Once the documentation is created and gathered, a meeting should be established to
+                discuss the model and it is suggested that documentation is sent out beforehand. The
+                meeting should include the modelers, Domain SMEs, and Tinkar SMEs. The meeting
+                should be used to discuss the model and the decisions made and the modelers will
+                gather feedback from SMEs.</para>
+            <para> Feedback gathered from the initial meeting will be incorporated in the model. A
+                list of changes between the initial model and the updated model with feedback should
+                be created. The modelers should then review the model again with the SMEs. The
+                feedback process may continue to go back and forth for some time, but eventually
+                when all feedback has been discussed and implemented where applicable, the model
+                should be finalized, and all documentation of the changes and history of the model
+                should be shared.</para>
+        </section>
+        <section>
+            <title>Create and Upload Documentation</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Create document of any assumptions/ reasoning used to define the
+                            model.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Upload documentation for review.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The table below details the outputs that each Tinkarizing process will
+                            have.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Create document of any assumptions/ reasoning used to define the
+                            model.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Upload documentation for review.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The table below details the outputs that each Tinkarizing process will
+                            have.</para>
+                    </listitem>
+                </itemizedlist>
+                        <table>
+                            <title>Common Tinkar Documents</title>
+                                <tgroup cols="2">
+                                    <colspec colnum="1" colname="col1"/>
+                                    <colspec colnum="2" colname="col2"/>
+                                    <tbody>
+                                        <row>
+                                            <entry>Artifact</entry>
+                                            <entry>Description</entry>
+                                        </row>
+                                        <row>
+                                            <entry><emphasis role="bold">Documentation of
+                                                  Assumptions/ Reasoning </emphasis></entry>
+                                            <entry>Any documentation that was captured during the
+                                                modeling process that helps explain the reasoning
+                                                behind modeling decisions, any assumptions made, and
+                                                the decisions made for fields in the data set that
+                                                are being represented using Tinkar should be
+                                                captured. </entry>
+                                        </row>
+                                        <row>
+                                            <entry><emphasis role="bold">Starter Data
+                                                Set</emphasis></entry>
+                                            <entry>Any new concepts/patterns/ semantics that need to
+                                                be created should be in the starter data
+                                                set.</entry>
+                                        </row>
+                                        <row>
+                                            <entry><emphasis role="bold">Data
+                                                Model</emphasis></entry>
+                                            <entry>A logical model representation of any new
+                                                patterns/semantics/concepts</entry>
+                                        </row>
+                                    </tbody>
+                                </tgroup>
+                            </table>
+                        
+                
+            </para>
+        </section>
+    </chapter>
+    <chapter>
+        <title>Common Questions</title>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>What is Tinkar and what is its purpose in the healthcare industry?</para>
+                </listitem>
+                <listitem>
+                    <para>How does the Tinkar logical model work and what are its main
+                        components?</para>
+                </listitem>
+                <listitem>
+                    <para>Where can I learn more about using Komet?</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>The Komet user guide is located here. There is also in-depth
+                                information about modeling Tinkar in comment in the HL7 ballot.
+                            </para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>What modeling tools are recommended to use when creating a Tinkar data
+                        model?</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Any data modeling tool can be used to represent Tinkar…</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>Where can I find the base set of Tinkar Starter data?</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>The base set of Tinkar Starter data can be found at the following
+                                URL/document…</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </chapter>
+    <chapter>
+        <title>Appendix</title>
+        <section>
+            <title>Tinkar Starter Data (in Alphabetical Order)</title>
+            <table>
+                <title>Appendix</title>
+                <tgroup cols="5">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="3" colname="col3"/>
+                    <colspec colnum="4" colname="col4"/>
+                    <colspec colnum="5" colname="col5"/>
+                    <tbody>
+                        <row>
+                            <entry>Fully Qualified Name</entry>
+                            <entry>Synonym</entry>
+                            <entry>Definition</entry>
+                            <entry>Origins</entry>
+                            <entry>Destinations</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Acceptable (foundation metadata
+                                    concept)</emphasis></entry>
+                            <entry>Acceptable</entry>
+                            <entry>Specifies that a description is acceptable, but not preferred
+                                within a language or dialect.</entry>
+                            <entry>DESCRIPTION_ACCEPTABILITY</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Active status </emphasis></entry>
+                            <entry>Active</entry>
+                            <entry>Concept used to represent a status for components that are
+                                active.</entry>
+                            <entry>STATUS_VALUE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Author</emphasis></entry>
+                            <entry>Author</entry>
+                            <entry> </entry>
+                            <entry>ROOT_VERTEX</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Canceled status </emphasis></entry>
+                            <entry>Canceled </entry>
+                            <entry>Concept used to represent a status for components that are
+                                canceled</entry>
+                            <entry>STATUS_VALUE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Chinese Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Component field</emphasis></entry>
+                            <entry>Component field </entry>
+                            <entry>A display field type that references a concept ID.</entry>
+                            <entry>DISPLAY_FIELDS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Component Id list</emphasis></entry>
+                            <entry>Component Id list </entry>
+                            <entry>A display field that references an ordered list of Concept
+                                IDs.</entry>
+                            <entry>DISPLAY_FIELDS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Component Id set field</emphasis></entry>
+                            <entry>Component Id set </entry>
+                            <entry>A display field that references an unordered list of Concept
+                                IDs.</entry>
+                            <entry>DISPLAY_FIELDS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Czech Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Danish Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Decription not case sensitive
+                                </emphasis></entry>
+                            <entry>Case insensitive</entry>
+                            <entry>Value which designates character as not sensitive for a given
+                                description </entry>
+                            <entry>DESCRIPTION_CASE_SIGNIFICANCE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Definition description type
+                                </emphasis></entry>
+                            <entry>Definition</entry>
+                            <entry>Semantic value describing the description type for the
+                                description pattern is a definition</entry>
+                            <entry>DESCRIPTION_TYPE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Description </emphasis></entry>
+                            <entry>Description</entry>
+                            <entry>Human readable text for a concept</entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Description acceptability
+                                </emphasis></entry>
+                            <entry>Description acceptability </entry>
+                            <entry> Whether a given human readable text for a concept is permissible </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry><emphasis role="bold">ACCEPTABLE; PREFERRED</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Description case sensitive
+                                </emphasis></entry>
+                            <entry>Case sensitive </entry>
+                            <entry>Assumes the description is dependent on capitalization </entry>
+                            <entry>DESCRIPTION_CASE_SIGNIFICANCE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Description case significance
+                                </emphasis></entry>
+                            <entry>Description case significance </entry>
+                            <entry>Specifies how to handle the description text interms of case
+                                sensitivity </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry><emphasis role="bold">DESCRIPTION_CASE_SENSITIVE;
+                                    DESCRIPTION_NOT_CASE_SENSITIVE</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Description pattern </emphasis></entry>
+                            <entry>Description Pattern</entry>
+                            <entry>Contains all metadata and human readable text that describes the
+                                concept </entry>
+                            <entry>PATTERN</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Description semantic </emphasis></entry>
+                            <entry>Description semantic </entry>
+                            <entry>Purpose and meaning for the description pattern and dialect
+                                patterns </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Description type </emphasis></entry>
+                            <entry>Description type </entry>
+                            <entry>Specifying what type of description it is i.e. is it fully
+                                qualified or regular and etc. </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry><emphasis role="bold">DEFINITION_DESCRIPTION_TYPE;
+                                    FULLY_QUALIFIED_NAME_DESCRIPTION_TYPE;
+                                    REGULAR_NAME_DESCRIPTION_TYPE</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Descriptum </emphasis></entry>
+                            <entry>Descriptum</entry>
+                            <entry>The semantic meaning for the EL++ patterns </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Development path </emphasis></entry>
+                            <entry>Development path </entry>
+                            <entry>A path that specifies that the components are currently under
+                                development</entry>
+                            <entry>PATH</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Dialect</emphasis></entry>
+                            <entry>Dialect</entry>
+                            <entry><link
+                                    xlink:href="https://www.google.com/search?safe=active&amp;sca_esv=2802dad21c2aa82f&amp;rlz=1C1GCEA_enUS1093US1093&amp;q=peculiar&amp;si=AKbGX_qNq0Y8zql7SxzZAf2-HTTOVobuSeLnlL2tVO9M2fGNfebMB7TKBhol7Sqwuay6sY3kGrSwFLy9ZcG8n0EzEGwsbKROZpu_7GoFc3oiudVKoMYiSQE%3D&amp;expnd=1"
+                                    >Specifies the dialect of the language.</link></entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry><emphasis role="bold">ENGLISH_DIALECT</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">DiGraph field </emphasis></entry>
+                            <entry>Instant/ DiGraph</entry>
+                            <entry>A display field that references a di-graph whose edges are
+                                ordered pairs of vertices. Each edge can be followed from one vertex
+                                to another vertex.</entry>
+                            <entry>DISPLAY_FIELDS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Display Fields </emphasis></entry>
+                            <entry>Display fields </entry>
+                            <entry>Captures the human readable terms</entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry><emphasis role="bold">COMPONENT_FIELD; COMPONENT_ID_LIST_FIELD;
+                                    COMPONENT_ID_SET_FIELD; DIGRAPH_FIELD; DITREE_FIELD;
+                                    FLOAT_FIELD; INTEGER_FIELD; STRING</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">DiTree field </emphasis></entry>
+                            <entry>DiTree</entry>
+                            <entry>A display field that references a graph obtained from an
+                                undirected tree by replacing each undirected edge by two directed
+                                edges with opposite directions.</entry>
+                            <entry>DISPLAY_FIELDS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Dutch Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">EL++ Inferred Axioms
+                                Pattern</emphasis></entry>
+                            <entry>Inferred definition pattern</entry>
+                            <entry> </entry>
+                            <entry>PATTERN</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">EL++ Inferred terminological axioms
+                                </emphasis></entry>
+                            <entry>EL++ Inferred terminological axioms</entry>
+                            <entry> </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry><emphasis role="bold">NECESSARY_SET; SUFFICIENT_SET;
+                                    IMPLICATION_SET; ROLE; ROLE_GROUP</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">EL++ Stated Axioms
+                                Pattern</emphasis></entry>
+                            <entry>Stated definition pattern</entry>
+                            <entry> </entry>
+                            <entry>PATTERN</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">EL++ Stated terminological axioms
+                                </emphasis></entry>
+                            <entry>EL++ Stated terminological axioms </entry>
+                            <entry> </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry><emphasis role="bold">NECESSARY_SET; SUFFICIENT_SET;v
+                                    IMPLICATION_SET; ROLE; ROLE_GROUP</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">English Dialect </emphasis></entry>
+                            <entry>English Dialect</entry>
+                            <entry>Specifies the dialect of theEnglish language</entry>
+                            <entry>DIALECT</entry>
+                            <entry><emphasis role="bold">US_ENGLISH_DIALECT;
+                                    GB_ENGLISH_DIALECT</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">English Language </emphasis></entry>
+                            <entry>English language </entry>
+                            <entry>Value for description language</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Existential restriction</emphasis></entry>
+                            <entry>Existential restriction</entry>
+                            <entry> Existential restrictions describe objects that participate in at
+                                least one relationship along a specified property to objects of a
+                                specified class.</entry>
+                            <entry>ROLE_OPERATOR</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Float field </emphasis></entry>
+                            <entry>Float field </entry>
+                            <entry> Represents values as high-precision fractional values.</entry>
+                            <entry>DISPLAY_FIELDS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">French Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Fully qualified name description type
+                                </emphasis></entry>
+                            <entry>Fully quailified name </entry>
+                            <entry>Fully qualified name is a description that uniquely identifies
+                                and differentiates it from other concepts with similar
+                                descriptions</entry>
+                            <entry>DESCRIPTION_TYPE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">GB Dialect Pattern</emphasis></entry>
+                            <entry>GB Dialect Pattern</entry>
+                            <entry>Particular form of language specific form of English language,
+                                particular to Great Britian</entry>
+                            <entry>PATTERN</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">German Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Great Britian English dialect
+                                </emphasis></entry>
+                            <entry>GB English dialect / GB English</entry>
+                            <entry>Great Britain: English Langauge reference set </entry>
+                            <entry>ENGLISH_DIALECT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Identifier Pattern</emphasis></entry>
+                            <entry>Identifier Pattern </entry>
+                            <entry>An identifier pattern is used to identity a concept which
+                                containts the identifier source and the actual value</entry>
+                            <entry>PATTERN</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Identifier Source </emphasis></entry>
+                            <entry>Identifier source</entry>
+                            <entry>An identifier used to label the identity of a unique
+                                component.</entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry><emphasis role="bold"
+                                >UNIVERSALLY_UNIQUE_IDENTIFIER</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Implication set</emphasis></entry>
+                            <entry>Implication set </entry>
+                            <entry>A set of relationships that indicate something has an
+                                implication. Not necessarily or sufficient but implicated.</entry>
+                            <entry>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS;
+                                EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Inactive Status </emphasis></entry>
+                            <entry>Inactive</entry>
+                            <entry>Concept used to represent a status for components that are no
+                                longer active</entry>
+                            <entry>STATUS_VALUE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Inferred Navigation</emphasis></entry>
+                            <entry>Inferred Navigation</entry>
+                            <entry>The origins and destinations for concepts based on the reasoner
+                                generated inferred terminological axioms </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Inferred Navigation
+                                Pattern</emphasis></entry>
+                            <entry>Inferred Navigation Pattern</entry>
+                            <entry>A pattern specifying the origins and destinations for concepts
+                                based on the inferred terminological axioms </entry>
+                            <entry>PATTERN</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Integer Field </emphasis></entry>
+                            <entry>Integer field</entry>
+                            <entry>A data type that represents some range of mathematical
+                                integers</entry>
+                            <entry>DISPLAY_FIELDS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Integrated Knowledge
+                                Management</emphasis></entry>
+                            <entry>Tinkar root concept </entry>
+                            <entry> </entry>
+                            <entry> </entry>
+                            <entry><emphasis role="bold">MODEL_CONCEPT; PATTERN; STATUS_VALUE; USER;
+                                    MODULE; PATH</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Irish Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Is-a</emphasis></entry>
+                            <entry>Is a</entry>
+                            <entry>Designates the parent child relationship</entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Italian Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Korean Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Language</emphasis></entry>
+                            <entry>Language </entry>
+                            <entry>Specifies the language of the description text.</entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry><emphasis role="bold">ENGLISH_LANGUAGE;
+                                    SPANISH_LANGUAGE</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Language for Description</emphasis></entry>
+                            <entry>Language for Description</entry>
+                            <entry>The semantic value indicating which language is used in the
+                                description text</entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Lithuanian Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Logical Definition</emphasis></entry>
+                            <entry>Logical Definition</entry>
+                            <entry>The semantic value describing the purpose of the stated and
+                                inferred terminological axioms. </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Master path</emphasis></entry>
+                            <entry>Master path </entry>
+                            <entry>A default path for components</entry>
+                            <entry>PATH</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Meaning </emphasis></entry>
+                            <entry>Meaning </entry>
+                            <entry>The interpretation or explanation field for a pattern/semantics </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Model concept</emphasis></entry>
+                            <entry>Model concept</entry>
+                            <entry> </entry>
+                            <entry>ROOT_VERTEX</entry>
+                            <entry><emphasis role="bold">DESCRIPTION; DESCRIPTION_ACCEPTABILITY;
+                                    DESCRIPTION_CASE_SIGNIFICANCE; DESCRIPTION_SEMANTIC;
+                                    DESCRIPTION_TYPE; DESCRIPTUM; DIALECT; DISPLAY_FIELDS;
+                                    EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS;
+                                    EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS; IDENTIFIER_SOURCE;
+                                    INFERRED_NAVIGATION; IS_A; LANGUAGE; LANGUAGE_FOR_DESCRIPTION;
+                                    LOGICAL_DEFINITION; MEANING; PHENOMENON;
+                                    RELATIONSHIP_DESTINATION; RELATIONSHIP_ORIGIN;
+                                    STATED_NAVIGATION; TEXT_FOR_DESCRIPTION;
+                                PURPOSE</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Module</emphasis></entry>
+                            <entry>Module</entry>
+                            <entry> </entry>
+                            <entry>ROOT_VERTEX</entry>
+                            <entry><emphasis role="bold">PRIMORDIAL_MODULE</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Necessary set</emphasis></entry>
+                            <entry>Necessary set </entry>
+                            <entry>A set of relationships that is always true of a concept.</entry>
+                            <entry>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS;
+                                EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Path</emphasis></entry>
+                            <entry>Path</entry>
+                            <entry>A set of assets under version control that can be managed
+                                distinctly from other assets. Paths “branch” from other paths when
+                                established, and can be “merged” with other paths as well.</entry>
+                            <entry>ROOT_VERTEX</entry>
+                            <entry><emphasis role="bold">DEVELOPMENT_PATH; MASTER_PATH;
+                                    PRIMORDIAL_PATH; SANDBOX_PATH</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Pattern</emphasis></entry>
+                            <entry>Pattern</entry>
+                            <entry>A Pattern is a set of display fields and values that can be
+                                asserted about a concept</entry>
+                            <entry>ROOT_VERTEX</entry>
+                            <entry><emphasis role="bold">DESCRIPTION_PATTERN; GB_DIALECT_PATTERN;
+                                    IDENTIFIER_PATTERN; INFERRED_NAVIGATION_PATTERN;
+                                    STATED_NAVIGATION_PATTERN; US_DIALECT_PATTERN</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Phenomenon</emphasis></entry>
+                            <entry>Phenomenon</entry>
+                            <entry>A unique thought, fact, or circumstance</entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Polish Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Preferred</emphasis></entry>
+                            <entry>Preferred </entry>
+                            <entry>Specifies that a description is preferred within a language or
+                                dialect. There will be one preferred description for each
+                                description type.</entry>
+                            <entry>DESCRIPTION_ACCEPTABILITY</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Primordial module</emphasis></entry>
+                            <entry>Primordial module</entry>
+                            <entry> </entry>
+                            <entry>MODULE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Primordial path</emphasis></entry>
+                            <entry>Primordial path</entry>
+                            <entry> </entry>
+                            <entry>PATH</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Primordial status</emphasis></entry>
+                            <entry>Primordial </entry>
+                            <entry>Concept used to represent a status for components that have not
+                                yet been released and exist in their most basic form.</entry>
+                            <entry>STATUS_VALUE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Purpose</emphasis></entry>
+                            <entry>Purpose</entry>
+                            <entry>The reason for which a Tinkar value in a pattern was created or
+                                for which it exist. </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Regular name description
+                                type</emphasis></entry>
+                            <entry>Regular name desription type </entry>
+                            <entry>There may be descriptions/synonyms marked as “regular.”</entry>
+                            <entry>DESCRIPTION_TYPE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Relationship destination</emphasis></entry>
+                            <entry>Relationship destination</entry>
+                            <entry>Signifies path to child concepts which are more specific than the
+                                Tinkar term</entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Relationship origin</emphasis></entry>
+                            <entry>Relationship origin</entry>
+                            <entry>Signifies path to parent concepts which are more general than the
+                                Tinkar term</entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Role</emphasis></entry>
+                            <entry>Role</entry>
+                            <entry>Is an abstract representation of a high-level role for a
+                                therapeutic medicinal product; the concepts are not intended to
+                                describe a detailed indication for therapeutic use nor imply that
+                                therapeutic use is appropriate in all clinical situations.</entry>
+                            <entry>ROLE_GROUP; EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS;
+                                EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</entry>
+                            <entry><emphasis role="bold">ROLE_TYPE; ROLE_OPERATOR;
+                                    ROLE_RESTRICTION</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Role group</emphasis></entry>
+                            <entry>Role group</entry>
+                            <entry>An association between a set of attribute or axiom value pairs
+                                that causes them to be considered together within a concept
+                                definition or postcoordinated expression.</entry>
+                            <entry>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS;
+                                EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</entry>
+                            <entry><emphasis role="bold">ROLE</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Role operator</emphasis></entry>
+                            <entry>Role operator </entry>
+                            <entry>Concept that is used to describe universal vs existential
+                                restrictions.</entry>
+                            <entry>ROLE</entry>
+                            <entry><emphasis role="bold">UNIVERSAL_RESTRICTION;
+                                    EXISTENTIAL_RESTRICTION</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Role restriction</emphasis></entry>
+                            <entry>Role value</entry>
+                            <entry> </entry>
+                            <entry>ROLE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Role type</emphasis></entry>
+                            <entry>Role type</entry>
+                            <entry>Refers to a concept that represents a particular kind of
+                                realtionship that can exist between two entities. It defines the
+                                specific function or responsibility that one entity plays in
+                                relation to another. </entry>
+                            <entry>ROLE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Russian Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Sandbox path</emphasis></entry>
+                            <entry>Sandbox path</entry>
+                            <entry>A path for components under testing.</entry>
+                            <entry>PATH</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Spanish langauge</emphasis></entry>
+                            <entry>Spanish language </entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Stated Navigation</emphasis></entry>
+                            <entry>Stated Navigation</entry>
+                            <entry>The origins and destinations for concepts based on the reasoner
+                                generated stated terminological axioms </entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Stated Navigation
+                                Pattern</emphasis></entry>
+                            <entry>Stated Navigation Pattern</entry>
+                            <entry>A pattern specifying the origins and destinations for concepts
+                                based on the stated terminological axioms </entry>
+                            <entry>PATTERN</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Status value</emphasis></entry>
+                            <entry>Status </entry>
+                            <entry>The status of the STAMP Coordinate(Active, Cancelled, Inactive,
+                                Primordial)</entry>
+                            <entry>ROOT_VERTEX</entry>
+                            <entry><emphasis role="bold">ACTIVE_STATE; CANCELED_STATE;
+                                    INACTIVE_STATE; PRIMORDIAL_STATE;
+                                WITHDRAWN_STATE</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">String</emphasis></entry>
+                            <entry>String</entry>
+                            <entry>a sequence of characters, either as a literal constant or as a
+                                variable. Strings could be used to represent terms from code systems
+                                or URLs, textual definitions, etc.</entry>
+                            <entry>DISPLAY_FIELDS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Sufficient set</emphasis></entry>
+                            <entry>Sufficient set </entry>
+                            <entry>A set of relationships that differentiate a concept and its
+                                subtypes from all other concepts. A concept that contains at least
+                                one set of necessary and sufficient conditions is considered
+                                defined.</entry>
+                            <entry>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS;
+                                EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Swedish Language</emphasis></entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>Value for the description language dialect</entry>
+                            <entry>LANGUAGE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Text for description</emphasis></entry>
+                            <entry>Text</entry>
+                            <entry>Captures the human readable text for a description in
+                                Komet</entry>
+                            <entry>MODEL_CONCEPT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">United States of America English
+                                    dialect</emphasis></entry>
+                            <entry>US English dialect </entry>
+                            <entry>Particular form of language specific form of English language,
+                                particular to US</entry>
+                            <entry>ENGLISH_DIALECT</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Universal Restriction</emphasis></entry>
+                            <entry>Universal restriction</entry>
+                            <entry> Universal restrictions constrain the relationships along a given
+                                property to concepts that are members of a specific class.</entry>
+                            <entry>ROLE_OPERATOR</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold"
+                                >UNIVERSALLY_UNIQUE_IDENTIFIER</emphasis></entry>
+                            <entry>UUID</entry>
+                            <entry>A universally unique identifier that uniquely represents a
+                                concept in Tinkar </entry>
+                            <entry>IDENTIFIER_SOURCE</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">US Dialect Pattern </emphasis></entry>
+                            <entry>US Dialect Pattern </entry>
+                            <entry> </entry>
+                            <entry>PATTERN</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Withdrawn state</emphasis></entry>
+                            <entry>Withdrawn state</entry>
+                            <entry>Concept used to represent a status for components that are no
+                                longer active</entry>
+                            <entry>STATUS_VALUE</entry>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+    </chapter>
+    <chapter>
+        <title>Archive</title>
+        <para>From the OWL Expressions, a set of stated relationships or axioms are automatically
+            created through a reasoner. An alternative to having the description logic string can be
+            to simply create the stated definition axioms inside of a Tinkar application like Komet
+            directly. Here are the Stated Definition Axioms for each example:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Example 1: SNOMED</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Create a “Sufficient Set”</para>
+                    </listitem>
+                    <listitem>
+                        <para>Add an Is-A relationship to “Disease”:</para>
+                    </listitem>
+                    <listitem>
+                        <para>Add a new Role Group</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Add a Role</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Role Type would be “Finding Site”</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Role Value would be “Kidney Structure” </para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>Example 2: LOINC</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Create a “Necessary Set”</para>
+                    </listitem>
+                    <listitem>
+                        <para>Add an Is-A relationship to "Observable Entity”</para>
+                    </listitem>
+                    <listitem>
+                        <para>Add a new Role Group</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Add a Role</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Role Type would be “System”</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Role Value would be “Ser”</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Add a new Role Group</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Add a Role</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Role Type would be “Component”</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Role Value would be “Festuca elatior Ab.IgG”</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Add a new Role Group</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Add a Role</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Role Type would be “Property”</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Role Value would be “ACnc ”</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Add a new Role Group</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Add a Role</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Role Type would be “Scale”</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Role Value would be “Qn”</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Add a new Role Group</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Add a Role</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Role Type would be “Time”</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Role Value would be “Pt”</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </itemizedlist>
+        
     </chapter>
     
 

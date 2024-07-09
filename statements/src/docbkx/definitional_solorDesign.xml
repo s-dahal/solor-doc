@@ -6,8 +6,8 @@
      <title><?oxy_comment_start author="steph" timestamp="20190306T103648-0700" comment="This is nitpicky but I think you should be consistent in your headings WRT capitalization.  As you can see here, sometimes the first letter of each word is capitalized, where appropriate, but sometimes it&apos;s just the first word." id="l15_jmk_1hb" flag="done" mid="1"?><?oxy_comment_start author="timowilliams" timestamp="20190308T113005-0600" comment="Changes will be made where Relevant.  In some cases words after the first may need to be capitalized since that is they way they are in the terminology.  For example SNOMED CT Model Component." parentID="l15_jmk_1hb" flag="done" mid="2"?><?oxy_comment_start author="steph" timestamp="20190402T155220-0600" comment="Okay" flag="done"?>Solor<?oxy_comment_end?><?oxy_comment_end mid="2"?><?oxy_comment_end mid="1"?>
         definitional knowledge</title>
      <para>In order to represent the various domains of healthcare, Solor "stands on the shoulder of
-        giants" by building on existing content from SNOMED, LOINC, and RxNorm. The purpose of this
-        section is to discuss the categories within Solor where concepts reside, as well as the
+        giants" by building on existing content from SNOMED CT®, LOINC®, and RxNorm. The purpose of
+        this section is to discuss the categories within Solor where concepts reside, as well as the
         relationships used to define the concepts. Ultimately, the goal of this representation of
         concepts and their relationships would support the description logic component of
         Solor.</para>
@@ -41,7 +41,8 @@
         </section>
         <section>
         	<title>Medication</title>
-        	<para>This hierarchy is comparable to the Pharmaceutical / biologic product in SNOMED CT and used to represent drug products.</para>
+        	<para>This hierarchy is comparable to the Pharmaceutical / biologic product in SNOMED CT®
+                and used to represent drug products.</para>
         </section>
         <section xml:id="section_9d7fccaf-c5af-4aa9-86af-08ff98d5b24a">
             <title>Object</title>
@@ -62,7 +63,8 @@
         </section>
         <section>
         	<title>Qualifier value</title>
-        	<para>Miscellaneous concepts used to represent the values for definitional relationships in SNOMED CT.</para>
+        	<para>Miscellaneous concepts used to represent the values for definitional relationships in
+                SNOMED CT®.</para>
         </section>
         <section>
 	        <title>Record artifact</title>
@@ -75,8 +77,8 @@
                 or planned in the future.</para>
         </section>
         <section>
-	        <title>SNOMED CT Model Component</title>
-	        <para>Concepts and attributes used to create and organize SNOMED CT.</para>
+	        <title>SNOMED CT® Model Component</title>
+	        <para>Concepts and attributes used to create and organize SNOMED CT®.</para>
         </section>
         <section>
 	        <title>Social context</title>
@@ -84,7 +86,7 @@
         </section>
         <section>
 	        <title>Special concept</title>
-	        <para>Inactive and navigational concepts from SNOMED CT.</para>
+	        <para>Inactive and navigational concepts from SNOMED CT®.</para>
         </section>
         <section xml:id="section_779792c4-a6a0-45c2-958d-95c0e2c05c5b">
             <title>Specimen</title>
@@ -92,7 +94,7 @@
         </section>
         <section>
 	        <title>Stages and scales</title>
-	        <para>SNOMED CT concepts used to represent stages, grades and scales.</para>
+	        <para>SNOMED CT® concepts used to represent stages, grades and scales.</para>
         </section>
         <section xml:id="section_11aff275-b471-478f-b3f1-d57357a2cc88">
             <title>Substance</title>

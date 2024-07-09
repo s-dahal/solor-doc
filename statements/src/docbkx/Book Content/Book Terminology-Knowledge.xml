@@ -21,8 +21,7 @@
         <para>Standards are obtained from a variety of efforts, cover different domains of clinical
             and nonclinical content relevant to the EHR, and serve various purposes. Currently, no
             single terminology or classification system contains everything that is needed for the
-            medical record. </para>
-        <para>Terminology systems typically consist of the following elements: </para>
+            medical record. Terminology systems typically consist of the following elements: </para>
         <itemizedlist>
             <listitem>
                 <para>Coded Concepts – the discrete units of knowledge managed within the
@@ -470,129 +469,133 @@
                     RxNorm drugs to various drug classification systems and to publicly available
                     sources of drug-drug interaction information. Drug classes for RxNorm drugs can
                     also be explored through the RxClass application.</emphasis></para>
-            <para>The table below is a comparison of terminologies on how well they meet Cimino’s
-                Desiderata. [7] The Desiderata is a list of attributes needed for a standard
-                terminology to meet the needs of its users. SNOMED CT® is the only terminology that
-                meets all the requirements as described by Cimino. However, as noted above, SNOMED
-                CT® has proprietary elements that limits its usefulness for interoperability.</para>
-            <table>
-                <title>Met Criteria of LOINC®, SNOMED CT® and RxNorm to Cimino’s Desiderata</title>
-                    <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
-                        <tbody>
-                            <row>
-                                <entry><emphasis role="bold">Tenant</emphasis></entry>
-                                <entry><emphasis role="bold">LOINC®</emphasis></entry>
-                                <entry><emphasis role="bold">SNOMED CT®</emphasis></entry>
-                                <entry><emphasis role="bold">RxNorm</emphasis></entry>
-                            </row>
-                            <row>
-                                <entry><emphasis role="bold">Concept Orientation</emphasis></entry>
-                                <entry>None</entry>
-                                <entry>Complete</entry>
-                                <entry>Complete</entry>
-                            </row>
-                            <row>
-                                <entry><emphasis role="bold">Concept Permanence</emphasis></entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                                <entry>Complete</entry>
-                                <entry>
-                                    <para>Partial</para>
-                                    <para> </para>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry><emphasis role="bold">Non-Semantic Concept
-                                        Identifier</emphasis></entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                                <entry>Complete</entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry><emphasis role="bold">Polyhierarchical</emphasis></entry>
-                                <entry>None</entry>
-                                <entry>Complete</entry>
-                                <entry>Complete</entry>
-                            </row>
-                            <row>
-                                <entry><emphasis role="bold">Formal Definitions</emphasis></entry>
-                                <entry>
-                                    <para>None</para>
-                                    <para> </para>
-                                </entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                                <entry>Partial</entry>
-                            </row>
-                            <row>
-                                <entry><emphasis role="bold">Classification</emphasis></entry>
-                                <entry>None</entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry><emphasis role="bold">Multiple
-                                    Granularities</emphasis></entry>
-                                <entry>None</entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry><emphasis role="bold">Multiple Consistent
-                                    Views</emphasis></entry>
-                                <entry>None</entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry><emphasis role="bold">Representation of
-                                    Context</emphasis></entry>
-                                <entry>None</entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                                <entry>
-                                    <para>Complete</para>
-                                    <para> </para>
-                                </entry>
-                            </row>
-                        </tbody>
-                    </tgroup>
-                </table>
+        </section>
+        
                 </section>
+    <section>
+        <title>Comparison to Cimino's Desiderata</title>
+        <para>The table below is a comparison of terminologies on how well they meet Cimino’s
+            Desiderata. [7] The Desiderata is a list of attributes needed for a standard
+            terminology to meet the needs of its users. SNOMED CT® is the only terminology that
+            meets all the requirements as described by Cimino. However, as noted above, SNOMED
+            CT® has proprietary elements that limits its usefulness for interoperability.</para>
+        <table>
+            <title>Met Criteria of LOINC®, SNOMED CT® and RxNorm to Cimino’s Desiderata</title>
+            <tgroup cols="4">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <colspec colnum="4" colname="col4"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Tenant</emphasis></entry>
+                        <entry><emphasis role="bold">LOINC®</emphasis></entry>
+                        <entry><emphasis role="bold">SNOMED CT®</emphasis></entry>
+                        <entry><emphasis role="bold">RxNorm</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Concept Orientation</emphasis></entry>
+                        <entry>None</entry>
+                        <entry>Complete</entry>
+                        <entry>Complete</entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Concept Permanence</emphasis></entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                        <entry>Complete</entry>
+                        <entry>
+                            <para>Partial</para>
+                            <para> </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Non-Semantic Concept
+                            Identifier</emphasis></entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                        <entry>Complete</entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Polyhierarchical</emphasis></entry>
+                        <entry>None</entry>
+                        <entry>Complete</entry>
+                        <entry>Complete</entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Formal Definitions</emphasis></entry>
+                        <entry>
+                            <para>None</para>
+                            <para> </para>
+                        </entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                        <entry>Partial</entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Classification</emphasis></entry>
+                        <entry>None</entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Multiple
+                            Granularities</emphasis></entry>
+                        <entry>None</entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Multiple Consistent
+                            Views</emphasis></entry>
+                        <entry>None</entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Representation of
+                            Context</emphasis></entry>
+                        <entry>None</entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                        <entry>
+                            <para>Complete</para>
+                            <para> </para>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
     </section>
     <section>
         <title>Unified Medical Language System (UMLS)</title>
@@ -1073,8 +1076,9 @@
             could affect a system to conduct reasoning properly or successfully. </para>
     </section>
     <xi:include href="../definitional_primer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="../definitional_solorDesign.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="../definitional_topicsOfConcern.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="Book%20Solor%20Design.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="../definitional_topicsOfConcern.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <section>
         <title>Terminology Principles and Best Practices</title>
         <para>This section contains an overview of principles and best practices for terminology
@@ -1109,58 +1113,6 @@
                             health IT systems. </emphasis></para>
                 </listitem>
             </itemizedlist>
-        </section>
-        <section>
-            <?oxy_comment_start author="tocrow" timestamp="20240624T154213-0400" comment="I think duplicative of book terminology intro"?>
-            <title>The Desiderata for Controlled Medical Vocabularies in the 21st
-                Century<?oxy_comment_end?></title>
-            <para>Jim Cimino developed a series of tenants that are essential for a strong
-                terminology model
-                [7]:<?oxy_comment_start author="naylee" timestamp="20231129T142446-0600" comment="Bullets used and punctuated per Oxford Stye Guide"?></para><?oxy_comment_end?>
-            <orderedlist>
-                <listitem>
-                    <para><emphasis role="bold">Concept Orientation</emphasis> – terms should be
-                        exact in meaning and non-ambiguous </para>
-                </listitem>
-                <listitem>
-                    <para><emphasis role="bold">Concept Permanence</emphasis> – once a concept is
-                        created, its meaning will never be changed </para>
-                </listitem>
-                <listitem>
-                    <para><emphasis role="bold">Non-Semantic Concept Identifier</emphasis> – every
-                        concept must have a unique identifier </para>
-                </listitem>
-                <listitem>
-                    <para><emphasis role="bold">Polyhierarchy</emphasis> – hierarchical arrangements
-                        are necessary in medical vocabularies. “There seems to be almost universal
-                        agreement that controlled medical vocabularies should have hierarchical
-                        arrangements… There is some disagreement, however, as to whether concepts
-                        should be classified according to a single taxonomy (strict hierarchy) or if
-                        multiple classifications (polyhierarchy) can be allowed. Most available
-                        standard vocabularies are strict hierarchies.”</para>
-                </listitem>
-                <listitem>
-                    <para><emphasis role="bold">Formal Definitions </emphasis>– “These definitions
-                        are expressed as some collection of relationships to other concepts in the
-                        vocabulary”</para>
-                </listitem>
-                <listitem>
-                    <para><emphasis role="bold">Every Concept has a Classification</emphasis> -
-                        reject “not elsewhere classified” </para>
-                </listitem>
-                <listitem>
-                    <para><emphasis role="bold">Multiple Granularities</emphasis></para>
-                </listitem>
-                <listitem>
-                    <para><emphasis role="bold">Multiple Consistent Views</emphasis> – fine-grained
-                        concepts should be able to be collapsed into more coarse-grained concepts
-                        and appear as synonyms; and</para>
-                </listitem>
-                <listitem>
-                    <para><emphasis role="bold">Representation of Context - </emphasis>Beyond
-                        medical concepts: representing context.</para>
-                </listitem>
-            </orderedlist>
         </section>
         <section>
             <title>Knowledge Representation and Description Logic</title>
@@ -1935,6 +1887,7 @@
                 obtain more information about the performed test in question. </para>
         </section>
     </section>
+    <xi:include href="Book%20Terminology_Application.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <section>
         <title>Terminology Knowledge Example</title>
         <para>In this section, we will be discussing a use case using questionnaires and

@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title><?oxy_comment_start author="steph" timestamp="20190306T103648-0700" comment="This is nitpicky but I think you should be consistent in your headings WRT capitalization.  As you can see here, sometimes the first letter of each word is capitalized, where appropriate, but sometimes it&apos;s just the first word." id="l15_jmk_1hb" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190308T113005-0600" comment="Changes will be made where Relevant.  In some cases words after the first may need to be capitalized since that is they way they are in the terminology.  For example SNOMED CT Model Component." parentID="l15_jmk_1hb" flag="done" mid="1"?><?oxy_comment_start author="steph" timestamp="20190402T155220-0600" comment="Okay" flag="done" mid="2"?>Solor<?oxy_comment_end mid="2"?><?oxy_comment_end mid="1"?><?oxy_comment_end?>
+        definitional knowledge</title>
+    <para>In order to represent the various domains of healthcare, Solor "stands on the shoulder of
+        giants" by building on existing content from SNOMED CT®, LOINC®, and RxNorm. The purpose of
+        this section is to discuss the categories within Solor where concepts reside, as well as the
+        relationships used to define the concepts. Ultimately, the goal of this representation of
+        concepts and their relationships would support the description logic component of
+        Solor.</para>
+    <section xml:id="section_c115dbd9-5a84-4499-a3a5-2b15b93a3df2">
+        <title>Top level categories</title>
+        <para>In SNOMED, various hierarchies (e.g. Procedures, Clinical Findings, etc) are used to
+            store and maintain various concepts. These hierarchies are typically modeled such that
+            higher level concepts (i.e. Disorder of endocrine system) are more generic than lower
+            level concepts, which are more granular (e.g. Type 1 diabetes mellitus). Through a
+            series of Is a relationships, which will be explained in the next section, one could
+            traverse down the hierarchy from a top level generic concept to a very specific concept.
+            In an attempt to gather 'like' concepts, Solor created top level categories of concepts
+            to 'house' concepts that belong to those categories. This section will describe the
+            intent and purpose of these categories. </para>
+        <section>
+            <title>Body structure</title>
+            <para>Contains both normal and abnormal anatomical structures.</para>
+            <para>Example of Body structures include Structure of left lower limb (body structure),
+                Anastamosis, Roux-en-y (morphologic abnormality) and Skin xenograft (body
+                structure).</para>
+        </section>
+        <section>
+            <title>Environment or geographical location</title>
+            <para>This hierarchy contains the
+                <?oxy_comment_start author="steph" timestamp="20190306T104342-0700" comment="What are the two types of environments?" flag="done"?>types
+                <?oxy_comment_end?>of environments and named locations such as countries. </para>
+        </section>
+        <section>
+            <title>Event</title>
+            <para>Events are different from procedures in that they are occurrences that impact
+                health or health care.</para>
+        </section>
+        <section>
+            <title>Medication</title>
+            <para>This hierarchy is comparable to the Pharmaceutical / biologic product in SNOMED
+                CT® and used to represent drug products.</para>
+        </section>
+        <section xml:id="section_9d7fccaf-c5af-4aa9-86af-08ff98d5b24a">
+            <title>Object</title>
+            <para>Natural and man-made objects encountered in the healthcare environment.</para>
+        </section>
+        <section xml:id="section_9273c46e-d1d7-4022-9b9f-d1dc9ba9a5a4">
+            <title>Organism</title>
+            <para>An individual entity that exhibits the properties of life.</para>
+        </section>
+        <section xml:id="section_95cdc709-a966-470a-903c-15d1c23bc5b0">
+            <title>Phenomenon</title>
+            <para>This Hierarchy contains Observable Entities, Clinical Findings, and
+                Disorders.</para>
+        </section>
+        <section xml:id="section_61ced842-fc16-4926-8d5f-d986bc519bef">
+            <title>Procedure</title>
+            <para>Procedures are actions performed in the provision of health care.</para>
+        </section>
+        <section>
+            <title>Qualifier value</title>
+            <para>Miscellaneous concepts used to represent the values for definitional relationships
+                in SNOMED CT®.</para>
+        </section>
+        <section>
+            <title>Record artifact</title>
+            <para>The Record artifact hierarchy is used to represent the names of a clinical
+                document or parts of a clinical document.</para>
+        </section>
+        <section>
+            <title>Situation with explicit context</title>
+            <para>Clinical findings or Procedures that have contextual information applied to them.
+                This can include concepts like Family history and Procedures performed in the past
+                or planned in the future.</para>
+        </section>
+        <section>
+            <title>SNOMED CT® Model Component</title>
+            <para>Concepts and attributes used to create and organize SNOMED CT®.</para>
+        </section>
+        <section>
+            <title>Social context</title>
+            <para>Social conditions and circumstances, for example ethnic groups, life styles,
+                occupations, and religions.</para>
+        </section>
+        <section>
+            <title>Special concept</title>
+            <para>Inactive and navigational concepts from SNOMED CT®.</para>
+        </section>
+        <section xml:id="section_779792c4-a6a0-45c2-958d-95c0e2c05c5b">
+            <title>Specimen</title>
+            <para>Material collected for examination or analysis. Usually from a patient but can
+                also be obtained from other sources, for example a catheter or the
+                environment.</para>
+        </section>
+        <section>
+            <title>Stages and scales</title>
+            <para>SNOMED CT® concepts used to represent stages, grades and scales.</para>
+        </section>
+        <section xml:id="section_11aff275-b471-478f-b3f1-d57357a2cc88">
+            <title>Substance</title>
+            <para>Physical matter from which something is made or which has discrete existence. This
+                hierarchy includes allergens, agents, substances, and materials used to define
+                Medications, Phenomenon, and Procedures.</para>
+        </section>
+    </section>
+    <section xml:id="section_46da05f8-fe9b-42c3-8dca-838d32472394">
+        <title>Relationship types</title>
+        <para>As alluded in earlier sections, each concept with a name by itself does not provide
+            any additional knowledge to reason. If the concept "Disorder of endocrine system" is
+            placed into a bucket of like concepts, such as "Type 1 diabetes mellitus", without any
+            formal definition, one could not possibly deduce that "Type 1 diabetes mellitus" is a
+            type of endocrine system disorder. Therefore, a series of relationships must be used to
+            properly define the concept so that the concept could contain additional knowledge for
+            reasoning to occur. With the simple example of diabetes, it may seem that one could
+            simply create an "Is A" relationship to relate "Disorder of endocrine system" and "Type
+            1 diabetes mellitus". Although it may connect these two concepts, there needs to be
+            additional relationship types to further define each concept to provide more context and
+            knowledge such that a concept is further defined and could provide additional knowledge.
+            This section describes the relationship types of Solor and provides example of its
+            usage. </para>
+        <section>
+            <title>Accepted relationship types</title>
+            <section xml:id="section_5de4be15-8f7c-4fd7-a06a-1e7fef608580">
+                <title>Is a</title>
+                <formalpara>
+                    <title>Definition</title>
+                    <para>Is a Relationships are used to represent a hierarchical parent/child
+                        relationship between two concepts. Is a relationships should only be used in
+                        the cases of a true parent child relationship between two concepts. Only
+                        proximal Is a relationships should be distributed in releases, however they
+                        may exist in modeling views. Concepts can have more than one Is a
+                        relationship but must have at least one Is a Relationship.</para>
+                </formalpara>
+                <formalpara>
+                    <title>Utility</title>
+                    <para><?oxy_comment_start author="steph" timestamp="20190306T111442-0700" comment="When will the information here and below be provided?  Same question throughout the document where placeholders/stubs are shown." id="u5j_lp2_1hb"?><?oxy_comment_start author="timowilliams" timestamp="20190307T160515-0600" comment="Yes.  It will be provided.  " parentID="u5j_lp2_1hb" mid="5"?><?oxy_comment_start author="steph" timestamp="20190402T155427-0600" comment="Okay" mid="6"?>Is
+                        a Relationships give a hierarchical structure to Solor and provide a
+                        mechanism to query and retrieve subtype
+                        concepts<?oxy_comment_end mid="6"?><?oxy_comment_end mid="5"?><?oxy_comment_end?>.</para>
+                </formalpara>
+                <formalpara>
+                    <title>Example</title>
+                    <para>Bacterial pneumonia (disorder) has two Is a Relationships, one to
+                        Bacterial lower respiratory infection (disorder) and another to Infective
+                        pneumonia (disorder).</para>
+                </formalpara>
+            </section>
+            <section>
+                <title>Phenomenon relationship types</title>
+                <table frame="topbot" rowsep="0" colsep="0">
+                    <title>Phenomenon Relationship Types Sub-Domain and Range</title>
+                    <tgroup cols="4" align="left">
+                        <thead>
+                            <row rowsep="1">
+                                <entry>Attribute</entry>
+                                <entry>Parent Attribute</entry>
+                                <entry>Domain</entry>
+                                <entry>Range</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Associated morphology</entry>
+                                <entry>None</entry>
+                                <entry>Clinical findings/Disorder</entry>
+                                <entry>Morphologically abnormal structure (morphologic
+                                    abnormality)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="6">Associated with</entry>
+                                <entry morerows="6">None</entry>
+                                <entry morerows="6">Clinical findings/Disorder</entry>
+                                <entry>Clinical finding (finding)
+                                    <?oxy_comment_start author="steph" timestamp="20190306T112934-0700" comment="By putting &quot;OR&quot; it seems to imply that it can&apos;t be an &quot;AND&quot; condition.  If it can, maybe just change column heading from Range to Range(s)?  Is the &quot;OR&quot; even necessary?" id="ejj_tqc_1hb" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190307T093910-0600" comment="OR is correct.  AND would imply that you need All of them, when you can really only have one at a time.  We could remove the OR as well." parentID="ejj_tqc_1hb" flag="done" mid="8"?><?oxy_comment_start author="steph" timestamp="20190402T155552-0600" comment="I think the &quot;OR&quot; is needed since it lets users know only one can be chosen.  I didn&apos;t know that and just wanted to confirm." flag="done" mid="9"?>OR<?oxy_comment_end mid="9"?><?oxy_comment_end mid="8"?><?oxy_comment_end?></entry>
+                            </row>
+                            <row>
+                                <entry>Procedure (procedure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Event (event) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Organism (organism) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical force (physical force)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="3"
+                                    >&#x9;<?oxy_comment_start author="steph" timestamp="20190306T114245-0700" comment="In the sections that follow this table, it says that Associated with has 3 subtype attributes of Causative agent, Due to and Temporally related to.  However, that isn&apos;t reflected in this table.  Recommend revising the table so that sub-types are indented or something is done so that it&apos;s obvious they are sub-types." id="gym_lq2_1hb" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190307T161255-0600" comment="I have added it to all the tables." parentID="gym_lq2_1hb" flag="done" mid="11"?><?oxy_comment_start author="steph" timestamp="20190402T155710-0600" comment="Thanks.  Did you see my other comment about indenting for sub-types, so we know they belong to an attribute and aren&apos;t independent/standalone attributes themselves?" flag="done" mid="12"?>Causative
+                                    agent<?oxy_comment_end mid="12"?><?oxy_comment_end mid="11"?><?oxy_comment_end?></entry>
+                                <entry morerows="3">Associated with</entry>
+                                <entry morerows="3">Clinical findings/Disorder</entry>
+                                <entry>Organism (organism) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical force (physical force)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="2">&#x9;Due to</entry>
+                                <entry morerows="2">Associated with</entry>
+                                <entry morerows="2">Clinical findings/Disorder</entry>
+                                <entry>Clinical finding (finding) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Procedure (procedure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Event (event)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="1">&#x9;Temporally related to</entry>
+                                <entry morerows="1">Associated with</entry>
+                                <entry morerows="1">Clinical findings/Disorder</entry>
+                                <entry>Clinical finding (finding) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Procedure (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;&#x9;Before</entry>
+                                <entry>Temporally related to</entry>
+                                <entry>Clinical findings/Disorder</entry>
+                                <entry>Procedure (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;During</entry>
+                                <entry>During AND/OR after</entry>
+                                <entry>Clinical findings/Disorder</entry>
+                                <entry>Procedure (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="1">&#x9;After</entry>
+                                <entry morerows="1">During AND/OR after</entry>
+                                <entry morerows="1">Clinical findings/Disorder</entry>
+                                <entry>Clinical finding (finding) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Procedure (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry>Clinical course</entry>
+                                <entry>None</entry>
+                                <entry>Clinical findings/Disorder</entry>
+                                <entry>Courses (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="1">Characterizes</entry>
+                                <entry morerows="1">None</entry>
+                                <entry morerows="1">Observable entity</entry>
+                                <entry>Process (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Procedure (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="6">Component</entry>
+                                <entry morerows="6">None</entry>
+                                <entry morerows="6">Observable entity</entry>
+                                <entry>Body structure (body structure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Organism (organism) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Specimen (specimen) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Pharmaceutical / biologic product (product) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Record artifact (record artifact)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="6">Direct Site</entry>
+                                <entry morerows="6">None</entry>
+                                <entry morerows="6">Observable entity</entry>
+                                <entry>Body structure (body structure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Organism (organism) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Specimen (specimen) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Pharmaceutical / biologic product (product) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Record artifact (record artifact)</entry>
+                            </row>
+                            <row>
+                                <entry>Episodicity</entry>
+                                <entry>None</entry>
+                                <entry>Clinical findings/Disorder</entry>
+                                <entry>Episodicities (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="2">Finding informer</entry>
+                                <entry morerows="2">None</entry>
+                                <entry morerows="2">Clinical findings/Disorder</entry>
+                                <entry>Performer of method (person) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Subject of record or other provider of history (person)
+                                    OR</entry>
+                            </row>
+                            <row>
+                                <entry>Person with characteristic related to subject of record
+                                    (person)</entry>
+                            </row>
+                            <row>
+                                <entry>Finding method</entry>
+                                <entry>None</entry>
+                                <entry>Clinical findings/Disorder</entry>
+                                <entry>Procedure (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry>Finding site</entry>
+                                <entry>None</entry>
+                                <entry>Clinical findings/Disorder</entry>
+                                <entry>Anatomical or acquired body structure (body
+                                    structure)</entry>
+                            </row>
+                            <row>
+                                <entry>Has definitional manifestation</entry>
+                                <entry>None</entry>
+                                <entry>Clinical findings/Disorder</entry>
+                                <entry>Clinical finding (finding)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="1">Has interpretation</entry>
+                                <entry morerows="1">None</entry>
+                                <entry morerows="1">Clinical findings/Disorder</entry>
+                                <entry>Finding values (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Colors (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Has realization</entry>
+                                <entry>None</entry>
+                                <entry>Clinical findings/Disorder, Observable entity</entry>
+                                <entry>Process (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="6">Inherent location</entry>
+                                <entry morerows="6">None</entry>
+                                <entry morerows="6">Observable entity</entry>
+                                <entry>Body structure (body structure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Organism (organism) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Specimen (specimen) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Pharmaceutical / biologic product (product) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Record artifact (record artifact)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="7">Inheres in</entry>
+                                <entry morerows="7">None</entry>
+                                <entry morerows="7">Observable entity</entry>
+                                <entry>Body structure (body structure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Organism (organism) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Specimen (specimen) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Pharmaceutical / biologic product (product) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Record artifact (record artifact) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Person (person)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="2">Interprets</entry>
+                                <entry morerows="2">None</entry>
+                                <entry morerows="2">Clinical findings/Disorder</entry>
+                                <entry>Observable entity (observable entity) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Laboratory procedure (procedure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Evaluation procedure (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry>Occurrence</entry>
+                                <entry>None</entry>
+                                <entry>Clinical findings/Disorder</entry>
+                                <entry>Periods of life (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="3">Pathological process</entry>
+                                <entry morerows="3">None</entry>
+                                <entry morerows="3">Clinical findings/Disorder</entry>
+                                <entry>Autoimmune (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Infectious process (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Hypersensitivity process (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Pathological developmental process (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="2">Precondition</entry>
+                                <entry morerows="2">None</entry>
+                                <entry morerows="2">Observable entity</entry>
+                                <entry>Clinical finding (finding) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Precondition value (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Procedure (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry>Procedure device</entry>
+                                <entry>None</entry>
+                                <entry>Observable entity</entry>
+                                <entry>Device (physical object)</entry>
+                            </row>
+                            <row>
+                                <entry>Property</entry>
+                                <entry>None</entry>
+                                <entry>Observable entity</entry>
+                                <entry>Property of measurement (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="4">Process agent</entry>
+                                <entry morerows="4">None</entry>
+                                <entry morerows="4">Observable entity</entry>
+                                <entry>Body structure (body structure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Organism (organism) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Pharmaceutical / biologic product (product) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Substance (substance)</entry>
+                            </row>
+                            <row>
+                                <entry>Process duration</entry>
+                                <entry>None</entry>
+                                <entry>Observable entity</entry>
+                                <entry>Time frame (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="1">Process output</entry>
+                                <entry morerows="1">None</entry>
+                                <entry morerows="1">Observable entity</entry>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Process (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="6"
+                                    ><?oxy_comment_start author="steph" timestamp="20190306T112411-0700" comment="Should this also include Person in the Range column?  I saw that the Attribute for Inheres includes Person and thought maybe it would be applicable here as well.  Same comment for sub-types within sub-types, etc." id="tkc_21d_1hb" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190307T105051-0600" comment="Relative to does not currently accept Person as a value.  " parentID="tkc_21d_1hb" flag="done" mid="14"?><?oxy_comment_start author="steph" timestamp="20190402T155825-0600" comment="Okay" flag="done" mid="15"?>Relative
+                                    to<?oxy_comment_end mid="15"?><?oxy_comment_end mid="14"?><?oxy_comment_end?></entry>
+                                <entry morerows="6">None</entry>
+                                <entry morerows="6">Observable entity</entry>
+                                <entry>Body structure (body structure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Organism (organism) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Specimen (specimen) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Pharmaceutical / biologic product (product) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Record artifact (record artifact)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="6">Relative to part of</entry>
+                                <entry morerows="6">None</entry>
+                                <entry morerows="6">Observable entity</entry>
+                                <entry>Body structure (body structure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Organism (organism) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Specimen (specimen) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Pharmaceutical / biologic product (product) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Record artifact (record artifact)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="6">Scale type</entry>
+                                <entry morerows="6">None</entry>
+                                <entry morerows="6">Observable entity</entry>
+                                <entry>Quantitative (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Qualitative (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Ordinal value (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Ordinal or quantitative value (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Nominal value (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Narrative value (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Text value (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Severity</entry>
+                                <entry>None</entry>
+                                <entry>Clinical findings/Disorder</entry>
+                                <entry>Severities (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Technique</entry>
+                                <entry>None</entry>
+                                <entry>Observable entity</entry>
+                                <entry>Technique (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Time Aspect</entry>
+                                <entry>None</entry>
+                                <entry>Observable entity</entry>
+                                <entry>Time frame (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="6">Towards</entry>
+                                <entry morerows="6">None</entry>
+                                <entry morerows="6">Observable entity</entry>
+                                <entry>Body structure (body structure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Organism (organism) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Specimen (specimen) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Pharmaceutical / biologic product (product) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Record artifact (record artifact)</entry>
+                            </row>
+                            <row>
+                                <entry>Units</entry>
+                                <entry>None</entry>
+                                <entry>Observable entity</entry>
+                                <entry>Unit of measure (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;Using device</entry>
+                                <entry>Procedure device</entry>
+                                <entry>Observable entity</entry>
+                                <entry>Device (physical object)</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Procedure relationship types</title>
+                <table>
+                    <title>Procedure Relationship Types Sub-Domain and Range</title>
+                    <tgroup cols="4" align="left">
+                        <thead>
+                            <row rowsep="1">
+                                <entry>Attribute</entry>
+                                <entry>Parent Attribute</entry>
+                                <entry>Sub-Domain</entry>
+                                <entry><?oxy_comment_start author="steph" timestamp="20190306T120417-0700" comment="Same comments regarding A) &quot;OR&quot; as in prior table and also B) any sub-types for attributes." flag="done"?>Range<?oxy_comment_end?></entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Access</entry>
+                                <entry>None</entry>
+                                <entry>Procedure</entry>
+                                <entry>Surgical access values (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="6">Component</entry>
+                                <entry morerows="6">None</entry>
+                                <entry morerows="6">Evaluation procedure</entry>
+                                <entry>Body structure (body structure) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Organism (organism) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Specimen (specimen) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Pharmaceutical / biologic product (product) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Record artifact (record artifact)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="1">Direct substance</entry>
+                                <entry morerows="1">None</entry>
+                                <entry morerows="1">Procedure</entry>
+                                <entry>Substance (substance) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Pharmaceutical / biologic product (product)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="1">Has focus</entry>
+                                <entry morerows="1">None</entry>
+                                <entry morerows="1">Procedure</entry>
+                                <entry>Clinical finding (finding) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Procedure (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry>Has intent</entry>
+                                <entry>None</entry>
+                                <entry>Procedure</entry>
+                                <entry>Intents (nature of procedure values) (qualifier
+                                    value)</entry>
+                            </row>
+                            <row>
+                                <entry>Has specimen</entry>
+                                <entry>None</entry>
+                                <entry>Evaluation procedure</entry>
+                                <entry>Specimen (specimen)</entry>
+                            </row>
+                            <row>
+                                <entry>Measurement method</entry>
+                                <entry>None</entry>
+                                <entry>Evaluation procedure</entry>
+                                <entry>Laboratory procedure categorized by method
+                                    (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry>Method</entry>
+                                <entry>None</entry>
+                                <entry>Procedure</entry>
+                                <entry>Action (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Priority</entry>
+                                <entry>None</entry>
+                                <entry>Procedure</entry>
+                                <entry>Priorities (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Procedure device</entry>
+                                <entry>None</entry>
+                                <entry>Procedure</entry>
+                                <entry>Device (physical object)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;Direct device</entry>
+                                <entry>Procedure device</entry>
+                                <entry>Procedure</entry>
+                                <entry>Device (physical object)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;Indirect device</entry>
+                                <entry>Procedure device</entry>
+                                <entry>Procedure</entry>
+                                <entry>Device (physical object)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;Using device</entry>
+                                <entry>Procedure device</entry>
+                                <entry>Procedure</entry>
+                                <entry>Device (physical object)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;&#x9;Using access device</entry>
+                                <entry>Using device</entry>
+                                <entry>Procedure</entry>
+                                <entry>Device (physical object)</entry>
+                            </row>
+                            <row>
+                                <entry>Procedure morphology</entry>
+                                <entry>None</entry>
+                                <entry>Procedure</entry>
+                                <entry>Morphologically abnormal structure (morphologic
+                                    abnormality)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;Direct morphology</entry>
+                                <entry>Procedure morphology</entry>
+                                <entry>Procedure</entry>
+                                <entry>Morphologically abnormal structure (morphologic
+                                    abnormality)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;Indirect morphology</entry>
+                                <entry>Procedure morphology</entry>
+                                <entry>Procedure</entry>
+                                <entry>Morphologically abnormal structure (morphologic
+                                    abnormality)</entry>
+                            </row>
+                            <row>
+                                <entry>Procedure site</entry>
+                                <entry>None</entry>
+                                <entry>Procedure</entry>
+                                <entry>Anatomical or acquired body structure (body
+                                    structure)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;Procedure site - Direct</entry>
+                                <entry>Procedure site</entry>
+                                <entry>Procedure</entry>
+                                <entry>Anatomical or acquired body structure (body
+                                    structure)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;Procedure site - Indirect</entry>
+                                <entry>Procedure site</entry>
+                                <entry>Procedure</entry>
+                                <entry>Anatomical or acquired body structure (body
+                                    structure)</entry>
+                            </row>
+                            <row>
+                                <entry>Property</entry>
+                                <entry>None</entry>
+                                <entry>Evaluation procedure</entry>
+                                <entry>Property of measurement (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="4">Recipient category</entry>
+                                <entry morerows="4">None</entry>
+                                <entry morerows="4">Procedure</entry>
+                                <entry>Person (person) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Family (social concept) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Community (social concept) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Donor for medical or surgical procedure (social concept)
+                                    OR</entry>
+                            </row>
+                            <row>
+                                <entry>Group (social concept)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="2">Revision status</entry>
+                                <entry morerows="2">None</entry>
+                                <entry morerows="2">Procedure</entry>
+                                <entry>Primary operation (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Revision - value (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Part of multistage procedure (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Route of administration</entry>
+                                <entry>None</entry>
+                                <entry>Administration of substance via specific route</entry>
+                                <entry>Route of administration value (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="6">Scale type</entry>
+                                <entry morerows="6">None</entry>
+                                <entry morerows="6">Evaluation procedure</entry>
+                                <entry>Quantitative (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Qualitative (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Ordinal value (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Ordinal or quantitative value (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Nominal value (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Narrative (qualifier value) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Text value (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Surgical approach</entry>
+                                <entry>None</entry>
+                                <entry>Surgical procedure</entry>
+                                <entry>Procedural approach (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Time aspect</entry>
+                                <entry>None</entry>
+                                <entry>Evaluation procedure</entry>
+                                <entry>Time frame (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Using energy</entry>
+                                <entry>None</entry>
+                                <entry>Procedure</entry>
+                                <entry>Physical force (physical force)</entry>
+                            </row>
+                            <row>
+                                <entry>Using substance</entry>
+                                <entry>None</entry>
+                                <entry>Procedure</entry>
+                                <entry>Substance (substance)</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Body structure relationship types</title>
+                <table>
+                    <title>Body structure Relationship Types Sub-Domain and Range</title>
+                    <tgroup cols="4" align="left">
+                        <thead>
+                            <row rowsep="1">
+                                <entry>Attribute</entry>
+                                <entry>Parent Attribute</entry>
+                                <entry>Sub-Domain</entry>
+                                <entry>Range</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>All or part of</entry>
+                                <entry>None</entry>
+                                <entry>Body structure</entry>
+                                <entry>Body structure (body structure)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;Proper part of</entry>
+                                <entry>All or part of</entry>
+                                <entry>Body structure</entry>
+                                <entry>Body structure (body structure)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;&#x9;Constitutional part of</entry>
+                                <entry>Proper part of</entry>
+                                <entry>Body structure</entry>
+                                <entry>Body structure (body structure)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;&#x9;Regional part of</entry>
+                                <entry>Proper part of</entry>
+                                <entry>Body structure</entry>
+                                <entry>Body structure (body structure)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;&#x9;&#x9;Lateral half of</entry>
+                                <entry>Regional part of</entry>
+                                <entry>Body structure</entry>
+                                <entry>Body structure (body structure)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;&#x9;Systemic part of</entry>
+                                <entry>Proper part of</entry>
+                                <entry>Body structure</entry>
+                                <entry>Body structure (body structure)</entry>
+                            </row>
+                            <row>
+                                <entry>Laterality</entry>
+                                <entry>None</entry>
+                                <entry>Body structure</entry>
+                                <entry>Side (qualifier value)</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Situation with explicit context relationship types</title>
+                <table>
+                    <title>Situation with explicit context Relationship Types Sub-Domain and
+                        Range</title>
+                    <tgroup cols="4" align="left">
+                        <thead>
+                            <row rowsep="1">
+                                <entry>Attribute</entry>
+                                <entry>Parent Attribute</entry>
+                                <entry>Sub-Domain</entry>
+                                <entry>Range</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry morerows="1">Associated finding</entry>
+                                <entry morerows="1">None</entry>
+                                <entry morerows="1">Finding with explicit context</entry>
+                                <entry>Clinical finding (finding) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Event (event)</entry>
+                            </row>
+                            <row>
+                                <entry>Associated procedure</entry>
+                                <entry>None</entry>
+                                <entry>Procedure with explicit context</entry>
+                                <entry>Procedure (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry>Finding context</entry>
+                                <entry>None</entry>
+                                <entry>Finding with explicit context</entry>
+                                <entry>Finding context value (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Procedure context</entry>
+                                <entry>None</entry>
+                                <entry>Procedure with explicit context</entry>
+                                <entry>Context values for actions (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Subject relationship context</entry>
+                                <entry>None</entry>
+                                <entry>Situation with explicit context</entry>
+                                <entry>Person (person)</entry>
+                            </row>
+                            <row>
+                                <entry>Temporal context</entry>
+                                <entry>None</entry>
+                                <entry>Situation with explicit context</entry>
+                                <entry>Temporal context value (qualifier value)</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Medication relationship types</title>
+                <table>
+                    <title>Medication Relationship Types Sub-Domain and Range</title>
+                    <tgroup cols="4" align="left">
+                        <thead>
+                            <row rowsep="1">
+                                <entry>Attribute</entry>
+                                <entry>Parent Attribute</entry>
+                                <entry>Sub-Domain</entry>
+                                <entry>Range</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Has ingredient</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Substance (substance)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;Has active ingredient</entry>
+                                <entry>Has ingredient</entry>
+                                <entry>Medication</entry>
+                                <entry>Substance (substance)</entry>
+                            </row>
+                            <row>
+                                <entry>&#x9;&#x9;Has precise active ingredient</entry>
+                                <entry>Has active ingredient</entry>
+                                <entry>Medication</entry>
+                                <entry>Substance (substance)</entry>
+                            </row>
+                            <row>
+                                <entry>Has basis of strength substance</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Substance (substance)</entry>
+                            </row>
+                            <row>
+                                <entry>Has manufactured dose form</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Pharmaceutical dose form (dose form)</entry>
+                            </row>
+                            <row>
+                                <entry>Has presentation strength denominator unit</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Unit of measure (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Has presentation strength denominator value</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Number (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Has presentation strength numerator unit</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Unit of measure (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Has presentation strength numerator value</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Number (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Has concentration strength denominator unit</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Unit of measure (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Has concentration strength denominator value</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Number (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Has concentration strength numerator unit</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Unit of measure (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Has concentration strength numerator value</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Number (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Has unit of presentation</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Unit of presentation (unit of presentation)</entry>
+                            </row>
+                            <row>
+                                <entry>Plays role</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Role (role)</entry>
+                            </row>
+                            <row>
+                                <entry>Count of active ingredient</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Number (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Count of base and modification pair</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Number (qualifier value)</entry>
+                            </row>
+                            <row>
+                                <entry>Count of base of active ingredient</entry>
+                                <entry>None</entry>
+                                <entry>Medication</entry>
+                                <entry>Number (qualifier value)</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Substance relationship types</title>
+                <table>
+                    <title>Substance Relationship Types Sub-Domain and Range</title>
+                    <tgroup cols="4" align="left">
+                        <thead>
+                            <row rowsep="1">
+                                <entry>Attribute</entry>
+                                <entry>Parent Attribute</entry>
+                                <entry>Sub-Domain</entry>
+                                <entry>Range</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Has disposition</entry>
+                                <entry>None</entry>
+                                <entry>Substance</entry>
+                                <entry>Disposition (disposition)</entry>
+                            </row>
+                            <row>
+                                <entry><?oxy_comment_start author="steph" timestamp="20190311T122423-0600" comment="This is missing in the sub-section below" flag="done"?>Is
+                                    modification of<?oxy_comment_end?></entry>
+                                <entry>None</entry>
+                                <entry>Substance</entry>
+                                <entry>Substance (substance)</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Specimen relationship types</title>
+                <table>
+                    <title>Specimen Relationship Types Sub-Domain and Range</title>
+                    <tgroup cols="4" align="left">
+                        <thead>
+                            <row rowsep="1">
+                                <entry>Attribute</entry>
+                                <entry>Parent Attribute</entry>
+                                <entry>Sub-Domain</entry>
+                                <entry>Range</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Specimen source morphology</entry>
+                                <entry>None</entry>
+                                <entry>Specimen</entry>
+                                <entry>Morphologically abnormal structure (morphologic
+                                    abnormality)</entry>
+                            </row>
+                            <row>
+                                <entry>Specimen source topography</entry>
+                                <entry>None</entry>
+                                <entry>Specimen</entry>
+                                <entry>Anatomical or acquired body structure (body
+                                    structure)</entry>
+                            </row>
+                            <row>
+                                <entry morerows="4">Specimen source identity</entry>
+                                <entry morerows="4">None</entry>
+                                <entry morerows="4">Specimen</entry>
+                                <entry>Person (person) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Family (social concept) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Community (social concept) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Environment (environment) OR</entry>
+                            </row>
+                            <row>
+                                <entry>Physical object (physical object)</entry>
+                            </row>
+                            <row>
+                                <entry>Specimen procedure</entry>
+                                <entry>None</entry>
+                                <entry>Specimen</entry>
+                                <entry>Procedure (procedure)</entry>
+                            </row>
+                            <row>
+                                <entry>Specimen substance</entry>
+                                <entry>None</entry>
+                                <entry>Specimen</entry>
+                                <entry>Substance (substance)</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+        </section>
+    </section>
+</section>
