@@ -84,4 +84,22 @@
         <title>Assertional Knowledge</title>
         <xi:include href="SOLOR-assertional.xml"/>
     </part>
+    <part>
+        <title>Procedural Representation</title>
+        <xi:include href="knart-procedural.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+    <part>
+        <title>Use Cases</title>
+        <xi:include href="4.1.1.xml"/>
+        <xi:include href="Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+        <xi:include href="Use-Case-Chapter.xml"></xi:include>
+        <xi:include href="roundtrip-usecase.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+    <part>
+        <title>Ecosystem</title>
+        <xi:include href="Ecosystem.xml"/>
+        <xi:include href="2.2.4.xml"/>
+        <xi:include href="Volume%2011%20-%20Healthcare%20Data%20Management.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2012%20-%20Healthcare%20Quality%20Improvement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
 </book>
