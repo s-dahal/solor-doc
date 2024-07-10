@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Business Requirements</title>
+    <para>This section details specific business requirements for a Tinkar logical model.</para>
+    <section>
+        <title>Clinical Requirements</title>
+        <para>The ultimate goal of this effort is to <emphasis role="underline"
+                linkend="requirement_1">support the coordination of safe, effective medicine
+                (Requirement 1)</emphasis>. This goal requires <emphasis role="underline"
+                linkend="requirement_2">quality information in the patient record (Requirement
+                2)</emphasis>, wherever it comes from, and the increasingly distributed nature of
+            care that requires <emphasis role="underline" linkend="requirement_3">commonly
+                understood data standards (Requirement 3)</emphasis> to ensure mutual comprehension
+            across the care team and over time. There are four outlined clinical use cases:</para>
+        <informaltable>
+            <tgroup cols="1">
+                <colspec colnum="1" colname="col1"/>
+                <tbody>
+                    <row>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="bold">Record Patient Data</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A care provider, already authenticated and authorized to the
+                                system and using the appropriate context to ensure the system
+                                records the data for the correct patient, adds or modifies
+                                information in the patient record. This may include signs, symptoms,
+                                impressions, diagnoses, orders, notes, or other assets.</para>
+                            <para>This operation may initiate workflow processes or automated
+                                processes such as clinical decision support suggestions.</para>
+                            <para>For structured data using standard terminologies, the <emphasis
+                                    role="underline" linkend="requirement_4">terms available are
+                                    appropriate (Requirement 4)</emphasis> for the clinical context,
+                                for the role (i.e., terms may differ for different kinds of users),
+                                and for the data context (e.g., data entry fields may not support
+                                inactive or deprecated terms that would be allowed in search or
+                                analytical contexts).</para>
+                            <para>If the available terminology does not support the provider’s
+                                needs, the provider may assert a need for a new term.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="bold">Propose Terminology Change</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
+                            <para>If a provider attempts to enter a term that is not supported by
+                                the enterprise terminology, the <emphasis role="underline"
+                                    linkend="requirement_5">effort will be captured as a proposed
+                                    term (Requirement 5).</emphasis>
+                            </para>
+                            <para>Systems may capture this information unobtrusively as text, or
+                                prompt further information from the clinician to assist the
+                                authoring process. The system will convey at least the text and the
+                                identity of the clinician to the terminologist.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="bold">Review Patient Data</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A provider, already authenticated and authorized to the system and
+                                using the appropriate context to ensure the system records the data
+                                for the correct patient, finds and reviews information in the
+                                patient record. </para>
+                            <para>For structured data using standard terminologies, the terms
+                                available are appropriate for the clinical context, for the role
+                                (i.e., terms may differ for different kinds of users), and for the
+                                data context (i.e., data entry fields may not support inactive or
+                                deprecated terms that would be allowed in search or analytical
+                                contexts).</para>
+                            <para><emphasis role="underline" linkend="requirement_6">Changes to the
+                                    terminology that could affect record interpretation will be
+                                    indicated (Requirement 6)</emphasis>, along with a way to
+                                identify the change and its effect.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="bold">Review Knowledge Base Changes
+                                            Relevant to Record</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
+                            <para>If the system identifies a relevant change, the provider may
+                                request further information. </para>
+                            <para>This will include the ability to <emphasis role="underline"
+                                    linkend="requirement_7">see available values and CDS results for
+                                    specific dates and contexts (Requirement 7)</emphasis>,
+                                including those under which the data was recorded or specific
+                                decisions were made.</para>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para><emphasis role="italic"> Clinical Use Cases</emphasis></para>
+        <para>The key capability for a clinician should be <emphasis role="underline"
+                linkend="requirement_8">to record and review data quickly and accurately
+                (Requirement 8)</emphasis>, taking advantage of up-to-date classifications and
+            decision support rules. This should be accomplished by knowing when a change in the
+            knowledge base might affect a record. The change management capability that supports
+            these operations should be as unobtrusive as possible to patients and care providers,
+            and always readily available.</para>
+        <para>These operations depend on the availability not only of currently accurate terminology
+            assets, but also <emphasis role="underline" linkend="requirement_7">assets from prior
+                points in time (Requirement 7)</emphasis>. These may include assets as defined or refined by different
+                stakeholders with different sets of assumptions. For
+            instance, whether a disorder meets a criterion defined by a standard terminology, a
+            payor, a professional society, or a locally chartered board of specialists.</para>
+        <para>To support these needs, the Enterprise Terminology that supports the clinical systems
+            must <emphasis role="underline" linkend="requirement_9">manage change systematically
+                (Requirement 9)</emphasis>, and it must do so for both internally-managed and
+            externally-sourced assets. </para>
+    </section>
+    <section>
+        <title>Asset Curation Requirements</title>
+        <para>Curation of these assets requires detailed change data. The evolution and maturation
+            of knowledge happens at different times and places. Keeping standards and relationships
+            to standards current is a complex undertaking. A health system may subscribe to dozens
+            of standard and commercial terminologies, each of which may publish scheduled updates
+            several times a year, and any of which may push out an emergency update at any time. All
+            these assets have different designs, so ensuring continued cohesion is expensive and
+            time-consuming, and the necessary transformations introduce risk. Systematic management
+            of change requires granular representation of the assets and associated asset
+            changes.</para>
+        <para>There are best-practice capabilities in knowledge asset maintenance. The following is
+            proposed for clinical data standards:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="underline" linkend="requirement_10">Unique object identification (Requirement 10)</emphasis>: Every
+                        object under version control must have a unique identifier, and the
+                        identifier must remain unchanged as the object is modified and different
+                        versions of it are created and saved. </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="underline" linkend="requirement_11">Version history
+                            retention (Requirement 11)</emphasis>: Each version of an object must be
+                        persisted as the object changes over time, along with metadata indicating
+                        its version identifier, time of creation, creating author, and branch of the
+                        version control system on which it was created. Further, every version of
+                        each object must remain available for retrieval and inspection.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="underline" linkend="requirement_12">Version comparison (Requirement 12)</emphasis>: It must be easy
+                        to compare two versions of the same object and identify all differences
+                        between them. Among other things, this capability is important to determine
+                        whether updates to a sub-artifact have changed its semantics in a way that
+                        may affect the behavior of one or more of its parent artifacts. Ready
+                        comparison is also important when merging two or more concurrent development
+                        efforts involving the same knowledge artifacts.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="underline" linkend="requirement_13">Branching capabilities (Requirement 13)</emphasis>: It must be
+                        possible to create a virtual copy of the entire version-control
+                        configuration, or a defined subset, in a new “path,” such that changes made
+                        to objects in this branch do not appear in the original configuration. This
+                        capability allows individual knowledge engineers to make and test changes to
+                        knowledge artifacts without affecting the work of other knowledge engineers
+                        or the integrity of knowledge artifacts currently in production. This
+                        facility is critical to the orderly and safe management of a clinical
+                        decision support system.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="underline" linkend="requirement_14">Merging capabilities (Requirement 14)</emphasis>: It must be
+                        possible to incorporate all the changes made on one branch of the
+                        version-control repository into another branch, such that any conflicts
+                        between different versions of the same objects are detected and resolved.
+                        This capability is important to enable work done by multiple knowledge
+                        engineers concurrently to be combined and incorporated into the main branch
+                        of the repository. The merging capability is also important to allow
+                        knowledge engineers to update their local branches of the repository with
+                        changes that may have been made by others to the main branch, thus ensuring
+                        that changes will remain compatible with the latest version of the
+                        system.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>These core properties support authoring and maintenance operations: at a high level,
+            this means <emphasis role="underline" linkend="requirement_15">modifying the enterprise
+                terminologies (Requirement 15)</emphasis>, <emphasis role="underline"
+                linkend="requirement_16">importing standard terminologies (Requirement
+                16)</emphasis>, and <emphasis role="underline" linkend="requirement_17">publishing
+                the enterprise terminologies (Requirement 17)</emphasis> to the client clinical
+            systems. The standard terminology publisher has the same needs around modification and
+            publishing as the enterprise, and some standards import other standards as well (e.g.,
+            Medication Reference Terminology [MedRT], which publishes relationships among other
+            standards). </para>
+        <para>We distinguish between the Enterprise Terminologist and the SDO Terminologist. The
+            Enterprise Terminologist is responsible for ensuring that the terminology resources
+            provided to clinical systems are current and accurate. This involves managing the
+            consumption of external terminologies as well as maintenance of assets defined within
+            the enterprise. The SDO Terminologist is responsible for ensuring that the terminology
+            resources provided to other terminology systems are current and accurate. This may
+            involve managing the consumption of external terminologies as well as maintenance of
+            assets defined within the SDO.</para>
+        <informaltable>
+            <tgroup cols="1">
+                <colspec colnum="1" colname="col1"/>
+                <tbody>
+                    <row>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="bold">Modify Enterprise Terminology</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A user adds, modifies, or deactivates content in the terminology
+                                assets of the enterprise, including assets provided to clinical
+                                systems as well as management data used only within the knowledge
+                                base.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="bold">Publish Enterprise Terminology</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A user manages the publication process that supports the automated
+                                provision of terminology content to clinical systems.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="bold">Import Standard Terminology</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A user incorporates a new standard terminology or new version of a
+                                standard terminology into the enterprise terminology. During this
+                                process, functionality supports the assessment and management of
+                                impacts on existing enterprise assets.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="bold">Publish Standard Terminology</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A user manages the publication process that supports the automated
+                                provision of terminology content to client terminology
+                                servers.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="bold">Modify Standard Terminology</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A user adds, modifies, or deactivates content in the terminology
+                                assets of the standard, including assets provided to client
+                                terminology systems as well as management data used only within the
+                                knowledge base (e.g., changing SNOMED CT® relationships, inserting a
+                                concept in between two existing concepts). <emphasis>Note that a
+                                    standard can only be modified by the standard owner</emphasis>.
+                                A client enterprise may add to or modify the content in an
+                                “overlay,” but those changes are part of the local enterprise
+                                assets. The client enterprise cannot actually modify the
+                                standard.</para>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para><emphasis role="italic">Asset Curation Use Cases</emphasis></para>
+        <para>Today, clinical systems consume terminologies, but the interfaces are point-to-point.
+            To assert or assess new information, the tools must already understand all relevant
+            interface models. Since an external organization may modify that model at any time, the
+            ability to consume external assets involves ongoing manual efforts to understand or
+            confirm the model and the design of transformations to support consumption. This is
+            potentially expensive and risky.</para>
+        <para>We propose a “data-driven” architecture to support self-describing terminology assets.
+            All changes can be programmatically managed with a globally consistent design.
+            Management may involve human review, but it can leverage pattern-based recognition of
+            specific change types for automated handling, leaving a smaller number of cases that
+            require human judgment. This information design will support a common representation of
+            all terminologies. There are two key requirements for this design:</para>
+        <orderedlist>
+            <listitem>
+                <para><emphasis role="underline" linkend="requirement_11">A complete record of all changes, including relevant change context information (Requirement 11)</emphasis></para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="underline" linkend="requirement_18">A single syntax to support the representation of all terminology assets, known and future (Requirement 18)</emphasis></para>
+            </listitem>
+        </orderedlist>
+        <para>The context information of the first requirement includes the following:</para>
+        <orderedlist>
+            <listitem>
+                <para>The <emphasis role="underline" linkend="requirement_19">Status</emphasis> of
+                    the asset: whether it should be considered active or inactive in the context of
+                    these other attributes <emphasis role="underline" linkend="requirement_19"
+                        >(Requirement 19)</emphasis>. For systems that do not support status, the
+                    default will be “active.”</para>
+            </listitem>
+            <listitem>
+                <para>The <emphasis role="underline" linkend="requirement_20">Time</emphasis> of the
+                    change, specified with a time zone and at an appropriate precision <emphasis role="underline" linkend="requirement_20">(Requirement
+                    20)</emphasis>. For systems that do not provide a time, the default will be the release
+                    time.</para>
+            </listitem>
+            <listitem>
+                <para>The <emphasis role="underline" linkend="requirement_21">Author</emphasis> of
+                    the creation or change, unambiguously identified <emphasis role="underline" linkend="requirement_21">(Requirement 21)</emphasis>. For systems
+                    that do not provide an author, a default author will be created for the
+                    system.</para>
+            </listitem>
+            <listitem>
+                <para>The domain or organizational name of the larger asset within which the
+                    component is meaningful, such as code system or edition <emphasis
+                        role="underline" linkend="requirement_22">(a.k.a., Module) (Requirement
+                    22)</emphasis>. For systems that do not provide a module, a default module will be created
+                    for the system.</para>
+            </listitem>
+            <listitem>
+                <para>The production branch of that organization, e.g., for distributed development,
+                    testing, staging, or production <emphasis role="underline"
+                        linkend="requirement_23">(a.k.a., Path) (Requirement 23)</emphasis>. For systems that
+                    do not provide a path, a default path will be created for the system.</para>
+            </listitem>
+        </orderedlist>
+        <para>These elements together are referred to by the acronym “<emphasis role="bold"
+                >STAMP</emphasis>.” Every new assertion, whether a new asset or a change to an
+            existing asset, must have a STAMP to determine when it is to be used. The STAMP
+            properties support the ability to apply terminology assets for specific purposes. For
+            example:</para>
+        <itemizedlist>
+            <listitem>
+                <para>“Path” can be used to test provisional content without physically swapping out
+                    systems. </para>
+            </listitem>
+            <listitem>
+                <para>“Modules” are used to organize content for maintenance and publication
+                    purposes. Modules are the domain or organizational name of the larger asset
+                    within which the component is meaningful, such as code system or edition.
+                    Modularity for terminologies should follow a similar design to modularity in
+                    software engineering. Deciding what belongs in certain modules or extensions
+                    within certain terminologies is a difficult subject that is out of scope for
+                    this document, but having support for the ability to create modules, recognize
+                    redundancy, and merge or retire concepts are important requirements that must be
+                    supported. [12-14] </para>
+            </listitem>
+            <listitem>
+                <para>“Time” supports the ability to apply CDS rules as they would have looked in
+                    the past.</para>
+            </listitem>
+        </itemizedlist>
+        <para>A further requirement is that not only must the architecture support these properties,
+            but that <emphasis role="underline">it must require</emphasis> the properties for all
+            assets under curation. Without consistent application of this rule, the foundational
+            capability of detailed version management is more difficult. </para>
+        <para>Additionally, for an asset to support a record of changes, each <emphasis
+                role="underline" linkend="requirement_10">asset must itself be identifiable
+                (Requirement 10)</emphasis>.</para>
+        <para>The “single syntax” requirement is harder to satisfy. One approach would be to define
+            a syntax that addresses the data elements of all known terminologies. This would be a
+            heavy specification, that would be difficult to maintain, and could fail to capture new
+            elements as terminologies are added in the future.</para>
+        <para>The other approach is to use a “self-describing” or “meta-modeling” approach, where
+            the syntax defines not only the content but also what the content means. “Rigid” or
+            “brittle” specifications determine in advance where information belongs: a database may
+            use column names to suggest what belongs in a column, but there is no way to determine
+            whether the name is a good one, or whether an instance value meets the criterion implied
+            by the name. But flexible specifications support data definition. Extensible Markup
+            Language (XML) (a subset of Standard Generalized Markup Language [SGML]) provides a way
+            to specify types of data and structural (not semantic) relationships. Resource
+            Description Framework (RDF) goes one step further by making the relationship between an
+            element and its containing class an explicit part of every triplet. If this relationship
+            is specified in a controlled terminology, then assertions can be tested for validity.
+            For example, if an RDF Schema Specification (RDFS) asserts that the finding site of a
+            lesion must be an anatomical feature, then assertions about actual lesions can be tested
+            for valid finding sites. Furthermore, this logic specifies a “range” in the same
+            syntactic structure as the instance assertion: changes to the knowledge base do not
+            affect the syntactical representation of the knowledge. Systems that adopt this approach
+            will require effort to take advantage of new features of terminologies, without having
+            to rebuild their infrastructure when changes are made.</para>
+        <para>Having change data in discrete tagged change sets will allow the software to hide most
+            of the complexity of version management from the human managers, allowing them to focus
+            on significant decisions.</para>
+    </section>
+    <section>
+        <title>Configuration Requirements</title>
+        <para>A granular self-describing model will support any statement that can be made using
+            concepts in a subject-predicate-object structure, and its compositional aspect permits
+            compound predicates. It is difficult to imagine a proposition that cannot be supported,
+            however, this means that there are multiple ways to support any specific kind of
+            statement that a terminology knowledge base must support. This section addresses best
+            practices for these cases.</para>
+        <section>
+            <title>Operations</title>
+            <para><emphasis role="underline">Import</emphasis>: A user may identify content from
+                another system and write it into the Terminology Repository. When this happens, the
+                new content will be recorded in the common, self-describing format. When a set of
+                content is imported, rules asserted by the source steward or the Terminology
+                Repository steward may be used to assert structural equivalence in the repository
+                (i.e., different source concepts may be represented as alternate representations of
+                the same root concept). During importation of subsequent versions of a system,
+                changes to assets on which other enterprise assets depend must be identified and
+                managed as directed by documented policies. The import operation will usually
+                identify sets of such changes which require prioritization to prevent redundant
+                processing.</para>
+            <para><emphasis role="underline" linkend="requirement_24">Search (Requirement 24)</emphasis>: A user may use lexical or concept-based
+                parameters to search for a set of matching assets.</para>
+            <para><emphasis role="underline" linkend="requirement_25">View (Requirement 25)</emphasis>: A user may view an asset, the view
+                consisting of related information associated in visually appropriate ways. This view
+                may omit information not appropriate to the user’s context. </para>
+            <para><emphasis role="underline" linkend="requirement_12">Compare (Requirement
+                    12)</emphasis>: A user may view related assets, including versions of component,
+                in a form designed to support analytical comparison (e.g., side-by-side
+                display).</para>
+            <para><emphasis role="underline">Authoring/Maintenance</emphasis>: A user may modify existing
+                content or add new content. To preserve prior states, all modifications are recorded
+                as new versions of content: prior versions will remain unchanged. Any time a change
+                is made, the system will identify dependent assets and rules for handling these
+                changes.</para>
+            <itemizedlist>
+                <listitem>
+                    <para>An <emphasis role="underline" linkend="requirement_26">addition
+                            (Requirement 26)</emphasis> is a new version with a new asset UUID
+                        (universally unique identifier). Patterns may assert constraints for
+                        additions, which may be specific to context (Modules, Paths, Languages,
+                        etc.). </para>
+                </listitem>
+                <listitem>
+                    <para>An <emphasis role="underline" linkend="requirement_27">inactivation (Requirement 27)</emphasis> is a new version of an existing asset with status set to
+                        “inactive.” Patterns may assert rules for deletions, which may be specific
+                        to context.</para>
+                </listitem>
+                <listitem>
+                    <para>A <emphasis role="underline" linkend="requirement_28">change (Requirement 28)</emphasis> is a new version of an existing asset with the new value(s),
+                        distinguishable by STAMP value. A change may involve only a STAMP value. For
+                        example, deactivation, or import of a concept to a new module or
+                        path.</para>
+                </listitem>
+            </itemizedlist>
+            <para><emphasis role="underline" linkend="requirement_29">Classify (Requirement 29)</emphasis>: A user may select a logical profile and
+                classifier and use classification logic to test equivalence and subsumption of
+                identified assets, or to generate a set of inferred relationships from a set of
+                stated relationships. An inferred set may be persisted.</para>
+            <para><emphasis role="underline" linkend="requirement_30">Publish (Requirement 30)</emphasis>: A user may promote content into a
+                “publication” path and produce a transmissible payload of content that can be
+                consumed by other repositories. This promotion is a change and may require
+                resolution of constraints on membership in that path.</para>
+        </section>
+        <section>
+            <title>Patterns for Representing Various Assets</title>
+            <para>The data architecture must support patterns for the representation of many kinds
+                of assets. A minimal list includes the following:</para>
+            <orderedlist>
+                <listitem>
+                    <para>A <emphasis role="bold">term</emphasis> must have: </para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>A string representation</para>
+                        </listitem>
+                        <listitem>
+                            <para>A language, possibly including refinements </para>
+                        </listitem>
+                        <listitem>
+                            <para>An indicator of case sensitivity </para>
+                        </listitem>
+                        <listitem>
+                            <para>A type used to represent whether a term is a synonym, fully
+                                qualified name (for example: SNOMED CT® Fully Specified Name or
+                                LOINC® Long Common Name), definition, etc.</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para>A <emphasis role="bold">concept</emphasis> must have: </para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>At least one term</para>
+                        </listitem>
+                        <listitem>
+                            <para>At least one parent, except for root concepts or terminologies
+                                that are not hierarchical</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para>A <emphasis role="bold">logical definition</emphasis> must have:</para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>A definitional status</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">STAMP values must include</emphasis>:</para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>“Active” and “inactive” status concepts</para>
+                        </listitem>
+                        <listitem>
+                            <para>At least one “default” author</para>
+                        </listitem>
+                        <listitem>
+                            <para>At least one “root” module</para>
+                        </listitem>
+                        <listitem>
+                            <para>Paths supporting “development” and “publication”</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para>An <emphasis role="bold">inferred classification</emphasis> must
+                        indicate:</para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>The classifier used for its generation</para>
+                        </listitem>
+                        <listitem>
+                            <para>The logic profile used for its generation</para>
+                        </listitem>
+                        <listitem>
+                            <para>The stated asset(s)</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para>The <emphasis role="bold">module dependency</emphasis> graph:</para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>Identifies the root module</para>
+                        </listitem>
+                        <listitem>
+                            <para>Lists all other modules, indicating dependency</para>
+                        </listitem>
+                        <listitem>
+                            <para>Must be acyclical</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+            </orderedlist>
+            <para>Many other patterns may be present. Implementations are expected to
+                support:</para>
+            <orderedlist continuation='continues'>
+                <listitem><para><emphasis role="bold">Any assembly of relationships</emphasis> associating one concept with
+                        another which must have:</para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>At least one default rule (constraint) for handling changes (e.g.,
+                                whether assets dependent on changed assets can be automatically
+                                handled or require intervention) </para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Any assembly of relationships</emphasis> may include components that are themselves semantics</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Value sets</emphasis> may include:</para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>Rule-based member inclusions</para>
+                        </listitem>
+                        <listitem>
+                            <para>Enumerated members</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para>System-specific <emphasis role="bold">import rules</emphasis>:</para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>System equivalences for Tinkar attribute and other infrastructure
+                                concepts</para>
+                        </listitem>
+                        <listitem>
+                            <para>Specified exclusions of logical assertions to support
+                                equivalence-on-import inferences irrespective of administrative
+                                metadata</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Maps</emphasis>:</para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>Relationships for equivalence assertions</para>
+                        </listitem>
+                        <listitem>
+                            <para>Relationships for subsumption assertions</para>
+                        </listitem>
+                        <listitem>
+                            <para>Relationships for other functions (e.g., U.S. Center for Disease
+                                Control and Prevention (CDC) Reportable Condition Mapping
+                                Table)</para>
+                        </listitem>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Constraints</emphasis> on asset patterns,
+                        including:</para>
+                    <orderedlist numeration='loweralpha'>
+                        <listitem>
+                            <para>Logical composition constraints on concepts (e.g., the SNOMED CT®
+                                concept model)</para>
+                        </listitem>
+                        <listitem>
+                            <para>Syntactic compositional constraints on strings (e.g., Multipurpose
+                                Internet Mail Extension [MIME] types, International Organization for
+                                Standardization [ISO] languages, or UCUM units)</para>
+                        </listitem>
+                        <listitem>
+                            <para>Pattern constraints, e.g., presence of exactly one name classified
+                                as “fully specified,” or names in specified languages</para>
+                        </listitem>
+                        <listitem>
+                            <para>Rules that may govern modifications to other assets (e.g.,
+                                incremental addition of effort estimates based on known problematic
+                                terms).</para>
+                        </listitem>
+                    </orderedlist></listitem>
+            </orderedlist>
+            <para>One other feature is the set of concepts that the application will use to
+                determine how to present the data to the user. A key dimension is the STAMP
+                information defined above. In addition, three other “coordinates” are required for
+                managing the presentation:</para>
+            <orderedlist continuation='continues'>
+                <listitem>
+                    <para><emphasis role="bold">Language</emphasis>: A user may assert a required or
+                        preferred language, or a set of ranked language priorities. </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Logic</emphasis>: A user may select the parameters
+                        for logical classification.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Navigation</emphasis>: A user may select the
+                        parameters for presentation of the logical classification </para>
+                </listitem>
+            </orderedlist>
+            <para>Like other concepts, these can be represented by the core data architecture. The
+                application implementing the Tinkar specification must be able to identify those
+                concepts appropriate for these uses.</para>
+        </section>
+        <section>
+            <title>Constraints</title>
+            <para>
+                    Constraints are required to:</para>
+                <orderedlist>
+                        <listitem>
+                            <para>Ensure that the appropriate level of detail for standard
+                                terminologies are represented within Tinkar</para>
+                        </listitem>
+                        <listitem>
+                            <para>Create terminology extensions that conform to the requirements of
+                                the standard(s) the extension is based on</para>
+                        </listitem>
+                        <listitem>
+                            <para>Perform general quality assurance</para>
+                        </listitem>
+                 </orderedlist>
+                <para>For example, constraints would be used to represent standard terminology
+                artifacts, like the SNOMED CT® Machine Readable Concept Model. Additionally,
+                constraints could be used to ensure that the terminologies represented within a
+                Tinkar implementation are completely and consistently queried and displayed. </para>
+                <para>These same constraints can be used to create new content within a Tinkar
+                    implementation to specify the minimally viable data that would be required. For
+                        example:</para>
+                        <orderedlist numeration="arabic" continuation="continues">
+                        <listitem>
+                            <para>All concepts must have at least one Fully Qualified Name within at
+                        least one Language or Dialect</para>
+                        </listitem>
+                        <listitem>
+                            <para>All concepts must have at least one Name specified as Preferred
+                        within at least one Language or Dialect</para>
+                        </listitem>
+                        <listitem>
+                            <para>All concepts must have at least one parent, unless it is a root
+                        concept</para>
+                        </listitem>
+                    </orderedlist>
+                    <para>Constraints can be applied (or not applied) based on various criteria to
+                    perform Quality Assurance on content that is represented within a Tinkar
+                    implementation. For example:<orderedlist numeration="arabic"
+                        continuation="continues">
+                        <listitem>
+                            <para>SNOMED CT® Fully Specified Name hierarchy tags are applied based
+                            on where a concept exists in a hierarchy</para>
+                        </listitem>
+                        <listitem>
+                            <para>Relationships between concepts have domain (based on hierarchy)
+                                and range (the hierarchy(s) of values that a relationship
+                                takes)</para>
+                        </listitem>
+                        <listitem>
+                            <para>Modeling templates can be specified to ensure that new content
+                            that is created under a certain node in a hierarchy uses similar wording
+                            and relationships</para>
+                        </listitem>
+                    </orderedlist></para>
+                    <para>Since some Quality Assurance Constraints do not always indicate an error,
+                an Allow List could also be represented as a Semantic to record concepts that are
+                allowed to not conform to a constraint. Constraints would be represented using
+                semantics as they are self describing and can support multiple different
+                representations for constraints (SNOMED CT® Expression Constraint Language, Drools,
+                etc.). Representing Constraints as a Semantic also ensures STAMP. STAMP is versioned
+                over time, capturing author information and allowing for tests and progress over
+                different modules and paths.</para>
+                    <para>Implementing Constraints would depend upon how the Constraints are written
+                and formatted. For example, implementers could utilize a Rete algorithm through
+                something like Drools to implement Constraints.</para>
+        </section>
+        <section>
+            <title>Minimally Required Content</title>
+            <para>A Tinkar implementation must be furnished with the following content:<orderedlist>
+                <listitem><para>One root concept</para></listitem>
+                <listitem><para>One module dependency graph</para></listitem>
+                <listitem><para>Infrastructure concepts a.k.a Tinkar Model Concepts to support the core patterns listed above</para></listitem>
+                <listitem><para>Import rules to support import of standard terminologies, including:</para>
+                    <orderedlist numeration='loweralpha'>
+                            <listitem><para>Equivalences to support semantic integration of terminologies (e.g., that a LOINC® “system”
+                                    instantiates the same relationship concept as the SNOMED CT®
+                                    “inheres in” attribute)</para></listitem>
+                            <listitem>
+                                <para>Exclusions to support removal of non-semantic properties from
+                                    classification (e.g., RxNorm Translated CDs)</para>
+                            </listitem>
+                        </orderedlist>
+                </listitem>
+                </orderedlist></para>
+        </section>
+    </section>
+    <section role="landscape">
+        <title>List of Requirements</title>
+        <informaltable>
+            <tgroup cols="6">
+                <colspec colnum="1" colname="col1" colwidth="1*" align="left"/>
+                <colspec colnum="2" colname="col3" colwidth="4*" align="left"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                <colspec colname="newCol5" colnum="5" colwidth="1.5*"/>
+                <colspec colname="newCol6" colnum="6" colwidth="1.5*"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">ID</emphasis></entry>
+                        <entry><emphasis role="bold">Requirement</emphasis></entry>
+                        <entry><emphasis role="bold">Level</emphasis></entry>
+                        <entry><emphasis role="bold">Clinical System</emphasis></entry>
+                        <entry><emphasis role="bold">Terminology Management</emphasis></entry>
+                        <entry><emphasis role="bold">Information Design</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_1" xreflabel="1">1</entry>
+                        <entry>Support the practice and coordination of safe, effective medicine </entry>
+                        <entry>Need</entry>
+                        <entry align="center">x </entry>
+                        <entry align="center"/>
+                        <entry align="center"/>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_2" xreflabel="2">2</entry>
+                        <entry>Provide quality information in the patient record</entry>
+                        <entry>Need</entry>
+                        <entry align="center">x</entry>
+                        <entry align="center"/>
+                        <entry align="center"/>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_3" xreflabel="3">3</entry>
+                        <entry>Represent information in commonly understood data standards </entry>
+                        <entry>Feature</entry>
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_4" xreflabel="4">4</entry>
+                        <entry>Provide terms appropriate to the context</entry>
+                        <entry>Feature</entry>
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_5" xreflabel="5">5</entry>
+                        <entry>Capture terminology suggestions from point of care</entry>
+                        <entry>Function</entry>
+                        <entry align="center">x</entry>
+
+                        <entry align="center"/>
+
+                        <entry align="center"/>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_6" xreflabel="6">6</entry>
+                        <entry>Indicate data for which changes to the terminology could affect
+                            record interpretation </entry>
+                        <entry>Function</entry>
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_7" xreflabel="7">7</entry>
+                        <entry>View available terms and decision support recommendations for
+                            specified dates and contexts</entry>
+                        <entry>Function</entry>
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_8" xreflabel="8">8</entry>
+                        <entry>Support rapid and accurate recording and review of record data </entry>
+                        <entry>Need</entry>
+                        <entry align="center">x</entry>
+
+                        <entry align="center"/>
+
+                        <entry align="center"/>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_9" xreflabel="9">9</entry>
+                        <entry>Manage change systematically</entry>
+                        <entry>Feature</entry>
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_10" xreflabel="10">10</entry>
+                        <entry>Identify assets uniquely</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_11" xreflabel="11">11</entry>
+                        <entry>Retain all prior versions</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_12" xreflabel="12">12</entry>
+                        <entry>Support comparison of versions</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_13" xreflabel="13">13</entry>
+                        <entry>Support branching of sets of assets for independent
+                            development</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_14" xreflabel="14">14</entry>
+                        <entry>Support controlled merging of branches by identifying and addressing
+                            conflicts with defined rules</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_15" xreflabel="15">15</entry>
+                        <entry>Modify enterprise terminology by creating, modifying, or deactivating
+                            assets and relationships</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_16" xreflabel="16">16</entry>
+                        <entry>Import standard terminologies, including merging capability for
+                            assets referring to prior versions of the standard</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_17" xreflabel="17">17</entry>
+                        <entry>Publish enterprise terminologies, including application and
+                            resolution of constraints specific to the publication path</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_18" xreflabel="18">18</entry>
+                        <entry>A self-describing method for representing terminology assets from
+                            diverse and mutable models</entry>
+                        <entry>Feature</entry>
+                        <entry align="center"/>
+
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_19" xreflabel="19">19</entry>
+                        <entry>Represent the status of the asset in a context</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_20" xreflabel="20">20</entry>
+                        <entry>Represent the time at which a change is recorded</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+
+                        <entry align="center">x</entry>
+
+                        <entry align="center">x</entry>
+
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        
+        
+         <informaltable>
+            <tgroup cols="6">
+                <colspec colnum="1" colname="col1" colwidth="1*" align="left"/>
+                <colspec colnum="2" colname="col3" colwidth="4*" align="left"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                <colspec colname="newCol5" colnum="5" colwidth="1.5*"/>
+                <colspec colname="newCol6" colnum="6" colwidth="1.5*"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">ID</emphasis></entry>
+                        <entry><emphasis role="bold">Requirement</emphasis></entry>
+                        <entry><emphasis role="bold">Level</emphasis></entry>
+                        <entry><emphasis role="bold">Clinical System</emphasis></entry>
+                        <entry><emphasis role="bold">Terminology Management</emphasis></entry>
+                        <entry><emphasis role="bold">Information Design</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_21" xreflabel="21">21</entry>
+                        <entry>Represent the author of a change</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+                        <entry align="center">x</entry>
+                        <entry align="center">x</entry>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_22" xreflabel="22">22</entry>
+                        <entry>Represent the system or sub-system of an asset</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+                        <entry align="center">x</entry>
+                        <entry align="center">x</entry>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_23" xreflabel="23">23</entry>
+                        <entry>Represent the path or branch of an asset version</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+                        <entry align="center">x</entry>
+                        <entry align="center">x</entry>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_24" xreflabel="24">24</entry>
+                        <entry>Support search using lexical or logical criteria</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+                        <entry align="center">x</entry>
+                        <entry align="center"/>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_25" xreflabel="25">25</entry>
+                        <entry>Support detailed view of assets and diverse properties, filtering
+                            content not relevant to the chosen context</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+                        <entry align="center">x</entry>
+                        <entry align="center"/>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_26" xreflabel="26">26</entry>
+                        <entry>Add terminology assets, including concepts, terms, relationships,
+                            definitions, value sets, maps, and others</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+                        <entry align="center">x</entry>
+                        <entry align="center">x</entry>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_27" xreflabel="27">27</entry>
+                        <entry>Deactivate assets, preserving their original form</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+                        <entry align="center">x</entry>
+                        <entry align="center">x</entry>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_28" xreflabel="28">28</entry>
+                        <entry>Modify assets, preserving their original form</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+                        <entry align="center">x</entry>
+                        <entry align="center">x</entry>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_29" xreflabel="=29">29</entry>
+                        <entry>Classify assets using identified tools and logical profiles in chosen
+                            contexts, with the option to persist the inferred assets</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+                        <entry align="center">x</entry>
+                        <entry align="center"/>
+                    </row>
+                    <row>
+                        <entry xml:id="requirement_30" xreflabel="30">30</entry>
+                        <entry>Process a set of content for publication, including identification
+                            and resolution of unresolved constraints</entry>
+                        <entry>Function</entry>
+                        <entry align="center"/>
+                        <entry align="center">x</entry>
+                        <entry align="center"/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        
+        
+    </section>
+</chapter>

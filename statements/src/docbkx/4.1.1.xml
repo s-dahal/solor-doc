@@ -319,19 +319,28 @@ If you want to include original phrasing please use &quot;In collaboration with 
     </section>
     <section>
         <title>References</title>
-        <para>1. Wise, L., Miller, N., Warner, D. (n.d.). The role of CDI in Semantic
-            Interoperability. The Role of CDI in Semantic Interoperability / AHIMA, American Health
-            Information Management Association. Retrieved December 14, 2022, from
-            https://bok.ahima.org/doc?oid=302470#.Y5on41HMKUk </para>
-        <para>2. Michelle Stram, Tony Gigliotti, Douglas Hartman, Andrea Pitkus, Stanley M. Huff,
-            Michael Riben, Walter H. Henricks, Navid Farahani, Liron Pantanowitz; Logical
-            Observation Identifiers Names and Codes for Laboratorians: Potential Solutions and
-            Challenges for Interoperability. Arch Pathol Lab Med 1 February 2020; 144 (2): 229–239.
-            doi: https://doi.org/10.5858/arpa.2018-0477-RA </para>
-        <para>3.  Leveson N, Thomas J, Harrington, Polly, Rodrigo, Rose, Stephen P, Keller, Alana.
-            System Safety within Laboratory Data Exchanges Report [Internet]. Massachusetts
-            Institute of Technology Partnership for Systems Approaches to Safety and Security and
-            Synensys, LLC; 2023 Sep. Available from:
-            https://synensysglobal.com/wp-content/uploads/2023/12/System-Safety-within-Laboratory-Data-Exchanges-Report.pdf </para>
+        <orderedlist>
+            <listitem>
+                <para>Wise, L., Miller, N., Warner, D. (n.d.). The role of CDI in Semantic
+                    Interoperability. The Role of CDI in Semantic Interoperability / AHIMA, American
+                    Health Information Management Association. Retrieved December 14, 2022, from
+                    https://bok.ahima.org/doc?oid=302470#.Y5on41HMKUk </para>
+            </listitem>
+            <listitem>
+                <para>Michelle Stram, Tony Gigliotti, Douglas Hartman, Andrea Pitkus, Stanley M.
+                    Huff, Michael Riben, Walter H. Henricks, Navid Farahani, Liron Pantanowitz;
+                    Logical Observation Identifiers Names and Codes for Laboratorians: Potential
+                    Solutions and Challenges for Interoperability. Arch Pathol Lab Med 1 February
+                    2020; 144 (2): 229–239. doi: https://doi.org/10.5858/arpa.2018-0477-RA </para>
+            </listitem>
+            <listitem>
+                <para>Leveson N, Thomas J, Harrington, Polly, Rodrigo, Rose, Stephen P, Keller,
+                    Alana. System Safety within Laboratory Data Exchanges Report [Internet].
+                    Massachusetts Institute of Technology Partnership for Systems Approaches to
+                    Safety and Security and Synensys, LLC; 2023 Sep. Available from:
+                    https://synensysglobal.com/wp-content/uploads/2023/12/System-Safety-within-Laboratory-Data-Exchanges-Report.pdf
+                </para>
+            </listitem>
+        </orderedlist>
     </section>
 </chapter>

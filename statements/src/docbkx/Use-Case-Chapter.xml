@@ -4,14 +4,10 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Use Cases</title>
     <section>
-        <title>Notice</title>
-        <para>The Use Case chapter currently consists of a draft outline. In the coming year, our
-            team will develop and refine content that can be incorporated.</para>
-    </section>
-    <section>
         <title>Use Case: Komet Application</title>
-        <para>This section outlines three key components of the Komet application, Tinkar knowledge
-            architecure, and open-source contribtuions.</para>
+        <para>This section outlines three key components of the Knowledge Management Environment
+            (Komet)d application, Terminology Knowledge Architecture (Tinkar) knowledge architecure,
+            and open-source contribtuions.</para>
         <section>
             <title>Komet Use Case – Rapid Knowledge Management</title>
             <para>A primary benefit of Komet and the Tinkar architecture used to manage integrated
@@ -42,8 +38,8 @@
                 might have to wait a full six months before SNOMED CT® pushed their bi-annual
                 updates and might be forced to employ sub-optimal work arounds to address the issue
                 until then. This real-time approach of managing integrated knowledge management also
-                allows the creation of concepts, such as COVID-19, to meet emerging conditions and
-                clinical needs.</para>
+                allows the creation of concepts, such as SARS-CoV-2 (COVID-19), to meet emerging
+                conditions and clinical needs.</para>
         </section>
         <section>
             <title>Komet Use Case – Integration of Terminology Standards</title>
@@ -84,9 +80,8 @@
                 challenges with data transmission, storage, retrieval, and aggregation must be
                 addressed to support safe and effective use of the data. RWE can drive important
                 insights into public health and predict emerging diseases, pandemics such as
-                SARS-CoV-2 (COVID-19), and other population health trends. Timely access to
-                interoperable data is critical when developing guidance and improving patient care
-                and outcomes. </para>
+                COVID-19, and other population health trends. Timely access to interoperable data is
+                critical when developing guidance and improving patient care and outcomes. </para>
             <para>Clinical workflows are highly cited as rich sources for analysis of clinical
                 decision-making support and process improvement. Clinical process modeling and
                 workflows can be used to understand a clinician’s reasoning, understanding, and use
