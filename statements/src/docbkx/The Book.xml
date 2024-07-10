@@ -86,7 +86,7 @@
     </part>
     <part>
         <title>Procedural Representation</title>
-        <xi:include href="knart-procedural.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="../../src/docbkx/Book%20Content/Book%20Procedural.xml"/>
     </part>
     <part>
         <title>Real World Applications and Summary of Findings</title>
