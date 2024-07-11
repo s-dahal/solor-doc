@@ -14,7 +14,7 @@
     <part>
         <title xml:id="BookBackground">Background</title>
         <xi:include href="Book%20Content/Book%20Background.xml"/>
-        <xi:include href="sof-current-state - For Vol 2.xml"></xi:include>
+        <xi:include href="sof-current-state - For Vol 2.xml"/>
     </part>
     <part>
         <title>IKM Overview</title>
@@ -39,46 +39,54 @@
     </part>
     <part>
         <title>Terminology Knowledge</title>
-        <xi:include href="Book%20Content/Book%20terminology-intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="Book%20Content/Book%20Terminology-Knowledge.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Book%20Content/Book%20terminology-intro.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Book%20Content/Book%20Terminology-Knowledge.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="definitional.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="terminology_application.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </part>
     <part>
         <title>Statement Model</title>
-        <chapter> 
+        <chapter>
             <title>Statement Model Principles</title>
-            <xi:include href="statement-intro-begin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>   
-            <xi:include href="statement-intro-patterns.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="statement-intro-begin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="statement-intro-patterns.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
         </chapter>
         <chapter>
             <title>Statement Historical Implementations</title>
             <xi:include href="statement-openehr.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-            <xi:include href="statement-clinical-input-form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="statement-clinical-input-form.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
         </chapter>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"/>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-reference-model/anf-reference-model.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-reference-model/anf-reference-model.xml"/>
         <xi:include
             href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"/>
         <xi:include
             href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"/>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"/>
         <xi:include
             href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"/>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"/>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"
+        />
     </part>
     <part>
         <title>Komet</title>
         <xi:include
             href="Book%20Content/Book%20Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3.xml"
-            ><?oxy_comment_end?><?oxy_comment_end mid="10"?></xi:include>
+            ></xi:include>
         <xi:include
             href="Book%20Content/Book%20Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"
             ><?oxy_comment_end?></xi:include>
-        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T161709-0500" comment="move to appendix?"?>
-        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T161719-0500" comment="move to appendix?" mid="10"?>
-        <xi:include href="Volume%208%20-%20Komet%20User%20Guide.xml"></xi:include>
+        <xi:include href="Volume%208%20-%20Komet%20User%20Guide.xml"/>
     </part>
     <part>
         <title>Assertional Knowledge</title>
@@ -90,16 +98,21 @@
     </part>
     <part>
         <title>Real World Applications and Summary of Findings</title>
-        <xi:include href="Use-Case-Chapter.xml"></xi:include>
+        <xi:include href="Use-Case-Chapter.xml"/>
         <xi:include href="roundtrip-usecase.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </part>
     <part>
         <title>Ecosystem</title>
-        <xi:include href="Ecosystem.xml"/>
+        <xi:include href="Wisdom%20of%20Crowds.xml"/>
+        <xi:include href="Open-Source.xml"/>
         <xi:include href="2.2.4.xml"/>
+        <xi:include href="Ecosystem.xml"/>
         <xi:include href="4.1.1.xml"/>
-        <xi:include href="Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
-        <xi:include href="Volume%2011%20-%20Healthcare%20Data%20Management.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="Volume%2012%20-%20Healthcare%20Quality%20Improvement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include
+            href="Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+        <xi:include href="Volume%2011%20-%20Healthcare%20Data%20Management.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2012%20-%20Healthcare%20Quality%20Improvement.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </part>
 </book>
