@@ -6,8 +6,8 @@
     <section>
         <title>Use Case: Komet Application</title>
         <para>This section outlines three key components of the Knowledge Management Environment
-            (Komet)d application, Terminology Knowledge Architecture (Tinkar) knowledge architecure,
-            and open-source contribtuions.</para>
+            (Komet) application, Terminology Knowledge Architecture (Tinkar) knowledge architecture,
+            and open-source contributions.</para>
         <section>
             <title>Komet Use Case – Rapid Knowledge Management</title>
             <para>A primary benefit of Komet and the Tinkar architecture used to manage integrated
@@ -34,22 +34,23 @@
                 error by navigating the site, understanding the concept versioning and history,
                 making edits to resolve the issue in real-time, and committing the changes to the
                 community at large, other Terminology Standards lack in coordinating this rapid
-                approach. If an user identified this error and submitted it to SNOMED CT®, they
-                might have to wait a full six months before SNOMED CT® pushed their bi-annual
-                updates and might be forced to employ sub-optimal work arounds to address the issue
-                until then. This real-time approach of managing integrated knowledge management also
-                allows the creation of concepts, such as SARS-CoV-2 (COVID-19), to meet emerging
-                conditions and clinical needs.</para>
+                approach. If an user identified this error and submitted it to Systemized
+                Nomenclature of Medicine – Clinical Terms® (SNOMED CT®), they might have to wait a
+                full six months before SNOMED CT® pushed their bi-annual updates and might be forced
+                to employ sub-optimal work arounds to address the issue until then. This real-time
+                approach of managing integrated knowledge management also allows the creation of
+                concepts, such as SARS-CoV-2 (COVID-19), to meet emerging conditions and clinical
+                needs.</para>
         </section>
         <section>
             <title>Komet Use Case – Integration of Terminology Standards</title>
             <para>Another fundamental component of Komet is the integration of various terminology
                 standards. When searching “urine homocysteine measurement”, a user can see the
                 SNOMED CT® concept ‘Urine Homocysteine Measurement (procedure)’ in the navigation
-                panel, while simultaneously viewing LOINC® children concepts. Komet can seamlessly
-                integrate concepts from different terminology standards and identify which concepts
-                are associated by using a localized common language in the form of Analysis Normal
-                Form (ANF).</para>
+                panel, while simultaneously viewing Logical Observation Identifiers Names and Code®
+                (LOINC®) children concepts. Komet can seamlessly integrate concepts from different
+                terminology standards and identify which concepts are associated by using a
+                localized common language in the form of Analysis Normal Form (ANF).</para>
         </section>
         <section>
             <title>Komet Use Case – Detecting Equivalent Concepts</title>
@@ -176,19 +177,19 @@
                     elements including actors, descriptions, triggers, pre and post conditions,
                     assumptions, and data fields, and eight team members independently documented
                     considerations in the workflow. Team members had varying professional
-                    backgrounds including MD, NP, RN, Informaticist, Terminologists, HL7 Interface
-                    Engineers, Public Health, and Systems Engineering. The team met to discuss the
-                    exercise and highlight differing approaches in the team’s documentation and
-                    considerations. Common themes were extracted and used in Visio to develop an
-                    initial draft of a generalized Long COVID use case workflow schematic that was
-                    iterated upon based on subject matter expert and key stakeholder input. The
-                    workflow follows an inpatient and outpatient path and identifies common steps in
-                    a patient’s diagnostic journey along with associated data to highlight
-                    opportunities for more accurate and comprehensive data collection. Several
-                    important data elements were identified including patient symptoms, medical
-                    history, laboratory tests and orders, vaccination history, demographics, and
-                    prescriptions, and it was noted whether those data are currently collected or
-                    lost.</para> 
+                    backgrounds including MD, NP, RN, Informaticist, Terminologists, Health Level
+                    Seven International (HL7) Interface Engineers, Public Health, and Systems
+                    Engineering. The team met to discuss the exercise and highlight differing
+                    approaches in the team’s documentation and considerations. Common themes were
+                    extracted and used in Visio to develop an initial draft of a generalized Long
+                    COVID use case workflow schematic that was iterated upon based on subject matter
+                    expert and key stakeholder input. The workflow follows an inpatient and
+                    outpatient path and identifies common steps in a patient’s diagnostic journey
+                    along with associated data to highlight opportunities for more accurate and
+                    comprehensive data collection. Several important data elements were identified
+                    including patient symptoms, medical history, laboratory tests and orders,
+                    vaccination history, demographics, and prescriptions, and it was noted whether
+                    those data are currently collected or lost.</para> 
                 <figure xml:id="GeneralizedCurrentStateLongCovidWorkflow">
                     <title>Generalized Current State Long COVID Workflow</title>
                     <mediaobject>
@@ -206,12 +207,12 @@
                     there is a larger propensity for data loss when the patient is not under the
                     continuous monitoring of inpatient care. This new BPMN schematic closely
                     examined the parallel paths that a patient in an outpatient setting could follow
-                    before arriving at a Long COVID diagnosis to support improved CDS, patient care,
-                    and data collection and usage. This resulted in an approximate current state
-                    patient workflow as well as an idealized future state patient workflow with a
-                    supplementary data flow schematic. Note that while these scenarios used Long
-                    COVID as an inspiration, the underlying principles can be applied to any similar
-                    emerging acute, chronic and infectious disease.</para>
+                    before arriving at a Long COVID diagnosis to support improved Clinical Decision
+                    Support (CDS), patient care, and data collection and usage. This resulted in an
+                    approximate current state patient workflow as well as an idealized future state
+                    patient workflow with a supplementary data flow schematic. Note that while these
+                    scenarios used Long COVID as an inspiration, the underlying principles can be
+                    applied to any similar emerging acute, chronic and infectious disease.</para>
                 
                 <para><emphasis role="italic">Scenario 1: Current State Outpatient Long COVID
                         Workflow</emphasis></para>
@@ -220,10 +221,11 @@
                     the different reasons that could prompt a patient to take a COVID-19 test such
                     as notification of exposure from the health department, phone proximity
                     tracking, routine testing at work, prerequisite testing for travel, or feeling
-                    symptomatic. The parallel actions are listed for each step of the process in in
-                    the workflow schematic below in <xref linkend="CurrentStateOutpatientlongcovidworkflow"/>. In this current state, there are
-                    several points at which data are produced but not collected and therefore
-                    lost.</para>
+                    symptomatic. The parallel actions are listed for each step of the process in the
+                    workflow schematic below in <xref
+                        linkend="CurrentStateOutpatientlongcovidworkflow"/>. In this current state,
+                    there are several points at which data are produced but not collected and
+                    therefore lost.</para>
                 <figure xml:id="CurrentStateOutpatientlongcovidworkflow">
                     <title>Current State Outpatient Long COVID Workflow</title>
                     <mediaobject>
