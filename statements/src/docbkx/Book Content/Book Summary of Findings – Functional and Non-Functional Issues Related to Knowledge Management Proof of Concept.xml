@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Summary of Findings – Functional and Non-Functional Issues Related to Knowledge
+        Management Proof of Concept</title>
+    <section>
+        <title>Introduction</title>
+        <para>Over the past year, our team has been working to develop an IKM reference
+            implementation, Komet, to demonstrate IKM capabilities. Our work with Komet builds upon
+            data property graph and RDF foundations and incorporates new concepts like versioned
+            concept-oriented property graph representation. Due to the relatively novel nature of
+            Komet and IKM, our team did not have guidelines or best practices to follow. Our initial
+            work serves as a prototype that identifies functional and non-functional areas related
+            to IKM that should be further explored. Throughout our experience, we have documented
+            the following lessons learned, best practices, and challenges to improve the
+            adoptability, functionality, and development of IKM as our team and other invested
+            parties work towards future iterations.</para>
+        <section>
+            <title>Knowledge Management</title>
+            <para>The team rapidly developed an IKM prototype leveraging the latest Tinkar data
+                model standard to showcase IKM capabilities at the SNOMED CT® conference in October
+                of 2023. Through the effort over the past year and leading up to that event, we’ve
+                identified a few findings that have been resolved or will need to be resolved in the
+                future.</para>
+            <section>
+                <title>Requirements</title>
+                <para>As each clinical terminology standard has its own proprietary data
+                    representation and tooling to both view and author data, the ability to
+                    represent multiple standards with a common underlying data model and view or
+                    author across standards in a single environment is an unprecedented idea. IKM
+                    would influence a large community of users, such as hospitals, laboratories and
+                    clinical informaticists so there are many thoughts and opinions about how IKM
+                    should work and what features would be important. Though the potential
+                    stakeholder base is large, the access to the community to illicit requirements
+                    is very limited. While we were able to conduct user interviews during our User
+                    Interface and User Experience (UI/UX) analysis to gain some understanding of
+                    necessary system functionalities, we do have not regular access to those
+                    participants. </para>
+                <para>To solve for this, we’re leveraging experts to identify high priority
+                    capabilities that will be prioritized for upcoming milestones. These milestones
+                    will take shape in the form of conferences, community events, and other
+                    demonstration opportunities. For example, we plan to organize a Health Level
+                    Seven (HL7) Connect-a-thon event to conduct real-world testing scenarios with
+                    interested invested parties.</para>
+                <para>Leading up to the SNOMED CT® conference, we found that while we wanted to
+                    support rapid development, we still needed a clear understanding of what system
+                    capabilities were important to showcase for the demonstration and detailed
+                    documentation in the form of user stories for the developers to reference. </para>
+                <para>As seen in the figure below, we established a new process to describe the
+                    system capabilities in the form of Agile epics and plot them against the
+                    appropriate milestones to generate our product feature backlog. As per agile
+                    development best practices, these epics are revisited weekly to be defined,
+                    refined, and prioritized. These epics are then decomposed into user stories with
+                    defined acceptance criteria for the development teams to develop against in
+                    three week increments or sprints. [1]</para>
+                <figure xml:id="IKMProductBacklogEpicBoard">
+                    <title>IKM Product Backlog Epic Board</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="../images/IKM%20Product%20Backlog%20Epic%20Board.svg"
+                                align="center" scale="40"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>As the IKM community grows, we will leverage the open-source nature of the
+                    project to track feature requests through submitted GitHub issues. [2] This
+                    external issue tracker will be integrated more fully in the future but will
+                    allow us to track feature requests against other priorities and communicated
+                    releases back to the IKM community. [3]</para>
+            </section>
+            <section>
+                <title>User Interface and User Experience (UI/UX) Design</title>
+                <para>In early 2023, a UI/UX assessment for IKM was conducted to better understand
+                    the needs and pain points of healthcare professionals in their daily operations
+                    working with healthcare knowledge. The goal was to use findings from the
+                    assessment to determine user profiles, requirements, and priority, which were
+                    then used to strategize a human centered UI/UX design for a Next Gen IKM
+                    platform that promotes data interoperability. </para>
+                <para>The assessment was conducted in five phases:</para>
+                <orderedlist>
+                    <listitem>
+                        <para>A landscape analysis to evaluate the competitive landscape of similar
+                            products.</para>
+                    </listitem>
+                    <listitem>
+                        <para>A heuristic evaluation of the old Komet version to identify features
+                            to keep in the Next Gen version.</para>
+                    </listitem>
+                    <listitem>
+                        <para>User interviews with multiple professionals in the healthcare
+                            space—such as clinicians, health informaticists, public health
+                            scientist—to uncover specific needs and pain points of potential
+                            users.</para>
+                    </listitem>
+                    <listitem>
+                        <para>A UI/UX workshop to discuss findings from interviews and align on
+                            future UI/UX strategy.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Creation and prioritization of user stories for future sprints based
+                            on workshop results.</para>
+                    </listitem>
+                </orderedlist>
+                <para>Some of the challenges faced by the UI/UX team include representing different
+                    knowledge standards with different requirements for viewing/editing in a
+                    standardized way, abstracting complexities behind-the-scenes for an easier user
+                    experience and designing in a way that supports iterative development while
+                    still meeting future requirements.</para>
+                <para>The team plans to tackle these challenges by identifying commonalities and
+                    differences between user interfaces and data schema of existing knowledge
+                    standards. The aim of these planned activities is to better understand how to
+                    design a standard UI and conduct periodic user evaluation sessions for voluntary
+                    user feedback within the healthcare industry. Healthcare parties can help the UI
+                    community explore the latest design and share insightful information in the user
+                    experience. They can also influence the process of building modular and
+                    re-usable UI components that allow flexible and adaptable development in an
+                    agile environment with changing requirements.</para>
+            </section>
+            <section>
+                <title>Development and Operations (DevOps) Processes</title>
+                <para>In the current state of Health IT, healthcare data standard organizations have
+                    implemented restrictive licensing around their proprietary data and technology
+                    which creates silos and the inability to collaborate across standards. IKM
+                    provides an open-source solution that could be used across the community to
+                    collaborate and further reduce these data silos. Komet is an open-source
+                    solution in the form of an installed Java application that provides users the
+                    ability to visualize, manage and extend disparate medical terminologies.
+                    [4]</para>
+                <para>Early in the development phase, we identified that we would need to make an
+                    investment in Development and Operations (DevOps) technologies and tooling to
+                    allow our open-source solutions to be rapidly developed and released to reach
+                    the largest audiences possible. We began by hosting our DevOps tools, as it was
+                    the quickest way to begin rapid prototyping. However, through this process,
+                    we’ve found that the hosting of these tools requires more overhead and manhours
+                    than we would like. Our larger goals and priorities require developers’ time to
+                    contribute to our solutions rather than supporting our DevOps tools. We are
+                    currently investigating and analyzing different alternative approaches to move
+                    to Software-as-a-Service (SaaS) solutions for DevOps.</para>
+                <para>Additionally, due to the licensing issues around proprietary data, as well as
+                    other open-source technologies, we leverage both an internal and external code
+                    repository. This arrangement allows us to continue development while we work
+                    through licensing with the goal of becoming fully open-source. [5] Currently,
+                    this complication keeps us from leveraging open-source supported tooling and
+                    requires us to support complex DevOps processes to restrict the publishing of
+                    code. Once these license issues are resolved, we’ll be able to leverage
+                    additional tools to streamline and simplify our processes.</para>
+                <para>However, our DevOps processes are largely successful as we’re able to
+                    collaboratively develop across a large team and release both code and artifacts
+                    to our public repository often and with little manual effort. Additionally,
+                    every promotion to GitHub releases Windows, Mac and Linux versions of the Komet
+                    installer to be available to the community for use.</para>
+            </section>
+            <section>
+                <title>Data Layer Development</title>
+                <para>As new knowledge standards are transformed and introduced to the Tinkar Core,
+                    the more the need for ease of code troubleshooting and management becomes
+                    apparent. [6] Reinforcing the code to also handle different types of data and
+                    types of programming languages will also keep the data ingestion and export free
+                    of conflicts. Additionally, adding in a layer of abstraction is needed to allow
+                    all types of users to set up and use Komet. For large scale development and
+                    automation to be possible these improvements to code and architecture will be
+                    crucial. </para>
+            </section>
+            <section>
+                <title>Bindings</title>
+                <para>Currently, Tinkar Core uses Tinkar Terms to call certain Java variables that
+                    represent retrievable concepts from the Tinkar datastore. As the codebase
+                    develops and changes, these can be difficult to maintain, especially when more
+                    complexity is added. Each Tinkar Term affected must be manually identified and
+                    changed if needed. Not only is it time consuming, but it can be susceptible to
+                    human error. By creating an automated solution like a bindings library, updates
+                    will be made efficiently and can be integrated into a dependency management
+                    system. </para>
+            </section>
+            <section>
+                <title>Protocol Buffers</title>
+                <para>With the requirement of being able to support many types of information
+                    systems, the ingestion of data requires a programming language neutral format.
+                    Protocol buffers solve this issue, by serializing the structure data with a
+                    format that supports many programming languages. Additionally, it is open-source
+                    code and does not require a licensing to implement. This would allow the data to
+                    be exported in easy to share formats that can be simply shared and imported.
+                </para>
+            </section>
+            <section>
+                <title>Data Retrieval and Curation</title>
+                <para>As the Komet users increase, adoption of the tool will need to accommodate a
+                    variety of experienced users. Currently, the Tinkar database requires a
+                    significant amount of coding and or prior knowledge of lower-level data
+                    structures to successfully retrieve and manipulate Tinkar data elements. This
+                    inevitably limits the immediate number of users who can implement meaningful
+                    solutions using Komet and the Tinkar data. Creating an abstraction layer and or
+                    user experience that allows users to have an easier and streamlined approach
+                    working with and updating Tinkar data will result in users utilizing the Komet
+                    to its full potential. </para>
+            </section>
+        </section>
+        <section>
+            <title>Solution Adoption</title>
+            <para>To date, the IKM Solution Adoption team has worked to identify key invested
+                parties and tailor content to their understanding of the goals of IKM. In this phase
+                of increasing awareness, the team has developed and disseminated informational
+                presentations and trainings both internally and externally to federal and industry
+                partners. Through this and additional presentations and demos of Komet at industry
+                conferences (i.e., SNOMED International Expo, American Medical Informatics
+                Association), the team has been able to identify champions for the IKM movement
+                across the ecosystem. As awareness has increased, the team has been able to maintain
+                stakeholder relationships through personalized communications to individual invested
+                parties at organizations of significance (i.e. Food and Drug Administration, Office
+                of the National Coordinator for Health Information Technology, Graphite Health,
+                Royal College of Pathologists of Australasia).</para>
+            <para>Through such engagements, the team has recognized the following key findings of
+                developing successful communications that will propel the efforts up the
+                communications curve trajectory. </para>
+            <section>
+                <title>Curating Technical Communications</title>
+                <para>There is a need in IKM communications to provide adequate technical guidance
+                    for invested parties interested in collaboration and/or integration. Therefore,
+                    the development of proper processes and documentation of work has been critical
+                    to the IKM strategic communications efforts and will continue to be strengthened
+                    as we move towards driving engagement.</para>
+            </section>
+            <section>
+                <title>Defining IKM</title>
+                <para>IKM is an evolving and novel movement in the healthcare information technology
+                    field. Therefore, communicating to all potential invested parties effectively on
+                    the mission to increase cohesion in health data standards and what problems that
+                    it may solve is paramount to advancing the movement. Based on feedback from
+                    stakeholder engagement sessions, the team has been iteratively refining
+                    strategic communications initiatives to develop concise and aimed messaging to
+                    key invested parties.</para>
+            </section>
+            <section>
+                <title>Ensuring End User Adoption</title>
+                <para>A more nuanced challenge that the IKM movement faces as technologies and
+                    integration methods develop into end-user capabilities is the adoption and
+                    implementation of these tools by the end-users themselves, whether they are
+                    clinicians, healthcare organizations, laboratories, or other healthcare-related
+                    entities. Many of these end-users may not have the technical background or
+                    insight into the issues that IKM addresses and aims to solve and therefore may
+                    not fully be invested in adopting such a solution into their operations. </para>
+                <para>As future efforts in the Integrated Knowledge Management space are advanced,
+                    there will be an increased need for intentional strategies centered around
+                    communications to the various invested parties that IKM impacts to ensure
+                    engagement and ultimate adoption. Technical professionals in the data standards
+                    field will need to have transparent and detailed information on the
+                    methodologies used in previous efforts in order to continuously improve upon the
+                    collaborative process. Further, end-user specific communication plans will be
+                    developed that articulate both the problems that IKM attempts to solve along
+                    with a clear explanation about the tools’ capabilities. </para>
+            </section>
+        </section>
+        <section>
+            <title>Knowledge Representation</title>
+            <para>The advantages of utilizing a generalized, self-describing data structure are
+                well-documented. This data structure comprises not just the database but also
+                includes metadata that outlines and explains both the data and the connections
+                between tables [7]. Also, descriptions of data structures and constraints are
+                included, allowing storage of a description of its own structure within the
+                database. While this self-describing approach is reference terminology-agnostic,
+                making it capable of accommodating various data sources, challenges for determining
+                the importance of terminology-specific data components are introduced [8].</para>
+            <para>Representing data properties such as concepts, patterns, or semantics becomes a
+                complex task, especially when importing data from multiple terminology standards. As
+                clinical reference terminologies, SNOMED CT® and LOINC® employ different data
+                structures to represent their respective content. These data structures do not
+                translate easily between terminologies. SNOMED CT® utilizes Concepts, Descriptions,
+                and Relationships, organized hierarchically to convey clinical meanings to its
+                terms. LOINC® codes are represented by five or six main parts. And hierarchical
+                relationship between LOINC® terms is manually applied outside of the LOINC® SNOMED
+                CT® Collaboration. The components from each of these terminologies may function as
+                crucial data structure components for axioms and related data properties within the
+                database. [9]</para>
+            <para>Once imported into a self-describing data structure, determining equivalence with
+                another terminology standard or which parts of the data components are important may
+                create unanticipated challenges [7]. Unlike more specific terminology models, Tinkar
+                lacks pre-defined references to identify crucial components or properties within
+                incoming data, necessitating a comprehensive understanding of the dataset. This
+                challenge extends to determining the importance or equivalence of specific data
+                components, prompting the creation of new properties and concepts before the data
+                can be seamlessly imported into Tinkar. While the generic nature of Tinkar provides
+                valuable flexibility for accommodating diverse data standards, it underscores the
+                need for a proactive and nuanced approach to customization. This adaptability allows
+                Tinkar to serve as a versatile platform capable of handling a variety of data
+                sources, but it also highlights the importance of thoughtful customization to ensure
+                effective integration. [6]</para>
+        </section>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>IKM Epic Board - Agile board - Jira [Internet]. [cited 2024 Jan 8]. Available
+                    from: <link
+                        xlink:href="https://ikmdev.atlassian.net/jira/software/c/projects/IPB/boards/40"
+                        >https://ikmdev.atlassian.net/jira/software/c/projects/IPB/boards/40</link></para>
+            </listitem>
+            <listitem>
+                <para>A library for manipulating with proofs that use inference rules. [Internet].
+                    GitHub. [cited 2023 September 15]. Available from: <link
+                        xlink:href="https://github.com/liveontologies/puliz"
+                        >https://github.com/liveontologies/puliz</link></para>
+            </listitem>
+            <listitem>
+                <para>Bug and Issue Reporting Process Framework. [Deloitte Deliverable]. December
+                    20, 2023 [Cited 2024 Jan 9] Available Internally at Deloitte Consulting LLP.
+                    DeloitteBAA_Task_2.3.4_Bugs and Issue Reporting Process Framework.pdf</para>
+            </listitem>
+            <listitem>
+                <para>The Integrated Knowledge Management Application | Komet [Internet]. [cited
+                    2024 Jan 19]. Available from: <link xlink:href="https://www.ikm.dev/application"
+                        >https://www.ikm.dev/application</link></para>
+            </listitem>
+            <listitem>
+                <para>Reynolds CJ, Wyatt JC. Open source, open standards, and health care
+                    information systems. J Med Internet Res. 2011 Feb 17; 13(1):e24. </para>
+            </listitem>
+            <listitem>
+                <para>HL7 International [Internet]. 2021. HL7 Logical Model: Standardized
+                    Terminology Knowledgebase, Release 1. Available from:<link
+                        xlink:href="https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pdf"
+                        >https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pdf</link></para>
+            </listitem>
+            <listitem>
+                <para>1.3: Chapter 3 Characteristics and Benefits of a Database - Engineering
+                    LibreTexts [Internet]. [cited 2024 Jan 9]. Available from: <link
+                        xlink:href="https://eng.libretexts.org/Bookshelves/Computer_Science/Databases_and_Data_Structures/Database_Design_(Watt)/01%3A_Chapters/1.03%3A_Chapter_3_Characteristics_and_Benefits_of_a_Database"
+                    /></para>
+            </listitem>
+            <listitem>
+                <para>Abad-Navarro F, Martínez-Costa C. A knowledge graph-based data harmonization
+                    framework for secondary data reuse. Computer Methods and Programs in Biomedicine
+                    [Internet]. 2024 Jan 1 [cited 2024 Jan 9];243:107918. Available from: <link
+                        xlink:href="https://www.sciencedirect.com/science/article/pii/S0169260723005849"
+                        >https://www.sciencedirect.com/science/article/pii/S0169260723005849</link></para>
+            </listitem>
+            <listitem>
+                <para>LOINC — The freely available standard for identifying health measurements,
+                    observations, and documents. [Internet]. Loinc.org. 2019. Available from: <link
+                        xlink:href="https://loinc.org/">https://loinc.org/</link></para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>
