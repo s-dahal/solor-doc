@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Healthcare Data Management</title>
+    <sect1>
+        <?oxy_comment_start author="tocrow" timestamp="20240712T150553-0400" comment="Probably need ot fix intro, but will sync with Rania"?>
+        <title>Introduction to Healthcare Data Management</title>
+        <para>The healthcare data management landscape is rapidly evolving, driven by advances in
+            technology and the increasing demand for comprehensive, interoperable healthcare
+            systems. Data management in healthcare encompasses the practices, processes, and
+            technologies used to collect, store, manage, and analyze health-related information.
+            With the ultimate goal of improving patient care, healthcare data management supports
+            clinical decision-making, research, and policy development. The integration of data from
+            diverse sources, including EHRs, medical imaging, genomic data, and wearable technology,
+            presents both opportunities and challenges to improve data quality, privacy, and
+            security. [1]</para>
+        <para>The importance of data in clinical and research settings cannot be overstated.
+            High-quality, accessible, and secure data is foundational to evidence-based medicine and
+            enables healthcare providers to make informed decisions, improves patient outcomes, and
+            enhances the efficiency of healthcare services. Moreover, in research settings, data
+            management plays a crucial role in the discovery of new treatments and understanding
+            health trends and disease patterns. [2]</para>
+        <para>IKM emerges as a pivotal concept to address the complexities of healthcare data
+            management. IKM refers to the systematic management of knowledge and information across
+            different sources and formats to facilitate the creation, sharing, and application of
+            knowledge within the healthcare sector. The implementation of IKM strategies can
+            significantly enhance the interoperability of healthcare systems, ensuring that data is
+            not only accessible and usable across different platforms and institutions but also
+            consistent and reliable. [3]<?oxy_comment_end?></para>
+    </sect1>
+    <sect1>
+        <title>Mental Health Data Management</title>
+        <para>Mental health data management is a critical aspect of healthcare that involves the
+            collection, storage, analysis, and sharing of information related to mental health
+            services and outcomes. Given the sensitive nature of mental health data, its management
+            poses unique challenges in terms of privacy, security, and ethical considerations.
+            Employing IKM principles can significantly enhance the effectiveness and efficiency of
+            mental health data management, ensuring that patient information is handled with the
+            utmost care and respect. [4]</para>
+        <para>The collection of mental health data provokes inevitable challenges, primarily due to
+            the stigma associated with mental illness and the resultant reluctance of individuals to
+            share personal information. Privacy concerns are paramount, as the disclosure of mental
+            health information can have significant social and personal consequences for
+            individuals. [5] Ensuring the confidentiality and security of mental health data is,
+            therefore, a critical concern that requires robust data management practices. To address
+            these challenges, healthcare organizations must implement comprehensive data management
+            strategies that prioritize patient privacy and data security. This includes the adoption
+            of advanced encryption methods for data transmission, secure data storage solutions, and
+            strict access controls. Additionally, fostering a culture of trust and transparency with
+            patients can encourage the sharing of vital health information, thereby improving the
+            quality of mental health services. [6]</para>
+        <para>Integrating EHRs with mental-health specific modules is an example of the successful
+            application of IKM principles in mental health data management. This application has
+            enabled healthcare providers to access comprehensive patient profiles, facilitating
+            personalized treatment plans and improving patient outcomes. Moreover, the use of
+            standardized data formats and terminologies, as advocated by IKM, has improved the
+            interoperability of mental health data across different healthcare systems, enhancing
+            collaborative care and research efforts. [7] With mental health data in particular,
+            healthcare systems must carefully monitor data access and usage to navigate potential
+            patient rights, privacy, and data access issues, including involuntary admissions,
+            restraint and seclusion records. [8] Improvements to mental health data management and
+            the quality of mental health data can have impacts on real world data that would then
+            support policy makers and make more informed decisions that can be tailored to mental
+            health data and data management approaches per type of mental health treatment settings
+            – hospital inpatient, residential and outpatient – and levels of care. [9] </para>
+        <para>Another major challenge for mental health data management and IKM is keeping up with
+            and integrating emerging technology. Today, more than 10,000 mental or behavioral health
+            apps are publicly available on the iOS App Store with roughly 69% of them focusing on
+            providing therapy, collecting self-assessment information, and monitoring symptoms. [10]
+            The recently updated guidance on cellphones, health information, and the Health
+            Insurance Portability and Accountability Act (HIPAA) by the U.S. Department of Health
+            and Human Services (HHS) dictates that HIPAA Privacy Act does not apply to most health
+            apps as these apps are not “covered entities” under the law. Currently, only official
+            healthcare system patient portals that exchange messages with providers and store test
+            results are protected by HIPAA. [11] As technology continues to improve and be
+            implemented across the healthcare ecosystem, it is critical that data management efforts
+            work to ensure that self-reported, at home, and other non-traditional methods of data
+            collection meet required privacy, storage, and transmission standards.</para>
+    </sect1>
+    <sect1>
+        <title>Population Health Management (PHM)</title>
+        <para>Population health management (PHM) is an approach aimed at improving the health
+            outcomes of a specifically defined group. PHM relies heavily on the aggregation,
+            analysis, and application of health data to drive decision-making and resource
+            allocation. The integration of IKM principles into PHM can significantly enhance the
+            ability to analyze complex datasets, identify health trends, and implement effective
+            interventions. [12]</para>
+        <para>Population health data encompasses a wide range of information, including healthcare
+            utilization, outcomes, and social determinants of health. This data is crucial for
+            identifying health disparities, managing chronic diseases, and improving community
+            health. Effective PHM requires a robust data management system that can handle the
+            volume and variety of data continually generated by healthcare systems and patient
+            interactions. [13] </para>
+        <para>Advanced analytics, including predictive modeling and machine learning, are key to
+            extracting actionable insights from population health data. These techniques allow
+            healthcare providers and policymakers to predict health outcomes, optimize resource
+            allocation, and tailor interventions to specific populations. Implementing IKM
+            principles ensures that real-world data from disparate sources is standardized and
+            interoperable, facilitating comprehensive analyses and informed decision-making.
+            [14]</para>
+        <para>The application of IKM in PHM has the potential to transform healthcare delivery.
+            Healthcare organizations can improve the accuracy of health assessments, enhance the
+            effectiveness of interventions, and ultimately, achieve better health outcomes at lower
+            costs by employing IKM to ensure data interoperability and leverage advanced analytics.
+            Moreover, IKM supports continuous improvements to data quality and the adoption of PHM
+            best practices. [15]</para>
+        <sect2>
+            <title>Health Disparities</title>
+            <para>Health disparity is a complex and nuanced topic that covers the differences in the
+                way population groups access, receive, and experience various aspects of healthcare.
+                These inequalities are caused by social, economic, environmental, and a variety of
+                other factors and are constantly evolving as healthcare and the factors themselves
+                change. [16]
+                IKM offers an opportunity to not only identity health disparities but to also
+                understand the various causes of the inequality. By improving the quality and
+                interoperability of health data, researchers, public health officials, and providers
+                could more accurately identify health disparities, develop personalized solutions to
+                address the specific needs of population groups, and track changes to population
+                groups using real-world data to maintain high-quality care and solutions. While IKM
+                offers a wide array of information sources and data that could be used to support
+                disparate communities, it is essential that patient privacy, ethics, and safety
+                remain as driving factors. [17]</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Pediatric Data Management</title>
+        <para>Pediatric data management focuses on the unique healthcare needs and challenges
+            associated with collecting, storing, and utilizing health information for children. This
+            area requires special attention due to the distinct physiological, developmental, and
+            psychological characteristics of pediatric populations. The application of IKM
+            principles can significantly improve the management and use of pediatric health data,
+            ensuring that healthcare providers can deliver age-appropriate care that supports the
+            healthy development of children. [18] </para>
+        <para>Pediatric health data encompasses a broad spectrum of information, from birth records
+            and immunizations to growth charts and developmental milestones. Managing this data
+            effectively requires systems that can adapt to the rapid changes in health status and
+            needs that characterize childhood and adolescence. Additionally, pediatric data
+            management must address consent and privacy issues, particularly as they relate to the
+            rights of minors and the involvement of parents or guardians. [19] </para>
+        <para>Consent and ethical considerations are paramount in pediatric data management.
+            Healthcare providers must navigate the complex legal and ethical landscape surrounding
+            the collection and use of health data from minors, ensuring compliance with regulations
+            that protect children’s privacy while simultaneously facilitating necessary medical
+            care. IKM can support this process by providing frameworks for managing consent
+            documentation and ensuring that data use policies are clearly communicated and followed.
+            [20] </para>
+        <para>An area of particular interest for pediatric data management is school, a core site of
+            care for children aged five through 17 years old. Less than half of the US children have
+            an assigned healthcare provider, but over 95% of children aged five through 17 years old
+            go to school. [21] Evidence-based research suggests that healthy students earn better
+            grades and have better attendance, stressing the opportunity for healthcare
+            organizations, health partners, or schools themselves to use school as an opportunity to
+            provide health screenings or address gaps in students’ care. Approximately 17% of public
+            schools in the US offered telehealth services to students in the 2021-2022 school year,
+            and this trend is projected to go up. IKM can support advancements in pediatric data
+            management by coordinating care between clinics, schools, and other health systems
+            involved in the delivery of care. [21]</para>
+    </sect1>
+    <sect1>
+        <title>Infectious Disease Research and Management  </title>
+        <para>Infectious disease management and research are pivotal in the global healthcare
+            landscape, especially in the wake of recent pandemics. Effective management requires the
+            collection, analysis, and transfer of vast amounts of data to track disease spread,
+            identify outbreaks, and inform public health responses in real time. IKM principles can
+            enhance infectious disease management by ensuring high-quality, standardized, and
+            interoperable real-world data that can be used by organizations to outline actionable
+            management plans. [22] </para>
+        <para>Infectious disease data management and research track the spread of infectious
+            diseases, enabling health authorities to identify outbreaks quickly and implement
+            containment measures. Real-time data collection and analysis are essential for
+            monitoring disease patterns, responding to outbreaks, and predicting future health
+            patterns. IKM facilitates the integration of data from multiple sources, including
+            healthcare facilities, laboratories, public health departments, and non-traditional data
+            collection methods like at home testing, to ensure a comprehensive view of the disease
+            landscape across the US and around the world. [23] </para>
+        <para>The integration of research and clinical data is vital for developing effective
+            treatments and vaccines for infectious diseases. IKM principles support the
+            standardization of data formats and terminologies, making it easier for researchers to
+            aggregate and analyze data from diverse studies. IKM accelerates the translation of
+            research findings into clinical practice, improving patient outcomes and public health
+            responses around the world. [24] </para>
+        <para>One notable example of a data-driven approach to infectious disease management is the
+            global response to the COVID-19 pandemic. Health organizations worldwide utilized IKM
+            principles to standardize data reporting, enabling the effective tracking of cases,
+            vaccination rates, and emerging variants. This coordinated effort facilitated rapid
+            research, informed public health policies, and guided the allocation of resources to
+            areas most in need. [25] Another example of how IKM principles can support improved
+            infectious disease management is the work by the Infectious Diseases Data Observatory
+            (IDDO). IDDO is a scientifically independent, multi-disciplinary coalition that has been
+            trying to identify and collate de-identified individual patient data (IPD) in a
+            format-agnostic way. IKM could facilitate and support their efforts to track
+            surveillance data in an established system for a wide range of infectious diseases, such
+            as: </para>
+        <itemizedlist>
+            <listitem>
+                <para>COVID-19</para>
+            </listitem>
+            <listitem>
+                <para>Malaria</para>
+            </listitem>
+            <listitem>
+                <para>Visceral leishmaniasis</para>
+            </listitem>
+            <listitem>
+                <para>Medicine quality</para>
+            </listitem>
+            <listitem>
+                <para>Antimicrobial resistance</para>
+            </listitem>
+            <listitem>
+                <para>Chagas disease</para>
+            </listitem>
+            <listitem>
+                <para>Ebola</para>
+            </listitem>
+            <listitem>
+                <para>Schistosomiasis</para>
+            </listitem>
+            <listitem>
+                <para>Soil-transmitted helminthiasis</para>
+            </listitem>
+            <listitem>
+                <para>Lymphatic filariasis</para>
+            </listitem>
+            <listitem>
+                <para>HIV</para>
+            </listitem>
+            <listitem>
+                <para>Trachoma</para>
+            </listitem>
+            <listitem>
+                <para>Mycetoma</para>
+            </listitem>
+            <listitem>
+                <para>NOMA</para>
+            </listitem>
+            <listitem>
+                <para>Melioidosis</para>
+            </listitem>
+            <listitem>
+                <para>Scrub typhus [26]</para>
+            </listitem>
+        </itemizedlist>
+    </sect1>
+    <sect1>
+        <title>Rare Disease Research and Management</title>
+        <para>Rare disease research and management present unique challenges due to the low
+            prevalence of each condition, making data collection and analysis particularly
+            difficult. The scarcity of data, combined with its often fragmented nature, hinders the
+            development of effective treatments and care strategies. The application of IKM
+            principles facilitates the aggregation, standardization, and sharing of rare disease
+            data across health systems that may not normally have access. [27] </para>
+        <para>Data plays a crucial role in the identification and research of rare diseases.
+            Comprehensive data collection and analysis are essential for understanding the genetic
+            and environmental factors associated with rare diseases, developing diagnostic tools,
+            and identifying potential treatments. IKM can enhance the quality and accessibility of
+            rare disease data, enabling researchers and clinicians to uncover patterns and
+            connections that would otherwise remain obscured. [28] IKM principles advocate for the
+            use of standardized data formats and terminologies to facilitate data sharing and
+            collaboration among researchers worldwide. This approach not only improves the
+            efficiency of data collection but also increases the chances of breakthroughs in
+            understanding and treating rare diseases. [29] </para>
+        <para>IKM plays a pivotal role in advancing rare disease research and improving patient
+            care. IKM enables the integration of research findings into clinical practice more
+            rapidly by supporting interoperable and easily accessible data from various sources.
+            This integration is vital for developing effective treatment protocols and care
+            strategies for rare diseases, ultimately improving patient outcomes and quality of life.
+            [30] In addition, IKM can support efforts to improve rare disease management and
+            research with the goal of obtaining more complete datasets, as shown in the work of the
+                <emphasis role="italic">Task Force on Clinical Research Networks for Rare
+                Diseases</emphasis> by the International Rare Diseases Research Consortium (IRDRC).
+            The IRDRC designed the task force with the objective of analyzing the quality of data to
+            be obtained via the growing global network, removing communication and technical
+            barriers in managing and sharing rare disease data globally. [31] The National
+            Institutes of Health (NIH) reports more than 7,000 rare diseases. Lurie Children's
+            Hospital of Chicago states that one in 10 Americans has a rare disease. About half of
+            these Americans are children. [32]</para>
+    </sect1>
+    <sect1>
+        <title>Cross-Disciplinary Data Integration and Management</title>
+        <para>Cross-disciplinary data integration and management are essential for addressing
+            complex health issues that span multiple areas of expertise. Integrating data from
+            various disciplines, such as genomics, epidemiology, and social sciences can lead to a
+            more comprehensive understanding of health and disease. The IKM principals can
+            facilitate this integration, ensuring that data is not only interoperable but also
+            meaningful across different research and clinical contexts. [33]</para>
+        <para>The integration of data across disciplines is crucial for developing a holistic
+            approach to patient care and public health. It allows for the consideration of a wide
+            range of factors affecting health, from genetic predispositions to environmental and
+            social determinants. IKM supports this integration by standardizing data formats and
+            terminologies, enabling seamless data exchange and analysis across diverse fields. [34]
+            Implementing IKM to support cross-disciplinary efforts will involve adopting common data
+            standards, utilizing interoperable platforms, and fostering collaboration among
+            stakeholders from different disciplines. These strategies ensure that data is not only
+            accessible but also usable for all parties involved, facilitating multidisciplinary
+            research and care initiatives. [35] </para>
+        <para>Numerous examples of integrated data management have led to improved patient outcomes.
+            For instance, combining clinical data with social and environmental information has
+            enabled healthcare providers to offer more personalized care plans that address the
+            broader context of patients' lives. Similarly, integrating epidemiological data with
+            genomic research has accelerated the identification of disease markers and the
+            development of targeted therapies. These successes underscore the value of IKM in
+            enhancing the effectiveness of health interventions across disciplines. [36]</para>
+    </sect1>
+    <sect1>
+        <title>Future Direction for Healthcare Data Management and IKM</title>
+        <para>As healthcare continues to evolve, the future of data management and IKM looks toward
+            leveraging emerging technologies and methodologies to further enhance the quality,
+            accessibility, and interoperability of health data. These advancements promise to
+            transform healthcare delivery, research, and policy-making, driving improvements in
+            patient outcomes and healthcare efficiency. [37] </para>
+        <para>As the healthcare sector prepares for these advancements, it faces challenges such as
+            ensuring data privacy and security, managing the ethical implications of AI and big
+            data, and addressing disparities in access to technology. However, these challenges also
+            present opportunities to redefine healthcare practices, improve patient engagement, and
+            foster a more data-driven and patient-centric healthcare ecosystem. Embracing IKM
+            principles will be crucial in navigating these changes, ensuring that data management
+            practices continue to evolve in alignment with technological advancements and healthcare
+            needs. [38]</para>
+    </sect1>
+    <sect1>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>Office of the National Coordinator for Health Information Technology. Health
+                    IT Playbook [Internet]. USA; 2023 [cited 2023 Feb 20] Available from: <link
+                        xlink:href="https://www.healthit.gov/playbook/"
+                        >https://www.healthit.gov/playbook/</link></para>
+            </listitem>
+            <listitem>
+                <para>Kwok CS, Muntean EA, Mallen CD, Borovac JA. Data Collection Theory in
+                    Healthcare Research: The Minimum Dataset in Quantitative Studies. [Internet]
+                    Clinical Practice; 2022 [cited 2023 Feb 20] Available from
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9680355/ </para>
+            </listitem>
+            <listitem>
+                <para>Somasundaram P. How is knowledge management used in healthcare? [Internet]
+                    Document360; 2022 [cited 2023 Feb 19]. Available from
+                    https://document360.com/blog/knowledge-management-in-healthcare/</para>
+            </listitem>
+            <listitem>
+                <para>World Health Organization. Mental Health: Strengthening Our Response.
+                    [Internet] WHO; 2023 [cited 2024 Feb 23] Available from:
+                    https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response</para>
+            </listitem>
+            <listitem>
+                <para>Stronge I. The complex challenges in sharing mental health data. [Internet]
+                    National Elf Service. 2022. [cited 2024 Feb 23] Available from:
+                    https://www.nationalelfservice.net/commissioning/technology/sharing-mental-health-data/</para>
+            </listitem>
+            <listitem>
+                <para>Lustgarten SD, Garrison YL, Sinnard MT, Flynn AW. Digital privacy in mental
+                    healthcare: current issues and recommendations for technology use. [Internet].
+                    Current Opinion in Psychology; 2020 [cited 2024 Feb 27]. Available from
+                    https://pubmed.ncbi.nlm.nih.gov/32361651/</para>
+            </listitem>
+            <listitem>
+                <para>Golay P, Bonsack C, Silva B, Pauli G, de Boer E, Morandi S. Patterns of
+                    Service Use in Intensive Case Management: A Six Year Longitudinal Study.
+                    [Internet] Administration and Policy in Mental Health and Mental Health Services
+                    Research. 2022 May; [cited 2024 Feb 28] Available from:
+                    https://link.springer.com/article/10.1007/s10488-022-01198-y </para>
+            </listitem>
+            <listitem>
+                <para>Tracy N. Types of Mental Health Facilities. [Internet] HealthyPlace; October
+                    2019 [cited 2024 Feb 28]. Available from:
+                    https://www.healthyplace.com/other-info/mental-illness-overview/types-of-mental-health-facilities
+                </para>
+            </listitem>
+            <listitem>
+                <para>Insel T. Digital mental health care: five lessons from Act 1 and a preview of
+                    Acts 2-5. [Internet] Nature; January 2023 [cited 2024 Mar 5]. Available from:
+                    https://www.nature.com/articles/s41746-023-00760-8</para>
+            </listitem>
+            <listitem>
+                <para>Iqbal M. App Download Data. [Internet] Business of Apps; January 2024 [cited
+                    2024 Mar 7]. Available from:
+                    https://www.businessofapps.com/data/app-statistics/#:~:text=Today%2C%20there%20are%20over%20four,of%20sub%2Dgenres%20and%20niches</para>
+            </listitem>
+            <listitem>
+                <para>American Psychiatric Association. Thousands of Mental Health Apps Available:
+                    Supporting Evidence Not So Plentiful. [Internet] Patients and Families; July
+                    2019 [cited 2024 Mar 8]. Available from:
+                    https://www.psychiatry.org/news-room/apa-blogs/mental-health-apps-evidence-not-so-plentiful#:~:text=There%20are%20more%20than%2010%2C000,%E2%80%9D%20(1)%20Several%20recent%20studies</para>
+            </listitem>
+            <listitem>
+                <para>Tewari S. How to Navigate Mental Health Apps That May Share Your Data.
+                    [Internet]. American Civil Liberties Union (ACLU); Sept 2022 [cited 2024 Mar 7].
+                    Available from:
+                    https://www.aclu.org/news/privacy-technology/how-to-navigate-mental-health-apps-that-may-share-your-data</para>
+            </listitem>
+            <listitem>
+                <para>Hujala T. Laihonen H. Knowledge management in a regional integrated health and
+                    social care system. [Internet] Journal of Integrated Care; December 2023 [cited
+                    2024 Feb 27]. Available from:
+                    https://www.emerald.com/insight/content/doi/10.1108/JICA-06-2022-0032/full/html</para>
+            </listitem>
+            <listitem>
+                <para>Agency for Healthcare Research and Quality. Data Management in Health Care.
+                    [Internet] Data Analytics; 2023 [cited 2024 Feb 26] Available from:
+                    https://www.ahrq.gov/data/resources/index.html</para>
+            </listitem>
+            <listitem>
+                <para>Lee K. What is population health management (PHM)? | Definition from
+                    TechTarget. [Internet] Health IT; June 2017 [cited 2024 Feb 24]. Available from:
+                    https://www.techtarget.com/searchhealthit/definition/Population-health-management-PHM</para>
+            </listitem>
+            <listitem>
+                <para>DISPARITIES IN HEALTHCARE. In: 2021 National Healthcare Quality and
+                    Disparities Report [Internet] [Internet]. Agency for Healthcare Research and
+                    Quality (US); 2021 [cited 2024 May 23]. Available from:
+                    https://www.ncbi.nlm.nih.gov/books/NBK578532/ </para>
+            </listitem>
+            <listitem>
+                <para>Breen N, Berrigan D, Jackson JS, Wong DWS, Wood FB, Denny JC, et al.
+                    Translational Health Disparities Research in a Data-Rich World. Health Equity
+                    [Internet]. 2019 Nov 1 [cited 2024 May 23];3(1):588–600. Available from:
+                    https://www.liebertpub.com/doi/10.1089/heq.2019.0042 </para>
+            </listitem>
+            <listitem>
+                <para>McIsaac JLD, Penney TL, Storey KE, et al. Integrated knowledge translation in
+                    population health intervention research: a case study of implementation and
+                    outcomes from a school-based project. [Internet] Health Research Policy and
+                    Systems; August 2018 [cited 2024 Feb 26]. Available from:
+                    https://health-policy-systems.biomedcentral.com/articles/10.1186/s12961-018-0351-8</para>
+            </listitem>
+            <listitem>
+                <para>Anziolotti A. What Is a Medical Record? [Internet] Nemours KidsHealth; January
+                    2021 [cited 2024 Feb 25]. Available from:
+                    https://www.aap.org/en/patient-care/pediatric-health-records/</para>
+            </listitem>
+            <listitem>
+                <para>U.S. Department of Health &amp; Human Services. Understanding HIPAA Privacy
+                    For Individuals. [Internet] Health Information Privacy; June 2017 [cited 2024
+                    Feb 26]. Available from:
+                    https://www.hhs.gov/hipaa/for-individuals/index.html</para>
+            </listitem>
+            <listitem>
+                <para>Healthcare Information and Management Systems Society. Interoperability in
+                    Healthcare; 2023 [cited 2024 Feb 18]. Available from:
+                    https://www.himss.org/resources/interoperability-healthcare</para>
+            </listitem>
+            <listitem>
+                <para>Obregon R, Slighton E, Krasniansky A. Next gen innovation: Opportunities in
+                    pediatric digital health. [Internet] Rock Health; November 2023 [cited 2024 Mar
+                    6] Available from:
+                    https://rockhealth.com/insights/next-gen-innovation-opportunities-in-pediatric-digital-health/</para>
+            </listitem>
+            <listitem>
+                <para>Centers for Disease Control and Prevention. Data and Statistics on Infectious
+                    Disease. [Internet] 2023 [cited 2024 Feb 24]. Available from:
+                    https://www.cdc.gov/datastatistics/index.html</para>
+            </listitem>
+            <listitem>
+                <para>World Health Organization. Global Health Observatory (GHO) Data. [Internet]
+                    WHO; 2023 [cited 2024 Feb 24]. Available from:
+                    https://www.who.int/data/gho</para>
+            </listitem>
+            <listitem>
+                <para>National Institutes of Health. NIH Data Sharing Repositories. [Internet] NIH;
+                    2023 [cited 2024 Feb 22]. Available from:
+                    https://www.nlm.nih.gov/NIHbmic/nih_data_sharing_repositories.html</para>
+            </listitem>
+            <listitem>
+                <para>Johns Hopkins University &amp; Medicine. Ongoing Johns Hopkins COVID-19
+                    Resources [Internet] Coronavirus Resource Center; March 2023 [cited 2024 Feb
+                    23]. Available from: https://coronavirus.jhu.edu/</para>
+            </listitem>
+            <listitem>
+                <para>Infectious Diseases Data Observatory. Research Themes [Internet] IDDO; 2024
+                    [cited 2024 March 1] Available from: https://www.iddo.org/research-themes</para>
+            </listitem>
+            <listitem>
+                <para>Griggs RC, Batshaw M, Dunkle M, et al. Clinical research for rare disease:
+                    opportunities, challenges, and solutions. [Internet] Molecular Genetics and
+                    Metabolism; January2009 [cited 2024 Feb 27]; Available from:
+                    https://www.sciencedirect.com/science/article/abs/pii/S1096719208002539</para>
+            </listitem>
+            <listitem>
+                <para>Liu J, Barrett JS, Leonardi ET, et al. Natural History and Real‐World Data in
+                    Rare Diseases: Applications, Limitations, and Future Perspectives. [Internet]
+                    Journal of Clinical Pharmacology; December 2022 [cited 2024 Mar 13]. Available
+                    from: https://pubmed.ncbi.nlm.nih.gov/36461748/ </para>
+            </listitem>
+            <listitem>
+                <para>Orphanet. Knowledge of rare diseases and orphan drugs [Internet] Orphanet
+                    Access Our Services; February 2024 [cited 2024 Feb 22]. Available from:
+                    https://www.orpha.net/</para>
+            </listitem>
+            <listitem>
+                <para>Subbiah VThe next generation of evidence-based medicine [Internet] Nature
+                    Medicine; February 2024 [cited 2024 Mar 7]. Available from:
+                    https://www.nature.com/articles/s41591-022-02160-z</para>
+            </listitem>
+            <listitem>
+                <para>Nabbout R, Zanello G, Baker D, Balck L, Branbilla I, Buske O, Conklin L,
+                    Davies E. Julkowska D, Kim Y, Klopstock T, Nakamura H, Nielsen K, Pariser A,
+                    Pastor J, Scarpa M, Smith M, Taruscio D, Groft S. [Internet] Orphanet Journal of
+                    Rare Diseases; May 2023 [cited 2024 Feb 29]. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10169162/</para>
+            </listitem>
+            <listitem>
+                <para>Ann &amp; Robert H. Lurie Children's Hospital of Chicago. Lurie Children's
+                    Hospital First in Illinois to Be Designated as a Rare Disease Center of
+                    Excellence by National Organization for Rare Disorders (NORD). [Internet] News
+                    Release; May 2023 [cited 2024 Feb 29]. Available from:
+                    https://www.luriechildrens.org/en/news-stories/lurie-childrens-hospital-first-in-illinois-to-be-designated-as-a-rare-disease-center-of-excellence-by-national-organization-for-rare-disorders-nord/</para>
+            </listitem>
+            <listitem>
+                <para>Interdisciplinary Standards for Systematic Data Integration. [Internet]
+                    Guidelines for Data Integration Across Disciplines; 2023 [cited 2024 Feb 23].
+                    Available from: https://www.issdi.org/guidelines-for-data-integration</para>
+            </listitem>
+            <listitem>
+                <para>Green BN, Johnson CD. Interprofessional collaboration in research, education,
+                    and clinical practice: working together for a better future. [Internet] Journal
+                    of Chiropractic Education; March 2015 [cited 2024 Feb 23]. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4360764/</para>
+            </listitem>
+            <listitem>
+                <para>Zaugg I. Top 10 Strategies for Successful Data Science Teamwork. [Internet]
+                    The Data Science Institute at Columbia University; March 2021 [cited 2024 Feb
+                    23]. Available from:
+                    https://datascience.columbia.edu/news/2021/top-ten-advice-for-successful-data-science-teamwork/</para>
+            </listitem>
+            <listitem>
+                <para>Caizon B. 24 Real Life Examples of Big Data In Healthcare Analytics.
+                    [Internet] Business Intelligence; June 2013 [cited 2024 Feb 23]. Available from:
+                    https://www.datapine.com/blog/big-data-examples-in-healthcare/</para>
+            </listitem>
+            <listitem>
+                <para>Ginburg PB, Loera-Brust A, Brandt C, Durak A. The opportunities and challenges
+                    of data analytics in health care. [Internet] Brookings; November 2018 [cited
+                    2024 Feb 23]. Available from:
+                    https://www.brookings.edu/articles/the-opportunities-and-challenges-of-data-analytics-in-health-care/</para>
+            </listitem>
+        </orderedlist>
+    </sect1>
+</chapter>
