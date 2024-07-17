@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Summary of Findings - Current State of Safety Systems</title>
+    <section>
+        <title>Motivation</title>
+    <para>Clinical laboratories are a key element in the overall healthcare ecosystem and play a
+            role in most healthcare decisions today. Clinical laboratories are responsible for
+            generating highly reliable laboratory data (orders, results, and interpretations) to
+            drive effective care delivery. Clinical data must transverse many connected systems
+            while maintaining context and precise semantic meaning. While each sending and receiving
+            system of clinical data is configured individually to understand data inputs, the loss
+            of meaning between systems is difficult to avoid, impacts patient safety, and hinders
+            data science opportunities like machine learning and artificial intelligence. Plausible
+            efforts to control for the nuances of laboratory data exchange have existed for decades.
+            The advancement of technology increasingly emphasizes the need for standardization
+            across the ecosystem as data science methods and capabilities mature. Safety and quality
+            controls exist in every layer of the laboratory ecosystem, starting at the top of the
+            ecosystem with Federal policymakers down to the individual patients receiving care.
+            While the use of idiosyncratic (i.e., local institution–specific) identifiers for
+            laboratory tests is recommended by Standards Development Organizations (SDO), such as
+            SNOMED International, entities in the laboratory data ecosystem must implement precise
+            data mappings to a universal terminology. Idiosyncratic local identifiers alone hinder
+            seamless sharing of laboratory observations between disparate health systems. </para>
+    </section>
+    <section>
+        <title>Background</title>
+        <para>According to the Health Information Management (HIM) Body of Knowledge™ by the
+            American Health Information Management Association (AHIMA), Health Data Standards (HDS)
+            are documented agreements on representations, formats, and definitions of common data.
+            [1] To achieve interoperability, health data entities must conform to industry standards
+            and specifications which act as a source of truth for methods of codifying information
+            captured and exchanged. Data standards are developed and maintained by SDOs who are
+            member-supported organizations which act like a legislative body with detailed internal
+            processes to ensure consistency and fairness among the entities subject to them. </para>
+        <para>Two of the major Health IT SDOs in our analysis are Regenstrief Institute, Inc. and
+            SNOMED International. Regenstrief Institute, Inc. organized LOINC® in 1994 to
+            standardize a common terminology for laboratory and clinical observations as trends in
+            electronic clinical data exchange were taking form. [2] Today, LOINC® encodings are most
+            often exchanged via Health Level 7 (HL7) International Version 2 transactions between
+            health systems. SNOMED CT® is an international standard for several purposes including
+            problem list and public health reporting and is required by many countries’
+            certification criteria for EHRs. It is a computer-processable collection of medical
+            terms, codes, synonyms, and definitions used in clinical documentation and reporting.
+            Both SNOMED CT® and LOINC® can be used as a common terminology to represent clinical
+            information consistently and comprehensively in the electronic exchange of health data.
+            However, two or more common terminologies which serve near-identical purposes is
+            oxymoronic and leaves room for improvement, consolidation, and harmonization. For lab
+            data exchange, SNOMED CT® is typically used to encode test results and observations and
+            LOINC® is often used to encode tests (however, LOINC® does also represent some test
+            results) and these relationships, overlaps, and contradictions present implementers with
+            the need to use these terminologies in more integrated ways. </para>
+    </section>
+    <section>
+        <title>Objectives and Approach</title>
+        <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20231130T124851-0500" comment="Removed &quot;In collaboration with Synensys, LLC, under the body of work for the SHIELD program&quot; from beginning of the sentence. 
+
+If you want to include original phrasing please use &quot;In collaboration with Synensys, LLC, under the body of work for the SHIELD program, this analysis aims to provide foundational safety research and development support to reduce diagnostic errors and assist with proficiency testing and compliance by integrating systems theory and safety engineering methods used by other high-risk industries, such as aviation, military special operations, and nuclear power into laboratory testing and management processes and systems.&quot;"?>This<?oxy_comment_end?>
+            analysis aims to provide foundational safety research and development support to reduce
+            diagnostic errors and assist with proficiency testing and compliance by integrating
+            systems theory and safety engineering methods used by other high-risk industries, such
+            as aviation, military special operations, and nuclear power into laboratory testing and
+            management processes and systems. This research will apply a System Safety approach to
+            assess, measure, document, and analyze the safety and quality of the whole laboratory
+            data ecosystem. </para>
+        <para>One of the initial tasks is to assess and evaluate the safety of the current
+            laboratory data ecosystem using a System Safety Engineering Approach to identify safety
+            hazards, map the design, and model control structures of the current system. This
+            research aim uses the System Theoretic Process Analysis (STPA) safety assessment process
+            to identify hazards affecting data reliability, interoperability, data integrity, and
+            data quality across the ecosystem, as well as providing an understanding of the clinical
+            laboratory ecosystem controls, constraints, actuators, processes, and feedback loops for
+            safe and effective operation. [3] By modeling a control structure, we can assess every
+            relationship therein to measure the effectiveness of control actions and identify those
+            which are unsafe to the system operation, human operators, and ultimately, patients. </para>
+        <para>This document analyzes an initial control structure to identify and evaluate safety
+            and quality controls and loss scenarios within the laboratory data ecosystem.
+            Specifically, we focus on describing entities, behaviors, and business requirements to
+            complement the current model of the control structure that supports interoperability,
+            use of terminology systems, and industry coding standards such as LOINC® and SNOMED CT®.
+            Within the control structure diagrams that have been developed, we are enumerating
+            requirements for the "Data Flow for Encoding" to describe how data is encoded from labs
+            and Laboratory Information System (LIS) systems to standards, how data is encoded
+            between manufacturers and standards, and how new test names and codes are distributed by
+            SDOs. These requirements will help to clarify and articulate control action scenarios.
+            They further pinpoint specific scenarios in the safety assessment analysis by
+            identifying unsafe control actions and loss scenarios related to the standards
+            development, implementation, and maintenance processes in laboratories, devices, and
+            standards. </para>
+    </section>
+    <section>
+        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20231130T125558-0500" comment="This section makes mention of the Synensis contract and FDA work. Needs rewrite "?>
+        <title><?oxy_comment_end?>Current Draft Model of the Laboratory Ecosystem Control
+            Structure</title>
+        <para>The initial modeling and analyses of the laboratory ecosystem control structure
+            visualize the influences between ecosystem entities such as policy set by the federal
+            government and the relationship that hospitals and laboratories form to design and
+            perform the care delivery in collaboration with tech companies. The current analysis
+            emphasizes audits performed by a public entity on IVD manufacturers and laboratories.
+            <?oxy_comment_start author="naylee" timestamp="20231210T214535-0600" comment="Somehwat re-wrote this paragraph on 12/11 after reading Rania&apos; comments above. This highlighted sentence needs to be removed entirely. It&apos;s not adding any value here, and the paragraph makes sense even without this sentence. "?>While
+            the initial feedback with our stakeholders is positive, it could be made more
+            comprehensive with the inclusion of SDOs’ process such as the interactions and
+            influences between the various players with LOINC® and SNOMED International.
+            <?oxy_comment_end?>Our documentation describes the context and business requirements to
+            supplement these diagrams. </para>
+        <para><xref linkend="DraftModeloftheDetailedLaboratoryEcosystemControlStructure"/> below
+            illustrates the current draft model of the laboratory ecosystem control structure and
+                <xref
+                linkend="DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure"
+            /> includes a specific draft depiction of the data flow for encoding. </para>
+        <figure xml:id="DraftModeloftheDetailedLaboratoryEcosystemControlStructure">
+            <title>Detailed Laboratory Ecosystem Control Structure</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Draft%20Model%20of%20the%20Detailed%20Laboratory%20Ecosystem%20Control%20Structure.svg" align="center" scale="30"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>In <xref
+                linkend="DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure"
+            />, “middleware” is currently in the model as an interface between devices and
+            LIS/Laboratory Information Management Systems (LIMSs); however middleware can and does
+            exist in between several other systems in this ecosystem. Additionally, “LIMS” are
+            typically the source for reporting to public health agencies. </para>
+        <figure
+            xml:id="DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure">
+            <title>Draft Inset Model of the Encoding for Data Flow in the Laboratory Ecosystem
+                Control Structure </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/DraftInsetModeloftheEncodingforDataFlowintheLaboratoryEcosystemControlStructure.svg" align="center" scale="15"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Requirements</title>
+        <para>This section details business requirements related to the data flow for encoding data
+            in laboratory information for LISs, IVD vendors, and SDOs. These requirements are
+            intended to help articulate control action scenarios and pinpoint specific scenarios in
+            the safety assessment analysis in identifying unsafe control actions and loss scenarios
+            related to the standards development, implementation, and maintenance processes in
+            laboratories, devices, and standards. </para>
+        <para><emphasis role="bold">Laboratories must document a comprehensive list of tests that
+                they perform.</emphasis> Laboratories maintain a comprehensive test menu (also
+            referred to ask a test catalog or laboratory test compendiums). These test menus contain
+            the list of all tests performed by a particular lab and tests that are offered to
+            consumers. The test menus are often delineated to include a list of tests that a
+            particular analytical instrument is capable of performing. There are many details about
+            tests that are important for laboratorians to understand and represent in test menus.
+            These details are not limited to the following: name of the test, the component (or
+            analyte) being measured, the specimen type, the property being measured, the timing of
+            the measurement, the system (usually sample type for laboratory measurements), the scale
+            of measurement, the method used to produce the observation, rejection and acceptance
+            criteria, type of instrument used, specific make and model of instrument or kit used,
+            testing priority, performing site, interpretation criteria, the individual responsible
+            for interpretation, related diagnosis and other additional contextual information. </para>
+        <para>Of these data elements, the name of each test is of particular importance because the
+            name of the test is typically displayed in user interfaces and electronic messages and
+            reports. Consequently, many of the contextual details listed above are reduced to and
+            obfuscated by only being represented by the name of each test alone. </para>
+        <para>The name of every test can be stored in laboratory information systems using local,
+            institution-specific naming conventions. Ideally, laboratories can use a textual
+            description with an unlimited number of characters to accurately describe each
+            laboratory order and result. However, this can result in challenges due to field space
+            restrictions and character limits of databases in the information system. Alternatively,
+            “short names” may be pragmatically implemented to limit the characters allowed in
+            textual names/descriptions of tests but can be complex with abbreviations that result in
+            descriptions that are very difficult to interpret (e.g., albumin ser-plr fld-MCDiff,
+            which refers to the mass concentration difference in grams per liter of albumin in serum
+            and pleural fluid). [2] Rather than only having textual descriptions, laboratory
+            information systems also use unique local identifiers (i.e., codes) to identify and
+            store tests and results. </para>
+        <para><emphasis role="bold">Laboratories are expected and, in many cases, required by the
+                government to share data with public health institutions, medical centers, and
+                disease registries to support population-based care, precision medicine,
+            </emphasis>and research. </para>
+        <para>Laboratories must be able to receive information about orders for tests and ensure
+            that they are performing the equivalent test. Additionally, laboratories must be able to
+            send information about tests performed and associated results and ensure they are
+            sending results for the correct test that was ordered. However, use of local
+            institution-specific names and local codes in LISs results in difficulty with
+            interpreting the data and identifying equivalence between tests and results without a
+            precise mapping to a common, universal terminology. </para>
+        <para>Therefore, industry coding standards have been developed and required for use to
+            standardize the codes and terms embedded in data exchange messages. Federal agencies,
+            such as Center for Medicaid and Medicare Services (CMS) and Office of the National
+            Coordinator for Health Information Technology (ONC), have worked in close coordination
+            to define requirements in a joint effort to promote interoperability. The Health
+            Information Technology for Economic and Clinical Health (HITECH) Act of 2009 grants ONC
+            the authority to establish programs to promote the adoption of health technologies such
+            as electronic health records and secure data exchange. Additional laws, like the ONC
+            21st Century Cures Act and CMS Interoperability and Patient Access Rule, and agreements,
+            like ONC's version 2.0 of the Trusted Exchange Framework and Common Agreement (TEFCA),
+            identify specific standards (as shown in HL7’s FHIR Release 4.0.1) to be adopted by
+            industry. Many of these regulations are required for use in hospitals, but non-hospital
+            laboratories are not as strictly required to adhere to the use of industry coding
+            standards. </para>
+        <para>The adoption of standards like LOINC® aid in distinguishing laboratory data among
+            disparate health systems. However, reliance on standard laboratory test names alone does
+            not go far enough in realizing the benefit of interoperability or minimizing loss
+            scenarios. </para>
+        <para><emphasis role="bold">Laboratories should reproducibly encode their test data using
+                industry coding standards and assignment of standard codes should be subjected to a
+                defined process across the code lifecycle. </emphasis></para>
+        <para>Laboratories assign LOINC® codes to the local laboratory tests contained in their test
+            menu. The LOINC® codes need to be mapped in the test definition dictionaries in the LIS.
+            Typically, each laboratory makes its own decisions regarding assignment of LOINC® codes.
+            If different teams are defining LOINC® codes for the LIS and the EHR, or using and
+            storing codes outside of the EHR, there may be discrepancies even within the same
+            institution. [2] </para>
+        <para><emphasis role="bold">Laboratories need to understand and be aware of the subtleties
+                and pitfalls of test code selection that greatly impact the ability to map codes
+                accurately to local test code compendiums.</emphasis>
+        </para>
+        <para>For the best practice, a laboratory professional well-versed in LOINC® from the
+            laboratory that is performing the testing should select the optimal LOINC® test order
+            and result codes, as this person best knows the nuances of how the testing is performed.
+            Downstream or upstream individuals often do not have the complete test details available
+            to them, particularly with regards to testing performed at reference laboratories. In
+            addition, nonlaboratory physicians and technical team members typically do not have
+            adequate information to choose the optimal LOINC® codes correctly (unless the codes are
+            provided by the performing laboratory). From a safety systems perspective, this is
+            potentially a weak control that solely depends on a human controller to prevent loss
+            scenarios and potential harms. </para>
+        <para>Laboratory personnel responsible for mapping a laboratory’s local test compendium to
+            LOINC® codes often do not possess adequate understanding or expertise for LOINC®,
+            available full encoding options, and nuances between similar codes. For this reason,
+            among others, the task of mapping a local test compendium to LOINC® is frequently
+            delegated to information technology staff who, too, are inadequately trained in
+            laboratory data standards and the implementation. [2] Electronic Health Record vendors
+            and their staff interface engineers to build and test HL7 interfaces alongside lab
+            personnel. However, the level of coordination between lab personnel and interface
+            engineers varies from case to case. During interface testing for laboratory interfaces,
+            the most common system errors result from incorrect LOINC® encodings within the
+            Observation Request (OBR) and Observation Result (OBX) segments of an HL7 Version 2
+            transaction. The errors are most commonly addressed by information technology staff who
+            in some cases prioritize time and effort over accurate, precise data mappings which can
+            lead to poor due diligence and downstream loss scenarios. Similar process-shortcomings
+            can apply to additional laboratory data elements which demand a certain level of domain
+            expertise, like units of measure and specimen type. </para>
+        <para>Despite having mapped their unique laboratory tests to LOINC®, laboratories may still
+            need to rely on creating their own internal names and codes for test results. For
+            example, laboratories may need to use a test code to distinguish glucose measurements
+            performed in a core laboratory from those in their satellite facilities. [2] However,
+            all these individual test codes will still need to be mapped to the appropriate, but
+            identical, LOINC® code. Changes to LOINC® codes create challenges for maintenance in
+            LISs, EHRs, and other systems, particularly when the LOINC® code changes for a test that
+            has already been mapped. </para>
+        <para><emphasis role="bold">Laboratories need to maintain code sets and mappings over time,
+                which is an error-prone and manual, laborious process. </emphasis></para>
+        <para>Requests for new codes can be made to Regenstrief Institute, the curator of the LOINC®
+            database, through a simple process, and updates to LOINC® are made biannually. </para>
+        <para>The LIS laboratory test definitions and dictionaries are dynamic and frequently
+            changing, thus requiring a formal process for ensuring uniformity of coding among
+            different instruments or methods and, if applicable, the capacity to accommodate
+            different codes that are correctly applied depending on the specific methodology used
+            for that particular result. There should also be a formal audit process and maintenance
+            to keep up with the changes that occur with each LOINC® release to ensure the accuracy
+            and appropriateness of previous code selection as the database continues to mature. [2] </para>
+        <para>LOINC’s® limitations are poorly understood outside of the laboratory domain, reducing
+            the potential utility for it. Critics of LOINC® will point out the laborious process for
+            assigning the most correct code to each laboratory test offered, and that in practice,
+            LOINC® codes are not uniformly assigned across laboratories. The complexities require a
+            certain level of domain-expertise to understand two tests that may have the same
+            correctly assigned LOINC® code may not necessarily have equivalence to allow for
+            interoperability of their result data. </para>
+        <para>Ideally, scripting and other automated methods must be developed to facilitate the
+            task of assigning standard codes to local tests. </para>
+        <para><emphasis role="bold">IVD Manufacturers </emphasis></para>
+        <para>The production of IVDs requires the assignment of the appropriate LOINC® code(s) for
+            the specific tests which a given device can perform. LOINC® codes are typically in a
+            manufacturer’s package insert, as well as their database. If an appropriate LOINC® code
+            does not exist for a lab test, a manufacturer may submit a request to Regenstrief
+            Institute to create a new LOINC® code. </para>
+        <para>Many laboratory instrument and reagent vendors that are aware of the immense
+            challenges associated with interoperability have begun to include LOINC® definitions in
+            their package inserts. Such package inserts have become a logical source to provide
+            information that can help laboratories map tests with an appropriate LOINC® code because
+            these vendors are well equipped to identify the appropriate LOINC® code for their
+            specific laboratory test. Moreover, for the introduction of novel laboratory test
+            technology, IVD vendors are the logical respondent to new LOINC® code requests. </para>
+        <para>The LOINC® to Vendor IVD specification provides LOINC® maps to IVD test results and
+            includes the following important data attributes: the manufacturer, instrument model,
+            unique device identifier, vendor transmission code, vendor specimen description, vendor
+            result description, and test name. Optional data elements are also included to be
+            helpful for laboratory professionals' mapping to LOINC®. </para>
+    </section>
+    <section>
+        <title>Discussion</title>
+        <para>The absence of laboratory semantic interoperability for IVD data has been cited as a
+            significant impediment to safe and effective public healthcare. The erosion of accuracy
+            for IVD test data due to interoperability failures can have patient safety consequences
+            and impede timely access to and analysis of lab data on a nationwide or global scale.
+            Differences in encoding laboratory data may have substantive differences in the level of
+            granular detail they convey and contribute to challenges when operationalizing these
+            data into patient care, data exchange, interoperability messages, and data aggregation.
+            The aggregation and compounding of these types of interoperability failures can lead to
+            erroneous conclusions and the potential for patient harm even when the correct LOINC®
+            code is selected. A paper by Stram et al, highlights two laboratories that are both
+            performing urinalysis and selected the same LOINC® code for the test, analyte, method,
+            and instrument. [2] However, when the data was transferred from the LIS to EHR, the
+            quantitative result of count/microliter was being translated to different units in the
+            EHR and would have led to erroneous clinical treatment decisions based on the incorrect
+            interpretation of the threshold for treatment. The use of accurate codes is not
+            sufficient to guarantee that information exchange is accurate across the different
+            levels in the laboratory data ecosystem. A research and development program that applies
+            a System Safety approach to assess, measure, document, and analyze the data quality,
+            integrity, agility, and reliability of the whole lab data ecosystem will be beneficial
+            in promoting safe and effective laboratory medicine. Furthermore, a Knowledge Management
+            Platform that is based on High Reliability Organization (HRO) principles and that offers
+            an integrated and harmonized ecosystem for working across disparate standards will help
+            with managing complexity and change management across standards. </para>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>Wise, L., Miller, N., Warner, D. (n.d.). The role of CDI in Semantic
+                    Interoperability. The Role of CDI in Semantic Interoperability / AHIMA, American
+                    Health Information Management Association. Retrieved December 14, 2022, from
+                    https://bok.ahima.org/doc?oid=302470#.Y5on41HMKUk </para>
+            </listitem>
+            <listitem>
+                <para>Michelle Stram, Tony Gigliotti, Douglas Hartman, Andrea Pitkus, Stanley M.
+                    Huff, Michael Riben, Walter H. Henricks, Navid Farahani, Liron Pantanowitz;
+                    Logical Observation Identifiers Names and Codes for Laboratorians: Potential
+                    Solutions and Challenges for Interoperability. Arch Pathol Lab Med 1 February
+                    2020; 144 (2): 229–239. doi: https://doi.org/10.5858/arpa.2018-0477-RA </para>
+            </listitem>
+            <listitem>
+                <para>Leveson N, Thomas J, Harrington, Polly, Rodrigo, Rose, Stephen P, Keller,
+                    Alana. System Safety within Laboratory Data Exchanges Report [Internet].
+                    Massachusetts Institute of Technology Partnership for Systems Approaches to
+                    Safety and Security and Synensys, LLC; 2023 Sep. Available from:
+                    https://synensysglobal.com/wp-content/uploads/2023/12/System-Safety-within-Laboratory-Data-Exchanges-Report.pdf
+                </para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>

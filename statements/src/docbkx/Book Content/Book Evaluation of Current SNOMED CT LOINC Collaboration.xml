@@ -3,8 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>Evaluation of Current Systemized Nomenclature of Medicine – Clinical Terms® (SNOMED CT®)
-        Logical Observation Identifiers Names and Code® (LOINC®) Collaboration</title>
+     <title>Evaluation of Current SNOMED CT® LOINC® Collaboration</title>
     <section>
         <title> Introduction</title>
         <para>In October 2022, Regenstrief Institute (RII) and SNOMED International, also known as

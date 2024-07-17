@@ -536,126 +536,130 @@
             gray area where they maintain proprietary techniques. These limits are imposed by their
             licensing models through their end-user agreements. </para>
         <section>
-            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240712T164721-0500" comment="random? why adrres data privacy in open-source section. suggest to remove"?>
-            <title>Real World Example: General Data Protection Regulation (GDPR) and Data Privacy in
-                Healthcare</title>
-            <para>The General Data Protection Regulation (GDPR) is an European Union (EU) privacy
-                and security law that was put into effect May 25, 2018. This EU law imposes
-                obligations onto organizations anywhere in the world if they target or collect data
-                related to EU citizens or residents. The law outlines seven protection and
-                accountability principles, listed below [4]:</para>
-            <para>
-                <orderedlist>
-                    <listitem>
-                        <para>Lawfulness, fairness and transparency</para>
-                    </listitem>
-                    <listitem>
-                        <para>Purpose limitation</para>
-                    </listitem>
-                    <listitem>
-                        <para>Data minimization</para>
-                    </listitem>
-                    <listitem>
-                        <para>Accuracy</para>
-                    </listitem>
-                    <listitem>
-                        <para>Storage limitation</para>
-                    </listitem>
-                    <listitem>
-                        <para>Integrity and confidentiality</para>
-                    </listitem>
-                    <listitem>
-                        <para>Accountability</para>
-                    </listitem>
-                </orderedlist>
-            </para>
-            <para>The GDPR has influenced data management and privacy practices in the healthcare
-                sector by compelling healthcare organizations to adopt stricter data protection
-                measures and transparency in data handling. According to GDPR law, health data is
-                defined as personal data related to the physical or mental health of a natural
-                person, including the provision of health care services, which reveal information
-                about their health. This health data also includes genetic and biometric data.
-                [5]</para>
-            <para>Healthcare organizations must adapt to these strict new regulations, and are
-                charged with managing patient consent, data portability, and the consequences of
-                non-compliance, which could be fines up to €22M+. For U.S. healthcare organization
-                this means complying with GDPR as well as Health Insurance Portability and
-                Accountability Act (HIPPA), which is a separate level of consent and information the
-                provider has to ensure the patient receives. Additionally, GDPR places the burden of
-                proof of consent on the provider, and they must implement an audit trail for
-                electronic consents. This example demonstrates how regulatory changes are shaping
-                the future of data management in healthcare and aligns with the need for clarity in
-                data management guidelines.<?oxy_comment_end?></para>
-            <para><emphasis role="bold">Open-Source Licensing (OSL) </emphasis></para>
-            <para>The implementation of open-source software is managed in-hand through open-source
-                licensing (OSL). The license of the software sets out the guidelines on the usage
-                and implementation of the specific version of software being used. The license acts
-                as a copyright agreement where organizations and creators can control the
-                distribution, duplication, and modification of their work. </para>
-            <para>There are many different types of licenses, as seen in Figure 2.1 below, and are
-                often created to be intentionally vague to apply to a multitude of situations and
-                preserve the rights of the licensor: </para>
-            <figure xml:id="RestrictionsImposed">
-                <title>Restrictions Imposed by License Type</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="../images/2.2.4%20Restrctions%20posed.svg"
-                            align="center" scale="60"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-            <para><emphasis role="bold">Public-Domain</emphasis>: Public domain refers to any
-                information, software, or intellectual property that carries no restrictions in
-                regard to copyright law. It is free to use by any individual. No one group can
-                exercise control over it. In a software setting, source code must be provided. </para>
-            <para><emphasis role="bold">Permissive License</emphasis>: Also known as an open-source
-                license. This type of license carries minimal restriction over adaption,
-                modification, and distribution of intellectual property of organizations. An issuing
-                body may impose some restrictions, such as the monetization, but it does not exert
-                special rights to derivative works. In a software setting, source code must be
-                provided. </para>
-            <para><emphasis role="bold">Protective License</emphasis>: This type of license, also
-                called a copyleft license, grants rights on modification and redistribution but also
-                requires derivative works to include and grants the same rights of the original
-                license. Similar to public domain and permissive licenses, source code must also be
-                accessible. </para>
-            <para><emphasis role="bold">Noncommercial</emphasis>: The license only grants special
-                rights to be used in a noncommercial setting where an external entity may exercise
-                proprietary control or monetization of the applicable intellectual property. This
-                can also decrease the cost of access, especially for organizations for academic or
-                research purposes. </para>
-            <para><emphasis role="bold">Proprietary</emphasis>: The most traditional form of
-                licensing where no rights must be granted to other entities. There are varying
-                significant restrictions on modification and distribution, where it is often
-                disallowed completely. </para>
-            <para><emphasis role="bold">Trade Secret</emphasis>: Often left unpublished, information
-                is not open to the public or non-entity members in any form. It is the most
-                restrictive, private type of licensing. In software, no source code is available. </para>
-            <para>Open-source licensing is seen as a method to resolve the dispute between
-                unauthorized copying and distribution of content as well as the copyright laws that
-                have been created to protect individual and businesses of their own work. [6]
-                Instead of users finding ways to circumvent barriers of access to content, the
-                license serves as a pathway on how to freely access and modify software to the needs
-                of users while protecting the proprietary interests of the originator. In this
-                context, discussion surrounding the term of “free” applies here as well as in
-                open-source software. Many software systems are considered to be open-source and
-                utilize an open-source license but are not free in cost to the licensee. </para>
-            <para>Open-source licensing agreements give access to software that may have been
-                prevented under copyright law. These types of licenses enable use regardless of
-                intent and the ability to modify, adapt, and extend software with minimal
-                restrictions. The license establishes rules of the road and codifies best practices
-                to enable adoptability and ease of use for both the initial user and the broader
-                downstream community. For example, many licenses require modifications to be
-                disclosed and thoroughly documented for third-party individuals to avoid
-                endorsements and confusion regarding what has been published directly from
-                organizations themselves. </para>
-            <para>In practice, many licenses are not considered open-source due to certain
-                conditions like distribution, access, and modification being prohibited. It is
-                important to note that the quality of software and source code is not inherently
-                affected by the structure of the license. A balance, however, is required ensuring
-                that the licenses do not cause unintended consequences surrounding the proper
-                development and evolution of the code by the user. [7] </para>
-        </section>
+                <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240712T164721-0500" comment="random? why adrres data privacy in open-source section. suggest to remove" id="vk4_3w1_ccc"?>
+                <?oxy_comment_start author="tocrow" timestamp="20240717T133624-0400" parentID="vk4_3w1_ccc" comment="I think its fine. While we want to be open-source we also acknowledge we must maintain paitnet privacy" mid="3"?>
+                <title>Real World Example: General Data Protection Regulation (GDPR) and Data
+                    Privacy in Healthcare</title>
+                <para>The General Data Protection Regulation (GDPR) is an European Union (EU)
+                    privacy and security law that was put into effect May 25, 2018. This EU law
+                    imposes obligations onto organizations anywhere in the world if they target or
+                    collect data related to EU citizens or residents. The law outlines seven
+                    protection and accountability principles, listed below [4]:</para>
+                <para>
+                    <orderedlist>
+                        <listitem>
+                            <para>Lawfulness, fairness and transparency</para>
+                        </listitem>
+                        <listitem>
+                            <para>Purpose limitation</para>
+                        </listitem>
+                        <listitem>
+                            <para>Data minimization</para>
+                        </listitem>
+                        <listitem>
+                            <para>Accuracy</para>
+                        </listitem>
+                        <listitem>
+                            <para>Storage limitation</para>
+                        </listitem>
+                        <listitem>
+                            <para>Integrity and confidentiality</para>
+                        </listitem>
+                        <listitem>
+                            <para>Accountability</para>
+                        </listitem>
+                    </orderedlist>
+                </para>
+                <para>The GDPR has influenced data management and privacy practices in the
+                    healthcare sector by compelling healthcare organizations to adopt stricter data
+                    protection measures and transparency in data handling. According to GDPR law,
+                    health data is defined as personal data related to the physical or mental health
+                    of a natural person, including the provision of health care services, which
+                    reveal information about their health. This health data also includes genetic
+                    and biometric data. [5]</para>
+                <para>Healthcare organizations must adapt to these strict new regulations, and are
+                    charged with managing patient consent, data portability, and the consequences of
+                    non-compliance, which could be fines up to €22M+. For U.S. healthcare
+                    organization this means complying with GDPR as well as Health Insurance
+                    Portability and Accountability Act (HIPPA), which is a separate level of consent
+                    and information the provider has to ensure the patient receives. Additionally,
+                    GDPR places the burden of proof of consent on the provider, and they must
+                    implement an audit trail for electronic consents. This example demonstrates how
+                    regulatory changes are shaping the future of data management in healthcare and
+                    aligns with the need for clarity in data management
+                    guidelines.<?oxy_comment_end mid="3"?><?oxy_comment_end?></para>
+                <para><emphasis role="bold">Open-Source Licensing (OSL) </emphasis></para>
+                <para>The implementation of open-source software is managed in-hand through
+                    open-source licensing (OSL). The license of the software sets out the guidelines
+                    on the usage and implementation of the specific version of software being used.
+                    The license acts as a copyright agreement where organizations and creators can
+                    control the distribution, duplication, and modification of their work. </para>
+                <para>There are many different types of licenses, as seen in Figure 2.1 below, and
+                    are often created to be intentionally vague to apply to a multitude of
+                    situations and preserve the rights of the licensor: </para>
+                <figure xml:id="RestrictionsImposed">
+                    <title>Restrictions Imposed by License Type</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/2.2.4%20Restrctions%20posed.svg"
+                                align="center" scale="60"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para><emphasis role="bold">Public-Domain</emphasis>: Public domain refers to any
+                    information, software, or intellectual property that carries no restrictions in
+                    regard to copyright law. It is free to use by any individual. No one group can
+                    exercise control over it. In a software setting, source code must be provided. </para>
+                <para><emphasis role="bold">Permissive License</emphasis>: Also known as an
+                    open-source license. This type of license carries minimal restriction over
+                    adaption, modification, and distribution of intellectual property of
+                    organizations. An issuing body may impose some restrictions, such as the
+                    monetization, but it does not exert special rights to derivative works. In a
+                    software setting, source code must be provided. </para>
+                <para><emphasis role="bold">Protective License</emphasis>: This type of license,
+                    also called a copyleft license, grants rights on modification and redistribution
+                    but also requires derivative works to include and grants the same rights of the
+                    original license. Similar to public domain and permissive licenses, source code
+                    must also be accessible. </para>
+                <para><emphasis role="bold">Noncommercial</emphasis>: The license only grants
+                    special rights to be used in a noncommercial setting where an external entity
+                    may exercise proprietary control or monetization of the applicable intellectual
+                    property. This can also decrease the cost of access, especially for
+                    organizations for academic or research purposes. </para>
+                <para><emphasis role="bold">Proprietary</emphasis>: The most traditional form of
+                    licensing where no rights must be granted to other entities. There are varying
+                    significant restrictions on modification and distribution, where it is often
+                    disallowed completely. </para>
+                <para><emphasis role="bold">Trade Secret</emphasis>: Often left unpublished,
+                    information is not open to the public or non-entity members in any form. It is
+                    the most restrictive, private type of licensing. In software, no source code is
+                    available. </para>
+                <para>Open-source licensing is seen as a method to resolve the dispute between
+                    unauthorized copying and distribution of content as well as the copyright laws
+                    that have been created to protect individual and businesses of their own work.
+                    [6] Instead of users finding ways to circumvent barriers of access to content,
+                    the license serves as a pathway on how to freely access and modify software to
+                    the needs of users while protecting the proprietary interests of the originator.
+                    In this context, discussion surrounding the term of “free” applies here as well
+                    as in open-source software. Many software systems are considered to be
+                    open-source and utilize an open-source license but are not free in cost to the
+                    licensee. </para>
+                <para>Open-source licensing agreements give access to software that may have been
+                    prevented under copyright law. These types of licenses enable use regardless of
+                    intent and the ability to modify, adapt, and extend software with minimal
+                    restrictions. The license establishes rules of the road and codifies best
+                    practices to enable adoptability and ease of use for both the initial user and
+                    the broader downstream community. For example, many licenses require
+                    modifications to be disclosed and thoroughly documented for third-party
+                    individuals to avoid endorsements and confusion regarding what has been
+                    published directly from organizations themselves. </para>
+                <para>In practice, many licenses are not considered open-source due to certain
+                    conditions like distribution, access, and modification being prohibited. It is
+                    important to note that the quality of software and source code is not inherently
+                    affected by the structure of the license. A balance, however, is required
+                    ensuring that the licenses do not cause unintended consequences surrounding the
+                    proper development and evolution of the code by the user. [7] </para>
+            </section>
     </section>
     <section>
         <title>Examining License Agreements in Action</title>
@@ -837,24 +841,25 @@
             In-Vitro-Diagnostic (IVD) device manufacturers. This also extends to the bodies that
             oversee terminology standards and the licensing agreements governing them. </para>
         <para>For successful implementation of an integrated knowledge ecosystem, licensing bodies
-            should implement components of open-source licensing, specifically on modification and
-            distribution of copyrighted standards. Currently, the process that exists on how
-            licenses work together in common spaces and the subsequent requirements are ambiguous.
-            Would the implementation of a third-party software trigger licensing restrictions and
-            inhibit the willingness of organizations to adopt them? Is the usage of an IKM platform
-            by an organization to reconcile local codes considered to be an extension of a modified
-            code, disallowed under the existing licensing structure? Some licenses consider any work
-            to be referential to be a “derivative” without fully specifying the scope of the
-            reference. This is seen, for example, in the form of the GNU's Not Unix (GNU) General
-            Public License (GPL) and in references to GPL licensed libraries. [13] The navigation of
-            differing licenses and determining the varying responsibilities imposed by them can be a
-            costly, time-consuming burden that often acts as a barrier for meaningful progress. It
-            can quickly become a convoluted process that inhibits success of implementation,
-            unintended by the licensor and their vision of interoperability as seen in LOINC®.
-            Licenses must walk a tight line on preventing extension of standards, thereby slowing
-            down the evolution of these standards, and allowing full extensions that can subvert the
-            standard in and of itself, creating confusion where modifications look to be
-            endorsements by the issuing body. [5]</para>
+                should implement components of open-source licensing, specifically on modification
+                and distribution of copyrighted standards. Currently, the process that exists on how
+                licenses work together in common spaces and the subsequent requirements are
+                ambiguous. Would the implementation of a third-party software trigger licensing
+                restrictions and inhibit the willingness of organizations to adopt them? Is the
+                usage of an IKM platform by an organization to reconcile local codes considered to
+                be an extension of a modified code, disallowed under the existing licensing
+                structure? Some licenses consider any work to be referential to be a “derivative”
+                without fully specifying the scope of the reference. This is seen, for example, in
+                the form of the GNU's Not Unix (GNU) GPL and in references to GPL licensed
+                libraries. [13] The navigation of differing licenses and determining the varying
+                responsibilities imposed by them can be a costly, time-consuming burden that often
+                acts as a barrier for meaningful progress. It can quickly become a convoluted
+                process that inhibits success of implementation, unintended by the licensor and
+                their vision of interoperability as seen in LOINC®. Licenses must walk a tight line
+                on preventing extension of standards, thereby slowing down the evolution of these
+                standards, and allowing full extensions that can subvert the standard in and of
+                itself, creating confusion where modifications look to be endorsements by the
+                issuing body. [5]</para>
         <para>In practice, strong open-source licenses can encourage the development and evolution
             of standards without subversion of standards through guardrails on community
             contributions. Instead of a few chosen contributors, solutions can be developed openly
@@ -865,60 +870,62 @@
             mentality where confusion ensues. Additionally, open-source licenses can continue to
             protect against impersonations and false endorsements through their agreements. </para>
         <section>
-            <title>Open-Source Licensing Within a Knowledge Architecture</title>
-            <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240712T165045-0500" comment="remove"?>A
-                Knowledge Architecture is a framework for clinical information that is organized
-                into distinct layers such that each higher layer relies upon artifacts from the
-                lower layer. It aims to define a standardized form of clinical statements and
-                harmonize existing terminologies together into a single system. </para>
-            <para>A knowledge architecture intended for use in the current Health IT ecosystem is
-                listed below: </para>
-            <figure xml:id="LayersWithinKnowledgeArchitecture">
-                <title>Layers Within Knowledge Architecture</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="../images/New%20PASTF.svg" align="center" scale="10"
-                            ><?oxy_comment_end?></imagedata>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-            <para>Rather than a broad transformation of existing licenses in a purely open-source
-                model, not all components of software and standard licensing require a pivot away
-                from proprietary oversight to lead to successful implementation of an IKM ecosystem.
-                The commercial usage of aspects of licenses allows for ongoing support and
-                maintenance of software and standards. The move towards a permissive license does
-                not require a seismic shift in organization structure or its ability monetize its
-                commercial license, especially for organizations already promoting open-standards.
-                    <emphasis>Allowing for open-licensing encourages improvements of terminology and
-                    standards by ancillary bodies and creates a more robust, flexible system that
-                    can further adapt into the varying needs of organizations. </emphasis></para>
-            <para>Data harmonization improves when foundational layers of Knowledge Architecture are
-                integrated into common, collective sources of data. If utilized correctly under a
-                Knowledge Architecture, a single-data journey can be completed with integrity intact
-                every time. Permissive licensing throughout the foundational architecture,
-                terminology knowledge, and statement model layers removes barriers imposed on
-                modifications and extensions and instead aids in the creation of common
-                understandings of knowledge. The Terminology Knowledge layer within Knowledge
-                Architecture oversees the structure of medical terminologies, such as the language
-                and semantic hierarchy within data. It is in this layer where the IKM platform
-                arbitrates the valid codes and expressions to be used in higher layers. Currently,
-                the usage of terminology standards like SNOMED CT®, LOINC®, and additional standards
-                pose questions regarding compatibility due to modification and extensions
-                limitations. The complexity widens when further standards based on other standards
-                are integrated further in the terminology layer, like the Laboratory
-                Interoperability Data Repository (LIDR) and Tinkar. The loss of data often occurs in
-                this layer and breaks the functionality of standards where local codes are mapped to
-                the incorrect standard codes. The IKM platform aims to solve this issue by
-                harmonizing standards but cannot be successfully implemented unless the underlying
-                licenses allow an IKM platform to reconcile variances. In the Statement Model, the
-                artifacts as defined below are reused and demonstrate how the data elements should
-                be packaged into clinical statements through clinical formatting, such as Health
-                Level 7 Fast Healthcare Interoperability Resources (HL7 FHIR) or Clinical
-                Informational Modeling Initiative (CIMI). The shift towards a permissive license in
-                regard to terminologies and standards improves the compatibility of how different
-                terminologies work together and thereby is integral to the functionality of higher
-                layers and interoperability overall. </para>
-        </section>
+                <title>Open-Source Licensing Within a Knowledge Architecture</title>
+                <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240712T165045-0500" comment="remove" id="nms_gy1_ccc"?><?oxy_comment_start author="tocrow" timestamp="20240717T135106-0400" parentID="nms_gy1_ccc" comment="Any reason for removing?" mid="7"?>A
+                    Knowledge Architecture is a framework for clinical information that is organized
+                    into distinct layers such that each higher layer relies upon artifacts from the
+                    lower layer. It aims to define a standardized form of clinical statements and
+                    harmonize existing terminologies together into a single system. </para>
+                <para>A knowledge architecture intended for use in the current Health IT ecosystem
+                    is listed below: </para>
+                <figure xml:id="LayersWithinKnowledgeArchitecture">
+                    <title>Layers Within Knowledge Architecture</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/New%20PASTF.svg" align="center" scale="10"
+                                ><?oxy_comment_end?><?oxy_comment_end mid="7"?></imagedata>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>Rather than a broad transformation of existing licenses in a purely
+                    open-source model, not all components of software and standard licensing require
+                    a pivot away from proprietary oversight to lead to successful implementation of
+                    an IKM ecosystem. The commercial usage of aspects of licenses allows for ongoing
+                    support and maintenance of software and standards. The move towards a permissive
+                    license does not require a seismic shift in organization structure or its
+                    ability monetize its commercial license, especially for organizations already
+                    promoting open-standards. <emphasis>Allowing for open-licensing encourages
+                        improvements of terminology and standards by ancillary bodies and creates a
+                        more robust, flexible system that can further adapt into the varying needs
+                        of organizations. </emphasis></para>
+                <para>Data harmonization improves when foundational layers of Knowledge Architecture
+                    are integrated into common, collective sources of data. If utilized correctly
+                    under a Knowledge Architecture, a single-data journey can be completed with
+                    integrity intact every time. Permissive licensing throughout the foundational
+                    architecture, terminology knowledge, and statement model layers removes barriers
+                    imposed on modifications and extensions and instead aids in the creation of
+                    common understandings of knowledge. The Terminology Knowledge layer within
+                    Knowledge Architecture oversees the structure of medical terminologies, such as
+                    the language and semantic hierarchy within data. It is in this layer where the
+                    IKM platform arbitrates the valid codes and expressions to be used in higher
+                    layers. Currently, the usage of terminology standards like SNOMED CT®, LOINC®,
+                    and additional standards pose questions regarding compatibility due to
+                    modification and extensions limitations. The complexity widens when further
+                    standards based on other standards are integrated further in the terminology
+                    layer, like the Laboratory Interoperability Data Repository (LIDR) and Tinkar.
+                    The loss of data often occurs in this layer and breaks the functionality of
+                    standards where local codes are mapped to the incorrect standard codes. The IKM
+                    platform aims to solve this issue by harmonizing standards but cannot be
+                    successfully implemented unless the underlying licenses allow an IKM platform to
+                    reconcile variances. In the Statement Model, the artifacts as defined below are
+                    reused and demonstrate how the data elements should be packaged into clinical
+                    statements through clinical formatting, such as Health Level 7 Fast Healthcare
+                    Interoperability Resources (HL7 FHIR) or Clinical Informational Modeling
+                    Initiative (CIMI). The shift towards a permissive license in regard to
+                    terminologies and standards improves the compatibility of how different
+                    terminologies work together and thereby is integral to the functionality of
+                    higher layers and interoperability overall. </para>
+            </section>
     </section>
     <section>
         <title>Conclusion</title>
@@ -936,7 +943,7 @@
             one step closer to harmonization across the Health IT landscape. </para>
     </section>
     <section>
-        <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240712T165235-0500" comment="move to end"?>Appendix<?oxy_comment_end?></title> 
+        <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240712T165235-0500" comment="move to end" id="uyx_wy1_ccc"?><?oxy_comment_start author="tocrow" timestamp="20240717T135551-0400" parentID="uyx_wy1_ccc" comment="end of book" mid="9"?>Appendix<?oxy_comment_end mid="9"?><?oxy_comment_end?></title> 
         <para>
             <informaltable>
                 <tgroup cols="3">

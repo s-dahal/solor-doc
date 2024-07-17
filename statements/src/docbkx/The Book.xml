@@ -88,9 +88,9 @@
     </part>
     <part>
         <title>Ecosystem</title>
-     <xi:include href="Book%20Content/Book%20Ecosystem%20combined.xml"/>
+        <xi:include href="Book%20Content/Book%20Ecosystem%20combined.xml"/>
         <xi:include href="Book%20Content/Book%20Evaluation%20of%20Current%20SNOMED%20CT%20LOINC%20Collaboration.xml"/>
-        <xi:include href="4.1.1.xml"/>
+        <xi:include href="Book%20Content/Book%204.1.1.xml"/>
     </part>
     <part>
         <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240715T101026-0500" comment="add transition sentence about exploring current stae km solutions and current state environment, best practices, lessons learned and more from other efforts"?>Komet<?oxy_comment_end?></title>
