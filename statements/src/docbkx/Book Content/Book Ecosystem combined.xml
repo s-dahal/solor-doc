@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<chapter xmlns="http://docbook.org/ns/docbook"
+<book xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <chapter>
     <title>Wisdom of Crowds</title>
     <section>
         <title>Introduction to Wisdom of Crowds</title>
@@ -377,6 +378,8 @@
         </orderedlist>
         <para> </para>
     </section>
+    </chapter>
+    <chapter>
        <title>Summary of Findings - Managing the Best Practice for Open-Source Communities</title>
     <section>
         <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240712T164605-0500" comment="redundant "?>
@@ -1120,4 +1123,5 @@
             </listitem>
         </orderedlist>
     </section>
-</chapter>
+    </chapter>
+</book>
