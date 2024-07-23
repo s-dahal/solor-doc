@@ -95,6 +95,7 @@
     </part>
     <part>
         <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240715T101026-0500" comment="add transition sentence about exploring current stae km solutions and current state environment, best practices, lessons learned and more from other efforts"?>Komet<?oxy_comment_end?></title>
+        <xi:include href="komet-building-blocks.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include
             href="Book%20Content/Book%20Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3.xml"
             ></xi:include>
@@ -107,9 +108,21 @@
         <xi:include href="Volume%208%20-%20Komet%20User%20Guide.xml"/>
     </part>
     <part>
-        <title>Real World Applications and Summary of Findings</title>
+        <title>Use Cases and Summary of Findings</title>
         <xi:include href="Use-Case-Chapter.xml"/>
         <xi:include href="roundtrip-usecase.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+    </part>
+    <part>
+        <title>Real World Applications</title>
+        <xi:include href="Volume%2010%20-%20Patient%20Data%20Privacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2011%20-%20Healthcare%20Data%20Management.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2012%20-%20Healthcare%20Quality%20Improvement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2013%20-%20Global%20Health%20and%20International%20Collaboration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2016%20-%20Emergency%20Preparedness.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2017%20-%20Return%20on%20Investment.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+    <part>
+        <xi:include href="Volume%20Appendix.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </part>
 </book>
