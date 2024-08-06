@@ -113,6 +113,7 @@
     </part>
     <part>
         <title>Real World Applications</title>
+        <xi:include href="Book%20Content/RWE%20Intro.xml"/>
         <xi:include href="Volume%2010%20-%20Patient%20Data%20Privacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Volume%2011%20-%20Healthcare%20Data%20Management.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Volume%2012%20-%20Healthcare%20Quality%20Improvement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
