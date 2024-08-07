@@ -5,7 +5,6 @@
     version="5.1">
     <title>Healthcare Data Management</title>
     <sect1>
-        <?oxy_comment_start author="tocrow" timestamp="20240712T150553-0400" comment="Probably need ot fix intro, but will sync with Rania"?>
         <title>Introduction to Healthcare Data Management</title>
         <para>The healthcare data management landscape is rapidly evolving, driven by advances in
             technology and the increasing demand for comprehensive, interoperable healthcare
@@ -13,9 +12,9 @@
             technologies used to collect, store, manage, and analyze health-related information.
             With the ultimate goal of improving patient care, healthcare data management supports
             clinical decision-making, research, and policy development. The integration of data from
-            diverse sources, including EHRs, medical imaging, genomic data, and wearable technology,
-            presents both opportunities and challenges to improve data quality, privacy, and
-            security. [1]</para>
+            diverse sources, including electronic health records (EHRs), medical imaging, genomic
+            data, and wearable technology, presents both opportunities and challenges to improve
+            data quality, privacy, and security. [1]</para>
         <para>The importance of data in clinical and research settings cannot be overstated.
             High-quality, accessible, and secure data is foundational to evidence-based medicine and
             enables healthcare providers to make informed decisions, improves patient outcomes, and
@@ -28,7 +27,7 @@
             knowledge within the healthcare sector. The implementation of IKM strategies can
             significantly enhance the interoperability of healthcare systems, ensuring that data is
             not only accessible and usable across different platforms and institutions but also
-            consistent and reliable. [3]<?oxy_comment_end?></para>
+            consistent and reliable. [3]</para>
     </sect1>
     <sect1>
         <title>Mental Health Data Management</title>
@@ -69,15 +68,14 @@
             and integrating emerging technology. Today, more than 10,000 mental or behavioral health
             apps are publicly available on the iOS App Store with roughly 69% of them focusing on
             providing therapy, collecting self-assessment information, and monitoring symptoms. [10]
-            The recently updated guidance on cellphones, health information, and the Health
-            Insurance Portability and Accountability Act (HIPAA) by the U.S. Department of Health
-            and Human Services (HHS) dictates that HIPAA Privacy Act does not apply to most health
-            apps as these apps are not “covered entities” under the law. Currently, only official
-            healthcare system patient portals that exchange messages with providers and store test
-            results are protected by HIPAA. [11] As technology continues to improve and be
-            implemented across the healthcare ecosystem, it is critical that data management efforts
-            work to ensure that self-reported, at home, and other non-traditional methods of data
-            collection meet required privacy, storage, and transmission standards.</para>
+            The recently updated guidance on cellphones, HIPAA by HHS dictates that HIPAA Privacy
+            Act does not apply to most health apps as these apps are not “covered entities” under
+            the law. Currently, only official healthcare system patient portals that exchange
+            messages with providers and store test results are protected by HIPAA. [11] As
+            technology continues to improve and be implemented across the healthcare ecosystem, it
+            is critical that data management efforts work to ensure that self-reported, at home, and
+            other non-traditional methods of data collection meet required privacy, storage, and
+            transmission standards.</para>
     </sect1>
     <sect1>
         <title>Population Health Management (PHM)</title>
@@ -225,7 +223,7 @@
                 <para>Lymphatic filariasis</para>
             </listitem>
             <listitem>
-                <para>HIV</para>
+                <para>Human Immunodeficiency Virus</para>
             </listitem>
             <listitem>
                 <para>Trachoma</para>

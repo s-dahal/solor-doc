@@ -87,31 +87,31 @@
         <para>A simple way to think about emergency management is by breaking down a response into
             before, during, and after the response. In this paper we explore how IKM can play into
             each of these response areas.</para>
-            
+        
     </section>
     <section>
         <title>Examples of Knowledge Management in Emergency Response</title>
         <para>Emergency preparedness can broadly be split in pre-emergency, emergency response,
-                and post emergency. Knowledge management and communications is critical during all
-                stages of preparedness. In the pre-emergency timeframe, during the mitigation and
-                preparedness stages of emergency management, knowledge management can be used to
-                bolster training and education. For example, FEMA’s Emergency Management Institute
-                (EMI) offers online training courses for emergency preparedness through its
-                partnership with affiliated centers. [11] Training and education of first responders
-                can help orient and prepare those involved once and emergency occurs, and is a core
-                tenant of knowledge management best practices. </para>
-            <para>Another example of a national approach to emergency knowledge management is FEMA’s
-                National Incident Management System (NIMS). NIMS is an example of a system that uses
-                knowledge management to integrate resources across organizations by sharing and
-                communicating compiled information. NIMS provides standardized vocabulary, systems
-                and processes, and are large players when it comes to training and education.
-                [12]</para>
-            <para>The National Emergency Response Information System (NERIS) is another example of
-                system that employs interoperable data and information into an analytics platform
-                used by the U.S. Fire Administration to support decision making. [13] Information
-                and data from fire departments across the country in integrated into the system, and
-                these departments can then access timely and accurate data to provide actionable
-                intelligence. </para>
+            and post emergency. Knowledge management and communications is critical during all
+            stages of preparedness. In the pre-emergency timeframe, during the mitigation and
+            preparedness stages of emergency management, knowledge management can be used to
+            bolster training and education. For example, FEMA’s Emergency Management Institute
+            (EMI) offers online training courses for emergency preparedness through its
+            partnership with affiliated centers. [11] Training and education of first responders
+            can help orient and prepare those involved once and emergency occurs, and is a core
+            tenant of knowledge management best practices. </para>
+        <para>Another example of a national approach to emergency knowledge management is FEMA’s
+            National Incident Management System (NIMS). NIMS is an example of a system that uses
+            knowledge management to integrate resources across organizations by sharing and
+            communicating compiled information. NIMS provides standardized vocabulary, systems
+            and processes, and are large players when it comes to training and education.
+            [12]</para>
+        <para>The National Emergency Response Information System (NERIS) is another example of
+            system that employs interoperable data and information into an analytics platform
+            used by the U.S. Fire Administration to support decision making. [13] Information
+            and data from fire departments across the country in integrated into the system, and
+            these departments can then access timely and accurate data to provide actionable
+            intelligence. </para>
     </section>
     <section>
         <title>IKM In Emergency Response</title>
@@ -127,47 +127,48 @@
             and crowdsourcing framework for emergency preparedness. </para>
         <section>
             <title>The COVID-19 Pandemic and IKM</title>
-                <para>During the COVID-19 pandemic the absence of interoperable laboratory data was
-                a challenge to response efforts. The lack of interoperable data during the pandemic
+            <para>During the COVID-19 pandemic the absence of interoperable laboratory data was a
+                challenge to response efforts. The lack of interoperable data during the pandemic
                 showcased the inability of the government to properly estimate disease incidence and
                 other metrics, ultimately cascading into inadequate communications and erosion in
                 the public’s trust. The Coronavirus Aid, Relief, and Economic Security (CARES) Act
                 (P.L. 116-136) was established to require laboratories to report COVID-19 test
-                results to the United States (U.S.) Health and Human Services (HHS) Secretary. [14]
-                <?oxy_comment_start author="tocrow" timestamp="20240724T125504-0400" comment="Check acronym"?>SHIELD<?oxy_comment_end?>
-                developed the LOINC® to IVD (LIVD) mapping specifications for IVDs for SARS-CoV-2
-                diagnostic use, and in 2020 HHS ordered the use of LIVD test results provided to
-                SHIELD. A study of five medical centers that used LIVD concluded there is potential
-                for LIVD to improve semantic interoperability and data quality of LIS data. Although
-                the benefit of LIVD is well documented, further efforts to promote its widespread
-                use to achieve true laboratory interoperability are desirable. [15]</para>
-        <para>The pandemic also pushed forward other new technologies to help facilitate the
-            response through the introduction and expansion of Artificial intelligence (AI). One of
-            the main issues facing emergency responders and the public during the pandemic was the
-            inability of policy and communications to efficiently update when new data and
-            information was made available. Dealing with inaccurate, unreliable, and incomplete data
-            all contributed to a flat emergency response effort. [16,17] Interoperability challenges
-            were part of lessons learned from the COVID-19 pandemic, and fostered advacnements in AI
-            and advanced analytics.</para>
-        <para>AI trains machines to learn from experience, taking new inputs and performing
-            human-like tasks in logically programmed sequence with advanced analytics. As a result
-            of rapidly developing AI, generative AI, a category of AI system that is able to produce
-            meaningful content of its own, is known to be far superior to the traditional role of AI
-            that primarily deals with numeric data with a limited amount of text. This generative AI
-            has become a powerful tool to leverage existing data for enhancing data analysis and
-            decision-making steps. Generative AI can touch on many parts of emergency response and
-            preparedness, including optimizing resource allocation, creating alerts based on
-            environmental scans, enhancing trainings and educational initiatives. [18]</para>
-        <para>Although AI is a powerful tool in the field of Emergency Response &amp; Preparedness,
-            the output of AI is solely dependent on the quality of numerical data with limited
-            texts. Even with the existence of generative AI and its advanced outputs, public health
-            institutions in the U.S. must navigate through a complex web of data paths with limited
-            interoperability and data access. For example, more than a third of public health
-            agencies were unable to access surveillance data during the COVID-19 pandemic, hampering
-            their response. [19] </para>
-        <para>IKM can help unlock the full power of AI by ensuring data is of high quality,
-            complete, reliable, and interoperable. [20] </para>
-    </section>
+                results to the United States Health and Human Services (HHS) Secretary. [14]
+                Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
+                developed the LOINC® to In vitro Diagnostics (LIVD) mapping specifications for IVDs
+                for SARS-CoV-2 diagnostic use, and in 2020 HHS ordered the use of LIVD test results
+                provided to SHIELD. A study of five medical centers that used LIVD concluded there
+                is potential for LIVD to improve semantic interoperability and data quality of LIS
+                data. Although the benefit of LIVD is well documented, further efforts to promote
+                its widespread use to achieve true laboratory interoperability are desirable.
+                [15]</para>
+            <para>The pandemic also pushed forward other new technologies to help facilitate the
+                response through the introduction and expansion of Artificial intelligence (AI). One of
+                the main issues facing emergency responders and the public during the pandemic was the
+                inability of policy and communications to efficiently update when new data and
+                information was made available. Dealing with inaccurate, unreliable, and incomplete data
+                all contributed to a flat emergency response effort. [16,17] Interoperability challenges
+                were part of lessons learned from the COVID-19 pandemic, and fostered advacnements in AI
+                and advanced analytics.</para>
+            <para>AI trains machines to learn from experience, taking new inputs and performing
+                human-like tasks in logically programmed sequence with advanced analytics. As a result
+                of rapidly developing AI, generative AI, a category of AI system that is able to produce
+                meaningful content of its own, is known to be far superior to the traditional role of AI
+                that primarily deals with numeric data with a limited amount of text. This generative AI
+                has become a powerful tool to leverage existing data for enhancing data analysis and
+                decision-making steps. Generative AI can touch on many parts of emergency response and
+                preparedness, including optimizing resource allocation, creating alerts based on
+                environmental scans, enhancing trainings and educational initiatives. [18]</para>
+            <para>Although AI is a powerful tool in the field of Emergency Response &amp; Preparedness,
+                the output of AI is solely dependent on the quality of numerical data with limited
+                texts. Even with the existence of generative AI and its advanced outputs, public health
+                institutions in the U.S. must navigate through a complex web of data paths with limited
+                interoperability and data access. For example, more than a third of public health
+                agencies were unable to access surveillance data during the COVID-19 pandemic, hampering
+                their response. [19] </para>
+            <para>IKM can help unlock the full power of AI by ensuring data is of high quality,
+                complete, reliable, and interoperable. [20] </para>
+        </section>
     </section>
     <section>
         <title>Conclusion</title>
@@ -204,7 +205,7 @@
                 >https://www.cdc.gov/niosh/topics/emres/natural.html#:~:text=Natural%20disasters%20can%20cause%20great,volcanic%20eruptions%2C%20and%20extreme%20temperatures</link>.</para>
         <para>3. JCAT. Counter Terrorism Guide for Public Safety Personnel [Internet]. U.S. Office
             of the Director of National Intelligence; 2-24 [cited 2024 April 10]. Available from
-                <link xlink:href="https://www.dni.gov/nctc/jcat/index.html"
+            <link xlink:href="https://www.dni.gov/nctc/jcat/index.html"
                 >https://www.dni.gov/nctc/jcat/index.html</link></para>
         <para>4. International Atomic Energy Agency. Frequently Asked Chernobyl Questions
             [Internet]. IAEA; 2023 [cited 2024 April 11]. Available from <link
@@ -222,7 +223,7 @@
                 >https://www.fema.gov/press-release/20240401/fema-commemorates-45-years-emergency-management</link></para>
         <para>7. The 9/11 Commission Report: Final Report of the National Commission on Terrorist
             Attacks Upon the United States. Washington DC: W. W. Norton &amp; Company. 2004. p. 397.
-                <link xlink:href="https://en.wikipedia.org/wiki/ISBN_(identifier)">ISBN</link>
+            <link xlink:href="https://en.wikipedia.org/wiki/ISBN_(identifier)">ISBN</link>
             <link xlink:href="https://en.wikipedia.org/wiki/Special:BookSources/0393326713"
                 >0393326713</link>. </para>
         <para>8. FEMA. History of FEMA [Internet]. www.fema.gov. 2021. Available from:
@@ -281,4 +282,3 @@
     </section>
     
 </chapter>
-        

@@ -25,12 +25,13 @@
             and recommendations for improvement. [4] An IKM approach is intended to achieve
             institutional goals through continuous quality improvement, a focus on efficiency,
             collaboration, and transparency.</para>
-        <para><emphasis role="bold">Tinkar</emphasis> is an IKM framework designed to manage and
-            standardize healthcare terminology. It ensures the consistency and accuracy of medical
-            records, which is crucial for effective communication, treatment planning, and clinical
-            decision making. Tinkar plays a vital role in data interoperability and accuracy,
-            supporting healthcare organizations as they manage standard terminology modules, value
-            sets, coding systems, local terms, and equivalence mappings.</para>
+        <para><emphasis role="bold">Terminology Knowledge Architecture (Tinkar)</emphasis> is an IKM
+            framework designed to manage and standardize healthcare terminology. It ensures the
+            consistency and accuracy of medical records, which is crucial for effective
+            communication, treatment planning, and clinical decision making. Tinkar plays a vital
+            role in data interoperability and accuracy, supporting healthcare organizations as they
+            manage standard terminology modules, value sets, coding systems, local terms, and
+            equivalence mappings.</para>
         <para>Training healthcare staff is a critical component of healthcare QI and the healthcare
             delivery process. Healthcare professionals must be trained on patient safety and quality
             improvement methods to safely and effectively operate within increasingly complex work
@@ -145,7 +146,7 @@
                 amounts of "indirect" evidence including ethical perspectives, common sense, and
                 feasibility will influence the guidelines. In these evolving emergency response
                 situations, knowledge and data is less organized indicating a strong need for
-                comprehensive and accurate IKM practices. [8,9]</para>
+                comprehensive and accurate IKM practices. [8-9]</para>
             <para>Gathering strong evidence is only part of the effort needed to create effective
                 policy; knowledge translation and integration of interventions is also an essential
                 component. This is often known as the research-to-policy gap, and can affect any
@@ -247,7 +248,7 @@
                 learning not only facilitates improved diagnoses, treatment, communication, and
                 patient outcomes, but also supports workflow and operation optimization, process
                 improvement, and business outcomes for other professionals and organizations
-                involved in patient care. [12, 13] For instance, Certified Nursing Assistants and
+                involved in patient care. [12-13] For instance, Certified Nursing Assistants and
                 other nursing home healthcare personnel were provided an interactive educational
                 program regarding infection prevention and control (IPC). Following each module, IPC
                 knowledge scores were recorded and showed significant improvement. Not only did this
@@ -258,7 +259,7 @@
             <para>Beyond training for healthcare professionals, healthcare education for patients is
                 critical and its impact is well documented, resulting in significant health outcomes
                 for prevention and control of obesity, reduction of tobacco use in adolescents, and
-                more. [15, 16] Low healthcare literacy can lead to lower overall health outcomes,
+                more. [15-16] Low healthcare literacy can lead to lower overall health outcomes,
                 misuse of medication, overall misunderstanding of health information, and longer
                 wait times to seek treatment, which itself can compound health problems. By
                 improving health literacy through expanded healthcare education, patients will have
@@ -337,16 +338,16 @@
         <para>Implementing IKM and Tinkar in healthcare organizations will involve several key
             steps. The first step is an assessment of current systems to evaluate existing knowledge
             management and data systems to identify gaps and areas for improvement. It is important
-            to involve key stakeholders, including healthcare providers, IT professionals, and
-            administrators, to ensure alignment and support. Our team can also prepare healthcare
-            systems for the implementation of IKM and Tinkar by developing a strategic plan that
-            outlines the goals, timelines, resources, and responsibilities for implementing IKM and
-            Tinkar. Training and education should be provided for healthcare professionals and IT
-            staff on the new systems and processes to ensure the success of the implementation.
-            Throughout the implementation, thorough and continual testing of the new systems will
-            need to take place to ensure they meet the required standards and are user-friendly. As
-            the process evolves, continuous monitoring of the systems is necessary to measure
-            effectiveness and make necessary adjustments.</para>
+            to involve key stakeholders, including healthcare providers, Information Technology (IT)
+            professionals, and administrators, to ensure alignment and support. Our team can also
+            prepare healthcare systems for the implementation of IKM and Tinkar by developing a
+            strategic plan that outlines the goals, timelines, resources, and responsibilities for
+            implementing IKM and Tinkar. Training and education should be provided for healthcare
+            professionals and IT staff on the new systems and processes to ensure the success of the
+            implementation. Throughout the implementation, thorough and continual testing of the new
+            systems will need to take place to ensure they meet the required standards and are
+            user-friendly. As the process evolves, continuous monitoring of the systems is necessary
+            to measure effectiveness and make necessary adjustments.</para>
         <para>Implementing IKM and Tinkar in healthcare settings can face several challenges. Many
             organizations face difficulties implementing new processes simply due to resistance to
             change. Addressing resistance by involving staff in the planning process and clearly

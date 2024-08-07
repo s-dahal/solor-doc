@@ -5,17 +5,16 @@
     <title>Global Health and International Collaboration</title>
     <section>
         <title>IKM Relevance to Global Health and International Collaboration</title>
-        <para>Before shifting our discussion to the topic of health and Integrated Knowledge
-            Management (IKM) collaboration at the global scale, the intention of this section is to
-            take a moment to summarize our discussion at the national level before discussing
-            various aspects of international collaboration. The previous parts of this work define
-            the importance of IKM in healthcare to achieve coordinated and standardized ways to
-            integrate healthcare data across systems. In addition, the volume series on <link
-                xlink:href="http://ikm.dev">IKM.dev</link> explore the course of data management in
-            various service lines, highlighting emerging IT challenges and legal issues for
-            maintaining and exchanging healthcare data. We can summarize the challenges we have
-            discussed in two main areas: a challenge in the clinical setting and a challenge in the
-            laboratory setting. </para>
+        <para>Before shifting our discussion to the topic of health and IKM collaboration at the
+            global scale, the intention of this section is to take a moment to summarize our
+            discussion at the national level before discussing various aspects of international
+            collaboration. The previous parts of this work define the importance of IKM in
+            healthcare to achieve coordinated and standardized ways to integrate healthcare data
+            across systems. In addition, the volume series on <link xlink:href="http://ikm.dev"
+                >IKM.dev</link> explore the course of data management in various service lines,
+            highlighting emerging IT challenges and legal issues for maintaining and exchanging
+            healthcare data. We can summarize the challenges we have discussed in two main areas: a
+            challenge in the clinical setting and a challenge in the laboratory setting. </para>
         <para>In the clinical setting, Healthcare IT is intended to ease provider workload and
             ultimately improve patient care. However, the current inconsistencies can impact patient
             safety, provider efficiency, and other areas of patient care. For example, a patient’s
@@ -34,10 +33,10 @@
             numerous systems while maintaining the data’s original structure and meaning. However,
             ever-increasing system complexity and reliance on low-quality data has ultimately
             decreased the quality of care across the healthcare ecosystem. While lab data is
-            analyzed and transferred from the Laboratory Information System (LIS) to Provider
-            Electronic Health Records (EHRs) to appropriate end users, much of the meaning of the
-            original report is lost. Only 22 - 26% of the single-trip data integrity is achieved,
-            highlight the need for greater interoperability standards. [1]</para>
+            analyzed and transferred from the Laboratory Information System (LIS) to Provider EHRs
+            to appropriate end users, much of the meaning of the original report is lost. Only 22 -
+            26% of the single-trip data integrity is achieved, highlight the need for greater
+            interoperability standards. [1]</para>
         <para>Efforts to standardize clinical terminology systems is often impacted by data siloes
             and incompatible Healthcare IT systems that make data difficult to exchange and
             interpret at a national level. [2] Health information specialists around the world noted
@@ -85,11 +84,10 @@
             personnel to send to Latin America and the Caribbean to treat “tropical diseases”.
             [9]</para>
         <para>After World War II, the UN was formed and approved a constitution for the formation of
-            the World Health Organization (WHO) that provided a wide range of aid to developing
-            countries in the midst of the Cold War. After World War II, the creation and
-            participation of non-governmental organizations (NGOs), such as the International
-            Monetary Fund (IMF) and the World Bank, increased to support re-building global
-            infrastructure in the post-war era. [10] [11] </para>
+            the WHO that provided a wide range of aid to developing countries in the midst of the
+            Cold War. After World War II, the creation and participation of NGOs, such as the
+            International Monetary Fund (IMF) and the World Bank, increased to support re-building
+            global infrastructure in the post-war era. [10] [11] </para>
         <para> Much of global health in the earlier years was shaped around tropical medicine and
             the public health work of overseas colonies. This trend was expanded to the work of
             medical missions and military medicine that provided a strong foundation for
@@ -103,25 +101,25 @@
             of the national Academies of Sciences, Engineering, and Medicine chose to coin the term,
                 <emphasis role="italic">electronic health records</emphasis>, with the goal of
             computerizing medical records to improve safety and quality of patient-centered care. In
-            2005, the World Health Assembly adopted the resolution WHA58.28 on eHealth and urged
-            Member States “to consider drawing up a long-term strategic plan for developing and
-            implementing eHealth services… to develop the infrastructure for information and
-            communication technologies for health … to promote equitable, affordable and universal
-            access to their benefits.” [13] Passing this resolution encouraged more than 120 Member
-            States, including low-and middle-income countries, to direct their efforts towards
-            implementing eHealth to meet their country’s health priorities and resources through
-            action-oriented steps. </para>
+            2005, the World Health Assembly adopted the resolution WHA58.28 on electronic Health
+            (eHealth) and urged Member States “to consider drawing up a long-term strategic plan for
+            developing and implementing eHealth services… to develop the infrastructure for
+            information and communication technologies for health … to promote equitable, affordable
+            and universal access to their benefits.” [13] Passing this resolution encouraged more
+            than 120 Member States, including low-and middle-income countries, to direct their
+            efforts towards implementing eHealth to meet their country’s health priorities and
+            resources through action-oriented steps. </para>
         <para>The U.S. federal government’s announcement of Health Information Technology for
             Economic and Clinical Health (HITECH) Act in 2009 set aside $27 billion for an incentive
             program that encouraged hospitals and healthcare systems to adopt EHRs. [14] In 2010,
-            WHO and Systematized Nomenclature of Medicine (SNOMED) International initiated a formal
-            collaborative relationship. SNOMED International and WHO began aligning their respective
-            standards by enabling SNOMED CT® users to use WHO classifications, creating a joint and
-            interoperable medical terminology system. [15] </para>
-        <para>Additional U.N. Health Assembly sessions in 2013 and 2018 continued encouraging Member
-            States to adopt eHealth strategies and identify priority areas, creating online public
-            forums, providing technical consultations, and utilizing WHO regional committees to
-            improve the global strategy on digital health. [16] </para>
+            WHO and SNOMED International initiated a formal collaborative relationship. SNOMED
+            International and WHO began aligning their respective standards by enabling SNOMED CT®
+            users to use WHO classifications, creating a joint and interoperable medical terminology
+            system. [15] </para>
+        <para>Additional United Nations Health Assembly sessions in 2013 and 2018 continued
+            encouraging Member States to adopt eHealth strategies and identify priority areas,
+            creating online public forums, providing technical consultations, and utilizing WHO
+            regional committees to improve the global strategy on digital health. [16] </para>
         <para>Below is a list of several international organizations that have joined collective
             efforts to achieve standardization in a particular domain of healthcare and are actively
             collaborating with one another worldwide. While this list provides some key examples, it
@@ -152,20 +150,20 @@
         </section>
         <section>
             <title>Health Level Seven International (HL7)</title>
-            <para>Founded in 1987, HL7 is a not-for-profit standard-development organization that
-                provides a digital framework and relevant standards “for the exchange, integration,
-                sharing and retrieval of electronic health information that supports clinical
-                practice and the management, delivery and evaluation of health services.” [20] HL7
-                collaborates with over 25 benefactors from both private and public spheres across
-                the US and around the world. </para>
+            <para>Founded in 1987, Health Level Seven International (HL7) is a not-for-profit
+                standard-development organization that provides a digital framework and relevant
+                standards “for the exchange, integration, sharing and retrieval of electronic health
+                information that supports clinical practice and the management, delivery and
+                evaluation of health services.” [20] HL7 collaborates with over 25 benefactors from
+                both private and public spheres across the US and around the world. </para>
         </section>
         <section>
             <title>Integrating the Healthcare Enterprise (IHE)</title>
-            <para>IHE is an international organization with the vision of “enabling seamless and
-                secure access to health information that is usable whenever and wherever needed”.
-                Established in 17 countries around the globe with IHE national deployment committees
-                and other stakeholder organizations from 21 countries, members come from four main
-                sources: </para>
+            <para>Integrating the Healthcare Enterprise (IHE) is an international organization with
+                the vision of “enabling seamless and secure access to health information that is
+                usable whenever and wherever needed”. Established in 17 countries around the globe
+                with IHE national deployment committees and other stakeholder organizations from 21
+                countries, members come from four main sources: </para>
             <orderedlist>
                 <listitem>
                     <para>Health IT and Consulting Companies</para>
@@ -187,17 +185,18 @@
         <section>
             <title>International Council for Harmonization of Technical Requirements for
                 Pharmaceuticals for Human Use (ICH)</title>
-            <para>ICH owns a Medical Dictionary for Regulatory Activities (MedDRA) in the United
-                Kingdom and supports the approval of regulatory activities for medical devices by
-                developing highly specific standardized medical terminology to facilitate sharing of
-                regulatory information globally. ICH uses MedDRA to catalyze the process of
-                registration, documentation, and safety monitoring of medical products before and
-                after a medical device is fully authorized for use. MedDRA focuses on key
-                pharmacovigilance terms from the European Medicines Agency and the UK’s Medicines
-                &amp; Healthcare products Regulatory Agency. [22]</para>
+            <para>International Council for Harmonization of Technical Requirements for
+                Pharmaceuticals for Human Use (ICH) owns a Medical Dictionary for Regulatory
+                Activities (MedDRA) in the United Kingdom and supports the approval of regulatory
+                activities for medical devices by developing highly specific standardized medical
+                terminology to facilitate sharing of regulatory information globally. ICH uses
+                MedDRA to catalyze the process of registration, documentation, and safety monitoring
+                of medical products before and after a medical device is fully authorized for use.
+                MedDRA focuses on key pharmacovigilance terms from the European Medicines Agency and
+                the UK’s Medicines &amp; Healthcare products Regulatory Agency. [22]</para>
         </section>
         <section>
-            <title>Logical Observation Identifiers Names and Codes® (LOINC®)</title>
+            <title>LOINC®</title>
             <para>As we have discussed in the previous chapters, LOINC®, is an effort by the
                 Regenstrief Institute, a non-profit international research organization that
                 successfully collaborated with SNOMED International. The collaboration resulted in
@@ -212,13 +211,12 @@
         <section>
             <title>SNOMED International</title>
             <para>SNOMED started in 1965 as a Systematized Nomenclature Pathology (SNOP) and created
-                SNOMED CT® in 1991 and SNOMED International in 2007. [24] The Systematized Medical
-                Nomenclature for Medicine (SNOMED) International is the trading name for a
-                not-for-profit organization called The International Health Terminology Standards
-                Development Organization (IHTSDO). [25] The purpose of IHTSDO is to support safe,
-                accurate, and effective health information exchange, with over 29 member countries
-                that support four major areas; customer relations, operations, products and
-                services, and strategy.</para>
+                SNOMED CT® in 1991 and SNOMED International in 2007. [24] SNOMED International is
+                the trading name for a not-for-profit organization called The International Health
+                Terminology Standards Development Organization (IHTSDO). [25] The purpose of IHTSDO
+                is to support safe, accurate, and effective health information exchange, with over
+                29 member countries that support four major areas; customer relations, operations,
+                products and services, and strategy.</para>
         </section>
     </section>
     <section>
@@ -227,21 +225,21 @@
             technology.</para>
         <section>
             <title>Current Procedural Terminology (CPT®) </title>
-            <para>CPT® is a code set by the American Medical Association to bill outpatient and
-                office procedure. [27] </para>
+            <para>Current Procedural Terminology (CPT®) is a code set by the American Medical
+                Association to bill outpatient and office procedure. [27] </para>
         </section>
         <section>
             <title>Healthcare Common Procedure Coding System (HCPCS)</title>
-            <para>The Centers for Medicare and Medicaid Services (CMS) generates the HCPCS, a
-                collection of standardized codes that represent medical procedures, supplies,
-                products and services. Health insurance entities utilize the HCPCS to process claims
-                by Medicare and other insurers. Level I of HCPCS consists of Current Procedural
-                Terminology® (HCPT). Level II of HCPCS includes the Current Dental Terminology (HDT)
-                codes. [28] </para>
+            <para>The Centers for Medicare and Medicaid Services (CMS) generates the Healthcare
+                Common Procedure Coding System (HCPCS), a collection of standardized codes that
+                represent medical procedures, supplies, products and services. Health insurance
+                entities utilize the HCPCS to process claims by Medicare and other insurers. Level I
+                of HCPCS consists of Current Procedural Terminology® (HCPT). Level II of HCPCS
+                includes the Current Dental Terminology (HDT) codes. [28] </para>
         </section>
         <section>
             <title>Tenth Revision International Classification of Disease (ICD-10)</title>
-            <para>The tenth revision of the International Classification of Disease (ICD) is
+            <para>The tenth revision of the International Classification of Disease (ICD-10) is
                 designed primarily for validating mortality statistics. ICD-10 promotes
                 international comparability for collecting, processing, classifying and presenting
                 mortality data. ICD-10 consists of tabular lists containing cause-of-death titles
@@ -274,11 +272,11 @@
         </section>
         <section>
             <title>Radiology Lexicon (RadLex)</title>
-            <para>RadLex is a radiology terminology system by the Radiologic Society of North
-                America (RSNA). It is a reservoir for a unified language of radiology terms for
-                standardized indexing and retrieval of radiologic information resources. It unifies
-                and supplements other lexicons and standards including SNOMED CT® and DICOM. [15]
-            </para>
+            <para>Radiology Lexicon (RadLex) is a radiology terminology system by the Radiologic
+                Society of North America (RSNA). It is a reservoir for a unified language of
+                radiology terms for standardized indexing and retrieval of radiologic information
+                resources. It unifies and supplements other lexicons and standards including SNOMED
+                CT® and DICOM. [15] </para>
         </section>
         <section>
             <title>RxNorm</title>
@@ -290,7 +288,7 @@
                 2001 and has continued to grow the effort with collaboration from HL7. [15] </para>
         </section>
         <section>
-            <title>SNOMED Clinical Terms® CT (SNOMED CT®)</title>
+            <title>SNOMED CT®</title>
             <para>SNOMED CT® was created in 1999 and released in 2002. The Systematized Nomenclature
                 of Pathology (SNOP), founded in 1965, is the origin of SNOMED that developed its own
                 terminology system and gave the name SNOMED CT® that has been widely used in the
@@ -299,7 +297,7 @@
                 systems installed in medical settings. [15] </para>
         </section>
         <section>
-            <title>UCUM</title>
+            <title>United Code for Units of Measure (UCUM)</title>
             <para>The United Code for Units of Measure (UCUM) is a code system intended to include
                 all units of measures being contemporarily used in international science,
                 engineering, and business. [15] </para>
@@ -364,12 +362,12 @@
                 a difficult question. [36] </para>
             <para>The next challenge is that efforts to improve interoperability require extensive
                 research, trial and error, time, and resources to create a successful model. The
-                desire to achieve interoperable EHRs or EMRs has been around for a long time in many
-                developed countries like the United States, Canada, and United Kingdom, but even in
-                these developed countries, the existing EMR has a long way to go to achieve the data
-                quality needed to provide safe patient care and improve provider satisfaction. [36]
-                Even before discussing interoperability, rolling out EHRs can pose a challenge in
-                many countries. </para>
+                desire to achieve interoperable EHRs or Electronic Medical Records (EMRs) has been
+                around for a long time in many developed countries like the United States, Canada,
+                and United Kingdom, but even in these developed countries, the existing EMR has a
+                long way to go to achieve the data quality needed to provide safe patient care and
+                improve provider satisfaction. [36] Even before discussing interoperability, rolling
+                out EHRs can pose a challenge in many countries. </para>
             <para>Third, we need to provide a more equitable approach for middle or low-income
                 countries, instead of merely generalizing the implementation of IKM with the promise
                 of unconditionally improving the quality of medical care. [36]. Some countries do
