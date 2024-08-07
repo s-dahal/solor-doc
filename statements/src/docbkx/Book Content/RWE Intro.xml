@@ -3,15 +3,15 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
-    <title>Real World Data Intro</title>
-        <para>The following chapters explore real world data (data collected from patients) and how
-            it’s application in various fields of healthcare can affect patient care. This book has
-            presented thus far the current state of data interoperability and how and integrated
-            knowledge management environment can enable seamless translation of data from one system
-            to the next. This collection of chapters includes aims to shed light on topics across
-            the healthcare spectrum from patient data privacy to emergency preparedness and how the
-            application of IKM can enhance the use of data in these fields. These topics revolve
-            around the singular goal of harnessing the power of real time data to inform decision
-            making. The power of RWD can impact decision making, from medical ethics to policy
-            formation, and can enhance patient care and quality in the long run. </para>
+    <title>Real World Data Introduction</title>
+        <para>The following chapters explore real world data (RWD) (data collected from patients)
+        and how it’s application in various fields of healthcare can affect patient care. This book
+        has presented thus far the current state of data interoperability and how and integrated
+        knowledge management environment can enable seamless translation of data from one system to
+        the next. This collection of chapters includes aims to shed light on topics across the
+        healthcare spectrum from patient data privacy to emergency preparedness and how the
+        application of Integrated Knowledge Management (IKM) can enhance the use of data in these
+        fields. These topics revolve around the singular goal of harnessing the power of real time
+        data to inform decision making. The power of can impact decision making, from medical ethics
+        to policy formation, and can enhance patient care and quality in the long run. </para>
 </chapter>
