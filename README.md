@@ -96,3 +96,7 @@ Contact **Keith Campbell** for write priviliges.
 Technical and non-technical issues can be reported to the Issue Tracker (LINK TO ISSUE TRACKER ONCE PUT IN REPO).
 
 Contributions can be submitted via pull requests. Please check the [contribution guide](CONTRIBUTING.md) for more details.
+
+## New Workflow
+
+Just testing a new workflow with the doc team.
