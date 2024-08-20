@@ -4,6 +4,9 @@
 
 This repository is to provide for collaborative development of documentation for **I**nformatic**S** **A**rchitecture **AC**celeration's (ISAAC) **K**n**O**wledge **M**anagement **E**nvironmen**T** (KOMET). 
 
+### Team Ownership - Product Owner
+Automation Team, authored by Tinkar Engineering Team
+
 ## How do I get set up? ##
 
 ### Viewing generated KOMET Compendium PDF and HTML files ###
