@@ -4,10 +4,9 @@
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
       <title>Procedural Knowledge Representation</title>
-    <para>Generally, Procedural Knowledge can pertain to Clinical Decision Support (CDS), e.g.: </para>
-    <para>• Standard ways of performing a procedure</para>
-    <para>• Treatment protocols for diseases</para>
-    <para>• Standard evidence-based Order Sets</para>
+    <para>Generally, Procedural Knowledge can pertain to Clinical Decision Support (CDS), such as
+        standard ways of performing a procedure, treatment protocols for diseases, and standard
+        evidence-based Order Sets.</para>
     <para>Applied Procedural Knowledge can enable the use of CDS, Clinical Pathways, and Knowledge
         Artifacts (KNARTs), that standardize patient documentation, quality improvement
         interventions, and protocols focused on specific clinical domains and patient
@@ -124,15 +123,16 @@
                 </listitem>
             </orderedlist>
         </para>
-        <para>In order for the vision of the AMIA CDS Roadmap Steering Committee to be achieved, the
-            science of CDS needs to support implementers, clinicians, and technology vendors in
-            developing CDS tools that are shareable, standards-based, publicly-available, and
-            patient-centered. Namely, the translation of evidence-based clinical practice guidelines
-            into implementable clinical tools needs to occur in a manner that is consistent,
-            systematic, and comprehensive. There have been a number of historical efforts that have
-            aimed to achieve interoperable and robust CDS tools and artifacts that appropriately
-            translate guidelines into care. The AHRQ depicts the following image representing the
-            “CDS lifecycle” for the following areas: [1]<itemizedlist>
+        <para>In order for the vision of the American Medical Informatics Association (AMIA) CDS
+            Roadmap Steering Committee to be achieved, the science of CDS needs to support
+            implementers, clinicians, and technology vendors in developing CDS tools that are
+            shareable, standards-based, publicly-available, and patient-centered. Namely, the
+            translation of evidence-based clinical practice guidelines into implementable clinical
+            tools needs to occur in a manner that is consistent, systematic, and comprehensive.
+            There have been a number of historical efforts that have aimed to achieve interoperable
+            and robust CDS tools and artifacts that appropriately translate guidelines into care.
+            The AHRQ depicts the following image representing the “CDS lifecycle” for the following
+            areas: [1]<itemizedlist>
                 <listitem>
                     <para>Authoring CDS tools and artifacts that leverage knowledge sources such as
                         clinical practice guidelines, quality measure specifications, and
@@ -153,7 +153,7 @@
                 <title>CDS Connect Lifestyle</title>
                 <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/CDS%20Connect%20Lifestyle.svg" align="center" scale="50"/>
+                    <imagedata fileref="../images/CDS%20Connect%20Lifestyle.svg" align="center" scale="50"/>
                 </imageobject>
             </mediaobject>
             </figure>
@@ -167,8 +167,9 @@
                     clinical decision support given the lack of standardization relating to how we
                     encode data?</emphasis></emphasis> We will discuss the challenges faced by
             authors, implementers and evaluators of CDS implementations by considering the following
-            example of a CDS intervention by Adam Wright et al in the NIH-funded Improving Quality
-            by Making an Accurate Problem List in the Electronic Health Record (EHR)
+            example of a CDS intervention by Adam Wright et al in the National Institue of Health
+            (NID)-funded Improving Quality by Making an Accurate Problem List in the Electronic
+            Health Record (EHR)
             (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T100713-0500" comment="Improving Quality by Maintaining Accurate Problems in the EHR - Full Text View - ClinicalTrials.gov [Internet]. clinicaltrials.gov. [cited 2023 Dec 12]. Available from: https://classic.clinicaltrials.gov/ct2/show/NCT02596087
 
 this is the actual clinical trial that we are citing, not sure if any papers came out of it 
@@ -187,17 +188,20 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             in the EHR and natural language processing on unstructured data. Then, they created CDS
             rules for suggesting conditions to add to a patient’s problem list that may have included:<itemizedlist>
                 <listitem>
-                    <para>queries for the presence or absence of a diagnosis code (e.g., ICD-10CM,
-                        SNOMED CT® value sets by key condition) included in a patient’s problem list
-                        or encounter diagnosis.</para>
+                    <para>queries for the presence or absence of a diagnosis code (e.g.,
+                        International Classification of Diseases, Tenth Revision, Clinical
+                        Modification [ICD-10CM], Systematized Nomenclature of Medicine--Clinical
+                        Terms [SNOMED CT®] value sets by key condition) included in a patient’s
+                        problem list or encounter diagnosis.</para>
                 </listitem>
                 <listitem>
-                    <para>queries looking for currently active medications (e.g., RXCUI value sets
-                        by medication classes) in the patient’s record.</para>
+                    <para>queries looking for currently active medications (e.g., RxNorm Concept
+                        Unique Identifiers [RXCUI] value sets by medication classes) in the
+                        patient’s record.</para>
                 </listitem>
                 <listitem>
-                    <para>queries for lab values (e.g., LOINC® value sets) that are within a
-                        specified range.</para>
+                    <para>queries for lab values (e.g., Logical Observation Identifiers Names and
+                        Codes [LOINC®] value sets) that are within a specified range.</para>
                 </listitem>
                 <listitem>
                     <para>various combinations and compound queries made up of the aforementioned
@@ -349,19 +353,20 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             comparison of value set implementations or to assess the impact of inter-organizational
             updates to standard clinical terminologies over time. It could also be used to detect
             changes to CDS expression logic or rule changes and study the impact on the clinical
-            data prior to deployment to better understand the impact of proposed updates. </para>
+            data prior to deployment to better understand the impact of proposed updates.
+            [14]</para>
         <section>
             <title>Metrics for Monitoring CDS Implementations before and after Go-Live
                 Deployment</title>
             <para>This section will describe quality metrics for monitoring CDS performance. The ONC
                 and NAM report highlighted the impetus for measuring whether CDS interventions are
-                working: “ To optimize CDS and increase adoption and acceptance, it will be critical
+                working: “To optimize CDS and increase adoption and acceptance, it will be critical
                 to determine which interventions are firing at the appropriate times and are then
                 accepted by the clinical care team and patients and changing care for the better.
                 This capability will be important at both the local and national scale if the goal
                 is to reduce the burden on providers and health systems to each identify important
                 lessons on their own." The following table shows examples of measures to determine
-                the impact of CDS interventions. [14]   <table frame="all">
+                the impact of CDS interventions. [14] <table frame="all">
                     <title>Examples of Measures Commonly Captured to Measure the Effects of CDS
                         Interventions </title>
                     <tgroup cols="2">
@@ -402,15 +407,10 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                                 <entry>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>Alert use, rate of alerts firing alert
-                                                overrides</para>
-                                            <itemizedlist>
-                                                <listitem>
-                                                  <para>Number of times CDS alerts happen: (e.g.,
-                                                  absolute counts, central tendency, percent change
-                                                  over time)</para>
-                                                </listitem>
-                                            </itemizedlist>
+                                            <para>Alert use, rate of alerts firing alert overrides,
+                                                number of times CDS alerts happen (e.g., absolute
+                                                counts, central tendency, percent change over
+                                                time)</para>
                                         </listitem>
                                     </itemizedlist>
                                 </entry>
@@ -567,11 +567,11 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             <listitem>
                 <para><emphasis role="bold">Standardization Related to how we Encode and Represent
                         Clinical Data</emphasis></para>
-                <para>The underlying clinical data that feeds into CDS tools, interventions, and
-                    deployments must be represented, version-controlled, and encoded in a
-                    consistent, comprehensive, and systematic way. </para>
             </listitem>
         </itemizedlist>
+        <para>The underlying clinical data that feeds into CDS tools, interventions, and deployments
+            must be represented, version-controlled, and encoded in a consistent, comprehensive, and
+            systematic way. </para>
         <section>
             <title>Best Practices for CDS Knowledge Management</title>
             <para>Below are some suggestions for <emphasis role="underline">Best Practices for CDS
@@ -760,8 +760,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             There were some notable efforts such as Guideline Interchange Format (GLIF), PROforma,
             SAGE, and GEM, which aimed to incorporate a guideline’s logic into the executable part
             of decision logic, however these languages suffered due to a lack of maturity of
-            standards to integrate the guideline engines into EHRs directly.
-                [19]<citation> </citation></para>
+            standards to integrate the guideline engines into EHRs directly. [19] </para>
         <para>In 1998, HL7 found the “curly brace” problem to be unsolvable by the Arden approach
             and began efforts to create expression logic standards based on HL7 Version 3 Reference
             Information Model (RIM). One attempt was the GELLO Expression Language, which in theory
@@ -811,10 +810,11 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                 laboratory technicians have SOPs for handling, testing, and subsequently discarding
                 body fluids obtained from patients."</para>
             <para>Now that EHRs and electronic clinical data in some capacity are essentially
-                ubiquitous in the United States, Health IT implementations often come with tools
-                making it possible to achieve SOPs "into routine clinical practice; that is, not for
-                special patients (e.g. those who are unconscious) or for special circumstances (e.g.
-                clinical trials), but for every patient in everyday clinical care." [21]</para>
+                ubiquitous in the United States, Health Information Technology (IT) implementations
+                often come with tools making it possible to achieve SOPs "into routine clinical
+                practice; that is, not for special patients (e.g. those who are unconscious) or for
+                special circumstances (e.g. clinical trials), but for every patient in everyday
+                clinical care." [21]</para>
         </section>
         <section>
             <title>C<?oxy_comment_start author="steph" timestamp="20190717T152102-0600" comment="I added &quot;Clinical Practice&quot; since that is how it was referred to in section12.6 above." flag="done"?>linical

@@ -8,16 +8,16 @@
         <title>Purpose</title>
         <para>In an effort to resolve the challenges posed by data interoperability and unlock the
             full potential of RWD and RWE across the health care system, the SHIELD collaborative
-            was formed. The SHIELD collaborative is a multi-agency/stakeholder public-private
+            was formed. The SHIELD collaborative is a multi-agency and contributor public-private
             initiative to develop and implement collaborative policies and business models to
             overcome lab interoperability barriers. Due to the complexity and vastness of this
             issue, SHIELD has embraced an ecosystem perspective that recognizes no single entity has
             the authority or influence to meaningfully impact the state of lab interoperability.
-            SHIELD stakeholders include in vitro diagnostic (IVD) manufacturers, commercial and
-            clinical center laboratories, professional organizations, EHR vendors, Pew Charitable
-            Trusts, numerous federal agencies, standards development organizations, and patient
-            advocates. SHIELD’s overall objective is to ensure lab interoperability such that the
-            same type of device is described the same way throughout EHRs. </para>
+            SHIELD stakeholders include IVD manufacturers, commercial and clinical center
+            laboratories, professional organizations, EHR vendors, Pew Charitable Trusts, numerous
+            federal agencies, standards development organizations, and patient advocates. SHIELD’s
+            overall objective is to ensure lab interoperability such that the same type of device is
+            described the same way throughout EHRs. </para>
         <para>The purpose of this Summary of Findings – current state of RWE analytics including but
             not limited to information retrieval and Knowledge Management and discovery – is to
             explore the current state of real world data and real world evidence as it pertains to
@@ -25,48 +25,44 @@
             health, clinical care, and related areas. </para>
     </section>
     <section>
-        <title>Introduction</title>
-        <section>
-            <title>Executive Summary</title>
-            <para>RWD and RWE have received significant attention in recent years from the health
-                care community and federal health organizations. The potential value of RWD which
-                can include information from electronic health records, laboratory testing, pharmacy
-                records, environmental testing, and patient self-reports offers the possibility to
-                harness the day-to-day aspects of health care delivery and outcomes as a source of
-                information and evidence (i.e., RWE) that is far broader than typical, “closed loop”
-                clinical trial data sets. The applications of RWD and RWE, both in isolation and in
-                conjunction with traditional clinical trial methodologies, represent immense
-                potential in advancing medical research, developing and evaluating new therapies,
-                assessing post-market safety and efficacy, improving patient care, expanding public
-                health surveillance, and enabling effective pandemic response measures. </para>
-            <para>Unfortunately, RWD and RWE face numerous obstacles that hinder their reliable
-                widespread use. The realization of RWD’s full potential is faced with a variety of
-                challenges, ranging from data quality and bias, lack of standardization, data access
-                challenges, and privacy concerns. One of the most significant challenges is that of
-                data interoperability. Data interoperability does not simply mean the ability to
-                electronically share health information between and across health systems, this is
-                relatively trivial, and is done routinely. Data interoperability implies that health
-                data created in one environment can be “picked up and moved” to another environment
-                and be computationally processed safely and reliably to convey exactly the same
-                meaning as the source institution intended and computed. The movement of a Portable
-                Document Format (PDF) medical report from institution A to institution B is done
-                routinely, but none of the data held within the report is computable, thus not
-                interoperable. Discrete EHR data can be computable within its source system but
-                cannot be electronically exchanged to a second institution and reliably and safely
-                computed to convey the exact same meaning as initially intended because these data,
-                even data between identical EHR systems, do not carry sufficient context to convey
-                appropriate meaning to be safely and reliably reconstructed between system
-                instances. Finally, even data encoded using standardized medical terminology, such
-                is laboratory data, that is electronically exchanged and computable between systems
-                does not safely guarantee the data will be considered to have the exact same meaning
-                between systems. Numerous examples of this phenomenon have been discussed in
-                literature. [1] To realize the potential of RWD which is suitable as RWE for
-                regulatory, research, public health and clinical care purposes, data
-                interoperability must be achieved. </para>
-        </section>
+        <title>Executive Summary</title>
+        <para>RWD and RWE have received significant attention in recent years from the health care
+            community and federal health organizations. The potential value of RWD which can include
+            information from electronic health records, laboratory testing, pharmacy records,
+            environmental testing, and patient self-reports offers the possibility to harness the
+            day-to-day aspects of health care delivery and outcomes as a source of information and
+            evidence (i.e., RWE) that is far broader than typical, “closed loop” clinical trial data
+            sets. The applications of RWD and RWE, both in isolation and in conjunction with
+            traditional clinical trial methodologies, represent immense potential in advancing
+            medical research, developing and evaluating new therapies, assessing post-market safety
+            and efficacy, improving patient care, expanding public health surveillance, and enabling
+            effective pandemic response measures. </para>
+        <para>Unfortunately, RWD and RWE face numerous obstacles that hinder their reliable
+            widespread use. The realization of RWD’s full potential is faced with a variety of
+            challenges, ranging from data quality and bias, lack of standardization, data access
+            challenges, and privacy concerns. One of the most significant challenges is that of data
+            interoperability. Data interoperability does not simply mean the ability to
+            electronically share health information between and across health systems, this is
+            relatively trivial, and is done routinely. Data interoperability implies that health
+            data created in one environment can be “picked up and moved” to another environment and
+            be computationally processed safely and reliably to convey exactly the same meaning as
+            the source institution intended and computed. The movement of a Portable Document Format
+            (PDF) medical report from institution A to institution B is done routinely, but none of
+            the data held within the report is computable, thus not interoperable. Discrete EHR data
+            can be computable within its source system but cannot be electronically exchanged to a
+            second institution and reliably and safely computed to convey the exact same meaning as
+            initially intended because these data, even data between identical EHR systems, do not
+            carry sufficient context to convey appropriate meaning to be safely and reliably
+            reconstructed between system instances. Finally, even data encoded using standardized
+            medical terminology, such is laboratory data, that is electronically exchanged and
+            computable between systems does not safely guarantee the data will be considered to have
+            the exact same meaning between systems. Numerous examples of this phenomenon have been
+            discussed in literature. [1] To realize the potential of RWD which is suitable as RWE
+            for regulatory, research, public health and clinical care purposes, data
+            interoperability must be achieved. </para>
     </section>
     <section>
-        <title>Real World Data (RWD) and Real World Evidence (RWE) Background</title>
+        <title>Real World Data (RWD) and RWE Background</title>
         <para>RWD is defined as data relating to patient health status and/or the delivery of health
             care routine collected from a variety of sources as part of receiving care or daily
             living. It encompasses most sources of health data derived from common sources such as
@@ -459,15 +455,15 @@
     </section>
     <section>
         <title>Learnings</title>
-        <para>Electronic health records have been in use in the U.S. since the 1970’s. However, the
-            rush to implement the EHR nationwide did not occur until the introduction of the
-            Meaningful Use (MU) in 2009. [24] The EHR has provided a large pool of patient records
-            and healthcare data from across the globe for secondary research. As of 2021, 85% of
-            physicians in the US electronically recorded social determinants of health (SDOH) data
-            and 97% electronically recorded broad determinants of health (BDOH) data. Rates of
-            electronic recording of SDOH and BDOH data were slightly higher among primary care
-            physicians, with 89% of primary care physicians electronically recording SDOH data and
-            98% electronically recording BDOH data in 2021.</para>
+        <para>EHRs have been in use in the U.S. since the 1970’s. However, the rush to implement the
+            EHR nationwide did not occur until the introduction of the Meaningful Use (MU) in 2009.
+            [24] The EHR has provided a large pool of patient records and healthcare data from
+            across the globe for secondary research. As of 2021, 85% of physicians in the US
+            electronically recorded social determinants of health (SDOH) data and 97% electronically
+            recorded broad determinants of health (BDOH) data. Rates of electronic recording of SDOH
+            and BDOH data were slightly higher among primary care physicians, with 89% of primary
+            care physicians electronically recording SDOH data and 98% electronically recording BDOH
+            data in 2021.</para>
        <para>In the past, research relied upon billing data from the UB-04 billing form as the
             source of structured data for research purposes. The UB-04 medical billing form is the
             standard claim form that healthcare organization use for the billing of inpatient or
