@@ -5,6 +5,20 @@
     version="5.1">
     <title>Patient Data Privacy</title>
     <section>
+        <title>RWD Introduction</title>
+        <para>The following chapters explore real world data (RWD) (data collected from patients)
+            and how it’s application in various fields of healthcare can affect patient care. This
+            book has presented thus far the current state of data interoperability and how and
+            integrated knowledge management environment can enable seamless translation of data from
+            one system to the next. This collection of chapters includes aims to shed light on
+            topics across the healthcare spectrum from patient data privacy to emergency
+            preparedness and how the application of Integrated Knowledge Management (IKM) can
+            enhance the use of data in these fields. These topics revolve around the singular goal
+            of harnessing the power of real time data to inform decision making. The power of can
+            impact decision making, from medical ethics to policy formation, and can enhance patient
+            care and quality in the long run. </para>
+    </section>
+    <section>
         <title>Important of Patient Data Privacy</title>
         <para>Patient data privacy refers to patients’ legal protection of their personal health
             information by healthcare providers. All healthcare professionals must protect the
@@ -115,13 +129,13 @@
             integrity and quality of healthcare data that are transferred within and between systems
             in the healthcare labyrinth. </para>
         <section>
-            <title>HIPAA v. GDPR and Patient Data Privacy</title>
-            <para>Health Insurance Portability and Accountability Act (HIPAA) is a law designed
-                specifically to protect individuals’ medical information while General Data
-                Protection Regulation (GDPR) is a broader regulation that encompasses protection of
-                various types of personal data, including health data. However, both laws protect an
-                individual’s right to the safe and secure handling of their personal information and
-                are designed to protect an individual’s privacy. </para>
+            <title>Health Insurance Portability and Accountability Act (HIPAA) v. General Data
+                Protection Regulation (GDPR) and Patient Data Privacy</title>
+            <para>HIPAA is a law designed specifically to protect individuals’ medical information
+                while GDPR is a broader regulation that encompasses protection of various types of
+                personal data, including health data. However, both laws protect an individual’s
+                right to the safe and secure handling of their personal information and are designed
+                to protect an individual’s privacy. </para>
             <para>HIPAA rules only apply to covered entities including health care providers, health
                 plans, and healthcare clearinghouses. Below are examples of each covered entity
                 [8]:</para>
@@ -131,8 +145,8 @@
                         pharmacies</para>
                 </listitem>
                 <listitem>
-                    <para>Health plans: health insurance companies, HMOs, company health plans,
-                        Medicare/Medicaid</para>
+                    <para>Health plans: health insurance companies, Health Maintenance Organizations
+                        (HMOs), company health plans, Medicare/Medicaid</para>
                 </listitem>
                 <listitem>
                     <para>Healthcare clearinghouse: entities that process nonstandard health
@@ -186,13 +200,13 @@
     <section>
         <title>Conclusion</title>
         <para>Patient data privacy is an important aspect of delivering safe and effective
-            healthcare and is protected by HIPAA and other laws. The EU’s General Data Privacy
-            regulation ushered in an era of stringent and protective data privacy standards and have
-            even influenced new policies, such as the California Consumer Privacy Act (CCPA). [12]
-            As we navigate the complexities of data privacy regulations, our team remain committed
-            to protecting patient data and patient privacy. Though not directly governed by HIPAA or
-            GDPR, we believe patient data privacy should remain at the forefront of our operations,
-            reinforcing our commitment to quality healthcare.</para>
+            healthcare and is protected by HIPAA and other laws. The European Union’s General Data
+            Privacy regulation ushered in an era of stringent and protective data privacy standards
+            and have even influenced new policies, such as the California Consumer Privacy Act
+            (CCPA). [12] As we navigate the complexities of data privacy regulations, our team
+            remain committed to protecting patient data and patient privacy. Though not directly
+            governed by HIPAA or GDPR, we believe patient data privacy should remain at the
+            forefront of our operations, reinforcing our commitment to quality healthcare.</para>
     </section>
     <section>
         <title>References</title>

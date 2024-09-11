@@ -420,23 +420,24 @@
             <para>
                 <orderedlist>
                     <listitem>
-                        <para>Problem Identification: Identify how the problem at hand impacts
-                            population health</para>
+                        <para><emphasis role="bold">Problem Identification</emphasis>: Identify how
+                            the problem at hand impacts population health</para>
                     </listitem>
                     <listitem>
-                        <para>Policy Analysis: Evaluate potential policies to identify the optimal
-                            solution</para>
+                        <para><emphasis role="bold">Policy Analysis</emphasis>: Evaluate potential
+                            policies to identify the optimal solution</para>
                     </listitem>
                     <listitem>
-                        <para>Strategy and Policy Development: Define how the policy will work and
-                            adoption strategies</para>
+                        <para><emphasis role="bold">Strategy and Policy Development</emphasis>:
+                            Define how the policy will work and adoption strategies</para>
                     </listitem>
                     <listitem>
-                        <para>Policy Enactment: Follow processes to pass policy</para>
+                        <para><emphasis role="bold">Policy Enactment</emphasis>: Follow processes to
+                            pass policy</para>
                     </listitem>
                     <listitem>
-                        <para>Policy Implementation: Implement the processes, tools, or
-                            recommendations into action</para>
+                        <para><emphasis role="bold">Policy Implementation</emphasis>: Implement the
+                            processes, tools, or recommendations into action</para>
                     </listitem>
                 </orderedlist>
             </para>
