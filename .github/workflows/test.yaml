@@ -1,0 +1,52 @@
+name: Build & Publish Module Workflow
+
+run-name: 'Build & Publish Module -- ${{github.event.inputs.module}}'
+
+on:
+    push:
+    workflow_dispatch:
+        inputs:
+            module:
+                type: choice
+                description: Module
+                options:
+                    - --SELECT--
+                    - anf-ballot-submission
+              
+                required: true
+
+env:
+    GITHUB_MODULE_DIR: /home/runner/work/${{github.event.repository.name}}/${{github.event.repository.name}}/anf-ballot-submission
+    SELF_HOSTED_MODULE_DIR: /home/ec2-user/actions-runner/_work/${{github.event.repository.name}}/${{github.event.repository.name}}/${{github.event.inputs.module}}
+    MAVEN_SETTING: '/home/ec2-user/maven/.m2/settings.xml'
+
+  
+
+jobs:
+  build-publish:
+    name: Build & Publish
+    runs-on: ubuntu-20.04
+    env:
+        JAVA_VERSION: '21'
+    steps:
+          - name: Checkout Code Repository
+            uses: actions/checkout@v4
+
+          - name: Setup Java
+            uses: actions/setup-java@v4
+            with:
+              distribution: 'zulu'
+              java-version: ${{env.JAVA_VERSION}}
+              server-id: ossrh
+              server-username: MAVEN_USERNAME
+              server-password: MAVEN_CENTRAL_TOKEN
+              gpg-private-key: ${{secrets.GPG_KEY}}
+              gpg-passphrase: MAVEN_GPG_PASSPHRASE
+
+          - name: Maven Build
+            run: |
+              mvn clean install
+            working-directory: ${{env.GITHUB_MODULE_DIR}}
+
+          
+        
