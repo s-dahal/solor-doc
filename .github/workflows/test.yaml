@@ -1,4 +1,4 @@
-name: Build & Publish Module Workflow
+name: Build & Publish Module Workflows
 
 run-name: 'Build & Publish Module -- ${{github.event.inputs.module}}'
 
